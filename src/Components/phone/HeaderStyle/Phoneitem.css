@@ -1,0 +1,31 @@
+.image{
+    width: 40%;
+    height: 60%;
+  }
+  .footerstyle{
+    background:rgb(21, 21, 21,0.9);
+    box-shadow: 10px 10px  rgb(238, 230, 230,0.5);
+    border-radius: 1rem;
+  }
+  .text{
+    color: aliceblue;
+    font-size: 100%;
+    
+  }
+    /* tùy chỉnh phần tiêu đề sản phẩm(Customize the product title)  */
+  .title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  .popup{
+    height: 23rem;
+    width: 45%;
+  }
+  .icon{
+    font-size: 60%;
+    font-weight: bolder;
+  }
+  .element{
+    text-align: center;
+   }
+   

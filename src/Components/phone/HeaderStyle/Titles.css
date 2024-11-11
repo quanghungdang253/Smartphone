@@ -1,0 +1,42 @@
+.TitleandProduducts{
+
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    text-align: center;
+}
+.Image{
+    
+}
+/* xử lý đổi màu khi hover chuột  */
+.dropdown-content{
+   display: none;
+   position: fixed;
+
+    border-radius: 2rem;
+    background-color: black;
+    
+}
+.dropdown-container:hover .dropdown-button{
+      
+}
+
+.dropdown-container .dropdown-content button:hover{
+background-color: rgb(45, 230, 54);
+}
+
+.dropdown-container:hover .dropdown-content{
+     display: block;
+     display: grid;
+     grid-template-columns: 20rem;
+  
+}
+.phone{
+    
+    
+}
+.dropdown-container{
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+}
+

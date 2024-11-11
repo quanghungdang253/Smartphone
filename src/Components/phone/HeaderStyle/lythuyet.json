@@ -1,0 +1,41 @@
+{
+"    cách sử dụng BEM
+. ở đây nếu sử dụng cách truyền thống sẽ có nhược điểm sau 
+1. Xung đột css
++ Số lượng các phần tử trên trang lớn 
++ Dễ bị trùng tên class để dặt cho các phần tử 
++ dễ bị ghì đè lên các css có độ ưu tiên 
+2. Khó bảo trì 
++ việc bảo trì trang web không được cấu trúc sẽ khó khăn hơn 
+. ta sẽ thay thế bằng BEM 
+BEM là viết tắt của Block, Element, Modifier
+
++Block : là các khối độc lập 
+ví dụ: Header, navigation, footer, menu ...
+
++Element: có thể coi Element là phần tử con của Block
+vd: title, description, image, 
+
++Modifier: là thành phần dùng để bổ nghĩa cho block hoặc Element 
+vd: checked, disabled, small, red, signln, signUp
+
+",
+" 
+    cú pháp BEM 
+     1. block: +  .header , .body, .footer , .card , .card-list ;
+     2.element: +  .block__element, .footer__logo, . card-list__element
+     3. modifier:
+     + để bổ nghĩa cho element: .block__element--big, 
+     + để bổ nghĩa cho block: .block--small
+
+     NOTE: + BEM không có mục đích phản ánh cấu trúc lồng nhau giữa Element và Block 
+        + mỗi block 
+        + Element chỉ được định nghĩa bởi một block duy nhất, và không nên có thêm các block khác trong tên của element.
+
+
+": 
+
+
+
+
+}

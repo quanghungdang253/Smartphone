@@ -1,0 +1,21 @@
+[
+    {  
+         "id": 1,
+        "name" : "samsungA01",
+        "description": "đây là dòng điện thoại chất lượng cao "
+
+        
+            }
+    ,
+    {
+        "id": 2,
+        "name" : "samsungA02",
+         "description": "đây là dòng điện thoại chất lượng cao "
+    },
+    {
+        "id": 3,
+        "name" : "samsungA03",
+        "description": "đây là dòng điện thoại chất lượng cao "
+    }
+   
+]

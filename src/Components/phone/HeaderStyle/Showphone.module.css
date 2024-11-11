@@ -1,0 +1,26 @@
+.Wrapper{
+    display: grid;
+  grid-template-columns: 30% repeat(2, 30%);
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+ 
+}
+.node{
+  background: rgb(5, 5, 5,0.9);
+  color: rgb(246, 235, 235);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+      font-size: 14px;
+      width: 9rem;
+      height: 2rem;
+      border-radius: 2rem;
+  
+  }
+  .node:hover{
+    transition: 2s linear;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: rgb(124, 131, 131);
+     
+
+}
+

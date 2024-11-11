@@ -1,0 +1,22 @@
+.column1{
+    width: 50%;
+  
+}
+.table{
+    border-collapse:separate;
+    width: 100%;
+
+  
+}
+.Text{
+    color: black;
+    font-weight:800;
+}
+.table{
+    border: solid;
+    position: relative;
+}
+.column{
+    border: solid;
+
+}

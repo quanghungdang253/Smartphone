@@ -1,0 +1,10 @@
+.dark {
+    height: 10rem;
+    color: #fff;
+    background-color: #ff0505;
+}
+.light {
+    height: 10rem;
+    color: #fff;
+    background-color: #000000;
+}
