@@ -47,9 +47,7 @@ function CategoryApi(props) {
        
                 const fetch = await axiosClient.get(`/${link}.json`) // lấy dữ liệu json 
                  const foundproduct = fetch.find((item) => item.id === parseFloat(id) )     // ở đây find sẽ duyệt qua từng phần tử trong mảng và trả về phần tử đầu tiên nếu thỏa điều kiện 
-                Setstate(foundproduct);
-                
-                
+                Setstate(foundproduct);    
     }
     fetchapiAsync();
     },[id, link])

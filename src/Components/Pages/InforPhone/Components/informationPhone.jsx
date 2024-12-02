@@ -2,6 +2,7 @@
 import { useState } from "react";
 import  {Circles}  from 'react-loader-spinner';
 import styled from "styled-components";
+import { Helmet } from "react-helmet-async";
 // import InformationPhone from "../Pages/InforPhone/Components/Slideimage";
 import FetchAPI from "../services/PhoneAPI";
 // import { Overlayer } from "../Home/Main__Home/Home";
@@ -9,6 +10,9 @@ import FetchAPI from "../services/PhoneAPI";
      return (
         <Description>
     {/* truyền cho component PhoneAPI một hàm  */}
+                <Helmet>
+                            <title>   {Data.title}    </title>
+                </Helmet>
               <PhoneDescription>
                     <section className="Wrapper">                                                                    
                       <figure  className="Wrapper__figure ">  

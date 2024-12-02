@@ -44,7 +44,7 @@ const TitleandProducts = ({shows}) => {
                             alt=''
                             className='header__image'
                         />
-                        <Typography variant='h1'>Quang Hùng Store</Typography>
+                        <Typography variant='h1'> Quang Hùng Store</Typography>
                     </HeaderTitle>
                 </Link>
                 <Dropdowncont>
@@ -78,9 +78,6 @@ const Wrapheader = styled.div`
     .Menuheader {
             position: absolute;
     }
-     .abc {
-        
-     }
     .Link {
         text-decoration: none;
     }

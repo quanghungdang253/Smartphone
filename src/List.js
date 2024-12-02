@@ -57,3 +57,19 @@
 // }
 
 // export default List;
+
+
+// bài tập về kĩ thuật Memoization trong reacjs
+
+// bài 1 . tính giai thừa  sử dụng memoization để tối ưu hó hiệu suất 
+function memozation(){
+            const catche = {}; // tạo bộ nhớ đệm 
+
+          return function factorial(n){
+                    if(n in catche){  // kiểm tra xem n có trong bộ nhờ các che không 
+                                console.log(  ` Lấy từ cache ${n}`);
+                                return catche[n];  // nếu tồn tại trả về kết quả đã lưu 
+                    }
+          }
+}
+

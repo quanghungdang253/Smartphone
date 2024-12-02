@@ -4,12 +4,10 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    const InformationPhone = (props)
-                                                                        // const {image} = props;
-      // ({image}) nghĩa là image = props.image
-   // cú description const {image} = phone;
-
+                                                                        // const {image} = props
+console.log(image);
         const [preimage , setimage] = useState(image);
-        console.log(preimage);
+     
         const [preindex , setindex] = useState(0);
         useEffect(() => {
            const Time = setInterval(() => {
@@ -25,10 +23,6 @@ const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    cons
         },[preimage.length])
         const Left = () => {
                         setindex((preindex) =>(
-                                // if(preindex  ===  0){
-                                //         return preindex = preimage.length - 1;
-                                // }
-                                //         return preindex - 1; cách 1
                                 (preindex === 0 ? preindex = preimage.length - 1 : preindex - 1) // cách 2
                         ))
                    
@@ -39,7 +33,6 @@ const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    cons
                                         return preindex = 0;
                                 }
                                 return preindex + 1;
-// transition: property duration  timing-function delay;
                         })     
         }
         return(

@@ -1,0 +1,66 @@
+{
+    "phonecompany": [
+        {
+            "id": 1,
+            "name": "samsung"
+        },
+        {
+            "id":2,
+            "name": "vivo"
+           
+        },
+        {
+            "id":3,
+            "name": "IPhone"
+           
+        },
+        {
+            "id":4,
+            "name": "Xiamio"
+           
+        },
+        {
+            "id":5,
+            "name": "Ipad"
+           
+        },
+        {
+            "id":6,
+            "name": "oppo"
+           
+        },
+        {
+            "id":7,
+            "name": "Nokia"
+           
+        }
+    ],
+    "price":[
+        {
+            "id": 1,
+            "price_level": "Dưới 2 triệu"
+
+        },
+        {
+            "id": 2,
+            "price_level": "Dưới 2 triệu"
+            
+        },
+        {
+            "id": 3,
+            "price_level": "Từ 2 - 5 triệu"
+            
+        },
+        {
+            "id": 4,
+            "price_level": "Dưới 10 triệu "
+            
+        }, {
+            "id": 5,
+            "price_level": "tử 10 đến 50 triệu "
+            
+        }
+    ]
+
+    
+}

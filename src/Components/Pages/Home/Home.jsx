@@ -3,9 +3,11 @@ import { Phonedisplay } from './Components/Phonedisplay';
 import styled from 'styled-components';
 import  Productads from './Components/Productads';
 import Menuheader from '../../Common/Menuheader';
-
+import Products_list from '../Products_list/Products_list';
 import Overlay from '../../Overlayer';
-function Home() {
+import ShowInfo from '../../Common/Listproduct/ShowInfo';
+import { Helmet } from 'react-helmet-async';
+function Home({home}) {
  
 
 
@@ -14,13 +16,16 @@ function Home() {
 
     return (
             <MainHome> 
+            <Helmet>
+                        <title> Quang Hùng Store </title>
+            </Helmet>
                  <header className='Header'>   
                                 <Menuheader/>
                                 <Productads/>
                         
                  </header>
                  <div className={`overlayer`}> 
-                                <Phonedisplay/>
+                            <Products_list/>
                  </div>
             </MainHome>
     

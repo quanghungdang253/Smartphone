@@ -1,3 +1,6 @@
 +cú pháp npm install --save <pakage> (cú pháp phiên bản cũ V5 )
 đầy là cú pháp thêm pakage vào phần dependencies của file package.json
 +cú pháp mới nhất để thêm một package vào dependencies là [npm install <namepackage> ]
+
+
+

@@ -1,0 +1,66 @@
+{
+    "phonecompany": [
+        {
+            "id": 1,
+            "name": "Laptop Al"
+        },
+        {
+            "id":2,
+            "name": "Laptop Gamming"
+           
+        },
+        {
+            "id":3,
+            "name": "Laptop Học tập văn phòng"
+           
+        },
+        {
+            "id":4,
+            "name": "Laptop đồ họa "
+           
+        },
+        {
+            "id":5,
+            "name": "Laptop Kĩ thuật"
+           
+        },
+        {
+            "id":6,
+            "name": "Laptop mỏng nhẹ"
+           
+        },
+        {
+            "id":7,
+            "name": "Laptop cao cấp"
+           
+        }
+    ],
+    "price":[
+        {
+            "id": 1,
+            "price_level": "Dưới 2 triệu"
+
+        },
+        {
+            "id": 2,
+            "price_level": "Từ 5 đến 10 triệu"
+            
+        },
+        {
+            "id": 3,
+            "price_level": "Từ 10 - 20 triệu"
+            
+        },
+        {
+            "id": 4,
+            "price_level": "Dưới 30 triệu "
+            
+        }, {
+            "id": 5,
+            "price_level": "dưới 50 triệu "
+            
+        }
+    ]
+
+    
+}

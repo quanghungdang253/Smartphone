@@ -40,29 +40,37 @@
       
    // =====================ứng dụng chạy chính ==================
 
-import React, { useEffect, useState } from 'react';
+
 import './App.css';
 import './Components/phone/HeaderStyle/reset.css';
-import Home from './Components/Pages/Home/Home';
 import { Routes, Route } from 'react-router-dom';
-// import InformationPhones from './Components/informationPhone/informationPhone';
 import styled from 'styled-components';
-import Overlay from './Components/Overlayer';
-import InforPhone from './Components/Pages/InforPhone/InforPhone';
-
 import MainHeader from './Components/Header/MainHeader';
-
+import React, { Suspense, lazy } from 'react';
+import Loading from './Components/Common/components/Loading';
+import { HelmetProvider } from 'react-helmet-async';
 export default function App() {
+  const Products_list  = React.lazy(() => import('./Components/Pages/Products_list/Products_list'))
+  const Home = React.lazy(() => import("./Components/Pages/Home/Home"));
+  const InforPhone = React.lazy(() => import("./Components/Pages/InforPhone/InforPhone"))
     return (
         <Style>
-            <div> 
+            <div>
+        <HelmetProvider>   
                 <MainHeader />
-                <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/Inphone/:id' element={<InforPhone />} />
-                </Routes>
+                  <Suspense fallback={(<Loading/>)}>               { /* fallback: dự phòng  */}
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='label/:namephone' element={<Products_list/>}/>
+                        <Route path='/Detail/:link/:id' element={<InforPhone />} />   
+                    </Routes>
+                  </Suspense>
+        </HelmetProvider>
               
             </div>
+          
+           
+      
         </Style>
     );
 }

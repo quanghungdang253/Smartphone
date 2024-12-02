@@ -1,0 +1,234 @@
+
+{
+    "data": [
+        {      
+        "id" : 1,
+        "discount": "20%",
+        "installment": "0%",     
+        "image": "https://www.duchuymobile.com/images/thumbnails/180/180/detailed/49/oppo-reno6-5g.jpg",
+        "title": "I phone 16 promax",
+        "price": "3.699.000 đ"
+       
+  },
+  {      
+    "id" : 2,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/41/oppo-reno6-5g-den.jpg",
+    "title": "OPPO Reno 6 5G 128GB Chính Hãng",
+    "price": "6.599.000 đ"
+   
+},
+{      
+    "id" : 3,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/detailed/59/oppo-reno7-5g-den.jpg",
+    "title": "OPPO Reno7 5G (8GB | 256GB) Chính Hãng Mới 100%",
+    "price": "5.799.000 đ"
+    
+},
+{      
+    "id" : 4,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/48/oppo-reno7-z-5g-den.jpg",
+    "title": "OPPO Reno7 Z 5G (8GB | 128GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "6.599.000 đ "
+    
+},
+{      
+    "id" : 5,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/56/oppo-reno8t-4g-den.jpg",
+    "title": "OPPO Reno8 T 4G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal ",
+    "price": "5.599.000 đ"
+   
+},
+{      
+    "id" : 6,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/59/may-massage-mat-olike-m2.jpg",
+    "title": "Máy Massage Mắt Olike M2 Chính Hãng Mới 100% Nguyên Seal",
+    "price": "259.000 đ"
+   
+},
+{      
+    "id" : 7,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/65/oppo-reno11-pro-5g-den.jpg",
+    "title": "OPPO Reno11 Pro 5G (12GB | 512GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "8.199.000 đ"
+   
+},
+{      
+    "id" : 8,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/66/oppo-reno11-xanh.jpg",
+    "title": "OPPO Reno11 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "6.599.000 đ "
+   
+},
+{      
+    "id" : 9,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 10,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 11,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 12,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 13,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 14,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 15,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 16,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 17,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 18,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 19,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 20,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 21,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 22,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 23,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 24,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+},
+{      
+    "id" : 25,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/67/oppo-reno11-f-5g-xanh.jpg",
+    "title": "OPPO Reno11 F 5G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "5.999.000 đ"
+   
+}
+        
+    ]
+    
+
+    
+}

@@ -1,34 +1,42 @@
+import { Button, TextField } from '@mui/material';
 import {useRef} from 'react';
 import React from 'react';
 import styled from 'styled-components';
-const Search = () => {
+import Forminput from '../../Common/components/Forminput';
+const Search = () => {   // component cha 
     const inputRef = useRef(null);  // kiến thức useRef 
-    const  onAdd = () => {                     
+    const  onAdd = () => {      
+        console.log(inputRef.current)               
         if(inputRef.current){
-                alert("Đã tìm thấy sản phẩm "+inputRef.current.value);
+                     alert("Đã tìm thấy sản phẩm "+inputRef.current.value);
         }else{
-            alert("không tìm thấy sản phẩm ");
+                    alert("không tìm thấy sản phẩm ");
         }
-    
     }
-
+  
     return (
-     
-            <FormSearch>   {/* form-Search  */}                 
-                                               
+            <FormSearch>                                                            
                 <Searchs>   
-                    <span className='Search__Input'> 
-                            <i class="fa-solid fa-magnifying-glass"> </i>
-                            <input type='text' placeholder='Bạn muốn tìm sản phẩm nào' ref={inputRef}/>                            
-                    </span>
-                    <span className='Search__submit'>
-                                 <button onClick={() => onAdd()}> Search </button>
+                             <span className='Search__Input'> 
+                                         <i class="fa-solid fa-magnifying-glass"> </i>
+                             </span>  
+                           <Forminput
+                                    className="Formsearch"
+                                    placeholder="Bạn muốn tìm sản phẩm gì"
+                                    ref={inputRef}
+                                    
+                           />
+                    <span className='Search__submit'>                            
+                                 <Button variant='OutlinedButton' onClick={() => onAdd()}> Tìm kiếm   </Button>
                     </span>
                 </Searchs>  
             </FormSearch>    
     )
 }
    
+                 
+
+
 const FormSearch = styled.div `
             display:flex;
             align-items:center;
@@ -38,15 +46,18 @@ const FormSearch = styled.div `
 const Searchs = styled.div`
     display:flex;
     border-radius: 3rem;
-    background-color:#fff;
-    
-   
+    align-items:center;
+    justify-content:center;
+  
+   .FormSearch {
+            color: white;
+   }
     .Search__Input {
         padding: 0rem 1rem 0rem 1rem;
-       display: flex;
-       align-items: center;
+         display: flex;
+        align-items: center;
         .fa-solid.fa-magnifying-glass {
-            color:black;
+          color: white;
         }
          input {
             font-size:1rem;

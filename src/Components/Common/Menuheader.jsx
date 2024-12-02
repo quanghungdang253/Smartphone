@@ -1,57 +1,49 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Componenticon from './Componenticon';
 import Smartphone from './Products/Smartphone';
-
+import Link_phone from './data/Link_phone.json';
+import  Link_laptop from './data/Link_laptop.json';
+import Link_camera from './data/Link_camera.json'
+import { listClasses } from '@mui/material';
 
 function Menuheader({addPadding}) {
-        const [preindex, setIndex] = useState(null); // thiết lập giá trị ban đầu là null không xác định 
+  
+        const [preindex, setIndex] = useState(null); 
+        const [product, setProduct] = useState([]);
         const [prePadding, setPading] = useState(false);
+     
     const items = [
-        {icon: Componenticon.Iconphone , label: "Điện thoại, Tabled" } ,
-        {icon: Componenticon.Iconlaptop , label: "laptop"},
-        {icon: Componenticon.Iconclock , label: "Camera",} ,
-        {icon: Componenticon.Iconhouseholditems , label: "Đồ gia dụng, Điện tử "},
-        {icon: Componenticon.IconTV , label: "Tivi"},
-        {icon: Componenticon.Iconcomputer , label: "Máy Tính"},
-        {icon: Componenticon.IconAccessory , label: "Phụ kiện"},
-        {icon: Componenticon.IconCamera , label: "Camera"},
-        {icon: Componenticon.IconTech , label: "Tin công nghệ"}
+        { icon: Componenticon.Iconphone , label: "Điện thoại, Tabled" } ,
+        { icon: Componenticon.Iconlaptop , label: "laptop"},
+        { icon: Componenticon.Iconclock , label: "Camera , Flycam",} ,
+        { icon: Componenticon.Iconhouseholditems , label: "Đồ gia dụng, Điện tử "},
+        { icon: Componenticon.IconTV , label: "Tivi"},
+        { icon: Componenticon.Iconcomputer , label: "Máy Tính"},
+        { icon: Componenticon.IconAccessory , label: "Phụ kiện"},
+        { icon: Componenticon.IconCamera , label: "Camera"},
+        { icon: Componenticon.IconTech , label: "Tin công nghệ"}
     
     ]
     const Listitem = [
-        {       index: 0,
-                items: <Smartphone/>
-        },
-        {       index: 1,
-                items: <Smartphone/>
-        },
-        {       index: 2,
-                items: <Smartphone/>
-        },
-        {       index: 3,
-                items: <Smartphone/>
-        },
-        {       index: 4,
-                items: <Smartphone/>
-        },
-        {       index: 5,
-                items: <Smartphone/>
-        },
-        {       index: 6,
-                items: <Smartphone/>
-        },
-        {       index: 7,
-                items: <Smartphone/>
-        }
-       
-        
+        { id: 0, items: Link_phone },
+        { id: 1, items: Link_laptop},
+        { id: 2, items: Link_camera},
+        { id: 3, items: Link_laptop},
+        { id: 4, items: Link_laptop},
+        { id: 5, items: Link_laptop},
+        { id: 6, items: Link_laptop},
+        { id: 7, items: Link_laptop},
+        { id: 8, items: Link_laptop},
+        { id: 9, items: Link_laptop},
     ]
-
     return (
-        <Wrapper>
+        <Wrapper        
+                        onMouseEnter={() => setIndex(preindex)}  // hoạt động khi người dùng di chuyển chuôt vào 
+                        onMouseLeave={() => setIndex(null)}
+        >
                 <div className={`Wrapper__label ${addPadding ? "addpadding" : ""} `}> 
                      {/* phương pháp chèn icon thứ nhất  */}
                            
@@ -59,41 +51,41 @@ function Menuheader({addPadding}) {
                                style={{backgroundImage: `url(${Iconphone})`, width: "25px", height:"20px", display: "inline-block"}}
                             ></i>  
                                                      */} 
-                        {items.map((item,index) => (
-                                        <div className='Wrapper__label--menu'
+                        {items.map((item,index) => (  // thiết lập xử lý data khi hover                         
+                                <div className='Wrapper__label--menu'
                                          key={index}
-                                         onMouseEnter={() => setIndex(index)}
-                                         onMouseLeave={() => setIndex(null)}                                       >
-                                         
+                                         onMouseEnter={() =>{                                             
+                                                setIndex(index);                                         
+                                                const fountindex = Listitem.find((listItem) => listItem.id === index);
+                                                if(fountindex ){
+                                                                setProduct(fountindex.items);
+                                                }                                          
+                                         }} 
+                                                                           >
                                                 <div className=''>
                                                         <item.icon className='Wrapper__icon'/>
-                                                        {item.label}    
+                                                                        {item.label}    
                                                 </div>
                                                <Componenticon.IconarrowRight className='Wrapper__icon'/>
-                                        </div>
-                                                                                   
+                                </div>                                                 
                            ))}
                         </div>
-                        <React.Fragment> 
-                                {Listitem.map((item,index) => (  
-                                      
-                                        <div key={index}
-                                         className={`showitem ${index === preindex ? 'show' : ''}`}
-                                         onMouseEnter={() => setIndex(index)}
-                                         onMouseLeave={() => setIndex(null)}        
-                                       
-                                         > 
-                                                        {item.items}
-                                             {console.log(index)}
-                                             {console.log(preindex)}
-                                        </div>
-                                ))}
+                
+                        <React.Fragment>                                      
+                                <div 
+                                             className={`showitem ${ preindex !== null ? 'show' : ''}`}
+                                             onMouseEnter={() =>{}}
+                                             onMouseLeave={() =>{
+                                                         setIndex(null);
+                                                        } }   
+                                >                                                                                                   { preindex !== null &&  <Smartphone value={product} /> } 
+                                                 </div>    
+                                   
                         </React.Fragment>
                        
         </Wrapper>
     );
 }
-
 const Wrapper = styled.div `
 
         width: 20rem;
@@ -105,18 +97,14 @@ const Wrapper = styled.div `
                   position: absolute; 
                   left: 20rem;   
                   opacity: 0;
-                  /* visibility: hidden;  */
-                
-                  /* transition: opacity 0.3s ease, visibility 0.3s ease; */
-            
-                
+                  
+                  /* visibility: hidden;  */            
+                  /* transition: opacity 0.3s ease, visibility 0.3s ease; */    
         }
-   .showitem.show {
-        opacity: 1;
-         
-                
-
-   }
+        .showitem.show {
+                        opacity: 1;    
+                    
+                }
     .Wrapper__label--menu {
  
               background-color: white;
@@ -128,6 +116,7 @@ const Wrapper = styled.div `
             font-family: "Lato", sans-serif;
             font-weight: 600;
             font-style: normal;
+            
 
     }
  
@@ -156,6 +145,7 @@ const Wrapper = styled.div `
    .Wrapper__label.addpadding {
        padding-top: 1.5rem;
        padding-bottom: 1.5rem;
+     
          
    }
 

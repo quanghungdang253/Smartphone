@@ -15,8 +15,6 @@ function MainHeader(props) {
                 <div className='Wrapper__MainHeader'> 
                     <TitleandProducts shows={setShow}/>
                  
-                   
-                 
                     <Search/>
                     <Navigation_header/>
                     </div>
