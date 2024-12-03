@@ -7,7 +7,7 @@ function Article(props) {
         <Container>
             <div className='Article'>
                    <Link
-                    to="http://localhost:3000/Detail/dataPhone/2"
+                    to="https://quang-hung-store.vercel.app/Detail/dataPhone/2"
                     className=''
                     >
                            Samsung 
