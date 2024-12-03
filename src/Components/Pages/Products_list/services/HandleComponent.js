@@ -1,15 +1,15 @@
 
 import React from 'react';
-import {Vd2,Vd3,SliceImage, ShowInfo,Productads} from './LazyloadingComponent';
+import {Vd2,Vd3, ShowInfo,Productads, ListimageProduct} from './LazyloadingComponent';
 import { Suspense } from 'react';
 import Loading from '../../../Common/components/Loading';
-import Slideimage from '../../InforPhone/Components/Slideimage';
+
 const SamsungComponent = ({data, namephone, ...props}) => (
 <Suspense fallback={(<Loading/>)}>  
         <React.Fragment>
                         <Vd2/>
                         <Vd3/>
-                        {/* <Slideimage/> */}
+                        <ListimageProduct image={data.advertising_images}/>
                         <ShowInfo namephone={data} enpoint={namephone}  {...props}/>
         </React.Fragment>
         </Suspense>

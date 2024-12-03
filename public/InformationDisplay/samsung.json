@@ -190,7 +190,14 @@
 }
 
         
-    ]
+    ],
+    "advertising_images": [
+        "/image/advertising_image/iphone/15 Series.webp",
+        "/image/advertising_image/iphone/Iphone13.webp",
+        "/image/advertising_image/iphone/iphone14.webp",
+        "/image/advertising_image/iphone/iphone16.webp",
+        "/image/advertising_image/iphone/pay.webp"
+]
     
     
 

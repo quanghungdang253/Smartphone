@@ -7,11 +7,10 @@ const ComponentMap = {
 
 function RenderbyCategory({namephone , data ,  ...props}) {
  
-            const SelectedComponent = ComponentMap[namephone] || DefaultComponent;
+    const SelectedComponent = ComponentMap[namephone] || DefaultComponent;
 
-            return <SelectedComponent data={data} namephone={namephone} {...props} />
+    return <SelectedComponent data={data} namephone={namephone} {...props} />
 
-  
 }
 
 export default RenderbyCategory;

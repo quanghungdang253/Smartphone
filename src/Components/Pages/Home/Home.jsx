@@ -7,6 +7,7 @@ import Products_list from '../Products_list/Products_list';
 import Overlay from '../../Overlayer';
 import ShowInfo from '../../Common/Listproduct/ShowInfo';
 import { Helmet } from 'react-helmet-async';
+import Article from './Components/Article';
 function Home({home}) {
  
 
@@ -22,6 +23,7 @@ function Home({home}) {
                  <header className='Header'>   
                                 <Menuheader/>
                                 <Productads/>
+                                <Article/>
                         
                  </header>
                  <div className={`overlayer`}> 

@@ -7,7 +7,6 @@ const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    cons
                                                                         // const {image} = props
 console.log(image);
         const [preimage , setimage] = useState(image);
-     
         const [preindex , setindex] = useState(0);
         useEffect(() => {
            const Time = setInterval(() => {
@@ -51,7 +50,7 @@ console.log(image);
                         </ul>
                 <div className='HandleImage_Slide'>
                     {preimage.map((image,index) => {   // index của map tính từ 0 
-                    {console.log(image)}
+                  
                         return(    
                             <button key={index} 
                             onClick={() =>setindex(index)} 

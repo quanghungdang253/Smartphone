@@ -126,7 +126,7 @@ function Products_list(props) {
   let namephone = params.namephone;
 
   const [data, loading] = useHandleApi(namephone);
- 
+  console.log(data);
  if(!data){
             <p> đang lấy data </p>
  }
@@ -134,7 +134,7 @@ function Products_list(props) {
     <Product>
            
       {!data ? (
-        <h1>Chào mừng bạn!</h1>
+                    <h1>Chào mừng bạn!</h1>
       ) : (
         <div>
         {/* cú pháp desstructuring  RenderbyCategory*/}
