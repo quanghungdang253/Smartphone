@@ -49,6 +49,7 @@ import MainHeader from './Components/Header/MainHeader';
 import React, { Suspense, lazy } from 'react';
 import Loading from './Components/Common/components/Loading';
 import { HelmetProvider } from 'react-helmet-async';
+import { createContext, useContext } from 'react';
 export default function App() {
   const Products_list  = React.lazy(() => import('./Components/Pages/Products_list/Products_list'))
   const Home = React.lazy(() => import("./Components/Pages/Home/Home"));
@@ -58,7 +59,7 @@ export default function App() {
             <div>
         <HelmetProvider>   
                 <MainHeader />
-                  <Suspense fallback={(<Loading/>)}>               { /* fallback: dự phòng  */}
+                  <Suspense fallback={(<Loading/>)}>              
                     <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='label/:namephone' element={<Products_list/>}/>
@@ -69,8 +70,6 @@ export default function App() {
               
             </div>
           
-           
-      
         </Style>
     );
 }

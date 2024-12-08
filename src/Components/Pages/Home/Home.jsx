@@ -20,13 +20,13 @@ function Home({home}) {
             <Helmet>
                         <title> Quang Hùng Store </title>
             </Helmet>
-                 <header className='Header'>   
+                 <header className='Header Style'>   
                                 <Menuheader/>
                                 <Productads/>
                                 <Article/>
                         
                  </header>
-                 <div className={`overlayer`}> 
+                 <div className={"overlayer Productlist"}> 
                             <Products_list/>
                  </div>
             </MainHome>
@@ -34,19 +34,32 @@ function Home({home}) {
     );
 }
 const MainHome = styled.div `
+
+    background: #d4d9d9;
+    position: absolute;
+    z-index: 2;
+  
         .Header {
-                        margin: 7% 7% 0% 7%;
+                        padding:2rem 2rem;
+                        margin: 5% 7% 0% 7%;
                         display: flex;  
                         align-items: center;  
-                        grid-column-gap: 10%;
+                        grid-column-gap: 5%;
+                        height: 505px;
+                       
                                  
         }
+        .Productlist {
+                    
+        }
+        .Style {
+            background-color:white;
+        }
+     
           
-           background: #d4d9d9;
-           position: absolute;
-           z-index: 2;
+         
         .btn__wrappper {
-            position: absolute;
+             position: absolute;
         } 
 
 `

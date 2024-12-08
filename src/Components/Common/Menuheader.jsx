@@ -97,27 +97,25 @@ const Wrapper = styled.div `
                   position: absolute; 
                   left: 20rem;   
                   opacity: 0;
+                  width:58rem;
                   
                   /* visibility: hidden;  */            
                   /* transition: opacity 0.3s ease, visibility 0.3s ease; */    
         }
         .showitem.show {
-                        opacity: 1;    
-                    
+                        opacity: 1;  
+
                 }
     .Wrapper__label--menu {
- 
               background-color: white;
              cursor: pointer;
-            padding: 0.8rem ;
+             padding: 0.8rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-family: "Lato", sans-serif;
             font-weight: 600;
             font-style: normal;
-            
-
     }
  
     .Wrapper__label--menu:hover {
@@ -132,15 +130,20 @@ const Wrapper = styled.div `
              background-repeat: no-repeat;  // không lặp lại ảnh 
              margin-right: 4px;
              background-size: contain;
-            
-        
    }
  
    .Wrapper__label {
-           background-color: white;
-            padding: 1rem;
+            background-color: white;
+            padding: 0.8rem;
             width: 35rem;
+            height:100%;
             border-radius: 2rem;
+            box-shadow:   0 1px 2px 0 
+                          rgba(60,64,67,.1),
+                          0 2px 6px 2px
+                          rgba(60,64,67,.15);
+                          margin-left:10px;
+      
    }
    .Wrapper__label.addpadding {
        padding-top: 1.5rem;

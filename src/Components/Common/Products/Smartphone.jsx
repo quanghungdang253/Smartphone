@@ -8,7 +8,6 @@ function Smartphone(props) {
     const value = props.value;
     console.log(value);
     
-  
 
     return (
         <Wrapper>
@@ -52,10 +51,15 @@ const Wrapper = styled.div`
             z-index: 999;
             display: flex;
             grid-column-gap: 2rem;
-            width: 60rem; 
+            width: 100%; 
             height: 27.5rem;   
             border-radius: 2rem;
             background-color: white;
+            box-shadow:   0 1px 2px 0 
+                          rgba(60,64,67,.1),
+                          0 2px 6px 2px
+                          rgba(60,64,67,.15);
+                          
             .Link {
                 text-decoration: none;
                 color: black;

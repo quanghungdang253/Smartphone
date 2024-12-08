@@ -1,0 +1,217 @@
+
+{
+    "data": [
+        {      
+        "id" : 1,
+        "discount": "20%",
+        "installment": "0%",     
+        "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/05/08/ipad-pro-m4-2.png",
+        "title": "iPad Pro M4 13 inch WiFi (256GB) - Chính hãng Apple Việt Nam",
+        "price": "36,390,000 ₫"
+       
+  },
+  {      
+    "id" : 2,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-xanh-duong-wifi-1.png",
+    "title": "iPad Mini 7 8.3 inch WiFi (128GB) - Chính hãng Apple Việt Nam",
+    "price": "13,790,000 ₫"
+   
+},
+{      
+    "id" : 3,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-tim-wifi-1.png",
+    "title": "iPad Mini 7 8.3 inch WiFi (256GB) - Chính hãng Apple Việt Nam",
+    "price": "16,290,000 ₫"
+    
+},
+{      
+    "id" : 4,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/48/oppo-reno7-z-5g-den.jpg",
+    "title": "OPPO Reno7 Z 5G (8GB | 128GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "6.599.000 đ "
+    
+},
+{      
+    "id" : 5,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/variant_image/56/oppo-reno8t-4g-den.jpg",
+    "title": "OPPO Reno8 T 4G (8GB | 256GB) Chính Hãng Mới 100% Nguyên Seal ",
+    "price": "5.599.000 đ"
+   
+},
+{      
+    "id" : 6,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-tim-wifi-6.png",
+    "title": "iPad Mini 7 8.3 inch WiFi (256GB) - Chính hãng Apple Việt Nam",
+    "price": "16,290,000 ₫"
+   
+},
+{      
+    "id" : 7,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 7,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 8,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 9,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 10,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 11,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 12,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 13,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 14,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 15,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 16,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 17,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 18,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 19,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 20,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 21,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+},
+{      
+    "id" : 22,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/04/ipad-mini-7-trang-vang-cellular-1.png",
+    "title": "iPad Mini 7 8.3 inch 5G (128GB) - Chính hãng Apple Việt Nam",
+    "price": "17,790,000 ₫"
+   
+}
+
+     
+    ]
+    
+
+    
+}

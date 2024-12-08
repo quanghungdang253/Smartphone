@@ -152,7 +152,7 @@ function Products_list(props) {
   );
 }
 const Product = styled.div `
-
+      
 
 
 `

@@ -1,0 +1,184 @@
+
+{
+    "data":[
+        {      
+           "id" : 1,
+           "discount": "20%",
+           "installment": "0%",     
+           "image": "https://cdn.nguyenkimmall.com/images/thumbnails/600/336/detailed/832/10053531-dien-thoai-nokia-c31-3gb-32gb-xanh-thien-ha-1.jpgg",
+           "title": "Điện thoại Nokia C31 3GB/32GB Xanh thiên hà",
+           "price": "1.940.000đ",
+           "priceDown": "3.190.000đ"
+      
+       },
+       {      
+       "id" : 2,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://24hstore.vn/images/products/2024/09/12/large/galaxy-a06-den-tuyen.jpg",
+       "title": "Samsung Galaxy A06 4GB/128GB Chính Hãng",
+       "price": "2.980.000đ",
+       "priceDown": "3.200.000"
+   },
+   {      
+       "id" : 3,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://hanhtech.com/wp-content/uploads/2023/11/nokia-g42-5g-128gb-chinh-hang-moi-100-gia-cuc-re-image.jpg",
+       "title": "Nokia G42 5G 128GB Mới 100%, Giá Rẻ",
+       "price": " 6.398.000₫",
+         "priceDown": "7.677.600₫"
+   },
+   {      
+       "id" : 4,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lzhsdloq107h13@resize_w450_nl.webp",
+       "title": "Điện thoại 4G Nokia C32 (4GB/128GB)",
+       "price": "₫3.290.000",
+       "priceDown": "4.000.000"
+   },
+   {      
+       "id" : 5,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn.nguyenkimmall.com/images/thumbnails/600/336/detailed/612/10043490-dien-thoai-nokia-7-2-charcoal-1.jpg",
+       "title": "Nokia 7.2 Charcoal ",
+       "price": "6.190.000đ",
+       "priceDown": "7.000.000"
+   },
+   {      
+       "id" : 6,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://hanhtech.com/wp-content/uploads/2024/09/nokia-c01-plus-moi-chinh-hang-gia-re-image.jpg",
+       "title": "Nokia C01 Plus Mới Giá Rẻ",
+       "price": " 1.128.000₫",
+       "priceDown": "1.353.600₫"
+   },
+   {      
+       "id" : 6,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000"
+   },
+   {      
+       "id" : 7,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000"
+   },
+   {      
+       "id" : 8,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000"
+   },
+   {      
+       "id" : 9,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000"
+   },
+   {      
+       "id" : 10,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000"
+   },
+   {      
+       "id" : 11,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000"
+   },
+   {      
+       "id" : 12,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ"
+   },
+   {      
+       "id" : 13,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000"
+   },
+   {      
+       "id" : 14,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000"
+   },
+   {      
+       "id" : 15,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ"
+   },
+   {      
+       "id" : 16,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000"
+   },
+   {      
+       "id" : 17,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000"
+   },
+   {      
+       "id" : 18,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000"
+   },
+   {      
+       "id" : 19,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ"
+   }
+    ]
+       
+   }

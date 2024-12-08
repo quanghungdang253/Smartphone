@@ -59,12 +59,10 @@ const Productads = () => {
 
 const Wrapper = styled.div  `
    
-     
-      
-      
+
         .image {
             height: 27.5rem;
-            width: 35rem;
+            width:100%;
             border-radius: 1.5rem;
             position: relative;
           
@@ -72,12 +70,9 @@ const Wrapper = styled.div  `
         &:hover + .Navigation .icon {  // bộ chọn anh em liền kề 
             display: block;
         }
-
-
         .Navigation__iconRight {
                position: relative;
-               left: 22.6rem;
-               
+               left: 22.6rem;       
         }
         .icon {
             width: 1rem;
@@ -112,7 +107,7 @@ const Wrapper = styled.div  `
 
 `
 const Aside = styled.div`
-            width: 700px;
+            width: 600px;
 
 `
 

@@ -49,8 +49,14 @@ const Searchs = styled.div`
     align-items:center;
     justify-content:center;
   
-   .FormSearch {
+   .Formsearch {
             color: white;
+            border-radius:10px;
+            border:1px solid white;
+            
+   }
+   .Formsearch::placeholder{
+    font-size:0.9rem;
    }
     .Search__Input {
         padding: 0rem 1rem 0rem 1rem;
@@ -61,18 +67,19 @@ const Searchs = styled.div`
         }
          input {
             font-size:1rem;
-            width:90%;
-            outline:none;
-            border:0;
+        
+            border-radius:10px;
          }
         
     }
     .Search__submit {
         padding:1rem 1rem;
+        color:white;
                 button {
                         border:none;
                        background-color:transparent;
                        font-weight:700;
+                       border: 1px solid white;
                 }
         }
 

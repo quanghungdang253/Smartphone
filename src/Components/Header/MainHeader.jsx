@@ -8,27 +8,20 @@ function MainHeader(props) {
     const [show, setShow] = useState(false);
 
     return (
-        // <React.Fragment>    : dùng để gộp các phần tử lại để trả về và không tạo thêm phần tử dom
         <Header>  
-        <MainHeaders>
-           
+            <MainHeaders>
                 <div className='Wrapper__MainHeader'> 
-                    <TitleandProducts shows={setShow}/>
-                 
-                    <Search/>
-                    <Navigation_header/>
-                    </div>
-            
-               
-               
-        </MainHeaders>
-        {show ? ( <div className='Header'>  
+                  <TitleandProducts shows={setShow}/>
+                            <Search/>
+                       <Navigation_header/>
+                 </div>                             
+            </MainHeaders>    
+                {show ? ( <div className='Header'>  
                         <Menuheader addPadding={show}/>
-        </div>) 
-        : (
-                ""
-        )}
-        
+                </div>) 
+                : (
+                            ""
+                 )}         
         </Header>
         
     );
@@ -36,10 +29,10 @@ function MainHeader(props) {
 const Header = styled.div`
       
        .Header{
-        position: fixed;
-        z-index: 5;
-        top: 106px;
-        left: 105px;
+            position: fixed;
+            z-index: 5;
+            top: 95px;
+            left: 137px;
        }
 `
 const MainHeaders = styled.div`
@@ -52,7 +45,7 @@ background-color: black;
                 width: 100%;
               
                 display: grid;
-                grid-template-columns: 40% 30% 100%;
+                grid-template-columns: 30% 25% 100%;
                 margin: 0% 7% 0% 7%;
             }
            

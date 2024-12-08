@@ -28,8 +28,8 @@ const OppoComponent = ({data, namephone, ...props}) => (
 const DefaultComponent = ({data, namephone, ...props}) => (
     <Suspense fallback={(<Loading/>)}>  
     <React.Fragment>
-                    <Vd2/>
-                    <Vd3/>
+                    {/* <Vd2/>
+                    <Vd3/> */}
                     <ShowInfo namephone={data} enpoint={namephone}  {...props}/>
                  
     </React.Fragment>

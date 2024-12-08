@@ -7,9 +7,12 @@ import styled from 'styled-components';
 import useHandleApi from '../../../Api/useHandleApi';
 import Loading from '../components/Loading';
 import { Helmet } from 'react-helmet-async';
+import { set } from 'nprogress';
 function ShowInfo(props) {
                 let namephone = props.namephone;
                 let enpoints = props.enpoint;
+                const [link,setLink] = useState("");
+            
 
     if (!namephone.data) {
          <Loading/>; // Kiểm tra namephone.data nếu namephone có dữ liệu
@@ -52,9 +55,8 @@ const [enpoint, setEnpoint] = useState('');
         
             {namephone && namephone.data && namephone.data.length > 0 ? (
                 namephone.data.map((List) => (
-                   
+                 
                     <div key={List.id} className='Showphone__Info'>
-                   
                         <Link to={`/Detail/${enpoint}/${List.id}`}>
                             <Negotiate>
                                 <span> Giảm giá: {List.discount} </span>
@@ -85,15 +87,16 @@ const [enpoint, setEnpoint] = useState('');
 )
 }
 const Wrapper = styled.div`
-
+padding-top:30px;
+          margin: 0% 7% 0% 7%;
+          background-color:white;
 `
-
-
 const ShowPhone = styled.div `
         display: grid;
         grid-template-columns: 20% repeat(4, 20%);
-        margin: 0px 7% 0% 7%;
+        /* margin: 0px 7% 0% 7%; */
         grid-row-gap: 1rem;
+       padding-left:16px;
 
 // =================================phần chung ======================================
 .text {
@@ -127,12 +130,12 @@ const ShowPhone = styled.div `
 
 .Showphone__Info {
       padding: 1rem 1rem;
-    
       width: 90%;
       cursor: pointer;
       background-color: white;
       border-radius: 2rem;
-      box-shadow: 5px 5px 0.5px black;
+      box-shadow: 0 2px 3px black;
+                  /* 1px 0px 2px black; */
       
 }
 
@@ -161,28 +164,25 @@ display: grid;
 gap: 12px;
 }
 .Showphone__title {
-font-size:1.1rem;
-font-weight:700;
+    font-size:1.1rem;
+    font-weight:700;
 
 }
 
 img {
-width:100%;
+        width:100%;
 }
-
-
-
 `
 const Negotiate  = styled.div `
-  display: flex;
-  grid-column-gap: 2.5em;
+        display: flex;
+        grid-column-gap: 2.5em;
 
 `
 const Image = styled.div `
     width: 75%;
     margin-left: 1.5em;
-   display: flex;
-   justify-content:center;
+    display: flex;
+    justify-content:center;
 
 `
 export default ShowInfo;
