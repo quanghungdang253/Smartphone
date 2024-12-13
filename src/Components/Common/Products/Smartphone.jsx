@@ -6,7 +6,7 @@ import { Typography } from '@mui/material';
 import createTheme from '@mui/material';
 function Smartphone(props) {
     const value = props.value;
-    console.log(value);
+    console.log(value.phonecompany[0].name);
     
 
     return (
@@ -17,7 +17,7 @@ function Smartphone(props) {
                     value.phonecompany.map((list) => (
                          <Link  
                                 className='Link'
-                                to={`/label/${list.name}`} 
+                                to={`/label/${encodeURIComponent(list.name)}`} 
                                  key={list.id}> 
                                     {list.name}
                                     

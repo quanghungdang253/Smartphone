@@ -124,9 +124,9 @@ import { Helmet } from 'react-helmet';
 function Products_list(props) {  
   const params = useParams();
   let namephone = params.namephone;
-
+console.log(namephone);
   const [data, loading] = useHandleApi(namephone);
-  console.log(data);
+
  if(!data){
             <p> đang lấy data </p>
  }

@@ -2,12 +2,13 @@ import React from 'react';
 import { SamsungComponent,OppoComponent,DefaultComponent } from './HandleComponent';
 const ComponentMap = {
     "samsung": SamsungComponent,
-    "oppo": OppoComponent
+    "oppo": OppoComponent,
+   
 }
 
 function RenderbyCategory({namephone , data ,  ...props}) {
  
-    const SelectedComponent = ComponentMap[namephone] || DefaultComponent;
+    const SelectedComponent = ComponentMap[namephone] || DefaultComponent ; 
 
     return <SelectedComponent data={data} namephone={namephone} {...props} />
 

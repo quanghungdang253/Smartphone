@@ -6,12 +6,16 @@ import Loading from "../Components/Common/components/Loading";
 function useHandleApi(namephone) {  // xử lý hiển thị các điện thoại 
         const[ endpointInfo, setEnpointinFo] = useState(""); 
   console.log(endpointInfo);
+  console.log(namephone);
     useEffect(() => {
                   
 switch(namephone){
         case "homephone" || "Ipad" || "Iphone" || "Nokia" || "oppo" ||  "samsung" ||  "vivo"||  "Xiamio":
-                setEnpointinFo("InformationPhone")
-        break;
+                                setEnpointinFo("InformationPhone")
+                 break;
+        case "Camera Dahua": 
+                        setEnpointinFo("InformationCamera");
+                break;
 
         default: 
                         setEnpointinFo("InformationPhone")      
@@ -30,8 +34,9 @@ switch(namephone){
                     }
                 const handleGetdata = async() => {  // định nghĩa hàm bất đồng bộ                
              const apiUrl = namephone ?
-              `/Information/${endpointInfo}/${namephone}.json`
+              `/Information/${endpointInfo}/${encodeURIComponent(namephone)}.json`
                : `/Information/InformationPhone/homephone.json`;
+               console.log(apiUrl);
         
                                 try{
                                         const  getApi = await axiosClient.get(apiUrl);                           

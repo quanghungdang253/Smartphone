@@ -70,7 +70,6 @@ function Menuheader({addPadding}) {
                                 </div>                                                 
                            ))}
                         </div>
-                
                         <React.Fragment>                                      
                                 <div 
                                              className={`showitem ${ preindex !== null ? 'show' : ''}`}
@@ -78,7 +77,9 @@ function Menuheader({addPadding}) {
                                              onMouseLeave={() =>{
                                                          setIndex(null);
                                                         } }   
-                                >                                                                                                   { preindex !== null &&  <Smartphone value={product} /> } 
+                                                        
+                                >          
+                                { preindex !== null &&  <Smartphone value={product} /> } 
                                                  </div>    
                                    
                         </React.Fragment>

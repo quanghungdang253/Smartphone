@@ -1,0 +1,44 @@
+
+.Container{
+ display: flex;
+ flex-direction: column;
+ position: fixed;
+ grid-row-gap: 10px;
+ z-index: 1000;
+ right: 0;
+ bottom: 0;
+ background-color: aliceblue;
+ padding: 9px 5px 9px 5px;
+ border-top-left-radius: 10px;
+    .Btn{
+            border: none; 
+            box-shadow: 1px 0 3px 0 black;
+           transition: transform 0.2s ease, box-shadow 0.2s ease;
+       
+    }
+    .Btn:active {
+        transform: scale(0.95); /* Thu nhỏ nút khi bấm */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Giảm bóng */
+      }
+    .icon{
+        width: 30px;
+        height: 30px;  
+    }
+    .icon:hover{
+        transition: 0.5s ease ;
+        transform: translateY(-3px);
+    }
+    .Btn__Contact {
+        color: rgb(0, 199, 249);
+    }
+    .Btn__Facebook {
+            color: rgb(0, 42, 251);
+    }
+
+ 
+   
+}
+
+
+
+

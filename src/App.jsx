@@ -49,15 +49,20 @@ import MainHeader from './Components/Header/MainHeader';
 import React, { Suspense, lazy } from 'react';
 import Loading from './Components/Common/components/Loading';
 import { HelmetProvider } from 'react-helmet-async';
-import { createContext, useContext } from 'react';
+import CommunicationSettings from './Components/CommunicationSettings/CommunicationSettings';
+
+
+
 export default function App() {
   const Products_list  = React.lazy(() => import('./Components/Pages/Products_list/Products_list'))
   const Home = React.lazy(() => import("./Components/Pages/Home/Home"));
-  const InforPhone = React.lazy(() => import("./Components/Pages/InforPhone/InforPhone"))
+  const InforPhone = React.lazy(() => import("./Components/Pages/InforPhone/InforPhone"));
+
+  
     return (
         <Style>
             <div>
-        <HelmetProvider>   
+             <HelmetProvider>   
                 <MainHeader />
                   <Suspense fallback={(<Loading/>)}>              
                     <Routes>
@@ -66,16 +71,20 @@ export default function App() {
                         <Route path='/Detail/:link/:id' element={<InforPhone />} />   
                     </Routes>
                   </Suspense>
-        </HelmetProvider>
-              
-            </div>
-          
+                </HelmetProvider>             
+            </div> 
+            <div className='CommunicationSetting'>  
+                      <CommunicationSettings/>     
+            </div>               
         </Style>
     );
 }
 
 const Style = styled.div`
-    /* Your styles here */
+    
+    .CommunicationSeting{
+           
+    }
 
 `;
 const Navigations = styled.div`

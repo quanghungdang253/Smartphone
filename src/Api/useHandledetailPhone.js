@@ -14,6 +14,7 @@ const [data,setData] = useState(null);
             case "datasamsung" || "datavivo" || "dataPhone": 
                             setLink("dataPhone_Smartphone")
                     break;
+        
 
           default: 
                 setLink("dataPhone_Smartphone");
@@ -27,7 +28,7 @@ useEffect(() => {
     }
     const FetchAPI = async() => {
        
-        const URL = `/Phonedetails/${links}/${link}.json`; 
+        const URL = `/Phonedetails/${links}/${encodeURIComponent(link)}.json`; 
         console.log(URL);
       
          
