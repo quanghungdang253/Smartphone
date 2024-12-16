@@ -6,9 +6,7 @@ import { Typography } from '@mui/material';
 import createTheme from '@mui/material';
 function Smartphone(props) {
     const value = props.value;
-    console.log(value.phonecompany[0].name);
-    
-
+  
     return (
         <Wrapper>
              <PhoneCompany className='tabchoose'> 
@@ -19,8 +17,8 @@ function Smartphone(props) {
                                 className='Link'
                                 to={`/label/${encodeURIComponent(list.name)}`} 
                                  key={list.id}> 
-                                    {list.name}
-                                    
+
+                                    {list.name}                                  
                          </Link>      
                     ))
                   ): (

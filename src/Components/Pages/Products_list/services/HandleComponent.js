@@ -20,7 +20,7 @@ const SamsungComponent = ({data, namephone, ...props}) => (
 const OppoComponent = ({data, namephone, ...props}) => (
         <Suspense fallback={(<Loading/>)}>  
             <React.Fragment>
-                         <ListimageProduct image={data.advertising_images}/>
+                        
                         <ShowInfo namephone={data} enpoint={namephone}  {...props}/>
             </React.Fragment>
         </Suspense>

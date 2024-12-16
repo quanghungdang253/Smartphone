@@ -93,9 +93,9 @@ export const Provider = ({children}) => {
             })
     }
 
-    
+     
     return (
-            <Createcontext.Provider value={{bool,Button}}>
+            <Createcontext.Provider value={{bool,Button}}> {/*chia sẽ dữ liệu  */}
                     {children}       
             </Createcontext.Provider>
     )

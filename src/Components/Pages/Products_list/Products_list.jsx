@@ -120,32 +120,31 @@ import categoryComponentsConfig from './services/HandleComponent';
 import Productads from '../Home/Components/Productads';
 import RenderbyCategory from './services/RenderbyCategory';
 import styled from 'styled-components';
+import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
 import { Helmet } from 'react-helmet';
 function Products_list(props) {  
   const params = useParams();
   let namephone = params.namephone;
-console.log(namephone);
+ const { theme } = useValue();
   const [data, loading] = useHandleApi(namephone);
 
  if(!data){
             <p> đang lấy data </p>
  }
-  return (
-    <Product>
-           
-      {!data ? (
-                    <h1>Chào mừng bạn!</h1>
-      ) : (
-        <div>
-        {/* cú pháp desstructuring  RenderbyCategory*/}
+   {/* cú pháp desstructuring  RenderbyCategory*/}
 
        {/* cách 1 : render theo hàm javascript thông thường */}
         {/* {RenderbyCategory({namephone, data, ...props}) }  */}
         {/* cách 2: render theo cú pháp JSX  */}
         {/* <RenderbyCategory  {...{namephone,data,...props}} /> */}
         {/* cách 3: render theo jsx hay dùng */}
-        <RenderbyCategory namephone={namephone} data={data} {...props}/>
-        
+  return (
+    <Product> 
+      {!data ? (
+                    <h1>Chào mừng bạn!</h1>
+      ) : (
+        <div>
+          <RenderbyCategory namephone={namephone} data={data} {...props}/>
         </div>
       )}
     </Product>

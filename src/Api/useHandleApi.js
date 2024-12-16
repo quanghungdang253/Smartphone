@@ -5,53 +5,45 @@ import { Switch } from "@mui/material";
 import Loading from "../Components/Common/components/Loading";
 function useHandleApi(namephone) {  // xử lý hiển thị các điện thoại 
         const[ endpointInfo, setEnpointinFo] = useState(""); 
-  console.log(endpointInfo);
-  console.log(namephone);
+        let PhoneBrands = ["homephone", "Ipad" , "Iphone", "Nokia","samsung", "vivo", "Xiamio"];
+        let CameraBrands = ["Camera Dahua", "Camera Hikvision"]
     useEffect(() => {
-                  
-switch(namephone){
-        case "homephone" || "Ipad" || "Iphone" || "Nokia" || "oppo" ||  "samsung" ||  "vivo"||  "Xiamio":
-                                setEnpointinFo("InformationPhone")
-                 break;
-        case "Camera Dahua": 
-                        setEnpointinFo("InformationCamera");
-                break;
-
-        default: 
-                        setEnpointinFo("InformationPhone")      
-        break;
-}      
+        
+                    if(PhoneBrands.includes(namephone)){ // includes tìm phần tử khớp với trong mảng 
+                            setEnpointinFo("InformationPhone");
+                    }
+                    else if(CameraBrands.includes(namephone)){
+                            setEnpointinFo("InformationCamera");
+                    }else{
+                            setEnpointinFo("InformationPhone");
+                    }
     },[namephone])
 
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
-    if(!endpointInfo){
-                
-    }
+  
         useEffect(() => {
                 if (!endpointInfo) {
-                        return;
+                                return;
                     }
                 const handleGetdata = async() => {  // định nghĩa hàm bất đồng bộ                
-             const apiUrl = namephone ?
-              `/Information/${endpointInfo}/${encodeURIComponent(namephone)}.json`
-               : `/Information/InformationPhone/homephone.json`;
-               console.log(apiUrl);
-        
+                        const apiUrl = namephone ?
+                            `/Information/${endpointInfo}/${encodeURIComponent(namephone)}.json`
+                            : `/Information/InformationPhone/homephone.json`;              
                                 try{
                                         const  getApi = await axiosClient.get(apiUrl);                           
-                                        setLoading(true);
-                                        setData(getApi);
-                                }
+                                            setLoading(true);
+                                                setData(getApi);
+                                   }
                                 catch(error){
-                                                alert(" có lỗi ");
-                                }
+                                               console.log("Lỗi");
+                                    }
                                 finally{
                                                 setLoading(false);
-                                }
+                                   }
                         } 
                         handleGetdata();        
-              },[endpointInfo])
+              },[endpointInfo,namephone])
               return [data,loading];     
 }
          

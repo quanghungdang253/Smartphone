@@ -50,7 +50,7 @@ import React, { Suspense, lazy } from 'react';
 import Loading from './Components/Common/components/Loading';
 import { HelmetProvider } from 'react-helmet-async';
 import CommunicationSettings from './Components/CommunicationSettings/CommunicationSettings';
-
+import { ParentContext } from './Context/Settings/Theme/ThemeContext';
 
 
 export default function App() {
@@ -61,6 +61,7 @@ export default function App() {
   
     return (
         <Style>
+         <ParentContext>  
             <div>
              <HelmetProvider>   
                 <MainHeader />
@@ -73,15 +74,16 @@ export default function App() {
                   </Suspense>
                 </HelmetProvider>             
             </div> 
-            <div className='CommunicationSetting'>  
+                  <div className='CommunicationSetting'>  
                       <CommunicationSettings/>     
-            </div>               
+                  </div> 
+              </ParentContext>          
         </Style>
     );
 }
 
 const Style = styled.div`
-    
+  
     .CommunicationSeting{
            
     }

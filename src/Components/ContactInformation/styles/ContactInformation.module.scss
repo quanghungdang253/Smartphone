@@ -1,9 +1,9 @@
 
-.Container{
+.Container_icon{
  display: flex;
  flex-direction: column;
  position: fixed;
- grid-row-gap: 10px;
+ grid-row-gap: 15px;
  z-index: 1000;
  right: 0;
  bottom: 0;
@@ -12,7 +12,6 @@
  border-top-left-radius: 10px;
     .Btn{
             border: none; 
-            box-shadow: 1px 0 3px 0 black;
            transition: transform 0.2s ease, box-shadow 0.2s ease;
        
     }

@@ -7,13 +7,14 @@ import styled from 'styled-components';
 import useHandleApi from '../../../Api/useHandleApi';
 import Loading from '../components/Loading';
 import { Helmet } from 'react-helmet-async';
-import { set } from 'nprogress';
+import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
 function ShowInfo(props) {
+     const { theme } = useValue();
+
+    
                 let namephone = props.namephone;
                 let enpoints = props.enpoint;
                 const [link,setLink] = useState("");
-            
-
     if (!namephone.data) {
          <Loading/>; // Kiểm tra namephone.data nếu namephone có dữ liệu
     } else {
@@ -45,18 +46,16 @@ const [enpoint, setEnpoint] = useState('');
     return <Loading />;
 }
     return (
-        <Wrapper>
+        <Wrapper className={`Wrapper ${!theme ? 'Dark' : ''}`}>
                      <Helmet>
                          {enpoints && ( <title> {`Điện thoại ${enpoints} - Hùng Store`}   </title>)} 
                             
                      </Helmet>
-        <ShowPhone>
-         {/* ở đây mình tiến hành kt trước vì khi hook gọi api thì data chưa trả về ngay nếu k kiểm tra dẫn đến giá trị null   */}
-        
+        <ShowPhone className={theme ? 'Bright_1' : "Dark_1" }>
             {namephone && namephone.data && namephone.data.length > 0 ? (
                 namephone.data.map((List) => (
                  
-                    <div key={List.id} className='Showphone__Info'>
+                    <div key={List.id} className={`Showphone__Info ${theme ? 'Color__Bright' : 'Color__Dark'}`}>
                         <Link to={`/Detail/${enpoint}/${List.id}`}>
                             <Negotiate>
                                 <span> Giảm giá: {List.discount} </span>
@@ -71,10 +70,12 @@ const [enpoint, setEnpoint] = useState('');
                             <h3 className='price '>{List.price}</h3>
                             <h3 className='pricedown'> {List.priceDown} </h3>
                         </div>
-                            <h3 className='title text'> {List.title}</h3>
+                        <div className='text'>  
+                            <h3 className='text title '> {List.title}</h3>
                             <p 
                                 className='text'>  Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng                                     
                             </p>
+                        </div>
                         </Link>
                     </div>
                 ))
@@ -87,20 +88,42 @@ const [enpoint, setEnpoint] = useState('');
 )
 }
 const Wrapper = styled.div`
+        //  ===================== phần thiết lập đổi màu nền ======================
+        .Bright_1{
+                    background-color:#EEEEEE;
+        }
+        .Dark_1{
+                    background-color:#999999;
+        }
+
+        .Color__Bright{
+                background-color: #FFFFFF
+        }
+        .Color__Dark {
+                        background-color:black;
+                        
+        }
+
+
+        //===========================================================
+
+
+
+
 padding-top:30px;
           margin: 0% 7% 0% 7%;
-          background-color:white;
+         
 `
 const ShowPhone = styled.div `
         display: grid;
         grid-template-columns: 20% repeat(4, 20%);
-        /* margin: 0px 7% 0% 7%; */
         grid-row-gap: 1rem;
        padding-left:16px;
 
 // =================================phần chung ======================================
 .text {
-   
+    padding:5px 5px;
+   margin-bottom:5px;
     background-color: #f3f4f6;
     border-radius: 1rem;
     font-weight: 500;
@@ -132,7 +155,6 @@ const ShowPhone = styled.div `
       padding: 1rem 1rem;
       width: 90%;
       cursor: pointer;
-      background-color: white;
       border-radius: 2rem;
       box-shadow: 0 2px 3px black;
                   /* 1px 0px 2px black; */

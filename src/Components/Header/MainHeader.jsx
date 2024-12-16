@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Search from './Components/Search';
 import { TitleandProducts } from './Components/TitleandProducts';
 import Navigation_header from './Components/Navigation_header';
 import Menuheader from '../Common/Menuheader';
+import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import styled from 'styled-components';
 function MainHeader(props) {
+
+let { theme } = useValue();
+
+
     const [show, setShow] = useState(false);
 
     return (
@@ -27,7 +32,8 @@ function MainHeader(props) {
     );
 }
 const Header = styled.div`
-      
+      background-color:black;   
+       height:100%;
        .Header{
             position: fixed;
             z-index: 5;
@@ -36,11 +42,12 @@ const Header = styled.div`
        }
 `
 const MainHeaders = styled.div`
+background-color:black;
 position: fixed;
 z-index: 5;
 width: 100%;
 
-background-color: black;
+
             .Wrapper__MainHeader{
                 width: 100%;
               
