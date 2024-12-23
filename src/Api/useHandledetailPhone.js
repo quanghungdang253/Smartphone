@@ -9,17 +9,17 @@ function useHandledetailApi(link,id) {   // xử lý hiển thị thông tin chi
 const [links, setLink] = useState("");
 const [loading, setLoading] = useState(true);
 const [data,setData] = useState(null);
-    useEffect(() => {
-        switch(link){
-            case "datasamsung" || "datavivo" || "dataPhone": 
-                            setLink("dataPhone_Smartphone")
-                    break;
-        
+let DataSmartphone = ["datasamsung","datavivo","dataPhone","dataOppo"];
 
-          default: 
+    useEffect(() => {
+         if(DataSmartphone.includes(link)){
+                    setLink("dataPhone_Smartphone");
+
+         } else {
                 setLink("dataPhone_Smartphone");
-            break;
-        }
+         }
+
+          
 },[links])
 
 useEffect(() => {   

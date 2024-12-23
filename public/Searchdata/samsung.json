@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Samsung Galaxy A16 5G 8GB 128GB",
+        "label":"dataPhone",
+        "brand": "Samsung",
+        "category": "Smartphone",
+        "price": 999,
+        "image": "https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/samsung_galaxy_a16_5g_xanh_1_10d99ea2fc.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Samsung Galaxy A15 128GB",
+        "label":"dataPhone",
+        "brand": "Samsung",
+        "category": "Smartphone",
+        "price": 899,
+        "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2023_12_11_638379104038503416_samsung-galaxy-a15-den-5.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Samsung Galaxy Fit3",
+        "brand": "Samsung",
+        "category": "Smartphone",
+        "price": 1099,
+        "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Samsung Galaxy Watch7 LTE 44mm",
+        "brand": "Samsung",
+        "category": "Foldable Smartphone",
+        "price": 1799,
+        "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_watch7_44mm_green_da4bc21dde.pn"
+    },
+    {
+        "id": 5,
+        "name": "Samsung Galaxy A52",
+        "brand": "Samsung",
+        "category": "Smartphone",
+        "price": 499,
+        "image": "https://example.com/images/a52.jpg"
+    },
+    {
+        "id": 6,
+        "name": " I phone",
+        "brand": "Samsung",
+        "category": "Smartphone",
+        "price": 599,
+        "image": "https://example.com/images/a72.jpg"
+    }
+]

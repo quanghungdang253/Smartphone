@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Sidebar(props) {
+function Search(props) {
     return (
         <div>
-                
+            
         </div>
     );
 }
 
-export default Sidebar;
+export default Search;

@@ -7,11 +7,19 @@ import { Helmet } from "react-helmet-async";
 import FetchAPI from "../services/PhoneAPI";
 // import { Overlayer } from "../Home/Main__Home/Home";
  function InformationPhones({Data}) {
+  //  let DetailInfor = [
+  //       {name: "Màn hình", parameter: Data.title},
+  //       {name: "Độ phân giải", parameter: Data.Data.screen_size }
+
+  //  ]
+        
+
+   
      return (
         <Description>
     {/* truyền cho component PhoneAPI một hàm  */}
                 <Helmet>
-                            <title>   {Data.title}    </title>
+                            <title>  {Data.title}    </title>
                 </Helmet>
               <PhoneDescription>
                     <section className="Wrapper">                                                                    
@@ -44,7 +52,6 @@ import FetchAPI from "../services/PhoneAPI";
                             </aside>
                             <hr/>
               <Wrapper__rowbody> 
-                         
                   <section className="Wrapper__Content">   
                       <h1 className="Wrapper__Title"> Thông số kĩ thuật </h1>
                         <table className="Wrapper__table">
@@ -110,17 +117,13 @@ import FetchAPI from "../services/PhoneAPI";
                         <div className="btn btnBuy">
                                 <button className="btn__Buy"> Mua ngay </button>
                         </div>
-                      
                      </section>
                    
                   </Wrapper__rowbody>
                      </figure>
 
-                 
                 </section>
               </PhoneDescription>
-            
-          
         </Description>
       );
     }
@@ -243,15 +246,16 @@ td {
     border-radius: 10px;
   }
   .Wrapper__Content {
+
             max-width:40rem;
             background-color: white;
             padding: 1rem 1rem;
             border-radius: 3rem;
 }
 .Wrapper__Title {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-size: 1.6rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+  font-size: 1.2rem;
   color: #000000;
   text-align:start;
   margin-bottom: 1rem;

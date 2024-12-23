@@ -5,6 +5,7 @@ import Navigation_header from './Components/Navigation_header';
 import Menuheader from '../Common/Menuheader';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import styled from 'styled-components';
+import Vd1 from '../../vd';
 function MainHeader(props) {
 
 let { theme } = useValue();
@@ -17,10 +18,11 @@ let { theme } = useValue();
             <MainHeaders>
                 <div className='Wrapper__MainHeader'> 
                   <TitleandProducts shows={setShow}/>
-                            <Search/>
+                             <Search/> 
                        <Navigation_header/>
                  </div>                             
-            </MainHeaders>    
+            </MainHeaders> 
+            
                 {show ? ( <div className='Header'>  
                         <Menuheader addPadding={show}/>
                 </div>) 
@@ -50,7 +52,7 @@ width: 100%;
 
             .Wrapper__MainHeader{
                 width: 100%;
-              
+                
                 display: grid;
                 grid-template-columns: 30% 25% 100%;
                 margin: 0% 7% 0% 7%;

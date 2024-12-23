@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import Componenticon from './Componenticon';
+// import Componenticon from './Componenticon';
 import Smartphone from './Products/Smartphone';
 import Link_phone from './data/Link_phone.json';
 import  Link_laptop from './data/Link_laptop.json';

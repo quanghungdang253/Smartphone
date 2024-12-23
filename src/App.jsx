@@ -51,6 +51,7 @@ import Loading from './Components/Common/components/Loading';
 import { HelmetProvider } from 'react-helmet-async';
 import CommunicationSettings from './Components/CommunicationSettings/CommunicationSettings';
 import { ParentContext } from './Context/Settings/Theme/ThemeContext';
+import Vd1 from './vd';
 
 
 export default function App() {
@@ -78,6 +79,8 @@ export default function App() {
                       <CommunicationSettings/>     
                   </div> 
               </ParentContext>          
+             
+              
         </Style>
     );
 }

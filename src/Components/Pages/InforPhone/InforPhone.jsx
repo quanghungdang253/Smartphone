@@ -14,11 +14,8 @@ function InforPhone(props) {
     const id = params.id;
 
     const [datas,loadings]  = useHandledetailApi(link,id); // nhận dữ liệu và gọi để truyền link và id để xử lý 
-  
-
     return (
                 <Wrapper>
-             
                        <div className='main'>  {/* thẻ section dùng để chia nội dụng thành các phần khác nhau  */}                 
                             {loadings ? (                           
                                     <Loading/>

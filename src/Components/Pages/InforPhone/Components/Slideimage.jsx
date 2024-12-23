@@ -102,6 +102,18 @@ console.log(image);
 
 }
 const Wrapper = styled.div `
+.contact {
+        max-width:300px;
+       display:grid;
+       grid-row-gap:1rem;
+}
+.Wrapper__contact {
+        display: flex;  
+        justify-content:start;
+       
+        align-items:center;
+        
+}
         /* background-color: #1d1d1f; */
         width: 600px;
       .HandleImage__button:hover{
@@ -113,6 +125,7 @@ const Wrapper = styled.div `
       .HandleImage__button.selected {
                         border: 4px solid red;
                 }
+                
 
 `
 const HandleImage = styled.div `
@@ -121,7 +134,6 @@ margin: 0 auto;
 overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và sẽ ẩn đi
 
        
-        
 .HandleImage__image {
                 display: flex;
                 align-items:center;
@@ -149,6 +161,5 @@ overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và 
                         width:5rem;
                 }
 }
-
 `
 export default Slideimage;

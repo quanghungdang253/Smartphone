@@ -6,7 +6,7 @@ import Loading from "../Components/Common/components/Loading";
 function useHandleApi(namephone) {  // xử lý hiển thị các điện thoại 
         const[ endpointInfo, setEnpointinFo] = useState(""); 
         let PhoneBrands = ["homephone", "Ipad" , "Iphone", "Nokia","samsung", "vivo", "Xiamio"];
-        let CameraBrands = ["Camera Dahua", "Camera Hikvision"]
+        let CameraBrands = ["Camera Dahua", "Camera Hikvision","Camera Tiandy","Camera Panasonic"]
     useEffect(() => {
         
                     if(PhoneBrands.includes(namephone)){ // includes tìm phần tử khớp với trong mảng 

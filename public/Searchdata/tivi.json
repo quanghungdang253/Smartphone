@@ -1,0 +1,26 @@
+[
+    {
+        "id": 7,
+        "name": "Ti vi đẹp ",
+        "brand": "Samsung",
+        "category": "Điện thoại Tivi",
+        "price": 3500,
+        "image": "https://example.com/images/qled8k.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Samsung 4K UHD TV",
+        "brand": "Samsung",
+        "category": "Điện thoại Tivi",
+        "price": 1500,
+        "image": "https://example.com/images/uhdtv.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Samsung 65\" Smart TV",
+        "brand": "Samsung",
+        "category": "Điện thoại Tivi",
+        "price": 2000,
+        "image": "https://example.com/images/smarttv.jpg"
+    }
+]
