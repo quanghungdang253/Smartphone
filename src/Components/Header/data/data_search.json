@@ -1,0 +1,68 @@
+
+{
+    "search_trends": [
+    {
+            "id":1,
+            "enpoint": "samsung",
+            "name": "Samsung Galaxy đời mới",
+            "image":"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/s/ss-s24-ultra-xam-222.png"
+    },
+    {
+            "id":2,
+            "enpoint": "IPhone",
+            "name": "Bàn phím cơ",
+            "image": "https://product.hstatic.net/200000420363/product/ban-phim-co-machenike-k600t-b82-3_a8ac475811304ad5bd5119fd9c9a64dd_master.png"
+    },
+    {
+          "id":3,
+          "enpoint": "IPhone",
+          "name": "Camera an ninh giá tốt",
+          "image": "https://viettel-digital.com/wp-content/uploads/2022/01/Camera-HC3-02.jpg"
+    },
+    {
+         "id":4,
+         "enpoint": "IPhone",
+         "name": "Ipad Pro",
+         "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_13_12.png"
+     },
+     {
+         "id":5,
+         "enpoint": "IPhone",
+         "name": "Macbook Pro 2025",
+         "image": "https://minhtuanmobile.com/uploads/products/240615035944-macbook-air-m1-13-inch-8gb256gb-gray.png"
+     },{
+         "id":6,
+         "enpoint": "IPhone",
+         "name": "OPPO FIND 8",
+         "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-oppo-find-x8-xam-1.png"
+     },
+     {
+        "id":7,
+        "enpoint": "IPhone",
+        "name": "Dòng Iphone 16 đời mới ",
+        "image": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone-16-pro-max-titan-den.png"
+    },
+    {
+        "id":8,
+        "enpoint": "IPhone",
+        "name": "Tai nghe huawei ",
+        "image": "https://cdn-v2.didongviet.vn/files/products/2024/8/25/1/1727247561412_tai_nghe_bluetooth_soundpeats_air4_bia_didongviet_png.jpg"
+    },
+    {
+        "id":9,
+        "enpoint": "IPhone",
+        "name": "Laptop dell, Gaming đồ họa  ",
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_31__3_18.png"
+    },
+    {
+        "id":10,
+        "enpoint": "IPhone",
+        "name": "Pc Gaming hot,cấu hình khỏe",
+        "image": "https://minhancomputer.com/media/news/2708_may-tinh-do-hoa-gia-re.jpg"
+    }
+    
+],
+"enpoint": ["samsung","tivi"]
+
+
+}

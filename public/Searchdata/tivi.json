@@ -5,7 +5,7 @@
         "brand": "Samsung",
         "category": "Điện thoại Tivi",
         "price": 3500,
-        "image": "https://example.com/images/qled8k.jpg"
+        "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_watch7_44mm_green_da4bc21dde.png"
     },
     {
         "id": 8,
@@ -13,7 +13,7 @@
         "brand": "Samsung",
         "category": "Điện thoại Tivi",
         "price": 1500,
-        "image": "https://example.com/images/uhdtv.jpg"
+        "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_watch7_44mm_green_da4bc21dde.png"
     },
     {
         "id": 9,
@@ -21,6 +21,6 @@
         "brand": "Samsung",
         "category": "Điện thoại Tivi",
         "price": 2000,
-        "image": "https://example.com/images/smarttv.jpg"
+        "image":"https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_watch7_44mm_green_da4bc21dde.png"
     }
 ]
