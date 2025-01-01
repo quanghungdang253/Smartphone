@@ -4,8 +4,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    const InformationPhone = (props)
-                                                                        // const {image} = props
-console.log(image);
+                                                                        // const {image= p
         const [preimage , setimage] = useState(image);
         const [preindex , setindex] = useState(0);
         useEffect(() => {
@@ -42,11 +41,11 @@ console.log(image);
                                         <Button variant='outlined' onClick={() => Left()}> ⬅ </Button>
                                         <Button variant='outlined'  onClick={() => Right()}> ➡ </Button>
                                 </div>
-                                <li style={{width: '300'}}>  
-                                                <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt=''  /> 
+                                <div className='list__image'>  
+                                                <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt='' className="main__image" /> 
                                                
                                                
-                                </li>   
+                                </div>   
                         </ul>
                 <div className='HandleImage_Slide'>
                     {preimage.map((image,index) => {   // index của map tính từ 0 
@@ -56,7 +55,7 @@ console.log(image);
                             onClick={() =>setindex(index)} 
                             className={`HandleImage__button ${index === preindex ? 'selected' : ''}`} >
                             
-                             <img src={image} alt=''/>
+                                        <img src={image} alt=''/>
                              </button>   
                         )
                 })}             
@@ -102,6 +101,8 @@ console.log(image);
 
 }
 const Wrapper = styled.div `
+
+border: 2px solid red;
 .contact {
         max-width:300px;
        display:grid;
@@ -114,8 +115,9 @@ const Wrapper = styled.div `
         align-items:center;
         
 }
+
         /* background-color: #1d1d1f; */
-        width: 600px;
+
       .HandleImage__button:hover{
                         border: 4px solid red;
                 }
@@ -129,20 +131,27 @@ const Wrapper = styled.div `
 
 `
 const HandleImage = styled.div `
-width: 1300px;  
+padding: 2rem;
+
 margin: 0 auto;
 overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và sẽ ẩn đi
+.list__image {
+                display: flex;
+                justify-content: center;
 
+}
        
 .HandleImage__image {
                 display: flex;
                 align-items:center;
-                justify-content: start;
-                padding: 0 0 0 4rem;
+                justify-content: center;
+                
+                border: 1px solid black;
+                background-color:red;
 }
 .HandleImage__image img {
-     
-                width: 300px;
+                
+                width: 90%;
                 height:300px;
                 object-fit: contain;
                 transition: opacity 0.8s ease-in-out;

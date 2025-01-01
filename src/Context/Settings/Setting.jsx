@@ -1,22 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 import Customs from './Theme/components/Customs';
 
 
+ 
+
  function Setting(props) {
+
+
         let theme = props.setting;
          const Closeform = () => {
                     theme(true);
          }
+     
+       
     return (
         <Container>   
             <button 
-            className='Btn Btn_setting'
-             onClick={() => Closeform()} >
-                  <FontAwesomeIcon icon={faGear} className='icon'/>
-            </button>
+                 className='Btn Btn_setting'
+                 onClick={() => Closeform()} >
+                        <FontAwesomeIcon icon={faGear} className='icon'/>  {/* icon đóng form theme  */ }
+             </button>
         </Container>
     );
 }

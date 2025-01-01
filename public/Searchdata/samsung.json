@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "name": "Samsung Galaxy A16 5G 8GB 128GB",
+        "name": "Samsung Galaxy S24 Ultra 12GB 256GB",
         "label":"dataPhone",
         "brand": "Samsung",
         "category": "Smartphone",
         "price": "3.699.000 đ",
-        "image": "https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/samsung_galaxy_a16_5g_xanh_1_10d99ea2fc.jpg"
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-xam_1_3.png"
     },
     {
         "id": 2,

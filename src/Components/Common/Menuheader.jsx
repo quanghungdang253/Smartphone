@@ -6,7 +6,8 @@ import { useState } from 'react';
 import Smartphone from './Products/Smartphone';
 import Link_phone from './data/Link_phone.json';
 import  Link_laptop from './data/Link_laptop.json';
-import Link_camera from './data/Link_camera.json'
+import Link_camera from './data/Link_camera.json';
+import Link_earphone from './data/Link_earphone.json';
 import { listClasses } from '@mui/material';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import {ReactComponent as IconarrowRight} from "./icon/arrowRight.svg";
@@ -38,7 +39,7 @@ function Menuheader({addPadding}) {
         { id: 3, items: Link_laptop},
         { id: 4, items: Link_laptop},
         { id: 5, items: Link_laptop},
-        { id: 6, items: Link_laptop},
+        { id: 6, items: Link_earphone},
         { id: 7, items: Link_laptop},
         { id: 8, items: Link_laptop},
         { id: 9, items: Link_laptop},
@@ -48,6 +49,7 @@ function Menuheader({addPadding}) {
         <Wrapper        
                         onMouseEnter={() => setIndex(preindex)}  // hoạt động khi người dùng di chuyển chuôt vào 
                         onMouseLeave={() => setIndex(null)}
+                      className= "show" 
         >
       
                 <div className={`Wrapper__label ${addPadding ? "addpadding" : ""} ${theme ? 'Bright' : 'Dark'} `}> 
@@ -97,7 +99,6 @@ function Menuheader({addPadding}) {
 }
 const Wrapper = styled.div `
 
-
         // ==============================phần theme ==============================
         .Bright {
             background-color:white;
@@ -116,25 +117,33 @@ const Wrapper = styled.div `
         width: 20rem;
         height: 100%;
          display: flex;
-         position: relative;
+       
+      
    
        .label_icon {
             display:flex;
             grid-column-gap:10px;
        }
         .showitem {
-                  position: absolute; 
-                  left: 20rem;   
-                  opacity: 0;
                   width:58rem;
+                  position: absolute;
+                  margin-left:20rem;
+                  opacity: 0;
+                
+
+               
                   
         }
         .showitem.show {
-                        opacity: 1;  
+                        opacity: 1; 
+                        
+                      
+                       
+                         
 
                 }
     .Wrapper__label--menu {
-             
+            
              cursor: pointer;
              padding: 0.8rem;
             display: flex;

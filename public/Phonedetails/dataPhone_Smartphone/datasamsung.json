@@ -1,12 +1,12 @@
 [
     {      
         "id" : 1,
-        "title": "Apple iPhone 6S Plus 16GBqưdfwfwefwefwefwfwfwfwefwe",
-        "image": ["/image/1iphone6.jpg",
-                  "/image/2iphone6.png",
-                  "/image/3iphone6.jpg",
-                  "/image/4iphone6.jpg",
-                  "/image/5iphone6.webp"
+        "title": "Samsung Galaxy A16 5G 8GB 128GB",
+        "image": ["https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-xam-4-750x500.jpg",
+                  "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-xam-4-750x500.jpg",
+                  "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-xam-6-750x500.jpg",
+                  "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-xam-7-750x500.jpg",
+                  "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-xam-8-750x500.jpg"
                   ],
    
         "screen_size": "6.9inches",
@@ -28,12 +28,13 @@
   },
   {
     "id" : 2,
-    "title":      "Apple iPhone 6S Plus 16GB",
-    "image": [    "/image/samsungZ-form.webp",
-                  "/image/samsungZ-form1.webp",
-                  "/image/samsungZ-form2.webp",
-                  "/image/samsungZ-form3.webp",
-                  "/image/samsungZ-form4.webp"
+    "title":      "Samsung Galaxy M55 (12GB 256GB)"
+,
+    "image": [    "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe-slider.png",
+                  "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_3_.png",
+                  "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_3__4.png",
+                  "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_2__4.png",
+                  "https://cdn2.cellphones.com.vn/x/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_1__4.png"
                   ],
         "screen_size": "6.9inches",
         "screen_technology" : "Super Retina XDR OLED",
@@ -54,14 +55,16 @@
   },
   {
     "id" : 3,
-    "title": "iPad 10.9 inch 2022 Wifi (Gen 10) ",
-    "image": ["/image/iphone-15-hinh-4.jpg",
-                  "/image/iphone-15-hinh-5.jpg",
-                  "/image/iphone-15-xanh-la.jpg",
-                  "/image/iphone-15-hinh1-1.jpg",
-                  "/image/iphone-15-xanh-la.jpg",
-                  "/image/iphone-15-hinh1-3.jpg"
-                  ],
+    "title": "Đồng hồ Samsung Galaxy Fit 3",
+    "image": ["https://cdn2.cellphones.com.vn/x/media/catalog/product/d/o/dong-ho-samsung-galaxy-fit-3_7__1.png",
+    "https://cdn2.cellphones.com.vn/x/media/catalog/product/d/o/dong-ho-samsung-galaxy-fit-3_6__1.png",
+    "https://cdn2.cellphones.com.vn/x/media/catalog/product/d/o/dong-ho-samsung-galaxy-fit-3_5__1.png",
+    "https://cdn2.cellphones.com.vn/x/media/catalog/product/d/o/dong-ho-samsung-galaxy-fit-3_3__1.png",
+    "https://cdn2.cellphones.com.vn/x/media/catalog/product/d/o/dong-ho-samsung-galaxy-fit-3_4__1.png" 
+],
+  
+
+                  
         "screen_size": "6.9inches",
         "screen_technology" : "Super Retina XDR OLED",
         "rear_camera": "Camera chính: 48MP chống rung quang học Camera góc siêu rộng: 48MP, 13 mm,ƒ/2.2 và trường ảnh 120°, Hybrid Focus Pixels, ảnh có độ phân giải ",
@@ -81,11 +84,16 @@
   },
   {
     "id" : 4,
-    "title": "Apple iPhone 6S Plus 16GB",
-    "image": ["/image/1iphone6.jpg",
-                  "/image/2iphone6.png",
-                  "/image/3iphone6.jpg"
-                  ],
+    "title": "Samsung Galaxy M55 (12GB 256GB)",
+    "image": [
+      "https://cdn2.cellphones.com.vn/x/media/catalog/product/s/a/samsung_galaxy_m55_12gb_256gb_-_1.png",
+      "https://cdn2.cellphones.com.vn/x/media/catalog/product/s/a/samsung_galaxy_m55_12gb_256gb_-_2.png",
+      "https://cdn2.cellphones.com.vn/x/media/catalog/product/s/a/samsung_galaxy_m55_12gb_256gb_-_3.png",
+      "https://cdn2.cellphones.com.vn/x/media/catalog/product/s/a/samsung_galaxy_m55_12gb_256gb_-_4.png",
+      "https://cdn2.cellphones.com.vn/x/media/catalog/product/s/a/samsung_galaxy_m55_12gb_256gb_-_5.png",
+      "https://cdn2.cellphones.com.vn/x/media/catalog/product/d/i/dien-thoai-samsung-galaxy-m55.png"
+
+    ],
         "screen_size": "6.9inches",
         "screen_technology" : "Super Retina XDR OLED",
         "rear_camera": "Camera chính: 48MP chống rung quang học Camera góc siêu rộng: 48MP, 13 mm,ƒ/2.2 và trường ảnh 120°, Hybrid Focus Pixels, ảnh có độ phân giải ",

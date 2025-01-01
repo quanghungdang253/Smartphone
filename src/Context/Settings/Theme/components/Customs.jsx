@@ -1,22 +1,31 @@
 
 
 
-    import React, { useEffect, useState } from 'react';
+    import React, { useEffect, useRef, useState } from 'react';
 import { use } from 'react';
 import styled from 'styled-components';
 import Dark from './Dark__Bright';
-import Themeprovider from '../Themeprovider';
 import {faRectangleXmark} from '@fortawesome/free-solid-svg-icons';  // sử dụng thư viên khác vì không hợp lệ trong Font 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Customs(props) {
-    const theme = props.setting;
-    
+     const theme = props.setting;
+     const containerRef = useRef(null);
+    const CloseformSettings = (event) => {
+      if(containerRef.current && !containerRef.current.contains(event.target))
+              theme(false);
+  }
+useEffect(() => {
+       document.addEventListener('mousedown', CloseformSettings);
+
+      return () => document.removeEventListener('mousedown', CloseformSettings);
+},[])
   return (
-    <Container>
+    <Container id='Container' ref={containerRef}>
       <div>
           <button onClick={() => theme(false)}>
-                        <FontAwesomeIcon icon={faRectangleXmark} shake className='iconClose' />
+                        <FontAwesomeIcon icon={faRectangleXmark} shake className='iconClose' />  {/* icon đóng form  */}
           </button>
+          
       </div>
             <Dark/>
     </Container>

@@ -1,21 +1,21 @@
 
 {
     "data": [
-        {      
+{      
         "id" : 1,
         "discount": "20%",
         "installment": "0%",     
-        "image": "https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/samsung_galaxy_a16_5g_xanh_1_10d99ea2fc.jpg",
+        "image": "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-xam-4-750x500.jpg",
         "title": "Samsung Galaxy A16 5G 8GB 128GB",
         "price": "2.200.000đ"
        
-  },
-  {      
+},
+{      
     "id" : 2,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2023_12_11_638379104038503416_samsung-galaxy-a15-den-5.jpg",
-    "title": "Samsung Galaxy A15 128GB",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_3__4.png",
+    "title": "Samsung Galaxy S24 FE 5G 8GB 128GB",
     "price": "5.000.000đ"
    
 },
@@ -26,14 +26,13 @@
     "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg",
     "title": "Samsung Galaxy Fit3",
     "price": "2.200.000đ"
-    
 },
 {      
     "id" : 4,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_watch7_44mm_green_da4bc21dde.png",
-    "title": "Samsung Galaxy Watch7 LTE 44mm",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-m55.png",
+    "title": "Samsung Galaxy M55 (12GB 256GB)",
     "price": "2.200.000đ"
     
 },

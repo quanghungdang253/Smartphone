@@ -16,19 +16,13 @@ function InforPhone(props) {
     const [datas,loadings]  = useHandledetailApi(link,id); // nhận dữ liệu và gọi để truyền link và id để xử lý 
     return (
                 <Wrapper>
-                       <div className='main'>  {/* thẻ section dùng để chia nội dụng thành các phần khác nhau  */}                 
-                            {loadings ? (                           
-                                    <Loading/>
-                            ) : (
-                            <Main> 
-                          
-                                <Slideimage image={datas?.image}/>
-                                <InformationPhones Data={datas}/> {/* component hiển thị chi tiết điện thoại */}
-                            </Main>
-                            )}
-                                          
+                       <div className='main'>                 
+                            {loadings ? ( <Loading/>) : (                                            
+                                <Main>                           
+                                        <InformationPhones Data={datas}/>
+                                </Main>                          
+                            )}                                        
                        </div>
-
                 </Wrapper>
     );
 }
@@ -36,12 +30,9 @@ const Wrapper = styled.div`
 
 
 `
-
 const Main = styled.div `
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 7%;
+           position:absolute;
+          
 `
 
 export default InforPhone;

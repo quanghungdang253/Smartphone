@@ -1,0 +1,66 @@
+{
+    "phonecompany": [
+        {
+            "id": 1,
+            "name": "Tai Nghe JBL"
+        },
+        {
+            "id":2,
+            "name": "Tai nghe B&O"
+           
+        },
+        {
+            "id":3,
+            "name": "Tai nghe Apple"
+           
+        },
+        {
+            "id":4,
+            "name": "Tai nghe Harman Kardon"
+           
+        },
+        {
+            "id":5,
+            "name": "Tai nghe Marshall"
+           
+        },
+        {
+            "id":6,
+            "name": "Tai nghe Sony"
+           
+        },
+        {
+            "id":7,
+            "name": "Tai nghe Focal"
+           
+        }
+    ],
+    "price":[
+        {
+            "id": 1,
+            "price_level": "Dưới 2 triệu"
+
+        },
+        {
+            "id": 2,
+            "price_level": "Từ 5 đến 10 triệu"
+            
+        },
+        {
+            "id": 3,
+            "price_level": "Từ 10 - 20 triệu"
+            
+        },
+        {
+            "id": 4,
+            "price_level": "Dưới 30 triệu "
+            
+        }, {
+            "id": 5,
+            "price_level": "dưới 50 triệu "
+            
+        }
+    ]
+
+    
+}

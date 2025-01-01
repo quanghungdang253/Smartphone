@@ -56,11 +56,7 @@ const TitleandProducts = ({shows}) => {
                 </Dropdowncont>
             
                 </Wrapheader>
-            {isNavVisible && 
-                         <div className='abc'> 
-                                <Overlay />
-                         </div> 
-                    } {/* Render the overlay based on the state */}
+          
             
            
         </header>

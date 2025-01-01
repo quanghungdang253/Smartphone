@@ -8,6 +8,7 @@ import useHandleApi from '../../../Api/useHandleApi';
 import Loading from '../components/Loading';
 import { Helmet } from 'react-helmet-async';
 import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
+import styles from './styles/ShowInfo.module.scss';
 function ShowInfo(props) {
      const { theme } = useValue();
 
@@ -56,29 +57,39 @@ const [enpoint, setEnpoint] = useState('');
                 namephone.data.map((List) => (
                  
                     <div key={List.id} className={`Showphone__Info ${theme ? 'Color__Bright' : 'Color__Dark'}`}>
+                    
                         <Link to={`/Detail/${enpoint}/${List.id}`}>
-                            <Negotiate>
-                                <span> Giảm giá: {List.discount} </span>
-                                <span> Trả góp: {List.installment} </span>
-                            </Negotiate>
-                            <Image>
-                                <img src={List.image} alt={List.titles} />
-                            </Image>
-                            <h2 className='Showphone__title'> {List.titles} </h2>
-                         
-                        <div className='price_up_down'>
-                            <h3 className='price '>{List.price}</h3>
-                            <h3 className='pricedown'> {List.priceDown} </h3>
-                        </div>
+                           <div className='box__body--link'> 
+                                <Negotiate>
+                                      <span className='discount promotion'> Giảm giá: {List.discount} </span>
+                                      <span className='installment promotion'> Trả góp: {List.installment} </span>
+                                </Negotiate>
+                                <Image>
+                                      <img src={List.image} alt={List.titles} />
+                                 </Image>
+                                     <h2 className='Showphone__title'> {List.titles} </h2>                      
+                                <div className='price_up_down'>
+                                    <h3 className='price '>{List.price}</h3>
+                                    <h3 className='pricedown'> {List.priceDown} </h3>
+                                </div>
                         <div className='text'>  
                             <h3 className='text title '> {List.title}</h3>
                             <p 
                                 className='text'>  Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng                                     
                             </p>
                         </div>
+                    </div>
+                    <div className='box__icon'> 
+                      <img src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className="icon"/>
+                      <img src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className="icon"/>
+                      <img src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className="icon"/>
+                      <img src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className="icon"/>
+                      <img src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className="icon"/>
+                     
+                    </div>
                         </Link>
                     </div>
-                ))
+                ))  
             ) : (
                 <p>No data available</p>
             )}
@@ -103,7 +114,21 @@ const Wrapper = styled.div`
                         background-color:black;
                         
         }
-
+        .box__body--link {
+            max-height: 300px;
+           
+        }
+        .box__icon {
+            height:100px;
+            width:100%;
+            display:flex;
+            align-items:end;
+        }
+   .icon {
+    width:1.3rem;
+    height:1.3rem;
+ 
+   }
 
         //===========================================================
 
@@ -123,7 +148,7 @@ const ShowPhone = styled.div `
 // =================================phần chung ======================================
 .text {
     padding:5px 5px;
-   margin-bottom:5px;
+    margin: 10px 0px 5px 0px;
     background-color: #f3f4f6;
     border-radius: 1rem;
     font-weight: 500;
@@ -165,11 +190,12 @@ const ShowPhone = styled.div `
      transform: translateY(-5px);
      transition: all ease 0.5s;
 }
-.Showphone__Info span {
+.Showphone__Info .discount{
 
     border: 1px solid black;
     font-weight:600;
-    background:#ed6040;
+    background:red;
+   
     color: white;
     height:1.4rem;
     width: 5rem;
@@ -179,6 +205,23 @@ const ShowPhone = styled.div `
     text-align: center;
 
 }
+.promotion {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ 
+    font-weight:600;
+}
+.installment {
+    border: 1px solid rgb(0, 0, 0);
+font-size:0.7rem;
+   
+    color:rgb(255, 255, 255);
+    background-color:red;
+    border-radius:5px;
+    padding:2px;
+}
+
 .Showphone__Info a {
 text-decoration: none;
 color: black;
@@ -192,17 +235,21 @@ gap: 12px;
 }
 
 img {
-        width:100%;
+        width:110%;
+        height:170px;
+        object-fit:cover;
 }
 `
 const Negotiate  = styled.div `
         display: flex;
-        grid-column-gap: 2.5em;
+        grid-column-gap: 3.3em;
+        margin-bottom:1rem;
 
 `
 const Image = styled.div `
     width: 75%;
     margin-left: 1.5em;
+    margin-bottom:0.5rem;
     display: flex;
     justify-content:center;
 
