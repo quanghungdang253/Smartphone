@@ -8,7 +8,7 @@ const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    cons
         const [preimage , setimage] = useState(image);
         const [preindex , setindex] = useState(0);
         useEffect(() => {
-           const Time = setInterval(() => {
+           
                 setindex((preindex) => {
                         if(preindex === preimage.length -1){
                                 return 0;
@@ -16,8 +16,8 @@ const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    cons
                                 return  preindex + 1;                                                  
                         }
                 })
-                         },3000)
-                        return(() => clearInterval(Time));
+                         
+                       
         },[preimage.length])
         const Left = () => {
                         setindex((preindex) =>(
@@ -36,17 +36,27 @@ const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    cons
         return(
             <Wrapper> 
                     <HandleImage>
-                        <ul className='HandleImage__image'>
+                        <div className='HandleImage__image'>
                                 <div className='HandleImage__node'>  
                                         <Button variant='outlined' onClick={() => Left()}> ⬅ </Button>
                                         <Button variant='outlined'  onClick={() => Right()}> ➡ </Button>
                                 </div>
                                 <div className='list__image'>  
-                                                <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt='' className="main__image" /> 
-                                               
-                                               
+                                <img src={process.env.PUBLIC_URL+ preimage[preindex].image} alt='' className={`main__image ${preindex == 0 ? "small__image" : ""}`}/> 
+                                                {preindex === 0 ? (
+                                                <ul>  
+                                             
+                                                       { preimage[0].content.map((item, index) => (
+                                                                <li key={item.id}>   {item}     </li>
+                                                        ))  }
+                                                </ul>
+                                                ) : ""}
+                                              
+                                                      
+                                                      
+                                                      
                                 </div>   
-                        </ul>
+                        </div>
                 <div className='HandleImage_Slide'>
                     {preimage.map((image,index) => {   // index của map tính từ 0 
                   
@@ -55,7 +65,7 @@ const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    cons
                             onClick={() =>setindex(index)} 
                             className={`HandleImage__button ${index === preindex ? 'selected' : ''}`} >
                             
-                                        <img src={image} alt=''/>
+                                        <img  src={image.image} className='btn btn__image' alt=''/>
                              </button>   
                         )
                 })}             
@@ -101,8 +111,16 @@ const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    cons
 
 }
 const Wrapper = styled.div `
-
-border: 2px solid red;
+li {
+        font-size:0.9rem;
+        width:20em;
+      padding: 5px 5px;
+}
+    max-width:40em;
+     box-shadow: 
+            0 1px 2px 0 rgba(60, 64, 67, .1),
+            0 2px 6px 2px rgba(60, 64, 67, .15);
+      
 .contact {
         max-width:300px;
        display:grid;
@@ -115,60 +133,71 @@ border: 2px solid red;
         align-items:center;
         
 }
-
-        /* background-color: #1d1d1f; */
-
-      .HandleImage__button:hover{
-                        border: 4px solid red;
+.HandleImage__button {
+                max-width: 6rem;
+                height:5rem;
+}
+.HandleImage__button:hover{
+                        border: 1px solid red;
                 }
-      .HandleImage__button:active{                              // border chuyển màu đỏ khi nhấn chuột
-                        border: 4px solid red;
+.HandleImage__button:active{                             
+                        border: 1px solid red;
                 }
-      .HandleImage__button.selected {
-                        border: 4px solid red;
+.HandleImage__button.selected {
+                        border: 1px solid red;
                 }
                 
 
 `
 const HandleImage = styled.div `
-padding: 2rem;
+padding: 2rem 0 0 0 0;
+width: 800px;
 
 margin: 0 auto;
 overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và sẽ ẩn đi
 .list__image {
+                padding: 2rem;
+                width:100%;
                 display: flex;
                 justify-content: center;
 
 }
+.main__image {
+         width:60%;
+         height:19rem;   
+}
+.small__image {
+        max-width:15em;
+}
+.btn__image {
+        width:100%;
+        height:100%;
+}
        
 .HandleImage__image {
-                display: flex;
-                align-items:center;
-                justify-content: center;
-                
-                border: 1px solid black;
-                background-color:red;
+              max-width: 80%;
+              height:350px;
+              position: relative;
 }
 .HandleImage__image img {
-                
-                width: 90%;
-                height:300px;
+     
                 object-fit: contain;
                 transition: opacity 0.8s ease-in-out;
 }
 .HandleImage__node {
+           display: flex;
+            grid-column-gap: 32rem;
+           height:100%;
+           align-items:center;
             position:absolute;
-            display: flex;
-            grid-column-gap: 15rem;
+           
 }
 .HandleImage_Slide {
        
                  display: flex;
                  grid-column-gap: 10px;
               
-                img {
-                        width:5rem;
-                }
+                
 }
 `
 export default Slideimage;

@@ -24,7 +24,12 @@
         "Weight" : "227 gram",
         "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
         "Charging_port": "USB Type-C",     
-        "price": "10000000"
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ]
   },
   {
     "id" : 2,
@@ -50,7 +55,12 @@
         "Weight" : "227 gram",
         "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
         "Charging_port": "USB Type-C",     
-        "price": "10000000"
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ]
   },
   {
     "id" : 3,
@@ -77,7 +87,12 @@
         "Weight" : "227 gram",
         "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
         "Charging_port": "USB Type-C",     
-        "price": "10000000"
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ]
   },
   {
     "id" : 4,
@@ -101,7 +116,12 @@
         "Weight" : "227 gram",
         "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
         "Charging_port": "USB Type-C",     
-        "price": "10000000"
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ]
   },
   {
     "id" : 5,
@@ -125,7 +145,12 @@
         "Weight" : "227 gram",
         "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
         "Charging_port": "USB Type-C",     
-        "price": "10000000"
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ]
   },
   {
         "id" : 6,
@@ -149,7 +174,12 @@
         "Weight" : "227 gram",
         "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
         "Charging_port": "USB Type-C",     
-        "price": "10000000"
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ]
   },
   {
     "id" : 7,
@@ -173,7 +203,12 @@
         "Weight" : "227 gram",
         "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
         "Charging_port": "USB Type-C",     
-        "price": "10000000"
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ]
   },
   {"id" : 8,
   "title": "Apple iPhone 6S Plus 16GB",
@@ -196,7 +231,12 @@
         "Weight" : "227 gram",
         "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
         "Charging_port": "USB Type-C",     
-        "price": "10000000"
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ]
       },
       {"id" : 9,
       "title": "Apple iPhone 6S Plus 16GB",
@@ -220,7 +260,12 @@
       "Weight" : "227 gram",
       "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
       "Charging_port": "USB Type-C",     
-      "price": "10000000"
+      "price": "10000000",
+      "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ]
     }
  
    

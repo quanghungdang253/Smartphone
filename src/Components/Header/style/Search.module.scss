@@ -74,10 +74,7 @@ h1 {
         outline: none;
         color: rgb(0, 0, 0);
         font-weight: 400;
-       
-       
-       
-        
+           
    }
    .suggestions {
     border: 1px solid black;
@@ -97,12 +94,15 @@ h1 {
             color: black;
             font-size: 0.9rem;
             display: grid;
-            grid-template-columns: 200px 200px;
+            grid-template-columns: 250px 100px;
          
             font-weight: 600; 
         }
         .link:hover {
             background-color: rgb(166, 167, 167);
+        }
+        .namephone {
+            font-size: 0.3rem;
         }
 
 }

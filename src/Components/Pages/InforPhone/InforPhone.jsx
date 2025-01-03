@@ -31,7 +31,9 @@ const Wrapper = styled.div`
 
 `
 const Main = styled.div `
-           position:absolute;
+           display:flex;
+           justify-content:center;
+           
           
 `
 

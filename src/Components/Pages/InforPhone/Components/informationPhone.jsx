@@ -6,8 +6,13 @@ import { Helmet } from "react-helmet-async";
 // import InformationPhone from "../Pages/InforPhone/Components/Slideimage";
 import FetchAPI from "../services/PhoneAPI";
 import Slideimage from "./Slideimage";
+import { Link } from "react-router-dom";
 import styles from '../styles/InformationPhone.module.scss';
  function InformationPhones({Data}) {
+  const [active, setActive] = useState(0);
+  const handleActive = (id) => {
+                 setActive(id);
+  }
           let Information = [
             {id: 0, title: "Màn hình", content: Data.screen_size, },
             {id: 1, title: "Công nghệ màn hình", content: Data.screen_technology},
@@ -28,6 +33,7 @@ import styles from '../styles/InformationPhone.module.scss';
    
      return (
       <div className={styles.Container}>  
+
         <div className={styles.nameProduct}>
             <div className={styles.title__icon}>  
                 <h1> {Data.title} </h1> 
@@ -54,14 +60,27 @@ import styles from '../styles/InformationPhone.module.scss';
                                 </section>                             
                    </aside>             
         </div>
-        <div className="Description">
-             <div className={styles.PhoneDescription}>
-              <section className={styles.Wrapper}>                                                            
-                <figure  className="Wrapper__figure">                                                                           
-                <div className={styles.Wrapper__rowbody}>                      
-                  <section className={styles.Wrapper__Content}>  
-                      <Slideimage image={Data?.image}/>
-                    <div> 
+        <div className={`${styles.body__aside}`}>
+                <Slideimage image={Data?.image}/>
+        <aside className={`${styles.aside}`}>
+            <div className={styles.Wrapper__aside}> 
+                <div className={styles.details_top1}>
+                  <div className={styles.memory__price}>
+                    {Data.Item.map((Item,index) => (
+                      <Link 
+                         onClick={() => handleActive(index)}
+                         className={`${styles.memory__price__link} ${styles.link} ${active === index ? styles.active : ""}`}                    
+                             > 
+                           {Item.item} 
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+               </div>
+            </aside>
+        </div>
+        <section className={styles.Wrapper__Content}>                          
+                     <div> 
                         <h1 className={styles.Wrapper__Title}> Thông số kĩ thuật </h1>
                            <table className={styles.Wrapper__table}>
                               {Information.map((Item) => (
@@ -70,14 +89,9 @@ import styles from '../styles/InformationPhone.module.scss';
                                       <td className={styles.table__row__content}> {Item.content}</td>
                                   </tr>
                                 ))}                                            
-                           </table>
+                            </table>
                         </div>                    
-                      </section>                
-                    </div>
-                     </figure>
-                </section>
-            </div>
-          </div>
+                      </section>  
         </div>
       );
     }

@@ -134,7 +134,8 @@ function Search({shows}) {
                                     document.getElementById("inputproduct").value = "";
                                 }} 
                             >
-                                {item.name}
+
+                                           {item.name}    
                                 <img src={item.image} alt='' className={styled.image} />
                                 <h3 className={styled.price}> Giá:{item.price}  </h3>
                             </Link>
