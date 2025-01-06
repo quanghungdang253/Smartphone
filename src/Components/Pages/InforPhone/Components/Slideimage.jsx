@@ -3,10 +3,21 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import styled from 'styled-components';
 
-const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    const InformationPhone = (props)
-                                                                        // const {image= p
+const Slideimage = (props) => {   //ở đây {phone} là viết tắt    const InformationPhone = (props)
+         const image = props.image;
+         let indexs = props.index;   
+        
+                                                // const {image= p
         const [preimage , setimage] = useState(image);
-        const [preindex , setindex] = useState(0);
+        const [preindex , setindex] = useState(indexs);
+        
+           
+        useEffect(() => {
+                        setindex(indexs);
+        },[indexs])
+       
+       
+
         useEffect(() => {
            
                 setindex((preindex) => {
@@ -62,8 +73,8 @@ const Slideimage = ({image}) => {   //ở đây {phone} là viết tắt    cons
                   
                         return(    
                             <button key={index} 
-                            onClick={() =>setindex(index)} 
-                            className={`HandleImage__button ${index === preindex ? 'selected' : ''}`} >
+                                onClick={() =>setindex(index)} 
+                                className={`HandleImage__button ${index === preindex ? 'selected' : ''}`} >
                             
                                         <img  src={image.image} className='btn btn__image' alt=''/>
                              </button>   
@@ -136,6 +147,8 @@ li {
 .HandleImage__button {
                 max-width: 6rem;
                 height:5rem;
+                flex-shrink: 0; /* Đảm bảo kích thước button không bị co */
+                margin-right: 8px; /* Khoảng cách giữa các button */
 }
 .HandleImage__button:hover{
                         border: 1px solid red;
@@ -193,11 +206,19 @@ overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và 
            
 }
 .HandleImage_Slide {
-       
+                 width: 100%;
                  display: flex;
                  grid-column-gap: 10px;
-              
-                
+                 overflow-x: auto;                      /* Cho phép cuộn ngang */
+                 overflow-y: hidden;                    /* Ẩn cuộn dọc */
+                 white-space: nowrap;                   /* Ngăn xuống dòng */
+                 max-width: 70%;                        /* Đặt chiều rộng tối đa cho vùng hiển thị */
+                -ms-overflow-style: none;
+                         
+}
+.HandleImage_Slide::-webkit-scrollbar {
+                 display: none; /* Ẩn thanh cuộn trên Chrome, Edge và Safari */
+
 }
 `
 export default Slideimage;

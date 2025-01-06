@@ -8,11 +8,15 @@ import FetchAPI from "../services/PhoneAPI";
 import Slideimage from "./Slideimage";
 import { Link } from "react-router-dom";
 import styles from '../styles/InformationPhone.module.scss';
+// áp dụng quy tắc  camelCase  để đặt tên 
  function InformationPhones({Data}) {
+  console.log(Data);
   const [active, setActive] = useState(0);
+  const [preindex , setIndex] = useState(0);
   const handleActive = (id) => {
-                 setActive(id);
-  }
+                    setActive(id);
+      }
+ 
           let Information = [
             {id: 0, title: "Màn hình", content: Data.screen_size, },
             {id: 1, title: "Công nghệ màn hình", content: Data.screen_technology},
@@ -29,14 +33,13 @@ import styles from '../styles/InformationPhone.module.scss';
             {id: 12, title: "Cân năng", content: Data.Weight},
             {id: 13, title: "Cổng sạc", content: Data.Charging_port}
           ]
-
-   
+      
      return (
       <div className={styles.Container}>  
 
         <div className={styles.nameProduct}>
             <div className={styles.title__icon}>  
-                <h1> {Data.title} </h1> 
+                <h1 className={styles.namephone}> {Data.title} </h1> 
                 <div className={styles.Wrapper__icon}> 
                     <img src="https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png" alt="" className={styles.icon}/>
                     <img src="https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png" alt="" className={styles.icon} />
@@ -61,13 +64,16 @@ import styles from '../styles/InformationPhone.module.scss';
                    </aside>             
         </div>
         <div className={`${styles.body__aside}`}>
-                <Slideimage image={Data?.image}/>
+                <Slideimage image={Data?.image} index={preindex}
+                
+
+                />
         <aside className={`${styles.aside}`}>
             <div className={styles.Wrapper__aside}> 
                 <div className={styles.details_top1}>
                   <div className={styles.memory__price}>
                     {Data.Item.map((Item,index) => (
-                      <Link 
+                      <Link to={Item.Link}
                          onClick={() => handleActive(index)}
                          className={`${styles.memory__price__link} ${styles.link} ${active === index ? styles.active : ""}`}                    
                              > 
@@ -75,6 +81,23 @@ import styles from '../styles/InformationPhone.module.scss';
                       </Link>
                     ))}
                   </div>
+                </div>
+                <div className={styles.details_top2}>
+                    <div className={styles.Box}>
+                          {Data.Typephone.map((Item,index) => (
+                                  <a 
+                                    key={Item.id} 
+                                    className={`${styles.Link} ${index === preindex ? `${styles.addborder}`: ""}`}
+                                    onClick={() => setIndex(Item.id)}
+                                    > 
+                                      <img src={Item.image} alt="" className={styles.img}/>
+                                      <div className={styles.name__price}>   
+                                            <h1 className={styles.title}> {Item.name} </h1>
+                                             <p> {Item.price} </p>
+                                      </div>
+                                   </a>                           
+                          ))}
+                    </div>     
                 </div>
                </div>
             </aside>

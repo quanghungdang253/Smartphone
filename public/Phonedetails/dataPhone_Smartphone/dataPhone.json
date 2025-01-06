@@ -16,11 +16,9 @@
             { "id": 2,  "image":"/image/samsungZ-form2.webp"},
             { "id": 3,  "image": "/image/samsungZ-form.webp"  },        
             { "id": 4, "image": "/image/samsungZ-form.webp" },
-   
-    { "id": 5,
-      "image": "/image/samsungZ-form.webp"}
-    
-            
+            { "id": 5,  "image": "/image/samsungZ-form.webp"  },        
+            { "id": 6, "image": "/image/samsungZ-form.webp" },
+            { "id": 5,  "image": "/image/samsungZ-form.webp"}         
               ],
    
         "screen_size": "6.9inches",
@@ -40,10 +38,19 @@
         "Charging_port": "USB Type-C",     
         "price": "10000000",
         "Item": [
-            {"id": 0, "item": "128GB"},
-            {"id": 1, "item": "256GB"},
-            {"id": 2, "item": "1TB"}
-        ]
+            {"id": 0, "item": "128GB", "Link": "http://localhost:3000/Detail/dataPhone/2"},
+            {"id": 1, "item": "256GB", "Link": "http://localhost:3000/Detail/dataPhone/2" },
+            {"id": 2, "item": "1TB" ,  "Link" : "http://localhost:3000/Detail/dataPhone/2"}
+        ],
+
+        "Typephone": [ 
+          {"id": 0, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 1, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 2, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 3, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 4, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"}
+      ]
+       
   },
   {
     "id" : 2,
