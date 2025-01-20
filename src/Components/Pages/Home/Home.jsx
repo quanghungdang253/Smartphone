@@ -66,8 +66,8 @@ const MainHome = styled.div `
         }
         .form__section {
                 max-width: 1450px;
-                margin-left: auto !important;
-                margin-right: auto !important;
+                margin-left: 7%;
+                margin-right: 7%;
                 margin-top: 1rem;
                 margin-bottom:2rem;
                 
