@@ -26,9 +26,9 @@
         "Charging_port": "USB Type-C",     
         "price": "10000000",
         "Item": [
-          {"id": 0, "item": "128GB"},
-          {"id": 1, "item": "256GB"},
-          {"id": 2, "item": "1TB"}
+          {"id": 0, "item": "128GB", "price": "3.290.000 vnđ"},
+          {"id": 1, "item": "256GB", "price": "5.690.000 vnđ"},
+          {"id": 2, "item": "1TB",    "price": "6.789.000 vnđ"}
       ]
   },
   {

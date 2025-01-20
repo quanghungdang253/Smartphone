@@ -36,53 +36,41 @@ function Article(props) {
 }
 
 const Container = styled.div`
-  box-shadow:   0 1px 2px 0 
-                          rgba(60,64,67,.1),
-                          0 2px 6px 2px
-                          transparent;
-                          height:100%;
-                          width:100%;
-                          padding-left:5px;
-                          padding-right:5px;
-                          
-                        
-                        
-                         
+     box-shadow:   0 1px 2px 0  rgba(60,64,67,.1),
+                   0 2px 6px 2px  transparent;        
+     height:473px;
+     width:100%;
+     padding-left:5px;
+     padding-right:5px;                       
+             
 .Article {
-  display: grid;
-  grid-row-gap: 2rem;
-  
- 
-   
-
+     display: flex;
+     flex-direction:column;
+     justify-content:space-between;
+     height:100%;
 }
-      .Article__image {
-               width:100%;
-               border-radius:1rem;
-          
-             
-             
-      }
-      .first-image {
-                max-width:300px;
-                box-shadow:   0 1px 2px 0 
-                          rgba(60,64,67,.1),
-                          0 2px 6px 2px
-                          black;
-                          border-radius:1rem;
-                         
-              
-               
-
-      }
+.Article__image {
+     width:100%;
+     border-radius:1rem;
+     height:100%;                        
+}
+.first-image {
+    object-fit:contain;
+    max-width:300px;
+    height:150px;               
+    box-shadow:   0 1px 2px 0 rgba(60,64,67,.1),                     
+                  0 2px 6px 2px black;
+    border-radius:1rem;                                                                              
+}
       .Article__Link {
       
        
        
       }
       .Article__image--first {
-                 width:100%;
-                    height:200px;
+                    width:100%;
+                    height:150px;
+                    object-fit:contain;
       }
 
 `

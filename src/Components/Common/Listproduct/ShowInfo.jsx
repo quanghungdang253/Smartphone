@@ -1,20 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import useHandledetailApi from '../../../Api/useHandledetailPhone';
-import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { Circles } from 'react-loader-spinner';
 import styled from 'styled-components';
-import useHandleApi from '../../../Api/useHandleApi';
 import Loading from '../components/Loading';
 import { Helmet } from 'react-helmet-async';
 import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
-import styles from './styles/ShowInfo.module.scss';
 function ShowInfo(props) {
      const { theme } = useValue();
-
-    
                 let namephone = props.namephone;
                 let enpoints = props.enpoint;
+
                 const [link,setLink] = useState("");
     if (!namephone.data) {
          <Loading/>; // Kiểm tra namephone.data nếu namephone có dữ liệu
@@ -48,6 +42,12 @@ const [enpoint, setEnpoint] = useState('');
 }
     return (
         <Wrapper className={`Wrapper ${!theme ? 'Dark' : ''}`}>
+     
+           {!enpoints ? (
+                    <ul>  
+                        <li> jqwfiowjefoiwejfoiwejđwdwdwdwfwfwewer23r223r23r23r23r23r32r23r23r32</li>
+                    </ul>
+           ): ("")}
                      <Helmet>
                          {enpoints && ( <title> {`Điện thoại ${enpoints} - Hùng Store`}   </title>)} 
                             
@@ -74,6 +74,7 @@ const [enpoint, setEnpoint] = useState('');
                                 </div>
                         <div className='text'>  
                             <h3 className='text title '> {List.title}</h3>
+                            <img src={List.image_1} alt='' className='image_1'/>
                             <p 
                                 className='text'>  Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng                                     
                             </p>
@@ -87,7 +88,7 @@ const [enpoint, setEnpoint] = useState('');
                       <img src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className="icon"/>
                      
                     </div>
-                        </Link>
+                </Link>
                     </div>
                 ))  
             ) : (
@@ -99,6 +100,12 @@ const [enpoint, setEnpoint] = useState('');
 )
 }
 const Wrapper = styled.div`
+
+   .image_1 {
+     width:100%;
+     height:50px;
+     object-fit:contain;
+   }
         //  ===================== phần thiết lập đổi màu nền ======================
         .Bright_1{
                     background-color:#EEEEEE;
@@ -119,10 +126,10 @@ const Wrapper = styled.div`
            
         }
         .box__icon {
-            height:100px;
             width:100%;
             display:flex;
             align-items:end;
+            margin-top:9rem;
         }
    .icon {
     width:1.3rem;
@@ -177,7 +184,8 @@ const ShowPhone = styled.div `
 //===================================================================================
 
 .Showphone__Info {
-      padding: 1rem 1rem;
+    margin-top:1rem;
+      padding: 1rem 1rem 3rem 1rem;
       width: 90%;
       cursor: pointer;
       border-radius: 2rem;

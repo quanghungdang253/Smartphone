@@ -1,11 +1,15 @@
 import { Button } from '@mui/material';
 import React, { useEffect } from 'react';
 import { useState } from 'react';
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
-const ListimageProduct = ({image}) => {   //ở đây {phone} là viết tắt    const InformationPhone = (props)
+
+
+const ListimageProduct = ({image, customs}) => {   //ở đây {phone} là viết tắt    const InformationPhone = (props)
                                                                         // const {image} = props
-console.log(image);
         const [preimage , setimage] = useState(image);
         const [preindex , setindex] = useState(0);
         useEffect(() => {
@@ -39,24 +43,25 @@ console.log(image);
                     <HandleImage>
                         <div className='HandleImage__image'>
                                 <div className='HandleImage__node'>  
-                                        <Button variant='outlined' onClick={() => Left()}> ⬅ </Button>
-                                        <Button variant='outlined'  onClick={() => Right()}> ➡ </Button>
+                        <Button variant='outlined' onClick={() => Left()} className='button__left button'> <FontAwesomeIcon icon={faAngleLeft}/> </Button>
+                        <Button variant='outlined'  onClick={() => Right()} className='button__right button'> <FontAwesomeIcon icon={faAngleRight}/> </Button>
                                 </div>
-                              
+                                        <Link className='Link'>   
                                                 <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt=''  /> 
-                                               
-                                               
-                                  
-                        </div>
-                        <div className='HandleImage__image'>
+                                       </Link>
+                                                     
+                         </div>
+                        {customs && (
+                                <div className='HandleImage__image'>
                                 <div className='HandleImage__node'>  
-                                        <Button variant='outlined' onClick={() => Left()}> ⬅ </Button>
-                                        <Button variant='outlined'  onClick={() => Right()}> ➡ </Button>
+                                        <Button variant='outlined' onClick={() => Left()}> <FontAwesomeIcon icon={faAngleLeft}  className="button"/> </Button>
+                                        <Button variant='outlined'  onClick={() => Right()}> <FontAwesomeIcon icon={faAngleRight} className="button"/> </Button>
                                 </div>
                               
-                                                <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt=''  /> 
-                                                  
-                        </div>          
+                                                <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt=''  />                     
+                        </div>
+                        )}
+                                 
                     </HandleImage>
                    
           </Wrapper>     
@@ -81,29 +86,33 @@ const HandleImage = styled.div `
 display: flex;
 justify-content: center; 
 grid-column-gap: 10%;
-
-margin-top:5rem;
 overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và sẽ ẩn đi
 
        
         
 .HandleImage__image {
+                position:relative;
                 display: flex;
                 align-items:center;
                 justify-content: center;
                
 }
+.Link {
+        display:inline-block;
+        width:100%;
+        display:flex;
+        justify-content:center;
+}
 .HandleImage__image img {
-     
-                width: 400px;
-                height:100px;
+                
+                cursor: pointer;
+                max-width:100%;
                 object-fit: contain;
                 transition: opacity 0.8s ease-in-out;
 }
 .HandleImage__node {
-            position:absolute;
-            display: flex;
-            grid-column-gap: 15rem;
+          position:absolute;
+          display:flex;
        
 }
 .HandleImage_Slide {
@@ -112,6 +121,19 @@ overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và 
                  grid-column-gap: 10px;
               
                 
+}
+.button__left {
+        margin-right:25em;
+        
+}
+.button__right {
+                margin-left: auto;
+}
+.button {
+        border: none;
+        color:black;
+        
+        
 }
 
 `

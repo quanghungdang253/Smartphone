@@ -122,6 +122,7 @@ import RenderbyCategory from './services/RenderbyCategory';
 import styled from 'styled-components';
 import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
 import { Helmet } from 'react-helmet';
+import Loading from '../../Common/components/Loading';
 function Products_list(props) {  
   const params = useParams();
   let namephone = params.namephone;
@@ -129,31 +130,22 @@ function Products_list(props) {
   const [data, loading] = useHandleApi(namephone);
 
  if(!data){
-            <p> đang lấy data </p>
+               <Loading/>
  }
-   {/* cú pháp desstructuring  RenderbyCategory*/}
-
-       {/* cách 1 : render theo hàm javascript thông thường */}
-        {/* {RenderbyCategory({namephone, data, ...props}) }  */}
-        {/* cách 2: render theo cú pháp JSX  */}
-        {/* <RenderbyCategory  {...{namephone,data,...props}} /> */}
-        {/* cách 3: render theo jsx hay dùng */}
   return (
     <Product> 
-      {!data ? (
-                    <h1>Chào mừng bạn!</h1>
+       {!data ? (
+                  <Loading/>
       ) : (
         <div>
-          <RenderbyCategory namephone={namephone} data={data} {...props}/>
+                  <RenderbyCategory namephone={namephone} data={data} {...props}/>
         </div>
       )}
     </Product>
   );
 }
 const Product = styled.div `
-      
-
-
+     
 `
 
 export default Products_list;

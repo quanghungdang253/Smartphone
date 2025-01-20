@@ -1,0 +1,75 @@
+{
+    "phonecompany": [
+        {
+            "id": 1,
+            "name": "Ti vi Samsung 4K",
+            "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+        },
+        {
+            "id":2,
+            "name": " Ti vi Sony ",
+            "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+        },
+           
+        
+        {
+            "id":3,
+            "name": "Tai nghe Apple",
+            "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+           
+        },
+        {
+            "id":4,
+            "name": "Tai nghe Harman Kardon",
+             "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+           
+        },
+        {
+            "id":5,
+            "name": "Tai nghe Marshall",
+             "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+           
+        },
+        {
+            "id":6,
+            "name": "Tai nghe Sony",
+             "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+           
+        },
+        {
+            "id":7,
+            "name": "Tai nghe Focal",
+             "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+           
+        }
+    ],
+    "price":[
+        {
+            "id": 1,
+            "price_level": "Dưới 2 triệu"
+            
+
+        },
+        {
+            "id": 2,
+            "price_level": "Từ 5 đến 10 triệu"
+            
+        },
+        {
+            "id": 3,
+            "price_level": "Từ 10 - 20 triệu"
+            
+        },
+        {
+            "id": 4,
+            "price_level": "Dưới 30 triệu "
+            
+        }, {
+            "id": 5,
+            "price_level": "dưới 50 triệu "
+            
+        }
+    ]
+
+    
+}

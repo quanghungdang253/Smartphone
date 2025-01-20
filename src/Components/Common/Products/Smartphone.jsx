@@ -15,10 +15,11 @@ function Smartphone(props) {
                     value.phonecompany.map((list) => (
                          <Link  
                                 className='Link'
-                                to={`/label/${encodeURIComponent(list.name)}`} 
+                                to={`/label/${list.name}`} 
                                  key={list.id}> 
-
-                                    {list.name}                                  
+                                 
+                                    {list.name}     
+                                    <img src={list.image} className={'image--menu'}/>                             
                          </Link>      
                     ))
                   ): (
@@ -61,11 +62,17 @@ const Wrapper = styled.div`
             .Link {
                 text-decoration: none;
                 color: black;
-                font-weight: 350;
+                font-weight: 500;
                 padding: 0.5rem 0.5rem 0.5rem 0;
+                display: flex;
+                align-items:center;
+                justify-content:space-around;
+                border-radius:10px;
+
             }
             .Link:hover {
                 color: red;
+                background-color:wheat;
             }
             .tabchoose {
                 display: flex;
@@ -76,7 +83,11 @@ const Wrapper = styled.div`
         
 ` 
 const PhoneCompany = styled.div `
-
+        .image--menu {
+            width: 35px;
+            height:30px;
+            object-fit: contain;
+        }
            
 
 `

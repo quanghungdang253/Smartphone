@@ -13,7 +13,7 @@ import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import {ReactComponent as IconarrowRight} from "./icon/arrowRight.svg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile, faClock, faCogs, faDesktop, faLaptop, faHome, faHeadphones, faCamera, faTv, faNewspaper  } from '@fortawesome/free-solid-svg-icons';
+import { faMobile, faClock, faCogs, faDesktop, faLaptop, faHome, faHeadphones, faCamera, faTv, faNewspaper,  faSnowflake  } from '@fortawesome/free-solid-svg-icons';
 
 function Menuheader({addPadding}) {
   let {theme} = useValue();
@@ -26,10 +26,11 @@ function Menuheader({addPadding}) {
             { icon: <FontAwesomeIcon  icon={faLaptop} /> , label: "Laptop"},
             { icon:  <FontAwesomeIcon icon={faCamera} />, label:  "Camera , Flycam" } ,
             { icon:  <FontAwesomeIcon icon={ faHome} />, label: "Đồ gia dụng, Điện tử" } ,
-            { icon:  <FontAwesomeIcon icon={faTv} />, label: "Tivi" } ,
+            { icon:  <FontAwesomeIcon icon={faTv} />,      label: "Tivi" } ,
             { icon:  <FontAwesomeIcon icon={faDesktop} />, label: "Máy Tính" } ,
             { icon:  <FontAwesomeIcon icon={faHeadphones} />, label: "Phụ kiện, Tai nghe" } ,
             { icon:  <FontAwesomeIcon icon={faClock} />, label: "Đồng hồ" } ,
+            { icon: <FontAwesomeIcon  icon={ faSnowflake} />, label: "Điện tử, điện máy"},
             { icon:  <FontAwesomeIcon icon={faNewspaper} />, label: "Tin công nghệ" } ,    
     ]
     const Listitem = [
@@ -46,11 +47,11 @@ function Menuheader({addPadding}) {
     ]
     console.log(items[0].icon);
     return (
-        <Wrapper        
+                <Wrapper        
                         onMouseEnter={() => setIndex(preindex)}  // hoạt động khi người dùng di chuyển chuôt vào 
                         onMouseLeave={() => setIndex(null)}
                       className= "show" 
-        >
+                >
       
                 <div className={`Wrapper__label ${addPadding ? "addpadding" : ""} ${theme ? 'Bright' : 'Dark'} `}> 
                      {/* phương pháp chèn icon thứ nhất  */}
@@ -85,7 +86,7 @@ function Menuheader({addPadding}) {
                                              className={`showitem ${ preindex !== null ? 'show' : ''}`}
                                              onMouseEnter={() =>{}}
                                              onMouseLeave={() =>{
-                                                         setIndex(null);
+                                                                setIndex(null);
                                                         } }   
                                                         
                                 >          
@@ -173,11 +174,10 @@ const Wrapper = styled.div `
             width: 35rem;
             height:100%;
             border-radius: 2rem;
-            box-shadow:   0 1px 2px 0 
-                          rgba(60,64,67,.1),
-                          0 2px 6px 2px
-                          rgba(60,64,67,.15);
-                          margin-left:10px;
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,.1),                   
+                        0 2px 6px 2px rgba(60,64,67,.15);
+                     
+                         
       
    }
    .Wrapper__label.addpadding {

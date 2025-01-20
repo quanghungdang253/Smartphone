@@ -6,7 +6,7 @@ import {faPhone} from '@fortawesome/free-solid-svg-icons'
 import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import {faUser} from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-
+import { faTruck } from '@fortawesome/free-solid-svg-icons';
 function Navigation_header(props) {
     return (
         <Navigation>
@@ -28,6 +28,12 @@ function Navigation_header(props) {
             </div>
             <div className='Navigation__shopping-cart'>
                     <Link className='Link'>
+                    <FontAwesomeIcon icon={faTruck} className='icon' />
+                        <h1> Tra cứu đơn hàng </h1>
+                    </Link>
+            </div>
+            <div className='Navigation__shopping-cart'>
+                    <Link className='Link'>
                     <FontAwesomeIcon icon={faCartShopping} className='icon' />
                         <h1> Giỏ hàng </h1>
                     </Link>
@@ -43,18 +49,20 @@ function Navigation_header(props) {
 }
 
 const Navigation = styled.div `
+
+    max-width: 90em;
    color: white;
    display:flex;
-   grid-column-gap:1%;
+   grid-column-gap:1.5%;
    align-items: center;
 
    // =============================phần style chung =================================================
-                    .icon {
+                   .icon {
                         color: red;
                         font-size:1.3rem;
                     }
                     .Link {
-                        padding: 7px 2px;
+                        padding: 10px 2px;
                         display: flex;
                         text-align:center;
                         justify-content:center;

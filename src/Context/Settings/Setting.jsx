@@ -5,17 +5,11 @@ import styled from 'styled-components';
 import Customs from './Theme/components/Customs';
 
 
- 
-
  function Setting(props) {
-
-
         let theme = props.setting;
          const Closeform = () => {
                     theme(true);
-         }
-     
-       
+         }  
     return (
         <Container>   
             <button 
@@ -27,8 +21,6 @@ import Customs from './Theme/components/Customs';
     );
 }
 const Container = styled.div`
-
-
           .icon{
             color: black;
             height:30px;

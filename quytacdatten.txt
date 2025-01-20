@@ -1,0 +1,35 @@
+Trong lập trình, tên thư mục dự án thường tuân theo một số quy tắc đặt tên nhất định. Câu trả lời cho câu hỏi của bạn là không nhất thiết phải viết hoa chữ cái đầu, nhưng có một số phương pháp phổ biến được sử dụng:
+
+1. Snake Case (snake_case)
+Cách đặt tên: Tên thư mục sử dụng chữ thường và các từ được ngăn cách bằng dấu gạch dưới (_).
+Ví dụ: my_project, shopping_cart
+Ưu điểm: Thường dễ đọc và sử dụng trong môi trường Unix/Linux.
+Phổ biến: Được sử dụng trong các dự án Python, hoặc những dự án có yêu cầu tuân thủ quy tắc đặt tên đơn giản.
+
+2. Kebab Case (kebab-case)
+Cách đặt tên: Tên thư mục sử dụng chữ thường và các từ được ngăn cách bằng dấu gạch ngang (-).
+Ví dụ: my-project, shopping-cart
+Ưu điểm: Dễ đọc và thường được sử dụng trong các dự án web, đặc biệt là khi làm việc với các hệ điều hành Unix/Linux.
+Phổ biến: Được sử dụng trong các dự án web, đặc biệt là trong các ứng dụng Node.js, React.js.
+
+3. Camel Case (camelCase)
+Cách đặt tên: Chữ cái đầu của từ đầu tiên là chữ thường, các từ tiếp theo viết hoa chữ cái đầu.
+Ví dụ: myProject, shoppingCart
+Ưu điểm: Thường thấy trong JavaScript, đặc biệt là khi làm việc với các biến và tên hàm.
+Phổ biến: Ít được sử dụng cho tên thư mục vì không dễ đọc bằng Kebab hay Snake Case, nhưng đôi khi vẫn có thể thấy trong các dự án của một số nhóm phát triển.
+
+4. Pascal Case (PascalCase)
+Cách đặt tên: Chữ cái đầu của tất cả các từ đều viết hoa.
+Ví dụ: MyProject, ShoppingCart
+Ưu điểm: Thường dùng để đặt tên cho các class hoặc component trong một số ngôn ngữ lập trình như C#, Java, hoặc ReactJS (components).
+Phổ biến: Không phổ biến cho tên thư mục nhưng có thể thấy trong các dự án React, đặc biệt khi bạn muốn đặt tên cho các thư mục chứa components.
+
+
+
+ {/* cú pháp desstructuring  RenderbyCategory*/}
+
+       {/* cách 1 : render theo hàm javascript thông thường */}
+        {/* {RenderbyCategory({namephone, data, ...props}) }  */}
+        {/* cách 2: render theo cú pháp JSX  */}
+        {/* <RenderbyCategory  {...{namephone,data,...props}} /> */}
+        {/* cách 3: render theo jsx hay dùng */}

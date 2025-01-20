@@ -1,0 +1,42 @@
+{
+    "icon__star" : [
+        {"id": 0, "icon": "https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png"},
+        {"id": 1, "icon": "https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png"},
+        {"id": 2, "icon": "https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png"},
+        {"id": 3, "icon": "https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png"},
+        {"id": 4, "icon": "https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png"}
+    ],
+    "image__advertisement": [
+             "https://24hstore.vn/images/banners/original/banner-sp-tet-2025-top-iphone-like-new_1735610204.jpg",
+             "https://24hstore.vn/images/banners/original/tra-gop-4-khong-iphone-cu_1722831262.jpg",
+             "https://24hstore.vn/images/banners/original/hssv-tai-xe-giam-den-1tr-sp_1735801386.jpg"
+
+    ],
+    "gift__box": [
+        {"id": 0, "number": 0,  "content": "Lì xì đầu năm - Cả năm may mắn! SALE giảm giá đến 63% các sản phẩm công nghệ"},
+        {"id": 1, "number": 1, "content": "Trả góp 0%, kỳ hạn 12 tháng, không phụ phí qua CTTC và thẻ tín dụng (áp dụng tại cửa hàng)"},
+        {"id": 2, "number": 2, "content": "[31.12.2024 - 16.02.2025] Tặng thêm 3 Tháng Bảo hành cho khách mua gói 24hVIP"},
+        {"id": 3, "number": 3, "content": "Tặng ngay VOUCHER 1.000.000đ mua Loa"},
+        {"id": 4, "number": 4, "content": "Tặng Nón bảo hiểm QuangHung Store trị giá 240.000đ"},
+        {"id": 5, "number": 5, "content": "Chỉ áp dụng Voucher thu cũ giá trị cao nhất trong 1 thời điểm"},
+        {"id": 6, "number": 6, "content": "Giảm thêm đến 1% tổng bill cho thành viên Quang Hung Store Xem chi tiết"},
+        {"id": 7, "number": 7, "content": "Giảm thêm 100.000đ khi mua kèm Apple Watch"}
+    
+    ],
+    "add__promotion": [
+        {"id":0 , "icon": "", "content": "Xem chính sách ưu đãi dành cho thành viên Smember"},
+        {"id":1 , "icon": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:90/plain/https://cellphones.com.vn/media/wysiwyg/Icon/hsbc_icon.png", "content": "Hoàn tiền đến 2 triệu khi mở thẻ tín dụng HSBC"},
+        {"id":2, "icon": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:90/plain/https://cellphones.com.vn/media/wysiwyg/Icon/logo-ocb.png", "content": "Giảm đến 500.000đ khi thanh toán bằng thẻ tín dụng OCB"},
+        {"id":3, "icon":"https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:90/plain/https://cellphones.com.vn/media/wysiwyg/Icon/logo-acb-bank.png", "content": "Giảm đến 500.000đ khi thanh toán bằng thẻ tín dụng ACB" },
+        {"id":4, "icon": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:90/plain/https://cellphones.com.vn/media/wysiwyg/Icon/logo-home-credit-new.png", "content": "Giảm đến 400.000đ khi thanh toán bằng thẻ tín dụng Home Credit"},
+        {"id":5, "icon": "https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:90/plain/https://cellphones.com.vn/media/wysiwyg/DUMT_ZV0.png", "content": "Giảm đến 500.000đ khi thanh toán qua Krediv"}
+    ],
+    "address": [
+        {"id": 0, "content":"Địa chỉ còn hàng"},
+        {"id": 1, "content": "123 Nguyễn Văn Lượng Gò Vấp Liên Hệ : 01234856889"},
+        {"id": 2, "content":"456 Phan Huy Ích Tân Phú Liên Hệ : 0123456789"},
+        {"id": 3, "content": "108 Nguyễn Chí Thanh Bình Thạnh Liên Hệ : 05467456789"},
+        {"id": 4, "content": "123 Nguyễn Văn Lượng Gò Vấp Liên Hệ : 01235435899"}
+    ]
+      
+}

@@ -1,0 +1,117 @@
+
+
+
+//==========================styles chung ===============================================================
+.image {
+        width: 100%;
+        height: 50%;
+        object-fit: contain;
+        background-color:  #fe0000;
+        border-radius: 10px;
+        margin-bottom: 10px;
+}
+.Container {
+    background-color: rgb(0, 0, 0);
+    .title_image {
+       
+    }
+    
+    
+    height: 40em;
+    .Box {
+        position: relative;
+        height: 100%;
+        background: linear-gradient(rgb(226, 0, 67), rgb(226, 0, 67)) 0% 0% / cover;
+        .Box__icon {
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    margin-top: 1em;
+                    width: 40px;
+                    height: 60px;
+                    opacity: 0.8;                               
+                    border-radius: 5px;
+                    cursor: pointer;
+                    color: rgb(255, 255, 255);                    
+                }
+                .icon__left {
+                      
+
+                }
+                .icon__right {
+                        right: 0;
+                }
+        }
+        .Box_title {
+            text-align: center;
+            .title {
+                color: rgb(255, 0, 0);
+                font-weight: 800;
+                font-size: 1.4rem;
+            }
+        }
+        
+    
+    }
+}
+.list__item { 
+    height: 95%;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;  /* Không cho phần tử xuống dòng, sẽ xếp theo chiều ngang */
+    overflow-x: hidden;  /* Hiển thị thanh cuộn ngang khi cần thiết */
+    padding: 0;
+    list-style-type: none;
+}
+
+.itemGroup {
+    display: flex;  /* Xếp các item thành hàng */
+    grid-column-gap: 30px;  /* Khoảng cách giữa các item trong cùng một nhóm */
+    flex-direction: column;
+    grid-row-gap: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+   
+    .item {
+        border-radius: 1rem ;
+        display: flex;
+        width: 210px;  /* Chiều rộng mỗi item */
+        height: 250px;  /* Chiều cao mỗi item */
+        flex-shrink: 0;  /* Không co lại khi không đủ chỗ */
+        background-color: rgb(34, 34, 34) ;
+        padding: 2rem 1rem 4rem 1rem;
+        box-shadow: 0 2px 1px 0 rgba(50, 50, 50, 0.66)
+                    0 2px 6px 2px 0 rgba(52, 52, 52, 0.795);
+   
+        .Link {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            img {
+                margin-bottom: 1rem;
+                height: 95%;
+                width: 95%;
+                object-fit: contain;
+            }     
+        }
+    }
+    .item:hover {
+        img {
+            height: 100%;
+            width: 100%;
+            transition:  0.1s ease;
+       
+        }
+            
+    }
+}
+
+
+
+
+
+.image_product {
+    width: 100%;
+    height: auto;
+}

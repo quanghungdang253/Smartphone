@@ -8,13 +8,11 @@ import { dark } from '@mui/material/styles/createPalette';
 
 const SamsungComponent = ({data, namephone, ...props}) => (
 <Suspense fallback={(<Loading/>)}>  
-        <React.Fragment>
-                        <Vd2/>
-                        <Vd3/>
-                        <ListimageProduct image={data.advertising_images}/>
+        <div style={{marginTop: '200px'}}>
+                        <ListimageProduct image={data.advertising_images} customs={true}/>
                         <ShowInfo namephone={data} enpoint={namephone}  {...props}/>
-        </React.Fragment>
-        </Suspense>
+        </div>
+ </Suspense>
 
 )
 const OppoComponent = ({data, namephone, ...props}) => (
@@ -31,7 +29,7 @@ const DefaultComponent = ({data, namephone, ...props}) => (
 
     <Suspense fallback={(<Loading/>)}>  
             <React.Fragment>
-                  
+                   
                     <ShowInfo namephone={data} enpoint={namephone}  {...props}/>
             </React.Fragment>
     </Suspense>

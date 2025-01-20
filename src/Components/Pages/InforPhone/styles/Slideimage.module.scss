@@ -1,0 +1,129 @@
+
+li {
+    font-size:0.9rem;
+    width:20em;
+    padding: 5px 5px;
+}
+.image {
+    max-width: 47em;
+    max-height: 20em;
+}
+.Wrapper {
+    
+    max-width: 47em;
+    .aside1 {
+         .Wrapper__contact2 {
+             background-color: white;
+             box-shadow: 
+               0 1px 2px 0 rgba(60, 64, 67, .1),
+               0 2px 6px 2px rgba(60, 64, 67, .15);
+             margin-top: 2rem;
+             padding: 1rem 1rem;
+             display: grid;
+             grid-template-columns: 50% 50%;
+    .Item {
+             display: flex;
+             align-items: center;
+             grid-column-gap: 1rem;
+             margin-bottom: 1rem;
+             }
+             .Wrapper__sale1 {
+                     
+                  
+             } 
+        }
+    }
+}
+.HandleImage {
+    max-width:100%;
+    box-shadow: 
+       0 1px 2px 0 rgba(60, 64, 67, .1),
+       0 2px 6px 2px rgba(60, 64, 67, .15);
+}
+
+.HandleImage__button {
+           border-radius:5px;
+           border: 2px solid black;
+           max-width: 6rem;
+           height:5rem;
+           flex-shrink: 0; /* Đảm bảo kích thước button không bị co */
+           margin-right: 8px; /* Khoảng cách giữa các button */
+}
+.HandleImage__button:hover{
+                   border: 2px solid red;
+           }
+.HandleImage__button:active{                             
+                   border: 2px solid red;
+           }
+.HandleImage__button.selected {
+                   border: 2px solid red;
+           }
+           
+      
+
+.HandleImage {
+    padding: 1rem 1rem;
+    .HandleImage__image {
+        padding: 2rem 0 0 0 0;
+        width: 800px;
+        margin: 0 auto;
+        overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và sẽ ẩn đi  
+        .HandleImage__node {
+             display: flex;
+             grid-column-gap: 37em;         
+             height:100%;
+             align-items:center;
+             position:absolute;  
+        }
+       .list__image {
+            padding:1.5rem 0 0 0 ;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            box-sizing:border-box;
+        }
+    }
+}
+
+
+.main__image {
+    width:60%;
+    height:20rem; 
+  
+}
+.small__image {
+   max-width:22em;
+}
+.btn__image {
+   width:100%;
+   height:100%;
+   object-fit: cover;
+  
+}
+  
+.HandleImage__image {
+         max-width: 90%;
+         height:350px;
+         position: relative;
+}
+.HandleImage__image img {
+
+           object-fit: contain;
+           transition: opacity 0.8s ease-in-out;
+}
+
+.HandleImage_Slide {
+            max-width: 95%;
+            display: flex;
+            grid-column-gap: 10px;
+            overflow-x: auto;                      /* Cho phép cuộn ngang */
+            overflow-y: hidden;                    /* Ẩn cuộn dọc */
+            white-space: nowrap;                   /* Ngăn xuống dòng */
+                                /* Đặt chiều rộng tối đa cho vùng hiển thị */
+           -ms-overflow-style: none;
+                    
+}
+.HandleImage_Slide::-webkit-scrollbar {
+            display: none; /* Ẩn thanh cuộn trên Chrome, Edge và Safari */
+
+}

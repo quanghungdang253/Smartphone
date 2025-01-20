@@ -2,36 +2,43 @@
     "phonecompany": [
         {
             "id": 1,
-            "name": "samsung"
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
         },
         {
-            "id":2,
-            "name": "vivo"
+              "id":2,
+              "name": "vivo",
+              "image":"https://cdn.tgdd.vn/Products/Images/42/331200/vivo-y19s-bac-thumb-600x600.jpg"
            
         },
         {
             "id":3,
-            "name": "IPhone"
+            "name": "IPhone",
+              "image":"https://beta-api.bachlongmobile.com/media/catalog/product/cache/bfb35fd1430014b0a164bf3a48626862/i/p/iphone-16-pro-den-650x650_7_1_cropped_5.webp"
            
         },
         {
             "id":4,
-            "name": "Xiamio"
+            "name": "Xiamio",
+              "image":"https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329938/xiaomi-14t-xam-1-638635700973443455-750x500.jpg"
            
         },
         {
             "id":5,
-            "name": "Ipad"
+            "name": "Ipad",
+              "image":"https://bizweb.dktcdn.net/thumb/1024x1024/100/471/129/products/minhtuanstore530x500-a7b0f28d-eb29-48e9-b202-c85835f25ab6.png?v=1704515341897"
            
         },
         {
             "id":6,
-            "name": "oppo"
+            "name": "oppo",
+              "image":"https://cdn-v2.didongviet.vn/files/products/2023/10/6/1/1699265624762_oppo_a18_didongviet_thumb_anh_san_pham.jpg"
            
         },
         {
             "id":7,
-            "name": "Nokia"
+            "name": "Nokia",
+              "image":"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/_/1_250.jpg"
            
         }
     ],

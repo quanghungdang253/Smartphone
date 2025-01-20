@@ -104,7 +104,7 @@ function Search({shows}) {
                     onKeyDown={(event) => {
                     if (event.key === 'Enter') {
                         setShowSuggestions(false);
-                        // document.getElementById("inputproduct").value = "";                     
+                                    
                     }    
                 }}
                 onClick={ () => {

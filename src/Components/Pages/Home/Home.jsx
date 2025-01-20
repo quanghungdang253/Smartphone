@@ -10,6 +10,7 @@ import { Helmet } from 'react-helmet-async';
 import Article from './Components/Article';
 import { Context } from '../../../Context/Settings/Theme/ThemeContext';
 import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
+import FormSection from './Components/Section/form-section';
 function Home({home}) {
  const {theme} = useValue();
     return (
@@ -18,11 +19,20 @@ function Home({home}) {
                         <Helmet>
                                 <title> Quang Hùng Store </title>
                         </Helmet>
-                         <header className='Header Style'>   
+                         <header className='Box__header'> 
+                             <div className='Header Style'>    
                                  <Menuheader/>
                                  <Productads/>
                                  <Article/>
+                             </div>
+                              <div className='form__section'>
+                                 <FormSection/>
+                              </div>
                          </header>
+                       
+                 </div>
+                 <div>
+                                
                  </div>
                         <div className={"overlayer Productlist"}> 
                                         <Products_list/>
@@ -32,33 +42,45 @@ function Home({home}) {
     );
 }
 const MainHome = styled.div `
-
-
-    position: absolute;
+      width: 100%;
+      background-color:black;
+      padding-top:1rem;
     z-index: 2;
     // ======================================thiết lập theme ================================
-
-
-    //==================================================================================
+  //==================================================================================
         .Header {
-                        padding:2rem 2rem;
-                        margin: 5% 7% 0% 7%;
-                        display: flex;  
-                        align-items: center;  
-                        grid-column-gap: 5%;
-                        height: 505px;                  
+        padding:1rem 2rem 1rem 1rem;
+         margin-top:6rem;
+         display: flex;  
+          align-items: center;  
+         justify-content:center;
+         grid-column-gap: 5%;
+         height: 505px;   
+         max-width:1450px;
+         margin-left: auto;
+         margin-right:auto;  
+         box-sizing: border-box;
+
+        }
+        .form__section {
+                max-width: 1450px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 1rem;
+                margin-bottom:2rem;
+                
         }
         .Productlist {
-                    
+                      margin-top:19rem;
         }
         .Style {
-            background-color:white;
+                        background-color:white;
         }
      
           
          
         .btn__wrappper {
-             position: absolute;
+                                position: absolute;
         } 
 
 `

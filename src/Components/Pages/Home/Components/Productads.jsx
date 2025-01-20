@@ -15,56 +15,52 @@ const Productads = () => {
       
 
     ])
-
     const [Preindex , Setindex] =  useState(0); 
     useEffect(() => {
-
         if(Preindex === Preimage.length ){
                 Setindex((Preindex) => Preindex = 0)
                     }
         else if(Preindex < 0){
             Setindex((Preindex) => Preindex = Preimage.length - 1);
       }
-
     },[Preindex, Preimage.length])
-
          useEffect(() => {
             const Settime = setInterval(() =>{
                              Setindex((Preindex) => Preindex + 1)
                      },2000)
-
                     return(() => clearInterval(Settime));
                     }, [Preimage[Preindex]])
-
     const Right = () =>{
                         Setindex((Preindex) => Preindex + 1);
     }
-
     const Left = () => {
                          Setindex((Preindex) => Preindex - 1);
     }
     return(
-                <Wrapper>  {/*className='Wrapper'  */}
+        <Wrapper>  {/*className='Wrapper'  */}
                      <Aside> 
-                     <img src={Preimage[Preindex]} alt='' className='image' />
+                     <img src={Preimage[Preindex]} alt='' className='image'/>
                           {/* className={styles.navigation} */}
                                 <div className='Navigation'>   {/* styles.navigationleft */ }
                                             <Button variant='outlined'  className= 'Navigation__iconLeft icon'  data-nodeLeft  onClick={() => Left()}> 🢤 </Button>
                                             <Button variant='outlined' className='Navigation__iconRight icon' data-nodeRight   onClick={() => Right()}> 🢧 </Button>
                                 </div> 
                     </Aside>                       
-                </Wrapper>
+        </Wrapper>
     )
 }
-
 const Wrapper = styled.div  `
    
 
         .image {
             height: 27.5rem;
             width:100%;
+            height:100%;
             border-radius: 1.5rem;
             position: relative;
+            box-shadow:0 2px 2px 0 black
+                       2px 0px 6px 0 black;
+            border: 1px solid black;
           
         }
         &:hover + .Navigation .icon {  // bộ chọn anh em liền kề 
@@ -108,6 +104,8 @@ const Wrapper = styled.div  `
 `
 const Aside = styled.div`
             width: 600px;
+            height: 473px;
+            
 
 `
 

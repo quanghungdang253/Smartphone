@@ -18,7 +18,7 @@ let { theme } = useValue();
         <Header>  
             <MainHeaders>
                 <div className='Wrapper__MainHeader'> 
-                  <TitleandProducts shows={setShow}/>
+                     <TitleandProducts shows={setShow}/>
                              <Search  shows={setShow1}/> 
                        <Navigation_header/>
                  </div>               
@@ -39,9 +39,9 @@ let { theme } = useValue();
     );
 }
 const Header = styled.div`
-      /* background-color:black;   
-       height:100%; */
-     
+    
+       max-width:100%;
+    
        .Header{
         margin-left:8.5rem;
             position: fixed;
@@ -52,19 +52,21 @@ const Header = styled.div`
 `
 const MainHeaders = styled.div`
 background-color:black;
+padding-top:0.5rem;
+padding-bottom:0.5rem;
 position: fixed;
+top:0;
 z-index: 999 ;
-width: 100%;
+width:100%;
 
-            .Wrapper__MainHeader{
-                width: 100%;
+.Wrapper__MainHeader{
+                margin-left: auto;
+                margin-right:auto;
+                width: 1450px;
                 position: relative;
                 z-index:1000;
                 display: grid;
-                grid-column-gap:2rem;
-                grid-template-columns: 30% 20% 100%;
-                margin: 0% 7% 0% 7%;
-            
+                grid-template-columns: 31% 28.5% 30%; 
             }
            
           

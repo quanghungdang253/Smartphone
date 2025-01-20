@@ -35,8 +35,8 @@ const TitleandProducts = ({shows}) => {
     }, []);
 
     return (
-        <header>
-            <Wrapheader>
+       
+            <Header>
                 <Link to={'/'} className='Link'>
                     <HeaderTitle>
                         <img
@@ -50,27 +50,27 @@ const TitleandProducts = ({shows}) => {
                 <Dropdowncont>
                     <div className='header__menu'>
                         <Button variant="outlined" className='header__iconmenu' onClick={handleMenuClick}>
-                        <FontAwesomeIcon icon={faBars} className='iconmenu' fade /> Danh Mục
+                                <FontAwesomeIcon icon={faBars} className='iconmenu' fade /> Danh Mục
                         </Button>
                     </div>
                 </Dropdowncont>
             
-                </Wrapheader>
+                </Header>
           
             
            
-        </header>
+       
     );
 };
 
-const Wrapheader = styled.div`
+const Header = styled.div`
         display: flex; 
-        align-items: center;
+        align-items: center;    
         gap: 1em;
         font-family: "Merriweather", serif;
         font-weight: 300;
          font-style: normal;
-         width: 100%;
+         max-width: 22em;
     .Menuheader {
             position: absolute;
     }
@@ -84,21 +84,24 @@ const HeaderTitle = styled.div`
     align-items: center;
 
     .header__image {
-        height: 5rem;
-        border-radius: 100%;
+        height: 4rem;
+        border-radius: 50%;
     }
 
     h1 {
-        font-size: 1.5rem;
-        color: red;
+        font-size: 1.3rem;
+        color: white;
         font-weight: 700;
     }
 `;
 
 const Dropdowncont = styled.div`
+  width:25%;
          .header__iconmenu {
-            border: 2px solid;
-            font-weight: 500;
+            border: 1px solid red;
+            font-weight: 700;
+            color: white;
+            width: 8rem;
          }
          .iconmenu {
             padding-right: 3px;

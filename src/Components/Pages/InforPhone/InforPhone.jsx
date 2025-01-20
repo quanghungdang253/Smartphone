@@ -8,6 +8,8 @@ import { useParams } from 'react-router-dom';
 import useHandledetailApi from '../../../Api/useHandledetailPhone';
 import Loading from '../../Common/components/Loading';
 import { Helmet } from 'react-helmet-async';
+import Category_Name from './data/Category-Name';
+
 function InforPhone(props) {
     const params = useParams();  // lấy id và link từ app.jsx
     const link = params.link;
@@ -18,7 +20,8 @@ function InforPhone(props) {
                 <Wrapper>
                        <div className='main'>                 
                             {loadings ? ( <Loading/>) : (                                            
-                                <Main>                           
+                                <Main>          
+                                        {/* <Category_Name Data={datas}/>   */}
                                         <InformationPhones Data={datas}/>
                                 </Main>                          
                             )}                                        
