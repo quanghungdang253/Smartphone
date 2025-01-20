@@ -42,6 +42,12 @@ function Home({home}) {
     );
 }
 const MainHome = styled.div `
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
       width: 100%;
       background-color:black;
       padding-top:1rem;
