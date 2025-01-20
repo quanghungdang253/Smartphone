@@ -59,8 +59,8 @@ const MainHome = styled.div `
          grid-column-gap: 5%;
          height: 505px;   
          max-width:1450px;
-         margin-left: 7%;
-         margin-right:7%;  
+         margin-left: auto;
+         margin-right:auto;  
          box-sizing: border-box;
 
         }
