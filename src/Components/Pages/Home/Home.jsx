@@ -42,7 +42,8 @@ function Home({home}) {
     );
 }
 const MainHome = styled.div `
-
+    margin-left: 7%;
+    margin-right: 7%;
 
       width: 100%;
       background-color:black;
@@ -66,8 +67,7 @@ const MainHome = styled.div `
         }
         .form__section {
                 max-width: 1450px;
-                margin-left: 7%;
-                margin-right: 7%;
+            
                 margin-top: 1rem;
                 margin-bottom:2rem;
                 
