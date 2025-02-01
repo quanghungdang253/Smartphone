@@ -5,12 +5,10 @@ li {
     padding: 5px 5px;
 }
 .image {
-    max-width: 47em;
-    max-height: 20em;
+    max-width: 100%;
 }
 .Wrapper {
-    
-    max-width: 47em;
+    max-width: 52em;
     .aside1 {
          .Wrapper__contact2 {
              background-color: white;
@@ -36,9 +34,7 @@ li {
 }
 .HandleImage {
     max-width:100%;
-    box-shadow: 
-       0 1px 2px 0 rgba(60, 64, 67, .1),
-       0 2px 6px 2px rgba(60, 64, 67, .15);
+   
 }
 
 .HandleImage__button {
@@ -62,33 +58,58 @@ li {
       
 
 .HandleImage {
-    padding: 1rem 1rem;
+ .addcolor {
+    background-color: aqua;
+ }
     .HandleImage__image {
-        padding: 2rem 0 0 0 0;
-        width: 800px;
-        margin: 0 auto;
+        max-width: 100%;
+        height: 400px;
+        border-radius: 10px;
+      
+        padding: 2rem 2rem 5rem 2rem;
+        
         overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và sẽ ẩn đi  
         .HandleImage__node {
-             display: flex;
-             grid-column-gap: 37em;         
+             display: flex;        
              height:100%;
              align-items:center;
              position:absolute;  
+             grid-column-gap: 40em;
         }
        .list__image {
-            padding:1.5rem 0 0 0 ;
-            width:100%;
+            grid-column-gap: 2rem;
             display: flex;
             justify-content: center;
-            box-sizing:border-box;
+    
+            .List__item {
+              display: inline-block;
+              display: flex;
+              flex-direction: column;
+              grid-row-gap: 0.8rem;
+                .item {
+                    font-weight: 600;
+
+                }
+                .item::before{
+                    content: '+';
+                    font-size: 1.2rem;
+                    width: 10px;
+                    height: 10px;
+                    color: red;
+                }
+
+            }
+          
         }
     }
 }
 
 
 .main__image {
-    width:60%;
-    height:20rem; 
+    width:50%;
+    height:19rem;
+     
+    border-radius: 20px;
   
 }
 .small__image {
@@ -102,20 +123,20 @@ li {
 }
   
 .HandleImage__image {
-         max-width: 90%;
          height:350px;
          position: relative;
 }
 .HandleImage__image img {
-
-           object-fit: contain;
+          
+           object-fit: cover;
            transition: opacity 0.8s ease-in-out;
 }
 
 .HandleImage_Slide {
-            max-width: 95%;
+            max-width: 100%;
             display: flex;
-            grid-column-gap: 10px;
+            margin-top: 1rem;
+            grid-column-gap: 16px;
             overflow-x: auto;                      /* Cho phép cuộn ngang */
             overflow-y: hidden;                    /* Ẩn cuộn dọc */
             white-space: nowrap;                   /* Ngăn xuống dòng */

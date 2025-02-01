@@ -1,0 +1,10 @@
+{
+    "samsung": "dataSamsung",
+    "vivo" : "dataVivo",
+    "xiamio": "dataXiamio",
+    "oppo": "dataOppo",
+    "iphone": "dataIphone",
+    "ipad": "dataIpad",
+    "nokia": "dataNokia"
+
+}

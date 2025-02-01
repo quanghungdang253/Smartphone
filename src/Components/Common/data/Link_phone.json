@@ -67,6 +67,44 @@
             "price_level": "tử 10 đến 50 triệu "
             
         }
+    ],
+    "hot__phone": [
+        {
+            "id": 1,
+            "name": "samsung"
+             
+        },
+        {
+            "id": 2,
+            "name": "I Phone 16 Series"
+             
+        },
+        {
+            "id": 3,
+            "name": "I Phone 15 Series"
+           
+        },
+        {
+            "id": 4,
+            "name": "Galaxy S25 Ultra"
+             
+        },
+        {
+            "id": 5,
+            "name": "samsung"
+             
+        },
+        {
+            "id": 6,
+            "name": "samsung"
+              
+        },
+        {
+            "id": 7,
+            "name": "samsung"
+              
+        }
+      
     ]
 
     

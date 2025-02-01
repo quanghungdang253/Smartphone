@@ -1,267 +1,161 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
 import Loading from '../components/Loading';
 import { Helmet } from 'react-helmet-async';
 import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
+import styles from './styles/ShowInfo.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { DefaultComponent } from '../../Pages/Products_list/services/HandleComponent';
+import {faHeart} from '@fortawesome/free-solid-svg-icons';
+import {NameProducts , dataHome} from '../../Pages/Home/Components/Section/data/data-selection/data-selection';
+import useHandledetailApi from '../../../Api/useHandledetailPhone';
+import componentEnpoint from '../componentEnpoint';
+import { use } from 'react';
 function ShowInfo(props) {
-     const { theme } = useValue();
-                let namephone = props.namephone;
-                let enpoints = props.enpoint;
+    const { theme } = useValue();
+    const id = props.id; // Sửa từ props.setId
+    const namephone = props.namephone; // Dữ liệu hiển thị
+    const enpoints = props.enpoint; // Tên dữ liệu đầu cuối
+  
+    const [loading, setLoading] = useState(true);
+    const [index, setIndex] = useState(0);
+    const [predata, setData] = useState([]);
+    const [handledata, setHandle] = useState(dataHome);
+    const [enpoint, setEnpoint] = useState("");
 
-                const [link,setLink] = useState("");
-    if (!namephone.data) {
-         <Loading/>; // Kiểm tra namephone.data nếu namephone có dữ liệu
-    } else {
-        console.log('Dữ liệu không có hoặc chưa tải xong');
+    useEffect(() => {
+      const fetchdata = dataHome.find((item , id) => id === index);
+      // const fetchdata = handledata.find((item,id) => id === index);
+      if (fetchdata && !enpoints) {
+            setData(fetchdata);
+      }else {
+            setData(namephone);
+      }
+    }, [index, handledata]);
+  
+    useEffect(() => {
+      if (namephone) {
+        setHandle(namephone.data);
+        setLoading(false);
+      }
+    }, [namephone]);
+  
+    useEffect(() => {
+      if (namephone) {
+        setLoading(false);
+      }
+    }, [namephone]);
+  
+    useEffect(() => {
+      const nameEnpoint = {
+           samsung: "dataSamsung",
+           vivo: "dataVivo",
+      };
+  
+      const getData = async () => {
+        const getEnpoint = nameEnpoint[enpoints];
+
+        if (getEnpoint) {
+          setEnpoint(getEnpoint);
+        } else {
+          setEnpoint(""); // Gán giá trị mặc định nếu không tìm thấy
+        }
+      };
+  
+      getData();
+    }, [enpoints]);
+  
+    if (loading) {
+      return <Loading />;
     }
-const [loading, setLoading] = useState(true);
-useEffect(() => {
-            if(namephone){
-                        setLoading(false);
-            }
-},[namephone])
-const [enpoint, setEnpoint] = useState('');
-   useEffect(() => {
-            switch(enpoints){
-                    case "samsung":
-                             setEnpoint('datasamsung');
-                             break;
-                     case"vivo":
-                            setEnpoint('datavivo');
-                
-                     default:{
-                            setEnpoint('dataPhone');
-                            break;
-                     }         
-            }
-   },[enpoints])
-
-   if (  !namephone.data) {
-    return <Loading />;
-}
+  
+    const star = Array(5).fill(0);
     return (
-        <Wrapper className={`Wrapper ${!theme ? 'Dark' : ''}`}>
-     
+        <div className={styles.hot__promotion}>
+         <div className={`${styles.Wrapper} ${!theme ? styles.Dark : ''}`}>
+         {enpoints ? ("") : (
+            <div className={styles.image__promotion}>
+                 <h3 className={styles.name_promotion}> Khuyến mãi online </h3>
+           </div>
+         )}
+      
+
            {!enpoints ? (
-                    <ul>  
-                        <li> jqwfiowjefoiwejfoiwejđwdwdwdwfwfwewer23r223r23r23r23r23r32r23r23r3fewfefe2</li>
-                    </ul>
+            <ul className={styles.list_item}>  
+                {NameProducts.map((Item) => (
+                    <li
+                        key={Item.id} 
+                        className={`${styles.items} ${Item.id === index ? styles.addcolor : ""}`}
+                         onClick={() => setIndex(Item.id)}
+                                                            >
+                              <img src={Item.image} className={styles.image} alt='' />
+                              <h1 className={styles.name}> {Item.name} </h1>      
+                    </li>
+                ))}
+            </ul>
            ): ("")}
                      <Helmet>
                          {enpoints && ( <title> {`Điện thoại ${enpoints} - Hùng Store`}   </title>)} 
                             
                      </Helmet>
-        <ShowPhone className={theme ? 'Bright_1' : "Dark_1" }>
-            {namephone && namephone.data && namephone.data.length > 0 ? (
-                namephone.data.map((List) => (
-                 
-                    <div key={List.id} className={`Showphone__Info ${theme ? 'Color__Bright' : 'Color__Dark'}`}>
-                    
-                        <Link to={`/Detail/${enpoint}/${List.id}`}>
-                           <div className='box__body--link'> 
-                                <Negotiate>
-                                      <span className='discount promotion'> Giảm giá: {List.discount} </span>
-                                      <span className='installment promotion'> Trả góp: {List.installment} </span>
-                                </Negotiate>
-                                <Image>
-                                      <img src={List.image} alt={List.titles} />
-                                 </Image>
-                                     <h2 className='Showphone__title'> {List.titles} </h2>                      
-                                <div className='price_up_down'>
-                                    <h3 className='price '>{List.price}</h3>
-                                    <h3 className='pricedown'> {List.priceDown} </h3>
+        <div className={`${styles.Show_phone} ${theme ? styles.Bright_1 : styles.Dark_1} `}>
+            
+            {predata && predata.data && predata.data.length > 0 ? (
+                predata.data.map((List) => (
+                    <div key={List.id} className={`${styles.Showphone__Info} ${theme ? styles.Color__Bright : styles.Color__Dark}`}>                  
+                        <Link to={`/Detail/${enpoint}/${List.id}`} className={styles.Link}>
+                           <div className={styles.box__body_link}> 
+                                <div className={`${styles.Negotiate}`}>
+                                      <span className={`${styles.discount} ${styles.promotion}`} > Giảm giá: {List.discount} </span>
+                                      <span className={`${styles.installment} ${styles.promotion}`} > Trả góp: {List.installment} </span>
                                 </div>
-                        <div className='text'>  
-                            <h3 className='text title '> {List.title}</h3>
-                            <img src={List.image_1} alt='' className='image_1'/>
+                                <div className={`${styles.image}`}>
+                                      <img src={List.image} alt={List.titles} />
+                                 </div>
+                    <h2 className={`${styles.Showphone__title}`}> {List.titles} </h2>                      
+                                <div className={`${styles.price_up_down}`}>
+                                    <h3 className={`${styles.price}`}>{List.price}</h3>
+                                    <h3 className={`${styles.pricedown}`}> {List.priceDown} </h3>
+                                </div>
+                <div className={`${styles.text}`}>  
+                            <h3 className={`${styles.text} ${styles.title}`}> {List.title}</h3>
+                            {console.log("tên  điện thoại "+List.title)}
+                            <img src={List.image_1} alt='' className={`${styles.image_1}`}/>
                             <p 
-                                className='text'>  Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng                                     
+                                className={`${styles.text}`}>  Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng                                     
                             </p>
                         </div>
                     </div>
-                    <div className='box__icon'> 
-                      <img src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className="icon"/>
-                      <img src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className="icon"/>
-                      <img src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className="icon"/>
-                      <img src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className="icon"/>
-                      <img src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className="icon"/>
-                     
-                    </div>
+                <div className={styles.container_icon}>
+                        <div className={`${styles.box__icon}`}> 
+                           {star.map((_, index) => ( 
+                             <img key={index}   src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className={`${styles.icon}`}/>
+                           ))}
+                       </div>
+                    <p>
+                        <span> Yêu thích </span>   
+                        <FontAwesomeIcon icon={faHeart} className={styles.icon__star}/>
+                    </p> 
+                  </div>
                 </Link>
                     </div>
                 ))  
             ) : (
                 <p>No data available</p>
             )}
-        </ShowPhone>
-    </Wrapper>
+        </div>
+    </div>
+</div>
 
 )
 }
-const Wrapper = styled.div`
 
-   .image_1 {
-     width:100%;
-     height:50px;
-     object-fit:contain;
-   }
         //  ===================== phần thiết lập đổi màu nền ======================
-        .Bright_1{
-                    background-color:#EEEEEE;
-        }
-        .Dark_1{
-                    background-color:#999999;
-        }
-
-        .Color__Bright{
-                background-color: #FFFFFF
-        }
-        .Color__Dark {
-                        background-color:black;
-                        
-        }
-        .box__body--link {
-            max-height: 300px;
-           
-        }
-        .box__icon {
-            width:100%;
-            display:flex;
-            align-items:end;
-            margin-top:9rem;
-        }
-   .icon {
-    width:1.3rem;
-    height:1.3rem;
- 
-   }
-
         //===========================================================
-
-
-
-
-padding-top:30px;
-          margin: 0% 7% 0% 7%;
-         
-`
-const ShowPhone = styled.div `
-        display: grid;
-        grid-template-columns: 20% repeat(4, 20%);
-        grid-row-gap: 1rem;
-       padding-left:16px;
-
+     
 // =================================phần chung ======================================
-.text {
-    padding:5px 5px;
-    margin: 10px 0px 5px 0px;
-    background-color: #f3f4f6;
-    border-radius: 1rem;
-    font-weight: 500;
-    font-size: 13px;
-}
-.title {
-        color: black;
-        font-size: 16px;
-    
-}
-.price {
-    font-size: 17px;
-    color: red;
-    font-weight: 700;
-
-}
-.pricedown {
-      text-decoration: line-through;
-}
-.price_up_down{
-        display: flex;
-        justify-content: space-around;
-}
 
 
-//===================================================================================
-
-.Showphone__Info {
-    margin-top:1rem;
-      padding: 1rem 1rem 3rem 1rem;
-      width: 90%;
-      cursor: pointer;
-      border-radius: 2rem;
-      box-shadow: 0 2px 3px black;
-                  /* 1px 0px 2px black; */
-      
-}
-
-.Showphone__Info:hover {
-     transform: translateY(-5px);
-     transition: all ease 0.5s;
-}
-.Showphone__Info .discount{
-
-    border: 1px solid black;
-    font-weight:600;
-    background:red;
-   
-    color: white;
-    height:1.4rem;
-    width: 5rem;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius:10px;
-    font-size:0.7rem;
-    text-align: center;
-
-}
-.promotion {
-    display:flex;
-    justify-content:center;
-    align-items:center;
- 
-    font-weight:600;
-}
-.installment {
-    border: 1px solid rgb(0, 0, 0);
-font-size:0.7rem;
-   
-    color:rgb(255, 255, 255);
-    background-color:red;
-    border-radius:5px;
-    padding:2px;
-}
-
-.Showphone__Info a {
-text-decoration: none;
-color: black;
-display: grid;
-gap: 12px;
-}
-.Showphone__title {
-    font-size:1.1rem;
-    font-weight:700;
-
-}
-
-img {
-        width:110%;
-        height:170px;
-        object-fit:cover;
-}
-`
-const Negotiate  = styled.div `
-        display: flex;
-        grid-column-gap: 3.3em;
-        margin-bottom:1rem;
-
-`
-const Image = styled.div `
-    width: 75%;
-    margin-left: 1.5em;
-    margin-bottom:0.5rem;
-    display: flex;
-    justify-content:center;
-
-`
 export default ShowInfo;
 
 

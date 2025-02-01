@@ -5,7 +5,7 @@ import Menuheader from '../Menuheader';
 import { Typography } from '@mui/material';
 import createTheme from '@mui/material';
 function Smartphone(props) {
-    const value = props.value;
+             const value = props.value;
   
     return (
         <Wrapper>
@@ -24,10 +24,7 @@ function Smartphone(props) {
                     ))
                   ): (
                     <p>{alert("chữa lấy data")}</p>
-                  )}
-                   
-                    
-                       
+                  )}               
             </PhoneCompany>
             <Price className='tabchoose'> 
                        <Typography variant='h6'> Mức giá </Typography>
@@ -38,8 +35,25 @@ function Smartphone(props) {
                               > {list.price_level}
                              </Link>
                     ))}
-
             </Price>  
+            <PhoneCompany className='tabchoose'> 
+                  <Typography variant='h6'> Điện thoại hot 2025 </Typography>
+                  {value.phonecompany && value.phonecompany.length > 0 ?  (
+                    value.hot__phone.map((list) => (
+                         <Link  
+                                className='Link'
+                                to={`/label/${list.name}`} 
+                                 key={list.id}> 
+                                 
+                                    {list.name}     
+                                                           
+                         </Link>      
+                    ))
+                  ): (
+                    <p>{alert("chữa lấy data")}</p>
+                  )}               
+            </PhoneCompany>
+            
         </Wrapper>
     );
     
@@ -80,16 +94,13 @@ const Wrapper = styled.div`
                 justify-content: start;
                
             }
-        
 ` 
 const PhoneCompany = styled.div `
-        .image--menu {
-            width: 35px;
-            height:30px;
-            object-fit: contain;
+          .image--menu {
+              width: 35px;
+              height: 30px;
+              object-fit: contain;
         }
-           
-
 `
 const Price = styled.div`
 

@@ -13,6 +13,7 @@ import {faGift} from '@fortawesome/free-solid-svg-icons';
 //======================================hình ảnh============================================================
 // áp dụng quy tắc  camelCase  để đặt tên 
  function InformationPhones({Data}) {
+  
   const [customs, setCustoms] = useState(false);
   const [active, setActive] = useState(0);
   const [preindex , setIndex] = useState(0);
@@ -236,7 +237,7 @@ const parseNumber = (value) => {
                                         {Static_data.add__promotion.map((Item) => (
                                           <li className={style__sale.list__promotion}>
                                               <div>  
-                                                  <img src={Item.icon} alt=""/>
+                                                  <img src={Item.icon} alt="" className={styles.image__icon}/>
                                                    <Link key={Item.id} className={style__sale.Link__promotion}> {Item.content}  </Link>
                                               </div> 
                                           </li>

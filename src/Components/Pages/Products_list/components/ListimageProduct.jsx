@@ -9,7 +9,7 @@ import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 
 const ListimageProduct = ({image, customs}) => {   //ở đây {phone} là viết tắt    const InformationPhone = (props)
-                                                                        // const {image} = props
+                                                                        // const {image} props
         const [preimage , setimage] = useState(image);
         const [preindex , setindex] = useState(0);
         useEffect(() => {

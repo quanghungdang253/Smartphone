@@ -15,6 +15,7 @@ import ListimageProduct from '../../../Products_list/components/ListimageProduct
 function FormSection(props) {
     const [node , setNode] = useState(false);
     const Unordered_list = useRef(null);
+
     const groupedItems = Object.entries(object_image).reduce((result, [productName, {image , category}], index) => {
         const groupIndex = Math.floor(index / 2);
                 if(!result[groupIndex]){
@@ -75,8 +76,10 @@ function FormSection(props) {
                         <li key={index} className={styles.itemGroup}>
                             {group.map(({productName, image, category}) => (
                                 <div key={productName} className={styles.item}>
-                                    <Link to={`/label/${category}`} className={styles.Link}>
-                                        <img src={image} alt={category} className={styles.image_product}/>
+                                    <Link
+                                     to={`/label/${category}`}
+                                     className={styles.Link}>                                                                            
+                                            <img src={image} alt={category} className={styles.image_product}/>
                                             {category}
                                     </Link>
                                 </div>

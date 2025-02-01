@@ -48,7 +48,10 @@
         height: 70em;
         overflow-y: scroll;
         border-radius: 10px;
-       border: 0.1px solid black;
+        box-shadow: 0 2px 1px 0 rgba(49, 49, 49, 0.864)
+                    0 2px 1px 0 rgba(49, 49, 49, 0.864);
+        border: 0.1px solid rgba(59, 59, 59, 0.812);
+           
       
 }
 .aside::-webkit-scrollbar{
@@ -66,7 +69,7 @@
 }
 @media (min-width: 1200px) {
   .Container {
-      width: 1315px;
+      max-width: 1450px;
 }
 }
 
@@ -159,7 +162,7 @@
                          font-size: 0.9rem;
                           font-weight: 700;
                       }
-                    p {
+                      p {
                         font-size: 0.8rem;
                     }
               }

@@ -137,7 +137,7 @@ function Products_list(props) {
        {!data ? (
                   <Loading/>
       ) : (
-        <div>
+        <div className='Render-product'>
                   <RenderbyCategory namephone={namephone} data={data} {...props}/>
         </div>
       )}
@@ -145,7 +145,11 @@ function Products_list(props) {
   );
 }
 const Product = styled.div `
-     
+     .Render-product {
+          margin-left: 7%;
+          margin-right: 7%;
+     }
+
 `
 
 export default Products_list;

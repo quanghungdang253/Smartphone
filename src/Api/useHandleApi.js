@@ -5,7 +5,7 @@ import { Switch } from "@mui/material";
 import Loading from "../Components/Common/components/Loading";
 function useHandleApi(namephone) {  // xử lý hiển thị các điện thoại 
         const[ endpointInfo, setEnpointinFo] = useState(""); 
-        let CategoryInformation = ["Tivi", "Đồ Gia Dụng"]
+        let CategoryInformation = ["Tivi", "Đồ Gia Dụng", "Loa", "Máy giặt", "Đồng hồ", "Nồi chiên không dầu","Máy lọc nước","Tai nghe","Smartphone","Nồi cơm điện","Camera", "Máy hút bụi","Máy nước nóng","Tủ lạnh","Tủ đông","Laptop"];
         let PhoneBrands = ["homephone", "Ipad" , "Iphone", "Nokia","samsung", "vivo", "Xiamio"];
         let CameraBrands = ["Camera Dahua", "Camera Hikvision","Camera Tiandy","Camera Panasonic"];
         let EarBrands = ["Tai Nghe JBL","Tai nghe B&O","Tai nghe Apple","Tai nghe Harman Kardon","Tai nghe Sony", "Tai nghe Focal"]

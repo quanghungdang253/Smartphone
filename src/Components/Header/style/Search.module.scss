@@ -21,15 +21,11 @@ h1 {
 .price {
     color: red;
 }
-
-
 //=================================
 
 .image {
         width: 2rem;
-        height: 2rem;
-   
-       
+        height: 2rem; 
 }
 .link__trends {
      display: grid;
@@ -68,7 +64,7 @@ h1 {
          position: absolute;
          top: 5rem;
     }
-    .input {
+.input {
         padding: 0 0rem 0 2rem;
         height: 2.5rem;
         border:  0;
@@ -77,23 +73,24 @@ h1 {
         font-weight: 400;
         width: 100%;
    }
-   .suggestions {
+.suggestions {
     border: 1px solid black;
     border-top-right-radius: 1rem;
-    margin-top: 1rem;
+    margin-top: 33.5%;
     position: absolute;
     z-index: 1px;
     width: 350px;
     background-color: rgb(255, 255, 255);
     padding: 5px 1rem 1rem 1rem;
-        .image {
+.image {
             max-width: 30px;
             max-height: 30px;
         }
-        .link {
+.link {
             text-decoration: none;
             color: black;
             font-size: 0.9rem;
+            height: 60px;
             display: grid;
             grid-template-columns: 250px 100px;
          

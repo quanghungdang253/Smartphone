@@ -2,36 +2,43 @@
     "phonecompany": [
         {
             "id": 1,
-            "name": "Laptop Al"
+            "name": "Laptop Al",
+            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
         },
         {
             "id":2,
-            "name": "Laptop Gamming"
+            "name": "Laptop Gamming",
+              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         },
         {
             "id":3,
-            "name": "Laptop Học tập văn phòng"
+            "name": "Laptop Học tập văn phòng",
+              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         },
         {
             "id":4,
-            "name": "Laptop đồ họa "
+            "name": "Laptop đồ họa ",
+              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         },
         {
             "id":5,
-            "name": "Laptop Kĩ thuật"
+            "name": "Laptop Kĩ thuật",
+              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         },
         {
             "id":6,
-            "name": "Laptop mỏng nhẹ"
+            "name": "Laptop mỏng nhẹ",
+              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         },
         {
             "id":7,
-            "name": "Laptop cao cấp"
+            "name": "Laptop cao cấp",
+            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         }
     ],
@@ -59,6 +66,43 @@
             "id": 5,
             "price_level": "dưới 50 triệu "
             
+        }
+    ],
+    "hot__phone": [
+        {
+            "id": 1,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 2,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 3,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 4,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 5,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 6,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 7,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
         }
     ]
 

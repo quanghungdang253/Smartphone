@@ -11,7 +11,6 @@ import Link_earphone from './data/Link_earphone.json';
 import { listClasses } from '@mui/material';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import {ReactComponent as IconarrowRight} from "./icon/arrowRight.svg";
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faClock, faCogs, faDesktop, faLaptop, faHome, faHeadphones, faCamera, faTv, faNewspaper,  faSnowflake  } from '@fortawesome/free-solid-svg-icons';
 
@@ -45,14 +44,12 @@ function Menuheader({addPadding}) {
         { id: 8, items: Link_laptop},
         { id: 9, items: Link_laptop},
     ]
-    console.log(items[0].icon);
     return (
                 <Wrapper        
                         onMouseEnter={() => setIndex(preindex)}  // hoạt động khi người dùng di chuyển chuôt vào 
                         onMouseLeave={() => setIndex(null)}
                       className= "show" 
                 >
-      
                 <div className={`Wrapper__label ${addPadding ? "addpadding" : ""} ${theme ? 'Bright' : 'Dark'} `}> 
                      {/* phương pháp chèn icon thứ nhất  */}
                            
@@ -64,15 +61,13 @@ function Menuheader({addPadding}) {
                                 <div className='Wrapper__label--menu'
                                     key={index}
                                     onMouseEnter={() =>{                                             
-                                            setIndex(index);                                         
-                                            const fountindex = Listitem.find((listItem) => listItem.id === index);
-                                                        if(fountindex ){
-                                                                setProduct(fountindex.items);
-                                                        }                                          
-                                    }} 
-                                                                           >
-                                                <div  className={`label_icon ${theme ? 'color__Bright' : 'color__Dark'}`}>
-                                               
+                                        setIndex(index);                                         
+                                        const fountindex = Listitem.find((listItem) => listItem.id === index);
+                                        if(fountindex ){
+                                                setProduct(fountindex.items);
+                                        }                                          
+                                    }}                                                                       >
+                                <div className={`label_icon ${theme ? 'color__Bright' : 'color__Dark'}`}>                                       
                                                                         {item.icon }
                                                                         {item.label}    
                                                 </div>

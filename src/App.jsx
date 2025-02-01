@@ -51,13 +51,14 @@ import Loading from './Components/Common/components/Loading';
 import { HelmetProvider } from 'react-helmet-async';
 import CommunicationSettings from './Components/CommunicationSettings/CommunicationSettings';
 import { ParentContext } from './Context/Settings/Theme/ThemeContext';
-import Vd1 from './vd';
-
+import Products_list from './Components/Pages/Products_list/Products_list';
+import Home from './Components/Pages/Home/Home';
+import  InforPhone from './Components/Pages/InforPhone/InforPhone';
 
 export default function App() {
-  const Products_list  = React.lazy(() => import('./Components/Pages/Products_list/Products_list'))
-  const Home = React.lazy(() => import("./Components/Pages/Home/Home"));
-  const InforPhone = React.lazy(() => import("./Components/Pages/InforPhone/InforPhone"));
+  // const Products_list  = React.lazy(() => import('./Components/Pages/Products_list/Products_list'))
+  // const Home = React.lazy(() => import("./Components/Pages/Home/Home"));
+  // const InforPhone = React.lazy(() => import("./Components/Pages/InforPhone/InforPhone"));
 
   
     return (
@@ -66,13 +67,13 @@ export default function App() {
             <div>
              <HelmetProvider>   
                 <MainHeader />
-                  <Suspense fallback={(<Loading/>)}>              
+                 
                     <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='label/:namephone' element={<Products_list/>}/>
                         <Route path='/Detail/:link/:id' element={<InforPhone />} />   
                     </Routes>
-                  </Suspense>
+               
                 </HelmetProvider>             
             </div> 
                   <div className='CommunicationSetting'>  

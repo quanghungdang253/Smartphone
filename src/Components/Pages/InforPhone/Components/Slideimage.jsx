@@ -10,7 +10,8 @@ const Slideimage = (props) => {   //ở đây {phone} là viết tắt    const 
         
                                                 // const {image= p
         const [preimage , setimage] = useState(image);
-        const [preindex , setindex] = useState(indexs);
+        const [preindex , setindex] = useState(0);
+        console.log(preindex);
         
         let content = [
                 {id: 0, image: "https://24hstore.vn/upload_images/images/2023/02/28/may-moi_(1)(1).png", content: "Máy được thu lại từ khách, nguồn gốc rõ ràng, xuất VAT (+10%)"},
@@ -20,25 +21,6 @@ const Slideimage = (props) => {   //ở đây {phone} là viết tắt    const 
                 {id: 4, image: "https://24hstore.vn/upload_images/images/2023/05/31/cs-pin.jpeg", content: "Miễn phí đến 12 tháng Bảo hành Pin 1 đổi"},
                 {id: 5, image: "https://24hstore.vn/upload_images/images/2023/06/01/ic-bh.jpg", content: " Bảo hành đến 24 tháng lỗi NFC" }
         ]
-           
-        useEffect(() => {
-                        setindex(indexs);
-        },[indexs])
-       
-       
-
-        useEffect(() => {
-           
-                setindex((preindex) => {
-                        if(preindex === preimage.length -1){
-                                return 0;
-                         }else{
-                                return  preindex + 1;                                                  
-                        }
-                })
-                         
-                       
-        },[preimage.length])
         const Left = () => {
                         setindex((preindex) =>(
                                 (preindex === 0 ? preindex = preimage.length - 1 : preindex - 1) // cách 2
@@ -52,26 +34,28 @@ const Slideimage = (props) => {   //ở đây {phone} là viết tắt    const 
                                 }
                                 return preindex + 1;
                         })     
-        }
+                  }
         return(
             <aside className={styles.Wrapper}> 
                 <div className={styles.HandleImage}>
-                        <div className={styles.HandleImage__image}>
+                        <div className={`${styles.HandleImage__image} ${preindex === 0 ? styles.addcolor : ""}`}>
                                 <div className={styles.HandleImage__node}>  
                                         <Button variant='outlined' onClick={() => Left()}> ⬅ </Button>
                                         <Button variant='outlined'  onClick={() => Right()}> ➡ </Button>
                                 </div>
                                 <div className={styles.list__image}>  
-                                {console.log(preindex)}
-                                <img src={
+                        
+                                <img 
+                                   src={
                                         process.env.PUBLIC_URL + (preindex === 0 ?  preimage[4].image : preimage[preindex].image)  
-
-                                     } alt='' className={`${styles.main__image} ${preindex === 0 ? styles.small__image : ""}`}/> 
+                                     } 
+                                   alt='' className={`${styles.main__image} ${preindex === 0 ? styles.small__image : ""}`}/> 
+                                     
                                                 {preindex === 0 ? (
-                                                <ul>  
-                                             
+                                                      
+                                                <ul className={styles.List__item} >                                          
                                                        { preimage[0].content.map((item, index) => (
-                                                                <li key={item.id}>   {item}     </li>
+                                                                <li key={item.id} className={styles.item}>   {item}     </li>
                                                         ))  }
                                                 </ul>
                                                 ) : ""}
@@ -82,21 +66,19 @@ const Slideimage = (props) => {   //ở đây {phone} là viết tắt    const 
                                 </div>   
                         </div>
                 <div className={styles.HandleImage_Slide}>
-                    {preimage.map((image,index) => {   // index của map tính từ 0 
+                    {preimage.map((image,index) => {  
                         return(    
                             <a key={index} 
                                 onClick={() =>setindex(index)} 
+                              
                                 className={`${styles.HandleImage__button} ${index === preindex ? styles.selected : ''}`} >
-                            
                                 <img  src={image.image} className={`${styles.btn} ${styles.btn__image} `}alt=''/>
                              </a>   
                         )
                 })}             
                  </div> 
-                 
-                               {/* Truyền dữ liệu vào component InformationPhone */}
-                                    
-   </div>  
+                                         
+         </div>  
    <div className={styles.aside1}>    
         <div className={`${styles.Wrapper__contact2}`}>
                                         {content.map((Item) => (

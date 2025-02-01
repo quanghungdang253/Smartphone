@@ -53,7 +53,8 @@ const Wrapper = styled.div  `
    
 
         .image {
-            height: 27.5rem;
+            object-fit:cover;
+           
             width:100%;
             height:100%;
             border-radius: 1.5rem;
@@ -61,6 +62,7 @@ const Wrapper = styled.div  `
             box-shadow:0 2px 2px 0 black
                        2px 0px 6px 0 black;
             border: 1px solid black;
+            
           
         }
         &:hover + .Navigation .icon {  // bộ chọn anh em liền kề 

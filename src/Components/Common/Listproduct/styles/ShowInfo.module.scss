@@ -1,6 +1,277 @@
 
+.hot__promotion {
+ 
+}
 
+.Wrapper {
+        max-width: 1450px;
+        background-color:#999999; 
+        padding-top: 2rem;
+
+}
+.list_item {
+    display: flex;
+    border-bottom: 1px solid rgba(36, 36, 36, 0.726);
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+   
+.items {
+        border-radius: 10px;
+        cursor: pointer;
+        width: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .image {
+            height: 3rem;
+            max-width: 6rem;
+        }
+        .name {
+            color: white;
+            font-weight: 700;
+        }
+    }
+    .items:hover {
+        transform: translateY(-5px);
+        transition: 0.1s ease-in-out;
+    }
+}
+.addcolor {
+        background-color: #000000;
+        border: 1px solid white;
+}
+.image__promotion > h3{
+        position: relative;
+        z-index: 1;
+        padding: 45px 50px 20px 180px;
+        display: inline-block;
+        width:45%;
+        height: 135px;
+        left: 0;
+        font-size: 2rem;
+        font-weight: 800;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-image: url('../../icon//icon_promotion_1.jpg');
+        animation: animation_color 2s infinite;
+}
+.image__promotion {
+
+}
+h3 {
+    padding: 5px 5px 2rem 0px;
+  
+}
+
+@keyframes animation_color {
+        0% {
+            color: red;
+        }
+        25% {
+            color: yellow;
+        }
+        50% {
+            color: aqua;
+        }
+        75% {
+            color: white;
+        }
+        100% {
+            color: blue;
+        }
+}
+.name_promotion::before {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    margin-right: 10px;
+    display: inline-block;
+   background-size: 100%;
+   height: 100px;
+   width: 90px;
+    content: "";
+    background-image: url('../../icon/icon_promotion_2.png');
+    animation: position_image 2s ease-in-out infinite alternate;
+}
+@keyframes  position_image {
+    0% {
+        transform: translateX(0%); /* Bắt đầu ở vị trí ban đầu */
+    }
+    25% {
+        transform: translateX(25%); /* Di chuyển tới 25% */
+    }
+    50% {
+        transform: translateX(50%); /* Di chuyển tới 50% */
+    }
+    75% {
+        transform: translateX(75%); /* Di chuyển tới 75% */
+    }
+}
 .icon {
         width: 2rem;
         height: 2rem;
 }
+.Bright_1 {
+        background-color:#EEEEEE;        
+}
+.Dark_1{
+      
+}
+.box__body_link {
+    .image {
+        width: 75%;
+        margin-left: 1.5em;
+        margin-bottom:0.5rem;
+        display: flex;
+        justify-content:center;
+    }
+    
+}
+.text {
+        padding:5px 5px;
+        margin: 10px 0px 5px 0px;
+        background-color: #f3f4f6;
+        border-radius: 1rem;
+        font-weight: 500;
+        font-size: 13px;
+        
+    }
+    .title {
+            color: black;
+            font-size: 16px;
+            text-align: center;
+    }
+    .price {
+        font-size: 17px;
+        color: red;
+        font-weight: 700;
+    
+    }
+    .pricedown {
+          text-decoration: line-through;
+    }
+    .price_up_down{
+            display: flex;
+            justify-content: space-around;
+    }
+    .image_1 {
+        width:100%;
+        height:50px;
+        object-fit:contain;
+   }
+   .Color__Bright{
+        background-color: #FFFFFF
+}
+.Color__Dark {
+                background-color:black;
+                
+}
+.box__body--link {
+        max-width:200px;
+        max-height: 300px;
+       
+    }
+.container_icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        grid-column-gap: 1em;
+        p {
+            color: white;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            grid-column-gap: 4px;
+            width: 12em;
+        }
+        .box__icon {
+            width:100%;   
+        }
+        .icon {
+            width:1.3rem;
+            height:1.3rem;       
+        }
+        .icon__star {
+            color: red;
+            max-width: 1.9em;
+            height: 1.5em;
+        }
+    }     
+.Negotiate {
+        display: flex;
+        grid-column-gap: 3.3em;
+        margin-bottom:1rem;
+    } 
+  // ==========================================================================
+.Show_phone {
+          img {
+             width:100%;
+             object-fit:contain;
+          }
+            display: grid;
+            grid-template-columns: 20% repeat(4, 20%);
+            grid-row-gap: 1rem;
+}
+.Showphone__Info {
+        .Link {
+            height: 100%;
+        }
+          margin-top:1rem;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 1rem 1rem 3rem 1rem;
+          width: 90%;
+          height: 35em;
+          cursor: pointer;
+          border-radius: 2rem;
+          box-shadow: 0 2px 3px black;                
+}
+    
+.Showphone__Info:hover {
+         transform: translateY(-5px);
+         transition: all ease 0.5s;
+    }
+.Showphone__Info .discount{
+        border: 1px solid black;
+        font-weight:600;
+        background:red;
+        color: white;
+        height:1.4rem;
+        width: 5rem;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius:10px;
+        font-size:0.7rem;
+        text-align: center;
+    }
+.promotion {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+     
+        font-weight:600;
+    }
+.installment {
+        border: 1px solid rgb(0, 0, 0);
+        font-size:0.7rem;
+       
+        color:rgb(255, 255, 255);
+        background-color:red;
+        border-radius:5px;
+        padding:2px;
+    }
+    
+.Showphone__Info a {
+    text-decoration: none;
+    color: black;
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+    }
+.Showphone__title {
+        font-size:1.1rem;
+        font-weight:700;
+    }
+    
+   

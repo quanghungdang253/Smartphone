@@ -10,10 +10,13 @@ import Loading from '../../Common/components/Loading';
 import { Helmet } from 'react-helmet-async';
 import Category_Name from './data/Category-Name';
 
+
 function InforPhone(props) {
     const params = useParams();  // lấy id và link từ app.jsx
     const link = params.link;
+    
     const id = params.id;
+
 
     const [datas,loadings]  = useHandledetailApi(link,id); // nhận dữ liệu và gọi để truyền link và id để xử lý 
     return (
@@ -23,6 +26,7 @@ function InforPhone(props) {
                                 <Main>          
                                         {/* <Category_Name Data={datas}/>   */}
                                         <InformationPhones Data={datas}/>
+                                        
                                 </Main>                          
                             )}                                        
                        </div>

@@ -171,7 +171,7 @@ function Search({shows}) {
                                  >  
                                    <img src={Item.image} alt='ảnh' className={styled.image}/>                           
                                          {Item.name}                             
-                                   </Link>    
+                            </Link>    
                         </div>        
                 ))}    
                          </div>
