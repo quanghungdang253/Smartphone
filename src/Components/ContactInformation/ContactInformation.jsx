@@ -18,29 +18,35 @@ function ContactInformation(props) {
     return (
         <div className={styles.Container}>
             <div className={styles.Container_icon}>  
-                     <Link to='tel:+84388985737'>   
+                     <Link to='tel:+84388985737' className={styles.btnLink}>   
                                 <button className={`${styles.Btn} ${styles.Btn__Contact}`}>
+                                
                                          <FontAwesomeIcon icon={faPhone} shake className={styles.icon}/>
+                                         
                                 </button>
+                                1900734253 <br/> (6h - 22h)
+
                    
                     </Link>
-                         <Link to="https://www.facebook.com/">
-                                <button className={`${styles.Btn} ${styles.Btn__Facebook}`}>
-                                        <FontAwesomeIcon icon={faFacebook} className={styles.icon} />                         
-                                </button>
-                         </Link>  
-                    <Link to='https://m.me/quang.hungg.382310'>  
+                    
+                    <Link to='https://m.me/quang.hungg.382310' className={styles.btnLink}>  
                         <button className={`${styles.Btn} ${styles.Btn__Contact}`}>
                                 <img src={iconMessage} alt='' className={styles.icon}/>
                         </button>
+                        Messenger <br/> (8h - 22h)
+
                     </Link>
-                    <Link to='https://zalo.me/s/qrwallet?gidzl=5_p7OCmWfnyMuivlp3gc7npWoMtRFFTE0EBDRDyyzqu2vfriZJFm6rFfcshPOV8OLBcJQZJfx5X7pIAd50'>  
+                    <Link to='https://zalo.me/s/qrwallet?gidzl=5_p7OCmWfnyMuivlp3gc7npWoMtRFFTE0EBDRDyyzqu2vfriZJFm6rFfcshPOV8OLBcJQZJfx5X7pIAd50' className={styles.btnLink}>  
                                 <button className={`${styles.Btn} ${styles.Btn__Zalo}`}>
                                          <img src={iconZalo} alt='' className={styles.icon}/>
                                  </button>
+                                 chatZalo<br/> (6h - 22h)
+
                     </Link>
-                     
-                    <Setting setting={custom}/>
+                    <Link className={styles.btnLink}>  
+                        <Setting setting={custom}/>
+                        Settings
+                    </Link>
                 </div>
                
           

@@ -1,3 +1,4 @@
+import { faL } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 
 function componentEnpoint(props) {
@@ -5,4 +6,12 @@ function componentEnpoint(props) {
         return index;
 }
 
+function nameProduct(props) {
+        let nameproduct = props.nameProduct;
+
+        return nameproduct;
+}
+
+
 export default componentEnpoint;
+export {nameProduct}

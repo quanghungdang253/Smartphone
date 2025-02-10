@@ -9,6 +9,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
  import Overlay from '../../Overlayer'; // Import the Overlay component
  import Menuheader from '../../Common/Menuheader';
+ import titleImage from '../icon/titles.jpg';
 const TitleandProducts = ({shows}) => {
  
     const [isNavVisible, setIsNavVisible] = useState(false);
@@ -40,11 +41,11 @@ const TitleandProducts = ({shows}) => {
                 <Link to={'/'} className='Link'>
                     <HeaderTitle>
                         <img
-                            src='https://png.pngtree.com/png-clipart/20200710/original/pngtree-phone-store-logo-design-png-image_4242134.jpg'
+                            src={titleImage}
                             alt=''
                             className='header__image'
                         />
-                        <Typography variant='h1'> Quang Hùng Store</Typography>
+                        <Typography variant='h1' className='title'> Quang Hùng Store</Typography>
                     </HeaderTitle>
                 </Link>
                 <Dropdowncont>
@@ -54,11 +55,7 @@ const TitleandProducts = ({shows}) => {
                         </Button>
                     </div>
                 </Dropdowncont>
-            
                 </Header>
-          
-            
-           
        
     );
 };
@@ -70,7 +67,7 @@ const Header = styled.div`
         font-family: "Merriweather", serif;
         font-weight: 300;
          font-style: normal;
-         max-width: 22em;
+         max-width: 20em;
     .Menuheader {
             position: absolute;
     }
@@ -84,14 +81,18 @@ const HeaderTitle = styled.div`
     align-items: center;
 
     .header__image {
-        height: 4rem;
-        border-radius: 50%;
+        height: 25%;
+        width:25%;
+        object-fit:contain;
+       
     }
-
     h1 {
         font-size: 1.3rem;
         color: white;
         font-weight: 700;
+    }
+    .title {
+        font-family: "Lato", serif;
     }
 `;
 
@@ -101,12 +102,14 @@ const Dropdowncont = styled.div`
             border: 1px solid red;
             font-weight: 700;
             color: white;
-            width: 8rem;
+            width: 7rem;
+            font-size: 10px;
          }
          .iconmenu {
             padding-right: 3px;
          }
 `;
+
 
 export { TitleandProducts };
 

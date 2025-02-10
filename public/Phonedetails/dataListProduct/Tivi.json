@@ -1,0 +1,458 @@
+[
+    {      
+        "id" : 1,   
+        "title": "Tivi đẹp",
+        "image": [
+            { "id": 0,
+              "image": "https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon-feature-active-min.png?v=1", 
+               "content": [
+                        "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
+                        "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
+                        "Camera 50MP chuyên nghiệp với tính năng AI vượt trội giúp bạn chụp ảnh chất lượng cao trong mọi điều kiện ánh sáng.",
+                        "Với viên pin dung lượng 4700mAh và công nghệ sạc nhanh 25W - Galaxy S24 FE đảm bảo sử dụng bền bỉ suốt ngày dài."
+                 ]
+            },
+            { "id": 1,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-v-jpeg-5c051553-7431-437f-83e5-48eb992c3535.jpg?v=1725085613433" },               
+            { "id": 2,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-d-8088ba5a-249d-4dbe-a69c-c9256ecd9bff.jpg?v=1725085613433"},
+            { "id": 3,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-t-trongphumobile-08fb204e-5ce7-4950-a218-4502be5fc3e0.jpg?v=1651830450807"  },        
+            { "id": 4, "image":  "https://cdn.tgdd.vn/Products/Images/42/71770/Kit/iphone-6s-plus-mo-ta-chuc-nang.jpg" },
+            { "id": 5,  "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-91-750x500.jpg" },        
+            { "id": 6, "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-8-750x500.jpg" },
+            { "id": 7,  "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-92-750x500.jpg"}         
+              ],
+   
+        "screen_size": "6.9inches",
+        "screen_technology" : "Super Retina XDR OLED",
+        "rear_camera": "Camera chính: 48MP chống rung quang học Camera góc siêu rộng: 48MP, 13 mm,ƒ/2.2 và trường ảnh 120°, Hybrid Focus Pixels, ảnh có độ phân giải ",
+        "Front_camera": "12MP, ƒ/1.9, Tự động lấy nét theo pha Focus Pixels",
+        "Chipset": "Apple A18 Pro",
+        "NFC_technology": "Có",
+        "internal_memory": "256 GB",
+        "SIM_card": "Sim kép (nano-Sim và e-Sim) - Hỗ trợ 2 e-Sim",
+        "OperatingSystem": "iOS 18",
+        "Screen_resolution": "2868 x 1320 pixels",
+        "Screen_features": "Dynamic Island Màn hình Luôn Bật Công nghệ ProMotion với tốc độ làm mới thích ứng lên đến 120Hz Màn hình HDR True Tone Dải màu rộng (P3) Haptic Touch Tỷ lệ tương phản 2.000.000:1",
+        "CPU_Type": "CPU 6 lõi mới với 2 lõi hiệu năng và 4 lõi hiệu suất",
+        "Weight" : "227 gram",
+        "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
+        "Charging_port": "USB Type-C",     
+        "price": "3.990.000",
+        "total_original": "4.550.000",
+        "Item": [
+            {"id": 0, "item": "128GB", "Link": "http://localhost:3000/Detail/dataPhone/2", "price": "3.990.000 vnđ"},
+            {"id": 1, "item": "256GB", "Link": "http://localhost:3000/Detail/dataPhone/2" , "price": "5.690.000 vnđ"},
+            {"id": 2, "item": "1TB" ,  "Link" : "http://localhost:3000/Detail/dataPhone/2", "price": "7.690.000 vnđ"}
+        ],
+  
+        "Typephone": [ 
+          {"id": 0, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Trắng tự nhiên", "price":"3.990.000 vnđ"},
+          {"id": 1, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-titan-den.png", "name": "Titan đen", "price":"1.999.562đ"},
+          {"id": 2, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-titan-sa-mac.png", "name": "Titan sa mạc", "price":"1.999.562đ"},
+          {"id": 3, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-titan-trang.png", "name": "Titan trắng", "price":"1.999.562đ"}
+      ],
+      "attached__product": [
+        {"id": 0, "image":"https://24hstore.vn/images/products/2024/09/10/resized/iphone-16-pro-max-titan-trang_1725928243.jpg", "price":"3.999.000đ", "discount": "6.300.000 vnđ", "name": ""},
+        {"id": 1, "image":"https://24hstore.vn/images/products/2024/09/17/resized/sac-mophie-essentials-pd-45w-2c-gan-trang_1726560787.jpg", "price":"1.999.562đ", "discount": "2.300.000 đ", "name": "Cốc sạc Mophie Essentials PD 45W 2C GaN"},
+        {"id": 2, "image":"https://24hstore.vn/images/products/2023/09/25/resized/pin-du-phong-mazer-smallest-magsafe-10-000mah-grey-hinh-1_1695623905.jpg", "price":"1.999.562đ", "discount": "2.300.000 đ", "name": "Sạc Dự Phòng Mazer Smallest MagSafe 10.000mAh"},
+        {"id": 3, "image":"https://24hstore.vn/images/products/2024/09/19/resized/op-lung-magsafe-cho-iphone-16-pro-max-clear_1726731749.jpg", "price":"1.999.562đ", "discount": "2.300.000 đ", "name": " Ốp Lưng Trong Suốt MagSafe iPhone 16 Pro Max | Chính hãng Apple Việt Nam"},
+        {"id": 4, "image":"https://24hstore.vn/images/products/2024/09/05/large/apple-airpods-pro-2021-1_1725509550.jpg", "price":"1.999.562đ", "discount": "2.300.000 đ", "name": "Tai nghe AirPods Pro 2021 Magsafe | Chính hãng Apple Việt Nam"}
+      ]
+       
+  },
+  
+  {
+    "id" : 2,
+    "title":      "Apple iPhone 6S Plus 16GB",
+    "image": [
+                { "id": 0,
+                  "image": "/image/samsungZ-form.webp", 
+                   "content": [
+                            "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
+                            "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
+                            "Camera 50MP chuyên nghiệp với tính năng AI vượt trội giúp bạn chụp ảnh chất lượng cao trong mọi điều kiện ánh sáng.",
+                            "Với viên pin dung lượng 4700mAh và công nghệ sạc nhanh 25W - Galaxy S24 FE đảm bảo sử dụng bền bỉ suốt ngày dài."
+                     ]
+                },
+                { "id": 1,  "image": "/image/samsungZ-form.webp" },               
+                { "id": 2,  "image":"/image/samsungZ-form2.webp"},
+                { "id": 3,  "image": "/image/samsungZ-form.webp"  },        
+                { "id": 4, "image": "/image/samsungZ-form.webp" },
+                { "id": 5,  "image": "/image/samsungZ-form.webp"}
+             
+                  ],
+        "screen_size": "6.9inches",
+        "screen_technology" : "Super Retina XDR OLED",
+        "rear_camera": "Camera chính: 48MP chống rung quang học Camera góc siêu rộng: 48MP, 13 mm,ƒ/2.2 và trường ảnh 120°, Hybrid Focus Pixels, ảnh có độ phân giải ",
+        "Front_camera": "12MP, ƒ/1.9, Tự động lấy nét theo pha Focus Pixels",
+        "Chipset": "Apple A18 Pro",
+        "NFC_technology": "Có",
+        "internal_memory": "256 GB",
+        "SIM_card": "Sim kép (nano-Sim và e-Sim) - Hỗ trợ 2 e-Sim",
+        "OperatingSystem": "iOS 18",
+        "Screen_resolution": "2868 x 1320 pixels",
+        "Screen_features": "Dynamic Island Màn hình Luôn Bật Công nghệ ProMotion với tốc độ làm mới thích ứng lên đến 120Hz Màn hình HDR True Tone Dải màu rộng (P3) Haptic Touch Tỷ lệ tương phản 2.000.000:1",
+        "CPU_Type": "CPU 6 lõi mới với 2 lõi hiệu năng và 4 lõi hiệu suất",
+        "Weight" : "227 gram",
+        "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
+        "Charging_port": "USB Type-C",     
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ],
+        "Typephone": [ 
+          {"id": 0, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 1, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 2, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 3, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 4, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"}
+      ]
+  },
+  {
+    "id" : 3,
+    "title": "iPad 10.9 inch 2022 Wifi (Gen 10) ",
+    "image": [
+        { "id": 0,
+          "image": "/image/samsungZ-form.webp", 
+           "content": [
+                    "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
+                    "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
+                    "Camera 50MP chuyên nghiệp với tính năng AI vượt trội giúp bạn chụp ảnh chất lượng cao trong mọi điều kiện ánh sáng.",
+                    "Với viên pin dung lượng 4700mAh và công nghệ sạc nhanh 25W - Galaxy S24 FE đảm bảo sử dụng bền bỉ suốt ngày dài."
+             ]
+        },
+        { "id": 1,  "image": "/image/samsungZ-form.webp" },               
+        { "id": 2,  "image":"/image/samsungZ-form2.webp"},
+        { "id": 3,  "image": "/image/samsungZ-form.webp"  },        
+        { "id": 4,  "image": "/image/samsungZ-form.webp" },
+        { "id": 5,  "image": "/image/samsungZ-form.webp"}
+  
+        
+          ],
+        "screen_size": "6.9inches",
+        "screen_technology" : "Super Retina XDR OLED",
+        "rear_camera": "Camera chính: 48MP chống rung quang học Camera góc siêu rộng: 48MP, 13 mm,ƒ/2.2 và trường ảnh 120°, Hybrid Focus Pixels, ảnh có độ phân giải ",
+        "Front_camera": "12MP, ƒ/1.9, Tự động lấy nét theo pha Focus Pixels",
+        "Chipset": "Apple A18 Pro",
+        "NFC_technology": "Có",
+        "internal_memory": "256 GB",
+        "SIM_card": "Sim kép (nano-Sim và e-Sim) - Hỗ trợ 2 e-Sim",
+        "OperatingSystem": "iOS 18",
+        "Screen_resolution": "2868 x 1320 pixels",
+        "Screen_features": "Dynamic Island Màn hình Luôn Bật Công nghệ ProMotion với tốc độ làm mới thích ứng lên đến 120Hz Màn hình HDR True Tone Dải màu rộng (P3) Haptic Touch Tỷ lệ tương phản 2.000.000:1",
+        "CPU_Type": "CPU 6 lõi mới với 2 lõi hiệu năng và 4 lõi hiệu suất",
+        "Weight" : "227 gram",
+        "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
+        "Charging_port": "USB Type-C",     
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ],
+        "Typephone": [ 
+          {"id": 0, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 1, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 2, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 3, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 4, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"}
+      ]
+  },
+  {
+    "id" : 4,
+    "title": "Apple iPhone 6S Plus 16GB",
+    "image": [
+        { "id": 0,
+          "image": "/image/samsungZ-form.webp", 
+           "content": [
+                    "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
+                    "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
+                    "Camera 50MP chuyên nghiệp với tính năng AI vượt trội giúp bạn chụp ảnh chất lượng cao trong mọi điều kiện ánh sáng.",
+                    "Với viên pin dung lượng 4700mAh và công nghệ sạc nhanh 25W - Galaxy S24 FE đảm bảo sử dụng bền bỉ suốt ngày dài."
+             ]
+        },
+        { "id": 1,  "image": "/image/samsungZ-form.webp" },               
+        { "id": 2,  "image":"/image/samsungZ-form2.webp"},
+        { "id": 3,  "image": "/image/samsungZ-form.webp"  },        
+        { "id": 4, "image": "/image/samsungZ-form.webp" },
+        { "id": 5, "image": "/image/samsungZ-form.webp"}
+        
+          ],
+        "screen_size": "6.9inches",
+        "screen_technology" : "Super Retina XDR OLED",
+        "rear_camera": "Camera chính: 48MP chống rung quang học Camera góc siêu rộng: 48MP, 13 mm,ƒ/2.2 và trường ảnh 120°, Hybrid Focus Pixels, ảnh có độ phân giải ",
+        "Front_camera": "12MP, ƒ/1.9, Tự động lấy nét theo pha Focus Pixels",
+        "Chipset": "Apple A18 Pro",
+        "NFC_technology": "Có",
+        "internal_memory": "256 GB",
+        "SIM_card": "Sim kép (nano-Sim và e-Sim) - Hỗ trợ 2 e-Sim",
+        "OperatingSystem": "iOS 18",
+        "Screen_resolution": "2868 x 1320 pixels",
+        "Screen_features": "Dynamic Island Màn hình Luôn Bật Công nghệ ProMotion với tốc độ làm mới thích ứng lên đến 120Hz Màn hình HDR True Tone Dải màu rộng (P3) Haptic Touch Tỷ lệ tương phản 2.000.000:1",
+        "CPU_Type": "CPU 6 lõi mới với 2 lõi hiệu năng và 4 lõi hiệu suất",
+        "Weight" : "227 gram",
+        "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
+        "Charging_port": "USB Type-C",     
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ],
+        "Typephone": [ 
+          {"id": 0, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 1, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 2, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 3, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 4, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"}
+      ]
+  },
+  {
+    "id" : 5,
+    "title": "Apple iPhone 6S Plus 16GB",
+    "image": ["/image/1iphone6.jpg",
+                  "/image/2iphone6.png",
+                  "/image/3iphone6.jpg"
+                  ],
+        "screen_size": "6.9inches",
+        "screen_technology" : "Super Retina XDR OLED",
+        "rear_camera": "Camera chính: 48MP chống rung quang học Camera góc siêu rộng: 48MP, 13 mm,ƒ/2.2 và trường ảnh 120°, Hybrid Focus Pixels, ảnh có độ phân giải ",
+        "Front_camera": "12MP, ƒ/1.9, Tự động lấy nét theo pha Focus Pixels",
+        "Chipset": "Apple A18 Pro",
+        "NFC_technology": "Có",
+        "internal_memory": "256 GB",
+        "SIM_card": "Sim kép (nano-Sim và e-Sim) - Hỗ trợ 2 e-Sim",
+        "OperatingSystem": "iOS 18",
+        "Screen_resolution": "2868 x 1320 pixels",
+        "Screen_features": "Dynamic Island Màn hình Luôn Bật Công nghệ ProMotion với tốc độ làm mới thích ứng lên đến 120Hz Màn hình HDR True Tone Dải màu rộng (P3) Haptic Touch Tỷ lệ tương phản 2.000.000:1",
+        "CPU_Type": "CPU 6 lõi mới với 2 lõi hiệu năng và 4 lõi hiệu suất",
+        "Weight" : "227 gram",
+        "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
+        "Charging_port": "USB Type-C",     
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ],
+        "Typephone": [ 
+          {"id": 0, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 1, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 2, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 3, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 4, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"}
+      ]
+  },
+  {
+        "id" : 6,
+        "title": "Apple iPhone 6S Plus 16GB",
+        "image": [
+            { "id": 0,
+              "image": "/image/samsungZ-form.webp", 
+               "content": [
+                        "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
+                        "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
+                        "Camera 50MP chuyên nghiệp với tính năng AI vượt trội giúp bạn chụp ảnh chất lượng cao trong mọi điều kiện ánh sáng.",
+                        "Với viên pin dung lượng 4700mAh và công nghệ sạc nhanh 25W - Galaxy S24 FE đảm bảo sử dụng bền bỉ suốt ngày dài."
+                 ]
+            },
+            { "id": 1,  "image": "/image/samsungZ-form.webp" },               
+            { "id": 2,  "image":"/image/samsungZ-form2.webp"},
+            { "id": 3,  "image": "/image/samsungZ-form.webp"  },        
+            { "id": 4, "image": "/image/samsungZ-form.webp" },
+   
+    { "id": 5,
+      "image": "/image/samsungZ-form.webp"}
+    
+            
+              ],
+        "screen_size": "6.9inches",
+        "screen_technology" : "Super Retina XDR OLED",
+        "rear_camera": "Camera chính: 48MP chống rung quang học Camera góc siêu rộng: 48MP, 13 mm,ƒ/2.2 và trường ảnh 120°, Hybrid Focus Pixels, ảnh có độ phân giải ",
+        "Front_camera": "12MP, ƒ/1.9, Tự động lấy nét theo pha Focus Pixels",
+        "Chipset": "Apple A18 Pro",
+        "NFC_technology": "Có",
+        "internal_memory": "256 GB",
+        "SIM_card": "Sim kép (nano-Sim và e-Sim) - Hỗ trợ 2 e-Sim",
+        "OperatingSystem": "iOS 18",
+        "Screen_resolution": "2868 x 1320 pixels",
+        "Screen_features": "Dynamic Island Màn hình Luôn Bật Công nghệ ProMotion với tốc độ làm mới thích ứng lên đến 120Hz Màn hình HDR True Tone Dải màu rộng (P3) Haptic Touch Tỷ lệ tương phản 2.000.000:1",
+        "CPU_Type": "CPU 6 lõi mới với 2 lõi hiệu năng và 4 lõi hiệu suất",
+        "Weight" : "227 gram",
+        "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
+        "Charging_port": "USB Type-C",     
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ],
+        "Typephone": [ 
+          {"id": 0, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 1, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 2, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 3, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 4, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"}
+      ]
+  },
+  {
+    "id" : 7,
+    "title": "Apple iPhone 6S Plus 16GB",
+    "image": [
+        { "id": 0,
+          "image": "/image/samsungZ-form.webp", 
+           "content": [
+                    "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
+                    "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
+                    "Camera 50MP chuyên nghiệp với tính năng AI vượt trội giúp bạn chụp ảnh chất lượng cao trong mọi điều kiện ánh sáng.",
+                    "Với viên pin dung lượng 4700mAh và công nghệ sạc nhanh 25W - Galaxy S24 FE đảm bảo sử dụng bền bỉ suốt ngày dài."
+             ]
+        },
+        { "id": 1,  "image": "/image/samsungZ-form.webp" },               
+        { "id": 2,  "image":"/image/samsungZ-form2.webp"},
+        { "id": 3,  "image": "/image/samsungZ-form.webp"  },        
+        { "id": 4, "image": "/image/samsungZ-form.webp" },
+  
+  { "id": 5,
+  "image": "/image/samsungZ-form.webp"}
+  
+        
+          ],
+        "screen_size": "6.9inches",
+        "screen_technology" : "Super Retina XDR OLED",
+        "rear_camera": "Camera chính: 48MP chống rung quang học Camera góc siêu rộng: 48MP, 13 mm,ƒ/2.2 và trường ảnh 120°, Hybrid Focus Pixels, ảnh có độ phân giải ",
+        "Front_camera": "12MP, ƒ/1.9, Tự động lấy nét theo pha Focus Pixels",
+        "Chipset": "Apple A18 Pro",
+        "NFC_technology": "Có",
+        "internal_memory": "256 GB",
+        "SIM_card": "Sim kép (nano-Sim và e-Sim) - Hỗ trợ 2 e-Sim",
+        "OperatingSystem": "iOS 18",
+        "Screen_resolution": "2868 x 1320 pixels",
+        "Screen_features": "Dynamic Island Màn hình Luôn Bật Công nghệ ProMotion với tốc độ làm mới thích ứng lên đến 120Hz Màn hình HDR True Tone Dải màu rộng (P3) Haptic Touch Tỷ lệ tương phản 2.000.000:1",
+        "CPU_Type": "CPU 6 lõi mới với 2 lõi hiệu năng và 4 lõi hiệu suất",
+        "Weight" : "227 gram",
+        "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
+        "Charging_port": "USB Type-C",     
+        "price": "10000000",
+       "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ],
+        "Typephone": [ 
+          {"id": 0, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 1, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 2, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 3, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 4, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"}
+      ]
+  },
+  {"id" : 8,
+  "title": "Apple iPhone 6S Plus 16GB",
+  "image": [
+    { "id": 0,
+      "image": "/image/samsungZ-form.webp", 
+       "content": [
+                "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
+                "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
+                "Camera 50MP chuyên nghiệp với tính năng AI vượt trội giúp bạn chụp ảnh chất lượng cao trong mọi điều kiện ánh sáng.",
+                "Với viên pin dung lượng 4700mAh và công nghệ sạc nhanh 25W - Galaxy S24 FE đảm bảo sử dụng bền bỉ suốt ngày dài."
+         ]
+    },
+    { "id": 1,  "image": "/image/samsungZ-form.webp" },               
+    { "id": 2,  "image":"/image/samsungZ-form2.webp"},
+    { "id": 3,  "image": "/image/samsungZ-form.webp"  },        
+    { "id": 4, "image": "/image/samsungZ-form.webp" },
+  
+  { "id": 5,
+  "image": "/image/samsungZ-form.webp"}
+  
+    
+      ],
+        "screen_size": "6.9inches",
+        "screen_technology" : "Super Retina XDR OLED",
+        "rear_camera": "Camera chính: 48MP chống rung quang học Camera góc siêu rộng: 48MP, 13 mm,ƒ/2.2 và trường ảnh 120°, Hybrid Focus Pixels, ảnh có độ phân giải ",
+        "Front_camera": "12MP, ƒ/1.9, Tự động lấy nét theo pha Focus Pixels",
+        "Chipset": "Apple A18 Pro",
+        "NFC_technology": "Có",
+        "internal_memory": "256 GB",
+        "SIM_card": "Sim kép (nano-Sim và e-Sim) - Hỗ trợ 2 e-Sim",
+        "OperatingSystem": "iOS 18",
+        "Screen_resolution": "2868 x 1320 pixels",
+        "Screen_features": "Dynamic Island Màn hình Luôn Bật Công nghệ ProMotion với tốc độ làm mới thích ứng lên đến 120Hz Màn hình HDR True Tone Dải màu rộng (P3) Haptic Touch Tỷ lệ tương phản 2.000.000:1",
+        "CPU_Type": "CPU 6 lõi mới với 2 lõi hiệu năng và 4 lõi hiệu suất",
+        "Weight" : "227 gram",
+        "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
+        "Charging_port": "USB Type-C",     
+        "price": "10000000",
+        "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ],
+        "Typephone": [ 
+          {"id": 0, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 1, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 2, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 3, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 4, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"}
+      ]
+  
+      },
+      {"id" : 9,
+      "title": "Apple iPhone 6S Plus 16GB",
+      "title": "Apple iPhone 6S Plus 16GB",
+      "image": [
+        { "id": 0,
+          "image": "/image/samsungZ-form.webp", 
+           "content": [
+                    "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
+                    "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
+                    "Camera 50MP chuyên nghiệp với tính năng AI vượt trội giúp bạn chụp ảnh chất lượng cao trong mọi điều kiện ánh sáng.",
+                    "Với viên pin dung lượng 4700mAh và công nghệ sạc nhanh 25W - Galaxy S24 FE đảm bảo sử dụng bền bỉ suốt ngày dài."
+             ]
+        },
+        { "id": 1,  "image": "/image/samsungZ-form.webp" },               
+        { "id": 2,  "image":"/image/samsungZ-form2.webp"},
+        { "id": 3,  "image": "/image/samsungZ-form.webp"  },        
+        { "id": 4, "image": "/image/samsungZ-form.webp" },
+  
+  { "id": 5,
+  "image": "/image/samsungZ-form.webp"}
+  
+        
+          ],
+      "screen_size": "6.9inches",
+      "screen_technology" : "Super Retina XDR OLED",
+      "rear_camera": "Camera chính: 48MP chống rung quang học Camera góc siêu rộng: 48MP, 13 mm,ƒ/2.2 và trường ảnh 120°, Hybrid Focus Pixels, ảnh có độ phân giải ",
+      "Front_camera": "12MP, ƒ/1.9, Tự động lấy nét theo pha Focus Pixels",
+      "Chipset": "Apple A18 Pro",
+      "NFC_technology": "Có",
+      "internal_memory": "256 GB",
+      "SIM_card": "Sim kép (nano-Sim và e-Sim) - Hỗ trợ 2 e-Sim",
+      "OperatingSystem": "iOS 18",
+      "Screen_resolution": "2868 x 1320 pixels",
+      "Screen_features": "Dynamic Island Màn hình Luôn Bật Công nghệ ProMotion với tốc độ làm mới thích ứng lên đến 120Hz Màn hình HDR True Tone Dải màu rộng (P3) Haptic Touch Tỷ lệ tương phản 2.000.000:1",
+      "CPU_Type": "CPU 6 lõi mới với 2 lõi hiệu năng và 4 lõi hiệu suất",
+      "Weight" : "227 gram",
+      "Charging_technology":" Sạc không dây MagSafe lên đến 25W với bộ tiếp hợp 30W trở lên Sạc không dây Qi2 lên đến 15W Sạc không dây Qi lên đến 7,5W",
+      "Charging_port": "USB Type-C",     
+      "price": "10000000",
+      "Item": [
+            {"id": 0, "item": "128GB"},
+            {"id": 1, "item": "256GB"},
+            {"id": 2, "item": "1TB"}
+        ],
+        "Typephone": [ 
+          {"id": 0, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 1, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 2, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 3, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"},
+          {"id": 4, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png", "name": "Titan tự nhiên", "price":"1.999.562đ"}
+      ]
+    }
+  
+   
+  
+  ]

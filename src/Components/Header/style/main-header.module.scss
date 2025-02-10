@@ -1,0 +1,31 @@
+
+
+.menuHeader {
+    margin-left:5.5rem;
+    position: fixed;
+    z-index:1100;
+    top: 3em;
+    padding: 2rem 2rem;
+}
+.header {
+    max-width: 100%;
+}
+.mainHeaders {
+    background-color:black;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    position: fixed;
+    top:0;
+    z-index: 999 ;
+    width:100%;
+
+}
+.wrapperMainHeader {
+    margin-left: 7%;
+    margin-right:7%;
+      width: 1450px;
+      position: relative;
+      z-index:1000;
+      display: grid;
+      grid-template-columns: 25% 20% 30%; 
+}

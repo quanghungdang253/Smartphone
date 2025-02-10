@@ -11,14 +11,16 @@ const [loading, setLoading] = useState(true);
 const [data,setData] = useState(null);
 const [addData , setAddData] = useState(null);
 
-let DataSmartphone = ["datasamsung","datavivo","dataPhone","dataOppo"];
-
+let DataSmartphone = ["dataSamsung","dataSivo","dataPhone","dataOppo"];
+let DataSaleHome = ["saleProduct1","saleProduct2","saleProduct3","saleProduct4","saleProduct5","saleProduct6","saleProduct7","saleProduct8"];
     useEffect(() => {
          if(DataSmartphone.includes(link)){
-                    setLink("dataPhone_Smartphone");
+                    setLink("dataPhoneSmartphone");
 
-         } else {
-                setLink("dataPhone_Smartphone");
+         } else if(DataSaleHome.includes(link)) {
+                 setLink("dataSaleHome");
+         }else {
+                setLink("dataListProduct");
          }
 
           
@@ -30,7 +32,7 @@ useEffect(() => {
               if(!link) {
                 alert("chưa có enpoint");
                   const dataMap = {
-                        datasamsung: () => import('../../src/Components/Pages/Home/dataProduct/Samsung.json')
+                        datasamsung: () => import('../Components/Pages/Home/dataProduct/Samsung.json')
                   }
                 if(dataMap[link]) {
                    const getdata = dataMap[link];

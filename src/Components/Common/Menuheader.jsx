@@ -82,8 +82,7 @@ function Menuheader({addPadding}) {
                                              onMouseEnter={() =>{}}
                                              onMouseLeave={() =>{
                                                                 setIndex(null);
-                                                        } }   
-                                                        
+                                                        } }                      
                                 >          
                                 { preindex !== null &&  <Smartphone value={product} /> } 
                                                  </div>    
@@ -119,16 +118,13 @@ const Wrapper = styled.div `
        .label_icon {
             display:flex;
             grid-column-gap:10px;
+            font-size:inherit;
        }
         .showitem {
                   width:58rem;
                   position: absolute;
-                  margin-left:20rem;
-                  opacity: 0;
-                
-
-               
-                  
+                  margin-left:16rem;
+                  opacity: 0;           
         }
         .showitem.show {
                         opacity: 1; 
@@ -164,9 +160,9 @@ const Wrapper = styled.div `
    }
  
    .Wrapper__label {
-         
+           font-size: 0.8rem;
             padding: 0.8rem;
-            width: 35rem;
+            width: 16rem;
             height:100%;
             border-radius: 2rem;
             box-shadow: 0 1px 2px 0 rgba(60,64,67,.1),                   

@@ -5,23 +5,27 @@ import { Helmet } from 'react-helmet-async';
 import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
 import styles from './styles/ShowInfo.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { DefaultComponent } from '../../Pages/Products_list/services/HandleComponent';
+import { DefaultComponent } from '../../Pages/Products_list/ui-components/HandleComponent';
 import {faHeart} from '@fortawesome/free-solid-svg-icons';
 import {NameProducts , dataHome} from '../../Pages/Home/Components/Section/data/data-selection/data-selection';
-import useHandledetailApi from '../../../Api/useHandledetailPhone';
-import componentEnpoint from '../componentEnpoint';
+import useHandledetailApi from '../../../Api/use-handle-detail-phone'; 
+import { nameProduct } from '../componentEnpoint';
+// =========================customs hook==========================================
 import { use } from 'react';
 function ShowInfo(props) {
     const { theme } = useValue();
     const id = props.id; // Sửa từ props.setId
     const namephone = props.namephone; // Dữ liệu hiển thị
     const enpoints = props.enpoint; // Tên dữ liệu đầu cuối
-  
+    
     const [loading, setLoading] = useState(true);
     const [index, setIndex] = useState(0);
     const [predata, setData] = useState([]);
     const [handledata, setHandle] = useState(dataHome);
     const [enpoint, setEnpoint] = useState("");
+  
+    let NameDataHome = ["saleProduct1", "saleProduct2", "saleProduct3", "saleProduct4", "saleProduct5", "saleProduct6", "saleProduct7", "saleProduct8"];
+    let ListProduct = ["Tivi", "Đồ gia dụng", "Loa", "Laptop","product5", "product6","product7", "product8"]
 
     useEffect(() => {
       const fetchdata = dataHome.find((item , id) => id === index);
@@ -35,8 +39,8 @@ function ShowInfo(props) {
   
     useEffect(() => {
       if (namephone) {
-        setHandle(namephone.data);
-        setLoading(false);
+          setHandle(namephone.data);
+          setLoading(false);
       }
     }, [namephone]);
   
@@ -51,19 +55,22 @@ function ShowInfo(props) {
            samsung: "dataSamsung",
            vivo: "dataVivo",
       };
-  
+    
+  //  ================== thiết lập điểm cuối ==================================== 
       const getData = async () => {
         const getEnpoint = nameEnpoint[enpoints];
 
         if (getEnpoint) {
-          setEnpoint(getEnpoint);
-        } else {
-          setEnpoint(""); // Gán giá trị mặc định nếu không tìm thấy
+                setEnpoint(getEnpoint);
+        } else if(ListProduct.includes(nameProduct,index)){
+              setEnpoint(ListProduct[index] )
+        }else {
+             setEnpoint(ListProduct[index]); 
         }
       };
   
       getData();
-    }, [enpoints]);
+    }, [enpoints, index]);
   
     if (loading) {
       return <Loading />;
@@ -94,6 +101,7 @@ function ShowInfo(props) {
                 ))}
             </ul>
            ): ("")}
+
                      <Helmet>
                          {enpoints && ( <title> {`Điện thoại ${enpoints} - Hùng Store`}   </title>)} 
                             
@@ -102,8 +110,9 @@ function ShowInfo(props) {
             
             {predata && predata.data && predata.data.length > 0 ? (
                 predata.data.map((List) => (
-                    <div key={List.id} className={`${styles.Showphone__Info} ${theme ? styles.Color__Bright : styles.Color__Dark}`}>                  
-                        <Link to={`/Detail/${enpoint}/${List.id}`} className={styles.Link}>
+                    <div key={List.id} className={`${styles.Showphone__Info} ${theme ? styles.Color__Bright : styles.Color__Dark}`}>     
+                                 
+                        <Link to={`/Detail/${encodeURIComponent(enpoint)}/${List.id}`} className={styles.Link}>
                            <div className={styles.box__body_link}> 
                                 <div className={`${styles.Negotiate}`}>
                                       <span className={`${styles.discount} ${styles.promotion}`} > Giảm giá: {List.discount} </span>

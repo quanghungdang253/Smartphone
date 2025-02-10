@@ -115,15 +115,28 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ShowInfo from '../../Common/Listproduct/ShowInfo';
-import useHandleApi from '../../../Api/useHandleApi';
-import categoryComponentsConfig from './services/HandleComponent';
-import Productads from '../Home/Components/Productads';
-import RenderbyCategory from './services/RenderbyCategory';
+import useHandleApi from '../../../Api/use-handle-api';
+import categoryComponentsConfig from './ui-components/HandleComponent';
+import Productads from '../Home/Components/product-image';
+import RenderbyCategory from './ui-components/RenderbyCategory';
 import styled from 'styled-components';
 import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
 import { Helmet } from 'react-helmet';
 import Loading from '../../Common/components/Loading';
-function Products_list(props) {  
+
+function Products_list(props) { 
+  const logic = props.logic; 
+  const [state , setState] = useState(logic);
+ 
+  function handle(){
+        setState(true);
+  }
+  useEffect(() => {   // xử lý logic hiển thị 
+    if(!state){
+              handle();
+}
+  },[state])
+  
   const params = useParams();
   let namephone = params.namephone;
  const { theme } = useValue();
@@ -138,7 +151,8 @@ function Products_list(props) {
                   <Loading/>
       ) : (
         <div className='Render-product'>
-                  <RenderbyCategory namephone={namephone} data={data} {...props}/>
+                  <RenderbyCategory logic={state} namephone={namephone} data={data} {...props}/>
+            
         </div>
       )}
     </Product>
@@ -146,8 +160,7 @@ function Products_list(props) {
 }
 const Product = styled.div `
      .Render-product {
-          margin-left: 7%;
-          margin-right: 7%;
+         
      }
 
 `

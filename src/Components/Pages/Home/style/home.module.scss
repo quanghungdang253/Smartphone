@@ -1,0 +1,25 @@
+
+
+
+.containerImage {
+    display: flex;
+    justify-content: space-between;
+    
+    position: fixed;
+    z-index: 1;
+    margin-top: 10rem;
+  
+    .childImage {
+        width: 6rem;
+        height: 20em;
+        object-fit: contain;
+        
+          
+    }
+    .imageRight {
+            position: absolute;
+            left: 80em;
+        
+    }
+  
+}

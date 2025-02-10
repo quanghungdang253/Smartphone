@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styles from './form-section.module.scss';
+import React, { useEffect, useState } from 'react';
+import styles from './styles/form-section.module.scss';
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 //===================================================
@@ -7,15 +7,20 @@ import image_sale from './image/image__sale/image_sale.gif';
 import image_1 from './image/image__sale/Title.jpg';
 //==================================================
 import object_image from './data/data-label-product';
-
+import { RenderProduct } from '../../../../Common/componentEnpoint';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCircleChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import {faCircleChevronRight} from '@fortawesome/free-solid-svg-icons';
 import ListimageProduct from '../../../Products_list/components/ListimageProduct';
+
+// ==============================custom hook=================================
+
 function FormSection(props) {
+    const Toggle = props.Toggle;
+   
     const [node , setNode] = useState(false);
     const Unordered_list = useRef(null);
-
+    const [nameproduct , setNameProduct] = useState(false);
     const groupedItems = Object.entries(object_image).reduce((result, [productName, {image , category}], index) => {
         const groupIndex = Math.floor(index / 2);
                 if(!result[groupIndex]){
@@ -24,6 +29,10 @@ function FormSection(props) {
                 result[groupIndex].push({productName, image, category});
                 return result;
     },[]);
+
+
+    
+
 
    const HandleRight = () => {
         setNode(true);
@@ -47,6 +56,12 @@ function FormSection(props) {
      ) 
     }
 }
+function RenderProduct(props) {
+        let  setShowProduct = props.setShowProduct;
+        return  setShowProduct;
+        
+}
+
     return (
         <div className={styles.Container}>
              <img src={image_1} alt='' className={`${styles.image} ${styles.image_1}`}/>
@@ -78,7 +93,9 @@ function FormSection(props) {
                                 <div key={productName} className={styles.item}>
                                     <Link
                                      to={`/label/${category}`}
-                                     className={styles.Link}>                                                                            
+                                     className={styles.Link}
+                                    onClick={() => Toggle(true)}
+                                     >                                                                            
                                             <img src={image} alt={category} className={styles.image_product}/>
                                             {category}
                                     </Link>
@@ -93,4 +110,5 @@ function FormSection(props) {
 }
 
 export default FormSection;
+
 

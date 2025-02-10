@@ -1,6 +1,7 @@
 // cấu hình lính gác cổng axiosClient 
 import axios from "axios";
 
+
 const axiosClient = axios.create({  // tạo ra axiosClient
         baseURL: '/',
         headers: {
@@ -22,7 +23,6 @@ axiosClient.interceptors.response.use(function(response){
 }, function(error){
             if(error.response){
                         if(error.response.status === 404 ){
-                                    alert("Lỗi 404 : Not Fount")
                                     return Promise.reject(error);
                             }
                             else if(error.response.status === 401) {

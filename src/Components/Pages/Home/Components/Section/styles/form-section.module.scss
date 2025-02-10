@@ -8,10 +8,10 @@
         object-fit: contain;
         background-color:  #fe0000;
         border-radius: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 2em;
 }
 .Container {
-    background-color: rgb(0, 0, 0);
+ 
     .title_image {
        
     }
@@ -21,6 +21,7 @@
     .Box {
         position: relative;
         background: linear-gradient(rgb(226, 0, 67), rgb(226, 0, 67)) 0% 0% / cover;
+        border-radius: 10px;
         .Box__icon {
                 .icon {
                     position: absolute;
@@ -57,6 +58,7 @@
     height: 95%;
     display: flex;
     width: 100%;
+    grid-column-gap: 1em;
     flex-wrap: nowrap;  /* Không cho phần tử xuống dòng, sẽ xếp theo chiều ngang */
     overflow-x: hidden;  /* Hiển thị thanh cuộn ngang khi cần thiết */
     padding: 0;
@@ -70,12 +72,12 @@
     grid-row-gap: 1rem;
     padding: 1rem 1rem 1rem 1rem;
    
-    .item {
-        border-radius: 1rem ;
-        display: flex;
-        width: 210px;  /* Chiều rộng mỗi item */
-        height: 250px;  /* Chiều cao mỗi item */
-        flex-shrink: 0;  /* Không co lại khi không đủ chỗ */
+.item {
+    border-radius: 1rem ;
+    display: flex;
+    width: 13em;  /* Chiều rộng mỗi item */
+    height: 250px;  /* Chiều cao mỗi item */
+    flex-shrink: 0;  /* Không co lại khi không đủ chỗ */
         background-color: rgb(34, 34, 34) ;
         padding: 2rem 1rem 4rem 1rem;
         box-shadow: 0 2px 1px 0 rgba(50, 50, 50, 0.66)

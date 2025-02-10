@@ -24,7 +24,6 @@ function Navigation_header(props) {
                     <FontAwesomeIcon icon={faMapMarkerAlt} className='icon'/>
                     <h1> Địa chỉ cửa hàng </h1>
                 </Link>
-
             </div>
             <div className='Navigation__shopping-cart'>
                     <Link className='Link'>
@@ -49,20 +48,19 @@ function Navigation_header(props) {
 }
 
 const Navigation = styled.div `
-
+    font-size: 1.3rem;
     max-width: 90em;
    color: white;
    display:flex;
-   grid-column-gap:1.5%;
    align-items: center;
 
    // =============================phần style chung =================================================
-                   .icon {
-                        color: red;
-                        font-size:1.3rem;
+.icon {
+                       color:red;
+                       font-size:inherit;
                     }
                     .Link {
-                        padding: 10px 2px;
+                        padding: 8px 2px 8px 2px;
                         display: flex;
                         text-align:center;
                         justify-content:center;
@@ -72,9 +70,12 @@ const Navigation = styled.div `
                         color: white;
                         width: 7rem;
                         border-radius:10px;
+                        
+                                    
                     }
                     .Link h1 {
-                        font-size: 0.8rem;
+                        font-size: 0.7rem;
+                       
                     }
                     .Link:hover {
                             background-color: rgb(47, 47, 47);
@@ -107,6 +108,7 @@ const Navigation = styled.div `
 
 .Navication__call {
         display: flex;
+        width: 100px;
 }
 .Navication__call .call p {
     font-size:0.8rem;

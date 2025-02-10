@@ -1,4 +1,4 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,4 +13,68 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   
+} */
+
+.slider-container {
+  text-align: center;
+  position: relative;
+  width: 320px;
+  margin: auto;
+}
+
+.slide {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background: black;
+}
+
+.btn:first-of-type {
+  left: 0;
+}
+.btn:last-of-type {
+  right: 0;
+}
+
+.dots-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  scrollbar-width: none;
+}
+
+.dots-container::-webkit-scrollbar {
+  display: none;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background: gray;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.dot.active {
+  background: red;
+  transform: scale(1.3);
 }

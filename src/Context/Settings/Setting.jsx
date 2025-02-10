@@ -23,8 +23,8 @@ import Customs from './Theme/components/Customs';
 const Container = styled.div`
           .icon{
             color: black;
-            height:30px;
-            width:30px;
+            height:25px;
+            width:25px;
             
           }
           .Btn{

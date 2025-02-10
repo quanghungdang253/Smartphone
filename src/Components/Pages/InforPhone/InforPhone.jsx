@@ -5,7 +5,7 @@ import PhoneAPI from './services/PhoneAPI';
 import InformationPhones from './Components/informationPhone';
 import { Circles} from 'react-loader-spinner';
 import { useParams } from 'react-router-dom';
-import useHandledetailApi from '../../../Api/useHandledetailPhone';
+import useHandledetailApi from '../../../Api/use-handle-detail-phone';
 import Loading from '../../Common/components/Loading';
 import { Helmet } from 'react-helmet-async';
 import Category_Name from './data/Category-Name';
@@ -16,8 +16,6 @@ function InforPhone(props) {
     const link = params.link;
     
     const id = params.id;
-
-
     const [datas,loadings]  = useHandledetailApi(link,id); // nhận dữ liệu và gọi để truyền link và id để xử lý 
     return (
                 <Wrapper>

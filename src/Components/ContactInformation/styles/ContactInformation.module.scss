@@ -1,14 +1,17 @@
 
+
+
+
 .Container_icon{
  display: flex;
  flex-direction: column;
  position: fixed;
- grid-row-gap: 15px;
+ grid-row-gap: 10px;
  z-index: 1000;
  right: 0;
  bottom: 0;
- background-color: aliceblue;
- padding: 9px 5px 9px 5px;
+
+ padding: 9px 0px 9px 5px;
  border-top-left-radius: 10px;
     .Btn{
             border: none; 
@@ -20,8 +23,8 @@
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Giảm bóng */
       }
     .icon{
-        width: 30px;
-        height: 30px;  
+        width: 25px;
+        height: 25px;  
     }
     .icon:hover{
         transition: 0.5s ease ;
@@ -34,7 +37,23 @@
             color: rgb(0, 42, 251);
     }
 
+ .btnLink {
+         background-color: white;
+         color: black;
+         text-decoration: none;
+         text-align: center;
+         padding: 5px 5px;
+         border-radius: 10px;
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         font-size: 0.7rem;
+         transition: all 0.5s ease;
+ }
  
+ .btnLink:hover {
+     background-color: rgba(232, 230, 230, 0.864);
+ }
    
 }
 
