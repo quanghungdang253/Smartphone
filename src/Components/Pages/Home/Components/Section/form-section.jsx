@@ -12,27 +12,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCircleChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import {faCircleChevronRight} from '@fortawesome/free-solid-svg-icons';
 import ListimageProduct from '../../../Products_list/components/ListimageProduct';
-
+import useEnpoint from '../../../../../Api/use-handle-enpoint';
 // ==============================custom hook=================================
+import ChildComponent from '../../../../../Api/handle-enpoint';
 
 function FormSection(props) {
     const Toggle = props.Toggle;
-   
+    const dataEnpoint = props.dataEnpoint;
     const [node , setNode] = useState(false);
     const Unordered_list = useRef(null);
     const [nameproduct , setNameProduct] = useState(false);
-    const groupedItems = Object.entries(object_image).reduce((result, [productName, {image , category}], index) => {
+    const [nameEnpoint , setEnpoint] = useState("");
+  
+
+    const groupedItems = Object.entries(object_image).reduce((result, [productName, {image , category,sale}], index) => {
         const groupIndex = Math.floor(index / 2);
                 if(!result[groupIndex]){
                           result[groupIndex] = [];  
                 }
-                result[groupIndex].push({productName, image, category});
+                result[groupIndex].push({productName, image, category,sale});
                 return result;
     },[]);
-
-
-    
-
 
    const HandleRight = () => {
         setNode(true);
@@ -64,6 +64,7 @@ function RenderProduct(props) {
 
     return (
         <div className={styles.Container}>
+          
              <img src={image_1} alt='' className={`${styles.image} ${styles.image_1}`}/>
             <div className={styles.Box}>
                 <div className={styles.Box_title}> 
@@ -89,13 +90,18 @@ function RenderProduct(props) {
                 </div>
                     {groupedItems.map((group, index) => (
                         <li key={index} className={styles.itemGroup}>
-                            {group.map(({productName, image, category}) => (
+                            {group.map(({productName, image, category,sale}) => (
+                               
                                 <div key={productName} className={styles.item}>
+                    <span className={styles.saleNumber}> {sale} </span>
                                     <Link
                                      to={`/label/${category}`}
                                      className={styles.Link}
-                                    onClick={() => Toggle(true)}
-                                     >                                                                            
+                                    onClick={() => {
+                                         Toggle(true)
+                                          
+                                    }}
+                            >                                                                  
                                             <img src={image} alt={category} className={styles.image_product}/>
                                             {category}
                                     </Link>
@@ -109,6 +115,7 @@ function RenderProduct(props) {
     );
 }
 
+export {ChildComponent};
 export default FormSection;
 
 

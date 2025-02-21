@@ -13,39 +13,31 @@ const [addData , setAddData] = useState(null);
 
 let DataSmartphone = ["dataSamsung","dataSivo","dataPhone","dataOppo"];
 let DataSaleHome = ["saleProduct1","saleProduct2","saleProduct3","saleProduct4","saleProduct5","saleProduct6","saleProduct7","saleProduct8"];
+const DataSaleProductHome_1 = ["saleProductHomeA_0", "saleProductHomeA_1","saleProductHomeA_2","saleProductHomeA_3","saleProductHomeA_4","saleProductHomeA_5","saleProductHomeA_6","saleProductHomeA_7"];
+const DataSaleProductHome_2 = ["saleProductHomeB_0", "saleProductHomeB_1", "saleProductHomeB_2", "saleProductHomeB_3","saleProductHomeB_4","saleProductHomeB_5","saleProductHomeB_6","saleProductHomeB_7","saleProductHomeB_8","saleProductHomeB_9","saleProductHomeB_10"]
+const DataSaleProductHome_3 = ["saleProductHomeC_0", "saleProductHomeC_1", "saleProductHomeC_2", "saleProductHomeC_3","saleProductHomeC_4","saleProductHomeC_5","saleProductHomeC_6","saleProductHomeC_7","saleProductHomeC_8","saleProductHomeC_9","saleProductHomeC_10"]
+
     useEffect(() => {
          if(DataSmartphone.includes(link)){
                     setLink("dataPhoneSmartphone");
 
          } else if(DataSaleHome.includes(link)) {
-                 setLink("dataSaleHome");
-         }else {
-                setLink("dataListProduct");
+                    setLink("dataSaleHome");
          }
-
+         else if(DataSaleProductHome_1.includes(link)){
+                    setLink("dataSaleHome_1");
+         }
+         else if(DataSaleProductHome_2.includes) {
+                    setLink("dataSaleHome_2");
+         }
+         else if(DataSaleProductHome_3.includes(link)){
+                    setLink("dataSaleHome_3");
+         }
+         else {
+                    setLink("dataListProduct");
+         }
           
 },[link])
-
-useEffect(() => {
-     
-    const fetchData = async() => {
-              if(!link) {
-                alert("chưa có enpoint");
-                  const dataMap = {
-                        datasamsung: () => import('../Components/Pages/Home/dataProduct/Samsung.json')
-                  }
-                if(dataMap[link]) {
-                   const getdata = dataMap[link];
-                  
-                }
-                   
-              }
-              
-             
-    }
-fetchData();
-},[link])
-
 useEffect(() => {   
     if(!links){
         return;
@@ -53,6 +45,7 @@ useEffect(() => {
     const FetchAPI = async() => {
         let index = componentEnpoint;
         console.log(index);
+
         console.log("chỉ số là là : " +index);
         const URL = `/Phonedetails/${links}/${encodeURIComponent(link)}.json`; 
      

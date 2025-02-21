@@ -1,0 +1,42 @@
+
+
+
+.boxShowHidden {
+    padding-top: 20px;
+    text-align: center;
+    .link {
+        font-size: 14px;
+        display: inline-block;
+        width: 500px;
+        height: 30px;
+        text-align: center;
+        line-height: 2;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        border-radius: 10px;
+   border: 1px solid #4a90e2;
+        
+    }
+    .linkShow::after {
+            content: "";
+            width: 0;
+            border-top: 6px solid black;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            display: inline-block;
+            vertical-align: middle;
+            margin: -2px 0 0 5px;
+    }
+    .linkHidden::after {
+        content: "";
+        width: 0;
+        border-bottom: 6px solid black;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        display: inline-block;
+        vertical-align: middle;
+        margin: -2px 0 0 5px;
+    }
+}
+

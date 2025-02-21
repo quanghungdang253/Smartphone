@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SamsungComponent,OppoComponent, hotSaleComponent , DefaultComponent,} from './HandleComponent';
+import { SamsungComponent,OppoComponent, hotSaleComponent , DefaultComponent, XiamioComponent , IphoneComponent, VivoComponent, IpadComponent} from './HandleComponent';
 import { RenderProduct } from '../../../Common/componentEnpoint';
 import { faL } from '@fortawesome/free-solid-svg-icons';
     import { Toggle } from '../../Home/Components/Section/form-section';
@@ -7,12 +7,17 @@ import { faL } from '@fortawesome/free-solid-svg-icons';
     const ComponentMap = {
         "samsung": SamsungComponent,
         "oppo": OppoComponent,
+        "IPhone": IphoneComponent,
+        "Xiamio": XiamioComponent,
+        "vivo":VivoComponent,
+        "Ipad": IpadComponent
 
     }
     function RenderbyCategory( { namephone,logic, data, ...props }) {
-       console.log(logic);
          
-        const SelectedComponent = (ComponentMap[namephone])|| (logic ? hotSaleComponent : DefaultComponent);
+        const SelectedComponent = (ComponentMap[namephone]) || (logic ? hotSaleComponent : DefaultComponent);
+      
         return <SelectedComponent data={data} namephone={namephone} {...props} />;
+        
     }
 export default RenderbyCategory;

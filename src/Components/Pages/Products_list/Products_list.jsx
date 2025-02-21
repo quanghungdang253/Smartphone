@@ -126,8 +126,12 @@ import Loading from '../../Common/components/Loading';
 
 function Products_list(props) { 
   const logic = props.logic; 
+  const dataEnpoint = props.dataEnpoint;
   const [state , setState] = useState(logic);
- 
+  const params = useParams();
+  let namephone = params.namephone;
+ const { theme } = useValue();
+  const [data, loading] = useHandleApi(namephone);
   function handle(){
         setState(true);
   }
@@ -137,13 +141,10 @@ function Products_list(props) {
 }
   },[state])
   
-  const params = useParams();
-  let namephone = params.namephone;
- const { theme } = useValue();
-  const [data, loading] = useHandleApi(namephone);
+ 
 
  if(!data){
-               <Loading/>
+              <Loading/>
  }
   return (
     <Product> 
@@ -151,7 +152,7 @@ function Products_list(props) {
                   <Loading/>
       ) : (
         <div className='Render-product'>
-                  <RenderbyCategory logic={state} namephone={namephone} data={data} {...props}/>
+                  <RenderbyCategory logic={state} dataEnpoint={dataEnpoint} namephone={namephone} data={data} {...props}/>
             
         </div>
       )}

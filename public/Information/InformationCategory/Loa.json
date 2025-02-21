@@ -1,7 +1,7 @@
 
 {
     "data": [
-        {      
+{      
         "id" : 1,
         "discount": "20%",
         "installment": "0%",     
@@ -9,8 +9,8 @@
         "title": "Tai Nghe Kết Xuất 3d Nền JPG ",
         "price": "400.000 ₫"
        
-  },
-  {      
+},
+{      
     "id" : 2,
     "discount": "20%",
     "installment": "0%",     
@@ -182,8 +182,26 @@
           "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png"
        
       
+],
+"label_product": [
+    {"id": 0, "img": "/image/label-product/label-smartphone/label-benco.jpg" , "Link":"benco"},
+    {"id": 1, "img": "/image/label-product/label-smartphone/label-honor.jpg" , "Link":"honor"},
+    {"id": 2, "img": "/image/label-product/label-smartphone/label-itel.jpg" ,  "Link":"itel"},
+    {"id": 3, "img": "/image/label-product/label-smartphone/label-masstel.jpg", "Link":"masstel"},
+    {"id": 4, "img": "/image/label-product/label-smartphone/label-mobel.jpg", "Link":"mobel"},
+    {"id": 5, "img": "/image/label-product/label-smartphone/label-nokia.jpg", "Link":"Nokia"},
+    {"id": 6, "img": "/image/label-product/label-smartphone/label-oppo.jpg" ,"Link":"oppo"},
+    {"id": 7, "img": "/image/label-product/label-smartphone/label-realme.jpg", "Link":"realme"},
+    {"id": 8, "img": "/image/label-product/label-smartphone/label-samsung.jpg", "Link":"samsung"},
+    {"id": 9, "img": "/image/label-product/label-smartphone/label-tcl.jpg", "Link":"tcl"},
+    {"id": 10, "img": "/image/label-product/label-smartphone/label-tecno.jpg", "Link":"tecno"},
+    {"id": 11, "img": "/image/label-product/label-smartphone/label-viettel.jpg", "Link":"viettel"},
+    {"id": 12, "img": "/image/label-product/label-smartphone/label-vivo.jpg", "Link":"vivo"},
+    {"id": 13, "img": "/image/label-product/label-smartphone/label-xiamio.jpg", "Link":"Xiamio"},
+    {"id": 14, "img": "/image/label-product/label-smartphone/label-iphones.jpg","Link": "IPhone"}
+
 ]
-    
+   
     
 
     

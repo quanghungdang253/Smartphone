@@ -27,7 +27,6 @@
             "id":5,
             "name": "Ipad",
               "image":"https://bizweb.dktcdn.net/thumb/1024x1024/100/471/129/products/minhtuanstore530x500-a7b0f28d-eb29-48e9-b202-c85835f25ab6.png?v=1704515341897"
-           
         },
         {
             "id":6,
@@ -39,8 +38,14 @@
             "id":7,
             "name": "Nokia",
               "image":"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/_/1_250.jpg"
+        },
+        {
+            "id":7,
+            "name": "benco",
+              "image":"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/_/1_250.jpg"
            
         }
+       
     ],
     "price":[
         {
@@ -92,7 +97,6 @@
         {
             "id": 5,
             "name": "samsung"
-             
         },
         {
             "id": 6,

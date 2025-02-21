@@ -1,0 +1,234 @@
+
+{
+    "index_show":0,
+    "data":[
+        {      
+           "id" : 1,
+           "discount": "20%",
+           "installment": "0%",     
+           "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/smart-tivi-samsung-uhd-4k-43-inch-ua43au7002.png",  
+           "title": "Smart Tivi Samsung UHD 4K 43 inch UA43AU7002",
+           "price": "6.590.000đ",
+           "priceDown": "7.500.000",
+           "memory": "",
+           "resolution": "6.1 inches",
+           "image_1": "/image/image__sale/sale_1.jpg",
+           "indexCategory": 0
+      
+       },
+       {      
+       "id" : 2,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/7/_/7_267_5.png",
+       "title": "Smart Tivi Samsung UHD 4K 55 INCH 2024 (55DU8000)",
+       "price": "52.200.000đ",
+       "priceDown": "2.500.000",
+        "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg",
+              "indexCategory": 0
+       
+   },
+   {      
+       "id" : 3,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/u/a/ua75au7700kxx_.png",
+       "title": "Smart Tivi Samsung Crystal UHD 4K 75 inch UA75AU7700KXX",
+       "price": "2.200.000đ",
+         "priceDown": "2.500.000",
+          "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg",
+              "indexCategory": 0
+   },
+   {      
+       "id" : 4,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/smart_tivi_qned_lg_4k_65_inch_65qned86sra_36_.png",
+       "title": "Smart Tivi Samsung QLED 4K 55 inch 2024 (55Q60D)",
+       "price": "2.200.000đ",
+       "priceDown": "2.500.000",
+        "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg",
+              "indexCategory": 0
+   },
+   {      
+       "id" : 5,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/smart_tivi_oled_lg_4k_48_inch_oled48a3psa_2.png",
+       "title": "Smart Tivi Samsung UHD 4K 43 inch 2024 (43DU7700)",
+       "price": "2.200.000đ",
+       "priceDown": "2.500.000",
+        "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg",
+              "indexCategory": 0
+   },
+   {      
+       "id" : 6,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/smart_tivi_qned_lg_4k_86_inch_86qned80sra_7_.png",
+       "title": "Google Tivi Coocaa 4K 55 inch 55Y73 2024",
+       "price": "6.890.000đ",
+       "priceDown": "8.990.000đ",
+        "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg",
+              "indexCategory": 0
+   },
+   {      
+       "id" : 6,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/smart_tivi_qned_lg_4k_75_inch_75qned80sra_21_.png",
+       "title": "Smart Tivi LG NanoCell 4K 55 inch 2024 (55NANO8TSA)",
+       "price": "12.490.000đ",
+        "priceDown": "13.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg",
+              "indexCategory": 0
+   },
+   {      
+       "id" : 7,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/f/r/frame_110_1_.png",
+       "title": "Google Tivi Toshiba QLED 4K 50 inch (50M550LP)",
+       "price": "7.690.000đ",
+        "priceDown": "8.500.000",
+           "image_1": "/image/image__sale/sale_1.jpg",
+           "indexCategory": 0
+   },
+   {      
+       "id" : 8,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/smart-tivi-samsung-uhd-4k-43-inch-ua43au7002.png",
+       "title": "Smart Tivi Samsung UHD 4K 43 inch UA43AU7002 ",
+       "price": "6.550.000đ",
+        "priceDown": "9.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg",
+              "indexCategory": 0
+   },
+   {      
+       "id" : 9,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/4/14_2_.png",
+       "title": "Tivi Xiaomi A FHD 43 inch 2025",
+       "price": "5.190.000đ",
+        "priceDown": "6.490.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg",
+              "indexCategory": 0
+   },
+   {      
+       "id" : 10,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/4/3/43uq7050.png",
+       "title": "Smart Tivi LG UHD 4K 43 inch 43UQ7050",
+       "price": "6.900.000đ",
+        "priceDown": "7.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg",
+              "indexCategory": 0
+   },
+   {      
+       "id" : 11,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/smart_tivi_qned_lg_4k_75_inch_75qned86sra_1.png",
+       "title": "Tivi Xiaomi A Pro 4K 65 inch QLED 2025",
+       "price": "9.200.000đ",
+        "priceDown": "10.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg",
+              "indexCategory": 0
+   },
+   {      
+       "id" : 12,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/7/_/7_267_5.png",
+       "title": " Smart Tivi Samsung UHD 4K 55 INCH 2024 (55DU8000)",
+       "price": "11.200.000đ",
+       "priceDown": "12.500.000",
+       "memory": "256 GB",
+       "resolution": "6.1 inches",
+          "image_1": "/image/image__sale/sale_1.jpg",
+          "indexCategory": 0
+   },
+   {      
+       "id" : 13,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/m/smart_tivi_qned_lg_4k_75_inch_75qned80sra_11__1.png",
+       "title": "Smart Tivi Samsung UHD 4K 55 INCH 2024 (55DU8000)",
+       "price": "8.900.000",
+        "priceDown": "10.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+            "image_1": "/image/image__sale/sale_1.jpg",
+            "indexCategory": 0
+   },
+   {      
+       "id" : 14,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_-_2024-09-26t143552.687.png",
+       "title": "Google Tivi Coocaa FHD 43 inch 43Z72 ",
+       "price": "8.900.000",
+        "priceDown": "10.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+            "image_1": "/image/image__sale/sale_1.jpg",
+            "indexCategory": 0
+   },
+   {      
+       "id" : 15,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/6/5/65578dfv.png",
+       "title": "Smart Tivi NanoCell LG 4K 55 inch 55NANO76SQA",
+       "price": "9.200.000đ",
+       "priceDown": "10.500.000",
+        "image_1": "/image/image__sale/sale_1.jpg",
+        "indexCategory": 0
+   },
+   {      
+       "id" : 16,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/i/tivi_xiaomi_a_32_inch_hd.png",
+       "title": "Tivi Xiaomi A 32 inch HD",
+       "price": "9.200.000đ",
+        "priceDown": "10.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+            "image_1": "/image/image__sale/sale_1.jpg",
+            "indexCategory": 0
+   }
+    ],
+    "advertising_images": [
+       "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/c4/05/c405feb105adaaba8eaa9cc463ddcfd6.jpg",
+       "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/0a/c7/0ac7848fff6763850d6d131d2f46e92a.jpg",
+       "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png",
+        "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png",
+         "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png"
+      
+   ]
+       
+   }

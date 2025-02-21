@@ -14,31 +14,37 @@
         
         {
             "id":3,
-            "name": "Tai nghe Apple",
+            "name": "Ti vi Xiamio",
             "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
            
         },
         {
             "id":4,
-            "name": "Tai nghe Harman Kardon",
+            "name": "Ti vi Sony",
              "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
            
         },
         {
             "id":5,
-            "name": "Tai nghe Marshall",
+            "name": "Ti vi TCL",
              "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
            
         },
         {
             "id":6,
-            "name": "Tai nghe Sony",
+            "name": "Ti vi Casper",
              "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
            
         },
         {
             "id":7,
-            "name": "Tai nghe Focal",
+            "name": "Ti vi Toshiba",
+             "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+           
+        },
+        {
+            "id":8,
+            "name": "Ti vi Hisense",
              "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
            
         }

@@ -1,0 +1,38 @@
+{
+ "nameProduct" : {
+
+    "SmartPhone": {
+        "vivo":    "dataVivo",
+        "Xiamio":  "dataXiamio",
+        "IPhone":  "dataIphone",
+        "Nokia":   "dataNokia",
+        "mobel":   "dataMobel",
+        "honor":   "dataHonor",
+        "itel":    "dataItel",
+        "masstel": "dataMasstel",
+        "realme":  "dataRealme",
+        "viettel": "dataViettel",
+        "samsung":    "dataSamsung",
+        "tcl":     "dataTcl",
+        "benco":   "dataBenco",
+        "oppo":    "dataOppo"
+        },
+
+        "Televison": {
+            "Ti vi Samsung 4K": "dataTelevison",
+            "Ti vi Sony":"dataSamsung",
+            "Ti vi Xiamio":"dataXiamio",
+            "Ti vi Sony": "dataSony",
+            "Ti vi TCL":" dataTCL",
+            "Ti vi Casper":"dataCasper",
+            "Ti vi Toshiba":"dataToshiba",
+            "Ti vi Hisense": "dataHisense"
+       }
+    },
+    "enpointSmartphone": [
+        "samsung","vivo","Xiamio","Iphone","Nokia","mobel","honor","itel","masstel","realme","viettel","vivo","tcl","benco","oppo"
+    ]
+    
+ 
+}
+    

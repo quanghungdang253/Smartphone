@@ -62,7 +62,7 @@ const Slideimage = (props) => {   //ở đây {phone} là viết tắt    const 
                                               
                                                       
                                                       
-                                                      
+                 
                                 </div>   
                         </div>
                 <div className={styles.HandleImage_Slide}>

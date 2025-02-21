@@ -20,7 +20,8 @@ import styles from './style/home.module.scss';
 function Home({home}) {
  const {theme} = useValue();
      const [logic , setLogic] = useState(false);
-  
+     
+
     return (
        
             <MainHome 
@@ -35,11 +36,6 @@ function Home({home}) {
                                         <img src={image} alt className={`${styles.childImage} ${styles.imageRight}`} />
                                 </div>
                         </div>
-                  
-               
-               
-               
-             
                 <div className='Mainheader'> 
                         <Helmet>
                                 <title> Quang Hùng Store </title>
@@ -53,7 +49,7 @@ function Home({home}) {
                                  <Article/>
                              </div>
                               <div className='form__section'>
-                                 <FormSection Toggle={setLogic}/>
+                                 <FormSection Toggle={setLogic} />
                               </div>
                             
                          </header>

@@ -1,0 +1,108 @@
+{
+    "phonecompany": [
+        {
+            "id": 1,
+            "name": "Máy lọc nước Samsung"
+        },
+        {
+            "id":2,
+            "name": "Máy lọc nước Toshiba"
+           
+        },
+        {
+            "id":3,
+            "name": "Máy lọc nước LG"
+           
+        },
+        {
+            "id":4,
+            "name": "Máy lọc nước Kangaroo"
+           
+        },
+        {
+            "id":5,
+            "name": "Máy lọc nước Sunhouse"
+           
+        },
+        {
+            "id":6,
+            "name": "Máy lọc nước Điện giải"
+           
+        },
+        {
+            "id":7,
+            "name": "Máy lọc nước Hòa phát"
+           
+        },
+        {
+            "id":8,
+            "name": "Máy lọc nước Karofi"
+           
+        }
+    ],
+    "price":[
+        {
+            "id": 1,
+            "price_level": "Dưới 2 triệu"
+
+        },
+        {
+            "id": 2,
+            "price_level": "Từ 5 đến 10 triệu"
+            
+        },
+        {
+            "id": 3,
+            "price_level": "Từ 10 - 20 triệu"
+            
+        },
+        {
+            "id": 4,
+            "price_level": "Dưới 30 triệu "
+            
+        }, {
+            "id": 5,
+            "price_level": "dưới 50 triệu "
+            
+        }
+    ],
+    "hot__phone": [
+        {
+            "id": 1,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 2,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 3,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 4,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 5,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 6,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 7,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        }
+    ]
+
+    
+}

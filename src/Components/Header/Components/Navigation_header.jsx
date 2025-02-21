@@ -7,22 +7,22 @@ import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import {faUser} from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { faTruck } from '@fortawesome/free-solid-svg-icons';
+import { faStore } from "@fortawesome/free-solid-svg-icons";
 function Navigation_header(props) {
     return (
         <Navigation>
             <div className='Navication__call'> 
-                    <Link className='Link'> 
-                         <FontAwesomeIcon icon={faPhone} className='icon' />   
-                        <div>        
-                            <h1> Gọi mua hàng </h1>
-                            <h1> 123456789 </h1>
-                         </div>  
+                    <Link className='Link ' to='/StoreInfo'> 
+                      
+                    <FontAwesomeIcon icon={faStore} size="2x" className='icon' />
+                            <h1 className='linkIntroduce'> Giới thiệu cửa hàng <br></br> Visual 360°  </h1>
+                         
                     </Link>
           </div>
             <div className='Navigation__googleMap'>
-                <Link className='Link Link__map'>   
+                <Link className='Link Link__map' to='/Map' target='_blank' rel='noopener noreferrer'>   
                     <FontAwesomeIcon icon={faMapMarkerAlt} className='icon'/>
-                    <h1> Địa chỉ cửa hàng </h1>
+                    <h1>  Cửa hàng gần bạn </h1>
                 </Link>
             </div>
             <div className='Navigation__shopping-cart'>
@@ -32,13 +32,13 @@ function Navigation_header(props) {
                     </Link>
             </div>
             <div className='Navigation__shopping-cart'>
-                    <Link className='Link'>
+                    <Link className='LinkShoppingCart'>
                     <FontAwesomeIcon icon={faCartShopping} className='icon' />
-                        <h1> Giỏ hàng </h1>
+                        <h1 className='textShoppingCart'> Giỏ hàng </h1>
                     </Link>
             </div>
             <div  className='Navigation__User'>
-                    <Link className='Link Link__User'>
+                    <Link className='Link '>
                                     <FontAwesomeIcon icon={faUser} className='icon icon__user'/>
                                     <h1> Đăng Nhập</h1>
                     </Link>
@@ -48,40 +48,41 @@ function Navigation_header(props) {
 }
 
 const Navigation = styled.div `
-    font-size: 1.3rem;
-    max-width: 90em;
+    font-size: 1rem;
+    width: 90em;
    color: white;
    display:flex;
+   grid-column-gap:2px;
    align-items: center;
 
    // =============================phần style chung =================================================
 .icon {
-                       color:red;
+                      color:wheat;
                        font-size:inherit;
+                       font-size: 1rem;
                     }
                     .Link {
-                        padding: 8px 2px 8px 2px;
+                        padding:5px;
                         display: flex;
                         text-align:center;
                         justify-content:center;
                         align-items:center;
-                        grid-column-gap:2px;
+                        grid-column-gap:1px;
                         text-decoration:none;
                         color: white;
-                        width: 7rem;
+                        width: 8rem;
                         border-radius:10px;
                         
                                     
                     }
                     .Link h1 {
-                        font-size: 0.7rem;
+                        font-size: 10px;
                        
                     }
                     .Link:hover {
                             background-color: rgb(47, 47, 47);
                     }
                    
-
 
    //===================================================================
 
@@ -108,7 +109,7 @@ const Navigation = styled.div `
 
 .Navication__call {
         display: flex;
-        width: 100px;
+      
 }
 .Navication__call .call p {
     font-size:0.8rem;
@@ -122,7 +123,26 @@ const Navigation = styled.div `
         flex-direction: column;
         grid-row-gap:2px;
 }
-
+.linkIntroduce {
+    width:9rem;
+}
+.LinkShoppingCart {
+       
+       display:flex;
+       align-items:center;
+        font-size:10px;
+        text-decoration:none;
+        color:white;
+        padding:5px;
+        border-radius:10px;
+        
+}
+.LinkShoppingCart:hover {
+    background-color: rgb(47, 47, 47);
+}
+.textShoppingCart {
+    font-size: 10px;
+}
 
 `
 export default Navigation_header;

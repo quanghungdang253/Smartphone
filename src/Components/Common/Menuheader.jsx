@@ -8,6 +8,7 @@ import Link_phone from './data/Link_phone.json';
 import  Link_laptop from './data/Link_laptop.json';
 import Link_camera from './data/Link_camera.json';
 import Link_earphone from './data/Link_earphone.json';
+import Link_waterfilter from './data/Link_waterfilter.json';
 import { listClasses } from '@mui/material';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import {ReactComponent as IconarrowRight} from "./icon/arrowRight.svg";
@@ -29,7 +30,7 @@ function Menuheader({addPadding}) {
             { icon:  <FontAwesomeIcon icon={faDesktop} />, label: "Máy Tính" } ,
             { icon:  <FontAwesomeIcon icon={faHeadphones} />, label: "Phụ kiện, Tai nghe" } ,
             { icon:  <FontAwesomeIcon icon={faClock} />, label: "Đồng hồ" } ,
-            { icon: <FontAwesomeIcon  icon={ faSnowflake} />, label: "Điện tử, điện máy"},
+            { icon: <FontAwesomeIcon  icon={ faSnowflake} />, label: "Điện tử, máy lọc nước"},
             { icon:  <FontAwesomeIcon icon={faNewspaper} />, label: "Tin công nghệ" } ,    
     ]
     const Listitem = [
@@ -41,7 +42,7 @@ function Menuheader({addPadding}) {
         { id: 5, items: Link_laptop},
         { id: 6, items: Link_earphone},
         { id: 7, items: Link_laptop},
-        { id: 8, items: Link_laptop},
+        { id: 8, items: Link_waterfilter},
         { id: 9, items: Link_laptop},
     ]
     return (

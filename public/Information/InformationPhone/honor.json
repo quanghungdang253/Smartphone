@@ -1,0 +1,267 @@
+
+{
+    "data":[
+        {      
+           "id" : 1,
+           "discount": "20%",
+           "installment": "0%",     
+           "image": "/image/1iphone6.jpg",
+           "title": "Điện thoại Honor/ chính hãng, giá sốc ",
+           "price": "2.200.000đ",
+           "priceDown": "2.500.000",
+           "memory": "256 GB",
+           "resolution": "6.1 inches",
+           "image_1": "/image/image__sale/sale_1.jpg"
+      
+       },
+       {      
+       "id" : 2,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/samsungZ-form1.webp",
+       "title": "Samsung Galaxy Z Fold6 12GB/1TB  - Hàng chính hãng ",
+       "price": "52.200.000đ",
+       "priceDown": "2.500.000",
+        "memory": "256 GB",
+        "resolution": "6.1 inches",
+        "image_1": "/image/image__sale/sale_1.jpg" 
+   },
+   {      
+       "id" : 3,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-max_3.png",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+        "memory": "256 GB",
+        "resolution": "6.1 inches",
+        "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 4,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-s23-ulatra_2_.png",
+       "title": "Samsung Galaxy S23 Ultra 12GB 512GB ",
+       "price": "2.200.000đ",
+       "priceDown": "2.500.000",
+        "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 5,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+       "priceDown": "2.500.000",
+        "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 6,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+       "priceDown": "2.500.000",
+        "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 6,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 7,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+           "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 8,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 9,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 10,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 11,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+              "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 12,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+       "memory": "256 GB",
+       "resolution": "6.1 inches",
+          "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 13,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+            "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 14,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+            "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 15,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 16,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+            "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 17,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+         "memory": "256 GB",
+           "resolution": "6.1 inches",
+            "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 18,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "priceDown": "2.500.000",
+       "memory": "256 GB",
+       "resolution": "6.1 inches",
+       "image_1": "/image/image__sale/sale_1.jpg"
+   },
+   {      
+       "id" : 19,
+       "discount": "20%",
+       "installment": "0%",   
+       "image": "/image/1iphone6.jpg",
+       "title": "I Phone 6 Plus 128GB / chính hãng ",
+       "price": "2.200.000đ",
+        "memory": "256 GB",
+       "resolution": "6.1 inches",
+       "image_1": "/image/image__sale/sale_1.jpg"
+   }
+    ],
+    "advertising_images": [
+       "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/c4/05/c405feb105adaaba8eaa9cc463ddcfd6.jpg",
+       "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/0a/c7/0ac7848fff6763850d6d131d2f46e92a.jpg",
+       "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png",
+        "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png",
+         "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png"
+      
+   ],
+   "label_product": [
+       {"id": 0, "img": "/image/label-product/label-smartphone/label-benco.jpg" , "Link":"benco"},
+       {"id": 1, "img": "/image/label-product/label-smartphone/label-honor.jpg" , "Link":"honor"},
+       {"id": 2, "img": "/image/label-product/label-smartphone/label-itel.jpg" ,  "Link":"itel"},
+       {"id": 3, "img": "/image/label-product/label-smartphone/label-masstel.jpg", "Link":"masstel"},
+       {"id": 4, "img": "/image/label-product/label-smartphone/label-mobel.jpg", "Link":"mobel"},
+       {"id": 5, "img": "/image/label-product/label-smartphone/label-nokia.jpg", "Link":"Nokia"},
+       {"id": 6, "img": "/image/label-product/label-smartphone/label-oppo.jpg" ,"Link":"oppo"},
+       {"id": 7, "img": "/image/label-product/label-smartphone/label-realme.jpg", "Link":"realme"},
+       {"id": 8, "img": "/image/label-product/label-smartphone/label-samsung.jpg", "Link":"samsung"},
+       {"id": 9, "img": "/image/label-product/label-smartphone/label-tcl.jpg", "Link":"tcl"},
+       {"id": 10, "img": "/image/label-product/label-smartphone/label-tecno.jpg", "Link":"tecno"},
+       {"id": 11, "img": "/image/label-product/label-smartphone/label-viettel.jpg", "Link":"viettel"},
+       {"id": 12, "img": "/image/label-product/label-smartphone/label-vivo.jpg", "Link":"vivo"},
+       {"id": 13, "img": "/image/label-product/label-smartphone/label-xiamio.jpg", "Link":"Xiamio"},
+       {"id": 14, "img": "/image/label-product/label-smartphone/label-iphones.jpg","Link": "IPhone"}
+   
+   ]
+     
+       
+   }

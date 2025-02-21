@@ -61,8 +61,6 @@ const Productads = () => {
             return preIndex;
     })      
 }
-
-
     return(
     <div className={styles.boxContainer}>   
         <div className={styles.Container}>  {/*className='Wrapper'  */}
@@ -128,13 +126,7 @@ const Wrapper = styled.div  `
         }
      
 /* Thiết kế thanh cuộn trên Chrome */
-
-
-
-
-      
-    
-     
+ 
 
 
 `

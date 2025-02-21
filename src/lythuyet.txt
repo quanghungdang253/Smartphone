@@ -338,3 +338,7 @@ Giải thích:
 Tên file sử dụng kebab-case (user-profile.js) vì đó là quy tắc phổ biến cho tên file trong các dự án ReactJS.
 Tên component sử dụng PascalCase (UserProfile) vì đây là quy tắc tiêu chuẩn trong React để đặt tên cho các component.
 Điều này giúp dễ dàng phân biệt component với các file hoặc biến trong dự án và duy trì tính nhất quán trong mã nguồn.
+
+// bóng đổ 
+ box-shadow: 0 1px 2px 0 rgba(60,64,67,.1),
+              0 2px 6px 2px rgba(60,64,67,.15);

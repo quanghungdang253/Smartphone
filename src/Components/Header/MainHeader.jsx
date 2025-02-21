@@ -6,7 +6,7 @@ import Menuheader from '../Common/Menuheader';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import styled from 'styled-components';
 import Vd1 from '../../vd';
-import styles from './style/main-header.module.scss';
+import styles from './styles/main-header.module.scss';
 import Overlay from '../Overlayer';
 
 function MainHeader(props) {

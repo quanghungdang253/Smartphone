@@ -38,9 +38,48 @@
       
 //       `
       
-   // =====================ứng dụng chạy chính ==================
-
-
+   // =====================Map ==================
+//    import React, { useRef } from "react";
+//    import { Canvas, useFrame } from "@react-three/fiber";
+//    import { OrbitControls } from "@react-three/drei";
+//    import * as THREE from "three";
+   
+//    const OscillatingSphere = () => {
+//      const sphereRef = useRef();
+//      let time = useRef(0); // Dùng để theo dõi thời gian
+   
+//      useFrame(() => {
+//        if (sphereRef.current) {
+//          time.current += 0.05; // Tăng thời gian dần dần
+//          sphereRef.current.rotation.y = Math.sin(time.current) * 1; // Lắc qua lắc lại
+//        }
+//      });
+   
+//      const texture = new THREE.TextureLoader().load(
+//        "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/472720365_929193129316415_8568559914425964959_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9eae26&_nc_ohc=xhCiBE6loq8Q7kNvgEIINZc&_nc_oc=AdhPxnaAjkOuQTBUnE8_wCK5TocPIsrgEMRZ9-9ock9h7zw3-D6eSvT9PCAh-M8wMaw&_nc_zt=23&_nc_ht=scontent.fsgn2-3.fna&_nc_gid=AzzxswOZR27zilN68hpcYc0&oh=00_AYAzmgvxOu-enwAHCdZURetyJu6EBst-NvxSmasdbK_S4Q&oe=67BA0763"
+//      );
+   
+//      return (
+//        <mesh ref={sphereRef}>
+//          <sphereGeometry args={[2, 40, 10]} />
+//          <meshBasicMaterial map={texture} side={THREE.BackSide} />
+//        </mesh>
+//      );
+//    };
+   
+//    const App = () => {
+//      return (
+//        <Canvas style={{ width: 1000, height: 900 }}>
+//          <OrbitControls enableZoom={false} />
+//          <OscillatingSphere />
+//        </Canvas>
+//      );
+//    };
+   
+//    export default App;
+   
+   
+//============================ ứng dụng chạy chính =====================================
 import './App.css';
 import './Components/phone/HeaderStyle/reset.css';
 import { Routes, Route } from 'react-router-dom';
@@ -54,6 +93,7 @@ import { ParentContext } from './Context/Settings/Theme/ThemeContext';
 import Products_list from './Components/Pages/Products_list/Products_list';
 import Home from './Components/Pages/Home/Home';
 import  InforPhone from './Components/Pages/InforPhone/InforPhone';
+import MainStoreInfo from './Components/Header/store-map-info/main-store-info';
 
 export default function App() {
   // const Products_list  = React.lazy(() => import('./Components/Pages/Products_list/Products_list'))
@@ -70,7 +110,8 @@ export default function App() {
                     <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='label/:namephone' element={<Products_list/>} />
-                        <Route path='/Detail/:link/:id' element={<InforPhone />} />   
+                        <Route path='/Detail/:link/:id' element={<InforPhone />} />  
+                        <Route path='/StoreInfo' element={<MainStoreInfo/>} />
                     </Routes>
                
                 </HelmetProvider>             

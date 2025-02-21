@@ -5,11 +5,16 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import Loading from '../../../Common/components/Loading';
 
 
 
 const ListimageProduct = ({image, customs}) => {   //ở đây {phone} là viết tắt    const InformationPhone = (props)
-                                                                        // const {image} props
+                           
+        
+        useEffect(() => {
+                setimage(image);
+        },[image])
         const [preimage , setimage] = useState(image);
         const [preindex , setindex] = useState(0);
         useEffect(() => {
@@ -40,17 +45,17 @@ const ListimageProduct = ({image, customs}) => {   //ở đây {phone} là viế
         }
         return(
             <Wrapper> 
-                    <HandleImage>
-                        <div className='HandleImage__image'>
+                <HandleImage>
+                   <div className='HandleImage__image'>
                                 <div className='HandleImage__node'>  
-                        <Button variant='outlined' onClick={() => Left()} className='button__left button'> <FontAwesomeIcon icon={faAngleLeft}/> </Button>
-                        <Button variant='outlined'  onClick={() => Right()} className='button__right button'> <FontAwesomeIcon icon={faAngleRight}/> </Button>
+                                          <Button variant='outlined' onClick={() => Left()} className='button__left button'> <FontAwesomeIcon icon={faAngleLeft}/> </Button>
+                                         <Button variant='outlined'  onClick={() => Right()} className='button__right button'> <FontAwesomeIcon icon={faAngleRight}/> </Button>
                                 </div>
                                         <Link className='Link'>   
                                                 <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt=''  /> 
                                        </Link>
                                                      
-                         </div>
+                  </div>
                         {customs && (
                                 <div className='HandleImage__image'>
                                 <div className='HandleImage__node'>  
@@ -58,7 +63,7 @@ const ListimageProduct = ({image, customs}) => {   //ở đây {phone} là viế
                                         <Button variant='outlined'  onClick={() => Right()}> <FontAwesomeIcon icon={faAngleRight} className="button"/> </Button>
                                 </div>
                               
-                                                <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt=''  />                     
+                                <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt=''  />                     
                         </div>
                         )}
                                  
@@ -84,8 +89,8 @@ const Wrapper = styled.div `
 `
 const HandleImage = styled.div `
 display: flex;
-justify-content: center; 
-grid-column-gap: 10%;
+justify-content: space-between; 
+grid-column-gap: 2%;
 overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và sẽ ẩn đi
 
        
@@ -95,6 +100,10 @@ overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và 
                 display: flex;
                 align-items:center;
                 justify-content: center;
+                border-radius: 5px;
+                border: 0.5px solid rgba(22, 22, 22, 0.1);
+                  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1),
+                                        0 2px 6px 2px rgba(0, 0, 0, 0.15);
                
 }
 .Link {
@@ -102,9 +111,12 @@ overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và 
         width:100%;
         display:flex;
         justify-content:center;
+       
 }
 .HandleImage__image img {
-                
+        transition: opacity 0.5s ease-in-out;
+        transform: scale(0.95);
+        
                 cursor: pointer;
                 max-width:100%;
                 object-fit: contain;

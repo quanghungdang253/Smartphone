@@ -15,18 +15,17 @@ function ContactInformation(props) {
 
             const [Form_Setting, setForm_Setting] = useState();
         //     custom(Form_Setting);
-    return (
+    return (   
         <div className={styles.Container}>
-            <div className={styles.Container_icon}>  
+            <div className={styles.Container_icon}>     
                      <Link to='tel:+84388985737' className={styles.btnLink}>   
                                 <button className={`${styles.Btn} ${styles.Btn__Contact}`}>
                                 
                                          <FontAwesomeIcon icon={faPhone} shake className={styles.icon}/>
-                                         
+            
                                 </button>
                                 1900734253 <br/> (6h - 22h)
 
-                   
                     </Link>
                     
                     <Link to='https://m.me/quang.hungg.382310' className={styles.btnLink}>  

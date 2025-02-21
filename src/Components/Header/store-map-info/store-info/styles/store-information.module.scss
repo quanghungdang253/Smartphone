@@ -1,0 +1,42 @@
+
+
+.box_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.boxText {
+        max-width: 55rem;
+        border: 1px solid black;
+        padding: 10px;
+}
+.item {
+    height: 150px;
+    max-width: 9rem;
+    .imgItem {
+        width: 80px;
+        height: 70px;
+        object-fit: contain;
+    }
+}
+.boxParagrap {
+      .paragrap {
+            line-height: 25px;
+      }  
+}
+.mainImg3D {
+        margin-top: 5rem;
+
+}
+.canvasContainer {
+  margin-top: 2rem;
+     width: 90rem;
+     height: 20rem;
+        cursor: grab;
+}
+.canvasContainer:active {
+    cursor: grabbing;
+}
+.image {
+    object-fit: contain;
+}
