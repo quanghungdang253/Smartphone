@@ -20,11 +20,13 @@
     height: 40em;
     .Box {
         position: relative;
-        background: linear-gradient(rgb(226, 0, 67), rgb(226, 0, 67)) 0% 0% / cover;
+        background: linear-gradient(180deg, #a20b0b, #80090a);
         border-radius: 10px;
+    
     .Box__icon {
                 .icon {
                     position: absolute;
+                    z-index: 2;
                     top: 50%;
                     margin-top: 1em;
                     width: 40px;
@@ -43,7 +45,11 @@
                 }
         }
         .Box_title {
+          
             text-align: center;
+            img {
+                    max-width: 1306px;
+            }
             .title {
                 color: rgb(255, 0, 0);
                 font-weight: 800;
@@ -61,17 +67,29 @@
     grid-column-gap: 1em;
     flex-wrap: nowrap;  /* Không cho phần tử xuống dòng, sẽ xếp theo chiều ngang */
     overflow-x: hidden;  /* Hiển thị thanh cuộn ngang khi cần thiết */
+    overflow-y: hidden;
     padding: 0;
     list-style-type: none;
 }
 
+
 .itemGroup {
+    position: relative;
     display: flex;  /* Xếp các item thành hàng */
     grid-column-gap: 30px;  /* Khoảng cách giữa các item trong cùng một nhóm */
     flex-direction: column;
     grid-row-gap: 1rem;
     padding: 1rem 1rem 1rem 1rem;
-  
+   .imgHot {
+    position: absolute;
+    left: 90px;
+    top: 50px;
+        z-index: 1;
+    width:150px;
+    height:150px;
+    object-fit: contain;
+
+   }
    .saleNumber {
             position: absolute;
             right: 5px;
@@ -119,6 +137,7 @@
             text-align: center;
             color: white;
             font-weight: 700;
+            font-family: "Lato", serif;
             img {
                 margin-bottom: 1rem;
                 height: 95%;
@@ -129,7 +148,7 @@
     }
     
     .item:hover {
-        img {
+        .image_product  {
             height: 100%;
             width: 100%;
             transition:  0.1s ease;

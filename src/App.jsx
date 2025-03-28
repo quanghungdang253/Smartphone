@@ -80,64 +80,237 @@
    
    
 //============================ ứng dụng chạy chính =====================================
-import './App.css';
-import './Components/phone/HeaderStyle/reset.css';
-import { Routes, Route } from 'react-router-dom';
-import styled from 'styled-components';
-import MainHeader from './Components/Header/MainHeader';
-import React, { Suspense, lazy } from 'react';
-import Loading from './Components/Common/components/Loading';
-import { HelmetProvider } from 'react-helmet-async';
-import CommunicationSettings from './Components/CommunicationSettings/CommunicationSettings';
-import { ParentContext } from './Context/Settings/Theme/ThemeContext';
-import Products_list from './Components/Pages/Products_list/Products_list';
-import Home from './Components/Pages/Home/Home';
-import  InforPhone from './Components/Pages/InforPhone/InforPhone';
-import MainStoreInfo from './Components/Header/store-map-info/main-store-info';
+// import './App.css';
+// import './Components/phone/HeaderStyle/reset.css';
+// import { Routes, Route } from 'react-router-dom';
+// import styled from 'styled-components';
+// import MainHeader from './Components/Header/MainHeader';
+// import React, { Suspense, lazy } from 'react';
+// import Loading from './Components/Common/components/Loading';
+// import { HelmetProvider } from 'react-helmet-async';
+// import CommunicationSettings from './Components/CommunicationSettings/CommunicationSettings';
+// import { ParentContext } from './Context/Settings/Theme/ThemeContext';
+// import Products_list from './Components/Pages/Products_list/Products_list';
+// import Home from './Components/Pages/Home/Home';
+// import  InforPhone from './Components/Pages/InforPhone/InforPhone';
+// import MainStoreInfo from './Components/Header/store-map-info/main-store-info';
+// import MainStoreMapInfo from './Components/Header/store-map-info/main-store-map';
 
-export default function App() {
-  // const Products_list  = React.lazy(() => import('./Components/Pages/Products_list/Products_list'))
-  // const Home = React.lazy(() => import("./Components/Pages/Home/Home"));
-  // const InforPhone = React.lazy(() => import("./Components/Pages/InforPhone/InforPhone"));
+
+// import MainChatbox from './Components/Chat/main-chatbot';
+
+
+// // =========================================chatbot==============================================
+
+
+// export default function App() {
+//   // const Products_list  = React.lazy(() => import('./Components/Pages/Products_list/Products_list'))
+//   // const Home = React.lazy(() => import("./Components/Pages/Home/Home"));
+//   // const InforPhone = React.lazy(() => import("./Components/Pages/InforPhone/InforPhone"));
 
   
-    return (
-        <Style>
-         <ParentContext>  
-            <div>
-             <HelmetProvider>   
-                <MainHeader />
-                    <Routes>
-                        <Route path='/' element={<Home />} />
-                        <Route path='label/:namephone' element={<Products_list/>} />
-                        <Route path='/Detail/:link/:id' element={<InforPhone />} />  
-                        <Route path='/StoreInfo' element={<MainStoreInfo/>} />
-                    </Routes>
+//     return (
+//         <Style>
+    
+//      <ParentContext>  
+//             <div>
+//              <HelmetProvider>   
+//                 <MainHeader />
+//                     <Routes>
+//                         <Route path='/' element={<Home />} />
+//                         <Route path='label/:namephone' element={<Products_list/>} />
+//                         <Route path='/Detail/:link/:id' element={<InforPhone />} />  
+//                         <Route path='/StoreInfo' element={<MainStoreInfo/>} />
+//                         <Route path='/GoogleMap' element={<MainStoreMapInfo/>} />
+//                     </Routes>
                
-                </HelmetProvider>             
-            </div> 
-                  <div className='CommunicationSetting'>  
-                      <CommunicationSettings/>     
-                  </div> 
-              </ParentContext>          
-             
+//                 </HelmetProvider>             
+//             </div> 
+         
+//                   <div className='CommunicationSetting'>  
+//                       <CommunicationSettings/>     
+//                   </div> 
+//                   <div className='chatBot'> 
+//                        <MainChatbox/>
+//                   </div>
+//                  <div>
               
-        </Style>
+                 
+//                  </div>
+//               </ParentContext>          
+
+
+
+//         </Style>
+//     );
+// }
+
+// const Style = styled.div`
+
+//    .chatBot {
+//         position:fixed;
+//         bottom: 10px;
+//         right: -20px;
+//         z-index:1500
+//    }
+//     .CommunicationSeting{
+              
+//     }
+
+// `;
+// const Navigations = styled.div`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // ===========================================================
+
+
+
+
+import React from 'react';
+import Count from './Components/Pages/ReduxExample/reducer';
+
+function App(props) {
+    return (
+        <div>
+                <Count />
+        </div>
     );
 }
 
-const Style = styled.div`
-  
-    .CommunicationSeting{
-           
-    }
+export default App;
 
-`;
-const Navigations = styled.div`
+
+
+
+
+
+// import React, { useEffect, useRef, useState } from "react";
+// import './App.css'
+// const App = () => {
+//   const [isFixed, setIsFixed] = useState(false);
+//   const [topPosition, setTopPosition] = useState(0);
+//   const asideRef = useRef(null); 
+//   const [allowScrollLeft, setAllowScrollLeft] = useState(false);
+//   useEffect(() => {
+//     const scrollY = window.scrollY;
+//     const handleScroll = () => {
+
+
+//         const aside = asideRef.current;
+//         console.log("aside" + aside);
+
+//         if (aside) {
+//           const asideScrollHeight = aside.scrollHeight; 
+//           const asideClientHeight = aside.clientHeight; // Chiều cao hiển thị của aside
+//           const asideScrollTop = aside.scrollTop; // Vị trí cuộn hiện tại của aside
       
+//           // Kiểm tra nếu aside đã cuộn hết
+//           if (asideScrollTop + asideClientHeight >= asideScrollHeight - 10) {
+//             setAllowScrollLeft(true); // Cho phép phần bên trái cuộn tiếp
+//           } else {
+//             setAllowScrollLeft(false);
+//           }
+//         }
 
 
-`
+//         if(window.scrollY >= 150){
+//                 setIsFixed(true);
+//                 setTopPosition(scrollY - 150); 
+//         }else {
+//             setIsFixed(false);
+//             setTopPosition(0); // Reset về vị trí ban đầu
+//           }
+    
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, [allowScrollLeft]);
+
+//   return (
+//     <div style={{ display: "flex", height: "200vh", padding: "20px" }}>
+//      <p> phần bên trái  </p> 
+//       <div
+//         style={{
+//           flex: 1,
+//           height: "100vh",
+//            border: '2px solid black',
+//           padding: "20px",
+//           borderRight: "2px solid black",
+//           position: isFixed ? 'sticky' : "relative", // Đổi vị trí khi cuộn xuống
+//           top: isFixed ? window.scrollY - 300 : "auto",
+//           left: "0",
+//           width: isFixed ? "calc(100% - 320px)" : "auto", // Trừ chiều rộng của aside
+//           background: "white",
+//         }}
+//       >
+//         <h2>Khu vực bên trái</h2>
+//         <p style={{ height: "300vh", background: "lightgray" }}>
+//           Nội dung dài... Phần bên trái đứng yên sau khi cuộn 100px. fwefewfew
+//           fwefwefwe
+//           fwefwefwewefwef
+
+//           f
+//           ưefwefwefwe
+//           fwefwefwefwefwefwe
+//           fweergergerger
+//           egergergergerger
+//         </p>
+//       </div>
+
+//       {/* Phần bên phải */}
+//       <aside className="aside"
+//          ref={asideRef}
+//         style={{
+//           width: "300px",
+//           height: "100vh",
+//           overflowY: isFixed ? 'auto' : 'hidden' , // Cuộn bình thường
+//           border: "2px solid black",
+//           marginLeft: "20px",
+//         }}
+//       >
+//         <div style={{ height: "200vh", background: "linear-gradient(white, gray)" }}>
+//           Nội dung dài... Phần bên phải cuộn bình thường.
+//         </div>
+//       </aside>
+//     </div>/ơ]
+//   );
+// };
+
+// export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// `
 // import React, { useRef, useState } from "react";
 
 // const ImageScroller = () => {

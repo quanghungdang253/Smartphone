@@ -1,56 +1,106 @@
-import React, { useState, useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';  // Dùng để tùy chỉnh icon marker
-import 'leaflet/dist/leaflet.css';  // Nhớ import CSS của Leaflet
+import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+import styles from "../styles/map.module.scss";
+import imgFix from '../../assets/image/fix.jpg';
+import { useEffect, useState } from "react";
 
-import './map.css'; // Import tệp CSS để áp dụng style
+// Danh sách địa điểm
+const locations = [
+  { name: "Thị trấn Ea T’ling, huyện Cư Jút, tỉnh Đắk Nông", lat: 12.7453, lon: 107.6867 },
+  { name: "Hồ Hoàn Kiếm, Hà Nội", lat: 21.0285, lon: 105.8542 },
+  { name: "Nhà Thờ Đức Bà, TP Hồ Chí Minh", lat: 10.7794, lon: 106.6992 },
+  { name: "Linh Tây, Thủ Đức TP Hồ Chí Minh", lat: 10.865492, lon: 106.759284 },
+  { name: "Tọa độ tùy chỉnh", lat: 10.865513, lon: 106.759305 }
+];
+
+const locations_1 = [
+  { name: "Điện thoại 24h Gò Vấp", lat: 10.821052, lon: 106.759284 },
+  { name: "Hồ Hoàn Kiếm, Hà Nội", lat: 21.0285, lon: 105.8542 },
+  { name: "Nhà Thờ Đức Bà, TP Hồ Chí Minh", lat: 10.7794, lon: 106.6992 },
+  { name: "Linh Tây, Thủ Đức TP Hồ Chí Minh", lat: 10.865492, lon: 106.759284 },
+  { name: "Tọa độ tùy chỉnh", lat: 10.865513, lon: 106.759305 }
+];
+
+const locations_2 = [
+  { name: "Sửa điện thoại Bình Tân", lat: 12.7453, lon: 107.6867 },
+  { name: "Hồ Hoàn Kiếm, Hà Nội", lat: 21.0285, lon: 105.8542 },
+  { name: "Nhà Thờ Đức Bà, TP Hồ Chí Minh", lat: 10.7794, lon: 106.6992 },
+  { name: "Linh Tây, Thủ Đức TP Hồ Chí Minh", lat: 10.865492, lon: 106.759284 },
+  { name: "Tọa độ tùy chỉnh", lat: 10.865513, lon: 106.759305 }
+];
+
+let arrayAddress = [locations, locations_1, locations_2];
+
+let storeSystem = [
+  { id: 0, name: "Hệ thống bán lẻ", img: imgFix },
+  { id: 1, name: "Hệ thống sửa chữa điện thoại và máy tính", img: imgFix },
+  { id: 2, name: "Hệ thống bảo hành ủy quyền của Apple", img: imgFix }
+];
+
+// Custom icon cho Marker
+const customIcon = new L.DivIcon({
+  className: "custom-icon",
+  html: `<img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/RedDot.svg" alt="marker-icon" width="40px"/>`,
+  iconSize: [40, 40],
+  iconAnchor: [20, 40],
+  popupAnchor: [0, -40],
+});
+
+// Component cập nhật vị trí bản đồ
+const ChangeMapView = ({ center }) => {
+  const map = useMap();
+  useEffect(() => {
+    map.setView(center, 15); // Di chuyển bản đồ đến vị trí mới
+  }, [center, map]);
+  return null;
+};
 
 const Map = () => {
-  const [location, setLocation] = useState(null);
+  const [index, setIndex] = useState(0);
 
-  const getCoordinates = (address) => {
-    const url = `https://nominatim.openstreetmap.org/search?q=${address}&format=json&addressdetails=1`;
-
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.length > 0) {
-          const lat = data[0].lat;
-          const lon = data[0].lon;
-          setLocation([lat, lon]);
-        }
-      })
-      .catch((error) => console.error('Error:', error));
-  };
-
-  useEffect(() => {
-    getCoordinates('Thị trấn Ea T’ling, huyện Cư Jút, tỉnh Đắk Nông');  // Địa chỉ của thị trấn
-  }, []);
-
-  if (!location) return <div>Loading...</div>;
-
-  // Tạo biểu tượng tùy chỉnh (Biểu tượng cửa hàng hoặc khinh khí cầu)
-  const customIcon = new L.DivIcon({
-    className: 'custom-icon',  // Thêm className để áp dụng CSS
-    html: `<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAA7VBMVEX////k7vyFrfE0geoUceiStfeOtPIAZuYAbecac+gzffAqe/Odvflwm+cAa+pChfR+qff2qKHSOkYwb9j+9vbpJgvqPi/qQSdXacRRjfVCg/oajKz1/PL2t7PpNSTqQzWBaK7A2P8+kMkipTuz27zwf3f/06K1zPpAi9s0qFMsp052wYnubGLpODb3ngD/++M0plwtpk5btnL0jRz7vAT+89bf6f8qnnDpMy3xeCX80Gcgo0btVhb7ugD8y1H+6bulwWq+sg393pfauBil1LD8xTTsug1AqU9RsmpXq0nm9Op0rUDF5M3E05iSzKBcyPClAAAA70lEQVR4AWKgOQC0PhaJDcQwAFS6YWZmlsOM7pbD+f9zuvJNzuaWuRhG6HgznE7D5bBzbo/X6XP6/YHgowuFfRb+SCQSiOouFk84LRkh9NxkKp3JOp25HKXmC0UmS+VKulytAdQsV280mWylK5Vym26dQBdFj8l+ujIYjtRCxlhMppoczOYLui1XAjXZWm/m8y3dejvECS9b2s/nc/lumh8CEXdNvoqcE/JzgiSB80VWfqNyP6DxK+fy70BucgSd0VzOT6g4wwOmvCi1u4INt51yd7BlOkG2P+MsEMUZnnAXghflqTyRczzCc85neA3/bO8jQZ8yDjIAAAAASUVORK5CYII=" alt="store-icon" />`,  // Đường dẫn đến ảnh icon cửa hàng
-    iconSize: [40, 40],  // Kích thước biểu tượng
-    iconAnchor: [20, 40],  // Vị trí neo của biểu tượng
-    popupAnchor: [0, -40],  // Vị trí hiển thị popup
-  });
+  // Lấy vị trí trung tâm của hệ thống được chọn
+  const center = [
+    arrayAddress[index][0].lat, 
+    arrayAddress[index][0].lon
+  ];
 
   return (
-    <div style={{ height: '100vh' }}>
-      <MapContainer center={location} zoom={13} style={{ width: '100%', height: '100%' }}>
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        {/* Thêm marker với custom icon */}
-        <Marker position={location} icon={customIcon}>
-          <Popup>
-            Đây là Thị trấn Ea T’ling, huyện Cư Jút, tỉnh Đắk Nông.
-          </Popup>
-        </Marker>
-      </MapContainer>
+    <div className={styles.container}>
+      <div className={styles.title}>
+        <h1>Vui lòng chọn hệ thống cửa hàng</h1>
+        <div className={styles.selector}>
+          {storeSystem.map((item) => (
+            <label key={item.id}>
+              <div className={styles.selectorChild}>
+                <input
+                  type="radio"
+                  checked={index === item.id}
+                  className={styles.input}
+                  name="options"
+                  onChange={() => setIndex(item.id)}
+                />
+                <div className={styles.selectorChild_1}>
+                  <img src={item.img} alt="" className={styles.img} />
+                  <p className={styles.paragrap}>{item.name}</p>
+                </div>
+              </div>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <div className={styles.containerMap}>
+        <MapContainer center={center} zoom={0} style={{ width: "100%", height: "500px", marginLeft: "auto" }}>
+          <ChangeMapView center={center} /> {/* Cập nhật vị trí khi chọn hệ thống mới */}
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+          {arrayAddress[index].map((loc, idx) => (
+            <Marker key={idx} position={[loc.lat, loc.lon]} icon={customIcon}>
+              <Popup>{loc.name}</Popup>
+            </Marker>
+          ))}
+        </MapContainer>
+      </div>
     </div>
   );
 };

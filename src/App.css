@@ -78,3 +78,145 @@ body{
   background: red;
   transform: scale(1.3);
 }
+
+
+.aside {
+  overflow-y: scroll;  /* Cho phép cuộn */
+  scrollbar-width: none;  /* Ẩn thanh cuộn trên Firefox */
+}
+
+.aside::-webkit-scrollbar {
+  display: none;  /* Ẩn thanh cuộn trên Chrome, Safari */
+}
+
+
+
+/* vi dụ  */
+
+.container {
+  height: 200vh;
+  width: 90rem;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+.boxLeft {
+  width: 40rem;
+    height: 100vh;
+    border: 1px solid black;
+
+}
+.boxRight {
+      width: 20rem;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+
+
+/* Định dạng cho toàn bộ chatbot */
+.ReactChatbotKit {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 400px;
+  height: 600px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* Định dạng cho phần tin nhắn */
+.ReactChatbotKit-MessageBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  padding: 15px;
+  flex-grow: 1;
+}
+
+/* Định dạng cho tin nhắn của chatbot */
+.ReactChatbotKit-BotMessage {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+  margin: 5px 0;
+  align-self: flex-start;
+  word-wrap: break-word;
+}
+
+/* Định dạng cho tin nhắn của người dùng */
+.ReactChatbotKit-UserMessage {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+  margin: 5px 0;
+  align-self: flex-end;
+  word-wrap: break-word;
+}
+
+/* Định dạng cho nút chat */
+.ReactChatbotKit-ChatButton {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: #FF61A6;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiệu ứng hover cho nút chat */
+.ReactChatbotKit-ChatButton:hover {
+  background-color: #ff4081;
+}
+
+/* Phần nhập tin nhắn */
+.ReactChatbotKit-InputContainer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ô nhập tin nhắn */
+.ReactChatbotKit-Input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Nút gửi tin nhắn */
+.ReactChatbotKit-SendButton {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hiệu ứng hover cho nút gửi */
+.ReactChatbotKit-SendButton:hover {
+  background-color: #0097a7;
+}

@@ -70,7 +70,7 @@ const Container = styled.div`
       .Article__image--first {
                     width:100%;
                     height:150px;
-                    object-fit:contain;
+                    object-fit:fill;
       }
 
 `

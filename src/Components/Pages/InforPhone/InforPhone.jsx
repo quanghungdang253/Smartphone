@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Slideimage from './Components/Slideimage';
+import Slideimage from './Components/contact-map';
 import PhoneAPI from './services/PhoneAPI';
 import InformationPhones from './Components/informationPhone';
 import { Circles} from 'react-loader-spinner';
@@ -21,9 +21,9 @@ function InforPhone(props) {
                 <Wrapper>
                        <div className='main'>                 
                             {loadings ? ( <Loading/>) : (                                            
-                                <Main>          
+                                <Main style={{height: 100000}}>          
                                         {/* <Category_Name Data={datas}/>   */}
-                                        <InformationPhones Data={datas}/>
+                                        <InformationPhones Data={datas} id={id} nameEnpoint={link}/>
                                         
                                 </Main>                          
                             )}                                        
@@ -32,12 +32,13 @@ function InforPhone(props) {
     );
 }
 const Wrapper = styled.div`
+        
 
-
-`
+    `
 const Main = styled.div `
            display:flex;
            justify-content:center;
+          
            
           
 `

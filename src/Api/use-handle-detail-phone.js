@@ -11,7 +11,8 @@ const [loading, setLoading] = useState(true);
 const [data,setData] = useState(null);
 const [addData , setAddData] = useState(null);
 
-let DataSmartphone = ["dataSamsung","dataSivo","dataPhone","dataOppo"];
+let DataSmartphone = ["dataSamsung","dataVivo","dataPhone","dataOppo","dataIphone"];
+let dataListProduct = ["Đồ gia dụng","Loa","Laptop","Tai nghe","Tivi"];
 let DataSaleHome = ["saleProduct1","saleProduct2","saleProduct3","saleProduct4","saleProduct5","saleProduct6","saleProduct7","saleProduct8"];
 const DataSaleProductHome_1 = ["saleProductHomeA_0", "saleProductHomeA_1","saleProductHomeA_2","saleProductHomeA_3","saleProductHomeA_4","saleProductHomeA_5","saleProductHomeA_6","saleProductHomeA_7"];
 const DataSaleProductHome_2 = ["saleProductHomeB_0", "saleProductHomeB_1", "saleProductHomeB_2", "saleProductHomeB_3","saleProductHomeB_4","saleProductHomeB_5","saleProductHomeB_6","saleProductHomeB_7","saleProductHomeB_8","saleProductHomeB_9","saleProductHomeB_10"]
@@ -27,13 +28,13 @@ const DataSaleProductHome_3 = ["saleProductHomeC_0", "saleProductHomeC_1", "sale
          else if(DataSaleProductHome_1.includes(link)){
                     setLink("dataSaleHome_1");
          }
-         else if(DataSaleProductHome_2.includes) {
+         else if(DataSaleProductHome_2.includes(link)) {
                     setLink("dataSaleHome_2");
          }
          else if(DataSaleProductHome_3.includes(link)){
                     setLink("dataSaleHome_3");
          }
-         else {
+         else if(dataListProduct.includes(link)) {
                     setLink("dataListProduct");
          }
           
@@ -44,9 +45,9 @@ useEffect(() => {
     }
     const FetchAPI = async() => {
         let index = componentEnpoint;
-        console.log(index);
+  
 
-        console.log("chỉ số là là : " +index);
+      
         const URL = `/Phonedetails/${links}/${encodeURIComponent(link)}.json`; 
      
       

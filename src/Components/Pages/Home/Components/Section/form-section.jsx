@@ -3,8 +3,9 @@ import styles from './styles/form-section.module.scss';
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 //===================================================
-import image_sale from './image/image__sale/image_sale.gif';
+import image_sale from './image/image__sale/imageSale_1.png';
 import image_1 from './image/image__sale/Title.jpg';
+import hot from './image/hot.gif';
 //==================================================
 import object_image from './data/data-label-product';
 import { RenderProduct } from '../../../../Common/componentEnpoint';
@@ -90,10 +91,11 @@ function RenderProduct(props) {
                 </div>
                     {groupedItems.map((group, index) => (
                         <li key={index} className={styles.itemGroup}>
+                           
                             {group.map(({productName, image, category,sale}) => (
                                
                                 <div key={productName} className={styles.item}>
-                    <span className={styles.saleNumber}> {sale} </span>
+                    <span className={styles.saleNumber}> {sale} </span>     
                                     <Link
                                      to={`/label/${category}`}
                                      className={styles.Link}
@@ -101,7 +103,7 @@ function RenderProduct(props) {
                                          Toggle(true)
                                           
                                     }}
-                            >                                                                  
+                            >                                                           <img src={hot} alt=''  className={styles.imgHot}/>            
                                             <img src={image} alt={category} className={styles.image_product}/>
                                             {category}
                                     </Link>

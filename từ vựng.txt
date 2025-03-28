@@ -1,0 +1,2 @@
+sphereGeometry: quả cầu hình học 
+OrbitControls: điều khiển quy đão 

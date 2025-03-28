@@ -7,26 +7,6 @@ import * as THREE from "three";
 import { OrbitControls } from '@react-three/drei';
 
 import Getdata from './getdata';
-function StoreInformation(props) {
-    let [staticData , text] = Getdata();
-    return (
-        <header className={styled.boxContainer}>
-            <div className={styled.boxText}>
-                <div className={styled.box_1}>
-                        {staticData.map((Item) => (
-                                <div key={Item.id} className={styled.item}>  
-                                        <img src={Item.image} alt='' className={styled.imgItem}/>
-                                        <p> {Item.text}</p>
-                                </div>
-                        ))}
-                </div>
-                <div className={styled.boxParagrap}>
-                        <p className={styled.paragrap}> {text}  </p>
-                </div>
-            </div>
-        </header>
-    );
-}
 
 let [staticData, text, img3D] = Getdata();
 const imageOptions = {
@@ -101,4 +81,4 @@ const Image3d = () => {
         </div>
     );
 };
-export { StoreInformation , Image3d};
+export {Image3d};

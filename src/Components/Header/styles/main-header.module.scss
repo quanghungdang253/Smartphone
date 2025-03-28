@@ -4,28 +4,40 @@
     margin-left:5.5rem;
     position: fixed;
     z-index:1100;
-    top: 3em;
+    top: 7em;
     padding: 2rem 2rem;
 }
 .header {
     max-width: 100%;
 }
 .mainHeaders {
-    background-color:black;
-    padding-top:0.5rem;
+  
+  
     padding-bottom:0.5rem;
     position: fixed;
     top:0;
     z-index: 999 ;
     width:100%;
+    .boxAdvertisementImg {
+        background-color: rgb(0, 47, 86);
+        text-align: center;
+    }
+    .advertisementImg {
+        max-width: 1307px;
+        object-fit: cover;
+           
+            height: 50px;
+    }
 
 }
 .wrapperMainHeader {
-    margin-left: 7%;
-    margin-right:7%;
-      width: 1450px;
+    background-color:black;
+    padding-left: 7%;
+    padding-right: 7%;
+    width: 100%;
+     min-height: 75px;
       position: relative;
       z-index:1000;
       display: grid;
-      grid-template-columns: 25% 20% 30%; 
+      grid-template-columns: 30% 27% 30%; 
 }

@@ -39,7 +39,7 @@ function ContactInformation(props) {
                                 <button className={`${styles.Btn} ${styles.Btn__Zalo}`}>
                                          <img src={iconZalo} alt='' className={styles.icon}/>
                                  </button>
-                                 chatZalo<br/> (6h - 22h)
+                                  (6h - 22h)
 
                     </Link>
                     <Link className={styles.btnLink}>  

@@ -8,13 +8,13 @@ function LabelProduct(props) {
     
      
     return (
-        <div className={styles.boxlabel}>
-                <div className={styles.box_row_1}>
-                        {labelProduct.map((Item) => {
-                                console.log(`/label/${Item.Link}`);
+        <div className={styles.boxLabel}>
+            <div className={styles.boxRow}>
+              {labelProduct.map((Item) => {
+                                
                                 return (
-                        <Link key={Item.id} to={`/label/${Item.Link}`} className={styles.Link}>
-                             <img  src={Item.img} alt='' className={styles.img_product}/>
+                        <Link key={Item.id} to={`/label/${Item.Link}`} className={styles.boxRow__Link}>
+                             <img  src={Item.img} alt='' className={styles.boxRow__Img}/>
                           </Link>  
                      
                         )})}

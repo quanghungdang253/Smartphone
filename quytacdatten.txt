@@ -33,3 +33,228 @@ Phổ biến: Không phổ biến cho tên thư mục nhưng có thể thấy tr
         {/* cách 2: render theo cú pháp JSX  */}
         {/* <RenderbyCategory  {...{namephone,data,...props}} /> */}
         {/* cách 3: render theo jsx hay dùng */}
+
+
+
+
+        // cấu trúc scss 
+
+
+
+        /src
+  ├── components
+  │   ├── ProductCard
+  │   │   ├── ProductCard.js
+  │   │   ├── ProductImage.js
+  │   │   ├── ProductDetails.js
+  │
+  ├── styles
+  │   ├── components/   # 📂 Chứa các SCSS module của component
+  │   │   ├── ProductCard.module.scss
+  │   │   ├── ProductImage.module.scss
+  │   │   ├── ProductDetails.module.scss
+  │   ├── abstracts/    # 📂 Chứa biến, mixins, functions (dùng chung)
+  │   │   ├── _variables.scss
+  │   │   ├── _mixins.scss
+  │   ├── base/         # 📂 CSS chung cho toàn bộ app
+  │   │   ├── _global.scss
+  │   │   ├── _reset.scss
+  │   ├── main.scss     # Import tất cả SCSS global
+
+
+
+
+
+///////////////////////////
+
+
+📂 Cấu trúc chuẩn của SCSS theo 7-1 Pattern
+mathematica
+Copy
+Edit
+/src
+  ├── styles
+  │   ├── abstracts/     (📂 Biến, mixins, functions)
+  │   │   ├── _variables.scss
+  │   │   ├── _mixins.scss
+  │   │   ├── _functions.scss
+  │   │   ├── _index.scss (gom nhóm import)
+  │   ├── base/          (📂 Reset, Typography, Styles chung)
+  │   │   ├── _reset.scss
+  │   │   ├── _typography.scss
+  │   │   ├── _index.scss
+  │   ├── components/    (📂 Style cho từng component)
+  │   │   ├── _button.scss
+  │   │   ├── _card.scss
+  │   │   ├── _index.scss
+  │   ├── layout/        (📂 Style cho bố cục lớn: header, footer, sidebar)
+  │   │   ├── _header.scss
+  │   │   ├── _footer.scss
+  │   │   ├── _sidebar.scss
+  │   │   ├── _index.scss
+  │   ├── pages/         (📂 Style cho từng trang riêng)
+  │   │   ├── _home.scss
+  │   │   ├── _about.scss
+  │   │   ├── _contact.scss
+  │   │   ├── _index.scss
+  │   ├── themes/        (📂 Style theo chủ đề: dark mode, light mode)
+  │   │   ├── _dark.scss
+  │   │   ├── _light.scss
+  │   ├── vendors/       (📂 CSS từ thư viện ngoài như Bootstrap, Tailwind)
+  │   │   ├── _bootstrap.scss
+  │   │   ├── _swiper.scss
+  │   ├── main.scss      (📜 Import tất cả SCSS vào đây)
+🚀 Giải thích chi tiết từng thư mục
+📌 1. abstracts/ (Biến, mixins, functions dùng chung)
+Chứa các file SCSS không xuất ra CSS, chỉ giúp tái sử dụng code:
+
+_variables.scss → Biến màu, font size, spacing.
+_mixins.scss → Mixins giúp tái sử dụng styles.
+_functions.scss → Các hàm xử lý CSS nâng cao.
+_index.scss → Gom nhóm import.
+📌 Ví dụ: abstracts/_variables.scss
+
+scss
+Copy
+Edit
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$font-size-base: 16px;
+📌 Ví dụ: abstracts/_mixins.scss
+
+scss
+Copy
+Edit
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+📌 2. base/ (Style chung cho toàn bộ dự án)
+Chứa các quy tắc CSS toàn cục:
+
+_reset.scss → Reset CSS để đồng bộ giao diện.
+_typography.scss → Style font chữ.
+_index.scss → Gom nhóm import.
+📌 Ví dụ: base/_reset.scss
+
+scss
+Copy
+Edit
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+📌 Ví dụ: base/_typography.scss
+
+scss
+Copy
+Edit
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: $font-size-base;
+}
+📌 3. components/ (Style cho từng component)
+Mỗi component có file SCSS riêng, giúp dễ bảo trì và tái sử dụng.
+
+_button.scss
+_card.scss
+_index.scss
+📌 Ví dụ: components/_button.scss
+
+scss
+Copy
+Edit
+.button {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+📌 4. layout/ (Bố cục lớn: Header, Footer, Sidebar)
+Chứa các phần bố cục chính của trang web:
+
+_header.scss
+_footer.scss
+_sidebar.scss
+_index.scss
+📌 Ví dụ: layout/_header.scss
+
+scss
+Copy
+Edit
+.header {
+  background-color: $primary-color;
+  height: 60px;
+  @include flex-center;
+}
+📌 5. pages/ (Style riêng cho từng trang)
+Nếu mỗi trang có style riêng, bạn để ở đây:
+
+_home.scss
+_about.scss
+_contact.scss
+📌 Ví dụ: pages/_home.scss
+
+scss
+Copy
+Edit
+.home-banner {
+  background-color: $primary-color;
+  height: 300px;
+}
+📌 6. themes/ (Dark mode, Light mode, v.v.)
+Nếu dự án hỗ trợ nhiều theme, bạn có thể tạo các file riêng:
+
+_dark.scss
+_light.scss
+📌 Ví dụ: themes/_dark.scss
+
+scss
+Copy
+Edit
+body {
+  background-color: #000;
+  color: white;
+}
+📌 7. vendors/ (CSS từ thư viện ngoài)
+Nếu bạn dùng Bootstrap, Tailwind, Swiper, hãy import vào đây.
+
+📌 Ví dụ: vendors/_bootstrap.scss
+
+scss
+Copy
+Edit
+@import '~bootstrap/scss/bootstrap';
+📌 8. main.scss (File quan trọng nhất!)
+Nhiệm vụ của main.scss là import tất cả các file SCSS trên.
+
+📌 Ví dụ: main.scss
+
+scss
+Copy
+Edit
+// Import tất cả SCSS theo thứ tự hợp lý
+@import 'abstracts/index';
+@import 'base/index';
+@import 'components/index';
+@import 'layout/index';
+@import 'pages/index';
+@import 'themes/index';
+@import 'vendors/index';
+👉 Sau đó, import main.scss vào React:
+
+jsx
+Copy
+Edit
+import '../styles/main.scss';
+✅ Lợi ích khi dùng 7-1 Pattern
+✅ Code rõ ràng, dễ tìm kiếm
+✅ Tái sử dụng cao, dễ bảo trì
+✅ Tránh xung đột CSS
+✅ Có thể áp dụng SCSS Modules dễ dàng
+
+Chat với Shop 🏬 (Cục bộ)
+
+Chat với Trợ Lý AI 🤖 (Wit.ai)

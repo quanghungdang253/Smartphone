@@ -11,7 +11,7 @@
 }
 
 .listItem {
-    margin-top: 2rem;
+    background-color: white;
     display: flex;
     grid-column-gap: 0rem;
     width: calc(var(--visibleImages) * var(--imgWidth));
@@ -19,6 +19,8 @@
     width: 100%;
     overflow-x: hidden;
     white-space: nowrap;
+    padding-top: 1rem;
+   
     scroll-behavior: smooth;
 
     .Item {
@@ -41,9 +43,9 @@ border-radius: 4px;
 }
 .imageSlice {
    
-    width:100%;
-    height:75%;
-    border-radius: 1.5rem;
+    
+    height:79%;
+    width: 100%;
     position: relative;
     box-shadow:0 2px 2px 0 black
                2px 0px 6px 0 black;
@@ -145,8 +147,11 @@ border-radius: 4px;
 }
 }
 .Aside {
-        width: 600px;
+        padding: 0px 0px 20px 0px;
+       max-width: 745px;
         height: 473px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
 }
 .openNode {
     opacity: 1;

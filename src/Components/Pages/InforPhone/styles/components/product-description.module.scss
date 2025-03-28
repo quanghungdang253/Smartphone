@@ -1,0 +1,144 @@
+
+
+
+// ===================================media=======================
+// @media (max-width: 680px) {
+//     .mainContent {
+//         max-width: 680px;
+//     }
+// }
+.mainContent  {   
+        margin-top: 30px;
+        &__first {
+            display: flex;
+            grid-column-gap: 1rem;
+      
+            .addBoxShadow {
+             
+              height: 100%;
+              .seeMore::after {
+                content: "";
+                width: 0;
+                border-top: 6px solid black;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                display: inline-block;
+                vertical-align: middle;
+                margin: -2px 0 0 5px;
+              }
+              .seeMore {
+                text-align: center;
+                background-color: rgb(208, 208, 208);
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                color: black;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                padding: 10px 10px;
+                cursor: pointer;
+
+              }
+            }
+            p {
+                line-height: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 19px;
+            }
+            h2 {
+                color: rgb(0, 0, 0);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+                font-size: 1.5rem;
+            }
+            .boxContent {
+                padding: 10px 10px 10px 10px;
+                box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);             
+            }
+            .boxInfo {
+                padding: 10px 10px;
+                max-width: 750px;
+                box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);
+                position: sticky;
+                top: 135px; 
+                height: 1000px;
+                
+            }
+            .paragraps {
+            
+                &__row1 {
+                    display: grid;
+                    grid-row-gap: 1rem;
+                    margin-top: 1rem;
+                }
+                &__row2 {
+                    padding: 10px 10px 10px 10px;   
+                    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);  
+                  
+                }
+                &__row3 {
+                    margin-top: 2rem;
+                    padding: 10px 10px;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);  
+                    h1 {
+                            color: #d02c35;
+                            font-family: 'Times New Roman', Times, serif;
+                            font-size: 24px;
+                            text-align: center;
+                            font-weight: 700;
+                            padding-top: 10px;
+                            padding-bottom: 20px;
+                            text-transform: uppercase;
+                            box-sizing: border-box;
+                    }
+                    .mainParagraps {
+                        display: grid;
+                        grid-row-gap: 1rem;
+                    }
+.boxQuestion {
+        &__question {
+            font-weight: 800;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            padding: 20px;
+            border: 1px solid rgba(187, 187, 187,0.9);                    
+            display: flex;
+            justify-content: space-between;
+        .iconRight {
+            max-width: 20px;
+            height: 20px;
+            object-fit: cover;
+        }
+    }
+    &__answer {
+        background-color: rgb(228, 225, 225);
+        padding: 10px;
+}              
+                    }
+                    
+                }
+                .title {
+                    
+                }
+            
+            }
+            .boxQuestion {
+                 &__question {
+                    cursor: pointer;
+                 }
+            }
+           
+        }
+}
+
+
+
+
+
+
+
+
+
+

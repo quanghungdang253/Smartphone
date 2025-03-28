@@ -20,7 +20,7 @@ function Navigation_header(props) {
                     </Link>
           </div>
             <div className='Navigation__googleMap'>
-                <Link className='Link Link__map' to='/Map' target='_blank' rel='noopener noreferrer'>   
+                <Link className='Link Link__map' to='/GoogleMap' target='_blank' rel='noopener noreferrer'>   
                     <FontAwesomeIcon icon={faMapMarkerAlt} className='icon'/>
                     <h1>  Cửa hàng gần bạn </h1>
                 </Link>
@@ -57,9 +57,9 @@ const Navigation = styled.div `
 
    // =============================phần style chung =================================================
 .icon {
-                      color:wheat;
-                       font-size:inherit;
-                       font-size: 1rem;
+                      
+                     
+                       font-size: 1.2rem;
                     }
                     .Link {
                         padding:5px;
@@ -76,7 +76,10 @@ const Navigation = styled.div `
                                     
                     }
                     .Link h1 {
-                        font-size: 10px;
+                        font-size: 12px;
+                        font-weight: 200;
+                        font-family: 'Times New Roman', Times, serif;
+                      
                        
                     }
                     .Link:hover {

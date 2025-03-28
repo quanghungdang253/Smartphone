@@ -1,7 +1,7 @@
 
 
 .Wrapper {
-        max-width: 1180px;
+      
         padding-top: 2rem;
       
 
@@ -53,9 +53,12 @@
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         background-image: url('../../icon/img-promotion_3.png');
         animation: animation_color 2s infinite;
+        background-repeat: no-repeat;
+        margin-left: 8rem;
 }
-.image__promotion {
-           
+.img {
+     background-repeat: no-repeat;
+     margin: 0 auto;
 }
 h3 {
     padding: 5px 5px 2rem 0px;

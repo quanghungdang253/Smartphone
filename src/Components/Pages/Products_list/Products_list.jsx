@@ -133,28 +133,24 @@ function Products_list(props) {
  const { theme } = useValue();
   const [data, loading] = useHandleApi(namephone);
   function handle(){
-        setState(true);
+           setState(true);
   }
   useEffect(() => {   // xử lý logic hiển thị 
     if(!state){
               handle();
 }
   },[state])
-  
- 
-
  if(!data){
               <Loading/>
  }
   return (
     <Product> 
-       {!data ? (
+        {!data ? (
                   <Loading/>
-      ) : (
-        <div className='Render-product'>
+           ) : (
+          <div className='Render-product'>
                   <RenderbyCategory logic={state} dataEnpoint={dataEnpoint} namephone={namephone} data={data} {...props}/>
-            
-        </div>
+          </div>
       )}
     </Product>
   );
@@ -165,7 +161,6 @@ const Product = styled.div `
      }
 
 `
-
 export default Products_list;
 
 

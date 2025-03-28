@@ -1,29 +1,51 @@
 
-import { useState } from "react";
-import Slideimage from "./Slideimage";
+import { useEffect, useState } from "react";
+import Slideimage from "./contact-map";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 import ListimageProduct from "../../Products_list/components/ListimageProduct";
+import ListChildComponents from "./list-child-components";
 //===================================style===============================================================
-import styles from '../styles/InformationPhone.module.scss';
-import style__sale from '../styles/Sale.module.scss';
+import styles from '../styles/components/info-phone.module.scss';
+import style__sale from '../styles/components/Sale.module.scss';
 //========================data====================================
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Static_data from '../data/data-icon/Static_data.json';
 import {faGift} from '@fortawesome/free-solid-svg-icons';
+import RelatedProducts from "./related-products";
+import ProductParameters from "./product-parameters";
+import img1 from '../image/img1.jpg';
+import img2 from '../image/img2.jpg';
+import AttachedProduct from "./attached-product";
+import ProductDescription from "./product-description";
+
+
 //======================================hình ảnh============================================================
 // áp dụng quy tắc  camelCase  để đặt tên 
- function InformationPhones({Data}) {
+ function InformationPhones({Data , id, nameEnpoint}) {
   
   const [customs, setCustoms] = useState(false);
   const [active, setActive] = useState(0);
   const [preindex , setIndex] = useState(0);
 
   const [indexproduct,setIndexProduct] = useState([]);
+
   const [total, setTotal] = useState(Data.price);
 const [totalorginal , setTotalOriginal] = useState(Data.total_original);
 const [original_price , setOriginal_Price] = useState([]);
 const [product, setSumProduct] = useState(1);
+
+const [isFixed, setIsFixed] = useState(false);
+const [savedTop, setSavedTop] = useState(0);
+const [allowScrollLeft, setAllowScrollLeft] = useState(false);
+const [topPosition, setTopPosition] = useState(0);
+const asideRef = useRef(null); 
+const mainRef = useRef(null);
+const [mainHeight, setMainHeight] = useState("auto");
+
+const [allowScroll, setAllowScroll] = useState(false);
 let moneysavings = parseFloat(Data.total_original) - parseFloat(Data.price);
+
   let  pre_money_savings =  moneysavings.toFixed(6)
   .replace(/\B(?=(\d{3})+(?!\d))/g, '.')
   .replace(/^0\./, ''); // Loại bỏ "0." ở đầu
@@ -91,54 +113,107 @@ const parseNumber = (value) => {
       });
     }
   };
-          let Information = [
-            {id: 0, title: "Màn hình", content: Data.screen_size, },
-            {id: 1, title: "Công nghệ màn hình", content: Data.screen_technology},
-            {id: 2, title: "Camera Sau", content: Data.rear_camera},
-            {id: 3, title: "Camera trước", content: Data.Front_camera},
-            {id: 4, title: "Chipset", content: Data.Chipset},
-            {id: 5, title: "Công Nghệ NFC ",content: Data.NFC_technology},
-            {id: 6, title: "Bộ nhớ trong", content: Data.internal_memory},
-            {id: 7, title: "Thẻ sim", content: Data.SIM_card},
-            {id: 8, title: "Hệ điều hành ",content: Data.OperatingSystem},
-            {id: 9, title: "Độ phân giải màn hình", content: Data.Screen_resolution},
-            {id: 10, title: "Tính năng màn hình", content: Data.Screen_features},
-            {id: 11, title: "Loại CPU", content: Data.CPU_Type},
-            {id: 12, title: "Cân năng", content: Data.Weight},
-            {id: 13, title: "Cổng sạc", content: Data.Charging_port}
-          ]
+        
+  useEffect(() => {
+    const handleScroll = () => {
+        if (!asideRef.current) return;
+
+        if (mainRef.current) {
+          // Lấy chiều cao lớn nhất giữa aside và body
+          const bodyHeight = mainRef.current.querySelector(`.${styles.body}`)?.scrollHeight || 0;
+          const asideHeight = mainRef.current.querySelector(`.${styles.aside}`)?.scrollHeight || 0;
+          
+          // Cập nhật chiều cao dựa trên nội dung lớn hơn
+          setMainHeight(Math.max(bodyHeight, asideHeight) + "px");
+        }
+
+
+
+        const aside = asideRef.current;
+        const asideScrollHeight = aside.scrollHeight;
+        const asideClientHeight = aside.clientHeight;
+        const asideScrollTop = aside.scrollTop;
+        
+        // Kiểm tra điều kiện trước khi cập nhật state
+    
+        if (asideClientHeight + asideScrollTop >= asideScrollHeight - 10) {
+            setAllowScrollLeft(true);
+        }else {
+          setAllowScrollLeft(false);
+        }
+
+      
+        if (window.scrollY >= 150) {
+                    setIsFixed(true);
+                 
+        }else if(window.scrollY > 800){
+          console.log("da lon honw "+window.scrollY);
+          if (asideRef.current) {
+                      setSavedTop(800);
+           }
+              setIsFixed(false);
+        }
+        else {
+                setSavedTop(0)
+                setIsFixed(false);
+               
+        }
+
+       
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+    return () => {
+        window.removeEventListener("scroll", handleScroll);
+        window.removeEventListener("resize", handleScroll);
+    };
+}, [allowScrollLeft]);
+
+
+console.log(window.scrollY);
+
      return (
-      <div className={styles.Container}>  
-        <div className={styles.nameProduct}>
-            <div className={styles.title__icon}>  
-                <h1 className={styles.namephone}> {Data.title} </h1> 
-                <div className={styles.Wrapper__icon}> 
-                      {Static_data.icon__star.map((Item) => (
-                            <img key={Item.id} src={Item.icon} alt="" className={styles.icon__star}/>
-                      ))}
-                </div>
-                <h1> 170 Đánh giá </h1>
-              </div>              
-              <aside className={styles.Wrapper__row__top}> 
-                  <div className={styles.Wrapper__left}>                                                                                                                  
-                                </div>
-                        <section className={styles.Wrapper__Address}>
-                                <select className={styles.Wrapper__call}>
-                                          {Static_data.address.map((Item) => (
-                                                <option key={Item.id}> {Item.content} </option>
-                                          ))}
-                                </select>
-                        </section>                             
-                </aside>             
-        </div>
-        <div className={`${styles.body__aside}`}>
-                <Slideimage image={Data?.image} index={preindex}
-                
-                />
-        <aside className={`${styles.aside}`}>
+    
+      <div className={styles.Container}>
+     <ListChildComponents Static_data={Static_data} Data={Data}/>
+    <main>  
+      <div className={styles.body} style={{display:'flex'}}> 
+        <div   
+            className={`${styles.body__aside}`} 
+            style={
+            { 
+             height:'125vh',           
+            position: isFixed ? 'sticky' : 'relative',
+            top: isFixed ? '70px' : 'auto',
+            left:0,
+         
+            transition: "top 2s easy",
+            marginTop: !isFixed ? `${savedTop}px` : "0px", // Đặt lại vị trí khi relative
+           background: "white",
+            
+            }
+            }
+            >
+          <div className={styles.boxleft}>
+                <Slideimage image={Data?.image} index={preindex}/>
+             
+            
+          </div> 
+        </div>  
+        <aside 
+             ref={asideRef}
+            className={`${styles.aside}`} 
+            style={{
+                 height: '300vh',
+               overflow: 'auto'
+              
+         
+            }}
+             >
             <div className={styles.Wrapper__aside}> 
                 <div className={styles.details_top1}>
-                  <div className={styles.memory__price}>
+                  <div className={styles.details_top1__price}>
                     {Data.Item.map((Item,index) => (                     
                       <Link to={Item.Link}
                          onClick={() => handleActive(index)}
@@ -152,7 +227,7 @@ const parseNumber = (value) => {
                 </div>
                 <div className={styles.details_top2}>
                 <h1 className={styles.title__detail_top2}> Chọn màu để xem giá và chi nhánh có hàng  </h1>
-                    <div className={styles.Box}>
+                    <div className={styles.details_top2__product}>
                     
                           {Data.Typephone.map((Item,index) => (
                                   <a 
@@ -191,6 +266,32 @@ const parseNumber = (value) => {
                             <div className={style__sale.listimage}> 
                                    <ListimageProduct image={Static_data.image__advertisement}/>            
                             </div> 
+                            
+                     </div>
+                     <div>  
+                            {!customs ? (<Link className={style__sale.btn__link}>  Lên đời ngay </Link>) 
+                
+                            : (
+                              <>    
+                                  <div className={style__sale.Box__buy__now}>
+                                      <Link className={` ${style__sale.btn__buy}`}>  Mua ngay </Link>
+                                      <button className={style__sale.btn__add__product}>
+                                              <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:0/q:70/plain/https://cellphones.com.vn/media/wysiwyg/add-to-cart.png" alt=""/>
+                                               Thêm giỏ hàng 
+                                      </button>
+                                  </div>
+                                  <div className={style__sale.payment__method}>
+                                      <Link className={style__sale.btn}>  
+                                            <h1> Mua trả góp 0% </h1>
+                                            <p> Trả chỉ từ 0đ</p>
+                                      </Link>
+                                      <Link className={style__sale.btn}>  
+                                            <h1> Trả góp 0% Qua thẻ </h1>
+                                            <p> Trả chỉ từ 0đ</p>
+                                      </Link>
+                                  </div>
+                                </> 
+                            )}
                             <div className={style__sale.sale_1}>
                                 <div className={style__sale.Box}>
                                     <div className={style__sale.Box_gift_1}>    {/* box gift: hộp quà   */}
@@ -206,46 +307,10 @@ const parseNumber = (value) => {
                                           ) )}
                                 </div>                          
                             </div> 
-                     </div>
-                     <div>  
-                            {!customs ? (<Link className={style__sale.btn__link}>  Lên đời ngay </Link>) : (
-                              <>    
-                                  <div className={style__sale.Box__buy__now}>
-                                      <Link className={` ${style__sale.btn__buy}`}>  Mua ngay </Link>
-                                      <button className={style__sale.btn__add__product}>
-                                              <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:0/q:70/plain/https://cellphones.com.vn/media/wysiwyg/add-to-cart.png" alt=""/>
-                                              Thêm giỏ hàng 
-                                      </button>
-                                  </div>
-                                  <div className={style__sale.payment__method}>
-                                      <Link className={style__sale.btn}>  
-                                            <h1> Mua trả góp 0% </h1>
-                                            <p> Trả chỉ từ 0đ</p>
-                                      </Link>
-                                      <Link className={style__sale.btn}>  
-                                            <h1> Trả góp 0% Qua thẻ </h1>
-                                            <p> Trả chỉ từ 0đ</p>
-                                      </Link>
-                                  </div>
-                                </> 
-                            )}
                       </div>                                
-                      <div className={style__sale.Box_promition}>
-                      <div className={style__sale.name__promotion}> Ưu đãi thêm </div> 
-                             <div className={style__sale.Render__promotion}>
-                                  <ul>
-                                        {Static_data.add__promotion.map((Item) => (
-                                          <li className={style__sale.list__promotion}>
-                                              <div>  
-                                                  <img src={Item.icon} alt="" className={styles.image__icon}/>
-                                                   <Link key={Item.id} className={style__sale.Link__promotion}> {Item.content}  </Link>
-                                              </div> 
-                                          </li>
-                                        ))}
-                                  </ul>           
-                             </div>               
-                      </div> 
+                  <AttachedProduct Static_data={Static_data} />
                       <div className={style__sale.attached__product}>
+                            <div className={style__sale.attach__child1}>
                                <div className={style__sale.title}> Ưu đã hấp dẫn khi mua kèm với <span> {Data.title} </span>   </div>  
                                <ul className={style__sale.list__product}>
                                     {Data.attached__product.map((Item) => (
@@ -276,6 +341,9 @@ const parseNumber = (value) => {
                                             </li>
                                     ))}
                                </ul>
+
+                               </div>
+
                                <div className={style__sale.btn__product}>
                                     <div className={style__sale.Box__title}> 
                                             Tổng tiền : 
@@ -291,23 +359,27 @@ const parseNumber = (value) => {
                                         </div>   
                                </div>       
                       </div>                  
-                </div>                    
-            </aside>      
+                </div>    
+                       
+                       <img src={img2} alt="" style={{objectFit:'cover', width: '100%'}}/>       
+            </aside> 
+          
+          
+          
+            </div>
+              
+            </main> 
+            <div>   
+                <RelatedProducts id={id} dataPhone={Data}  nameEnpoint={nameEnpoint}/>
+            </div>   
+            <div> 
+                <ProductDescription dataPhone={Data} /> 
+
+            </div>
+            
         </div>
-        <section className={styles.Wrapper__Content}>                          
-                     <div> 
-                        <h1 className={styles.Wrapper__Title}> Thông số kĩ thuật </h1>
-                           <table className={styles.Wrapper__table}>                      
-                              {Information.map((Item) => (
-                                  <tr className={`${styles.table_row} ${styles.table_row__color}`} key={Item.id}>
-                                      <td td className={styles.table__row__title}>{Item.title}</td>
-                                      <td className={styles.table__row__content}> {Item.content}</td>
-                                  </tr>
-                                ))}                                            
-                            </table>
-                        </div>                    
-        </section>  
-        </div>
+      
+       
       );
     }
     
@@ -383,3 +455,5 @@ const parseNumber = (value) => {
 // `;
 
 // export default InformationPhones;
+
+

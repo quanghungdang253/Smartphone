@@ -1,6 +1,74 @@
 
 
 .canvasContainer {
-    height: 40rem;
-    max-width: 90rem;
+    position: relative;
+        height: 40rem;
+        max-width: 90rem;
+        
+ 
+}
+.tabControls {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 1rem;
+   .btnNavigation {
+    background-color: rgba(6, 165, 218, 0.4);
+  padding: 5px 2px 5px 2px;
+    width: 40rem;
+    display: inline-block;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    .icon {
+        position: absolute;
+        color: black;
+        border: 1px solid white;
+        padding: 5px;
+        height: 10px;
+        width: 20px;
+        font-size: 20px;
+        border-radius: 999px;
+    }
+    .iconPlay {
+    
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+            color: black;
+            font-weight: 900;
+            height: 22px;
+            font-size: 10px;
+            width: 30px;
+            padding: 5px;
+            border-radius: 999px;
+            
+            border: 1px solid white;
+    }
+        
+   }     
+}
+.middleColumn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-gap: 5px;
+}
+
+.listBtn {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+        .item {
+             width: 50px;
+             height: 50px;
+             border-radius: 5px;
+        }
 }

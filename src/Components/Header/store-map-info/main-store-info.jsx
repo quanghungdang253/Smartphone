@@ -12,6 +12,7 @@ function MainStoreInfo(props) {
     );
 }
 const Container = styled.div `
+height:10000px;
         margin-top:2.7%;
 
 `

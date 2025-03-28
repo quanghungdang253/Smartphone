@@ -12,15 +12,19 @@
         "masstel": "dataMasstel",
         "realme":  "dataRealme",
         "viettel": "dataViettel",
-        "samsung":    "dataSamsung",
+        "samsung":  "dataSamsung",
         "tcl":     "dataTcl",
         "benco":   "dataBenco",
         "oppo":    "dataOppo"
         },
 
+        "enpointSmartphone": [
+            "samsung","vivo","Xiamio","IPhone","Nokia","mobel","honor","itel","masstel","realme","viettel","vivo","tcl","benco","oppo"
+        ],
+        
         "Televison": {
-            "Ti vi Samsung 4K": "dataTelevison",
-            "Ti vi Sony":"dataSamsung",
+            "Ti vi Samsung 4K": "dataSamsung4K",
+            "Ti vi Sony":"dataSony",
             "Ti vi Xiamio":"dataXiamio",
             "Ti vi Sony": "dataSony",
             "Ti vi TCL":" dataTCL",
@@ -28,11 +32,10 @@
             "Ti vi Toshiba":"dataToshiba",
             "Ti vi Hisense": "dataHisense"
        }
-    },
-    "enpointSmartphone": [
-        "samsung","vivo","Xiamio","Iphone","Nokia","mobel","honor","itel","masstel","realme","viettel","vivo","tcl","benco","oppo"
-    ]
-    
- 
+      
+    }
 }
+   
+ 
+
     

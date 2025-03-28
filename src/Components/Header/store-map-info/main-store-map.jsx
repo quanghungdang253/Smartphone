@@ -1,12 +1,16 @@
 import React from 'react';
-import Map from './components/map/map';
+import Map from './store-map/components/map';
 import styled from 'styled-components';
-import Image3d from './store-info/components/image3D';
+import Introduce from './store-map/components/introduce';
+
 function MainStoreMapInfo(props) {
     return (
         <Header>
                <div className='Container'>
-                        
+                      <Introduce/>
+                        <Map/>
+                       
+
                </div>    
         </Header>
     );
@@ -14,7 +18,8 @@ function MainStoreMapInfo(props) {
 
 const Header = styled.div `
             .Container {
-                     
+                        margin-left: 7%;
+                        margin-right:7%;
                        
             }
 

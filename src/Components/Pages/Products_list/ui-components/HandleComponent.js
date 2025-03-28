@@ -1,17 +1,23 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {Vd2,Vd3, ShowInfo,Productads, ListimageProduct} from './LazyloadingComponent';
+import { ShowInfo,Productads, ListimageProduct} from './LazyloadingComponent';
 import { Suspense } from 'react';
 import Loading from '../../../Common/components/Loading';
+//=================================imgage==================
 import imgSale from '../assets/image-ui-components/img-sale.jpg';
+import imgIPhone from '../assets/image-ui-components/imgIphone.jpg';
+
+//=========================================================
 import imgbackground from '../assets/image-ui-components/imgbackground.jpg';
 import LabelProduct from '../../../Common/label-product/label-product';
 import { dark } from '@mui/material/styles/createPalette';
 import styled from 'styled-components';
 import ShowInfoHome from '../../../Common/Listproduct/show-infor-home';
 // ===================== Danh sach SmartPhone ==============================
+
 const XiamioComponent = ({data, namephone, ...props}) => (
+    
       <Suspense fallback={(<Loading/>)}>  
 
              <ShowInfo namephone={data} enpoint={namephone} {...props}/>
@@ -24,21 +30,29 @@ const NokiaComponent = ({data, namephone, ...props}) => {
 }
 const SamsungComponent = ({data, namephone, ...props}) => (
 <Suspense fallback={(<Loading/>)}>  
-      
-        <div style={{marginTop: '200px'}}>
+        <div>
                         <ListimageProduct image={data.advertising_images} customs={true}/>
                         <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
         </div>
  </Suspense>
 )
 const IphoneComponent = ({data, namephone, ...props}) => (
-    <Suspense fallback={(<Loading/>)}>  
-          
-            <div style={{marginTop: '200px'}}>
+<IphoneComponents>
+  <div className='imgIphone'>   
+    <img src={imgIPhone} alt='' className='img' /> 
+ </div>
+    <div className='boxIphone'>   
+    <Suspense 
+        fallback={(<Loading/>)} 
+        className='componentIphone'
+    >  
+            <div>
                             <ListimageProduct image={data.advertising_images} customs={true}/>
                             <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
             </div>
      </Suspense>
+     </div>
+    </IphoneComponents>
     )
     
 const OppoComponent = ({data, namephone, ...props}) => (
@@ -83,20 +97,27 @@ const hotSaleComponent = ({data , dataEnpoint, namephone, ...props}) =>
 const DefaultComponent = ({data,  dataEnpoint, namephone,  ...props}) => (
     <Suspense fallback={(<Loading/>)}>  
         <HotSaleComponents> 
+             <div className='componentSale_1'>   
                 <ListimageProduct image={data.advertising_images} customs={true}/>
+            </div>
                 <ShowInfoHome   enpoint={namephone}  {...props}/>
         </HotSaleComponents> 
     </Suspense>
 )
 const HotSaleComponents = styled.div `
+overflow: hidden;
+      margin-left:7%;
       margin-right: 7%;
-      margin-left: 7%;
+      overflow:hidden;
       background-color: white;
-      padding: 2rem 2rem;
       border-radius:10px;
+      .componentSale_1 {
+            margin-top: 2rem;
+      }
      
 `
 const BoxHotSale = styled.div `
+
     background-image: url(${props => props.saleImg});
     padding-top: 2rem;
     border-radius: 10px;
@@ -104,6 +125,30 @@ const BoxHotSale = styled.div `
         margin-top:1rem;
         margin-bottom:1rem;
     }
+
+`
+
+const IphoneComponents = styled.div `
+ background-color:#4a4a4a;
+.boxIphone {
+             margin-left:7%;
+            margin-right:7%;
+           
+}
+.imgIphone {
+         padding-top:3rem;
+        text-align:center;
+        width:100%;     
+}
+.img {
+    width: 85rem;
+    object-fit:contain;
+
+}
+
+           
+                background-repeat: no-repeat;
+               
 
 `
 
@@ -115,5 +160,6 @@ export {
             XiamioComponent,
             IphoneComponent,
             IpadComponent,
-            VivoComponent
+            VivoComponent,
+            NokiaComponent
         };

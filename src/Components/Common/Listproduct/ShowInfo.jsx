@@ -4,6 +4,9 @@ import Loading from '../components/Loading';
 import { Helmet } from 'react-helmet-async';
 import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
 
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
+
 // ==============================file style =====================================
 import styles from './styles/ShowInfo.module.scss';
 import styles1 from './styles/showPhone_1.module.scss';
@@ -36,7 +39,6 @@ function ShowInfo(props) {
            NameDataHome_1,
            NameDataHome_2
 ];
-
 const [nameProduct ,setNameProduct] = useState(listDataHome);
 
     const { theme } = useValue();
@@ -63,9 +65,8 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
     const [enpoint, setEnpoint] = useState("");
     const [getIndex , setGetIndex] = useState(null);
     const [customsNameFolder , setCustomsFolder] = useState(null);
-    const [nameFolder , setNameFolder] = useState();
+    const [nameFolder , setNameFolder] = useState([]);
     const [visiblePhones, setVisiblePhones] = useState(10); 
-
   const dataEnpoint = props.dataEnpoint;
     useEffect(() => {
       if(!enpoints){
@@ -93,38 +94,34 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
       }
     }, [namephone]);
     if(!predata){
-      <Loading/>
+            <Loading/>
  }
  useEffect(() => {
-  if(dataNameFolder.enpointSmartphone.includes(enpoints)){
-          setNameFolder(dataNameFolder.SmartPhone);
-  } 
- 
+  if(dataNameFolder.nameProduct.enpointSmartphone.includes(enpoints)){
+          setNameFolder(dataNameFolder.nameProduct.SmartPhone);
+  }
   else {
-          setNameFolder(null)
+          setNameFolder([]);
 }
 
  },[enpoints])
 
-    
-
-
     useEffect(() => {
   //  ================== thiết lập điểm cuối ==================================== 
-      const getData = async () => {
-      
-      const getEnpoint = !nameFolder  ? null : nameFolder[enpoints];
+  
 
+      const getData = async () => {
+     
+      const getEnpoint = !nameFolder  ? null : nameFolder[enpoints];
         if (getEnpoint) {
                  setEnpoint(getEnpoint);
         } 
         else if(ListProduct.includes(enpoints)){
-                setEnpoint(ListProduct[index]);
+                setEnpoint(enpoints);
         }
         else {
              setArrayData(nameProduct[getIndex ? getIndex : 0]);
              setEnpoint(arrayData[index]);
-
         }
       };
       getData();
@@ -140,27 +137,23 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
               : idElement === 2 ? {backgroundColor:'#1C4782'} 
               : idElement === 1 ? {backgroundColor:'#fe0000'} 
               : {backgroundColor: ""}
-            
             }>
          {enpoints ? ("") : (
             <div 
-              className={!handleImg ?  styles.image__promotion : ""}
+              className={!handleImg ?  styles.image__promotion : styles.img}
               style={handleImg ? 
                  { backgroundImage: `url(${showimg})`,
                   height: idElement === 2 ? 90 : 200,
-                  objectFit:'contain'
+                  objectFit:'contain', marginLeft: 50,
+                  backgroundRepeat:'no-repeat'
+                  
                    }
                   
                    : {}}
-            
-            
-              
               >
                  <h3 className={styles.name_promotion}> {title}  </h3>
            </div>
          )}
-         
-       
            {!enpoints ? (
             <ul className={styles.list_item}>  
                 {dataChoose.map((Item) => (
@@ -181,9 +174,6 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
                             
                      </Helmet>
         <div className={`${styles.Show_phone} ${theme ? styles.Bright_1 : styles.Dark_1} `}
-        
-        
-        
         >
             
             {predata && predata.data && predata.data.length > 0 ? (
@@ -218,7 +208,7 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
                                 </div>
                 <div className={`${styles.text}`}>  
                             <h3 className={`${styles.text} ${styles.title}`}> {List.title}</h3>
-                            {console.log("tên  điện thoại "+List.title)}
+                            
                             <img src={List.image_1} alt='' className={`${styles.image_1}`}/>
                             <p 
                                 className={`${styles.text}`}>  Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng                                     
@@ -228,7 +218,7 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
                 <div className={styles.container_icon}>
                         <div className={`${styles.box__icon}`}> 
                            {star.map((_, index) => ( 
-                             <img key={index}   src='https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-symbol-icon.png' alt='ngoisao' className={`${styles.icon}`}/>
+                              <FontAwesomeIcon icon={faStar} className={styles.iconStar} style={{color: 'yellow'}}/>
                            ))}
                        </div>
                     <p>

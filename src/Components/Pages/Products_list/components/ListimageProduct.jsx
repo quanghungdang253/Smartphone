@@ -104,6 +104,7 @@ overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và 
                 border: 0.5px solid rgba(22, 22, 22, 0.1);
                   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1),
                                         0 2px 6px 2px rgba(0, 0, 0, 0.15);
+              
                
 }
 .Link {
@@ -111,6 +112,7 @@ overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và 
         width:100%;
         display:flex;
         justify-content:center;
+        height:115px;
        
 }
 .HandleImage__image img {

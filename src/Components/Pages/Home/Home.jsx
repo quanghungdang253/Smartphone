@@ -43,9 +43,7 @@ function Home({home}) {
                          <header className='Box__header'> 
                              <div className='Header Style'>    
                                  <Menuheader/>
-                               
                                                 <Productads/>
-                               
                                  <Article/>
                              </div>
                               <div className='form__section'>
@@ -82,12 +80,13 @@ const MainHome = styled.div `
   }
  
 .Header {
-          padding:1rem 2rem 1rem 1rem;
-          margin-top:3rem;
+          padding-top:1rem;
+          height: 505px;
+          margin-top:7rem;
           display: flex;  
           align-items: center;  
           justify-content:center;
-          grid-column-gap: 5%;
+          grid-column-gap: 1%;
           height: 505px;   
           max-width:1450px; 
           box-sizing: border-box;
@@ -101,7 +100,7 @@ const MainHome = styled.div `
         margin-top:23rem;
 }
 .Style {
-         background-color:white;
+    
 }   
 .btn__wrappper {
                                 position: absolute;
