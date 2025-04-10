@@ -1,0 +1,118 @@
+{
+    "phonecompany": [
+        {
+            "id": 1,
+            "name": "Apple (MacBook)",
+            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/DH-IPC-HFW4231TP-ASE.jpg"
+        },
+        {
+            "id":2,
+            "name": "Asus",
+            "image": "https://cdn.tgdd.vn/Products/Images/7264/199452/casio-lq-142-1bdf-den-up-1-750x500.jpg"
+           
+        },
+        {
+            "id":3,
+            "name": "HP",
+            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        },
+        {
+            "id":4,
+            "name": "Dell",
+            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        },
+        {
+            "id":5,
+            "name": "Microsoft",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        },
+        {
+            "id":6,
+            "name": "Lenovo",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        },
+        {
+            "id":7,
+            "name": "Acer",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        },
+        {
+            "id":8,
+            "name": "MSI",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        }
+       
+    ],
+    "price":[
+        {
+            "id": 1,
+            "price_level": "Dưới 2 triệu"
+
+        },
+        {
+            "id": 2,
+            "price_level": "Từ 5 đến 10 triệu"
+            
+        },
+        {
+            "id": 3,
+            "price_level": "Từ 10 - 20 triệu"
+            
+        },
+        {
+            "id": 4,
+            "price_level": "Dưới 30 triệu "
+            
+        }, {
+            "id": 5,
+            "price_level": "dưới 50 triệu "
+            
+        }
+    ],
+    "hot__phone": [
+        {
+            "id": 1,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 2,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 3,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 4,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 5,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 6,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 7,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        }
+    ]
+    
+
+    
+}

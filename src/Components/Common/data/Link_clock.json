@@ -1,0 +1,118 @@
+{
+    "phonecompany": [
+        {
+            "id": 1,
+            "name": "Đồng hồ Orient",
+            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/DH-IPC-HFW4231TP-ASE.jpg"
+        },
+        {
+            "id":2,
+            "name": "Đồng hồ Casio",
+            "image": "https://cdn.tgdd.vn/Products/Images/7264/199452/casio-lq-142-1bdf-den-up-1-750x500.jpg"
+           
+        },
+        {
+            "id":3,
+            "name": "Đồng hồ Citizen",
+            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        },
+        {
+            "id":4,
+            "name": "Đồng hồ G-Shock",
+            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        },
+        {
+            "id":5,
+            "name": "Đồng hồ Tissot",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        },
+        {
+            "id":6,
+            "name": "Đồng hồ Frederique Constant",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        },
+        {
+            "id":7,
+            "name": "Đồng hồ Titan",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        },
+        {
+            "id":8,
+            "name": "Đồng hồ Tommy Hilfiger",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        }
+       
+    ],
+    "price":[
+        {
+            "id": 1,
+            "price_level": "Dưới 2 triệu"
+
+        },
+        {
+            "id": 2,
+            "price_level": "Từ 5 đến 10 triệu"
+            
+        },
+        {
+            "id": 3,
+            "price_level": "Từ 10 - 20 triệu"
+            
+        },
+        {
+            "id": 4,
+            "price_level": "Dưới 30 triệu "
+            
+        }, {
+            "id": 5,
+            "price_level": "dưới 50 triệu "
+            
+        }
+    ],
+    "hot__phone": [
+        {
+            "id": 1,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 2,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 3,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 4,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 5,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 6,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 7,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        }
+    ]
+    
+
+    
+}

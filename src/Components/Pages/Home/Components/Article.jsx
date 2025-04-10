@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Imagesmartphone from './imageArticle/Imagequangcao.webp'
+import Imagesmartphone from './imageArticle/anh.jpg'
 import Mac from './imageArticle/Macwebp.webp';
 import laptop from './imageArticle/udsv-right-laptop.webp';
 import styled from 'styled-components';

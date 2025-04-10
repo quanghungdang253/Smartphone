@@ -8,6 +8,8 @@ import Link_phone from './data/Link_phone.json';
 import  Link_laptop from './data/Link_laptop.json';
 import Link_camera from './data/Link_camera.json';
 import Link_earphone from './data/Link_earphone.json';
+import Link_clock from './data/Link_clock.json';
+import Link_television from './data/Link_Television.json';
 import Link_waterfilter from './data/Link_waterfilter.json';
 import { listClasses } from '@mui/material';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
@@ -38,10 +40,10 @@ function Menuheader({addPadding}) {
         { id: 1, items: Link_laptop},
         { id: 2, items: Link_camera},
         { id: 3, items: Link_laptop},
-        { id: 4, items: Link_laptop},
+        { id: 4, items: Link_television},
         { id: 5, items: Link_laptop},
         { id: 6, items: Link_earphone},
-        { id: 7, items: Link_laptop},
+        { id: 7, items: Link_clock},
         { id: 8, items: Link_waterfilter},
         { id: 9, items: Link_laptop},
     ]

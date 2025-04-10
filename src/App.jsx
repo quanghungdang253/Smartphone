@@ -80,85 +80,83 @@
    
    
 //============================ ứng dụng chạy chính =====================================
-// import './App.css';
-// import './Components/phone/HeaderStyle/reset.css';
-// import { Routes, Route } from 'react-router-dom';
-// import styled from 'styled-components';
-// import MainHeader from './Components/Header/MainHeader';
-// import React, { Suspense, lazy } from 'react';
-// import Loading from './Components/Common/components/Loading';
-// import { HelmetProvider } from 'react-helmet-async';
-// import CommunicationSettings from './Components/CommunicationSettings/CommunicationSettings';
-// import { ParentContext } from './Context/Settings/Theme/ThemeContext';
-// import Products_list from './Components/Pages/Products_list/Products_list';
-// import Home from './Components/Pages/Home/Home';
-// import  InforPhone from './Components/Pages/InforPhone/InforPhone';
-// import MainStoreInfo from './Components/Header/store-map-info/main-store-info';
-// import MainStoreMapInfo from './Components/Header/store-map-info/main-store-map';
+import './App.css';
+import './Components/phone/HeaderStyle/reset.css';
+import { Routes, Route } from 'react-router-dom';
+import styled from 'styled-components';
+import MainHeader from './Components/Header/MainHeader';
+import React, { Suspense, lazy } from 'react';
+import Loading from './Components/Common/components/Loading';
+import { HelmetProvider } from 'react-helmet-async';
+import CommunicationSettings from './Components/CommunicationSettings/CommunicationSettings';
+import { ParentContext } from './Context/Settings/Theme/ThemeContext';
+import Products_list from './Components/Pages/Products_list/Products_list';
+import Home from './Components/Pages/Home/Home';
+import  InforPhone from './Components/Pages/InforPhone/InforPhone';
+import MainStoreInfo from './Components/Header/store-map-info/main-store-info';
+import MainStoreMapInfo from './Components/Header/store-map-info/main-store-map';
 
 
-// import MainChatbox from './Components/Chat/main-chatbot';
+import MainChatbox from './Components/Chat/main-chatbot';
 
 
-// // =========================================chatbot==============================================
+// =========================================chatbot==============================================
 
 
-// export default function App() {
-//   // const Products_list  = React.lazy(() => import('./Components/Pages/Products_list/Products_list'))
-//   // const Home = React.lazy(() => import("./Components/Pages/Home/Home"));
-//   // const InforPhone = React.lazy(() => import("./Components/Pages/InforPhone/InforPhone"));
+export default function App() {
+  // const Products_list  = React.lazy(() => import('./Components/Pages/Products_list/Products_list'))
+  // const Home = React.lazy(() => import("./Components/Pages/Home/Home"));
+  // const InforPhone = React.lazy(() => import("./Components/Pages/InforPhone/InforPhone"));
 
-  
-//     return (
-//         <Style>
+    return (
+        <Style>
     
-//      <ParentContext>  
-//             <div>
-//              <HelmetProvider>   
-//                 <MainHeader />
-//                     <Routes>
-//                         <Route path='/' element={<Home />} />
-//                         <Route path='label/:namephone' element={<Products_list/>} />
-//                         <Route path='/Detail/:link/:id' element={<InforPhone />} />  
-//                         <Route path='/StoreInfo' element={<MainStoreInfo/>} />
-//                         <Route path='/GoogleMap' element={<MainStoreMapInfo/>} />
-//                     </Routes>
-               
-//                 </HelmetProvider>             
-//             </div> 
+     <ParentContext>  
+            <div>
+             <HelmetProvider>   
+                <MainHeader />
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='label/:namephone' element={<Products_list/>} />
+                        <Route path='/Detail/:link/:id' element={<InforPhone />} />  
+                        <Route path='/StoreInfo' element={<MainStoreInfo/>} />
+                        <Route path='/GoogleMap' element={<MainStoreMapInfo/>} />
+                    </Routes>
+                </HelmetProvider>             
+            </div> 
          
-//                   <div className='CommunicationSetting'>  
-//                       <CommunicationSettings/>     
-//                   </div> 
-//                   <div className='chatBot'> 
-//                        <MainChatbox/>
-//                   </div>
-//                  <div>
+                  <div className='CommunicationSetting'>  
+                      <CommunicationSettings/>     
+                  </div> 
+                  <div className='chatBot'> 
+                       <MainChatbox/>
+                  </div>
+                 <div>
               
                  
-//                  </div>
-//               </ParentContext>          
+                 </div>
+              </ParentContext>          
 
 
 
-//         </Style>
-//     );
-// }
+        </Style>
+    );
+}
 
-// const Style = styled.div`
+const Style = styled.div`
 
-//    .chatBot {
-//         position:fixed;
-//         bottom: 10px;
-//         right: -20px;
-//         z-index:1500
-//    }
-//     .CommunicationSeting{
+   .chatBot {
+        position:fixed;
+        bottom: 10px;
+        right: -20px;
+        z-index:1500
+   }
+    .CommunicationSeting{
               
-//     }
+    }
 
-// `;
-// const Navigations = styled.div`
+`;
+const Navigations = styled.div`
 
 
 
@@ -180,22 +178,74 @@
       // ===========================================================
 
 
+// import React from 'react';
+// import store from './ExampleReact_Toolkit/app/store';
+// import { Provider } from 'react-redux';
+// import { NavLink, Route, Routes } from 'react-router-dom';
+// import CounterFeature from './ExampleReact_Toolkit/Counter/index';
+// import albumSlice from './ExampleReact_Toolkit/Album/albumSlice';
+// import { Navigate } from 'react-router-dom';
+// import Pages from './ExampleReact_Toolkit/Counter/pages';
+// import HandleTodoform from './ExampleReact_Toolkit/todo/todoform';
+// import TodoList from './ExampleReact_Toolkit/todo/todoList';
+// import { cancelEdit } from './ExampleReact_Toolkit/Counter/counterSlice';
+// import { useDispatch } from 'react-redux';
+// function App(props) {
+
+//     const dispatch = useDispatch();
+//     return (
+//        <div className='App'> 
+//             <p> 
+//             <NavLink to="/todoForm"activeClassName="active-menu"> 
+//                     Thêm thông tin
+//             </NavLink> 
+                
+//             </p>
+//             <p>   
+//                 <NavLink to="/todoList" activeClassName="active"
+//                 onClick={() => dispatch(cancelEdit())}
+//                 >
+//                     Danh sách thông tin
+//                 </NavLink>
+
+//             </p>
+//         <Routes>    
+//             <Route path='/post-list/:postId' to='/' exact />
+//                 {/* thực hiện thay đổi đường dẫn  */}
+//             <Route path='/home' element={<Navigate to="/new-path" replace />} /> 
+//             <Route path='/todoList' element={<TodoList/>} />
+//             <Route path='/todoForm' element={<HandleTodoform/>  } />
+//             <Route path='/todoForm/:index' element={<HandleTodoform/>} />
+            
+//         </Routes>
+//         </div>
+//     );
+// }
+
+// export default App;
 
 
-import React from 'react';
-import Count from './Components/Pages/ReduxExample/reducer';
-
-function App(props) {
-    return (
-        <div>
-                <Count />
-        </div>
-    );
-}
-
-export default App;
 
 
+
+
+
+
+
+
+// import React from 'react';
+// import Count from './Components/Pages/ReduxExample/reducer';
+// import HomePages from './pages/home-pages';
+
+// function App(props) {
+//     return (
+//         <div>
+//                 <HomePages/>
+//         </div>
+//     );  
+// }
+
+// export default App;
 
 
 

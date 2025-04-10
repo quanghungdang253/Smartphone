@@ -1,0 +1,183 @@
+
+{
+    "data": [
+        {      
+        "id" : 1,
+        "discount": "20%",
+        "installment": "0%",     
+        "image": "https://www.nhatthuc.com.vn/resize-image/280x/files/5068-hdcvi-dahua-1080p-1-600x600(7).jpg",
+        "title": "Camera Dahua HD - 1.0MP",
+        "price": "9,990,000 ₫"
+       
+  },
+  {      
+    "id" : 2,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/11866_tron_bo_1_mat_camera_dahua_hac_hfw1000sp%5B1%5D.jpg",
+    "title": "TRỌN BỘ 02 CAMERA DAHUA HD - 1.0MP",
+    "price": "3,390,000 ₫"
+   
+},
+{      
+    "id" : 3,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/280x/DH-IPC-HFW4231TP-ASE.jpg",
+    "title": "Dahua DH-IPC-HFW4231TP-ASE",
+    "price": "3,980,000 ₫"
+    
+},
+{      
+    "id" : 4,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/280x/DH-IPC-HDBW5631EP-ZE.jpg",
+    "title": "Dahua DH-IPC-HDBW5631EP-ZE",
+    "price": "6,820,000 ₫"
+    
+},
+
+{      
+    "id" : 5,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/280x/DH-IPC-HDW4231EMP-ASE.jpg",
+    "title": "Dahua DH-IPC-HDW4231EMP-ASE",
+    "price": "2,639,000 ₫"
+    
+},
+
+{      
+    "id" : 6,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/280x/DH-IPC-HFW4239TP-ASE.jpg",
+    "title": "Dahua DH-IPC-HFW4239TP-ASE",
+    "price": "7,340,000 ₫"
+    
+},
+
+{      
+    "id" : 7,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/280x/DH-IPC-HDBW4231EP-S-S4.jpg",
+    "title": "Dahua DH-IPC-HDBW4231EP-S-S4",
+    "price": "1,520,000 ₫"
+    
+},
+
+{      
+    "id" : 8,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
+    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
+    "price": "9,900,000 ₫"
+    
+},
+
+{      
+    "id" : 9,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
+    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
+    "price": "9,900,000 ₫"
+    
+},
+
+{      
+    "id" : 10,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
+    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
+    "price": "9,900,000 ₫"
+    
+},
+
+{      
+    "id" : 11,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
+    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
+    "price": "9,900,000 ₫"
+    
+},
+{      
+    "id" : 12,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
+    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
+    "price": "9,900,000 ₫"
+    
+},
+
+{      
+    "id" : 13,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
+    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
+    "price": "9,900,000 ₫"
+    
+},
+
+{      
+    "id" : 14,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
+    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
+    "price": "9,900,000 ₫"
+    
+},
+
+{      
+    "id" : 15,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
+    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
+    "price": "9,900,000 ₫"
+    
+},
+
+{      
+    "id" : 16,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
+    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
+    "price": "9,900,000 ₫"
+    
+},
+{      
+    "id" : 17,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
+    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
+    "price": "9,900,000 ₫"
+    
+}
+     
+    ],
+    "advertising_images": [
+        "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/c4/05/c405feb105adaaba8eaa9cc463ddcfd6.jpg",
+        "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/0a/c7/0ac7848fff6763850d6d131d2f46e92a.jpg",
+        "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png",
+         "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png",
+          "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png"
+       
+      
+]
+    
+    
+
+    
+}

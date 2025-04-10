@@ -10,7 +10,7 @@ function useHandleApi(namephone) {  // xử lý hiển thị các điện thoạ
         let PhoneBrands = ["homephone", "Ipad" , "IPhone", "Nokia","samsung", "vivo", "Xiamio","benco","tcl","tecno","realme","oppo","mobel","masstel","itel","honor"];
 
         let CameraBrands = ["Camera Dahua", "Camera Hikvision","Camera Tiandy","Camera Panasonic"];
-        
+        let Laptop = ["Laptop Al","Laptop Gaming","Laptop học tập văn phòng"]
         let EarBrands = ["Tai Nghe JBL","Tai nghe B&O","Tai nghe Apple","Tai nghe Harman Kardon","Tai nghe Sony", "Tai nghe Focal"]
         //=============================danh sách các sản phẩm =============================
       
@@ -28,6 +28,7 @@ function useHandleApi(namephone) {  // xử lý hiển thị các điện thoạ
                     else if(EarBrands.includes(namephone)){
                                 setEnpointinFo("InformationEarphone");
                     }
+                    
                 
                     else{
                           setEnpointinFo("InformationPhone");
