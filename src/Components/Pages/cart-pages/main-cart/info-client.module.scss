@@ -1,0 +1,85 @@
+
+.mainInfo {
+    position: relative;
+    // ========================style chung ===================
+    input , select{
+        padding: 5px;
+        height: 40px;
+        border-radius: 10px;
+      
+     }
+
+     //=====================================================
+    width: 100%;
+    .name {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        font-size: 19px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .option {
+        text-align: center;
+        width: 20rem;
+       
+        
+        margin-bottom: 1rem;
+    }
+    .columnInfo {
+        display: flex;
+        grid-column-gap: 10px;
+
+    }
+    .column {
+        grid-row-gap: 1rem;
+        width: 50%;
+         display: flex;
+         flex-direction: column;
+         
+    }
+    .columnInfo_three {
+        border-bottom: 1px solid black;
+        h1 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .homeNumber {
+             width: 100%;
+             margin-bottom: 1rem;
+            
+        }
+        .note {
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+            padding: 10px;
+        }
+    }
+    .columnInfo_four {
+        margin-top: 2rem;
+        input {
+           padding: 10px;
+           min-width: 20px;
+           
+        }
+        .inputRadio {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .btn {
+       
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        position: absolute;
+        right: 0;
+        margin-top: 4rem;
+        
+    }
+    big {
+        color: red;
+        font-weight: 700;
+    }
+}

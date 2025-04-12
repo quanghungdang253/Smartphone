@@ -157,7 +157,9 @@ function Products_list(props) {
 }
 const Product = styled.div `
      .Render-product {
-         
+      margin-top:10%;
+         margin-left: 7%;
+         margin-right: 7%;
      }
 
 `

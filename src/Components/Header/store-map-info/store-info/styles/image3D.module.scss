@@ -2,8 +2,8 @@
 
 .canvasContainer {
     position: relative;
-        height: 40rem;
-        max-width: 90rem;
+        height: 50rem;
+        max-width: 100rem;
         
  
 }
@@ -16,15 +16,15 @@
     z-index: 1;
     bottom: 1rem;
    .btnNavigation {
-    background-color: rgba(6, 165, 218, 0.4);
+
   padding: 5px 2px 5px 2px;
-    width: 40rem;
+    width: 50rem;
     display: inline-block;
     display: flex;
     border-radius: 10px;
     justify-content: space-between;
     .icon {
-        position: absolute;
+       
         color: black;
         border: 1px solid white;
         padding: 5px;
@@ -53,10 +53,16 @@
    }     
 }
 .middleColumn {
+    position: fixed;
+    bottom: 0;
+    right: 200px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         grid-column-gap: 5px;
+        background-color: rgb(0, 153, 255);
+        padding: 10px;
+        width: 70%;
 }
 
 .listBtn {
@@ -65,7 +71,7 @@
     grid-row-gap: 10px;
     position: absolute;
     left: 0;
-    bottom: 0rem;
+    bottom: 10rem;
         .item {
              width: 50px;
              height: 50px;

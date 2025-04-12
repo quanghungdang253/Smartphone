@@ -1,49 +1,50 @@
 {
+    "name": "Hãng Tivi",
     "phonecompany": [
         {
             "id": 1,
             "name": "Ti vi Samsung 4K",
-            "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+            "image":"https://cdnv2.tgdd.vn/mwg-static/dmx/Products/Images/1942/279935/smart-samsung-4k-43-inch-ua43au7002-1-638690307655076809-700x467.jpg"
         },
         {
             "id":2,
             "name": " Ti vi Sony ",
-            "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+            "image":"https://cdnv2.tgdd.vn/mwg-static/dmx/Products/Images/1942/327550/android-tivi-aqua-43-inch-aqt43k800fg-1-638653022010117023-700x467.jpg"
         },
         {
             "id":3,
             "name": "Ti vi Xiamio",
-            "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+            "image":"https://cdnv2.tgdd.vn/mwg-static/dmx/Products/Images/1942/279935/smart-samsung-4k-43-inch-ua43au7002-1-638690307655076809-700x467.jpg"
            
         },
         {
             "id":4,
             "name": "Tivi LG",
-             "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+             "image":"https://cdnv2.tgdd.vn/mwg-static/dmx/Products/Images/1942/327550/android-tivi-aqua-43-inch-aqt43k800fg-1-638653022010117023-700x467.jpg"
            
         },
         {
             "id":5,
             "name": "Ti vi TCL",
-             "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+             "image":"https://cdnv2.tgdd.vn/mwg-static/dmx/Products/Images/1942/327550/android-tivi-aqua-43-inch-aqt43k800fg-1-638653022010117023-700x467.jpg"
            
         },
         {
             "id":6,
             "name": "Ti vi Casper",
-             "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+             "image":"https://cdnv2.tgdd.vn/mwg-static/dmx/Products/Images/1942/327550/android-tivi-aqua-43-inch-aqt43k800fg-1-638653022010117023-700x467.jpg"
            
         },
         {
             "id":7,
             "name": "Ti vi Toshiba",
-             "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+             "image":"https://cdnv2.tgdd.vn/mwg-static/dmx/Products/Images/1942/279935/smart-samsung-4k-43-inch-ua43au7002-1-638690307655076809-700x467.jpg"
            
         },
         {
             "id":8,
             "name": "Ti vi Hisense",
-             "image":"https://cdnv2.tgdd.vn/mwg-static/common/Category/89/ba/89baf2121494abea518fca0c710475c6.png"
+             "image":"https://cdnv2.tgdd.vn/mwg-static/dmx/Products/Images/1942/327550/android-tivi-aqua-43-inch-aqt43k800fg-1-638653022010117023-700x467.jpg"
            
         }
     ],

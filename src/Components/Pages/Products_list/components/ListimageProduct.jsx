@@ -51,9 +51,9 @@ const ListimageProduct = ({image, customs}) => {   //ở đây {phone} là viế
                                           <Button variant='outlined' onClick={() => Left()} className='button__left button'> <FontAwesomeIcon icon={faAngleLeft}/> </Button>
                                          <Button variant='outlined'  onClick={() => Right()} className='button__right button'> <FontAwesomeIcon icon={faAngleRight}/> </Button>
                                 </div>
-                                        <Link className='Link'>   
+                                        
                                                 <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt=''  /> 
-                                       </Link>
+                                       
                                                      
                   </div>
                         {customs && (
@@ -89,13 +89,14 @@ const Wrapper = styled.div `
 `
 const HandleImage = styled.div `
 display: flex;
-justify-content: space-between; 
-grid-column-gap: 2%;
+ 
 overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và sẽ ẩn đi
 
        
         
 .HandleImage__image {
+        width:50%;
+      
                 position:relative;
                 display: flex;
                 align-items:center;

@@ -15,7 +15,7 @@ import Audio from './audio';
 
 
 let [staticData, text, img3D] = Getdata();
-const imgOption = [ img3D[3], img3D[0],img3D[1],img3D[2],img3D[5],img3D[4]];
+const imgOption = [ img3D[4], img3D[0],img3D[3],img3D[2],img3D[5],img3D[1]];
   
 
 
@@ -60,21 +60,19 @@ const Image3d = () => {
         <Audio enableAudio={enable} />
           <div className={styled.tabControls}>
             <div className={styled.btnNavigation}>
-                <Link onClick={() => {
+               
+
+    <div className={`${styled.middleColumn}`}>
+    <Link onClick={() => {
                     setIndexImg((pre) =>{
                                  const newIndex = pre <= 0 ? imgOption.length - 1 : pre - 1;
                                  setSelectedImage(imgOption[newIndex])
                         return newIndex;
-                        }
-                       
-                     )
-                    }
-                             
+                        } )}         
                 }>
                         <FontAwesomeIcon icon={faArrowLeft} className={styled.icon}/>
                 </Link>
-
-    <div className={`${styled.middleColumn}`}>
+         <div>    
                     <Link>
                         {enable ? (
                             <FontAwesomeIcon icon={faVolumeUp} onClick={() => setEnable(false)}  className={styled.icon}/> 
@@ -84,22 +82,17 @@ const Image3d = () => {
 
                             />
                         )}  
-                               
-                    
-                                   
-                    </Link>
+                                          
+        </Link>
+                    </div>
+                    <div>  
                      <Link onClick={() => setRotate((pre) => !pre)}
                            className={styled.stopPlay}>
                           {rotate ? (<h1 className={styled.iconPlay}> || </h1>) : (<FontAwesomeIcon icon={faPlay} className={styled.icon}/>)}
-                    </Link>       
-                           
-                                
-                       
-                </div>
-               
-
-
-                <Link  onClick={() => {
+                    </Link>
+                    </div>
+                    <div>         
+                    <Link  onClick={() => {
                             setIndexImg((pre) =>{
                                  const newIndex = pre >= imgOption.length - 1 ? 0 : pre + 1;
                                  setSelectedImage(imgOption[newIndex])
@@ -109,9 +102,16 @@ const Image3d = () => {
                         
                          }
                     }      
-                >
-                        <FontAwesomeIcon icon={faArrowRight} className={styled.icon} />
-                    </Link>
+                > <FontAwesomeIcon icon={faArrowRight} className={styled.icon} />
+                    </Link> 
+                    </div> 
+                                
+                       
+                </div>
+               
+
+
+               
                 </div>
                 <div className={styled.listBtn} >
                     {imgOption.map((Item,index) => (

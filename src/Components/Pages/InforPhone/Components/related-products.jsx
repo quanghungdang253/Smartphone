@@ -5,11 +5,15 @@ import styles from "../styles/components/related-products.module.scss";
 import iconShoppingCart from '../image/add-to-cart.jpg';
 import {faArrowRight, faArrowLeft} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { remove } from 'nprogress';
+import { useDispatch } from 'react-redux';
+import { addCart } from '../../../../features/cart/cartSlice';
+import { useSelector } from 'react-redux';
+
 
 function RelatedProducts(props) {
     const dataPhone = props.dataPhone;
     const id  = props.id;
+    const dispatch = useDispatch();
     const nameEnpoint = props.nameEnpoint;
     const [data , setData] = useState();
     const  navigations = useRef(null);
@@ -94,9 +98,11 @@ useEffect(() => {
                              <strong> {item.priceDown} </strong> 
 
                         </span>   
-                        <div className={styles.btn}> 
-                                <img src={iconShoppingCart} alt='' className={styles.icon}/>
-                               <span>   Thêm vào giỏ hàng </span>
+                        <div 
+                          className={styles.btn}
+                                 > 
+                              
+                           Mua ngay
                         
                         </div> 
                         <div className={styles.textSale}>

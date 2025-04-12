@@ -10,8 +10,11 @@ function Smartphone(props) {
     return (
         <Wrapper>
              <PhoneCompany className='tabchoose'> 
-                  <Typography variant='h6'> Hãng điện thoại </Typography>
+               
                   {value.phonecompany && value.phonecompany.length > 0 ?  (
+                    <>  
+                    <Typography variant='h6'> {value.name }  </Typography>
+                    {
                     value.phonecompany.map((list) => (
                          <Link  
                                 className='Link'
@@ -21,7 +24,8 @@ function Smartphone(props) {
                                     {list.name}     
                                     <img src={list.image} className={'image--menu'}/>                             
                          </Link>      
-                    ))
+                    ))}
+                    </>
                   ): (
                     <p>{alert("chữa lấy data")}</p>
                   )}               
@@ -74,13 +78,14 @@ const Wrapper = styled.div`
                           rgba(60,64,67,.15);
                           
             .Link {
+             
                 text-decoration: none;
                 color: black;
                 font-weight: 500;
                 padding: 0.5rem 0.5rem 0.5rem 0;
                 display: flex;
                 align-items:center;
-                justify-content:space-around;
+                justify-content:space-between;
                 border-radius:10px;
 
             }

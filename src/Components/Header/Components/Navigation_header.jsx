@@ -8,7 +8,11 @@ import {faUser} from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { faTruck } from '@fortawesome/free-solid-svg-icons';
 import { faStore } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from 'react-redux';
+import { indexCart } from '../../../features/cart/cartSlice';
 function Navigation_header(props) {
+        const selectId = useSelector(state => state.cart.indexCart);
+
     return (
         <Navigation>
             <div className='Navication__call'> 
@@ -31,10 +35,15 @@ function Navigation_header(props) {
                         <h1> Tra cứu đơn hàng </h1>
                     </Link>
             </div>
-            <div className='Navigation__shopping-cart'>
-                    <Link className='LinkShoppingCart'>
-                    <FontAwesomeIcon icon={faCartShopping} className='icon' />
-                        <h1 className='textShoppingCart'> Giỏ hàng </h1>
+            <div className='Navigation__shopping-cart' >
+                    <Link className='LinkShoppingCart'
+                         to='/Cart'>
+                        <div className='iconCart'> 
+                            <div className = {`${selectId === 0 ? 'noColor' :  'index'}`}> {selectId === 0 ? null : selectId}
+                             </div>
+                            <FontAwesomeIcon icon={faCartShopping} className='icon' /> 
+                              <h1 className='textShoppingCart'> Giỏ hàng </h1>
+                        </div>
                     </Link>
             </div>
             <div  className='Navigation__User'>
@@ -117,6 +126,9 @@ const Navigation = styled.div `
 .Navication__call .call p {
     font-size:0.8rem;
 }
+.Navication__call:hover {
+    background-color: rgb(47, 47, 47);
+}
 .fa-solid.fa-phone.fa-shake {
         font-size: 1.6rem;
    
@@ -130,15 +142,36 @@ const Navigation = styled.div `
     width:9rem;
 }
 .LinkShoppingCart {
-       
-       display:flex;
-       align-items:center;
+       display: inline-block;
         font-size:10px;
         text-decoration:none;
         color:white;
         padding:5px;
         border-radius:10px;
+      
         
+}
+.LinkShoppingCart:hover {
+    background-color:red;
+
+}
+.iconCart {
+    display:flex;
+    align-items:center;
+    position:relative;
+}
+.index {
+    position:absolute;
+    bottom: 10px;
+    left: 5px;
+    color: black;
+    font-weight: 900;
+    height: 15px;
+    width: 15px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 999px;
+    background-color: red;
+    z-index:1
 }
 .LinkShoppingCart:hover {
     background-color: rgb(47, 47, 47);

@@ -1,42 +1,51 @@
 {
+    "name": "Hãng máy lọc nước",
     "phonecompany": [
         {
             "id": 1,
-            "name": "Máy lọc nước Samsung"
+            "name": "Máy lọc nước Samsung",
+            "image":"https://karofithongminh.com.vn/wp-content/uploads/2022/08/may-loc-nuoc-karofi-livotec-110-2022-247x247.jpg"
         },
         {
             "id":2,
-            "name": "Máy lọc nước Toshiba"
+            "name": "Máy lọc nước Toshiba",
+           "image":"https://karofithongminh.com.vn/wp-content/uploads/2021/10/may-loc-nuoc-karofi-livotec-110-2021-2.jpg"
            
         },
         {
             "id":3,
-            "name": "Máy lọc nước LG"
+            "name": "Máy lọc nước LG",
+            "image":"https://karofithongminh.com.vn/wp-content/uploads/2022/08/may-loc-nuoc-karofi-livotec-110-2022-247x247.jpg"
            
         },
         {
             "id":4,
-            "name": "Máy lọc nước Kangaroo"
+            "name": "Máy lọc nước Kangaroo",
+            "image":"https://karofithongminh.com.vn/wp-content/uploads/2021/10/may-loc-nuoc-karofi-livotec-110-2021-2.jpg"
            
         },
         {
             "id":5,
-            "name": "Máy lọc nước Sunhouse"
+            "name": "Máy lọc nước Sunhouse",
+            "image":"https://karofithongminh.com.vn/wp-content/uploads/2022/08/may-loc-nuoc-karofi-livotec-110-2022-247x247.jpg"
            
         },
         {
             "id":6,
-            "name": "Máy lọc nước Điện giải"
+            "name": "Máy lọc nước Điện giải",
+            "image":"https://karofithongminh.com.vn/wp-content/uploads/2021/10/may-loc-nuoc-karofi-livotec-110-2021-2.jpg"
            
         },
         {
             "id":7,
-            "name": "Máy lọc nước Hòa phát"
+            "name": "Máy lọc nước Hòa phát",
+            "image":"https://karofithongminh.com.vn/wp-content/uploads/2022/08/may-loc-nuoc-karofi-livotec-110-2022-247x247.jpg"
            
         },
         {
             "id":8,
-            "name": "Máy lọc nước Karofi"
+            "name": "Máy lọc nước Karofi",
+            "image":"https://karofithongminh.com.vn/wp-content/uploads/2021/10/may-loc-nuoc-karofi-livotec-110-2021-2.jpg"
            
         }
     ],

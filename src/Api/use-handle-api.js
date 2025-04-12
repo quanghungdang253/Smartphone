@@ -12,6 +12,8 @@ function useHandleApi(namephone) {  // xử lý hiển thị các điện thoạ
         let CameraBrands = ["Camera Dahua", "Camera Hikvision","Camera Tiandy","Camera Panasonic"];
         let Laptop = ["Laptop Al","Laptop Gaming","Laptop học tập văn phòng"]
         let EarBrands = ["Tai Nghe JBL","Tai nghe B&O","Tai nghe Apple","Tai nghe Harman Kardon","Tai nghe Sony", "Tai nghe Focal"]
+        let filter = ["Máy lọc nước Samsung","Máy lọc nước Toshiba","Máy lọc nước LG","Máy lọc nước Kangaroo","Máy lọc nước Sunhouse","Máy lọc nước Điện giải","Máy lọc nước Hòa phát","Máy lọc nước Karofi"];
+        let Tv = ["Ti vi Samsung 4K","Ti vi Sony","Ti vi Xiamio","Tivi LG","Ti vi TCL","Ti vi Casper","Ti vi Toshiba","Ti vi Hisense"]
         //=============================danh sách các sản phẩm =============================
       
            // let productCatalog: danh mục sản phẩm 
@@ -27,6 +29,12 @@ function useHandleApi(namephone) {  // xử lý hiển thị các điện thoạ
                     }
                     else if(EarBrands.includes(namephone)){
                                 setEnpointinFo("InformationEarphone");
+                    }else if(Laptop.includes(namephone)){
+                                setEnpointinFo("InformationLaptop");
+                    }else if(Tv.includes(namephone)){
+                                setEnpointinFo("InformationTelevison");
+                    }else if(filter.includes(namephone)){
+                                setEnpointinFo("InformationFilter");
                     }
                     
                 

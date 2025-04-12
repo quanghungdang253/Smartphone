@@ -1,21 +1,85 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit";
 
-
-
-const initalState = {
-    item: [],
-    editId: null,
-    totalPrice: 0,  
-    indexCart: null // chỉ số của giỏ hàng 
-}
+const initialState = {
+  item: [],
+  editId: null,
+  totalPrice: 0,
+  indexProduct: 0, // tổng số lượng sản phẩm
+  indexCart: 0     // số loại sản phẩm trong giỏ
+};
 
 const createCartSlice = createSlice({
-        name: 'cart',
-        initialState: initalState,
-        reducers: {
-                addCart(state , action){
-                        
-                }
-        }
-})
+  name: 'cart',
+  initialState,
+  reducers: {
+    addCart(state, action) {
+      const productKey = `${action.payload.id}-${action.payload.title}-${action.payload.brand}`;
+      const price = Number((action.payload.total_original || '0').replace(/\./g, ''));
 
+      const findIndex = state.item.findIndex(item => item.productKey === productKey);
+
+      if (findIndex !== -1) {
+        // Sản phẩm đã tồn tại -> tăng quantity sản phẩm đó
+        state.item[findIndex].quantity += 1;
+      } else {
+        // Sản phẩm mới -> thêm vào giỏ
+        const newProduct = {
+          ...action.payload,
+          productKey,
+          quantity: 1,
+        };
+        state.item.push(newProduct);
+        state.indexCart += 1; // tăng loại sản phẩm
+      }
+
+      // Cập nhật tổng số lượng và tổng tiền
+      state.indexProduct += 1;
+      state.totalPrice += price;
+    },
+
+    deleteCart(state, action) {
+      const findItem = state.item.find(item => item.productKey === action.payload);
+      if (!findItem) return;
+
+      const price = Number((findItem.total_original || '0').replace(/\./g, ''));
+      const quantity = findItem.quantity;
+
+      state.item = state.item.filter(item => item.productKey !== action.payload);
+
+      state.indexCart -= 1;
+      state.indexProduct -= quantity;
+      state.totalPrice -= price * quantity;
+    },
+
+    increaseQuantity(state, action) {
+      const index = state.item.findIndex(item => item.productKey === action.payload);
+      if (index !== -1) {
+        const price = Number((state.item[index].total_original || '0').replace(/\./g, ''));
+        state.item[index].quantity += 1;
+        state.indexProduct += 1;
+        state.totalPrice += price;
+      }
+    },
+
+    decreaseQuantity(state, action) {
+      const index = state.item.findIndex(item => item.productKey === action.payload);
+      if (index !== -1 && state.item[index].quantity > 1) {
+        const price = Number((state.item[index].total_original || '0').replace(/\./g, ''));
+        state.item[index].quantity -= 1;
+        state.indexProduct -= 1;
+        state.totalPrice -= price;
+      } else if (index !== -1) {
+        // Nếu quantity là 1 -> xóa luôn sản phẩm
+        const price = Number((state.item[index].total_original || '0').replace(/\./g, ''));
+        state.item.splice(index, 1);
+        state.indexCart -= 1;
+        state.indexProduct -= 1;
+        state.totalPrice -= price;
+      }
+    }
+  }
+});
+
+const { actions, reducer } = createCartSlice;
+export const { addCart, deleteCart, increaseQuantity, decreaseQuantity } = actions;
+export default reducer;

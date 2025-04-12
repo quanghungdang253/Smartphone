@@ -2,6 +2,7 @@
   {      
       "id" : 1,   
       "title": "Apple iPhone 6S Plus 16GB",
+      "imgCart": "https://cdn.tgdd.vn/Products/Images/42/334864/iphone-16e-den-thumb-200x200.jpg",
       "image": [
           { 
             "id": 0,
@@ -264,8 +265,9 @@
 
 
 {      
-      "id" : 1,   
+      "id" : 2,   
       "title": "Apple iPhone 6S Plus 16GB",
+      "imgCart": "https://cdn.tgdd.vn/Products/Images/42/334864/iphone-16e-den-thumb-200x200.jpg",
       "image": [
           { "id": 0,
             "image": "https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon-feature-active-min.png?v=1", 
@@ -507,6 +509,7 @@
 {      
       "id" : 2,   
       "title": "Apple iPhone 6S Plus 16GBfwefwefwe",
+      "imgCart": "https://cdn.tgdd.vn/Products/Images/42/334864/iphone-16e-den-thumb-200x200.jpg",
       "image": [
           { "id": 0,
             "image": "https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon-feature-active-min.png?v=1", 

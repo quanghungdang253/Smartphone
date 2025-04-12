@@ -3,11 +3,13 @@
 .Mainchatbot {
         @include flex-center(row,center,end);
         &__mainWelcome {
+            position: absolute;
+            right: 8rem;
             cursor: pointer;
             .mainContent {
                 position: relative;
                 bottom: 140px;
-                right: 20px;
+                right: 200px;
             }
             .iconClose {
                 color: rgb(255, 255, 255);

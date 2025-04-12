@@ -1,183 +1,222 @@
 
 {
     "data": [
-        {      
+{      
         "id" : 1,
         "discount": "20%",
         "installment": "0%",     
-        "image": "https://www.nhatthuc.com.vn/resize-image/280x/files/5068-hdcvi-dahua-1080p-1-600x600(7).jpg",
-        "title": "Camera Dahua HD - 1.0MP",
-        "price": "9,990,000 ₫"
+        "image": "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-xam-4-750x500.jpg",
+        "title": "Samsung Galaxy A16 5G 8GB 128GB",
+        "price": "2.200.000đ"
        
-  },
-  {      
+},
+{      
     "id" : 2,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/11866_tron_bo_1_mat_camera_dahua_hac_hfw1000sp%5B1%5D.jpg",
-    "title": "TRỌN BỘ 02 CAMERA DAHUA HD - 1.0MP",
-    "price": "3,390,000 ₫"
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_3__4.png",
+    "title": "Samsung Galaxy S24 FE 5G 8GB 128GB",
+    "price": "5.000.000đ"
    
 },
 {      
     "id" : 3,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/280x/DH-IPC-HFW4231TP-ASE.jpg",
-    "title": "Dahua DH-IPC-HFW4231TP-ASE",
-    "price": "3,980,000 ₫"
-    
+    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg",
+    "title": "Samsung Galaxy Fit3",
+    "price": "2.200.000đ"
 },
 {      
     "id" : 4,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/280x/DH-IPC-HDBW5631EP-ZE.jpg",
-    "title": "Dahua DH-IPC-HDBW5631EP-ZE",
-    "price": "6,820,000 ₫"
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-m55.png",
+    "title": "Samsung Galaxy M55 (12GB 256GB)",
+    "price": "2.200.000đ"
     
 },
-
 {      
     "id" : 5,
     "discount": "20%",
-    "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/280x/DH-IPC-HDW4231EMP-ASE.jpg",
-    "title": "Dahua DH-IPC-HDW4231EMP-ASE",
-    "price": "2,639,000 ₫"
-    
+    "installment":"0%",     
+    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_1_15_638409395342231798_samsung-galaxy-s24-ultra-xam-1.png",
+    "title": "Samsung Galaxy S24 Ultra 5G 256GB",
+    "price": "2.200.000đ"
+   
 },
-
 {      
     "id" : 6,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/280x/DH-IPC-HFW4239TP-ASE.jpg",
-    "title": "Dahua DH-IPC-HFW4239TP-ASE",
-    "price": "7,340,000 ₫"
-    
+    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_a16_5g_den_1_c3a827fa84.jpg",
+    "title": "Samsung Galaxy A16 5G 8GB 128GB",
+    "price": "6.090.000 ₫"
+   
 },
-
-{      
+{
+      
     "id" : 7,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/280x/DH-IPC-HDBW4231EP-S-S4.jpg",
-    "title": "Dahua DH-IPC-HDBW4231EP-S-S4",
-    "price": "1,520,000 ₫"
-    
+    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_z_fold6_gray_a413f785af.png",
+    "title": "Samsung Galaxy Z Fold6 5G 256GB",
+    "price": "6.090.000 ₫"
 },
-
-{      
+{
+      
     "id" : 8,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
-    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
-    "price": "9,900,000 ₫"
-    
+    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_z_fold6_gray_a413f785af.png",
+    "title": "Samsung Galaxy Z Fold6 5G 256GB",
+    "price": "6.090.000 ₫"
 },
-
-{      
+{
+      
     "id" : 9,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
-    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
-    "price": "9,900,000 ₫"
-    
+    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_z_fold6_gray_a413f785af.png",
+    "title": "Samsung Galaxy Z Fold6 5G 256GB",
+    "price": "6.090.000 ₫"
 },
-
-{      
+{
+      
     "id" : 10,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
-    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
-    "price": "9,900,000 ₫"
-    
-},
-
-{      
+    "image": "https://www.duchuymobile.com/images/detailed/63/samsung-galaxy-z-fold4-5g-xanh.jpg",
+    "title": "Samsung Galaxy Z Fold4 5G (12GB | 256GB) Chính Hãng Mới 100% Nguyên Seal"
+,
+    "price": "16.999.000 đ"
+},{
+      
     "id" : 11,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
-    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
-    "price": "9,900,000 ₫"
-    
+    "image": "https://www.duchuymobile.com/images/detailed/51/samsung-galaxy-z-fold4-5g-kem.jpg",
+    "title": "Samsung Galaxy Z Fold4 5G (12GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "12.999.000 đ"
 },
-{      
+{
+      
     "id" : 12,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
-    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
-    "price": "9,900,000 ₫"
-    
+    "image": "https://www.duchuymobile.com/images/detailed/56/galaxy-s23.jpeg",
+    "title": "Samsung Ga",
+    "price": "6.090.000 ₫"
 },
-
-{      
+{
+      
     "id" : 13,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
-    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
-    "price": "9,900,000 ₫"
-    
+    "image": "https://www.duchuymobile.com/images/variant_image/46/s22-ultra-5g-do.jpg",
+    "title": "Samsung Galaxy S22 Ultra 5G (8GB | 128GB) Chính Hãng Cũ",
+    "price": "10.699.000 đ"
 },
-
-{      
+{
+      
     "id" : 14,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
-    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
-    "price": "9,900,000 ₫"
-    
+    "image": "https://www.duchuymobile.com/images/thumbnails/180/180/detailed/56/samsung-galaxy-s23-ultra-5g-kem.jpg",
+    "title": "Samsung Galaxy S23 Ultra 5G (12GB | 1TB) Chính Hãng Mới 100% Nguyên Seal",
+    "price": "24.999.000 đ"
 },
-
-{      
+{
+      
     "id" : 15,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
-    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
-    "price": "9,900,000 ₫"
-    
-},
-
-{      
+    "image": "https://www.duchuymobile.com/images/detailed/35/samsung-galaxy-note-20-cu-like-new-99.jpg",
+    "title": "Samsung Galaxy Note 20 5G (8GB | 256GB) Cũ (Like New)",
+    "price": "4.999.000 đ"
+},{
+      
     "id" : 16,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
-    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
-    "price": "9,900,000 ₫"
-    
+    "image": "https://www.duchuymobile.com/images/variant_image/46/s22-ultra-5g-do.jpg",
+    "title": "Samsung Galaxy S22 Ultra 5G (8GB | 128GB) Chính Hãng Cũ (Like New)",
+    "price": "10.699.000 đ"
 },
-{      
+{
+      
     "id" : 17,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.nhatthuc.com.vn/resize-image/470x/files/5068-hdcvi-dahua-1080p-1-600x600(1).jpg",
-    "title": "Trọn bộ 08 camera Dahua 2.0MP Full HD",
-    "price": "9,900,000 ₫"
-    
+    "image": "https://www.duchuymobile.com/images/variant_image/46/s22-ultra-5g-do.jpg",
+    "title": "Samsung Galaxy S22 Ultra 5G (8GB | 128GB) Chính Hãng Cũ (Like New)",
+    "price": "10.699.000 đ"
+},{
+      
+    "id" : 18,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://www.duchuymobile.com/images/detailed/52/s22-ultra-xam_2sk1-sd.jpeg",
+    "title": "Samsung Galaxy S22 Ultra 5G (12GB | 256GB) Cũ Like New",
+    "price": "9.999.000 đ"
+},
+{
+      
+    "id" : 19,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_z_fold6_gray_a413f785af.png",
+    "title": "Samsung Galaxy Z Fold6 5G 256GB",
+    "price": "6.090.000 ₫"
+},
+{
+      
+    "id" : 20,
+    "discount": "20%",  
+    "installment": "0%",     
+    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_z_fold6_gray_a413f785af.png",
+    "title": "Samsung Galaxy Z Fold6 5G 256GB",
+    "price": "6.090.000 ₫"
+},
+{
+      
+    "id" : 21,
+    "discount": "20%",
+    "installment": "0%",     
+    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_z_fold6_gray_a413f785af.png",
+    "title": "Samsung Galaxy Z Fold6 5G 256GB",
+    "price": "6.090.000 ₫"
 }
-     
+
+        
     ],
     "advertising_images": [
-        "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/c4/05/c405feb105adaaba8eaa9cc463ddcfd6.jpg",
-        "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/0a/c7/0ac7848fff6763850d6d131d2f46e92a.jpg",
-        "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png",
-         "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png",
-          "https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/5f/56/5f5697851d8b067d48ee372423ced171.png"
-       
-      
+        "/image/advertising_image/iphone/15 Series.webp",
+        "/image/advertising_image/iphone/Iphone13.webp",
+        "/image/advertising_image/iphone/iphone14.webp",
+        "/image/advertising_image/iphone/iphone16.webp",
+        "/image/advertising_image/iphone/pay.webp"
+],
+"label_product": [
+    {"id": 0, "img": "/image/label-product/label-smartphone/label-benco.jpg" , "Link":"benco"},
+    {"id": 1, "img": "/image/label-product/label-smartphone/label-honor.jpg" , "Link":"honor"},
+    {"id": 2, "img": "/image/label-product/label-smartphone/label-itel.jpg" ,  "Link":"itel"},
+    {"id": 3, "img": "/image/label-product/label-smartphone/label-masstel.jpg", "Link":"masstel"},
+    {"id": 4, "img": "/image/label-product/label-smartphone/label-mobel.jpg", "Link":"mobel"},
+    {"id": 5, "img": "/image/label-product/label-smartphone/label-nokia.jpg", "Link":"Nokia"},
+    {"id": 6, "img": "/image/label-product/label-smartphone/label-oppo.jpg" ,"Link":"oppo"},
+    {"id": 7, "img": "/image/label-product/label-smartphone/label-realme.jpg", "Link":"realme"},
+    {"id": 8, "img": "/image/label-product/label-smartphone/label-samsung.jpg", "Link":"samsung"},
+    {"id": 9, "img": "/image/label-product/label-smartphone/label-tcl.jpg", "Link":"tcl"},
+    {"id": 10, "img": "/image/label-product/label-smartphone/label-tecno.jpg", "Link":"tecno"},
+    {"id": 11, "img": "/image/label-product/label-smartphone/label-viettel.jpg", "Link":"viettel"},
+    {"id": 12, "img": "/image/label-product/label-smartphone/label-vivo.jpg", "Link":"vivo"},
+    {"id": 13, "img": "/image/label-product/label-smartphone/label-xiamio.jpg", "Link":"Xiamio"},
+    {"id": 14, "img": "/image/label-product/label-smartphone/label-iphones.jpg","Link": "IPhone"}
+
 ]
     
-     
+    
 
     
 }

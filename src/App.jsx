@@ -95,10 +95,10 @@ import Home from './Components/Pages/Home/Home';
 import  InforPhone from './Components/Pages/InforPhone/InforPhone';
 import MainStoreInfo from './Components/Header/store-map-info/main-store-info';
 import MainStoreMapInfo from './Components/Header/store-map-info/main-store-map';
-
-
+import { Provider } from 'react-redux';
+import store from './app/store';
 import MainChatbox from './Components/Chat/main-chatbot';
-
+import MainCart from './Components/Pages/cart-pages/main-cart/main-cart';
 
 // =========================================chatbot==============================================
 
@@ -109,18 +109,19 @@ export default function App() {
   // const InforPhone = React.lazy(() => import("./Components/Pages/InforPhone/InforPhone"));
 
     return (
+        <Provider store={store}>   
         <Style>
-    
-     <ParentContext>  
-            <div>
-             <HelmetProvider>   
-                <MainHeader />
-                    <Routes>
+            <ParentContext>  
+              <div>
+                 <HelmetProvider>   
+                      <MainHeader />
+                  <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='label/:namephone' element={<Products_list/>} />
                         <Route path='/Detail/:link/:id' element={<InforPhone />} />  
                         <Route path='/StoreInfo' element={<MainStoreInfo/>} />
                         <Route path='/GoogleMap' element={<MainStoreMapInfo/>} />
+                        <Route path='/Cart'   element={<MainCart />} />
                     </Routes>
                 </HelmetProvider>             
             </div> 
@@ -128,18 +129,14 @@ export default function App() {
                   <div className='CommunicationSetting'>  
                       <CommunicationSettings/>     
                   </div> 
-                  <div className='chatBot'> 
-                       <MainChatbox/>
-                  </div>
-                 <div>
-              
-                 
+                   <div className='chatBot'> 
+                          <MainChatbox/>
+                   </div>
+                  <div>
                  </div>
               </ParentContext>          
-
-
-
-        </Style>
+           </Style>
+        </Provider>
     );
 }
 

@@ -1,37 +1,46 @@
 {
+    "name": "Hãng Tai nghe",
     "phonecompany": [
         {
             "id": 1,
-            "name": "Tai Nghe JBL"
+            "name": "Tai Nghe JBL",
+            "image": "https://cdn.tgdd.vn/Products/Images/54/327554/tai-nghe-bluetooth-true-wireless-samsung-galaxy-buds-3-pro-r630n-xam-2-750x500.jpg"
         },
         {
             "id":2,
-            "name": "Tai nghe B&O"
+            "name": "Tai nghe B&O",
+            "image":"https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/54/332456/tai-nghe-tws-jbl-tune-beam-2-den-1-638690755144482986-750x500.jpg"
+
            
         },
         {
             "id":3,
-            "name": "Tai nghe Apple"
+            "name": "Tai nghe Apple",
+            "image": "https://cdn.tgdd.vn/Products/Images/54/327554/tai-nghe-bluetooth-true-wireless-samsung-galaxy-buds-3-pro-r630n-xam-2-750x500.jpg"
            
         },
         {
             "id":4,
-            "name": "Tai nghe Harman Kardon"
+            "name": "Tai nghe Harman Kardon",
+            "image":"https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/54/332456/tai-nghe-tws-jbl-tune-beam-2-den-1-638690755144482986-750x500.jpg"
            
         },
         {
             "id":5,
-            "name": "Tai nghe Marshall"
+            "name": "Tai nghe Marshall",
+            "image":"https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/54/332456/tai-nghe-tws-jbl-tune-beam-2-den-1-638690755144482986-750x500.jpg"
            
         },
         {
             "id":6,
-            "name": "Tai nghe Sony"
+            "name": "Tai nghe Sony",
+            "image":"https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/54/332456/tai-nghe-tws-jbl-tune-beam-2-den-1-638690755144482986-750x500.jpg"
            
         },
         {
             "id":7,
-            "name": "Tai nghe Focal"
+            "name": "Tai nghe Focal",
+            "image":"https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/54/332456/tai-nghe-tws-jbl-tune-beam-2-den-1-638690755144482986-750x500.jpg"
            
         }
     ],

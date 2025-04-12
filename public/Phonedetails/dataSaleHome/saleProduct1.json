@@ -2,6 +2,8 @@
   {      
       "id" : 1,   
       "title": "Apple iPhone 6S Plus 16GB",
+       "brand": "Apple",
+      "imgCart": "https://cdn.tgdd.vn/Products/Images/42/334864/iphone-16e-den-thumb-200x200.jpg",
       "image": [
           { 
             "id": 0,
@@ -261,24 +263,27 @@
 ]
      
 },
-
-
 {      
-      "id" : 1,   
+      "id" : 2,   
       "title": "Apple iPhone 6S Plus 16GB",
+      "imgCart": "https://cdn.tgdd.vn/Products/Images/42/334864/iphone-16e-den-thumb-200x200.jpg",
       "image": [
-          { "id": 0,
+          { 
+            "id": 0,
             "image": "https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon-feature-active-min.png?v=1", 
-             "content": [
+            "content": [
                       "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
                       "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
                       "Camera 50MP chuyên nghiệp với tính năng AI vượt trội giúp bạn chụp ảnh chất lượng cao trong mọi điều kiện ánh sáng.",
                       "Với viên pin dung lượng 4700mAh và công nghệ sạc nhanh 25W - Galaxy S24 FE đảm bảo sử dụng bền bỉ suốt ngày dài."
                ]
           },
-          { "id": 1,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-v-jpeg-5c051553-7431-437f-83e5-48eb992c3535.jpg?v=1725085613433" },               
-          { "id": 2,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-d-8088ba5a-249d-4dbe-a69c-c9256ecd9bff.jpg?v=1725085613433"},
-          { "id": 3,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-t-trongphumobile-08fb204e-5ce7-4950-a218-4502be5fc3e0.jpg?v=1651830450807"  },        
+          { 
+            "id": 1,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-v-jpeg-5c051553-7431-437f-83e5-48eb992c3535.jpg?v=1725085613433" },               
+          { 
+            "id": 2,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-d-8088ba5a-249d-4dbe-a69c-c9256ecd9bff.jpg?v=1725085613433"},
+          { 
+            "id": 3,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-t-trongphumobile-08fb204e-5ce7-4950-a218-4502be5fc3e0.jpg?v=1651830450807"  },        
           { "id": 4, "image":  "https://cdn.tgdd.vn/Products/Images/42/71770/Kit/iphone-6s-plus-mo-ta-chuc-nang.jpg" },
           { "id": 5,  "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-91-750x500.jpg" },        
           { "id": 6, "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-8-750x500.jpg" },
@@ -368,8 +373,15 @@
       "id": 3 , "title": "4. Có nên mua iPhone 16 128GB không?", "content": "Việc quyết định có nên mua iPhone 16 dung lượng 128GB hay không phụ thuộc vào nhu cầu và sở thích cá nhân của bạn. Sản phẩm này nổi bật với hiệu năng mạnh mẽ nhờ chip A18 mới, mang lại tốc độ xử lý nhanh và tiết kiệm năng lượng. Hệ thống camera ấn tượng với ống kính chính 48MP và nhiều tính năng AI giúp bạn chụp ảnh đẹp hơn.Màn hình Super Retina XDR OLED cung cấp màu sắc sống động và độ sáng tối ưu, trong khi iOS 18 với nhiều tính năng mới làm phong phú thêm trải nghiệm sử dụng và mức giá có thể cao hơn so với một số smartphone khác.Nếu bạn đang tìm kiếm một chiếc smartphone cao cấp với hiệu suất tốt và camera chất lượng, iPhone 16 là một lựa chọn xứng đáng. Tuy nhiên, nếu bạn cần tính năng cụ thể hơn hoặc có ngân sách hạn chế, có thể bạn nên cân nhắc thêm các lựa chọn khác.",
 "img": "https://cdn-v2.didongviet.vn/files/default/2024/8/10/0/1725943893551_co_nen_mua_khong_iphone_16_128gb_didongviet.jpg"}
     ],
-
-
+    "questions" : [
+        {"id": 0, "question": "giống với màu nào?", "content": " nhìn từ bên ngoài  là sự kết hợp giữa màu vàng nhẹ và ánh kim. Nhiều người đánh giá màu Titan sa mạc mới này gần giống với màu vàng từng xuất hiện trên iPhone 14 Pro, nhưng có chiều sâu hơn, tạo cảm giác giống như Cát trên sa mạc."},
+        {"id": 1, "question": "có chống nước và chống bụi không?", "content": " mới nhất được xác nhận có khả năng chống tia nước, chống nước và chống bụi đạt mức IP68 theo tiêu chuẩn IEC 60529. Với tiêu chuẩn này, thiết bị có thể an toàn ở độ sâu 6 mét lên đến 30 phút. Tuy nhiên, cần lưu ý không sạc pin iPhone 16 Pro Max khi bị ướt."},
+        {"id": 2, "question": " lớn hơn bao nhiêu so với 15 Pro Max?",
+         "content": "Năm nay, kích thước màn hình iPhone 16 Pro Max đã tăng lên 0,2 inch so với iPhone 15 Pro Max (6,9 inch so với 6,7 inch). Đây cũng là kích thước lớn nhất từng xuất hiện trên một chiếc điện thoại iPhone.Bên cạnh đó, 16 Pro Max cũng được Apple giới thiệu là có viền mỏng nhất từng có của hãng, đem đến cảm giác tuyệt vời khi cầm nắm."},
+        {"id": 3, "question": "Nút Điều Khiển Camera (Camera Control) dùng để làm gì?", "content": "Nút Điều Khiển Camera giúp bạn truy cập các công cụ máy ảnh dễ dàng và nhanh chóng hơn. Các thao tác cần biết gồm có:Trượt ngón tay: điều chỉnh chức năng phơi sáng, chiều sâu trường ảnh, chuyển đổi ống kính, thu phóng kỹ thuật số.Nhấn nhẹ để tự động khoá lấy nét và độ phơi sáng (sẽ xuất hiện trên nút chụp hai giai đoạn - ra mắt cuối năm 2024)"},
+        {"id": 4, "question": "có Chip A18 Pro mạnh đến mức nào? ", "content": " Chipset A18 Pro trên điện thoại iPhone 16 Pro và Pro Max mới mang lại tốc độ xử lý và tiết kiệm năng lượng vượt trội. Cụ thể chip A18 Pro sở hữu:Neural Engine 16 lõi mới giúp trí thông minh trên thiết bị nhanh và tiết kiệm điện hơn.GPU 6 lõi mới nhanh hơn iPhone 15 Pro Max đến 20%.CPU 6 lõi mới nhanh hơn iPhone 15 Pro Max đến 15%.Tổng băng thông bộ nhớ tăng gần 20%, mức cao nhất từng có trên iPhone."}
+    ],
+    
 
     "related__products": [{      
       "id" : 1,
@@ -382,7 +394,8 @@
       "memory": "256 GB",
       "resolution": "6.1 inches",
       "image_1": "/image/image__sale/sale_1.jpg",
-      "indexCategory": 0
+      "indexCategory": 0,
+      "nameEnpoint": "saleProduct1"
  
   },
   {      
@@ -396,7 +409,8 @@
    "memory": "256 GB",
       "resolution": "6.1 inches",
          "image_1": "/image/image__sale/sale_1.jpg",
-         "indexCategory": 0
+         "indexCategory": 0,
+         "nameEnpoint": "saleProduct1"
   
 },
 {      
@@ -410,7 +424,8 @@
      "memory": "256 GB",
       "resolution": "6.1 inches",
          "image_1": "/image/image__sale/sale_1.jpg",
-         "indexCategory": 0
+         "indexCategory": 0,
+         "nameEnpoint": "saleProduct1"
 },
 {      
   "id" : 4,
@@ -423,7 +438,8 @@
    "memory": "256 GB",
       "resolution": "6.1 inches",
          "image_1": "/image/image__sale/sale_1.jpg",
-         "indexCategory": 0
+         "indexCategory": 0,
+         "nameEnpoint": "saleProduct1"
 },
 {      
   "id" : 5,
@@ -436,7 +452,8 @@
    "memory": "256 GB",
       "resolution": "6.1 inches",
          "image_1": "/image/image__sale/sale_1.jpg",
-         "indexCategory": 0
+         "indexCategory": 0,
+         "nameEnpoint": "saleProduct1"
 },
 {      
   "id" : 6,
@@ -449,7 +466,8 @@
    "memory": "256 GB",
       "resolution": "6.1 inches",
          "image_1": "/image/image__sale/sale_1.jpg",
-         "indexCategory": 0
+         "indexCategory": 0,
+         "nameEnpoint": "saleProduct1"
 },
 {      
   "id" : 6,
@@ -462,7 +480,8 @@
     "memory": "256 GB",
       "resolution": "6.1 inches",
          "image_1": "/image/image__sale/sale_1.jpg",
-         "indexCategory": 0
+         "indexCategory": 0,
+         "nameEnpoint": "saleProduct1"
 },
 {      
   "id" : 7,
@@ -473,7 +492,8 @@
   "price": "2.200.000đ",
    "priceDown": "2.500.000",
       "image_1": "/image/image__sale/sale_1.jpg",
-      "indexCategory": 0
+      "indexCategory": 0,
+      "nameEnpoint": "saleProduct1"
 },
 {      
   "id" : 8,
@@ -486,7 +506,8 @@
     "memory": "256 GB",
       "resolution": "6.1 inches",
          "image_1": "/image/image__sale/sale_1.jpg",
-         "indexCategory": 0
+         "indexCategory": 0,
+         "nameEnpoint": "saleProduct1"
 },
 {      
   "id" : 9,
@@ -499,14 +520,17 @@
     "memory": "256 GB",
       "resolution": "6.1 inches",
          "image_1": "/image/image__sale/sale_1.jpg",
-         "indexCategory": 0
+         "indexCategory": 0,
+         "nameEnpoint": "saleProduct1"
 }
 ]
      
-},
+}
+,
 {      
       "id" : 2,   
       "title": "Apple iPhone 6S Plus 16GBfwefwefwe",
+      "imgCart": "https://cdn.tgdd.vn/Products/Images/42/334864/iphone-16e-den-thumb-200x200.jpg",
       "image": [
           { "id": 0,
             "image": "https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon-feature-active-min.png?v=1", 
@@ -746,6 +770,7 @@
 {      
       "id" : 1,   
       "title": "Apple iPhone 6S Plus 16GB",
+      "brand": "Apple",
       "image": [
           { "id": 0,
             "image": "https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon-feature-active-min.png?v=1", 

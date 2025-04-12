@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useRef } from "react";
 import ListimageProduct from "../../Products_list/components/ListimageProduct";
 import ListChildComponents from "./list-child-components";
+import { totalMoney } from "../../../../features/cart/cartSlice";
 //===================================style===============================================================
 import styles from '../styles/components/info-phone.module.scss';
 import style__sale from '../styles/components/Sale.module.scss';
@@ -18,16 +19,21 @@ import img1 from '../image/img1.jpg';
 import img2 from '../image/img2.jpg';
 import AttachedProduct from "./attached-product";
 import ProductDescription from "./product-description";
+import { useDispatch } from "react-redux";
+import { addCart } from "../../../../features/cart/cartSlice";
 
-
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 //======================================hình ảnh============================================================
 // áp dụng quy tắc  camelCase  để đặt tên 
  function InformationPhones({Data , id, nameEnpoint}) {
   
+  const navigate  = useNavigate();
+  const dispatch = useDispatch();
+  
   const [customs, setCustoms] = useState(false);
   const [active, setActive] = useState(0);
   const [preindex , setIndex] = useState(0);
-
   const [indexproduct,setIndexProduct] = useState([]);
 
   const [total, setTotal] = useState(Data.price);
@@ -42,7 +48,6 @@ const [topPosition, setTopPosition] = useState(0);
 const asideRef = useRef(null); 
 const mainRef = useRef(null);
 const [mainHeight, setMainHeight] = useState("auto");
-
 const [allowScroll, setAllowScroll] = useState(false);
 let moneysavings = parseFloat(Data.total_original) - parseFloat(Data.price);
 
@@ -56,6 +61,18 @@ const parseNumber = (value) => {
     return parseFloat(value.replace(/\./g, '')); 
   };
   
+  const handleALert = () => {
+      Swal.fire({
+            title : 'Đã thêm vào giỏ hàng thành công ',
+             icon: 'success',
+             confirmButtonText: 'Xem giỏ hàng ',
+             timer: 2000
+      }).then((resual) => {
+          if(resual.isConfirmed) {
+                navigate('/Cart');
+          }
+      })
+  }
 
   const formatNumber = (value) => {
     const formatter = new Intl.NumberFormat('vi-VN', {
@@ -113,7 +130,13 @@ const parseNumber = (value) => {
       });
     }
   };
-        
+  const addProduct = () => {
+      dispatch(addCart(Data));
+  
+     
+  
+}
+
   useEffect(() => {
     const handleScroll = () => {
         if (!asideRef.current) return;
@@ -126,7 +149,6 @@ const parseNumber = (value) => {
           // Cập nhật chiều cao dựa trên nội dung lớn hơn
           setMainHeight(Math.max(bodyHeight, asideHeight) + "px");
         }
-
 
 
         const aside = asideRef.current;
@@ -274,8 +296,18 @@ console.log(window.scrollY);
                             : (
                               <>    
                                   <div className={style__sale.Box__buy__now}>
-                                      <Link className={` ${style__sale.btn__buy}`}>  Mua ngay </Link>
-                                      <button className={style__sale.btn__add__product}>
+                                      <Link 
+                                        className={` ${style__sale.btn__buy}`}
+                                       
+                                         >  Mua ngay </Link>
+                                      <button className={style__sale.btn__add__product}
+                                      
+                                    
+                                       onClick={() => {
+                                            addProduct();
+                                            handleALert();
+
+                                       }}>
                                               <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:0/q:70/plain/https://cellphones.com.vn/media/wysiwyg/add-to-cart.png" alt=""/>
                                                Thêm giỏ hàng 
                                       </button>

@@ -31,6 +31,7 @@ const NokiaComponent = ({data, namephone, ...props}) => {
 const SamsungComponent = ({data, namephone, ...props}) => (
 <Suspense fallback={(<Loading/>)}>  
         <div>
+        
                         <ListimageProduct image={data.advertising_images} customs={true}/>
                         <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
         </div>
@@ -98,7 +99,7 @@ const DefaultComponent = ({data,  dataEnpoint, namephone,  ...props}) => (
     <Suspense fallback={(<Loading/>)}>  
         <HotSaleComponents> 
              <div className='componentSale_1'>   
-                <ListimageProduct image={data.advertising_images} customs={true}/>
+              
             </div>
                 <ShowInfoHome   enpoint={namephone}  {...props}/>
         </HotSaleComponents> 
@@ -106,8 +107,7 @@ const DefaultComponent = ({data,  dataEnpoint, namephone,  ...props}) => (
 )
 const HotSaleComponents = styled.div `
 overflow: hidden;
-      margin-left:7%;
-      margin-right: 7%;
+     
       overflow:hidden;
       background-color: white;
       border-radius:10px;
