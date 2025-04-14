@@ -16,30 +16,31 @@ function InfoClient({Sum}) {
   const [selectedProvince, setSelectedProvince] = useState(null);
   const status = useSelector(state => state.infoClient.status);
  const [loading , setLoading] = useState(false);
+const sendData = () => {
+  if (status === 'loading') {
+    setLoading(true);
+ } else {
+   setLoading(false);
+ }
+if (status === 'succeeded') {
+ Swal.fire({
+   icon: 'success',
+   title: 'Đặt hàng thành công!',
+   text: 'Thông tin đã được gửi.',
+ });
+// ;                     dispatch(resetInfoClient())
+} 
+else if (status === 'failed') {
+   Swal.fire({
+     icon: 'error',
+     title: 'Thất bại',
+     text: 'Gửi thông tin thất bại.',
+   });
+ }
 
-  useEffect(() => {
-    if (status === 'loading') {
-         setLoading(true);
-      } else {
-        setLoading(false);
-      }
-    if (status === 'succeeded') {
-      Swal.fire({
-        icon: 'success',
-        title: 'Đặt hàng thành công!',
-        text: 'Thông tin đã được gửi.',
-      });
-    // ;                     dispatch(resetInfoClient())
-    } 
-    else if (status === 'failed') {
-        Swal.fire({
-          icon: 'error',
-          title: 'Thất bại',
-          text: 'Gửi thông tin thất bại.',
-        });
-      }
-    
-  }, [status, dispatch]);
+
+}
+   
 
 
 
@@ -141,7 +142,7 @@ function InfoClient({Sum}) {
     </div>
     
     <div className={`${styles.columnInfo_three}`}>  
-        <input type="text" name='brothersAndsisters' placeholder="Anh/Chị/Em trong gia đình" value={formData.brothersAndsisters} onChange={handleChange} />
+        <input type="text" name='brothersAndsisters' placeholder="" value={formData.brothersAndsisters} onChange={handleChange} />
         <textarea
              className={styles.note}
             name="note"
@@ -154,7 +155,10 @@ function InfoClient({Sum}) {
       <option value="Thanh toán khi nhận hàng">Thanh toán khi nhận hàng</option>
       <option value="Chuyển khoản">Chuyển khoản</option>
     </select>
-    <button onClick={handleSubmit} className={styles.btn}>Đặt Hàng </button>
+    <button onClick={ () => {
+        handleSubmit();
+        sendData();
+    }} className={styles.btn}>Đặt Hàng </button>
     <h1> Tổng tiền : <big>  {Sum} </big>  </h1>
     </div>
 

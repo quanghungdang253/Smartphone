@@ -10,22 +10,27 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { deleteCart } from '../../../../features/cart/cartSlice';
 import { useDispatch } from 'react-redux';
 import { increaseQuantity, decreaseQuantity } from '../../../../features/cart/cartSlice';
+import { useLayoutEffect } from 'react';
 import { removeFromLocalStorage } from '../../../../app/local-storage';
+import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { useRef } from 'react';
 function MainCart(props) {
  
-
+const location = useLocation();
+const pathName = location.pathname;
     // thực hiện lấy toàn bộ danh sách 
     let selector = useSelector(state => state.cart);
     let dispatch = useDispatch();
-
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            behavior:'smooth'
-        })
-    },[])
-
-
+    // const navigate = useNavigate();
+    const headerRef = useRef();
+   
+  useEffect(() => {
+   window.scrollTo({
+        top: 0,
+        behavior:'smooth'
+   })
+  }, []);
     const handleDelete = (id) => {
        
             dispatch(deleteCart(id));
@@ -41,7 +46,7 @@ function MainCart(props) {
     };
     return (
     
-        <div>
+        <div ref={headerRef}>
             { selector.item.length === 0 ? (
                 <div className={styles.cartEmpty}>  
                     <div className={styles.cartEmpty__cart1}> 
@@ -59,12 +64,12 @@ function MainCart(props) {
                                     
                                     {selector.item.map((Item) => (
                                             <div key={Item.id} className={styles.box1Element}>
-                                                    <img src={Item.imgCart} alt='' className={styles.img}/>
+                                                    <img src={(Item.imgCart || Item.image)} alt='' className={styles.img}/>
                                                     <div className={styles.mainRow}> 
                                                     <div className={styles.row1}>  
-                                                         <p className={styles.nameProduct}> {Item.title} </p>
-                                                        <big> {Item.total_original}</big>
-                                                         <span className={styles.downPrice}> {Item.price}  </span>
+                                                         <p className={styles.nameProduct}> {(Item.title || Item.name)} </p>
+                                                        <big> {Item.total_original || Item.discount}    </big>
+                                                         <span className={styles.downPrice}> ({Item.price} )  </span>
                                                    </div>
                                                     <div className={styles.row2}> 
                                                          <div>  

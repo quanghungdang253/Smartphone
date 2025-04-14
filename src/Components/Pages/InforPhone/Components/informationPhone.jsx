@@ -27,14 +27,16 @@ import { useNavigate } from "react-router-dom";
 //======================================hình ảnh============================================================
 // áp dụng quy tắc  camelCase  để đặt tên 
  function InformationPhones({Data , id, nameEnpoint}) {
-  
+ 
   const navigate  = useNavigate();
   const dispatch = useDispatch();
   
   const [customs, setCustoms] = useState(false);
   const [active, setActive] = useState(0);
   const [preindex , setIndex] = useState(0);
+ 
   const [indexproduct,setIndexProduct] = useState([]);
+  //====================================================================
 
   const [total, setTotal] = useState(Data.price);
 const [totalorginal , setTotalOriginal] = useState(Data.total_original);
@@ -47,6 +49,11 @@ const [allowScrollLeft, setAllowScrollLeft] = useState(false);
 const [topPosition, setTopPosition] = useState(0);
 const asideRef = useRef(null); 
 const mainRef = useRef(null);
+
+ //================== chỉ số index của giỏ hàng ==============================
+
+//==========================================================
+
 const [mainHeight, setMainHeight] = useState("auto");
 const [allowScroll, setAllowScroll] = useState(false);
 let moneysavings = parseFloat(Data.total_original) - parseFloat(Data.price);
@@ -62,17 +69,25 @@ const parseNumber = (value) => {
   };
   
   const handleALert = () => {
-      Swal.fire({
-            title : 'Đã thêm vào giỏ hàng thành công ',
-             icon: 'success',
-             confirmButtonText: 'Xem giỏ hàng ',
-             timer: 2000
-      }).then((resual) => {
-          if(resual.isConfirmed) {
-                navigate('/Cart');
-          }
-      })
-  }
+    Swal.fire({
+      icon: 'success',
+      title: 'Thành công!',
+      text: 'Sản phẩm đã được thêm vào giỏ hàng.',
+      confirmButtonText: 'Xem giỏ hàng', // Thay chữ 'Đóng' thành 'Xem giỏ hàng'
+      background: '#f8f9fa',
+      iconColor: '#28a745', // Màu icon thành công (xanh lá)
+      customClass: {
+        popup: 'shadow-lg rounded',
+      },
+   // Ẩn thẻ link, vì nút đã là 'Xem giỏ hàng'
+    }).then((result) => {
+      // Kiểm tra nếu người dùng bấm nút 'Xem giỏ hàng'
+      if (result.isConfirmed) {
+        window.location.href = '/Cart'; // Điều hướng đến trang giỏ hàng
+      }
+    });
+  };
+  
 
   const formatNumber = (value) => {
     const formatter = new Intl.NumberFormat('vi-VN', {
@@ -133,8 +148,28 @@ const parseNumber = (value) => {
   const addProduct = () => {
       dispatch(addCart(Data));
   
-     
+}
+const addProduct_index_one = (id) => {
+
   
+    Swal.fire({
+      title : 'Đã thêm vào giỏ hàng thành công ',
+       icon: 'success',
+       confirmButtonText: 'Xem giỏ hàng ',
+       timer: 2000
+}).then((resual) => {
+    if(resual.isConfirmed) {
+          navigate('/Cart');
+    }
+})
+      if(id >= 0) {
+        dispatch(addCart(Data.attached__product[id]));
+      }else {
+
+      }
+      
+      
+
 }
 
   useEffect(() => {
@@ -306,7 +341,6 @@ console.log(window.scrollY);
                                        onClick={() => {
                                             addProduct();
                                             handleALert();
-
                                        }}>
                                               <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:0/q:70/plain/https://cellphones.com.vn/media/wysiwyg/add-to-cart.png" alt=""/>
                                                Thêm giỏ hàng 
@@ -364,7 +398,9 @@ console.log(window.scrollY);
                                                   <div className={style__sale.Box_3}> 
                                                         <span className={style__sale.price}> {Item.price}  </span>
                                                         <span className={style__sale.discount}> {Item.discount} </span>
-                                                        <a>
+                                                        <a onClick={() => {
+                                                            addProduct_index_one(Item.id)
+                                                        }}>
                                                         <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:0/q:70/plain/https://cellphones.com.vn/media/wysiwyg/add-to-cart.png" alt=""/>
                                                               Thêm vào giỏ hàng
                                                        </a>
