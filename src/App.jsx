@@ -99,6 +99,7 @@ import { Provider } from 'react-redux';
 import store from './app/store';
 import MainChatbox from './Components/Chat/main-chatbot';
 import MainCart from './Components/Pages/cart-pages/main-cart/main-cart';
+import HandleAlert from './Components/Common/components/handle-alert';
 
 
 // =========================================chatbot==============================================
@@ -111,7 +112,8 @@ export default function App() {
 
     return (
         <Provider store={store}>  
- 
+     
+
         <Style>
             <ParentContext>
               <div>

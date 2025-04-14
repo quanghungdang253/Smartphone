@@ -13,26 +13,27 @@ const createCartSlice = createSlice({
   initialState,
   reducers: {
     addCart(state, action) {
+   
       const productKey = `${action.payload.id}-${action.payload.title}-${action.payload.brand}`;
       const price = Number((action.payload.total_original || '0').replace(/\./g, ''));
 
       const findIndex = state.item.findIndex(item => item.productKey === productKey);
 
       if (findIndex !== -1) {
-        // Sản phẩm đã tồn tại -> tăng quantity sản phẩm đó
+    
         state.item[findIndex].quantity += 1;
       } else {
-        // Sản phẩm mới -> thêm vào giỏ
+    
         const newProduct = {
           ...action.payload,
           productKey,
           quantity: 1,
         };
         state.item.push(newProduct);
-        state.indexCart += 1; // tăng loại sản phẩm
+        state.indexCart += 1;
       }
 
-      // Cập nhật tổng số lượng và tổng tiền
+     
       state.indexProduct += 1;
       state.totalPrice += price;
     },

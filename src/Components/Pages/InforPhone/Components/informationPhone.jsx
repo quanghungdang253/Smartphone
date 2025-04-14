@@ -47,6 +47,8 @@ const [isFixed, setIsFixed] = useState(false);
 const [savedTop, setSavedTop] = useState(0);
 const [allowScrollLeft, setAllowScrollLeft] = useState(false);
 const [topPosition, setTopPosition] = useState(0);
+
+const [valueInput , setValueInput] = useState([Data]);
 const asideRef = useRef(null); 
 const mainRef = useRef(null);
 
@@ -73,17 +75,17 @@ const parseNumber = (value) => {
       icon: 'success',
       title: 'Thành công!',
       text: 'Sản phẩm đã được thêm vào giỏ hàng.',
-      confirmButtonText: 'Xem giỏ hàng', // Thay chữ 'Đóng' thành 'Xem giỏ hàng'
+      confirmButtonText: 'Xem giỏ hàng', 
       background: '#f8f9fa',
-      iconColor: '#28a745', // Màu icon thành công (xanh lá)
+      iconColor: '#28a745',
       customClass: {
         popup: 'shadow-lg rounded',
       },
-   // Ẩn thẻ link, vì nút đã là 'Xem giỏ hàng'
+ 
     }).then((result) => {
-      // Kiểm tra nếu người dùng bấm nút 'Xem giỏ hàng'
+   
       if (result.isConfirmed) {
-        window.location.href = '/Cart'; // Điều hướng đến trang giỏ hàng
+        window.location.href = '/Cart';
       }
     });
   };
@@ -146,30 +148,39 @@ const parseNumber = (value) => {
     }
   };
   const addProduct = () => {
+    
       dispatch(addCart(Data));
+      handleALert()
   
 }
 const addProduct_index_one = (id) => {
 
-  
-    Swal.fire({
-      title : 'Đã thêm vào giỏ hàng thành công ',
-       icon: 'success',
-       confirmButtonText: 'Xem giỏ hàng ',
-       timer: 2000
-}).then((resual) => {
-    if(resual.isConfirmed) {
-          navigate('/Cart');
-    }
-})
+    handleALert();
       if(id >= 0) {
         dispatch(addCart(Data.attached__product[id]));
       }else {
 
       }
       
-      
+}
 
+const handleCheckBox = (e , value) => {
+      if(e.target.checked){
+          setValueInput(() => {
+                  return [
+                     ...valueInput,
+                     value
+                  ]
+          });
+      }else {
+          setValueInput(null);
+      }
+}
+const sendValueInput = (data) => {
+     data.map((Item) => {
+      dispatch(addCart(Item));
+     })
+     
 }
 
   useEffect(() => {
@@ -323,7 +334,7 @@ console.log(window.scrollY);
                             <div className={style__sale.listimage}> 
                                    <ListimageProduct image={Static_data.image__advertisement}/>            
                             </div> 
-                            
+                              
                      </div>
                      <div>  
                             {!customs ? (<Link className={style__sale.btn__link}>  Lên đời ngay </Link>) 
@@ -340,7 +351,7 @@ console.log(window.scrollY);
                                     
                                        onClick={() => {
                                             addProduct();
-                                            handleALert();
+                                            
                                        }}>
                                               <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:0/q:70/plain/https://cellphones.com.vn/media/wysiwyg/add-to-cart.png" alt=""/>
                                                Thêm giỏ hàng 
@@ -385,8 +396,12 @@ console.log(window.scrollY);
                                                      <img src={Item.image} alt="" className={style__sale.Box1__image}/>
                                         {Item.id === 0 ?    ('') :
                                                               
-                                    (<input type="checkbox" onClick={(e) => handleActive(Item.id , e.target.checked)} className={style__sale.Box1_checkbox}/>)
-
+                                    (<input 
+                                      type="checkbox"
+                                       onClick={(e) => handleActive(Item.id , e.target.checked)} className={style__sale.Box1_checkbox}
+                                       onChange={(e) => handleCheckBox(e , Item) }
+                                       />)
+                                    
                                         }                                              
                                                 </div>
                                                 <div  className={style__sale.Box_2}>  
@@ -420,7 +435,10 @@ console.log(window.scrollY);
                                            
                                      </div>
                                         <div className={style__sale.Box__btn_buy}>
-                                                <Link className={style__sale.Link__btn_buy}> 
+                                                <Link
+                                                to="/Cart"
+                                                   className={style__sale.Link__btn_buy}
+                                                   onClick={() => sendValueInput(valueInput)} > 
                                                          <span>  Mua {product} Sản phẩm  </span> 
                                                         <span> Tiết kiệm {totalsavings}</span> 
                                                 </Link>
