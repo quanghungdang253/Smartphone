@@ -48,7 +48,9 @@ const pathName = location.pathname;
     
         <div ref={headerRef}>
             { selector.item.length === 0 ? (
+        
                 <div className={styles.cartEmpty}>  
+                   {console.log(selector.totalPrice)}
                     <div className={styles.cartEmpty__cart1}> 
                             <img src={imgCart} alt='' className={styles.img} />
                             <h1> Giỏ hàng trống </h1>

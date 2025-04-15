@@ -46,10 +46,10 @@ else if (status === 'failed') {
 
 
   const [formData, setFormData] = useState({
-    fullname: "",
+    fullname: "", 
     email: "",
     phoneNumber: "",
-    address: "",
+    dateOfbirth: "",
     province: "",
     district: "",
     note: "",
@@ -105,8 +105,8 @@ else if (status === 'failed') {
 
     <select className={styles.option} name="gender" onChange={handleChange} value={formData.gender}>
       <option value="">Giới tính</option>
-      <option value="Anh">Anh</option>
-      <option value="Chị">Chị</option>
+      <option value="Anh">Nam </option>
+      <option value="Chị">Nữ</option>
     </select>
 
     <div className={styles.columnInfo}>
@@ -122,8 +122,8 @@ else if (status === 'failed') {
       
        
        
-        <input type="text" name='houseNumber' placeholder="Số nhà Tên đường" value={formData.houseNumber} onChange={handleChange} />
-        <input type="text" name='address' placeholder="Địa chỉ cụ thể" value={formData.address} onChange={handleChange} />
+        <input type="text" name='houseNumber' placeholder="Địa chỉ cụ thể" value={formData.houseNumber} onChange={handleChange} />
+        <input type="date" name='address' placeholder="Ngày tháng năm sinh" value={formData.dateOfbirth} onChange={handleChange} />
         <select className={styles.option} onChange={handleProvinceChange}>
           <option value="">Chọn tỉnh/thành phố</option>
           {dataProvince.map(prov => (
@@ -142,11 +142,11 @@ else if (status === 'failed') {
     </div>
     
     <div className={`${styles.columnInfo_three}`}>  
-        <input type="text" name='brothersAndsisters' placeholder="" value={formData.brothersAndsisters} onChange={handleChange} />
+        <input type="text" name='brothersAndsisters' placeholder="Nhập vào mã giảm giá (không bắt buộc)" value={formData.brothersAndsisters} onChange={handleChange} />
         <textarea
              className={styles.note}
             name="note"
-            placeholder="Ghi chú thêm"
+            placeholder="Ghi chú thêm (ví dụ ngày/giờ muốn giao hàng)"
                 value={formData.note}
                 onChange={handleChange}
     ></textarea>
@@ -158,8 +158,11 @@ else if (status === 'failed') {
     <button onClick={ () => {
         handleSubmit();
         sendData();
-    }} className={styles.btn}>Đặt Hàng </button>
+    }} className={styles.btn}>Đặt Hàng 
+
+    </button>
     <h1> Tổng tiền : <big>  {Sum} </big>  </h1>
+    <div className={styles.underLine}>  </div>
     </div>
 
    
