@@ -16,34 +16,6 @@ function InfoClient({Sum}) {
   const [selectedProvince, setSelectedProvince] = useState(null);
   const status = useSelector(state => state.infoClient.status);
  const [loading , setLoading] = useState(false);
-const sendData = () => {
-  if (status === 'loading') {
-    setLoading(true);
- } else {
-   setLoading(false);
- }
-if (status === 'succeeded') {
- Swal.fire({
-   icon: 'success',
-   title: 'Đặt hàng thành công!',
-   text: 'Thông tin đã được gửi.',
- });
-// ;                     dispatch(resetInfoClient())
-} 
-else if (status === 'failed') {
-   Swal.fire({
-     icon: 'error',
-     title: 'Thất bại',
-     text: 'Gửi thông tin thất bại.',
-   });
- }
-
-
-}
-   
-
-
-
 
   const [formData, setFormData] = useState({
     fullname: "", 
@@ -55,12 +27,53 @@ else if (status === 'failed') {
     note: "",
     gender: "",
     FormOfPayment: "",
-    houseNumber: "",
+    houseNumber: "",  // số nhà 
     brothersAndsisters: "",
-    nameLogin: "",
-    passWord: ""
+   
+    payment:""
   });
+ 
+  console.log("Form Data gửi lên:", JSON.stringify(formData, null, 2));
 
+  const sendData = () => {
+    if (status === 'loading') {
+      setLoading(true);
+   } else {
+     setLoading(false);
+   }
+  if (status === 'succeeded') {
+   Swal.fire({
+     icon: 'success',
+     title: 'Đặt hàng thành công!',
+     text: 'Thông tin đã được gửi.',
+   });
+  
+  } 
+  // Object.entries(formData).map(([key, value]) => (
+  //   <div key={key}>
+  //     <strong>{key}:</strong> {value}
+  //   </div>
+  // ));
+
+
+
+
+
+  else if (status === 'failed') {
+       
+        console.log(status);
+          
+            Swal.fire({
+              icon: 'error',
+              title: 'Thất bại',
+              text: 'Gửi thông tin thất bại.',
+            });
+          
+    
+
+    
+   }
+  }
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -89,7 +102,6 @@ else if (status === 'failed') {
     console.log("Form Data gửi lên:", formData);
     dispatch(submitInfoClient(formData));
   };
-
   return (
     <>  
     {loading ? (
@@ -97,9 +109,7 @@ else if (status === 'failed') {
         <Ovals/>
         </div>
     ) : (
-
         <div className={styles.mainInfo}>
-    
     
     <h1 className={styles.name}>THÔNG TIN NGƯỜI MUA</h1>
 
@@ -123,7 +133,7 @@ else if (status === 'failed') {
        
        
         <input type="text" name='houseNumber' placeholder="Địa chỉ cụ thể" value={formData.houseNumber} onChange={handleChange} />
-        <input type="date" name='address' placeholder="Ngày tháng năm sinh" value={formData.dateOfbirth} onChange={handleChange} />
+        <input type='text' name='dateOfbirth' placeholder="Ngày tháng năm sinh" value={formData.dateOfbirth} onChange={handleChange} />
         <select className={styles.option} onChange={handleProvinceChange}>
           <option value="">Chọn tỉnh/thành phố</option>
           {dataProvince.map(prov => (
