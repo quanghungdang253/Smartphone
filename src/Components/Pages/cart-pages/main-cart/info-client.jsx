@@ -30,50 +30,27 @@ function InfoClient({Sum}) {
     houseNumber: "",  // số nhà 
     brothersAndsisters: "",
    
-    payment:""
   });
- 
-  console.log("Form Data gửi lên:", JSON.stringify(formData, null, 2));
-
-  const sendData = () => {
-    if (status === 'loading') {
-      setLoading(true);
-   } else {
-     setLoading(false);
-   }
-  if (status === 'succeeded') {
-   Swal.fire({
-     icon: 'success',
-     title: 'Đặt hàng thành công!',
-     text: 'Thông tin đã được gửi.',
-   });
+  const handleSubmit = async () => {
+    setLoading(true);
+    const resultAction = await dispatch(submitInfoClient(formData));
+  setLoading(false);
+    if (submitInfoClient.fulfilled.match(resultAction)) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Đặt hàng thành công!',
+        text: 'Thông tin đã được gửi.',
+      });
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Nhập thiếu',
+        text: 'Vui lòng nhập lại',
+      });
+    }
+  };
   
-  } 
-  // Object.entries(formData).map(([key, value]) => (
-  //   <div key={key}>
-  //     <strong>{key}:</strong> {value}
-  //   </div>
-  // ));
-
-
-
-
-
-  else if (status === 'failed') {
-       
-        console.log(status);
-          
-            Swal.fire({
-              icon: 'error',
-              title: 'Thất bại',
-              text: 'Gửi thông tin thất bại.',
-            });
-          
-    
-
-    
-   }
-  }
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -98,10 +75,7 @@ function InfoClient({Sum}) {
     dispatch(updateInfoClient({ district: districtName }));
   };
 
-  const handleSubmit = () => {
-    console.log("Form Data gửi lên:", formData);
-    dispatch(submitInfoClient(formData));
-  };
+ 
   return (
     <>  
     {loading ? (
@@ -133,7 +107,7 @@ function InfoClient({Sum}) {
        
        
         <input type="text" name='houseNumber' placeholder="Địa chỉ cụ thể" value={formData.houseNumber} onChange={handleChange} />
-        <input type='text' name='dateOfbirth' placeholder="Ngày tháng năm sinh" value={formData.dateOfbirth} onChange={handleChange} />
+        <input type='date' name='dateOfbirth' placeholder="Ngày tháng năm sinh" value={formData.dateOfbirth} onChange={handleChange} />
         <select className={styles.option} onChange={handleProvinceChange}>
           <option value="">Chọn tỉnh/thành phố</option>
           {dataProvince.map(prov => (
@@ -167,7 +141,7 @@ function InfoClient({Sum}) {
     </select>
     <button onClick={ () => {
         handleSubmit();
-        sendData();
+        
     }} className={styles.btn}>Đặt Hàng 
 
     </button>
