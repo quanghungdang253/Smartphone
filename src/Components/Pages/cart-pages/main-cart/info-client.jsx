@@ -41,10 +41,12 @@ function InfoClient({Sum}) {
         title: 'Đặt hàng thành công!',
         text: 'Thông tin đã được gửi.',
       });
+
     } else {
+      
       Swal.fire({
         icon: 'error',
-        title: 'Nhập thiếu',
+        title: `Nhập thiếu . vui lòng kiểm tra lại `,
         text: 'Vui lòng nhập lại',
       });
     }

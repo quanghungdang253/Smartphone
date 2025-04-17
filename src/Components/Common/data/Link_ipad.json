@@ -1,0 +1,111 @@
+{
+    "name": "Hãng Laptop",
+    "phonecompany": [
+        {
+            "id": 1,
+            "name": "Laptop Al",
+            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+        },
+        {
+            "id":2,
+            "name": "Laptop Gaming",
+              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+           
+        },
+        {
+            "id":3,
+            "name": "Laptop học tập văn phòng",
+              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+           
+        },
+        {
+            "id":4,
+            "name": "Laptop đồ họa ",
+              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+           
+        },
+        {
+            "id":5,
+            "name": "Laptop Kĩ thuật",
+              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+           
+        },
+        {
+            "id":6,
+            "name": "Laptop mỏng nhẹ",
+              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+           
+        },
+        {
+            "id":7,
+            "name": "Laptop cao cấp",
+            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+           
+        }
+    ],
+    "price":[
+        {
+            "id": 1,
+            "price_level": "Dưới 2 triệu"
+
+        },
+        {
+            "id": 2,
+            "price_level": "Từ 5 đến 10 triệu"
+            
+        },
+        {
+            "id": 3,
+            "price_level": "Từ 10 - 20 triệu"
+            
+        },
+        {
+            "id": 4,
+            "price_level": "Dưới 30 triệu "
+            
+        }, {
+            "id": 5,
+            "price_level": "dưới 50 triệu "
+            
+        }
+    ],
+    "hot__phone": [
+        {
+            "id": 1,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 2,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 3,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 4,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 5,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 6,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        },
+        {
+            "id": 7,
+            "name": "samsung",
+              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+        }
+    ]
+
+    
+}

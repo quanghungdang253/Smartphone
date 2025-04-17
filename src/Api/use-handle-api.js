@@ -5,6 +5,7 @@ import { Switch } from "@mui/material";
 import Loading from "../Components/Common/components/Loading";
 function useHandleApi(namephone) {  // xử lý hiển thị các điện thoại 
         const[ endpointInfo, setEnpointinFo] = useState(""); 
+
         let CategoryInformation = ["Tivi", "Đồ Gia Dụng", "Loa", "Máy giặt", "Đồng hồ", "Nồi chiên không dầu","Máy lọc nước","Tai nghe","Smartphone","Nồi cơm điện","Camera", "Máy hút bụi","Máy nước nóng","Tủ lạnh","Tủ đông","Laptop"];
 
         let PhoneBrands = ["homephone", "Ipad" , "IPhone", "Nokia","samsung", "vivo", "Xiamio","benco","tcl","tecno","realme","oppo","mobel","masstel","itel","honor"];
@@ -12,17 +13,17 @@ function useHandleApi(namephone) {  // xử lý hiển thị các điện thoạ
         let CameraBrands = ["Camera Dahua", "Camera Hikvision","Camera Tiandy","Camera Panasonic"];
         let Laptop = ["Laptop Al","Laptop Gaming","Laptop học tập văn phòng"]
         let EarBrands = ["Tai Nghe JBL","Tai nghe B&O","Tai nghe Apple","Tai nghe Harman Kardon","Tai nghe Sony", "Tai nghe Focal"]
-        let filter = ["Máy lọc nước Samsung","Máy lọc nước Toshiba","Máy lọc nước LG","Máy lọc nước Kangaroo","Máy lọc nước Sunhouse","Máy lọc nước Điện giải","Máy lọc nước Hòa phát","Máy lọc nước Karofi"];
+        let filteres = ["Máy lọc nước Samsung","Máy lọc nước Toshiba","Máy lọc nước LG","Máy lọc nước Kangaroo","Máy lọc nước Sunhouse","Máy lọc nước Điện giải","Máy lọc nước Hòa phát","Máy lọc nước Karofi"];
         let Tv = ["Ti vi Samsung 4K","Ti vi Sony","Ti vi Xiamio","Tivi LG","Ti vi TCL","Ti vi Casper","Ti vi Toshiba","Ti vi Hisense"]
-        //=============================danh sách các sản phẩm =============================
-      
-           // let productCatalog: danh mục sản phẩm 
+        let computer = ["Apple (MacBook)", "Asus","HP","Dell", "Microsoft","Lenovo","Acer","MSI"];
+
+        let Clock = ["Đồng hồ Orient","Đồng hồ Casio","Đồng hồ","Đồng hồ Citizen","Đồng hồ Tissot","Đồng hồ Frederique Constant","Đồng hồ Titan","Đồng hồ Tommy Hilfiger",""]
+       let Ipad = [""]
            
     useEffect(() => {
                  
                      if(CategoryInformation.includes(namephone)){
-                          setEnpointinFo("InformationCategory");
-                        
+                          setEnpointinFo("InformationCategory");  
                     }
                     else if(CameraBrands.includes(namephone)){
                             setEnpointinFo("InformationCamera");
@@ -33,14 +34,21 @@ function useHandleApi(namephone) {  // xử lý hiển thị các điện thoạ
                                 setEnpointinFo("InformationLaptop");
                     }else if(Tv.includes(namephone)){
                                 setEnpointinFo("InformationTelevison");
-                    }else if(filter.includes(namephone)){
+                    }else if(filteres.includes(namephone)){
                                 setEnpointinFo("InformationFilter");
+                    }else if(  computer.includes(namephone)){
+                                setEnpointinFo("InformationComputer");
+                    }else if(PhoneBrands.includes(namephone)){
+                                setEnpointinFo("InformationPhone");
+                    }
+                    else if(Clock.includes(namephone)){
+                                setEnpointinFo("InformationClock");
                     }
                     
-                
                     else{
-                          setEnpointinFo("InformationPhone");
-                    }
+                        setEnpointinFo("InformationPhone");
+                 }
+                  
     },[namephone])
 
     const [data, setData] = useState(null);
