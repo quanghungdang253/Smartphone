@@ -193,19 +193,26 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
                          
                         >
                            <div className={styles.box__body_link}> 
+                             <div style={{height: '240px'}}>   
                                 <div className={`${styles.Negotiate}`}>
                                 
                                       <span className={ `${styles.discount} ${styles.promotion}`}> Giảm:{List.discount} </span>
                                       <span className={`${styles.installment} ${styles.promotion}`} > Trả góp: {List.installment} </span>
                                 </div>
-                                <div className={`${styles.image}`}>
+                          
+                                <div className={`${styles.image}` }>
                                       <img src={List.image} alt={List.titles} />
                                  </div>
-                    <h2 className={`${styles.Showphone__title}`}> {List.titles} </h2>                      
+                                <div style={{position:'absolute', top: '-9px'}}>  
+                                    <img src={List.image1 ? List.image1 : ""} alt='' />
+                                </div>
+                    <h2 className={`${styles.Showphone__title}`}> {List.titles} </h2>          
+                    </div>            
                                 <div className={`${styles.price_up_down}`}>
                                     <h3 className={`${styles.price}`}>{List.price}</h3>
-                                    <h3 className={`${styles.pricedown}`}> {List.priceDown} </h3>
+                                    <h3 className={`${styles.pricedown} ${theme ? styles.colorPricedown : ""}`}> {List.priceDown} </h3>
                                 </div>
+                             
                 <div className={`${styles.text}`}>  
                             <h3 className={`${styles.text} ${styles.title}`}> {List.title}</h3>
                             

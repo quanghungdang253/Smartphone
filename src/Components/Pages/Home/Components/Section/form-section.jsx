@@ -10,8 +10,8 @@ import hot from './image/hot.gif';
 import object_image from './data/data-label-product';
 import { RenderProduct } from '../../../../Common/componentEnpoint';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCircleChevronLeft} from '@fortawesome/free-solid-svg-icons'
-import {faCircleChevronRight} from '@fortawesome/free-solid-svg-icons';
+import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import ListimageProduct from '../../../Products_list/components/ListimageProduct';
 import useEnpoint from '../../../../../Api/use-handle-enpoint';
 // ==============================custom hook=================================
@@ -75,14 +75,16 @@ function RenderProduct(props) {
                 <ul className={styles.list__item} ref={Unordered_list}>
                     <div className={styles.Box__icon}>
                     {node ? ( 
+                       
                         <FontAwesomeIcon 
-                             icon={faCircleChevronLeft}
+                             icon={faArrowLeft}
                              className={`${styles.icon} ${styles.icon__left}`}
                              onClick={() => HandleLeft()}
                         />
                         ) : (
+                          
                         <FontAwesomeIcon
-                             icon={faCircleChevronRight} 
+                             icon={faArrowRight} 
                              className={`${styles.icon} ${styles.icon__right}`}
                              onClick={() => HandleRight()}
                         />

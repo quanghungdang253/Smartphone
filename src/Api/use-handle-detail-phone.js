@@ -26,19 +26,15 @@ const dataTelevision = ["dataSamsung4K","dataSony","dataXiamio","dataLG","dataLG
          if(DataSmartphone.includes(link)){
                     setLink("dataPhoneSmartphone");
 
-         } else if(DataSaleHome.includes(link)) {
+         }else if(DataSaleHome.includes(link)) {
                     setLink("dataSaleHome");
-         }
-         else if(DataSaleProductHome_1.includes(link)){
+         }else if(DataSaleProductHome_1.includes(link)){
                     setLink("dataSaleHome_1");
-         }
-         else if(DataSaleProductHome_2.includes(link)) {
+         }else if(DataSaleProductHome_2.includes(link)) {
                     setLink("dataSaleHome_2");
-         }
-         else if(DataSaleProductHome_3.includes(link)){
+         }else if(DataSaleProductHome_3.includes(link)){
                     setLink("dataSaleHome_3");
-         }
-         else if(dataListProduct.includes(link)) {
+         }else if(dataListProduct.includes(link)) {
                     setLink("dataListProduct");
          }else if(dataClock.includes(link)){
                     setLink("dataClock");

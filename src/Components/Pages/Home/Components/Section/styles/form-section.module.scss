@@ -23,18 +23,21 @@
         background: linear-gradient(180deg, #a20b0b, #80090a);
         border-radius: 10px;
     
-    .Box__icon {
-                .icon {
-                    position: absolute;
-                    z-index: 2;
-                    top: 50%;
-                    margin-top: 1em;
-                    width: 40px;
-                    height: 60px;
-                    opacity: 0.8;                               
-                    border-radius: 5px;
-                    cursor: pointer;
-                    color: rgb(255, 255, 255);                    
+.Box__icon {
+    .icon {
+            position: absolute;
+            z-index: 2;
+             top: 50%;
+             margin-top: 1em;
+             width: 20px;
+             height: 20px;
+             opacity: 0.8;                               
+             border-radius: 5px;
+             cursor: pointer;
+             color: rgb(0, 0, 0); 
+             font-weight: 800;  
+             background-color: white; 
+             padding: 10px;             
                 }
         .icon__left {
                       
@@ -126,16 +129,18 @@
     width: 13em;  /* Chiều rộng mỗi item */
     height: 250px;  /* Chiều cao mỗi item */
     flex-shrink: 0;  /* Không co lại khi không đủ chỗ */
-        background-color: rgb(34, 34, 34) ;
+        background-color: rgb(255, 255, 255) ;
         padding: 2rem 1rem 4rem 1rem;
         box-shadow: 0 2px 1px 0 rgba(50, 50, 50, 0.66)
                     0 2px 6px 2px 0 rgba(52, 52, 52, 0.795);
    
         .Link {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
             text-decoration: none;
             display: block;
             text-align: center;
-            color: white;
+            color: rgb(0, 0, 0);
             font-weight: 700;
             font-family: "Lato", serif;
             img {
