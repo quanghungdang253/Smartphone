@@ -24,6 +24,7 @@ import { addCart } from "../../../../features/cart/cartSlice";
 
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import MainFooter from "../../footer/main-footer";
 //======================================hình ảnh============================================================
 // áp dụng quy tắc  camelCase  để đặt tên 
  function InformationPhones({Data , id, nameEnpoint}) {
@@ -239,7 +240,7 @@ const sendValueInput = (data) => {
 }, [allowScrollLeft]);
 
 
-console.log(window.scrollY);
+
 
      return (
     
@@ -460,7 +461,7 @@ console.log(window.scrollY);
             </div>   
             <div> 
                 <ProductDescription dataPhone={Data} /> 
-
+               
             </div>
             
         </div>

@@ -3,42 +3,42 @@
     "phonecompany": [
         {
             "id": 1,
-            "name": "Laptop Al",
+            "name": "Ipad Gen 9",
             "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
         },
         {
             "id":2,
-            "name": "Laptop Gaming",
+            "name": "iPad Gen 10",
               "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         },
         {
             "id":3,
-            "name": "Laptop học tập văn phòng",
+            "name": "iPad mini",
               "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         },
         {
             "id":4,
-            "name": "Laptop đồ họa ",
+            "name": "iPad mini 7",
               "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         },
         {
             "id":5,
-            "name": "Laptop Kĩ thuật",
+            "name": "iPad Air M2",
               "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         },
         {
             "id":6,
-            "name": "Laptop mỏng nhẹ",
+            "name": "iPad Air 13 inch M2",
               "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         },
         {
             "id":7,
-            "name": "Laptop cao cấp",
+            "name": "iPad Pro M4",
             "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
            
         }

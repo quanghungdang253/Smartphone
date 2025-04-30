@@ -21,7 +21,7 @@ function InforPhone(props) {
                 <Wrapper>
                        <div className='main'>                 
                             {loadings ? ( <Loading/>) : (                                            
-                                <Main style={{height: 100000}}>          
+                                <Main style={{height: 4200}}>          
                                         {/* <Category_Name Data={datas}/>   */}
                                         <InformationPhones Data={datas} id={id} nameEnpoint={link}/>
                                         

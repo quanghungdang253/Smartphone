@@ -100,8 +100,7 @@ import store from './app/store';
 import MainChatbox from './Components/Chat/main-chatbot';
 import MainCart from './Components/Pages/cart-pages/main-cart/main-cart';
 import HandleAlert from './Components/Common/components/handle-alert';
-
-
+import MainFooter from './Components/Pages/footer/main-footer';
 // =========================================chatbot==============================================
 
 
@@ -119,7 +118,7 @@ export default function App() {
               <div>
                  <HelmetProvider>   
                       <MainHeader />
-                         
+            <div style={{flex: 1, }}>        
                   <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='label/:namephone' element={<Products_list/>} />
@@ -128,25 +127,31 @@ export default function App() {
                         <Route path='/GoogleMap' element={<MainStoreMapInfo/>} />
                         <Route  path='/Cart'   element={<MainCart />} />
                     </Routes>
+                </div>
                 </HelmetProvider>             
             </div> 
          
                   <div className='CommunicationSetting'>  
-                      <CommunicationSettings/>     
+                        <CommunicationSettings/>     
                   </div> 
                    <div className='chatBot'> 
                           <MainChatbox/>
                    </div>
-                  <div>
-                 </div>
-              </ParentContext>          
+                   <div> 
+                            <MainFooter />
+                   </div> 
+                 
+              </ParentContext>    
+                  
            </Style>
         </Provider>
     );
 }
 
 const Style = styled.div`
-
+ display: flex;
+  flex-direction: column;
+  min-height: 100vh;
    .chatBot {
         position:fixed;
         bottom: 10px;

@@ -47,7 +47,7 @@ const IphoneComponent = ({data, namephone, ...props}) => (
         fallback={(<Loading/>)} 
         className='componentIphone'
     >  
-            <div>
+                 <div>
                             <ListimageProduct image={data.advertising_images} customs={true}/>
                             <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
             </div>
@@ -106,8 +106,7 @@ const DefaultComponent = ({data,  dataEnpoint, namephone,  ...props}) => (
     </Suspense>
 )
 const HotSaleComponents = styled.div `
-overflow: hidden;
-     
+        overflow: hidden;
       overflow:hidden;
       background-color: white;
       border-radius:10px;

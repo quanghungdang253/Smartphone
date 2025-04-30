@@ -1,0 +1,18 @@
+
+
+.mainFooterOne {
+  
+     &__column {
+        display: flex;
+        align-items: start;
+        .box1 {
+             max-width: 300px;
+             display: grid;
+             grid-row-gap: 1rem;
+        }
+        .box2 {
+           display: grid;
+           grid-row-gap: 1rem;
+        }
+     }
+}

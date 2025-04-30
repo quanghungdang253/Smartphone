@@ -20,12 +20,14 @@ const DataSaleProductHome_2 = ["saleProductHomeB_0", "saleProductHomeB_1", "sale
 const DataSaleProductHome_3 = ["saleProductHomeC_0", "saleProductHomeC_1", "saleProductHomeC_2", "saleProductHomeC_3","saleProductHomeC_4","saleProductHomeC_5","saleProductHomeC_6","saleProductHomeC_7","saleProductHomeC_8","saleProductHomeC_9","saleProductHomeC_10"];
 const dataComputer = ["dataApple","dataAsus","dataHP","dataDell","dataMicrosoft","dataLenovo","dataAcer","dataMSI"];
 const dataCamera = ["dataDahua","dataHikvision","dataTiandy","dataPanasonic","dataHuviron","dataEzviz","dataImou","dataUNV"];
-const dataTelevision = ["dataSamsung4K","dataSony","dataXiamio","dataLG","dataLG","dataTCL","dataCasper","dataToshiba","dataHisense"]
+const dataTelevision = ["dataSamsung4K","dataSony","dataXiamio","dataLG","dataLG","dataTCL","dataCasper","dataToshiba","dataHisense"];
+const dataFilter = ["dataFilterSamsung","dataFilterToshiba","dataFilterLG","dataFilterKangaroo","dataFilterSunhouse","dataFilterelectrolytes","dataFliterHoaphat","dataFilterKarofi"]
+
+const dataIpad = ["dataIpadGen9","dataIpadGen10","dataIpadGenMini","dataIpadMini7","dataIpadAirM2","dataIpadAir13inchM2","dataIpadProM4"]
 
     useEffect(() => {
          if(DataSmartphone.includes(link)){
                     setLink("dataPhoneSmartphone");
-
          }else if(DataSaleHome.includes(link)) {
                     setLink("dataSaleHome");
          }else if(DataSaleProductHome_1.includes(link)){
@@ -44,8 +46,11 @@ const dataTelevision = ["dataSamsung4K","dataSony","dataXiamio","dataLG","dataLG
                     setLink("dataCamera");
          }else if(dataTelevision.includes(link)){
                  setLink("dataTelevision");
+         }else if(dataFilter.includes(link)){
+                setLink("dataFilter");
+         }else if(dataIpad.includes(link)){
+                setLink("dataPhone_Ipad");
          }
-          
 },[link])
 useEffect(() => {  
     if(!links){
@@ -53,20 +58,14 @@ useEffect(() => {
     }
     const FetchAPI = async() => {
         let index = componentEnpoint;
-  
-
-      
         const URL = `/Phonedetails/${links}/${encodeURIComponent(link)}.json`; 
      
-      
-         
         try { 
             let data = null;
                if(link) {
                          data  =  await axiosClient.get(URL);   
                } else {
-                    data = addData[0];
-                   
+                    data = addData[0];       
          }
          console.log( "dữ liệu sau khi lấy được "+data);
                 const handledata = data.find((data) => data.id === parseFloat(id))  // tìm và trả về phần tử đầu tiên 
