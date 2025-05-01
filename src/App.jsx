@@ -103,74 +103,66 @@ import HandleAlert from './Components/Common/components/handle-alert';
 import MainFooter from './Components/Pages/footer/main-footer';
 // =========================================chatbot==============================================
 
-
 export default function App() {
-  // const Products_list  = React.lazy(() => import('./Components/Pages/Products_list/Products_list'))
-  // const Home = React.lazy(() => import("./Components/Pages/Home/Home"));
-  // const InforPhone = React.lazy(() => import("./Components/Pages/InforPhone/InforPhone"));
-
     return (
-        <Provider store={store}>  
-     
-
+      <Provider store={store}>  
         <Style>
-            <ParentContext>
-              <div>
-                 <HelmetProvider>   
-                      <MainHeader />
-            <div style={{flex: 1, }}>        
-                  <Routes>
-                        <Route path='/' element={<Home />} />
-                        <Route path='label/:namephone' element={<Products_list/>} />
-                        <Route path='/Detail/:link/:id' element={<InforPhone />} />  
-                        <Route path='/StoreInfo' element={<MainStoreInfo/>} />
-                        <Route path='/GoogleMap' element={<MainStoreMapInfo/>} />
-                        <Route  path='/Cart'   element={<MainCart />} />
-                    </Routes>
-                </div>
-                </HelmetProvider>             
+          <ParentContext>
+            <HelmetProvider>   
+              <MainHeader />
+              <ContentWrapper>
+                <Routes>
+                  <Route path='/' element={<Home />} />
+                  <Route path='label/:namephone' element={<Products_list/>} />
+                  <Route path='/Detail/:link/:id' element={<InforPhone />} />  
+                  <Route path='/StoreInfo' element={<MainStoreInfo/>} />
+                  <Route path='/GoogleMap' element={<MainStoreMapInfo/>} />
+                  <Route path='/Cart' element={<MainCart />} />
+                </Routes>
+              </ContentWrapper>
+            </HelmetProvider>             
+                    
+            <div className='CommunicationSetting'>  
+              <CommunicationSettings/>     
             </div> 
-         
-                  <div className='CommunicationSetting'>  
-                        <CommunicationSettings/>     
-                  </div> 
-                   <div className='chatBot'> 
-                          <MainChatbox/>
-                   </div>
-                   <div> 
-                            <MainFooter />
-                   </div> 
-                 
-              </ParentContext>    
-                  
-           </Style>
-        </Provider>
+            <div className='chatBot'> 
+              <MainChatbox/>
+            </div>
+          </ParentContext>    
+        </Style>
+        <FooterWrapper>
+                <MainFooter />
+        </FooterWrapper>
+      </Provider>
     );
-}
-
-const Style = styled.div`
- display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-   .chatBot {
-        position:fixed;
-        bottom: 10px;
-        right: -20px;
-        z-index:1500
-   }
-    .CommunicationSeting{
-              
+  }
+  
+  const Style = styled.div`
+    position: relative;
+    /* min-height: 100vh; */
+    padding-bottom: 100px; /* Adjust this value based on your footer height */
+    
+    .chatBot {
+      position: fixed;
+      bottom: 10px;
+      right: -20px;
+      z-index: 1500;
     }
-
-`;
-const Navigations = styled.div`
-
-
-
-
-
-
-
+    
+    .CommunicationSetting {
+      /* Your styles here */
+    }
+  `;
+  
+  const ContentWrapper = styled.div`
+    flex: 1;
+    padding-bottom: 50px; /* Add some padding at the bottom */
+  `;
+  
+  const FooterWrapper = styled.div`
+ 
+  
+  `;
 
 
 
