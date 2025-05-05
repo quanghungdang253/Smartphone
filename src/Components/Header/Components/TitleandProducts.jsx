@@ -81,9 +81,10 @@ const HeaderTitle = styled.div`
     align-items: center;
 
     .header__image {
-        height: 25%;
+     
         width:25%;
-        object-fit:contain;
+        object-fit:cover;
+        border-radius: 10px;
        
     }
     h1 {
@@ -93,6 +94,10 @@ const HeaderTitle = styled.div`
     }
     .title {
         font-family: "Lato", serif;
+        color: yellow;
+        font-size:21px;
+        font-weight: 800;
+     
     }
 `;
 

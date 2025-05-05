@@ -15,7 +15,9 @@ import { listClasses } from '@mui/material';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import {ReactComponent as IconarrowRight} from "./icon/arrowRight.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile, faClock, faCogs, faDesktop, faLaptop, faHome, faHeadphones, faCamera, faTv, faNewspaper,  faSnowflake  } from '@fortawesome/free-solid-svg-icons';
+import { faMobile, faClock, faCogs, faDesktop, faLaptop, faHome, faHeadphones, faCamera, faTv, faNewspaper,  faSnowflake, faChevronRight  } from '@fortawesome/free-solid-svg-icons';
+
+
 
 function Menuheader({addPadding}) {
   let {theme} = useValue();
@@ -74,9 +76,12 @@ function Menuheader({addPadding}) {
                                                                         {item.icon }
                                                                         {item.label}    
                                                 </div>
-                                        <IconarrowRight className={
-                                                `Wrapper__icon ${theme ? 'color__Bright' : 'color__Dark'}`}/>
-                                </div>                                                 
+                                                <FontAwesomeIcon icon={faChevronRight} 
+        className={
+                `Wrapper__icon ${theme ? 'color__Bright' : 'color__Dark'}`}/>
+
+                                                
+                                </div>                                       
                            ))}
                         </div>
                         <React.Fragment>                                      
@@ -102,14 +107,15 @@ const Wrapper = styled.div `
             background-color:white;
         }
         .Dark {
-                background-color:black;
+                background-color:white;
         }
         .color__Bright {
             color:black;
         }
         .color__Dark {
                 fill: white;
-                color: white;
+                color: black;
+                font-weight:600;
         }
         //=========================================================================
         width: 20rem;
@@ -120,8 +126,9 @@ const Wrapper = styled.div `
    
        .label_icon {
             display:flex;
-            grid-column-gap:10px;
+            grid-column-gap:15px;
             font-size:inherit;
+         
        }
         .showitem {
                   width:58rem;
@@ -129,14 +136,9 @@ const Wrapper = styled.div `
                   margin-left:16rem;
                   opacity: 0;           
         }
-        .showitem.show {
-                        opacity: 1; 
-                        
-                      
-                       
-                         
-
-                }
+.showitem.show {
+         opacity: 1; 
+}
     .Wrapper__label--menu {
             
              cursor: pointer;
@@ -144,6 +146,7 @@ const Wrapper = styled.div `
             display: flex;
             justify-content: space-between;
             align-items: center;
+          
             font-family: "Lato", sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -154,12 +157,14 @@ const Wrapper = styled.div `
             color: red;
     }
    .Wrapper__icon {
-             width: 24px;
-             height: 20px;
+             width: 8px;
+             height: 18px;
              display: inline-block;
              background-repeat: no-repeat;  // không lặp lại ảnh 
              margin-right: 4px;
              background-size: contain;
+             color: black;
+             font-weight: 600;
    }
  
    .Wrapper__label {
