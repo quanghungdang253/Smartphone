@@ -126,6 +126,7 @@
     
 }
 .text {
+        min-height: 50px;
         padding:5px 5px;
         margin: 10px 0px 5px 0px;
         background-color: #f3f4f6;
@@ -226,7 +227,7 @@
           margin-right: auto;
           padding: 1.3rem 1.3rem 3rem 1.3rem;
           width: 97%;
-          height: 38em;
+          max-height: 38em;
           cursor: pointer;
           border-radius: 0.5rem;
           box-shadow: 0 2px 3px black;   

@@ -4,7 +4,7 @@ import { TitleandProducts } from './Components/TitleandProducts';
 import Navigation_header from './Components/Navigation_header';
 import Menuheader from '../Common/Menuheader';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
-import imgQuangCao from './icon/imgQuangCao.jpg';
+import AdvertisiPhoto from './Components/advertising-photo';
 import styled from 'styled-components';
 import Vd1 from '../../vd';
 import styles from './styles/main-header.module.scss';
@@ -21,10 +21,8 @@ let { theme } = useValue();
         <div className={styles.header}> 
       
             <div className={styles.mainHeaders}>
-            <div className={styles.boxAdvertisementImg}> 
-                  <img src={imgQuangCao} alt='' className={styles.advertisementImg} /> 
-            </div>
-           
+         
+           <AdvertisiPhoto/>
                 <nav className={styles.wrapperMainHeader}> 
                      <TitleandProducts shows={setShow}/>
                              <Search  shows={setShow1}/> 

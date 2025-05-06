@@ -1,0 +1,50 @@
+
+
+.container {
+    position: relative;
+          min-height: 50px;
+        max-width: 100%;
+        &__boxImg {
+                position: relative;
+             
+        }
+      
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 50px;
+            position: absolute;
+           
+        }
+        
+    .boxBtn {
+          margin-left: 7%;
+         margin-right: 7%;
+         top: 25px;
+         position: absolute;
+         display: flex;
+         align-items: center;
+    //    grid-column-gap: 100%;
+         z-index: 1000;
+        height: 100%;
+        width: 85%;
+        
+        .btn {
+            height: 30px;
+            width: 30px;
+            border-radius: 999px; 
+            opacity: 0.6;    
+        }
+      
+        .btnRight {
+            margin-left: auto;
+        }
+        
+    }
+   
+}
+.container:hover {
+    .btn {
+        opacity: 1;
+    }
+}
