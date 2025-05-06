@@ -15,7 +15,7 @@ const Productads = () => {
    
   
    let title = [
-        {id: 0, title: "IPHONE 16 PROMAX" , namesale: "Lên đời tặng AirPods 4" },
+        {id: 0, title: "TECNO SPARK 30 PRO" , namesale: "Lên đời tặng AirPods 4" },
         {id: 1, title: "GALAXY S25 ULTRA", namesale: "Đặt trước ngay"},
         {id: 2, title: "TECNO CAMON 30S", namesale: "Mở lộc chỉ 4.49 triệu"},
         {id: 3, title: "LOA JBL", namesale: "Sôi động đón xuân"},
