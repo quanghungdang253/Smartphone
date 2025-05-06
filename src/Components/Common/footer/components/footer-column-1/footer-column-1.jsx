@@ -41,11 +41,11 @@ function FooterColumnOne(props) {
                         </div>
                         <div className={styles.box2}>  
                                 <h1>Thông tin và Chính sách </h1>
-                                 <h1> Chính sách bảo hành </h1>
-                                 <h1> Chính sách bảo mật </h1>
-                                  <h1>Chính sách sử dụng </h1>
-                                  <h1> Chính sách kiểm hàng </h1>
-                                 <h1> Trung tâm bảo hành Apple tại Việt Nam </h1>
+                                 <h2> Chính sách bảo hành </h2>
+                                 <h2> Chính sách bảo mật </h2>
+                                  <h2>Chính sách sử dụng </h2>
+                                  <h2> Chính sách kiểm hàng </h2>
+                                 <h2> Trung tâm bảo hành Apple tại Việt Nam </h2>
 
                         </div>
                         </div>

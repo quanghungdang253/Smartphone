@@ -24,7 +24,7 @@ import { addCart } from "../../../../features/cart/cartSlice";
 
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
-import MainFooter from "../../footer/main-footer";
+
 //======================================hình ảnh============================================================
 // áp dụng quy tắc  camelCase  để đặt tên 
  function InformationPhones({Data , id, nameEnpoint}) {
@@ -32,7 +32,7 @@ import MainFooter from "../../footer/main-footer";
   const navigate  = useNavigate();
   const dispatch = useDispatch();
   
-  const [customs, setCustoms] = useState(false);
+  const [customs, setCustoms] = useState(true);
   const [active, setActive] = useState(0);
   const [preindex , setIndex] = useState(0);
  
@@ -101,7 +101,6 @@ const parseNumber = (value) => {
     return formatter.format(value);
   };
   
-
   const handleActive = (id, ischecked) => {
     const product = Data.attached__product.find((item) => item.id === id);
     if (!product) return;
@@ -149,10 +148,12 @@ const parseNumber = (value) => {
     }
   };
   const addProduct = () => {
-    
       dispatch(addCart(Data));
       handleALert()
-  
+}
+const buyNow = () => {
+      dispatch(addCart(Data));
+      window.location.href = '/Cart';
 }
 const addProduct_index_one = (id) => {
 
@@ -238,10 +239,6 @@ const sendValueInput = (data) => {
         window.removeEventListener("resize", handleScroll);
     };
 }, [allowScrollLeft]);
-
-
-
-
      return (
     
       <div className={styles.Container}>
@@ -267,7 +264,7 @@ const sendValueInput = (data) => {
           <div className={styles.boxleft}>
                 <Slideimage image={Data?.image} index={preindex}/>
              
-            
+
           </div> 
         </div>  
         <aside 
@@ -333,26 +330,28 @@ const sendValueInput = (data) => {
                                   </div>                         
                             </div>
                             <div className={style__sale.listimage}> 
-                                   <ListimageProduct image={Static_data.image__advertisement}/>            
+                                   <ListimageProduct image={Static_data.image__advertisement} />            
                             </div> 
                               
                      </div>
                      <div>  
-                            {!customs ? (<Link className={style__sale.btn__link}>  Lên đời ngay </Link>) 
+                            {!customs ? (<Link className={`${style__sale.btn__link} ${style__sale.btn}}`}>  Lên đời ngay </Link>) 
                 
                             : (
                               <>    
                                   <div className={style__sale.Box__buy__now}>
                                       <Link 
-                                        className={` ${style__sale.btn__buy}`}
-                                       
-                                         >  Mua ngay </Link>
-                                      <button className={style__sale.btn__add__product}
+                                        className={` ${style__sale.btn__buy} ${style__sale.btn}`}
+                                        onClick={() => {
+                                          buyNow();
+                                       }}
+                                         >  Mua ngay
+                                          </Link>
+                                      <button className={`${style__sale.btn__add__product} `}
                                       
                                     
                                        onClick={() => {
                                             addProduct();
-                                            
                                        }}>
                                               <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:0/q:70/plain/https://cellphones.com.vn/media/wysiwyg/add-to-cart.png" alt=""/>
                                                Thêm giỏ hàng 

@@ -9,6 +9,9 @@
     .box1 {
             display: grid;
             grid-row-gap: 1rem;
+            h2 {
+                 font-weight: none;
+            }
     }
     .box2 {
         display: grid;

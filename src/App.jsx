@@ -100,7 +100,7 @@ import store from './app/store';
 import MainChatbox from './Components/Chat/main-chatbot';
 import MainCart from './Components/Pages/cart-pages/main-cart/main-cart';
 import HandleAlert from './Components/Common/components/handle-alert';
-import MainFooter from './Components/Pages/footer/main-footer';
+import MainFooter from './Components/Common/footer/main-footer';
 // =========================================chatbot==============================================
 
 export default function App() {

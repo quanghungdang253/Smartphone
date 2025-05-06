@@ -1,9 +1,11 @@
 
 
+           
+$color-hover:  #fb4e4e;
+
 body {
    counter-reset: section; 
 }
-
 
 
 .sale {
@@ -69,6 +71,13 @@ body {
             margin-top: 1rem; 
    }
 }
+.btn {
+   background: linear-gradient(#f52f32, #e11b1e);  
+}
+.btn__buy:hover{
+   background: #e28d8d; 
+}
+
 .btn__link {
 margin-top: 1rem;
  font-family:'Times New Roman', Times, serif;
@@ -79,13 +88,16 @@ font-weight: 800;
   text-decoration: none;
   text-align: center;
    color: rgb(255, 255, 255);
-
-   background: linear-gradient(#f52f32, #e11b1e);  
+   background-color: rgb(237, 30, 30);
    display: flex;
    align-items: center;
    justify-content: center;
    border-radius: 5px;
    border: 1px solid black;
+}
+.btn__link:hover {
+background-color: $color-hover;
+
 }
   .Box__buy__now {
     
@@ -116,7 +128,9 @@ font-weight: 800;
              display: flex;
             align-items: center;
             justify-content: center;
-
+      }
+      .btn__buy:hover {
+            background: $color-hover;
       }
       .btn__add__product {
          border-radius: 10px;

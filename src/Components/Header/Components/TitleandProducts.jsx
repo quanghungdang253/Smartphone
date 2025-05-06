@@ -94,24 +94,30 @@ const HeaderTitle = styled.div`
     }
     .title {
         font-family: "Lato", serif;
-        color: yellow;
-        font-size:21px;
-        font-weight: 800;
+        color: white;
+        font-size:20px;
+        font-weight: 900;
      
     }
 `;
 
 const Dropdowncont = styled.div`
   width:25%;
+     
+              
+        
          .header__iconmenu {
+            background-color:black;   
             border: 1px solid red;
             font-weight: 700;
             color: white;
             width: 7rem;
-            font-size: 10px;
+            font-size: 11px;
+             line-height:5px;
          }
          .iconmenu {
             padding-right: 3px;
+            font-size: 17px;
          }
 `;
 

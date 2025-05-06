@@ -14,7 +14,7 @@ function FooterColumnTwo(props) {
         <div className={styles.mainFooterTwo}>
                 <div className={styles.box1}> 
                     <h1> Dịch vụ thông tin khác </h1>
-                    <h1>Khách hàng doanh nghiệp (B2B)</h1>
+                    <h2>Khách hàng doanh nghiệp (B2B)</h2>
                     <h2>Ưu đãi thanh toán</h2>
                     <h2>Quy chế hoạt động</h2>
                     <h2>Chính sách bảo mật thông tin cá nhân</h2>

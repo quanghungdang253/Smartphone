@@ -118,11 +118,10 @@
 }
 .box__body_link {
     .image {
-        width: 75%;
-        margin-left: 1.5em;
+        width: 90%;
+        margin-left: 1rem;
         margin-bottom:0.5rem;
-        display: flex;
-        justify-content:center;
+    
     }
     
 }
@@ -192,8 +191,9 @@
             width:100%;   
         }
         .icon {
-            width:1rem;
-            height:1rem;       
+            width:1.2rem;
+            height:1.2rem;   
+               
         }
         .icon__star {
             color: red;
@@ -226,10 +226,13 @@
           margin-right: auto;
           padding: 1.3rem 1.3rem 3rem 1.3rem;
           width: 97%;
-          height: 35em;
+          height: 38em;
           cursor: pointer;
           border-radius: 0.5rem;
-          box-shadow: 0 2px 3px black;                
+          box-shadow: 0 2px 3px black;   
+          .price_up_down {
+                margin-top: 2rem;
+          }            
 }
     
 .Showphone__Info:hover {

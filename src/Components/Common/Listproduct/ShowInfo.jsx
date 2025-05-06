@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
 import { Helmet } from 'react-helmet-async';
 import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
-
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -21,24 +20,13 @@ import useHandledetailApi from '../../../Api/use-handle-detail-phone';
 import { nameProduct } from '../componentEnpoint';
 import useEnpoint from '../../../Api/use-handle-enpoint';
 import ChildComponent from '../../../Api/handle-enpoint';
-
+import {listDataHome, ListProduct} from './data-name-folder';
 // =========================customs hook==========================================
 import { use } from 'react';
 import styled from 'styled-components';
 
 function ShowInfo(props) {
-  let NameDataHome_0 = ["saleProduct1", "saleProduct2", "saleProduct3", "saleProduct4", "saleProduct5", "saleProduct6", "saleProduct7", "saleProduct8"];
-  let NameDataHome_1 = ["saleProductHomeA_0","saleProductHomeA_1", "saleProductHomeA_2", "saleProductHomeA_3", "saleProductHomeA_4", "saleProductHomeA_5", "saleProductHomeA_6", "saleProductHomeA_7"];
-  let NameDataHome_2 = ["saleProductHomeB_0","saleProductHomeB_1","saleProductHomeB_2","saleProductHomeB_3","saleProductHomeB_4","saleProductHomeB_5","saleProductHomeB_6","saleProductHomeB_7","saleProductHomeB_8"];
 
-  let NameDataHome_3 = ["saleProductHomeC_0", "saleProductHomeC_1","saleProductHomeC_2","saleProductHomeC_3","saleProductHomeC_4","saleProductHomeC_5","saleProductHomeC_6","saleProductHomeC_7","saleProductHomeC_8"];
-
-  let ListProduct = ["Tivi", "Đồ gia dụng", "Loa","Laptop","product5", "product6","product7", "product8"]
-  let listDataHome = [
-          NameDataHome_0,
-           NameDataHome_1,
-           NameDataHome_2
-];
 const [nameProduct ,setNameProduct] = useState(listDataHome);
 
     const { theme } = useValue();
@@ -187,10 +175,7 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
                         
                         className={styles.Link}
                         onMouseEnter={() => setGetIndex(List.indexCategory)}
-                  
-
-  
-                         
+                   
                         >
                            <div className={styles.box__body_link}> 
                              <div style={{height: '240px'}}>   
