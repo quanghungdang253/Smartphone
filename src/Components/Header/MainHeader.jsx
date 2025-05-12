@@ -24,8 +24,10 @@ let { theme } = useValue();
          
            <AdvertisiPhoto/>
                 <nav className={styles.wrapperMainHeader}> 
+                 {/* <div className={styles.responsive__header}>   */}
                      <TitleandProducts shows={setShow}/>
-                             <Search  shows={setShow1}/> 
+                            <Search  shows={setShow1}/>
+                 {/* </div>  */}
                        <Navigation_header/>
                  </nav>               
             </div> 

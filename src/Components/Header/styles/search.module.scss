@@ -133,3 +133,20 @@ h1 {
 .icontrends {
 
 }
+
+//===================================responsive=============================
+
+@media (max-width: 1440px) {
+        .Containerinput {
+                height: 35px;
+                min-width: 25em;
+               
+
+        }
+        .Container {
+                .input {
+                height: 100%;
+         }
+}
+        }
+    

@@ -9,6 +9,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
  import Overlay from '../../Overlayer'; // Import the Overlay component
  import Menuheader from '../../Common/Menuheader';
+ import '../styles/TitleandProducts/TitleandProducts-responsive.scss';
+ import styles from '../styles/TitleandProducts/TitleandProducts.module.scss';
  import titleImage from '../icon/titles.jpg';
 const TitleandProducts = ({shows}) => {
  
@@ -37,21 +39,29 @@ const TitleandProducts = ({shows}) => {
 
     return (
        
-            <Header>
+            <Header className={styles.Header}>
                 <Link to={'/'} className='Link'>
-                    <HeaderTitle>
+                    <div className={styles.Header__Title}>
                         <img
                             src={titleImage}
                             alt=''
-                            className='header__image'
+                            className={styles.header__image}
                         />
-                        <Typography variant='h1' className='title'> Quang Hùng Store</Typography>
-                    </HeaderTitle>
+                        <Typography variant='h1' className={styles.title}> Quang Hùng Store</Typography>
+                    </div>
                 </Link>
-                <Dropdowncont>
-                    <div className='header__menu'>
-                        <Button variant="outlined" className='header__iconmenu' onClick={handleMenuClick}>
-                                <FontAwesomeIcon icon={faBars} className='iconmenu' fade /> Danh Mục
+                <Dropdowncont className={styles.Header__Dropdowncont}>
+                    <div className={styles. header__menu}>
+                    <img
+                            src={titleImage}
+                            alt=''
+                            className={styles.header__image_responsive}
+                        />
+                        <Button variant="outlined" className={styles.header__iconmenu} onClick={handleMenuClick}>
+                                <FontAwesomeIcon icon={faBars} className={styles.iconmenu} />
+
+                                <span className={styles.menu}> Menu </span>
+                                <span className={styles.category}> Danh mục </span>
                         </Button>
                     </div>
                 </Dropdowncont>
@@ -61,13 +71,7 @@ const TitleandProducts = ({shows}) => {
 };
 
 const Header = styled.div`
-        display: flex; 
-        align-items: center;    
-        gap: 1em;
-        font-family: "Merriweather", serif;
-        font-weight: 300;
-         font-style: normal;
-         max-width: 20em;
+      
     .Menuheader {
             position: absolute;
     }
@@ -77,48 +81,18 @@ const Header = styled.div`
 `;
 
 const HeaderTitle = styled.div`
-    display: flex;
-    align-items: center;
+   
 
-    .header__image {
-     
-        width:25%;
-        object-fit:cover;
-        border-radius: 10px;
-       
-    }
-    h1 {
-        font-size: 1.3rem;
-        color: white;
-        font-weight: 700;
-    }
-    .title {
-        font-family: "Lato", serif;
-        color: white;
-        font-size:20px;
-        font-weight: 900;
-     
-    }
+   
+   
+   
 `;
 
 const Dropdowncont = styled.div`
-  width:25%;
+
      
               
-        
-         .header__iconmenu {
-            background-color:black;   
-            border: 1px solid red;
-            font-weight: 700;
-            color: white;
-            width: 7rem;
-            font-size: 11px;
-             line-height:5px;
-         }
-         .iconmenu {
-            padding-right: 3px;
-            font-size: 17px;
-         }
+       
 `;
 
 

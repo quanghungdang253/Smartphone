@@ -122,12 +122,12 @@ export default function App() {
               </ContentWrapper>
             </HelmetProvider>             
                     
-            <div className='CommunicationSetting'>  
+            {/* <div className='CommunicationSetting'>  
               <CommunicationSettings/>     
             </div> 
             <div className='chatBot'> 
               <MainChatbox/>
-            </div>
+            </div> */}
           </ParentContext>    
         </Style>
         <FooterWrapper>

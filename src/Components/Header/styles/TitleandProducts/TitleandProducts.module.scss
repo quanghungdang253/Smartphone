@@ -1,0 +1,131 @@
+
+
+
+
+.Header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 20em;
+    &__Title{
+         display: flex;
+         align-items: center;
+          h1 {
+             font-size: 1.3rem;
+             color: white;
+             font-weight: 700;
+        }
+          .header__image {
+              width:25%;
+              object-fit:cover;
+              border-radius: 10px
+        }
+         .title {
+              font-family: "Lato", serif;
+              color: white;
+              font-size:20px;
+              font-weight: 900;
+              
+        }
+    }
+    &__Dropdowncont {
+          width:25%;
+           
+         .header__iconmenu {
+          
+            background-color:black;   
+            border: 1px solid red;
+            font-weight: 700;
+            color: white;
+            width: 7rem;
+            font-size: 11px;
+             line-height:5px;
+         }
+          .header__image_responsive {
+             display: none;
+          }
+         .iconmenu {
+            padding-right: 3px;
+            font-size: 17px;
+         }
+         .menu {
+                display: none;
+         }
+         .category {
+                display: block;
+         }
+
+    }
+}
+
+// ===================================resonsive=============================================================
+
+@media (max-width: 1400px){
+         .Header {
+            min-width: 100px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: start;
+            grid-row-gap: 0;
+                 &__Title {
+                     .title {
+                           font-size: 1em;
+                           display: none;
+                     }
+                     .header__image {
+                      
+                        min-width: 30%;
+                        height: 30%;
+                        display: none;
+                     }
+                 }
+                 &__Dropdowncont {
+                    
+                    .header__menu {
+                       
+                        display: flex;
+                        align-items: center;
+                        align-items: center;
+                        
+
+                    }
+                     .header__iconmenu {
+                      min-width: 3rem;
+                      font-size: 7px;
+                      line-height: 10px;
+                      height: 30px;
+                      color: rgb(0, 0, 0);
+                      display: flex;
+                      flex-direction: column;
+                      background-color: white;
+            
+                 } 
+                 .header__image_responsive{
+                        border-radius: 999px;
+                        max-width: 3rem;
+                         height: 30%;
+                        display: block;
+                 }
+                  .iconmenu {
+                      padding-right: 3px;
+                      font-size: 14px;
+                   }
+                    .menu {
+                      display: block;
+                    }
+                    .category {
+                       display: none;
+                    }
+                }
+         
+         }
+         .title {
+           
+         }
+       
+      
+}

@@ -34,10 +34,35 @@
     background-color: #2a83e9;
     padding-left: 7%;
     padding-right: 7%;
-    width: 100%;
+    
      min-height: 75px;
       position: relative;
       z-index:1000;
       display: grid;
       grid-template-columns: 30% 27% 30%; 
+      .responsive__header {
+         display: flex;
+         align-items: center;
+       
+      }
+}
+
+// =================================Responsive====================================
+
+@media  (max-width: 1400px) {
+.wrapperMainHeader {
+  
+    background-color: #2a83e9;
+    padding-left: 7%;
+    padding-right: 7%;
+
+  
+     min-height: 75px;
+      position: relative;
+      z-index:1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+}
 }
