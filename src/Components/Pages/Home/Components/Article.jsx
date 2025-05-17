@@ -74,7 +74,7 @@ const Container = styled.div`
       }
 
 @media (max-width: 768px) {
-    
+    height: 600px;
  .Article {
     margin-top:4rem;
     margin-left:1.5rem;
@@ -86,7 +86,7 @@ const Container = styled.div`
 .Article__image {
      min-width:100%;
      border-radius:1rem;
-     height:100%;                        
+     height:125%;                        
 }
 }
 `

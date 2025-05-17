@@ -98,20 +98,27 @@ const hotSaleComponent = ({data , dataEnpoint, namephone, ...props}) =>
 const DefaultComponent = ({data,  dataEnpoint, namephone,  ...props}) => (
     <Suspense fallback={(<Loading/>)}>  
         <HotSaleComponents> 
-             <div className='componentSale_1'>   
-              
-            </div>
+          
+           
                 <ShowInfoHome   enpoint={namephone}  {...props}/>
+           
         </HotSaleComponents> 
     </Suspense>
 )
 const HotSaleComponents = styled.div `
+position: relative;
+bottom:0px;
         overflow: hidden;
       overflow:hidden;
       background-color: white;
       border-radius:10px;
+    
       .componentSale_1 {
             margin-top: 2rem;
+      }
+      @media (max-width: 768px) {
+            position: relative;
+            
       }
      
 `

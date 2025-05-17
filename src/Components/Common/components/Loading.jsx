@@ -4,11 +4,12 @@ import React from 'react';
 import { Oval } from 'react-loader-spinner';
 import styled from "styled-components";
 function Loading(props) {
+  const isLoadingMobie = window.innerWidth < 768;
     return (
         <ProgressBars>
-                                        <Circles
-                                                height="200"
-                                                width="200"
+                                        <Circles className="Circles"
+                                               height={isLoadingMobie ? 120 : 200}
+                                               width={isLoadingMobie ? 120 : 200}
                                                 color='blue'
                                                 ariaLabel='loading'
                                                 
@@ -82,11 +83,24 @@ const ProgressBars = styled.div`
             grid-column-gap: 3rem;
             position: relative;
             top: 200px;
+            .Circles {
+                   
+            }
             .loading {
                 font-size:1.5rem;
                 font-family: 'Times New Roman', Times, serif
             }
 
+            @media (max-width: 768px) {
+                 position: relative;
+            top: 200px;
+            left:100px;
+               .Circles {
+                  width:80px !important;
+                  height:80px !important;
+              }
+                  
+            }
 
 `
 export{ Ovals };

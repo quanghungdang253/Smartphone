@@ -30,7 +30,14 @@ import { faL } from '@fortawesome/free-solid-svg-icons';
         },[namephone])
         const SelectedComponent = (storeName ?  storeName[namephone] :  ComponentMap[namephone]) || (logic ? hotSaleComponent : DefaultComponent);
       
-        return <SelectedComponent data={data} namephone={namephone} {...props} />;
+        return (
+                <div> 
+                         <SelectedComponent data={data} namephone={namephone} {...props} />;
+                
+                </div>
+        )
+        
+   
         
     }
 export default RenderbyCategory;

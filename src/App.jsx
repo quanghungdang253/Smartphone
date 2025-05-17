@@ -112,6 +112,7 @@ export default function App() {
         <Style>
           <ParentContext>
             <HelmetProvider>   
+          
               <MainHeader />
               <ContentWrapper>
                {/* <Breadcrumb /> */}
@@ -131,6 +132,7 @@ export default function App() {
             </div> 
             <div className='chatBot'> 
               <MainChatbox/>
+          
             </div>
           </ParentContext>    
         </Style>

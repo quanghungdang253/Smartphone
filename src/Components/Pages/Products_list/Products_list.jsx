@@ -37,9 +37,6 @@ function Products_list(props) {
                   <Loading/>
            ) : (
           <div className={styles.Render__product}>
-          
-                
-            
                   <RenderbyCategory logic={state} dataEnpoint={dataEnpoint} namephone={namephone} data={data} {...props}/>
           </div>
       )}

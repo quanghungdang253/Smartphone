@@ -5,7 +5,11 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 const Breadcrumb = ({ nameProduct }) => {
   const location = useLocation();
 
-  const namepath = location.pathname.split('/').filter(p => p); // ['Detail', 'samsung', '1']
+const namepath = location.pathname
+  .split('/')
+  .filter(p => p)
+  .map(p => decodeURIComponent(p)); // 👈 THÊM decode ở đây
+
   let breadcrumbs = [];
   let path = '';
 
@@ -51,7 +55,7 @@ const Breadcrumb = ({ nameProduct }) => {
     breadcrumbs = namepath.map((part) => {
       path += `/${part}`;
       return {
-        label: labelMap[part] || decodeURIComponent(part),
+        label: labelMap[part] || path,
         link: path,
       };
     });
