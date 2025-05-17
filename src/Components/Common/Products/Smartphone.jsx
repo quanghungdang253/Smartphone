@@ -6,7 +6,10 @@ import { Typography } from '@mui/material';
 import createTheme from '@mui/material';
 function Smartphone(props) {
              const value = props.value;
-  
+          if(!value){
+              return;
+          }
+          
     return (
         <Wrapper>
              <PhoneCompany className='tabchoose'> 
@@ -27,19 +30,22 @@ function Smartphone(props) {
                     ))}
                     </>
                   ): (
-                    <p>{alert("chữa lấy data")}</p>
+                    <p>đang lấy dữ liệu </p>
                   )}               
             </PhoneCompany>
-            <Price className='tabchoose'> 
-                       <Typography variant='h6'> Mức giá </Typography>
-                    {value.price.map((list,id) => (
-                            <Link
-                             key={list.id}
-                              className='Link'
-                              > {list.price_level}
-                             </Link>
-                    ))}
-            </Price>  
+       <Price className='tabchoose'> 
+          <Typography variant='h6'> Mức giá </Typography>
+            {value.price && value.price.length > 0 ? (
+               value.price.map((list,id) => (
+           <Link key={list.id} className='Link'> 
+              {list.price_level}
+          </Link>
+      ))
+  ) : (
+      <p>Đang lấy dữ liệu...</p>
+  )}
+</Price>
+ 
             <PhoneCompany className='tabchoose'> 
                   <Typography variant='h6'> Điện thoại hot 2025 </Typography>
                   {value.phonecompany && value.phonecompany.length > 0 ?  (
@@ -54,7 +60,7 @@ function Smartphone(props) {
                          </Link>      
                     ))
                   ): (
-                    <p>{alert("chữa lấy data")}</p>
+                    <p>Đang lấy dữ liệu </p>
                   )}               
             </PhoneCompany>
             

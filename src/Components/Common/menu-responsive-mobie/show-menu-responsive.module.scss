@@ -1,0 +1,86 @@
+
+
+
+
+
+// -============================style chung ===========================
+.common__format_product {
+     display: flex;
+     grid-column-gap: 1rem;
+     grid-row-gap: 1rem;
+     flex-wrap: wrap;
+}
+.Link {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+}
+.label {
+         color: red;
+         font-size: 14px;
+         font-family: 'Times New Roman', Times, serif;
+}
+
+//=======================================================================
+
+.mainBox {
+        padding-left: 10px;
+        &__box1 {
+            .tabchoose {
+                margin-top: 0.5rem;
+                .label {
+                   font-weight: 800;
+                }
+                .image__menu {
+                    height: 48px;
+                    width: 48px;
+                }
+                .Link {
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+                &__product {
+                       
+                }
+            }
+        }
+        &__box2 {
+             .label {
+                font-weight: 800;
+                 margin-bottom: 5px;
+            }
+           .tabchoose {
+               margin-top: 0.5rem;
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+           
+           }
+              .Link {
+                border-radius: 10px;
+                      margin-left: 5px;
+                     margin-bottom: 5px;
+                     display: inline-block;
+                     padding: 5px;
+                    background-color: rgb(233, 233, 233);
+                    padding: 10px;
+              }  
+        }
+        &__box3 {
+            .label {
+                 margin-bottom: 5px;
+                 font-weight: 800;
+            }
+               .tabchoose {
+                  margin-top: 0.5rem;
+           }
+              .Link {
+                 border-radius: 10px;
+                     display: inline-block;
+                     padding: 5px;
+                     margin-left: 5px;
+                     margin-bottom: 5px;
+                    background-color: rgb(233, 233, 233);
+              }
+        }
+}

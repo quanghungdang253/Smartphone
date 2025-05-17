@@ -7,7 +7,7 @@
     .link {
         font-size: 14px;
         display: inline-block;
-        width: 500px;
+        max-width: 500px;
         height: 30px;
         text-align: center;
         line-height: 2;
@@ -38,5 +38,17 @@
         vertical-align: middle;
         margin: -2px 0 0 5px;
     }
+}
+
+//=======================================responsive=================================
+
+@media (max-width: 768px) {
+        .boxShowHidden {
+             padding-top: 20px;
+             text-align: center;
+          .link {
+            min-width: 100%
+        }
+}
 }
 

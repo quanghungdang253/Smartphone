@@ -17,6 +17,8 @@ import { ToggleProvider } from '../Products_list/context/context-boolean';
 import imagebackground from './Components/Section/image/background.jpg';
 import image from './Components/Section/image/khai-xuan-trai.jpg';
 import styles from './style/home.module.scss';
+import MenuResponsiveMobie from '../../Common/menu-responsive-mobie/menu-responsive-mobie';
+
 function Home({home}) {
  const {theme} = useValue();
      const [logic , setLogic] = useState(false);
@@ -27,6 +29,7 @@ function Home({home}) {
             <MainHome 
                 style={{backgroundColor: theme ? '#EEEEEE' : "#111111"}}
                 bgImage={imagebackground}
+                className={styles.MainHome}
         > 
                         <div className={styles.containerImage}>  
                                  <div> 
@@ -36,22 +39,32 @@ function Home({home}) {
                                         <img src={image} alt className={`${styles.childImage} ${styles.imageRight}`} />
                                 </div>
                         </div>
-                <div className='Mainheader'> 
+                <div className={styles.Mainheader}> 
                         <Helmet>
                                 <title> Quang Hùng Store </title>
                         </Helmet>
-                         <header className='Box__header'> 
-                             <div className='Header Style'>    
-                                 <Menuheader/>
-                                                <Productads/>
-                                 <Article/>
+                         <header className={styles.Box__header}> 
+                             <div className={`${styles.Header} ${styles.Styles}`}>  
+                                <div className={styles.menuWeb}>    
+                                         <Menuheader/>
+                                 </div>
+                            
+                                 <div className={styles.Productads}> 
+                                        <Productads/>
+                                </div>
+                                  {/* <div className={styles.FormSection__Web}>     
+                                                 <FormSection />   
+                                 </div> */}
+                                 <div className={styles.Article}> 
+                                         <Article/>
+                                 </div>
                              </div>
-                              <div className='form__section'>
-                                 <FormSection Toggle={setLogic} />
+                              <div className={styles.form__section}>
+                                        <FormSection Toggle={setLogic} />
                               </div>
                             
                          </header>
-                         <div className={"overlayer Productlist"}> 
+                         <div className={`${styles.overlayer} ${styles.Productlist}`}> 
                            <ToggleProvider>  
                                         <Products_list logic={logic}/>
                                         </ToggleProvider>
@@ -74,37 +87,7 @@ const MainHome = styled.div `
       z-index: 2;
     // ======================================thiết lập theme ================================
   //==================================================================================
-  .Box__header {
-        margin-left: 7%;
-        margin-right: 7%;
-  }
- 
-.Header {
-          padding-top:1rem;
-          height: 505px;
-          margin-top:7rem;
-          display: flex;  
-          align-items: center;  
-          justify-content:center;
-          grid-column-gap: 1%;
-          height: 505px;   
-          max-width:1450px; 
-          box-sizing: border-box;
-}
-.form__section {
-         max-width: 1450px;
-         margin-top: 1rem;
-         margin-bottom:2rem;           
-}
-.Productlist {
-        margin-top:23rem;
-}
-.Style {
-    
-}   
-.btn__wrappper {
-                                position: absolute;
-        } 
+
 
 `
 

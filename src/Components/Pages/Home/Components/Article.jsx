@@ -73,5 +73,21 @@ const Container = styled.div`
                     object-fit:fill;
       }
 
+@media (max-width: 768px) {
+    
+ .Article {
+    margin-top:4rem;
+    margin-left:1.5rem;
+     align-items:end;
+     justify-content:space-around;
+     height:100%;
+
+}
+.Article__image {
+     min-width:100%;
+     border-radius:1rem;
+     height:100%;                        
+}
+}
 `
 export default Article;

@@ -12,7 +12,6 @@
      h1 {
         font-size: 14px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin-bottom: 1rem;
         font-size: 14px;
         background-color: rgb(221, 221, 221);
         padding: 10px 10px;
@@ -95,7 +94,7 @@
        }
        .mainContent {
        display: grid;
-        grid-row-gap: 1rem;
+        grid-row-gap: 5px;
             .Items {
                
             }
@@ -157,4 +156,13 @@
         }
           
     }
+}
+
+//=======================================responsive===========================
+@media (max-width: 768px) {
+        .Container {
+                position: relative;
+                top: -100px;
+                left: 88px;
+        }
 }

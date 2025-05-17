@@ -111,6 +111,12 @@ body{
     height: 100vh;
     border: 1px solid black;
 }
+.CommunicationSetting {
+   display: block;
+}
+.chatBot {
+  display: block;
+}
 
 
 
@@ -219,4 +225,18 @@ body{
 /* Hiệu ứng hover cho nút gửi */
 .ReactChatbotKit-SendButton:hover {
   background-color: #0097a7;
+}
+
+
+/* ====================================responsive================================ */
+
+
+@media (max-width: 1024px) {
+      .CommunicationSetting {
+         display: none;
+}
+.chatBot {
+      display: block;
+}
+
 }

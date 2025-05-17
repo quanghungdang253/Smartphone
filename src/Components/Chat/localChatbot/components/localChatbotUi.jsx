@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import imageChatbot from '../../assets/image/imgChatbot.jpg';
 import { Button, Container, Typography, Card ,TextField, Paper, CardActions, CardContent} from "@mui/material";
 import styles from "./localChatbotUi.module.scss";
 import iconStore from '../../assets/image/titles.jpg';
@@ -37,7 +38,7 @@ const ChatBotLocal = (props) => {
             
         
      let time = setTimeout(() => {
-            let messageStore = {nameClass:"store", icon: iconStore, content: content[input], textClass: "textStore"}
+            let messageStore = {nameClass:"store", icon: imageChatbot, content: content[input], textClass: "textStore"}
             setMessage((pre) => {
                     return [...pre, messageStore];
                 });
@@ -51,7 +52,7 @@ const ChatBotLocal = (props) => {
         <Paper className={styles.Container}>  
             <div className={styles.Container__header}>
                 <div className={styles.boxheader}>  
-                    <img src={iconStore} alt="" 
+                    <img src={imageChatbot} alt="" 
                     className={`${styles.iconStore} ${styles.icon}`}/>
                     <h1 className={styles.nameClass}> Quang Hùng Store </h1>
                 </div>
@@ -63,7 +64,7 @@ const ChatBotLocal = (props) => {
             </div>
             <div className={styles.Container__content}>
                     <div className={styles.contentWelcome}>  
-                                <img src={iconStore} alt=""
+                                <img src={imageChatbot} alt=""
                                  className={`${styles.iconMessage} ${styles.icon}`}/>
                                 <h1>
 
@@ -72,10 +73,7 @@ const ChatBotLocal = (props) => {
   
                                  </h1>
                     </div>
-                                                   
-
-                    
-                    
+                                                
                 {message.length > 0 ? (
                     <div className={styles.mainContent}>  
                         {message.map((Item , index) => (
@@ -88,7 +86,7 @@ const ChatBotLocal = (props) => {
                     </div>
                    
                 ) : (
-                    null
+                     null
                    
                 )}
        

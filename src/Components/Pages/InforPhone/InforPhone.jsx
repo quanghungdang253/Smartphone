@@ -9,7 +9,7 @@ import useHandledetailApi from '../../../Api/use-handle-detail-phone';
 import Loading from '../../Common/components/Loading';
 import { Helmet } from 'react-helmet-async';
 import Category_Name from './data/Category-Name';
-
+import Breadcrumb from '../../Common/location/location';
 
 function InforPhone(props) {
     const params = useParams();  // lấy id và link từ app.jsx
@@ -19,12 +19,18 @@ function InforPhone(props) {
     const [datas,loadings]  = useHandledetailApi(link,id); // nhận dữ liệu và gọi để truyền link và id để xử lý 
     return (
                 <Wrapper>
-                       <div className='main'>                 
-                            {loadings ? ( <Loading/>) : (                                            
-                                <Main>          
-                                        <InformationPhones Data={datas} id={id} nameEnpoint={link}/>
-                                        
-                                </Main>                          
+                       <div className='mainss'>                 
+                            {loadings ? ( <Loading/>) : (                 
+                                <>             
+                                      
+                                        <InformationPhones 
+                                            Data={datas}
+                                            id={id}
+                                            nameEnpoint={link}
+                                            nameNavigation={link}
+                                        />
+                                </> 
+                                                    
                             )}                                        
                        </div>
                 </Wrapper>

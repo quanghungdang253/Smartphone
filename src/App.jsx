@@ -101,16 +101,20 @@ import MainChatbox from './Components/Chat/main-chatbot';
 import MainCart from './Components/Pages/cart-pages/main-cart/main-cart';
 import HandleAlert from './Components/Common/components/handle-alert';
 import MainFooter from './Components/Common/footer/main-footer';
+import Breadcrumb from './Components/Common/location/location';
+import { BreadcrumbProvider } from './Context/share-data-bread-crumb/share-data-bread-crumb';
 // =========================================chatbot==============================================
 
 export default function App() {
     return (
-      <Provider store={store}>  
+      <BreadcrumbProvider>  
+       <Provider store={store}>  
         <Style>
           <ParentContext>
             <HelmetProvider>   
               <MainHeader />
               <ContentWrapper>
+               {/* <Breadcrumb /> */}
                 <Routes>
                   <Route path='/' element={<Home />} />
                   <Route path='label/:namephone' element={<Products_list/>} />
@@ -122,18 +126,19 @@ export default function App() {
               </ContentWrapper>
             </HelmetProvider>             
                     
-            {/* <div className='CommunicationSetting'>  
+            <div className='CommunicationSetting'>  
               <CommunicationSettings/>     
             </div> 
             <div className='chatBot'> 
               <MainChatbox/>
-            </div> */}
+            </div>
           </ParentContext>    
         </Style>
-        <FooterWrapper>
-                <MainFooter />
-        </FooterWrapper>
-      </Provider>
+              <FooterWrapper>
+                     <MainFooter />
+              </FooterWrapper>
+        </Provider>
+    </BreadcrumbProvider>
     );
   }
   

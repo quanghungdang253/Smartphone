@@ -62,8 +62,7 @@
     border-radius: 15px;
     animation: ease-in 2s;
     padding: 30px;
-  
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: hidden;
     display: flex;
   
@@ -82,10 +81,12 @@
             object-fit:contain;
         }
         .LinkBtn {
-            text-decoration: none;
             color: black;
-            display: inline-block;
-            width: 14rem;
+                 text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                
             .img_text {
                 height: 14rem;
                 p{
@@ -138,5 +139,71 @@
             }
      }
        
+    }
+}
+
+//=========================================================responsive==========================
+
+@media (max-width: 768px) {
+    .container{ 
+             .iconNavigation {
+                display: flex;
+                justify-content: space-between;
+                    position: relative;
+                    top: 630px;
+                    .iconLeft {
+                        position: static;
+                        margin-right: auto;
+                }
+                   .iconRight {
+                        position: static;
+                        
+                 }
+             }
+             
+    }
+    .styleProduct { 
+    
+        margin-top: 22rem;
+     h1 {
+        text-align: center;
+     }
+}
+    .listProduct {
+      
+        display: flex;
+        flex-wrap: nowrap;
+        grid-column-gap: 0.5rem;
+        padding: 5px;
+    }
+     .itemProduct {
+       
+        .img {
+            max-width: 7rem !important;
+            height: 50% !important;
+            object-fit:contain;
+        }
+        .btn {
+            max-width: 7rem;
+        }
+           .LinkBtn {
+             display: flex !important;
+             flex-direction: column !important;
+            align-items: center !important;
+            text-decoration: none;
+            color: black;
+           
+            min-width: 10rem;
+            
+            .img_text {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                grid-row-gap: 1rem;
+                align-items: center;
+                height: 14rem;
+               
+             }
+        }
     }
 }

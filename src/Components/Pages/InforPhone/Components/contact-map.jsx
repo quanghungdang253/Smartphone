@@ -56,8 +56,8 @@ const Slideimage = (props) => {   //ở đây {phone} là viết tắt    const 
                 <div className={styles.HandleImage}>
                  <div className={`${styles.HandleImage__image} ${preindex === 0 ? styles.addcolor : ""}`}>
                                 <div className={styles.HandleImage__node}>  
-                                        <Button variant='outlined' onClick={() => Left()}> ⬅ </Button>
-                                        <Button variant='outlined'  onClick={() => Right()}> ➡ </Button>
+                                        <button variant='outlined' className={styles.btnLeft} onClick={() => Left()}> ⬅ </button>
+                                        <button  className={styles.btnRight} variant='outlined'  onClick={() => Right()}> ➡ </button>
                                 </div>
                                 <div className={styles.list__image}>  
                         

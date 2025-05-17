@@ -22,7 +22,8 @@
                    width: 9rem;
             }
             .table__row__content {
-                 width: 20rem;
+                 max-width: 100%;
+             
             }
        }
        .addcolor {
@@ -32,3 +33,28 @@
 }
 }
 
+
+//=============================================responsive==============================
+
+@media (max-width: 768px) {
+        .Wrapper__table {
+            p {
+                padding: 5px 5px;
+                border-radius: 10px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+       .table_row {
+            display: flex;
+            grid-column-gap: 2rem;
+            margin-bottom: 10px;
+        
+            .table__row__title {
+                   width: 9rem;
+            }
+            .table__row__content {
+              
+             
+            }
+       }
+}
+}

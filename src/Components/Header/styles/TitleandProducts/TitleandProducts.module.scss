@@ -10,6 +10,13 @@
     font-weight: 300;
     font-style: normal;
     max-width: 20em;
+    &__main_2 {
+             display: flex;
+          align-items: center;
+    }
+    &__main_1 {
+            display: none;
+    }
     &__Title{
          display: flex;
          align-items: center;
@@ -64,13 +71,62 @@
 // ===================================resonsive=============================================================
 
 @media (max-width: 1400px){
+     
+
          .Header {
+            min-height: 100px;
             min-width: 100px;
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: start;
             grid-row-gap: 0;
+            &__main_1 {
+                  display: block;
+                  display: flex;
+                  align-items: center;
+                  height: 30px;
+                  min-width: 100%;
+                 
+                  margin-bottom: 1rem;
+                  .row_one {
+                     .image_mobie {
+                           width: 45px;
+                           height: 100%;
+                           border-radius: 999px;
+                     }
+                  }
+                  .row_two {
+                     margin-left: 12em;
+                     min-width: 25em;
+                         height: 100%;
+                          border-radius: 999px;
+                        background-color: rgb(20, 116, 241);
+                        .Link {
+                           display: block;
+                           border-radius: 999px;
+                           position: relative;
+                           color: black;
+                           font-size: 12px;
+                           text-decoration: none;
+                           .text {
+                                   position: absolute;
+                                    top: 10px;
+                                   left: 10px;
+                           }
+                        }
+                        .iconGoogleMap {
+                              color: black;
+                              margin-right: 10px;
+                            
+                        }
+                  }
+
+            }
+            &__main_2 {
+                  height: 35px;
+                  // margin-top: 1rem;
+            }
                  &__Title {
                      .title {
                            font-size: 1em;
@@ -81,12 +137,12 @@
                         min-width: 30%;
                         height: 30%;
                         display: none;
+                        
                      }
                  }
                  &__Dropdowncont {
                     
                     .header__menu {
-                       
                         display: flex;
                         align-items: center;
                         align-items: center;
@@ -94,7 +150,8 @@
 
                     }
                      .header__iconmenu {
-                      min-width: 3rem;
+                        font-weight: 900;
+                      min-width: 2.4rem;
                       font-size: 7px;
                       line-height: 10px;
                       height: 30px;
@@ -108,11 +165,13 @@
                         border-radius: 999px;
                         max-width: 3rem;
                          height: 30%;
-                        display: block;
+                        display: none;
+                        
                  }
                   .iconmenu {
                       padding-right: 3px;
-                      font-size: 14px;
+                      font-size: 16px;
+                      min-width: 11px;
                    }
                     .menu {
                       display: block;
@@ -125,7 +184,29 @@
          }
          .title {
            
+         }  
+}
+
+
+
+
+@media (max-width: 768px) {
+      .Header {
+         min-width: 40px;
+         margin-left: 15px;
+         &__main_1 {
+            .row_two {
+                  margin-left: 0.5em;
+            }
+            .row_two {
+                  min-width: 16em
+            }
          }
-       
-      
+           &__Title {
+           .header__image {
+            width: 45px;
+            height: 45px;
+        }
+       }
+      }
 }

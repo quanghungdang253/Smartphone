@@ -20,7 +20,8 @@ function ListChildComponents(props) {
     ]
     return (
         <div className={styles.nameProduct}>
-            <div className={styles.nameProduct__box1}>  
+            <div className={styles.nameProduct__box1}> 
+              <div className={styles.iconStar}>   
                 <h1 className={styles.namephone}> {Data.title} </h1> 
                 <div className={styles.Wrapper__icon}> 
                     {iconstar.map((Item) => (
@@ -28,6 +29,7 @@ function ListChildComponents(props) {
                     ))}
                       
                 </div>
+                </div> 
                 <h1> 170 Đánh giá </h1>
               </div>              
               <aside className={styles.Wrapper__row__top}> 

@@ -34,10 +34,19 @@ padding: 10px 10px;
             object-fit: contain;
         }
 }
-   
-  
-    
     .img_product:hover {
        
     }
+}
+@media (max-width: 768px) {
+        .boxLabel {
+            .boxRow {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 10px;
+                &__Link {
+                    text-align: center;
+                }
+            }
+        }
 }

@@ -5,14 +5,11 @@ import { Link } from 'react-router-dom';
 function LabelProduct(props) {
      const labelProduct = props.labelProduct;
  
-    
-     
     return (
         <div className={styles.boxLabel}>
             <div className={styles.boxRow}>
-              {labelProduct.map((Item) => {
-                                
-                                return (
+              {labelProduct.map((Item) => {    
+                    return (
                         <Link key={Item.id} to={`/label/${Item.Link}`} className={styles.boxRow__Link}>
                              <img  src={Item.img} alt='' className={styles.boxRow__Img}/>
                           </Link>  

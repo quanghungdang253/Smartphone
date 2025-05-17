@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import { Button, Typography } from '@mui/material';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars , faUser, faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
  import Overlay from '../../Overlayer'; // Import the Overlay component
  import Menuheader from '../../Common/Menuheader';
  import '../styles/TitleandProducts/TitleandProducts-responsive.scss';
  import styles from '../styles/TitleandProducts/TitleandProducts.module.scss';
  import titleImage from '../icon/titles.jpg';
-const TitleandProducts = ({shows}) => {
+const TitleandProducts = ({shows ,showmenu}) => {
  
     const [isNavVisible, setIsNavVisible] = useState(false);
     
@@ -21,14 +21,16 @@ const TitleandProducts = ({shows}) => {
         event.stopPropagation(); // Prevent event from bubbling up to document
         setIsNavVisible((prev) => !prev); // Toggle the visibility of the menu and overlay
         shows(true);
+        showmenu(true);
     };
 
     useEffect(() => {
-        // Add click event listener to handle overlay closing
+     
         const handleClickOutside = (event) => {
             if (!event.target.closest('.header__menu')) {
-                setIsNavVisible(false); // Hide overlay if click is outside
+                setIsNavVisible(false); 
                shows(false);
+             
             }
         };
             document.addEventListener('click', handleClickOutside);
@@ -36,10 +38,28 @@ const TitleandProducts = ({shows}) => {
             document.removeEventListener('click', handleClickOutside);
         };
     }, []);
-
     return (
-       
             <Header className={styles.Header}>
+             <div className={styles.Header__main_1}> 
+                <div className={styles.row_one}>  
+                <Link to='/'> 
+                  <img
+                          src={titleImage}
+                          alt=''
+                          className={styles.image_mobie }  
+                  />
+                   </Link>  
+                </div>
+                <div className={styles.row_two}> 
+                    <Link className={styles.Link}> 
+                     <p className={styles.text}> 
+                        <FontAwesomeIcon icon={faLocationDot} className={styles.iconGoogleMap} />
+                         96/50 Phạm Đặng giảng Quận Bình Tân
+                    </p>
+                    </Link>
+                </div>             
+             </div>
+              <div className={styles.Header__main_2} >
                 <Link to={'/'} className='Link'>
                     <div className={styles.Header__Title}>
                         <img
@@ -65,8 +85,9 @@ const TitleandProducts = ({shows}) => {
                         </Button>
                     </div>
                 </Dropdowncont>
+                 </div>
                 </Header>
-       
+        
     );
 };
 

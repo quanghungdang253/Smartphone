@@ -21,17 +21,19 @@ import AttachedProduct from "./attached-product";
 import ProductDescription from "./product-description";
 import { useDispatch } from "react-redux";
 import { addCart } from "../../../../features/cart/cartSlice";
-
+import Breadcrumb from "../../../Common/location/location";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { BreadcrumbContext } from "../../../../Context/share-data-bread-crumb/share-data-bread-crumb";
+
 
 //======================================hình ảnh============================================================
 // áp dụng quy tắc  camelCase  để đặt tên 
- function InformationPhones({Data , id, nameEnpoint}) {
+ function InformationPhones({Data , id, nameEnpoint, nameNavigation}) {
  
   const navigate  = useNavigate();
   const dispatch = useDispatch();
-  
   const [customs, setCustoms] = useState(true);
   const [active, setActive] = useState(0);
   const [preindex , setIndex] = useState(0);
@@ -40,16 +42,15 @@ import { useNavigate } from "react-router-dom";
   //====================================================================
 
   const [total, setTotal] = useState(Data.price);
-const [totalorginal , setTotalOriginal] = useState(Data.total_original);
-const [original_price , setOriginal_Price] = useState([]);
-const [product, setSumProduct] = useState(1);
+  const [totalorginal , setTotalOriginal] = useState(Data.total_original);
+  const [original_price , setOriginal_Price] = useState([]);
+  const [product, setSumProduct] = useState(1);
 
-const [isFixed, setIsFixed] = useState(false);
-const [savedTop, setSavedTop] = useState(0);
-const [allowScrollLeft, setAllowScrollLeft] = useState(false);
-const [topPosition, setTopPosition] = useState(0);
-
-const [valueInput , setValueInput] = useState([Data]);
+  const [isFixed, setIsFixed] = useState(false);
+  const [savedTop, setSavedTop] = useState(0);
+  const [allowScrollLeft, setAllowScrollLeft] = useState(false);
+  const [topPosition, setTopPosition] = useState(0);
+  const [valueInput , setValueInput] = useState([Data]);
 const asideRef = useRef(null); 
 const mainRef = useRef(null);
 
@@ -101,6 +102,7 @@ const parseNumber = (value) => {
     return formatter.format(value);
   };
   
+
   const handleActive = (id, ischecked) => {
     const product = Data.attached__product.find((item) => item.id === id);
     if (!product) return;
@@ -165,7 +167,6 @@ const addProduct_index_one = (id) => {
       }
       
 }
-
 const handleCheckBox = (e , value) => {
       if(e.target.checked){
           setValueInput(() => {
@@ -197,22 +198,16 @@ const sendValueInput = (data) => {
           // Cập nhật chiều cao dựa trên nội dung lớn hơn
           setMainHeight(Math.max(bodyHeight, asideHeight) + "px");
         }
-
-
         const aside = asideRef.current;
         const asideScrollHeight = aside.scrollHeight;
         const asideClientHeight = aside.clientHeight;
         const asideScrollTop = aside.scrollTop;
-        
         // Kiểm tra điều kiện trước khi cập nhật state
-    
         if (asideClientHeight + asideScrollTop >= asideScrollHeight - 10) {
             setAllowScrollLeft(true);
         }else {
           setAllowScrollLeft(false);
         }
-
-      
         if (window.scrollY >= 150) {
                     setIsFixed(true);
                  
@@ -225,13 +220,9 @@ const sendValueInput = (data) => {
         }
         else {
                 setSavedTop(0)
-                setIsFixed(false);
-               
-        }
-
-       
+                setIsFixed(false);     
+        } 
     };
-
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleScroll);
     return () => {
@@ -239,25 +230,25 @@ const sendValueInput = (data) => {
         window.removeEventListener("resize", handleScroll);
     };
 }, [allowScrollLeft]);
+// ========================thực hiện nhận và chia sẻ tên sản phẩm bằng context  =========================
+const  {setBreadcrumb} = useContext(BreadcrumbContext);
+useEffect(() => {
+   window.scrollTo({
+            top: 0,
+            behavior:'smooth'
+      })
+   setBreadcrumb({ Nameproduct: Data.title });
+},[])
      return (
-    
       <div className={styles.Container}>
-     <ListChildComponents Static_data={Static_data} Data={Data}/>
+            <ListChildComponents Static_data={Static_data} Data={Data}/>
     <main>  
-      <div className={styles.body} style={{display:'flex'}}> 
+      <div className={styles.body}> 
         <div   
-            className={`${styles.body__aside}`} 
+            className={` ${isFixed ? styles.body__aside : styles.positionRelative}  ${styles.body__mobie} `} 
             style={
             { 
-             height:'125vh',           
-            position: isFixed ? 'sticky' : 'relative',
-            top: isFixed ? '70px' : 'auto',
-            left:0,
-         
-            transition: "top 2s easy",
-            marginTop: !isFixed ? `${savedTop}px` : "0px", // Đặt lại vị trí khi relative
-           background: "white",
-            
+                   marginTop: !isFixed ? `${savedTop}px` : "0px", // Đặt lại vị trí khi relative
             }
             }
             >
@@ -270,12 +261,7 @@ const sendValueInput = (data) => {
         <aside 
              ref={asideRef}
             className={`${styles.aside}`} 
-            style={{
-                 height: '300vh',
-               overflow: 'auto'
-              
-         
-            }}
+           
              >
             <div className={styles.Wrapper__aside}> 
                 <div className={styles.details_top1}>
@@ -330,7 +316,7 @@ const sendValueInput = (data) => {
                                   </div>                         
                             </div>
                             <div className={style__sale.listimage}> 
-                                   <ListimageProduct image={Static_data.image__advertisement} />            
+                                   {/* <ListimageProduct image={Static_data.image__advertisement} />             */}
                             </div> 
                               
                      </div>
@@ -411,8 +397,12 @@ const sendValueInput = (data) => {
                                                       
                                                    </a>
                                                   <div className={style__sale.Box_3}> 
-                                                        <span className={style__sale.price}> {Item.price}  </span>
-                                                        <span className={style__sale.discount}> {Item.discount} </span>
+                                                    <div className={style__sale.priceDown}> 
+                                                        <span className={style__sale.price}> {Item.price} 
+                                                        </span>
+                                                        <span className={style__sale.discount}> {Item.discount} 
+                                                        </span>
+                                                     </div>
                                                         <a onClick={() => {
                                                             addProduct_index_one(Item.id)
                                                         }}>

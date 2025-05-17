@@ -57,13 +57,12 @@ function MainChatbox(props) {
                     "&:active": { opacity: 0.5 },}}
                     onClick={() => setCloseBotStore(true)}>  
                     <Link className={styles.link}>
-                           <img src={iconChat
-                           } alt='' className={styles.icon}/>
-                           <h1>  Chat với Shop    </h1> 
+                             <img src={imgChatbot}alt='' className={`${styles.imgChatAl} ${styles.icon}`}/>
+                           <h1>  Chat Trợ lý Al    </h1> 
                           
                     </Link>
                 </Button>
-                <Button
+                {/* <Button
                  className={`${styles.mainChatbot__ChatbotAl} ${styles.chatbot}` }
                  sx={{textTransform: 'none',
                     transition: "0.3s",
@@ -72,7 +71,7 @@ function MainChatbox(props) {
                             <img src={imgChatbot}alt='' className={`${styles.imgChatAl} ${styles.icon}`}/>
                           <h1>  Chat với Trợ Lý Al  </h1>  
                      </Link>
-                </Button>
+                </Button> */}
             </div>
       
         </div>

@@ -4,19 +4,12 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 // import Componenticon from './Componenticon';
 import Smartphone from './Products/Smartphone';
-import Link_phone from './data/Link_phone.json';
-import  Link_laptop from './data/Link_laptop.json';
-import Link_camera from './data/Link_camera.json';
-import Link_earphone from './data/Link_earphone.json';
-import Link_clock from './data/Link_clock.json';
-import Link_television from './data/Link_Television.json';
-import Link_waterfilter from './data/Link_waterfilter.json';
-import { listClasses } from '@mui/material';
+import {Listitem} from './name-product';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import {ReactComponent as IconarrowRight} from "./icon/arrowRight.svg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile, faClock, faCogs, faDesktop, faLaptop, faHome, faHeadphones, faCamera, faTv, faNewspaper,  faSnowflake, faChevronRight  } from '@fortawesome/free-solid-svg-icons';
-
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+  import {faChevronRight} from '@fortawesome/free-solid-svg-icons';
+import items from './name-product';
 
 
 function Menuheader({addPadding}) {
@@ -25,30 +18,7 @@ function Menuheader({addPadding}) {
         const [product, setProduct] = useState([]);
         const [prePadding, setPading] = useState(false);
      
-    const items = [
-            { icon:  <FontAwesomeIcon icon={faMobile} />, label:  "Điện thoại, Tabled" } ,
-            { icon: <FontAwesomeIcon  icon={faLaptop} /> , label: "Laptop"},
-            { icon:  <FontAwesomeIcon icon={faCamera} />, label:  "Camera , Flycam" } ,
-            { icon:  <FontAwesomeIcon icon={ faHome} />, label: "Đồ gia dụng, Điện tử" } ,
-            { icon:  <FontAwesomeIcon icon={faTv} />,      label: "Tivi" } ,
-            { icon:  <FontAwesomeIcon icon={faDesktop} />, label: "Máy Tính" } ,
-            { icon:  <FontAwesomeIcon icon={faHeadphones} />, label: "Phụ kiện, Tai nghe" } ,
-            { icon:  <FontAwesomeIcon icon={faClock} />, label: "Đồng hồ" } ,
-            { icon: <FontAwesomeIcon  icon={ faSnowflake} />, label: "Điện tử, máy lọc nước"},
-            { icon:  <FontAwesomeIcon icon={faNewspaper} />, label: "Tin công nghệ" } ,    
-    ]
-    const Listitem = [
-        { id: 0, items: Link_phone },
-        { id: 1, items: Link_laptop},
-        { id: 2, items: Link_camera},
-        { id: 3, items: Link_laptop},
-        { id: 4, items: Link_television},
-        { id: 5, items: Link_laptop},
-        { id: 6, items: Link_earphone},
-        { id: 7, items: Link_clock},
-        { id: 8, items: Link_waterfilter},
-        { id: 9, items: Link_laptop},
-    ]
+
     return (
                 <Wrapper        
                         onMouseEnter={() => setIndex(preindex)}  // hoạt động khi người dùng di chuyển chuôt vào 
@@ -118,7 +88,7 @@ const Wrapper = styled.div `
                 font-weight:600;
         }
         //=========================================================================
-        width: 20rem;
+        max-width: 20rem;
         height: 100%;
          display: flex;
        
@@ -175,9 +145,6 @@ const Wrapper = styled.div `
             border-radius: 2rem;
             box-shadow: 0 1px 2px 0 rgba(60,64,67,.1),                   
                         0 2px 6px 2px rgba(60,64,67,.15);
-                     
-                         
-      
    }
    .Wrapper__label.addpadding {
        padding-top: 1.5rem;

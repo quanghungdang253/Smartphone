@@ -16,7 +16,9 @@
      
 
 //= =============================================
-
+.body {
+      display: flex
+}
 .link {
   @include flex-center(column, center ,center);
   text-decoration: none;
@@ -27,18 +29,19 @@
 
 }
 .Container {
-
     min-height: 100vh;
-  
-    margin-top: 10rem;
+    position: relative;
+    top: 127px;
     margin-left: 7%;
     margin-right: 7%;
     max-width: 1450px;
-    
+  
 }
 .aside {
   padding: 10px;
   max-width: 27rem;
+  height: 300vh;
+  overflow: auto;
 
  
 
@@ -59,11 +62,25 @@ display: none;
 }
 
 
-
+.positionRelative {
+       height: 125vh;
+       display: flex;
+       grid-column-gap: 1rem;
+       position: relative;
+       top: auto;
+       left: 0;
+       transition: top 2s ease;
+       background-color: white;
+}
 
 .body__aside {
+  height: 125vh;
     display: flex;
     grid-column-gap: 1rem;
+    position: sticky;
+      transition: top 2s ease;
+    top: 70px;
+    background-color: white;
     .active {
       border: 2px solid red;
       font-weight: 400;
@@ -262,14 +279,7 @@ display: none;
            width: 100%;  
            .memory__price__link {
             height: 45px;
-              h2 {
-                  font-size: 10px;
-                  font-weight: 700;
-              }
-              p {
-                  font-size: 12px;
-              }
-                       position: relative;
+             position: relative;
                        padding: 10px 2px 20px 2px ;
                        display: grid;
                        grid-row-gap: 5px;
@@ -278,6 +288,14 @@ display: none;
                        width: 8rem;
                        border-radius: 5px;
                        background-color: #000000;
+              h2 {
+                  font-size: 10px;
+                  font-weight: 700;
+              }
+              p {
+                  font-size: 12px;
+              }
+                      
                            
               }                        
         }     
@@ -329,4 +347,76 @@ display: none;
     }
     }
     
+}
+//==========================================================responsove=========================
+
+@media (max-width: 768px) {
+
+        .Container {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+       .body__mobie {
+           display: flex !important;
+            flex-direction: column !important;
+            position: static !important;
+            height: 90vh  !important;
+       }
+   
+       
+.positionRelative {
+       height: 125vh;
+       display: flex;
+       grid-column-gap: 1rem;
+       position: static;
+       transition: top 2s ease;
+       background-color: white;
+}
+.body__aside {
+       position: static;
+       max-width: 100% 
+}
+.details_top1 {
+    width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+       &__price {  
+              max-width: 80%;
+              display: flex;
+              justify-content: space-between;
+      .memory__price__link {
+          max-width: 6rem;
+    }
+
+             }
+                  }
+}
+
+
+
+@media (max-width: 1024px) {
+      .body {
+          display: flex;
+          flex-direction: column;
+      }
+      .aside {
+        margin-top: 4rem;
+          padding: 10px;
+          overflow: hidden;
+          margin-left: 0rem;
+          height: 100%;
+          
+          
+      }
+     
+//       .positionRelative {
+      
+//        display: flex;
+//        flex-direction: column;
+   
+//      position: relative;
+//      background-color: white;
+// }
+
 }

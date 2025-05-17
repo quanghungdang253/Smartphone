@@ -82,11 +82,26 @@
         
         overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và sẽ ẩn đi  
         .HandleImage__node {
-             display: flex;        
-             height:100%;
-             align-items:center;
-             position:absolute;  
-             grid-column-gap: 40em;
+             display: flex;     
+               grid-column-gap: 85%;
+            position: relative;
+            top: 10rem;
+            left: -15px;
+            button {
+                   height: 35px;
+                   width: 35px;
+                   border-radius: 999px;
+                   opacity: 0.5;
+            }
+            .btnRight {
+                display: block;
+               
+            }
+            .btnLeft {
+                    margin-right: 1rem;
+            }
+            //  position:absolute;  
+            //  grid-column-gap: 40em;
         }
        .list__image {
             grid-column-gap: 2rem;
@@ -117,12 +132,11 @@
 .main__image {
     width:50%;
     height:19rem;
-     
     border-radius: 20px;
   
 }
 .small__image {
-   max-width:22em;
+     max-width:22em;
 }
 .btn__image {
    width: 100%;
@@ -169,7 +183,6 @@
     box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);;
 }
 .boxContact {
-
     margin-bottom: 0.5rem;
  
     @include flex-center;
@@ -219,7 +232,7 @@
             .child2 {
                 height: 30px;
                 text-align: start;
-                width: 30rem;
+                max-width: 30rem;
                 .linkMap {
                     text-decoration: underline;
                     color: rgb(49, 49, 239);
@@ -231,4 +244,152 @@
             }
         }
     }
+}
+
+@media (max-width: 768px) {
+
+
+.boxContact {
+    margin-bottom: 0.5rem;
+ 
+    @include flex-center;
+    grid-column-gap: 5rem;
+    .column {
+        border-radius: 15px;
+        height: 40px;
+        font-weight: 400;
+        text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         
+        display: inline-block;
+   }
+    &__box1 {
+            text-align: center;
+    }
+    &__box2 {
+            text-align: center;
+    }
+
+    &__box3 {
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 1rem;
+        .link {
+            text-decoration: none;
+        }
+             .link:hover {
+                 text-decoration:underline;
+             }
+        .box3__child {
+         
+            padding: 5px;
+            grid-column-gap: 0.5rem;
+            @include flex-center(row, end, center);
+            
+            .child1 {
+                width: 11rem;
+                .linkcall {
+                    color: red;
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+            }
+            .child2 {
+                height: 30px;
+                text-align: start;
+                max-width: 20rem !important;
+                .linkMap {
+                    text-decoration: underline;
+                    color: rgb(49, 49, 239);
+                    font-size: 12px;
+                    font-family: 'Times New Roman', Times, serif;
+                    
+                }
+                
+            }
+        }
+    }
+}
+.Wrapper {
+    .aside1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
+    }
+}
+.main__image {
+    width:50%;
+    height:17rem !important;
+    border-radius: 20px;
+  
+}
+.boxContact {
+        display: flex;
+        grid-column-gap: 1rem;
+    
+    .column {
+             height: 30px;
+             font-size: 12px;
+    }
+}
+.HandleImage__image {
+    margin-top: 5rem !important;
+          padding: 16px 16px !important;
+           margin: 10px;
+           max-width: 25rem !important;
+           max-height: 25em !important;
+        .list__image {
+            display: flex !important;
+            grid-column-gap: 5px !important;
+            .List__item {
+                
+                  max-width: 22rem;
+                  display: flex;
+                  grid-row-gap: 0.5rem !important;
+                   .item {
+                         
+                         display: block;
+                         width: 100%;
+                         font-size: 12px;
+                }
+            }
+        }
+     }
+.HandleImage {
+            max-width:100%;
+            min-height: 25em;
+   
+    }
+.small__image {
+            max-width:10em;
+}
+.HandleImage_Slide {
+            max-width: 100%;
+            display: flex;
+            margin-top: 1rem;
+            grid-column-gap: 5px !important;
+                    
+}
+.HandleImage__button {
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+           .image {
+             max-width: 100%;
+             height: auto;
+             object-fit: contain;
+           }
+}
+.main__image {
+    width:100%;
+    height:19rem;
+     
+    border-radius: 20px;
+  
+}
+  .listItem1 {
+        margin-top: 140rem;
+} 
 }

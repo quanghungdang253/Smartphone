@@ -14,6 +14,7 @@ import LabelProduct from '../../../Common/label-product/label-product';
 import { dark } from '@mui/material/styles/createPalette';
 import styled from 'styled-components';
 import ShowInfoHome from '../../../Common/Listproduct/show-infor-home';
+import styles from '../assets/styles/HandleComponent.module.scss';
 // ===================== Danh sach SmartPhone ==============================
 
 const XiamioComponent = ({data, namephone, ...props}) => (
@@ -31,9 +32,8 @@ const NokiaComponent = ({data, namephone, ...props}) => {
 const SamsungComponent = ({data, namephone, ...props}) => (
 <Suspense fallback={(<Loading/>)}>  
         <div>
-        
-                        <ListimageProduct image={data.advertising_images} customs={true}/>
-                        <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
+            <ListimageProduct image={data.advertising_images} customs={true}/>
+            <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
         </div>
  </Suspense>
 )
@@ -48,9 +48,9 @@ const IphoneComponent = ({data, namephone, ...props}) => (
         className='componentIphone'
     >  
                  <div>
-                            <ListimageProduct image={data.advertising_images} customs={true}/>
-                            <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
-            </div>
+                        <ListimageProduct image={data.advertising_images} customs={true}/>
+                        <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
+                  </div>
      </Suspense>
      </div>
     </IphoneComponents>
@@ -82,8 +82,8 @@ const  VivoComponent = ({data, namephone, ...props}) => (
 )
 const hotSaleComponent = ({data , dataEnpoint, namephone, ...props}) => 
 (
-    <BoxHotSale saleImg={imgbackground} className='component'> 
-        <img src={imgSale} alt className='img-sale' />
+    <BoxHotSale saleImg={imgbackground} className={styles.componentHotSale}> 
+        <img src={imgSale} alt='' className= {styles.componentHotSale__imgSale}/>
         <HotSaleComponents>  
                 <ListimageProduct image={data.advertising_images} customs={true}/>
                      <div className='box boxlabel'> 

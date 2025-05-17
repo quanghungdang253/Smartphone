@@ -9,8 +9,9 @@ import RenderbyCategory from './ui-components/RenderbyCategory';
 import styled from 'styled-components';
 import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
 import { Helmet } from 'react-helmet';
+import styles from './Product_list.module.scss';
 import Loading from '../../Common/components/Loading';
-
+import Breadcrumb from '../../Common/location/location';
 function Products_list(props) { 
   const logic = props.logic; 
   const dataEnpoint = props.dataEnpoint;
@@ -35,7 +36,10 @@ function Products_list(props) {
         {!data ? (
                   <Loading/>
            ) : (
-          <div className='Render-product'>
+          <div className={styles.Render__product}>
+          
+                
+            
                   <RenderbyCategory logic={state} dataEnpoint={dataEnpoint} namephone={namephone} data={data} {...props}/>
           </div>
       )}
@@ -43,10 +47,8 @@ function Products_list(props) {
   );
 }
 const Product = styled.div `
-     .Render-product {
-      margin-top:10%;
-         margin-left: 7%;
-         margin-right: 7%;
+     .Render__product {
+       
      }
 
 `

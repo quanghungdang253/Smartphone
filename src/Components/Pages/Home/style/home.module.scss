@@ -23,3 +23,99 @@
     }
   
 }
+.Box__header {
+        margin-left: 7%;
+        margin-right: 7%;
+         .Productads {
+            display: block;
+        }
+  }
+ 
+
+.form__section {
+        display: block;
+         max-width: 1450px;
+         margin-top: 1rem;
+         margin-bottom:2rem;           
+}
+.Productlist {
+        margin-top:23rem;
+}
+
+.btn__wrappper {
+                                position: absolute;
+}
+
+.Mainheader {
+    .Header {
+          padding-top:1rem;
+          height: 505px;
+          margin-top:7em;
+          display: flex;  
+          align-items: start;  
+          justify-content:start;
+          grid-column-gap: 1%;
+          height: 505px;   
+          max-width:1450px; 
+          box-sizing: border-box;
+}
+    .menuWeb {
+        display: block;
+}
+    .menuMobie {
+    display: none;
+}
+
+}
+
+//======================================responsive=================================
+@media (max-width: 1366px) and (min-width:1024px) {
+    
+}
+
+@media (max-width: 1200px) {
+    .MainHome {
+        background-image: url('');
+    }
+    .containerImage {
+         display: none;
+    }
+    .Mainheader {
+        .Header {
+                height: 10px;
+               margin-top: 5em;
+        }
+        .menuWeb {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .FormSection__Web {
+            display: none;
+    }
+    .form__section {
+        display: block;      
+        margin-top: 4rem;  
+}      
+    .Article {
+        margin-top: 22rem;
+    }
+    .Productlist {
+        margin-top:12rem;
+    }
+    .Box__header {
+        margin-left: 1%;
+        margin-right: 1%;
+        .Productads {
+            display: none;
+        }
+  }
+}
+     
+
+
+
+
+
