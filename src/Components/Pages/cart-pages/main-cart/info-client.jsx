@@ -9,6 +9,8 @@ import { updateInfoClient, submitInfoClient } from '../../../../features/cart/ca
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import Swal from 'sweetalert2';
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
 import { set } from 'nprogress';
 
 function InfoClient({Sum}) {
@@ -109,7 +111,7 @@ function InfoClient({Sum}) {
        
        
         <input type="text" name='houseNumber' placeholder="Địa chỉ cụ thể" value={formData.houseNumber} onChange={handleChange} />
-        <input type='date' name='dateOfbirth' placeholder="Ngày tháng năm sinh" value={formData.dateOfbirth} onChange={handleChange} />
+        <input type='text' name='dateOfbirth' placeholder="Năm sinh" value={formData.dateOfbirth} onChange={handleChange} />
         <select className={styles.option} onChange={handleProvinceChange}>
           <option value="">Chọn tỉnh/thành phố</option>
           {dataProvince.map(prov => (
