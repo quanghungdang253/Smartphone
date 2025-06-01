@@ -15,6 +15,8 @@ import { dark } from '@mui/material/styles/createPalette';
 import styled from 'styled-components';
 import ShowInfoHome from '../../../Common/Listproduct/show-infor-home';
 import styles from '../assets/styles/HandleComponent.module.scss';
+import ImgSlide from '../components/Img-sale';
+import imgSaleSamsung from '../assets/image-ui-components/img-sale.jpg';
 // ===================== Danh sach SmartPhone ==============================
 
 const XiamioComponent = ({data, namephone, ...props}) => (
@@ -31,10 +33,11 @@ const NokiaComponent = ({data, namephone, ...props}) => {
 }
 const SamsungComponent = ({data, namephone, ...props}) => (
 <Suspense fallback={(<Loading/>)}>  
-        <div>
+        <SamsungComponents  saleImg={imgbackground}         className='componentSamsung'>
+            <ImgSlide img={imgSaleSamsung}/>
             <ListimageProduct image={data.advertising_images} customs={true}/>
             <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
-        </div>
+        </SamsungComponents>
  </Suspense>
 )
 const IphoneComponent = ({data, namephone, ...props}) => (
@@ -120,7 +123,10 @@ bottom:0px;
             position: relative;
             
       }
-     
+`
+const SamsungComponents = styled.div `
+        background-image: url(${props => props.saleImg})
+
 `
 const BoxHotSale = styled.div `
 

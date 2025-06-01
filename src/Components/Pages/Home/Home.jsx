@@ -17,6 +17,7 @@ import { ToggleProvider } from '../Products_list/context/context-boolean';
 import imagebackground from './Components/Section/image/background.jpg';
 import image from './Components/Section/image/khai-xuan-trai.jpg';
 import styles from './style/home.module.scss';
+import SlideImageMobie from './Components/slide-image-mobie/slide-image-mobie';
 import MenuResponsiveMobie from '../../Common/menu-responsive-mobie/menu-responsive-mobie';
 
 function Home({home}) {
@@ -45,6 +46,9 @@ function Home({home}) {
                         </Helmet>
                          <header className={styles.Box__header}> 
                              <div className={`${styles.Header} ${styles.Styles}`}>  
+                                <div className={styles.slideMobie}> 
+                                        <SlideImageMobie />
+                             </div>
                                 <div className={styles.menuWeb}>    
                                          <Menuheader/>
                                  </div>

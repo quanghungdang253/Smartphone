@@ -5,17 +5,17 @@
         "id" : 1,
         "discount": "20%",
         "installment": "0%",     
-        "image": "https://img.pikbest.com/wp/202408/headphones-3d-rendered_9795827.jpg!w700wp",
-        "title": "Tai Nghe Kết Xuất 3d Nền JPG ",
-        "price": "400.000 ₫"
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_658_2.png",
+        "title": "Laptop Lenovo IdeaPad Slim 5 14Q8X9 83HL000KVN",
+        "price": "4.560.890 ₫"
        
   },
   {      
     "id" : 2,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://bizweb.dktcdn.net/100/445/497/products/wbeam.jpg?v=1733822596613",
-    "title": "Tai Nghe JBL Wave Beam - TẶNG SỔ TAY - Hàng Chính Hãng",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_509_-_2024-07-31t163011.265.png",
+    "title": "Laptop HP 14-EP0112TU 8C5L1PA",
     "price": "1.140.000 ₫"
    
 },
@@ -23,13 +23,13 @@
     "id" : 3,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://bizweb.dktcdn.net/100/445/497/products/01-jbl-tune-beam-product-image-hero-blue.jpg?v=1731386238353",
-    "title": "Tai Nghe JBL Tune Beam - Hàng Chính Hãng",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_744_1_7.png",
+    "title": "Laptop Dell Inspiron 15 3530 P16WD2",
     "price": "1.990.000 ₫"
     
 },
 {      
-    "id" : 3,
+    "id" : 4,
     "discount": "20%",
     "installment": "0%",     
     "image": "https://bizweb.dktcdn.net/100/445/497/products/01-jbl-tune-beam-product-image-hero-blue.jpg?v=1731386238353",

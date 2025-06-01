@@ -122,15 +122,13 @@
 @media (max-width: 1440px) {
           .navigation {
             margin-left: 0rem;
-              max-width: 10em;
+              max-width: 9em;
           }
 }
 
 @media (max-width: 1350px) {
         .navigation {
-            display: flex;
-            justify-content: end;
-            align-items: center;
+         
             margin-top: 3rem;
             &__call {
                     display: none;
@@ -145,6 +143,9 @@
 }
 @media (max-width: 768px) {
         .navigation {
+             .Link {
+                        display: none;
+              }
               .Link h1 {
                     font-size: 10px;
               }
@@ -152,4 +153,18 @@
                     font-size: 14px;
               }
         }
+        .index {
+                 position:absolute;
+             bottom: 12px;
+    left: 2px;
+    color: black;
+    font-weight: 900;
+    height: 15px;
+    width: 15px;
+    padding: 2px 2px 2px 5px;
+    border-radius: 999px;
+    background-color: red;
+    z-index:1
+}
+
 }

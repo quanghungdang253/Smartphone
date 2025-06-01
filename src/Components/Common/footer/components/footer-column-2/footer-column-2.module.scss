@@ -29,6 +29,7 @@
     .imgdownload {
             display: flex ;
             align-items: center;
+          
             max-width: 272px;
             height: 115px;
             img {
@@ -38,4 +39,14 @@
             }
     }
 }
+//=====================================responsive===================================
 
+
+.mainFooterTwo {
+    display: flex;
+    align-items: start;
+    grid-column-gap: 0rem !important;
+    .box1 {
+            grid-column-gap: 0rem !important;
+    }
+}

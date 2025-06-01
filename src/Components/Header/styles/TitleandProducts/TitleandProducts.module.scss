@@ -42,12 +42,15 @@
           width:25%;
            
          .header__iconmenu {
-          
+            border-radius: 10px;
+          display: flex;
+          align-items: center;
+          padding: 10px;
             background-color:black;   
             border: 1px solid red;
             font-weight: 700;
             color: white;
-            width: 7rem;
+           min-width: 6rem;
             font-size: 11px;
              line-height:5px;
          }
@@ -85,34 +88,60 @@
                   display: block;
                   display: flex;
                   align-items: center;
+                  justify-content: space-around;
                   height: 30px;
                   min-width: 100%;
                  
                   margin-bottom: 1rem;
                   .row_one {
                      .image_mobie {
-                           width: 45px;
-                           height: 100%;
+                           max-width: 40px;
+                           height: 35px;
                            border-radius: 999px;
+                         
                      }
                   }
                   .row_two {
-                     margin-left: 12em;
-                     min-width: 25em;
-                         height: 100%;
-                          border-radius: 999px;
-                        background-color: rgb(20, 116, 241);
+                      background:rgba($color: #02a2ff, $alpha: 0.3);
+                     height: 100%;                  
+                     border-radius: 999px;
+                       
                         .Link {
+                          
                            display: block;
                            border-radius: 999px;
                            position: relative;
                            color: black;
                            font-size: 12px;
                            text-decoration: none;
-                           .text {
-                                   position: absolute;
-                                    top: 10px;
-                                   left: 10px;
+                           text-align: center;
+                          .text {
+  
+                                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 900;
+      font-size: 20px;
+      height: 100%;
+      width: max-content;
+    
+      background: linear-gradient(90deg, #fd0000, #2600ff, #f700ff, #0a36fb);
+      background-size: 300% 300%;
+      animation: gradientMove 3s ease infinite;
+
+      /* QUAN TRỌNG để hiển thị chữ với gradient */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+                           @keyframes gradientMove {
+                                 0% {
+                                    background-position: 0% 50%;
+                                 }
+                                 50% {
+                                    background-position: 100% 50%;
+                                 }
+                                 100% {
+                                    background-position: 0% 50%;
+                                 }
                            }
                         }
                         .iconGoogleMap {
@@ -150,15 +179,23 @@
 
                     }
                      .header__iconmenu {
+                        margin-top: 2px;
+                        margin-right: 10px;
+                        border-radius: 0px !important;
+                        border-top-left-radius: 10px !important;
+                        border-bottom-left-radius: 10px !important;
                         font-weight: 900;
-                      min-width: 2.4rem;
+                        height: 32px;
+                    padding: 5px;
+                    min-width: 40px;
                       font-size: 7px;
                       line-height: 10px;
-                      height: 30px;
+                      border: none;
+                    
                       color: rgb(0, 0, 0);
                       display: flex;
                       flex-direction: column;
-                      background-color: white;
+                      background-color: rgb(221, 221, 221);
             
                  } 
                  .header__image_responsive{
@@ -169,9 +206,9 @@
                         
                  }
                   .iconmenu {
-                      padding-right: 3px;
-                      font-size: 16px;
-                      min-width: 11px;
+                    
+                      font-size: 20px;
+                     
                    }
                     .menu {
                       display: block;
@@ -195,11 +232,35 @@
          min-width: 40px;
          margin-left: 15px;
          &__main_1 {
+  
             .row_two {
-                  margin-left: 0.5em;
+                  margin-left: 1em;
             }
             .row_two {
-                  min-width: 16em
+                  min-width: 10em;
+                  padding: 5px 5px 5px 5px;
+                  
+            }
+            .row_three {
+               margin-left: 1rem;
+               background-color: #fdfdfdcf;
+                 border-radius: 999px;
+                  min-width: 5em;
+                  padding: 5px 5px 5px 5px;
+                  .Link {
+                     text-decoration: none;
+                     display: flex;
+                     align-items: center;
+                  }
+                  .icon {
+                        color: #000000;
+                  }
+                  h1 {
+                      font-family: 'Times New Roman', Times, serif;
+                     font-size: 10px;
+                      text-decoration: none;
+                      color: #000000;
+                  }
             }
          }
            &__Title {

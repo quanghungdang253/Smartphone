@@ -76,7 +76,7 @@ const Container = styled.div`
 @media (max-width: 768px) {
     height: 600px;
  .Article {
-    margin-top:4rem;
+    margin-top:10rem;
     margin-left:1.5rem;
      align-items:end;
      justify-content:space-around;

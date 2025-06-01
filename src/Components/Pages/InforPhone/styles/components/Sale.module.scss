@@ -431,11 +431,10 @@ background-color: $color-hover;
         font-size: 14px !important;
       }
    .Box_3 {
-
-               display: flex;
-               align-items: center;
-               justify-content: space-evenly;
-               grid-column-gap: 10px;
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         grid-column-gap: 10px;
                 .priceDown {
                      display: flex;
                      flex-direction: column;
@@ -465,6 +464,23 @@ background-color: $color-hover;
                      width: 25px;
                   }
                }
-            }
+            .btn__product {
+         .Box__title {
+            display: flex;
+
+         }
+      
+}
+
+   }
+         .Box__btn_buy {
+            margin-top: 2rem;
+            width: 100%;
+            text-align: center;
+            .Link__btn_buy {
+                   width: 100%;
+                   font-size: 1rem !important;
+         }
+      }
 }
   

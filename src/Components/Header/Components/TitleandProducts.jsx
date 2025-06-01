@@ -53,11 +53,16 @@ const TitleandProducts = ({shows ,showmenu}) => {
                 <div className={styles.row_two}> 
                     <Link className={styles.Link}> 
                      <p className={styles.text}> 
-                        <FontAwesomeIcon icon={faLocationDot} className={styles.iconGoogleMap} />
-                         96/50 Phạm Đặng giảng Quận Bình Tân
-                    </p>
+                            Quang Hùng Store
+                     </p>
                     </Link>
-                </div>             
+                </div> 
+                  <div className={styles.row_three}>
+                     <Link className={styles.Link}>
+                      <FontAwesomeIcon className={`${styles.icon} ${styles.icon__user}`} icon={faUser} />
+                         <h1>Đăng nhập</h1>
+                      </Link>
+                </div>            
              </div>
               <div className={styles.Header__main_2} >
                 <Link to={'/'} className='Link'>
@@ -77,12 +82,12 @@ const TitleandProducts = ({shows ,showmenu}) => {
                             alt=''
                             className={styles.header__image_responsive}
                         />
-                        <Button variant="outlined" className={styles.header__iconmenu} onClick={handleMenuClick}>
+                        <button variant="outlined" className={styles.header__iconmenu} onClick={handleMenuClick}>
                                 <FontAwesomeIcon icon={faBars} className={styles.iconmenu} />
 
-                                <span className={styles.menu}> Menu </span>
+                                <span className={styles.menu}>  </span>
                                 <span className={styles.category}> Danh mục </span>
-                        </Button>
+                        </button>
                     </div>
                 </Dropdowncont>
                  </div>

@@ -294,6 +294,9 @@
 
 
     @media (max-width: 768px) {
+        .image__promotion {
+             display: none;
+        }
         .img {
                 display: none;
 }
@@ -330,9 +333,8 @@
     
       
         } 
-                .Show_phone {
-
-                 img {
+        .Show_phone {
+         img {
                       min-width:9em;
                       object-fit:contain;
                }
@@ -341,18 +343,16 @@
                       
                         grid-row-gap: 1rem;
                }  
-                 .Showphone__Info {
-                        max-width: 11em;
-                        max-height: 40em;
-                }
+        .Showphone__Info {
+            max-width: 11em;
+            max-height: 40em;
+        }
                 .box__body_link {
-                     .image {
-                         width: 90%;
-                         margin-left: 0;
-                        margin-bottom:0.5rem;
-              }
-            
-    
+        .image {
+            width: 90%;
+            margin-left: 0;
+            margin-bottom:0.5rem;
+        }
 }
 .list_item {
     overflow-x: scroll;
@@ -376,9 +376,7 @@
     }
     }
 }
-
-
-    @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
         .Show_phone {
              display: grid;
                         grid-template-columns: 1fr 1fr 1fr;
