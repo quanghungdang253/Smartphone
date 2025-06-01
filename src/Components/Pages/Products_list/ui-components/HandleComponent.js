@@ -34,7 +34,9 @@ const NokiaComponent = ({data, namephone, ...props}) => {
 const SamsungComponent = ({data, namephone, ...props}) => (
 <Suspense fallback={(<Loading/>)}>  
         <SamsungComponents  saleImg={imgbackground}         className='componentSamsung'>
-            <ImgSlide img={imgSaleSamsung}/>
+         <div className='imgSale'>    
+                 <ImgSlide img={imgSaleSamsung}/>
+         </div>
             <ListimageProduct image={data.advertising_images} customs={true}/>
             <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
         </SamsungComponents>
@@ -125,12 +127,22 @@ bottom:0px;
       }
 `
 const SamsungComponents = styled.div `
-        background-image: url(${props => props.saleImg})
+.imgSale {
+        display: block;
+}
+        background-image: url(${props => props.saleImg});
+        @media (max-width: 1024px) {
+                   background-image: url("") !important;
+                   .imgSale {
+                       display: none;
+                }
+        }
+        
 
 `
 const BoxHotSale = styled.div `
 
-    background-image: url(${props => props.saleImg});
+    /* background-image: url(${props => props.saleImg}); */
     padding-top: 2rem;
     border-radius: 10px;
     .box {
