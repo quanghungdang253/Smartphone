@@ -60,7 +60,6 @@ const IphoneComponent = ({data, namephone, ...props}) => (
      </div>
     </IphoneComponents>
     )
-    
 const OppoComponent = ({data, namephone, ...props}) => (
         <Suspense fallback={(<Loading/>)}>  
             <React.Fragment>

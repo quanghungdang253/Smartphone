@@ -1,47 +1,54 @@
 {
-    "name": "Hãng Ipad",
+    "name": "Hãng Đồng Hồ",
     "phonecompany": [
         {
             "id": 1,
-            "name": "Ipad Gen 9",
-            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+            "name": "Tủ lạnh",
+            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/DH-IPC-HFW4231TP-ASE.jpg"
         },
         {
             "id":2,
-            "name": "iPad Gen 10",
-              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+            "name": "Lò vi sóng",
+            "image": "https://cdn.tgdd.vn/Products/Images/7264/199452/casio-lq-142-1bdf-den-up-1-750x500.jpg"
            
         },
         {
             "id":3,
-            "name": "iPad mini",
-              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+            "name": "Bếp điện, bếp từ",
+            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
            
         },
         {
             "id":4,
-            "name": "iPad mini 7",
-              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+            "name": "Nồi cơm điện",
+            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
            
         },
         {
             "id":5,
-            "name": "iPad Air M2",
-              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+            "name": "Máy xay sinh tố",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
            
         },
         {
             "id":6,
-            "name": "iPad Air 13 inch M2",
-              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+            "name": "Máy ép trái cây",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
            
         },
         {
             "id":7,
-            "name": "iPad Pro M4",
-            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
+            "name": "Máy pha cà phê",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
+           
+        },
+        {
+            "id":8,
+            "name": "Máy hút bụi bếp",
+             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
            
         }
+       
     ],
     "price":[
         {
@@ -106,6 +113,7 @@
               "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
         }
     ]
+    
 
     
 }
