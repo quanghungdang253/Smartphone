@@ -42,7 +42,7 @@ function Menuheader({addPadding}) {
                                                 setProduct(fountindex.items);
                                         }                                          
                                     }}          >
-                                <div className={`label_icon ${theme ? 'color__Bright' : 'color__Dark'}`}>                                       
+                                <div className={`label_icon ${!theme ? 'color__Bright' : 'color__Dark'}`}>                                       
                                                                         {item.icon }
                                                                         {item.label}    
                                                 </div>
@@ -73,7 +73,7 @@ const Wrapper = styled.div `
             background-color:white;
         }
         .Dark {
-                background-color:#d3d3d3;
+                background-color:#d9d9d9;
         }
         .color__Bright {
             color:black;

@@ -166,6 +166,7 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
             
             {predata && predata.data && predata.data.length > 0 ? (
                 predata.data.slice(0 , visiblePhones).map((List) => (
+                  
                     <div key={List.id} 
                     className={`${styles.Showphone__Info} ${theme ? styles.Color__Bright : styles.Color__Dark}`}
                      
