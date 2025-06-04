@@ -51,18 +51,19 @@
 .Mainheader {
     .Header {
           padding-top:1rem;
-          height: 505px;
+       
           margin-top:7em;
           display: flex;  
           align-items: start;  
           justify-content:start;
           grid-column-gap: 1%;
-          height: 505px;   
+          height: 490px;   
           max-width:1450px; 
           box-sizing: border-box;
 }
     .menuWeb {
         display: block;
+        height: 100%;
 }
     .menuMobie {
     display: none;

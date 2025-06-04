@@ -164,7 +164,7 @@
         background-color: #FFFFFF
 }
 .Color__Dark {
-                background-color:black;
+                background-color:rgb(162, 162, 162);
                 
 }
 .box__body--link {
@@ -232,6 +232,7 @@
           border-radius: 0.5rem;
           box-shadow: 0 2px 3px black;   
           .price_up_down {
+            display: flex;
                 margin-top: 2rem;
           }            
 }

@@ -32,7 +32,7 @@ function Menuheader({addPadding}) {
                                style={{backgroundImage: `url(${Iconphone})`, width: "25px", height:"20px", display: "inline-block"}}
                             ></i>  
                                                      */} 
-                        {items.map((item,index) => (  // thiết lập xử lý data khi hover                         
+                        {items.map((item,index) => (  // thiết lập xử lý data khi hover                   
                                 <div className='Wrapper__label--menu'
                                     key={index}
                                     onMouseEnter={() =>{                                             
@@ -41,18 +41,14 @@ function Menuheader({addPadding}) {
                                         if(fountindex ){
                                                 setProduct(fountindex.items);
                                         }                                          
-                                    }}                                                                       >
+                                    }}          >
                                 <div className={`label_icon ${theme ? 'color__Bright' : 'color__Dark'}`}>                                       
                                                                         {item.icon }
                                                                         {item.label}    
                                                 </div>
                                                 <FontAwesomeIcon icon={faChevronRight} 
-        className={
-                `Wrapper__icon ${theme ? 'color__Bright' : 'color__Dark'}`}/>
-
-                                                
-                                </div>                                       
-                           ))}
+        className={`Wrapper__icon ${theme ? 'color__Bright' : 'color__Dark'}`}/>      
+ </div>                                    ))}
                         </div>
                         <React.Fragment>                                      
                                 <div 
@@ -77,7 +73,7 @@ const Wrapper = styled.div `
             background-color:white;
         }
         .Dark {
-                background-color:white;
+                background-color:#d3d3d3;
         }
         .color__Bright {
             color:black;

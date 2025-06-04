@@ -13,6 +13,7 @@
             color: white;
          }
     .Link {
+        border-radius: 999px;
         display: block;
         padding: 10px;
          text-decoration: none;
@@ -22,7 +23,7 @@
          align-items: center;
     }
     .Link:hover {
-         background-color: rgb(47, 47, 47);
+         background-color: rgb(136, 136, 136);
     }
        .Link h1 {
                         font-size: 12px;
@@ -53,7 +54,8 @@
     &__googleMap{
                 display: block;
             .Link__map {
-            width:6rem;    
+                width:6rem;    
+                  border-radius: 999px;
     }
 
     }
@@ -66,17 +68,20 @@
              padding:5px;
              border-radius:10px; 
         }
+        .LinkShoppingCart:hover {
+            background-color: rgb(131, 131, 131);
+        }
   
       .textShoppingCart {
              font-size: 10px;
         }
     .Link:hover {
-         background-color: black;
+         background-color: rgb(188, 188, 188);
     }
     }
     &__User {
             .icon__user {
-                  border:1px solid white;
+                 
                   padding:5px;
                   border-radius:999px;
              }
@@ -84,7 +89,7 @@
     }
 }
 .navication__call:hover {
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(214, 214, 214);
 }
 .fa-solid.fa-phone.fa-shake {
         font-size: 1.6rem;
@@ -105,7 +110,7 @@
 }
 .index {
     position:absolute;
-    bottom: 10px;
+    bottom: 14px;
     left: 5px;
     color: black;
     font-weight: 900;

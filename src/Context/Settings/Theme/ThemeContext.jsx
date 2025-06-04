@@ -8,7 +8,7 @@ export function ParentContext({children}) {
        
         const [theme, setTheme] = useState(() => {   // khởi tạo giá trị bạn đầu 
                         let getdata = localStorage.getItem('theme'); // lấy giá trị từ key 
-                        return getdata === 'true';
+                        return getdata === 'false';
                        
         });
         const Dark_Bright = () => {
