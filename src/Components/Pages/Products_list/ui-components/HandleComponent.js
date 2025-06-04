@@ -35,7 +35,7 @@ const SamsungComponent = ({data, namephone, ...props}) => (
 <Suspense fallback={(<Loading/>)}>  
         <SamsungComponents  saleImg={imgbackground}         className='componentSamsung'>
          <div className='imgSale'>    
-                 <ImgSlide img={imgSaleSamsung}/>
+                 <ImgSlide img={imgSaleSamsung} className="img"/>
          </div>
             <ListimageProduct image={data.advertising_images} customs={true}/>
                <div className='Criteria'> 
@@ -132,12 +132,18 @@ bottom:0px;
 const SamsungComponents = styled.div `
 .imgSale {
         display: block;
+        background-color:transparent;
 }
         background-image: url(${props => props.saleImg});
         @media (max-width: 1024px) {
                    background-image: url("") !important;
                    .imgSale {
-                       display: none;
+                    background-color:red;
+                        max-width:30em;
+                }
+                .img {
+                       width:100%;
+                       
                 }
         }
         

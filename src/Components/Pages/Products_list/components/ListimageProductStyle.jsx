@@ -1,6 +1,7 @@
 import styled from "styled-components";
 const Wrapper = styled.div `
      background-color:white;
+     position: relative;
 
       .HandleImage__button:hover{
                         border: 4px solid red;
@@ -57,7 +58,7 @@ height:115px;
         transform: scale(0.95);
         cursor: pointer;
      
-        object-fit:cover;
+        object-fit:contain;
                 transition: opacity 0.8s ease-in-out;
 }
 .HandleImage__node {
@@ -86,10 +87,10 @@ height:115px;
                  object-fit:cover;
         }
         .HandleImage__image {
-                display:none;
+               
                 max-height:4rem;
-                position:relative;
-                top: 10rem;
+             
+               
                 
         }
         .HandleImage__image-box-two {

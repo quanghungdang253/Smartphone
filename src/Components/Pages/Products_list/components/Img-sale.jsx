@@ -3,7 +3,7 @@ import styles from '../assets/styles/Img-sale.module.scss';
 function ImgSale({img}) {
     return (
         <div className={styles.mainImg} >
-             <img src={img} alt='' /> 
+             <img src={img} alt='' className={styles.ImgSale} /> 
         </div>
     );
 }
