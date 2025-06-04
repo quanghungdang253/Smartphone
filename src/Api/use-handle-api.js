@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";  // lấy tham số động
 import { Switch } from "@mui/material";
 import Loading from "../Components/Common/components/Loading";
 function useHandleApi(namephone) {  // xử lý hiển thị các điện thoại 
+        console.log("teb moi ưefwefew "+namephone);
         const[ endpointInfo, setEnpointinFo] = useState(""); 
 
         let CategoryInformation = ["Tivi", "Đồ Gia Dụng", "Loa", "Máy giặt", "Đồng hồ", "Nồi chiên không dầu","Máy lọc nước","Tai nghe","Smartphone","Nồi cơm điện","Camera", "Máy hút bụi","Máy nước nóng","Tủ lạnh","Tủ đông","Laptop"];
@@ -19,7 +20,7 @@ function useHandleApi(namephone) {  // xử lý hiển thị các điện thoạ
 
         let Clock = ["Đồng hồ Orient","Đồng hồ Casio","Đồng hồ","Đồng hồ Citizen","Đồng hồ Tissot","Đồng hồ Frederique Constant","Đồng hồ Titan","Đồng hồ Tommy Hilfiger",""]
        let Ipad = [""]
-           
+          
     useEffect(() => {
                  
                      if(CategoryInformation.includes(namephone)){
@@ -64,7 +65,8 @@ function useHandleApi(namephone) {  // xử lý hiển thị các điện thoạ
                             `/Information/${endpointInfo}/${encodeURIComponent(namephone)}.json`
                             : `/Information/${endpointInfo}/homephone.json`;  
                          
-        
+                            console.log(namephone);
+        console.log(  `/Information/${endpointInfo}/${encodeURIComponent(namephone)}.json`)
                         
                                 try{
                                             const  getApi = await axiosClient.get(apiUrl);                           

@@ -7,7 +7,7 @@ let product = [
         {id: 3, name:  "earphone", category: "Tai nghe", sale:"Hot"},
         {id: 4, name:  "washing_machine", category:"Máy giặt",  sale:"Hot"},
         {id: 5, name:  "smartphone", category: "SmartPhone",  sale:"Hot"},
-        {id: 6, name:  "clock", category:"Đồng Hồ", sale: "-10%"},
+        {id: 6, name:  "clock", category:"Đồng hồ", sale: "-10%"},
         {id: 7, name: "electric_cooker", category: "Nồi cơm điện",sale: "Hot"},
         {id: 8, name: "oil-free_fryer", category: "Nồi chiên không dầu",sale: "Hot"},
         {id: 9, name:  "tivi", category: "Tivi",sale: "-40%"},

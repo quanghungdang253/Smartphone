@@ -1,0 +1,83 @@
+
+
+
+//========================biến chung =====================
+
+
+
+
+//==================================================
+
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+
+  padding: 1rem 1rem 1rem 1rem;
+        &__rowOne {
+            overflow: auto;
+          .titleRowOne {
+            margin-bottom: 1rem;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 800;
+          }
+          .mainCriteria {
+             display: flex;
+             flex-wrap: wrap;
+             grid-column-gap: 0.5rem;
+             grid-row-gap: 1rem;
+            .addPadding {
+                  padding: 10px;
+            }
+          }
+          .Boxitem {
+            cursor: pointer;
+            min-width: 6em;
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+            height: 34px;
+
+            font-size: 12px;
+            background-color: #2cbdf7df;
+            
+            border-radius: 999px;
+                .item {
+                    font-weight: 500;
+                    color: black;
+                    text-decoration: none;
+                }
+          }
+          .addIcon {
+                display: flex;
+                grid-column-gap: 5px;
+          }
+          .addWidth {
+                min-width: 12em;
+                padding: 5px 5px;
+                
+          }
+        }
+}
+
+@media (max-width: 768px) {
+        .container {
+        &__rowOne {
+            overflow: auto;
+          .titleRowOne {
+            margin-bottom: 1rem;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 800;
+          }
+          .mainCriteria {
+             display: flex;
+          }
+          .addWidth {
+             min-width: 12em;
+          }
+        }
+        }
+}

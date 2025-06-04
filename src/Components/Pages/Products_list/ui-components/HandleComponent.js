@@ -7,7 +7,7 @@ import Loading from '../../../Common/components/Loading';
 //=================================imgage==================
 import imgSale from '../assets/image-ui-components/img-sale.jpg';
 import imgIPhone from '../assets/image-ui-components/imgIphone.jpg';
-
+import Criteria from '../../../Common/components/criteria';
 //=========================================================
 import imgbackground from '../assets/image-ui-components/imgbackground.jpg';
 import LabelProduct from '../../../Common/label-product/label-product';
@@ -38,6 +38,9 @@ const SamsungComponent = ({data, namephone, ...props}) => (
                  <ImgSlide img={imgSaleSamsung}/>
          </div>
             <ListimageProduct image={data.advertising_images} customs={true}/>
+               <div className='Criteria'> 
+                    <Criteria />
+              </div>
             <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
         </SamsungComponents>
  </Suspense>
@@ -54,6 +57,7 @@ const IphoneComponent = ({data, namephone, ...props}) => (
     >  
                  <div>
                         <ListimageProduct image={data.advertising_images} customs={true}/>
+                        <Criteria />
                         <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
                   </div>
      </Suspense>

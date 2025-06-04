@@ -94,8 +94,8 @@ body{
 /* vi dụ  */
 
 .container {
-  height: 200vh;
-  width: 90rem;
+
+
   border: 1px solid black;
   display: flex;
   align-items: center;

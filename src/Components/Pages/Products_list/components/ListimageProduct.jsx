@@ -44,7 +44,7 @@ const ListimageProduct = ({image, customs}) => {   //ở đây {phone} là viế
                         })     
         }
         return(
-            <Wrapper> 
+            <Wrapper className="container"> 
                 <HandleImage>
                    <div className='HandleImage__image'>
                                 <div className='HandleImage__node'>  
@@ -56,13 +56,14 @@ const ListimageProduct = ({image, customs}) => {   //ở đây {phone} là viế
                   </div>
                 
                         {customs && (
-                                <div className=' HandleImage__image-box-two'>
+                               <div className='HandleImage__image'>
                                 <div className='HandleImage__node'>  
-                                        <button variant='outlined' onClick={() => Left()}> <FontAwesomeIcon icon={faAngleLeft}  className="button"/> </button>
-                                        <button variant='outlined'  onClick={() => Right()}> <FontAwesomeIcon icon={faAngleRight} className="button"/> </button>
+                                          <button variant='outlined' onClick={() => Left()} className='button__left button'> <FontAwesomeIcon icon={faAngleLeft}/> </button>
+                                         <button variant='outlined'  onClick={() => Right()} className='button__right button'> <FontAwesomeIcon icon={faAngleRight}/> </button>
                                 </div>
-                                <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt='' className='image'   />                     
-                        </div>
+                                        
+                                                <img src={process.env.PUBLIC_URL+ preimage[preindex]} alt='' className='image'  />                                      
+                  </div>
                         )} 
                 
                     </HandleImage>    
