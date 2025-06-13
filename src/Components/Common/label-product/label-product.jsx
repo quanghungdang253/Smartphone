@@ -4,6 +4,7 @@ import Loading from '../components/Loading';
 import { Link } from 'react-router-dom';
 function LabelProduct(props) {
      const labelProduct = props.labelProduct;
+     console.log(labelProduct);
   if (!Array.isArray(labelProduct)) {
         return null; // hoặc <Loading />
     }
