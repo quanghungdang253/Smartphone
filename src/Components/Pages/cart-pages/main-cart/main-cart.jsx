@@ -21,6 +21,7 @@ const location = useLocation();
 const pathName = location.pathname;
     // thực hiện lấy toàn bộ danh sách 
     let selector = useSelector(state => state.cart);
+
     let dispatch = useDispatch();
     // const navigate = useNavigate();
     const headerRef = useRef();
@@ -70,8 +71,8 @@ const pathName = location.pathname;
                                                     <div className={styles.mainRow}> 
                                                     <div className={styles.row1}>  
                                                          <p className={styles.nameProduct}> {(Item.title || Item.name)} </p>
-                                                        <big> {Item.total_original || Item.discount}    </big>
-                                                         <span className={styles.downPrice}> ({Item.price} )  </span>
+                                                        <big> {Item.price || Item.discount}    </big>
+                                                         <span className={styles.downPrice}> ({Item.total_original} )  </span>
                                                    </div>
                                                     <div className={styles.row2}> 
                                                          <div>  
@@ -112,7 +113,7 @@ const pathName = location.pathname;
                                                   
                                                 
                                                 </div>
-                                              <InfoClient Sum={selector.totalPrice.toLocaleString('vi-VN')}/>
+                                              <InfoClient Sum={selector.totalPrice.toLocaleString('vi-VN')} selector={selector}/>
 
                                                 
                                                

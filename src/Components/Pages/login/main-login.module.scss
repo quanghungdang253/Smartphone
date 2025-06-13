@@ -1,0 +1,214 @@
+
+* {
+     margin: 0;
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+$colors :  #d70018;
+$fontTextTitle:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$fontLabel: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                
+.mainLogin {
+
+    margin-top:12em;
+        .boxLogin {
+            margin: 0 auto;
+            max-width: 1280px;
+            display: flex;
+            
+            .boxLeft {
+               border-radius: 10px;
+                background-color: rgb(222, 222, 222);
+                max-width: 750px;
+                padding-top: 1rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+            .rowOne {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                grid-column-gap: 4rem;
+               .boxOne {
+                padding: 10px 20px 15px 20px;
+                border-radius: 10px;
+                background-color: $colors;
+                  .nameboxOne {
+                    font-size: 22px !important;
+                    font-family: 'Times New Roman', Times, serif !important;
+                    font-weight: 800 !important;
+                    color: white;
+                } 
+                  }     
+                .img {
+                     object-fit: cover;
+                     max-width: 10rem;
+                     height: 2.5rem;
+                     border-radius: 10px;
+                }
+            }
+            .rowTwo {  
+            margin-bottom: 2rem;
+                h1 {
+                    
+                    text-align: start;
+                }
+                .textOne {
+                    text-align: center;
+                     font-family:  $fontTextTitle;
+                     font-size: 24px;
+                     font-weight: 900; 
+                     margin-top: 1rem;
+                     margin-bottom: 0.5rem;
+                }
+                .textTwo {
+                      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                     font-size: 25px;
+                     font-weight: 900; 
+                }
+            }
+            .rowThree {
+                position: relative;
+                background: linear-gradient(131deg, #F6F6F6 -0.22%, #ECEBEB 45.23%, #E2E0E0 90.68%);
+                padding: 20px 20px;
+                border-radius: 20px;
+                   
+                display: grid;
+                grid-row-gap: 1rem;
+
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    right: 0;
+                    border-bottom: 5px solid #d70018;
+                     border-right: 10px solid #d70018;
+                 
+                     width: 50px;
+                     height: 50px;
+                             border-radius: 5px;
+                     
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    left: 0;
+                    border-bottom: 5px solid #d70018;
+                     border-left: 10px solid #d70018;
+                 
+                     width: 50px;
+                     height: 50px;
+                             border-radius: 5px;
+                }
+
+                .topLeft {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-top: 5px solid #d70018;
+                    border-left: 10px solid #d70018;
+                    width: 50px;
+                    height: 50px;
+                            border-radius: 5px;
+                }
+                  .topRight {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border-top: 5px solid #d70018;
+                    border-right: 10px solid #d70018;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 5px;
+                }
+                strong {
+                     font-weight: 600;
+                }
+                 .icon {
+                    color: red;
+                 }  
+            }
+            .rowFour {
+                .imgStore {
+                    max-width: 40em;
+                    height: 30em;
+                }
+
+            }
+
+            .boxRight {
+                  margin-top: 2rem;
+                      padding-left: 8rem;
+                label {
+                        margin-top: 10px;
+                        font-weight: 600;
+                        font-family: $fontLabel;
+                }
+              
+
+             .titleBoxRight {
+                  
+                    margin-bottom: 1rem;
+                    h1 {
+                        text-align: center;
+                        font-size: 25px;
+                        font-weight: 800;
+                        font-family: $fontTextTitle
+                    }
+                       
+                }
+                .boxInput {
+                   
+                     &__one {
+                         max-width: 25em;
+                    }
+                    &__two {
+                        max-width: 25em;
+                        .WrapInput {
+                             position: relative;
+                        }
+                        .iconEye {
+                             cursor: pointer;
+                        }
+                        .iconEye {
+                             position: absolute;
+                             right: 1rem;
+                             top: 1.4rem;
+                        }
+                    }
+                    &__three {
+                      line-height: 20px;
+                        font-size: 15px;
+                       margin-top: 1rem;
+                       border-radius: 10px;
+                        padding: 10px 10px;
+                         max-width: 25em;
+                         background-color: #9fbeef;
+                    }
+                    &__four {
+                        margin-top: 2rem;
+                        text-align: center;
+                        button {
+                            color: white;
+                            font-size: 19px;
+                            font-weight: 700;
+                            background-color: #d70018;
+                            width: 100% ;
+                            padding: 15px 40px 15px 40px;
+                            border-radius:10px;
+                            font-family: $fontLabel;
+                        }
+                    }
+                    input {
+                        margin-top: 10px;
+                        padding: 10px 10px;
+                        width: 100%;
+                        border-radius: 10px;
+                    }  
+                }
+            }
+        }
+    }

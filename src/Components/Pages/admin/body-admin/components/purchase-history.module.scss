@@ -1,0 +1,21 @@
+
+
+.mainHistory {
+    width: 100%;
+     .boxBtn {
+         background-color: rgb(237, 237, 237);
+         padding: 10px 10px;
+         border-radius: 10px;
+         .btn {
+            display: inline;
+            display: flex;
+            align-items: center;
+            .icon {
+              
+                display: block;
+                padding: 5px 5px;
+                border-radius: 999px;
+            }
+     }
+    }
+}

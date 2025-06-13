@@ -1,0 +1,153 @@
+
+
+.mainDetail {
+    &__rowOne {
+         background-color: rgb(255, 255, 255);
+          border-radius: 10px;
+        padding: 10px 10px 40px 10px;
+        position: relative;
+        .boxOne {
+             display: flex;
+             justify-content: space-between;
+             margin-bottom: 1rem;
+             .date {
+                display: block;
+                padding: 5px 5px;
+
+                border-radius: 10px;
+                font-weight: 600;
+                color: rgb(0, 0, 0);
+                background-color: rgb(237, 49, 190);
+             }
+        }
+       .product {
+       
+        margin-bottom: 0.5rem;
+       
+       
+           &__item {
+                display: flex;
+                img {
+                max-height: 7em;
+                    max-width:7em
+                }
+                h1 {
+                     margin-bottom: 1rem;
+                }
+                .vat {
+                    color: rgb(0, 0, 0);
+                     background-color: rgb(7, 212, 239);
+                     padding: 5px 5px;
+                     max-width: 6rem;
+                     border-radius: 10px;
+                     margin-top: 1rem;
+                }
+           }
+           
+       }
+       .quantity {
+        padding: 10px 10px;
+        border-radius: 10px;
+        background-color: yellow;
+           position: absolute;
+           right:  1em;
+           bottom: 1em;
+       }
+    }
+    &__rowTwo {
+        display: flex;
+        margin-top: 1rem;
+        grid-column-gap: 2rem;
+        .columnOne {
+            max-width: 30em ;
+            &__childOne {
+              
+                background-color: white;
+                padding: 10px 10px;
+                border-radius: 10px;
+                width: 100%;
+                h1 {
+                    margin-bottom: 1rem;
+                }
+                 .infoClient {
+                    display: grid;
+                    grid-row-gap: 1rem;
+                    p {
+                        display: flex;
+                        text-align: start;
+
+                        justify-content: space-between;
+                   
+                       span {
+                            font-weight: 600;
+                       }
+                    }
+                 }
+            }
+            &__childTwo {
+                margin-top: 1rem;
+                padding: 10px 10px;
+                border-radius: 10px;
+                  max-width: 30em;
+                 background-color: white;
+                 .boxOne {
+                    h1 {
+                        padding: 10px 10px;
+                    }
+                    .iconAddress {
+                             color: red;
+                             margin-right: 0.5rem;
+                    }
+                    p {
+                        font-weight: 600;
+                        padding-left: 1rem;
+                        padding-top: 1rem;
+                    }
+                 }
+                 .boxTwo {
+                    padding-bottom: 20px;
+                    span {
+                           font-weight: 600;
+                    }
+                     .iconPhone {
+                     
+                        color: red;
+
+                          margin-right: 0.5rem;
+
+                     }
+                 }
+            }
+        }
+        .columnTwo {
+            min-width: 30em;
+            padding: 10px 10px;
+            border-radius: 10px;
+            background-color: white;
+            h1 {
+                margin-bottom: 1rem;
+            }
+            .inforProduct {
+                p {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 2rem;
+                    padding: 10px 10px;
+                }
+                big {
+                    color: red;
+                    font-weight: 600;
+                }
+                h1 {
+                    padding: 10px 10px 10px 5px;
+                    border-radius: 10px;
+                    background-color: rgb(182, 182, 182);
+                   
+                }
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

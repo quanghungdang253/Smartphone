@@ -25,7 +25,7 @@ function FooterColumnOne(props) {
                                          Khiếu nại <span>  1800.2063   </span> (8h00 - 21h30)
                                 </div>
                                 <h1> Phương thức thanh toán </h1>
-                                <div>   
+                                <div className={styles.payment}>   
                                         <img src={img1} alt='img1' /> 
                                         <img src={img2} alt='img2' /> 
                                         <img src={img3} alt='img3' /> 

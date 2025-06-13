@@ -90,7 +90,7 @@ document.querySelector('#hobbiesFormId').addEventListener('submit', (e) => {
         }
         createStoreListItem.dispatch(action);
       
-})
+});
 createStoreListItem.subscribe(() => {
         console.log("STATE UPDATE ",createStoreListItem.getState())
       

@@ -15,7 +15,8 @@ const createCartSlice = createSlice({
     addCart(state, action) {
    
       const productKey = `${action.payload.id}-${action.payload.title}-${action.payload.brand}`;
-      const price = parseFloat((action.payload.total_original || action.payload.discount).replace(/\./g, ''));
+      const price = parseFloat((action.payload.price || action.payload.discount).replace(/\./g, ''));
+
 if(isNaN(price)){
   console.warn('Giá sản phẩm không hợp lệ:', price);
   return;
@@ -34,19 +35,19 @@ if(isNaN(price)){
         };
         state.item.push(newProduct);
         state.indexCart += 1;
-      }
-
-     
+    }
+  
       state.indexProduct += 1;
       state.totalPrice += price;
-      
+
+    
     },
 
     deleteCart(state, action) {
       const findItem = state.item.find(item => item.productKey === action.payload);
       if (!findItem) return;
 
-      const price = parseFloat((findItem.total_original || '0').replace(/\./g, ''));
+      const price = parseFloat((findItem.price || '0').replace(/\./g, ''));
       const quantity = findItem.quantity;
 
       state.item = state.item.filter(item => item.productKey !== action.payload);
@@ -59,7 +60,7 @@ if(isNaN(price)){
     increaseQuantity(state, action) {
       const index = state.item.findIndex(item => item.productKey === action.payload);
       if (index !== -1) {
-        const price = parseFloat((state.item[index].total_original || '0').replace(/\./g, ''));
+        const price = parseFloat((state.item[index].price || '0').replace(/\./g, ''));
         state.item[index].quantity += 1;
         state.indexProduct += 1;
         state.totalPrice += price;
@@ -69,14 +70,14 @@ if(isNaN(price)){
     decreaseQuantity(state, action) {
       const index = state.item.findIndex(item => item.productKey === action.payload);
       if (index !== -1 && state.item[index].quantity > 1) {
-        const price = Number((state.item[index].total_original || '0').replace(/\./g, ''));
+        const price = Number((state.item[index].price || '0').replace(/\./g, ''));
         state.item[index].quantity -= 1;
         state.indexProduct -= 1;
         
         state.totalPrice -= price;
       } else if (index !== -1) {
    
-        const price = Number((state.item[index].total_original || '0').replace(/\./g, ''));
+        const price = Number((state.item[index].price || '0').replace(/\./g, ''));
         state.item.splice(index, 1);
         state.indexCart -= 1;
         state.indexProduct -= 1;

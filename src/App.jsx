@@ -81,6 +81,7 @@
    
 //============================ ứng dụng chạy chính =====================================
 import './App.css';
+
 import './Components/phone/HeaderStyle/reset.css';
 import { Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
@@ -102,7 +103,13 @@ import MainCart from './Components/Pages/cart-pages/main-cart/main-cart';
 import HandleAlert from './Components/Common/components/handle-alert';
 import MainFooter from './Components/Common/footer/main-footer';
 import Breadcrumb from './Components/Common/location/location';
+import MainLogin from './Components/Pages/login/main-login';
 import { BreadcrumbProvider } from './Context/share-data-bread-crumb/share-data-bread-crumb';
+import MainAdmin from './Components/Pages/admin/main-admin';
+import LookUpOrders from './Components/Pages/look-up-orders/look-up-orders';
+import ShowProduct from './Components/Pages/look-up-orders/components/show-product/show-product';
+// import CounterExample from './app/CouterExample';
+// import storeExample from './app/storeExample';
 // =========================================chatbot==============================================
 
 export default function App() {
@@ -115,7 +122,7 @@ export default function App() {
           
               <MainHeader />
               <ContentWrapper>
-               {/* <Breadcrumb /> */}
+           
                 <Routes>
                   <Route path='/' element={<Home />} />
                   <Route path='label/:namephone' element={<Products_list/>} />
@@ -123,6 +130,10 @@ export default function App() {
                   <Route path='/StoreInfo' element={<MainStoreInfo/>} />
                   <Route path='/GoogleMap' element={<MainStoreMapInfo/>} />
                   <Route path='/Cart' element={<MainCart />} />
+                  <Route path='/Login' element={<MainLogin/>} />
+                  <Route path='/Admin' element={<MainAdmin/> } />
+                  <Route path='/LookProduct' element={<LookUpOrders/>} />
+                  <Route path='/ShowProduct' element={<ShowProduct />} />
                 </Routes>
               </ContentWrapper>
             </HelmetProvider>             
@@ -131,15 +142,20 @@ export default function App() {
               <CommunicationSettings/>     
             </div> 
             <div className='chatBot'> 
+        <div className="bg-">
+
+        </div>
               <MainChatbox/>
-          
+        
             </div>
           </ParentContext>    
         </Style>
               <FooterWrapper>
                      <MainFooter />
               </FooterWrapper>
+              {/* <CounterExample/> */}
         </Provider>
+
     </BreadcrumbProvider>
     );
   }

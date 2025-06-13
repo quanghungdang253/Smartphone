@@ -13,11 +13,25 @@ import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import { set } from 'nprogress';
 
-function InfoClient({Sum}) {
+function InfoClient({Sum, selector}) {
   const dispatch = useDispatch();
   const [selectedProvince, setSelectedProvince] = useState(null);
   const status = useSelector(state => state.infoClient.status);
+  const [dateTime , setDateTime] = useState();
+
+ useEffect(() => {
+   const today = new Date();
+        let day = today.getDate();
+      const month = today.getMonth();
+      const year = today.getFullYear();
+       setDateTime(day + "/" + month + "/" + year);
+   
+ },[])
+
+
  const [loading , setLoading] = useState(false);
+
+
 
   const [formData, setFormData] = useState({
     fullname: "", 
@@ -31,8 +45,16 @@ function InfoClient({Sum}) {
     FormOfPayment: "",
     houseNumber: "",  // số nhà 
     brothersAndsisters: "",
+    // Bổ sung dữ liệu đặt hàng 
+
+    date: "12/3/2004",
+    dataProduct: selector.item,
+    sumMoney: Sum
+  
+
    
   });
+console.log(console.log(selector.item));
   const handleSubmit = async () => {
     setLoading(true);
     const resultAction = await dispatch(submitInfoClient(formData));
@@ -145,6 +167,7 @@ function InfoClient({Sum}) {
     </select>
     <button onClick={ () => {
         handleSubmit();
+      
         
     }} className={styles.btn}>Đặt Hàng 
 

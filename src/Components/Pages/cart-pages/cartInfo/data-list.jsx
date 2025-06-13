@@ -5,7 +5,7 @@ import { fetchFormData } from '../features/form/formSlice';
 const DataList = () => {
   const dispatch = useDispatch();
   const { dataList, status } = useSelector((state) => state.form);
-
+console.log("dữ liệu data nhận được " + dataList);
   useEffect(() => {
     dispatch(fetchFormData());
   }, [dispatch]);

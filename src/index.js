@@ -8,6 +8,7 @@ import Appp from './Appp';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './ExampleReact_Toolkit/app/store';
+import "./styles-global/main/main.scss";
 
 import { Link } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css';

@@ -57,12 +57,14 @@ border-radius: 4px;
   
     transition: transform 0.8s ease-in-out, opacity 0.5s ease;
     position: absolute;
+    top: 20rem;
     display: flex;
     grid-column-gap: 46.5em;
     align-items: center;
     justify-content: center;
-    bottom:55%;
+    
     opacity: 0;
+    z-index: 1000;
 
 }
 .image-container:hover .btnNavigation {

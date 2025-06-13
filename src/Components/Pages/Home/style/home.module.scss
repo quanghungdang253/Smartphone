@@ -56,7 +56,6 @@
           display: flex;  
           align-items: start;  
           justify-content:start;
-          grid-column-gap: 1%;
           height: 490px;   
           max-width:1450px; 
           box-sizing: border-box;
@@ -64,6 +63,7 @@
     .menuWeb {
         display: block;
         height: 100%;
+        margin-right: 1rem;
 }
     .menuMobie {
     display: none;

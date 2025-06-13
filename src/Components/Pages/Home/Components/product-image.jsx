@@ -40,7 +40,7 @@ const Productads = () => {
     setCurrentIndex((preIndex) => {
             const newIndex = preIndex - 1;
             if(newIndex >= 0 ){
-                if(newIndex < Preimage.length - 4){
+                if(newIndex < arrayImage.length - 4){
                         containerRef.current.scrollLeft -= imgWidth;
                 }
                 return newIndex;
@@ -52,15 +52,40 @@ const Productads = () => {
 
     setCurrentIndex((preIndex) => {
             const newIndex = preIndex + 1;
-            if(newIndex < Preimage.length){
+            if(currentIndex >= arrayImage.length - 1){
+                if(containerRef.current){
+                       containerRef.current.scrollLeft = 0;
+                }
+                return 0;
+            }
+            
+            if(newIndex < arrayImage.length){
                 if(newIndex > 3){
                             containerRef.current.scrollLeft += imgWidth;
                 }
                 return newIndex;
             }
-            return preIndex;
+            return newIndex;
     })      
 }
+
+useEffect(() => {
+        const handleTime = setTimeout(() => {
+        //     if(currentIndex >= arrayImage.length - 1){
+        //             setCurrentIndex(0);
+        //              if (containerRef.current) {
+        //             containerRef.current.scrollLeft = 0;
+        //              }
+        //     }
+        //     else {
+        //           scrollRight();
+        //  }
+           scrollRight();
+        },2000)
+    
+
+        return () => clearTimeout(handleTime)
+},[currentIndex])
     return(
     <div className={styles.boxContainer}>   
         <div className={styles.Container}>  {/*className='Wrapper'  */}

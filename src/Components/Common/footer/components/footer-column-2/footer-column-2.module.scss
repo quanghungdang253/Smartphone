@@ -17,7 +17,8 @@
         display: grid;
         grid-row-gap: 1rem; 
         .iconCall {
-
+            display: flex;
+            flex-wrap: wrap;
             img {
                 width: 32px;
                 height: 32px;
