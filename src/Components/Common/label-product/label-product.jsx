@@ -4,7 +4,10 @@ import Loading from '../components/Loading';
 import { Link } from 'react-router-dom';
 function LabelProduct(props) {
      const labelProduct = props.labelProduct;
- 
+  if (!Array.isArray(labelProduct)) {
+        return null; // hoặc <Loading />
+    }
+
     return (
         <div className={styles.boxLabel}>
             <div className={styles.boxRow}>
