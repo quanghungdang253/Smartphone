@@ -1,2 +1,5 @@
 sphereGeometry: quả cầu hình học 
 OrbitControls: điều khiển quy đão 
+
+// kiến thức mới 
+ window.history.pushState

@@ -12,6 +12,7 @@
     margin-top: 12rem;
     grid-column-gap: 10rem;
     &__columnLeft {
+        display: block;
         margin-top: 4rem;
             img {
                 max-width: 50em;
@@ -61,7 +62,7 @@
                     
                     margin-left: 1rem;
                     height: 35px;
-                    min-width: 20rem;
+                  
                     border: none;
                 }
             }
@@ -82,5 +83,25 @@
                 }
             }
         }
+    }
+}
+
+// ====================================responsive===========================
+@media (max-width: 768px) {
+        .mainLookup {
+            &__columnLeft {
+                display: none;
+            }
+             &__columnRight {
+             .formInput {
+                        padding: 1em 1em 1em 1em;
+                       h1 {
+                        font-size: 14px;
+                        margin-bottom: 0px;
+                       }
+             }
+        }
+         
+       
     }
 }

@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './detail-product.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 function DetailProduct({data}) {
-    console.log(data)
+   useEffect(() => {
+        window.scrollTo({
+             top: 0,
+             behavior:'smooth'
+        })
+   },[])
 
     if(!data){
                return;

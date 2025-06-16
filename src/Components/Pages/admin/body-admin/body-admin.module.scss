@@ -67,7 +67,7 @@
                  padding-left: 1rem;
             }
             .navigation {
-                min-width: 60em;
+                    min-width: 60em;
                     &__navOne {
                         display: flex;
                         align-items: center;
@@ -175,9 +175,7 @@
         h1 {                                   
                 background-color: rgb(255, 234, 2);
                 padding: 10px 20px 10px 20px;
-                    border-radius: 10px;
-               
-                
+                border-radius: 10px; 
             }
                
             }
@@ -187,6 +185,67 @@
 }
 
 
-.boxBtn {
-    
+//======================================responsive==================================
+@media (max-width:768px) {
+    .container {
+        background-color: rgb(240, 237, 237);
+         margin-top: 1rem;
+         padding: 10px 10px !important;
+        display: flex ;
+        flex-direction: column;
+          &__boxLeft {
+            display: grid !important;
+            grid-template-columns: 7em 7em;
+            min-height: 10em;
+            grid-template-rows: 4em repeat(2, 4em);
+            grid-column-gap: 2rem;
+
+            flex-direction: row !important;
+            flex-wrap:wrap;
+              .mainBox {
+                width: 100%;
+                .itemBtn {
+                    font-weight: 700;
+                    display: flex;
+                    text-align: start;
+                    min-width: 9em;
+                    padding: 1rem 0rem 1rem 0px;
+                }
+              }
+         }
+         &__boxRight {
+          .titleBoxRight {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+          }
+            .navigation {
+                min-width: 20em;
+                 &__navTwo {
+              .listProduct {
+                //   max-width: 35%;
+                  padding: 0px !important;
+                .mainInFo {
+                    width: 100%;
+                       &__BoxOne {
+                            display: flex;
+                            flex-direction: column;
+
+                       }
+                          
+                                &__BoxTwo {
+                                    .content {
+                                        display: flex;
+                                            flex-direction: column;
+                                    }
+                                     .sumMoney {
+                                        position: relative;
+                                     }
+                                }
+                }
+            }
+            }
+            }
+           
+         }
+    }
 }

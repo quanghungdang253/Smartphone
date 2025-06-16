@@ -50,10 +50,11 @@ const resultMoney  = (downPrice , prePrice) => {
         return  result.toLocaleString("vi-VN");
 }
     return (
-        <div>
+        <div className='ml-4'>
         {!dataDetail ? (
                 <div>
-                     <div className='flex gap-4'> 
+                     <div className='flex flex-wrap gap-4 mt-4
+                     '> 
                 {dataBtn.map((item) => (
                     <div 
                    
@@ -64,7 +65,9 @@ const resultMoney  = (downPrice , prePrice) => {
                     </div>
                 ))}
             </div>
-             <div className=' bg-white-200 shadow-2xl p-10 mt-[0rem]'>
+             <div className=' bg-white-200 shadow-2xl p-2 mt-[0rem]
+             lg:p-10
+             '>
             <h1 className='font-bold text-[18px] mb-2'> Lịch sử mua hàng </h1>
                 {product && product.data !== null ? (
                         <div className=''>   
@@ -75,16 +78,20 @@ const resultMoney  = (downPrice , prePrice) => {
                                    onClick={() => setDataDetail(item)}
                                 >
                                
-                                    <img src={item.imgCart} alt="" className='w-[8rem]' />
+                                    <img src={item.imgCart} alt="" className='w-[6rem] h-[6rem] lg:w-[8rem]' />
                                     <div className='w-[100%]'>
-                                        <div className='flex justify-between'>  
-                                                <h1 className='font-bold text-[18px]'>  {item.title}   </h1>  
-                                                <p className=' font-bold text-[14px]'>Ngày đặt:{product.data[1].date} </p> 
+                                        <div className='flex gap-2 justify-between flex-col lg:flex-row '>  
+                                                <h1 className='font-bold text-[14px]
+                                                lg:text-[18px]
+                                                '>  {item.title}   </h1>  
+                                                <p className=' font-bold text-[12px]
+                                                        lg:text-[14px]
+                                                '>Ngày đặt:{product.data[1].date} </p> 
                                         </div>
                                             
 
                                             <p>  Giá: {item.price }  <span>  {item.total_original}   </span> </p>
-                                            <p className='mt-10 bg-green-300 inline-block pt-1 pb-1 pl-2 pr-2 text-[12px] font-bold rounded-xl'> Đã xuất VAT </p>
+                                            <p className='mt-2 mb-4 bg-green-300 inline-block pt-1 pb-1 pl-2 pr-2 text-[12px] font-bold rounded-xl'> Đã xuất VAT </p>
                                     </div>
                                     <p className='absolute bottom-0 right-0 p-2 bg-yellow-300 rounded-lg text-black  font-bold'> Xem chi tiết </p>
                                 </div>
@@ -100,8 +107,7 @@ const resultMoney  = (downPrice , prePrice) => {
 
                 </div>
         ) : (
-            <div className='bg-white shadow-2xl w-[53em] p-8 rounded-3xl'> 
-
+            <div className='bg-white shadow-2xl p-8 rounded-3xl lg:w-[53em]'> 
                     <div 
                         onClick={() => setDataDetail(null) }
                         className='block bg-red-600 inline-block pt-1 pb-1 pl-4 pr-4 rounded-xl shadow-2xl text-white cursor-pointer'
@@ -114,26 +120,33 @@ const resultMoney  = (downPrice , prePrice) => {
                          <h1 className='font-bold text-[18px]'> Tổng quan </h1>
                        <div className="shadow-2xl p-4 relative">   
                       
-                             <div className='flex justify-between'>                    
+                             <div className='flex flex-col justify-between 
+                             lg:flex-row
+                             
+                             '>                    
                                 <span> Ngày đặt hàng : {product.data[1].date}  </span>   
                                  <span className='bg-green-300 text-[12px] font-bold p-1 rounded-2xl '>  Đã đặt hàng  </span>
                              </div>    
-                             <div className='flex'>
+                             <div className='flex flex-col
+                             lg:flex-row
+                             '>
                                 <img src={dataDetail.imgCart} alt="" className='w-[8em]'/>
 
                                 <div className=''>
                                         <h1 className='font-bold text-[18px]'> {dataDetail.title}</h1>
                                         <p> {dataDetail.price}  <span> {dataDetail.total_original}  </span> </p>
                                 </div>
-                                <div className='flex items-center absolute bottom-0 right-0'>
-                                        Số lượng : 
+                                <div className='flex items-center relative bottom-0 right-0
+                                lg:absolute
+                                '>
+                                        Số lượng: 
                                         <span > 1 </span>
                                         <div className='ml-4 border border-red p-2 rounded-xl bg-red-500'> Mua lại </div>
                                 </div>
                              </div>
                        </div>
-                       <div className='mt-[1rem] text-[14px] flex'>
-                            <div className='w-[27em]'>
+                       <div className='mt-[1rem] text-[14px] lg:flex'>
+                            <div className=' lg:w-[27em]'>
                                 <div className='bg-white shadow-2xl rounded-2xl p-4 mb-10 flex flex-col gap-2'>
                                     <h1 className='font-bold text-[14px] '> Thông tin khách hàng </h1>
                                     <p className={`${flex}`}> Họ và tên : <span className='font-bold'> {product.data[1].fullname}</span>  </p>
@@ -144,39 +157,39 @@ const resultMoney  = (downPrice , prePrice) => {
                                 <hr />
                                 <div className='bg-white shadow-2xl p-4 rounded-xl '>
                                       <h1 className='mb-[1rem] font-bold '> Thông tin hỗ trợ </h1>
-                                     <div className='flex items-end justify-between rounded-3xl mb-3'>  
+                                     <div className='grid grid-cols-2 mt-3 rounded-3xl mb-3 '>  
                                              <div>   
                                                  <p>
-                                                       <FontAwesomeIcon icon={faLocationDot} className='text-red-500' />
-                                                      <span className='text-black-500 font-bold'> Địa chỉ cửa hàng </span>
+                                                       <FontAwesomeIcon icon={faLocationDot} className='text-red-500 text-[12px]' />
+                                                      <span className='text-black-500 font-bold text-[12px] lg:text-[14px]'> Địa chỉ cửa hàng </span>
                                                 </p>
-                                                <h1 className='w-[15rem]'> 96/50/1/ Phạm đặng giảng Bình hưng hòa Quận Bình tân </h1>
+                                                <h1 className='w-[15rem] text-[12px] lg:text-[14px]'> 96/50/1/ Phạm đặng giảng Bình hưng hòa Quận Bình tân </h1>
                                             </div>
-                                            <div className='bg-red-200 inline-block rounded-2xl h-[2rem] p-1'>
+                                            <div className='bg-red-200 inline-block rounded-2xl h-[2rem] p-1 mt-16'>
                                                   <FontAwesomeIcon icon={faLocationDot} className='text-red-500'  />
-                                                  <span className='text-[12px]'> Chỉ đường </span>
+                                                  <span className='text-[12px] lg:text-[14px]'> Chỉ đường </span>
                                              </div>
                                      </div>
                                      <hr />
-                                     <div className='mt-3 flex justify-between'>
-                                          <div>   
-                                               <p>
+                                     <div className='mt-3 grid grid-cols-2'>
+                                    <div>   
+                                        <p>
                                               <FontAwesomeIcon icon={faPhone} className='text-red-500' />
-                                               <span className='font-bold'> Số điện thoại  </span>
-                                              </p>
-                                                <h1 className='w-[15rem]'> 96/50/1/ Phạm đặng giảng Bình hưng hòa Quận Bình tân </h1>
-                                          </div>
-                                    <div className='bg-red-200 inline-block rounded-2xl h-[2rem] p-1'>
+                                               <span className='font-bold text-[12px] lg:text-[14px]'> Số điện thoại  </span>
+                                        </p>
+                                                <h1 className='w-[15rem] text-[12px] lg:text-[14px]'> 03895542313</h1>
+                                    </div>
+                                    <div className='bg-red-200 inline-block rounded-2xl h-[2rem] p-1 mt-10'>
                                     <FontAwesomeIcon icon={faPhone}  className='text-red-500'/>
                                                   <span className='text-[12px]'> Liên hệ  </span>
                                     </div>
                                      </div>
                                 </div>
                             </div>  
-                            <div className='w-[30em] p-4 flex flex-col gap-3'>
+                            <div className='p-4 rounded-2xl flex flex-col gap-3 lg:w-[30em] shadow-2xl'>
                                 <h1 className='text-[18px] font-bold'> Thông tin thanh toán </h1>
                                 <h1 className='bg-slate-400 p-2'> Sản phẩm </h1>
-                                <h1 className={`${flex}`}> Tên sản phẩm : <span  className='font-bold'>  {dataDetail.title} </span> </h1>
+                                <h1 className={`${flex}`}> Tên sản phẩm: <span  className='font-bold'>  {dataDetail.title} </span> </h1>
                                 <p className={`${flex}`}> Số lượng :  <span className='font-bold'> 1 </span> </p>
                                 <p className={`${flex}`}> giảm giá : <span className='font-bold'> 
                                         {resultMoney(dataDetail.price,dataDetail.total_original)}

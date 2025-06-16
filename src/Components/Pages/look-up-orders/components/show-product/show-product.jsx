@@ -10,11 +10,16 @@ import InforClient from '../infor-client/infor-client';
 import qr from '../../img/images.png';
 import imgGoogleplay from '../../img/googlePlay.jpg';
 import imgAppStore from '../../img/appStore.jpg';
+import useStatusUser from '../../../../../hooks/use-status-user';
+import { useNavigate } from 'react-router-dom';
 function ShowProduct() {
+  const navigate = useNavigate();
 const[getData , setGetData] = useState(() => {
         let getDataLocal = localStorage.getItem("data");
         return JSON.parse(getDataLocal);
 });
+
+
   const location = useLocation();
   const product = location.state?.product
   const [index , setIndex] = useState(0);
@@ -32,20 +37,69 @@ const[getData , setGetData] = useState(() => {
        }
         
   },[product])
+  const handleLogout = () => {
+      localStorage.removeItem("currentUser");
+        localStorage.removeItem("data");
+        // let dataLocal = localStorage.getItem("data");
+         localStorage.removeItem("value");
+         window.dispatchEvent(new Event("user-status-changed"));
+        navigate("/LookProduct")
+
+  }
+
+
 console.log("dữ liêu nhận được "+ getData);
 console.log("dữ liệu product "+ product);
   return (
-    <div className="mt-[11em] bg-slate-50 ml-[7%] mr[7%] flex gap-[5em] h-[50em]">
+    <div className="
+         mt-[11em]
+      
+         gap-[5em]
+        
+         sm:flex
+         sm:flex-col
+         lg:flex-row
+         lg:ml-[7%]
+         lg:mr-[7%]
+        "
+         
+        >
       <div className='bg-slate-100 shadow-2xl pt-1 pl-2 pr-2 rounded-2xl' >   
          <div className="flex gap-6 items-center pt-2 pb-2 p-3  ">
               <img src={imgUser} alt="" className="w-[3rem]" />
               <div>
-                  <h1 className='font-bold text-[18px]'>{getData[1].fullname}</h1>
+                  <h1 className='font-bold text-[18px]'>
+                  Anh/Chị: 
+                  {
+                   getData && getData[1] ? (
+                        getData[1].fullname
+                    ) : (
+                      product &&  product[1] ? product[1].fullname : "Không có dữ liệu"
+                    )
+                  }
+                
+                </h1>
               </div>
           </div>
-        <div className='bg-yellow-50-100 w-[20em] p-3 grid gap-4' >
+        <div className='
+          sm:bg-yellow-100 
+              w-[20em]
+              p-3 flex 
+              gap-4
+                    lg:flex-col
+         
+          
+        '
+          
+         >
              <div 
-              className={` ${index === 0 ? "bg-slate-300" : "hover:bg-slate-300"} cursor-pointer flex items-center  p-2 rounded-xl`}
+              className={` ${index === 0 ? "bg-slate-300" : "hover:bg-slate-300"}  flex flex-col cursor-pointer  items-center justify-center p-2 rounded-xl text-[12px]
+              sm:flex-col
+              lg:flex-row
+              lg:text-[16px]
+              `
+              
+              }
               onClick={() => setIndex(0)}
               >
                  <img src={imgcart} alt="" className='w-10 mr-4' />
@@ -55,18 +109,25 @@ console.log("dữ liệu product "+ product);
               className={`
               ${index === 1 ? "bg-slate-300" : "hover:bg-slate-300"}
                 cursor-pointer
-                flex items-center
-             
-                p-2 rounded-xl`
+                text-center
+                flex flex-col items-center justify-center
+                text-[12px]
+                p-2 rounded-xl
+                sm:
+                lg:text-[16px]
+                lg:flex-row
+                `
               }
               onClick={() => setIndex(1)}
               >
              <img src={imgInfo} alt="" className='w-10 mr-4' />
               Thông tin địa chỉ
              </div>
-             <div className='bg-red-500 p-[1rem] rounded-lg text-center text-white font-bold cursor-pointer'> Đăng xuất </div>
+             <div className='bg-red-500 p-[1rem] rounded-lg text-center text-white font-bold cursor-pointer' onClick={() => handleLogout()} > Đăng xuất </div>
         </div>
-        <div className='p-4 bg-yellow-100 rounded-2xl'>
+        <div className='p-4 bg-yellow-100 rounded-2xl hidden
+          lg:block
+        '>
               <h1 className='font-bold'> Tổng điểm tích lũy : 0 điểm </h1>
               <h2 className='font-bold'> Tải app Quang Hùng Store Quà tặng Vip</h2>
               <div className='flex item-center  w-[20rem] mt-4'>
@@ -88,6 +149,7 @@ console.log("dữ liệu product "+ product);
             </div>
         ) : index === 1 ? (
              <div> 
+             
                 <InforClient data={getData}/>
 
              </div>

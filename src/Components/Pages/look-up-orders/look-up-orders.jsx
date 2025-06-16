@@ -10,7 +10,34 @@ import { useNavigate } from 'react-router-dom';
 import useStatusUser from '../../../hooks/use-status-user';
 function LookUpOrders(props) {
     const [dataInput , setDataInput] = useState("");
-    const [dataValue , setData ]   = useState(datas);
+    // lỗi =======================================
+    // const [dataValue , setData ]   = useState(datas);
+     const [dataValue , setData ]   = useState(() => {
+        try {
+               const local = localStorage.getItem("value");
+               if(!local || local === "null" || local.trim() === ""){
+                return datas
+               }
+                 // nếu JSON.parse(local) lỗi, sẽ vào catch
+        const parsed = JSON.parse(local);
+          if (!parsed || typeof parsed !== "object") {
+            return datas;
+        }
+            return parsed;
+        }
+        catch (err) {
+            console.error("Lỗi parse dữ liệu localStorage:", err);
+            return datas;
+        }
+     
+        // console.log(local)
+        // if (local) {
+        //     return JSON.parse(local);
+        // } else {
+        //     return datas; // fallback khi không có local
+        // }
+    });
+
     const [Product , setProduct] = useState(null);
 
     let navigate = useNavigate();
@@ -43,16 +70,16 @@ function LookUpOrders(props) {
         return;
        }
             let data  = Object.entries(dataValue);
-            console.log(data);
-            console.log(dataInput);
+          
 
             let findProduct = data.find(([key,value]) => value.phoneNumber === dataInput)
-         if(findProduct){
-          
+         if( dataInput  && findProduct){
+            localStorage.setItem("currentUser", JSON.stringify(findProduct));
                   navigate("/ShowProduct", {state: {product: findProduct}});
-         }else {
-                  navigate("/ShowProduct", {state: {product: null}});
          }
+        //  else {
+        //           navigate("/ShowProduct", {state: {product: null}});
+        //  }
         
         
   //     setProduct(findProduct);

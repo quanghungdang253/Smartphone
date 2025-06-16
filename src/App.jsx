@@ -171,7 +171,11 @@ export default function App() {
       right: -20px;
       z-index: 1500;
     }
-    
+    @media (max-width:768px) {
+        .CommunicationSetting {
+          display: none;
+      }
+    }
     .CommunicationSetting {
       /* Your styles here */
     }

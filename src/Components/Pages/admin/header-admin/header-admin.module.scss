@@ -6,6 +6,7 @@
 .mainHeader {
    padding: 10px 10px ;
     background-color: rgba(170, 203, 231, 0.888);
+    margin-top: 12em;
     .mainBox {
         display: flex;
         align-items: center;
@@ -49,6 +50,13 @@
                     text-align: center;
                   
             }
+                .textWeb {
+                          display: block;
+                   }
+                   .textMobie {
+                        display: none;
+                   }
+
             }
        
             .iconShoppingCart {
@@ -59,3 +67,61 @@
         }
     }
 }   
+
+//=============================reponsive==========================
+@media (max-width: 768px) {
+    .mainHeader {
+margin-top: 12rem !important;
+    .mainBox {
+        display:flex;
+        justify-content:stretch;
+        grid-column-gap: 7rem;
+    
+          .Box {
+              max-width: 5rem;
+              display: flex;
+              background-color: transparent;   
+              .adminMobie {
+                    font-weight: 600;
+                    font-size: 16px;
+              }      
+         }
+           &__One {
+     
+       
+           grid-column-gap: 1rem;
+            .imgAdmin {
+                max-width: 5rem;
+                height: 3em;
+                border-radius: 999px;
+            }
+            .text {
+                font-size: 12px;
+                grid-row-gap: 0px;
+            }
+           }
+           &__Two {
+              .boxText {
+                   display: grid;
+                   grid-row-gap: 0px;
+                   font-size: 12px;
+                   h2 {
+                    min-width: 10em;
+                    text-align: center;
+                   }
+                   .textWeb {
+                          display: none;
+                   }
+                   .textMobie {
+                        display: block;
+                   }
+              }
+                .iconShoppingCart {
+                     max-width: 30px;
+                     height: 30px;
+                     margin-right: 0px;
+                }
+           }
+    }
+}
+}

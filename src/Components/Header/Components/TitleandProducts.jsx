@@ -58,7 +58,7 @@ const TitleandProducts = ({shows ,showmenu}) => {
                     </Link>
                 </div> 
                   <div className={styles.row_three}>
-                     <Link className={styles.Link}>
+                     <Link className={styles.Link} to="/Login">
                       <FontAwesomeIcon className={`${styles.icon} ${styles.icon__user}`} icon={faUser} />
                          <h1>Đăng nhập</h1>
                       </Link>

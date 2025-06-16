@@ -108,7 +108,7 @@ function MainLogin(props) {
                     </div>
                     <div className={styles.boxInput}>
                         <div className={styles.boxInput__one}>
-                                <label htmlFor=""> Tên đăng nhập </label>
+                                <label className={styles.label}> Tên đăng nhập </label>
                                 <div>
                                     <input 
                                         value={dataValueInput.nameLogin}
@@ -120,7 +120,7 @@ function MainLogin(props) {
                                 </div>
                         </div>
                         <div className={styles.boxInput__two}>
-                            <label htmlFor=""> Mật khẩu </label>
+                            <label className={styles.label}> Mật khẩu </label>
                             <div className={styles.WrapInput}>
                                 <input 
                                 type={`${password ? 'text' : 'password'}`} 

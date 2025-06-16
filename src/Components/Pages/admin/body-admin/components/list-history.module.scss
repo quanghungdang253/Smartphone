@@ -167,7 +167,55 @@
    
 }
 
+//================================responsive========================
 
-.boxBtn {
-    
+@media (max-width:768px) {
+    .container {
+        &__boxRight {
+             .navigation {      
+                min-width: 20em;      
+                    &__navOne {
+                        display: flex;
+                        flex-wrap: wrap;
+                        grid-column-gap: 0px;
+                        gap: 1rem;
+                        padding: 10px 10px;
+                        .item {
+                          
+                        
+                        }
+                    }
+                    &__navTwo {
+                    
+                        .listProduct {
+                          
+                         
+                            h1 {
+                            
+                                
+                            }
+                            .mainInFo {
+                                 border-radius: 10px;
+                                 padding: 10px 10px 10px 10px;
+                                position: relative;
+                                border: 1px solid black;
+                                &__BoxOne {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                &__BoxTwo {
+                                    .content {
+                                         display: flex;
+                                        flex-direction: column;
+                                    }
+                                   .sumMoney {
+                                        position: relative;
+                                   }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+    }
 }

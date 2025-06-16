@@ -194,11 +194,15 @@
                     max-width: 6em;
                     height: 7em;
                     padding: 10px 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     .Link {
-                        font-size: 12px;
+                        font-size: 9px;
                         img {
-                            min-width: 50%;
-                            height: 50%;
+                            width: 45px !important;
+                            height: 68px !important;
+                            margin-bottom: 0.5rem;
                         }
                     }
                 }

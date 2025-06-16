@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './body-admin.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faList,faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faList,faArrowRight , faPlus } from '@fortawesome/free-solid-svg-icons';
+
 import { useSelector } from 'react-redux';
 import ShowDetailProduct from './components/purchase-history';
 import { Link } from 'react-router-dom';
 import Loading from '../../../Common/components/Loading';
 import imgSale from './img/sale.jpg';
 function BodyAdmin({data}) {
-
+    const getValueScroll = useRef();
+    const [innerWidth , setInnerWidth] = useState(window.innerWidth);
     const [index , setIndex] = useState(true);
     const [indexForm1, setIndexForm1] = useState(0);
     const [dataProduct , setDataProduct] = useState(null);
@@ -19,11 +21,12 @@ function BodyAdmin({data}) {
 const [idReder , setIdRender] = useState(null);
 const [Product , setProduct] = useState(null);
 
-
-
  if(data !== null ){
       let arrayData = Object.entries(data);
     
+ }
+ const handleScroll =  () => {
+        getValueScroll.current?.scrollIntoView({ behavior: 'smooth' })
  }
 
 useEffect(() => {
@@ -39,10 +42,24 @@ useEffect(() => {
         }
     }
 }, [idReder,data])
+useEffect(() => {
+  const handleBack = (event) => {
+    // Khi Back, trở lại indexForm1 = 0 (hoặc giá trị trước đó nếu muốn lưu stack)
+    setIndexForm1(0);
+    setIndex(true); // quay về trang chính
+  };
+
+  window.addEventListener('popstate', handleBack);
+  return () => window.removeEventListener('popstate', handleBack);
+}, []);
+
 
 const handleIndex = (bool , index) => {
            setIndex(bool)
            setIndexForm1(index)
+             if (index === 1) {
+                     window.history.pushState({ indexForm1: 1 }, '', '?detail=1');
+  }
 }
     let sumProduct = 0;
     if(!data){
@@ -101,11 +118,7 @@ let nameData = [
          icon: "", 
          "content": "Cập nhật sản phẩm ",data: Product, dataNavigation: dataNavigation
     },
-        {
-         "id": 6, 
-         icon: "", 
-         "content": "Thống kê ",data: Product, dataNavigation: dataNavigation
-    },
+       
     
 ]
  
@@ -115,7 +128,7 @@ console.log(Product);
         <div className={styles.container}>
       
         
-         <div className={styles.container__boxLeft}>  
+         <div className={styles.container__boxLeft} ref={innerWidth <= 768 ? getValueScroll : null}>  
             {nameData.map((item) => {
                     return (
                         <div className={styles.mainBox}> 
@@ -123,6 +136,7 @@ console.log(Product);
                                 onClick={() => {
                                         handleIndex(true , item.id)
                                         setOpenForm(true);
+                                        handleScroll()
                                        
                                  }}> 
                                      <h1> 
@@ -135,6 +149,7 @@ console.log(Product);
                     )
             })}
             </div>
+            <div >   
             {
               (indexForm1 === 0) ? (
             <div 
@@ -231,6 +246,7 @@ console.log(Product);
                     
                
             }
+        </div>
           
         </div>
     );

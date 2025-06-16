@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState } from 'react';
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
@@ -15,9 +17,21 @@ import { indexCart } from '../../../features/cart/cartSlice';
 import useStatusUser from '../../../hooks/use-status-user';
 function Navigation_header(props) {
         const selectId = useSelector(state => state.cart.indexCart);
-         let [data] = useStatusUser(null);
+        const [refresh, setRefresh] = useState(0);
+         let [data] = useStatusUser(null , refresh);
          console.log(data);
          let navigate = useNavigate();
+
+useEffect(() => {
+    const handleCustomUpdate = () => {
+        setRefresh(prev => prev + 1);
+    };
+    window.addEventListener("user-status-changed", handleCustomUpdate); // 👈 lắng nghe sự kiện tùy chỉnh
+
+    return () => {
+        window.removeEventListener("user-status-changed", handleCustomUpdate);
+    };
+}, [data]);
 
     return (
      <Navigation className={styles.navigation}>

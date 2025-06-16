@@ -43,7 +43,6 @@
                      margin-top: 1rem;
                 }
            }
-           
        }
        .quantity {
         padding: 10px 10px;
@@ -150,4 +149,24 @@
             }
         }
     }
+}
+//================================responsive=======================
+
+@media (max-width: 768px) {
+    .mainDetail {
+    &__rowOne {
+          .quantity {
+            padding: 5px 5px;
+            font-size: 12px;
+               bottom: 0px; 
+          }
+    }
+    &__rowTwo {
+        display: flex;
+        flex-direction: column;
+           .columnTwo {
+                min-width: 0px;
+           }
+    }
+}
 }
