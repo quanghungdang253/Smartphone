@@ -7,13 +7,13 @@ import datas from './data.json';
 import { useSelector } from 'react-redux';
 function MainAdmin(props) {
     let navigate = useNavigate();
-    const [dataStore , setDataStore] = useState(datas);
+    const [dataStore , setDataStore] = useState(null);
 
 
 
    useEffect(() => {
         const handleGetData = async() => {
-                fetch(datas)
+                fetch("https://hungserver1.vercel.app/getUsers")
                 .then((res) => {
                         return res.json();
                 })

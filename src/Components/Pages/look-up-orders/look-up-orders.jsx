@@ -6,37 +6,48 @@ import { Link } from 'react-router-dom';
 import ShowProduct from './components/show-product/show-product';
 import datas from './data.json';
 import imgdonhang from './img/donhang1.jpg';
+import Loading from '../../Common/components/Loading';
 import { useNavigate } from 'react-router-dom';
 import useStatusUser from '../../../hooks/use-status-user';
 function LookUpOrders(props) {
     const [dataInput , setDataInput] = useState("");
     // lỗi =======================================
     // const [dataValue , setData ]   = useState(datas);
-     const [dataValue , setData ]   = useState(() => {
+    const [dataServer , setDataServer] = useState(null);
+         const [dataValue , setData ]   = useState(() => {
         try {
                const local = localStorage.getItem("value");
+             
                if(!local || local === "null" || local.trim() === ""){
-                return datas
+                 return;
                }
                  // nếu JSON.parse(local) lỗi, sẽ vào catch
         const parsed = JSON.parse(local);
           if (!parsed || typeof parsed !== "object") {
-            return datas;
+            return;
         }
             return parsed;
         }
         catch (err) {
             console.error("Lỗi parse dữ liệu localStorage:", err);
-            return datas;
+            return dataServer;
         }
      
-        // console.log(local)
-        // if (local) {
-        //     return JSON.parse(local);
-        // } else {
-        //     return datas; // fallback khi không có local
-        // }
     });
+    useEffect(() => {
+       
+            fetch("https://hungserver1.vercel.app/getUsers")
+            .then((res) => {
+                    return res.json();
+            })
+            .then((data) => {
+                    setDataServer(data);
+            })
+            .catch((error) => {
+                        console.log("lỗi lấy dữ liệu "+ error);
+            })
+    },[])
+
 
     const [Product , setProduct] = useState(null);
 
@@ -44,50 +55,29 @@ function LookUpOrders(props) {
     const getDataInput = (e) => {
                 const data = e.target.value;
                 setDataInput(data);
-        }
-
-    let data = useStatusUser(dataValue);
-
-    // useEffect(() => {
-    //     window.scrollTo({
-    //             top: 0,
-    //             behavior:'smooth'
-    //     })
-    //         fetch("https://hungserver1.vercel.app/getUsers")
-    //         .then((res) => {
-    //                 return res.json();
-    //         })
-    //         .then((data) => {
-    //                 setData(data);
-    //         })
-    //         .catch(error => {
-    //                     console.log("lỗi lấy dữ liệu " + error)
-    //         })
-    // },[])
+    }
+ 
+    let data = useStatusUser(dataValue ? dataValue : dataServer);
 
     const handleFindClient  = () => {
-       if(!dataValue){
-        return;
-       }
-            let data  = Object.entries(dataValue);
-          
+      
+            let data  = Object.entries(dataValue ? dataValue : dataServer);
+            
+            let findProduct = data.find(([key,value]) => value.phoneNumber === dataInput);
 
-            let findProduct = data.find(([key,value]) => value.phoneNumber === dataInput)
-         if( dataInput  && findProduct){
-            localStorage.setItem("currentUser", JSON.stringify(findProduct));
+          if( dataInput  && findProduct){
+                 localStorage.setItem("currentUser", JSON.stringify(findProduct));
                   navigate("/ShowProduct", {state: {product: findProduct}});
          }
-        //  else {
-        //           navigate("/ShowProduct", {state: {product: null}});
-        //  }
-        
-        
-  //     setProduct(findProduct);
-
     }
+
     
     return (
-     <div className={styles.mainLookup}>  
+   <>   
+   {!dataServer ? (
+     <Loading /> 
+   ) : (
+          <div className={styles.mainLookup}>  
             <div className={styles.mainLookup__columnLeft}>
                     <img src={img} alt="" />   
             </div>
@@ -114,6 +104,9 @@ function LookUpOrders(props) {
                  </div>
             </div>
          </div>
+   )}
+   
+    </>
     );
 }
 

@@ -7,6 +7,7 @@ function InforOrder({data}) {
     const [product , setProduct] = useState(null);
     const [dataDetail , setDataDetail] = useState(null);
 
+
     let  dataBtn = [
          {
             id: 0 , content: "Tất cả", data: data
@@ -49,6 +50,7 @@ const resultMoney  = (downPrice , prePrice) => {
         const result = numberB - numberA;
         return  result.toLocaleString("vi-VN");
 }
+
     return (
         <div className='ml-4'>
         {!dataDetail ? (
@@ -69,9 +71,9 @@ const resultMoney  = (downPrice , prePrice) => {
              lg:p-10
              '>
             <h1 className='font-bold text-[18px] mb-2'> Lịch sử mua hàng </h1>
-                {product && product.data !== null ? (
+                {product?.data?.[1]?.dataProduct !== null ? (
                         <div className=''>   
-                            {product.data[1].dataProduct.map((item,key) => (
+                            {product?.data[1]?.dataProduct?.map((item,key) => (
                                 
                                 <div  
                                     className='flex gap-10 relative mb-4 p-6 rounded-2xl shadow-2xl cursor-pointer'
@@ -86,7 +88,7 @@ const resultMoney  = (downPrice , prePrice) => {
                                                 '>  {item.title}   </h1>  
                                                 <p className=' font-bold text-[12px]
                                                         lg:text-[14px]
-                                                '>Ngày đặt:{product.data[1].date} </p> 
+                                                '>Ngày đặt:{product.data.date} </p> 
                                         </div>
                                             
 

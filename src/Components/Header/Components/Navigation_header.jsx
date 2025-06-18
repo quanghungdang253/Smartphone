@@ -19,7 +19,8 @@ function Navigation_header(props) {
         const selectId = useSelector(state => state.cart.indexCart);
         const [refresh, setRefresh] = useState(0);
          let [data] = useStatusUser(null , refresh);
-         console.log(data);
+           const getDataLocal = localStorage.getItem("currentUser");
+  
          let navigate = useNavigate();
 
 useEffect(() => {
@@ -31,7 +32,7 @@ useEffect(() => {
     return () => {
         window.removeEventListener("user-status-changed", handleCustomUpdate);
     };
-}, [data]);
+}, []);
 
     return (
      <Navigation className={styles.navigation}>
@@ -55,7 +56,7 @@ useEffect(() => {
     </div>
 
     <div className={styles.navigation__shopping_cart}>
-        <Link className={styles.Link} to={`${data ? "ShowProduct" : "LookProduct"}`}>
+        <Link className={styles.Link} to={`${getDataLocal ? "ShowProduct" : "LookProduct"}`}>
             <FontAwesomeIcon icon={faTruck} className={styles.icon} />
             <h1>Tra cứu đơn hàng</h1>
         </Link>

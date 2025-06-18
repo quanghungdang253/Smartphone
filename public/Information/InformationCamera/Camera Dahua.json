@@ -5,7 +5,7 @@
         "id" : 1,
         "discount": "20%",
         "installment": "0%",     
-        "image": "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-xam-4-750x500.jpg",
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/a/tay-cam-chong-rung-dji-om-7_1__1.png",
         "title": "Samsung Galaxy A16 5G 8GB 128GB",
         "price": "2.200.000đ"
        
@@ -14,7 +14,7 @@
     "id" : 2,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_3__4.png",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/may-quay-chong-rung-dji-osmo-pocket-3-advanced-4k_1.png",
     "title": "Samsung Galaxy S24 FE 5G 8GB 128GB",
     "price": "5.000.000đ"
    
@@ -23,7 +23,7 @@
     "id" : 3,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_2_23_638442845332012006_samsung-galaxy-fit3-den-1.jpg",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/may-quay-chong-rung-dji-osmo-pocket-3-advanced-4k_1.png",
     "title": "Samsung Galaxy Fit3",
     "price": "2.200.000đ"
 },
@@ -31,7 +31,7 @@
     "id" : 4,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-m55.png",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/may-quay-chong-rung-dji-osmo-pocket-3-advanced-4k_2.png",
     "title": "Samsung Galaxy M55 (12GB 256GB)",
     "price": "2.200.000đ"
     
@@ -40,7 +40,7 @@
     "id" : 5,
     "discount": "20%",
     "installment":"0%",     
-    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/2024_1_15_638409395342231798_samsung-galaxy-s24-ultra-xam-1.png",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/may-quay-chong-rung-dji-osmo-pocket-3-advanced-4k_2.png",
     "title": "Samsung Galaxy S24 Ultra 5G 256GB",
     "price": "2.200.000đ"
    
@@ -49,7 +49,7 @@
     "id" : 6,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_a16_5g_den_1_c3a827fa84.jpg",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/camera-ip-wifi-3k-365-selection-c2_5_.png",
     "title": "Samsung Galaxy A16 5G 8GB 128GB",
     "price": "6.090.000 ₫"
    
@@ -59,7 +59,7 @@
     "id" : 7,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_z_fold6_gray_a413f785af.png",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/camera-hanh-dong-dji-action-4_12_.png",
     "title": "Samsung Galaxy Z Fold6 5G 256GB",
     "price": "6.090.000 ₫"
 },
@@ -77,7 +77,7 @@
     "id" : 9,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://cdn2.fptshop.com.vn/unsafe/384x0/filters:quality(100)/samsung_galaxy_z_fold6_gray_a413f785af.png",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/camera-ip-ngoai-troi-wifi-365-selection-oc1-2k_8_.png",
     "title": "Samsung Galaxy Z Fold6 5G 256GB",
     "price": "6.090.000 ₫"
 },
@@ -86,7 +86,7 @@
     "id" : 10,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.duchuymobile.com/images/detailed/63/samsung-galaxy-z-fold4-5g-xanh.jpg",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/camera-hanh-trinh-insta-360-x4-spa.png",
     "title": "Samsung Galaxy Z Fold4 5G (12GB | 256GB) Chính Hãng Mới 100% Nguyên Seal"
 ,
     "price": "16.999.000 đ"
@@ -95,7 +95,7 @@
     "id" : 11,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.duchuymobile.com/images/detailed/51/samsung-galaxy-z-fold4-5g-kem.jpg",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/camera-hanh-trinh-insta-360-x4-spa.png",
     "title": "Samsung Galaxy Z Fold4 5G (12GB | 256GB) Chính Hãng Mới 100% Nguyên Seal",
     "price": "12.999.000 đ"
 },
@@ -104,7 +104,7 @@
     "id" : 12,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.duchuymobile.com/images/detailed/56/galaxy-s23.jpeg",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/camera-hanh-trinh-insta-360-x4-spa.png",
     "title": "Samsung Ga",
     "price": "6.090.000 ₫"
 },
@@ -113,7 +113,7 @@
     "id" : 13,
     "discount": "20%",
     "installment": "0%",     
-    "image": "https://www.duchuymobile.com/images/variant_image/46/s22-ultra-5g-do.jpg",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/camera_h_nh_tr_nh_1_4.png",
     "title": "Samsung Galaxy S22 Ultra 5G (8GB | 128GB) Chính Hãng Cũ",
     "price": "10.699.000 đ"
 },

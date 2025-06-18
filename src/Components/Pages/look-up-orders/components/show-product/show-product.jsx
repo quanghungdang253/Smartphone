@@ -10,46 +10,57 @@ import InforClient from '../infor-client/infor-client';
 import qr from '../../img/images.png';
 import imgGoogleplay from '../../img/googlePlay.jpg';
 import imgAppStore from '../../img/appStore.jpg';
+import datas from '../../data.json';
 import useStatusUser from '../../../../../hooks/use-status-user';
 import { useNavigate } from 'react-router-dom';
 function ShowProduct() {
   const navigate = useNavigate();
-const[getData , setGetData] = useState(() => {
-        let getDataLocal = localStorage.getItem("data");
-        return JSON.parse(getDataLocal);
+// const[getData , setGetData] = useState(() => {
+//         let getDataLocal = localStorage.getItem("currentUser");
+//         return JSON.parse(getDataLocal);
+// });
+const [getData, setGetData] = useState(() => {
+  const getDataLocal = localStorage.getItem("currentUser");
+  if (getDataLocal) {
+    try {
+      return JSON.parse(getDataLocal);
+    } catch (error) {
+      console.error("Lỗi parsing data:", error);
+      return null;
+    }
+  }
+  return null;
 });
-
-
   const location = useLocation();
   const product = location.state?.product
+  console.log(product)
+  console.log(getData);
   const [index , setIndex] = useState(0);
   useEffect(() => {
+   
     window.scrollTo({
        top: 0,
        behavior:"smooth"
     })
        if(!product){
-         let newData = localStorage.getItem("data");
+         let newData = localStorage.getItem("currentUser");
             setGetData(JSON.parse(newData));
        }else {
-            localStorage.setItem("data",JSON.stringify( product));
+            localStorage.setItem("currentUser",JSON.stringify( product));
            setGetData(product);
        }
         
   },[product])
   const handleLogout = () => {
       localStorage.removeItem("currentUser");
-        localStorage.removeItem("data");
-        // let dataLocal = localStorage.getItem("data");
-         localStorage.removeItem("value");
+        // localStorage.removeItem("data");
+        // // let dataLocal = localStorage.getItem("data");
+        //  localStorage.removeItem("value");
          window.dispatchEvent(new Event("user-status-changed"));
         navigate("/LookProduct")
 
   }
 
-
-console.log("dữ liêu nhận được "+ getData);
-console.log("dữ liệu product "+ product);
   return (
     <div className="
          mt-[11em]

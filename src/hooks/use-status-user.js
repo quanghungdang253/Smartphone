@@ -1,19 +1,32 @@
 // import { useEffect, useState } from "react";
+// const getCurrentUserFromLocal = () => {
+//   if (typeof window !== "undefined" && window.localStorage) {
+//     try {
+//       const item = localStorage.getItem("currentUser");
+//       return item ? JSON.parse(item) : null;
+//     } catch (error) {
+//       console.error("Lỗi đọc localStorage:", error);
+//       return null;
+//     }
+//   }
+//   return null;
+// };
 
 
 // function useStatusUser(datas, refreshFlag = 0){
-// const [data , setData] = useState(() => {
-//         let getData = localStorage.getItem("value");
+// const [data , setData] = useState(() => 
+//   getCurrentUserFromLocal()
+//         // let getData = localStorage.getItem("currentUser");
          
-//         return JSON.parse(getData);
-// })
+//         // return JSON.parse(getData);
+// )
 // console.log(datas);
 // console.log(data);
 
 //  useEffect(() => {
 //     try {
 //       if (!data) {
-//         let cloneData = localStorage.getItem("value");
+//         let cloneData = localStorage.getItem("currentUser");
       
 //         if (cloneData) {
 //           setData(JSON.parse(cloneData));
@@ -21,8 +34,8 @@
 //           setData(null); // ✅ Nếu không còn localStorage thì phải reset data
 //         }
 //       } else {
-//         localStorage.setItem("value", JSON.stringify(datas));
-//         setData(datas);
+//         localStorage.setItem("currentUser", JSON.stringify(data));
+//         setData(data);
 //       }
 //     } catch {
 //       setData(null);
@@ -34,56 +47,53 @@
 
 // export default useStatusUser;
 
-
 import { useEffect, useState } from "react";
 
-function useStatusUser() { // Remove 'datas' and 'refreshFlag' as direct props for simplicity
-  const [currentUser, setCurrentUser] = useState(() => {
+// ✅ Hàm đọc localStorage an toàn
+const getCurrentUserFromLocal = () => {
+  if (typeof window !== "undefined" && window.localStorage) {
     try {
-      const localUser = localStorage.getItem("currentUser");
-      return localUser ? JSON.parse(localUser) : null;
-    } catch (e) {
-      console.error("Error parsing currentUser from localStorage:", e);
+      const item = localStorage.getItem("currentUser");
+      return item ? JSON.parse(item) : null;
+    } catch (error) {
+      console.error("Lỗi đọc localStorage:", error);
       return null;
     }
-  });
+  }
+  return null;
+};
 
-  // Use useEffect to react to external changes (like logout) or initial load
+// ✅ Custom Hook
+function useStatusUser(datas, refreshFlag = 0) {
+  const [data, setData] = useState(() => getCurrentUserFromLocal());
+
   useEffect(() => {
-    const handleStorageChange = () => {
-      try {
-        const localUser = localStorage.getItem("currentUser");
-        setCurrentUser(localUser ? JSON.parse(localUser) : null);
-      } catch (e) {
-        console.error("Error parsing currentUser on storage change:", e);
-        setCurrentUser(null);
+    try {
+      const storedData = getCurrentUserFromLocal();
+
+      if (storedData) {
+        setData(storedData);
+      } else {
+        setData(null);
       }
-    };
-
-    // Listen for custom event dispatch on logout/login
-    window.addEventListener("user-status-changed", handleStorageChange);
-    // Also listen for general storage events (though less reliable for same-tab changes)
-    window.addEventListener("storage", handleStorageChange);
-
-    return () => {
-      window.removeEventListener("user-status-changed", handleStorageChange);
-      window.removeEventListener("storage", handleStorageChange);
-    };
-  }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
-
-  // Function to update user status (e.g., login/logout)
-  const setLoggedInUser = (user) => {
-    if (user) {
-      localStorage.setItem("currentUser", JSON.stringify(user));
-    } else {
-      localStorage.removeItem("currentUser");
+    } catch (error) {
+      console.error("Lỗi khi cập nhật dữ liệu từ localStorage:", error);
+      setData(null);
     }
-    setCurrentUser(user);
-    // Dispatch custom event to notify other parts of the app
-    window.dispatchEvent(new Event("user-status-changed"));
-  };
+  }, [datas, refreshFlag]);
 
-  return [currentUser, setLoggedInUser];
+  // ✅ Đồng bộ localStorage khi data thay đổi
+  useEffect(() => {
+    try {
+      if (data) {
+        localStorage.setItem("currentUser", JSON.stringify(data));
+      }
+    } catch (error) {
+      console.error("Lỗi khi lưu vào localStorage:", error);
+    }
+  }, [data]);
+
+  return [data];
 }
 
 export default useStatusUser;

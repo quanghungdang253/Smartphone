@@ -4,10 +4,14 @@
 .boxShowHidden {
     padding-top: 20px;
     text-align: center;
+    .viewMore {
+        display: flex;
+        justify-content: center;
+    }
     .link {
-        font-size: 14px;
+        font-size: 12px;
         display: inline-block;
-        max-width: 500px;
+        width: 500px;
         height: 30px;
         text-align: center;
         line-height: 2;
@@ -15,7 +19,8 @@
         color: black;
         font-weight: 500;
         border-radius: 10px;
-   border: 1px solid #4a90e2;
+   
+          border: 1px solid #4a90e2;
         
     }
     .linkShow::after {

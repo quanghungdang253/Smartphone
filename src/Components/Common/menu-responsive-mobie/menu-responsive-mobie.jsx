@@ -30,6 +30,7 @@ function MenuResponsiveMobie({Showmenu}) {
         useEffect(() => {
                 
                 let products = Listitem.find((Item) => Item.id === indexProduct);
+                console.log(products);
                 if(products){
                           setProduct(products);
                 }

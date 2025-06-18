@@ -10,7 +10,9 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import styles from './styles/ShowInfo.module.scss';
 import styles1 from './styles/showPhone_1.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faStart} from '@fortawesome/free-solid-svg-icons'
 import { DefaultComponent } from '../../Pages/Products_list/ui-components/HandleComponent';
+
 import { useNavigate } from 'react-router-dom';
 import {faHeart} from '@fortawesome/free-solid-svg-icons';
 import dataNameFolder from './data/data-name-folder.json';
@@ -211,7 +213,7 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
                 <div className={styles.container_icon}>
                         <div className={`${styles.box__icon}`}> 
                            {star.map((_, index) => ( 
-                              <FontAwesomeIcon icon={faStar} className={styles.iconStar} style={{color: 'yellow'}}/>
+                              <FontAwesomeIcon icon={faStar} className={styles.iconStar} />
                            ))}
                        </div>
                     <p>
