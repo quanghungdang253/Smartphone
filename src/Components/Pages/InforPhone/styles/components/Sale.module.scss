@@ -422,6 +422,13 @@ background-color: $color-hover;
 
 //=======================================ressponsive ================================
 @media (max-width: 768px) {
+     .payment__method {
+  
+            .btn {
+                  font-size: 12px;
+
+            }
+}
   .Box__buy__now {
        .btn__buy {
             font-size: 14px;

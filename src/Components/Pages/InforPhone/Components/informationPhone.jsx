@@ -437,7 +437,7 @@ useEffect(() => {
                       </div>                  
                 </div>    
                        
-                       <img src={img2} alt="" style={{objectFit:'cover', width: '100%'}}/>       
+                       <img src={img2} alt="" className={styles.imgProduct} style={{objectFit:'cover', width: '100%'}}/>       
             </aside> 
           
           
