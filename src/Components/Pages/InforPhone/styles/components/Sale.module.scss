@@ -133,6 +133,7 @@ background-color: $color-hover;
             background: $color-hover;
       }
       .btn__add__product {
+         border: 1px solid black;
          border-radius: 10px;
          padding: 5px 5px;
             height: 100%;
@@ -160,10 +161,10 @@ background-color: $color-hover;
                justify-content: center;
                align-items: center;
                border-radius: 10px;
-
+               font-size: 14px;
                width: 50%;
                height: 50px;
-               font-weight: 700;
+               font-weight: 400;
                background-color: rgb(213, 214, 214);
                color: black;
             }

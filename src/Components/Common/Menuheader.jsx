@@ -47,7 +47,7 @@ function Menuheader({addPadding}) {
                                                                         {item.label}    
                                                 </div>
                                                 <FontAwesomeIcon icon={faChevronRight} 
-        className={`Wrapper__icon ${theme ? 'color__Bright' : 'color__Dark'}`}/>      
+        className={`Wrapper__icon ${theme ? 'color__Dark' : 'color__Bright'}`}/>      
  </div>                                    ))}
                         </div>
                         <React.Fragment>                                      
@@ -73,10 +73,10 @@ const Wrapper = styled.div `
             background-color:white;
         }
         .Dark {
-                background-color:#d9d9d9;
+                background-color:black;
         }
         .color__Bright {
-            color:black;
+            color:white;
         }
         .color__Dark {
                 fill: white;
@@ -129,7 +129,7 @@ const Wrapper = styled.div `
              background-repeat: no-repeat;  // không lặp lại ảnh 
              margin-right: 4px;
              background-size: contain;
-             color: black;
+          
              font-weight: 600;
    }
  

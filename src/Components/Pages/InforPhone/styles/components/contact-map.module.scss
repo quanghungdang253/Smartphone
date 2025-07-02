@@ -209,11 +209,11 @@
         flex-direction: column;
         grid-row-gap: 1rem;
         .link {
-            text-decoration: none;
+                text-decoration: none;
+         }
+        .link:hover {
+                text-decoration:underline;
         }
-             .link:hover {
-                 text-decoration:underline;
-             }
         .box3__child {
          
             padding: 5px;
@@ -248,10 +248,8 @@
 
 @media (max-width: 768px) {
 
-
 .boxContact {
     margin-bottom: 0.5rem;
- 
     @include flex-center;
     grid-column-gap: 5rem;
     .column {

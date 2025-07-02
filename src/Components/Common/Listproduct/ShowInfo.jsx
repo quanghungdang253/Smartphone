@@ -118,7 +118,10 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
     }, [enpoints, index, dataEnpoint, arrayData, getIndex]);
 
     const star = Array(5).fill(0);
-
+ window.scrollTo({
+    top: 0,
+    behavior:'smooth'
+  })
     return (
         <HotPromotion
              className={styles.hot__promotion}>           
