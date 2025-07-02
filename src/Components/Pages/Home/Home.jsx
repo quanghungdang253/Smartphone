@@ -11,13 +11,14 @@ import Article from './Components/Article';
 import { Context } from '../../../Context/Settings/Theme/ThemeContext';
 import { useValue } from '../../../Context/Settings/Theme/ThemeContext';
 import FormSection from './Components/Section/form-section';
-
+import imgSlide from './Components/image/img-product-image/slide.gif';
 import { ToggleProvider } from '../Products_list/context/context-boolean';
 // ================================image ==================================
 import imagebackground from './Components/Section/image/background.jpg';
 import image from './Components/Section/image/khai-xuan-trai.jpg';
 import styles from './style/home.module.scss';
 import SlideImageMobie from './Components/slide-image-mobie/slide-image-mobie';
+
 import MenuResponsiveMobie from '../../Common/menu-responsive-mobie/menu-responsive-mobie';
 
 function Home({home}) {
@@ -63,11 +64,15 @@ function Home({home}) {
                                          <Article/>
                                  </div>
                              </div>
+                             <div className={styles.imgSlide}> 
+                                  <img src={imgSlide} alt='' />
+                             </div>
                               <div className={styles.form__section}>
                                         <FormSection Toggle={setLogic} />
                               </div>
                             
                          </header>
+                       
                          <div className={`${styles.overlayer} ${styles.Productlist}`}> 
                            <ToggleProvider>  
                                         <Products_list logic={logic}/>

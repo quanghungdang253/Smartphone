@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Imagesmartphone from './imageArticle/anh.jpg'
-import Mac from './imageArticle/Macwebp.webp';
+import Mac from './imageArticle/slide.jpg';
 import laptop from './imageArticle/udsv-right-laptop.webp';
 import styled from 'styled-components';
 function Article(props) {

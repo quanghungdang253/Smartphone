@@ -12,7 +12,7 @@ import styles1 from './styles/showPhone_1.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faStart} from '@fortawesome/free-solid-svg-icons'
 import { DefaultComponent } from '../../Pages/Products_list/ui-components/HandleComponent';
-
+import img from './img/img.jpg';
 import { useNavigate } from 'react-router-dom';
 import {faHeart} from '@fortawesome/free-solid-svg-icons';
 import dataNameFolder from './data/data-name-folder.json';
@@ -118,10 +118,7 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
     }, [enpoints, index, dataEnpoint, arrayData, getIndex]);
 
     const star = Array(5).fill(0);
- window.scrollTo({
-    top: 0,
-    behavior:'smooth'
-  })
+
     return (
         <HotPromotion
              className={styles.hot__promotion}>           
@@ -135,10 +132,10 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
             <div 
               className={!handleImg ?  styles.image__promotion : styles.img}
               style={handleImg ? 
-                 { backgroundImage: `url(${showimg})`,
-                  height: idElement === 2 ? 90 : 200,
-                  objectFit:'contain', marginLeft: 50,
-                  backgroundRepeat:'no-repeat'
+                 {     backgroundImage: `url(${showimg})`,
+                        height: idElement === 2 ? 90 : 200,
+                       objectFit:'contain', marginLeft: 50,
+                        backgroundRepeat:'no-repeat'
                   
                    }
                   
@@ -207,7 +204,7 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
                 <div className={`${styles.text}`}>  
                             <h3 className={`${styles.text} ${styles.title}`}> {List.title}</h3>
                             
-                            <img src={List.image_1} alt='' className={`${styles.image_1}`}/>
+                            <img src={List.image_1 || img } alt='' className={`${styles.image_1}`}/>
                             <p 
                                 className={`${styles.text}`}>  Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng                                     
                             </p>

@@ -2,7 +2,10 @@
 .slildeMobie {
         display: none;
 }
-
+.imgSlide {
+     display: block;
+     margin-top: 1rem;
+}
 .containerImage {
     display: flex;
     justify-content: space-between;
@@ -95,6 +98,10 @@
 }
 
 @media (max-width: 768px) {
+    .imgSlide {
+     display: none;
+     margin-top: 1rem;
+}
     .FormSection__Web {
             display: none;
     }

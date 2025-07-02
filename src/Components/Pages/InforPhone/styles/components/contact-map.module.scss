@@ -78,7 +78,7 @@
         height: 480px;
         border-radius: 10px;
       
-        padding: 5rem 2rem 5rem 2rem;
+        padding: 1rem 2rem 5rem 2rem;
         
         overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và sẽ ẩn đi  
         .HandleImage__node {
@@ -112,7 +112,7 @@
               display: inline-block;
               display: flex;
               flex-direction: column;
-              grid-row-gap: 1.6rem;
+              grid-row-gap: 1rem;
                 .item {
                     font-weight: 600;
                 }

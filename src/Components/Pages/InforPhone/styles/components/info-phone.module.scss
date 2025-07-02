@@ -17,7 +17,9 @@
 
 //= =============================================
 .body {
-      display: flex
+      display: flex;
+     justify-content: space-between;
+      
 }
 .link {
   @include flex-center(column, center ,center);
