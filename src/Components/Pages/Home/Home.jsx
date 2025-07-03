@@ -19,7 +19,7 @@ import image from './Components/Section/image/khai-xuan-trai.jpg';
 import styles from './style/home.module.scss';
 import SlideImageMobie from './Components/slide-image-mobie/slide-image-mobie';
 
-import MenuResponsiveMobie from '../../Common/menu-responsive-mobie/menu-responsive-mobie';
+import MenuResponsiveMobile from '../../Common/menu-responsive-mobile/menu-responsive-mobile';
 
 function Home({home}) {
  const {theme} = useValue();

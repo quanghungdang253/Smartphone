@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import Vd1 from '../../vd';
 import styles from './styles/main-header.module.scss';
 import Overlay from '../Overlayer';
-import MenuResponsiveMobie from '../Common/menu-responsive-mobie/menu-responsive-mobie';
+import MenuResponsiveMobile from '../Common/menu-responsive-mobile/menu-responsive-mobile';
 import FormSection from '../Pages/Home/Components/Section/form-section';
 import  Breadcrumb from '../Common/location/location';
 import { BreadcrumbContext } from '../../Context/share-data-bread-crumb/share-data-bread-crumb';
@@ -60,7 +60,7 @@ const {Nameproduct} = breadcrumb;
                  )}
                  {
                           <div className={`${styles.menuMobie} ${showMenuMobie ? styles.show : styles.hide}`} > 
-                                <MenuResponsiveMobie Showmenu={setShowMenuMobie} />
+                                <MenuResponsiveMobile Showmenu={setShowMenuMobie} />
                             </div>
                     
                  }

@@ -9,7 +9,7 @@ import { faBoxOpen } from '@fortawesome/free-solid-svg-icons';
 import useStatusUser from '../../../hooks/use-status-user';
 import Smartphone from '../Products/Smartphone';
 import ShowMenu from './show-menu-responsive';
-function MenuResponsiveMobie({Showmenu}) {
+function MenuResponsiveMobile({Showmenu}) {
         const navigate = useNavigate();
         const [indexProduct, setIndexProduct] = useState(0);
         
@@ -91,4 +91,4 @@ function MenuResponsiveMobie({Showmenu}) {
     );
 }
 
-export default MenuResponsiveMobie;
+export default MenuResponsiveMobile;
