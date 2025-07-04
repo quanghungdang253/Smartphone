@@ -73,7 +73,6 @@ function MenuResponsiveMobile({Showmenu}) {
                                         {Item.label}  
                                     </li>
                             ))}
-
                      </ul>
                 </div>
                 <div> 
@@ -82,7 +81,7 @@ function MenuResponsiveMobile({Showmenu}) {
                                        <ShowMenu 
                                        Showmenu={Showmenu}
                                        product={product.items} /> : "Đang tải dữ liệu"
-                        
+    
                      }
 
                 </div>
