@@ -35,3 +35,6 @@ Chức năng chính
 12.  Chatbot,
 13.  Theme(Sáng/Tối) 
 
+Ảnh demo
+![Trang chủ](./screenshots/Screenshot%20(1372).png)
+![Trang chủ](./screenshots/Screenshot%20(1373).png)
