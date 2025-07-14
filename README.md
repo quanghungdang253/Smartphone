@@ -1,4 +1,4 @@
-# 📱 Smartphone - Web bán điện thoại
+# 📱 Dự án thương mại điện tử 
 
 Dự án **Smartphone** là một trang web bán điện thoại đơn giản được xây dựng bằng ReactJS và nodejs, với mục tiêu rèn luyện kỹ năng về giao diện, quản lý trạng thái, và thao tác dữ liệu trong frontend.
 
