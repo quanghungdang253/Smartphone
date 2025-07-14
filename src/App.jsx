@@ -17,6 +17,7 @@ import MainStoreInfo from './Components/Header/store-map-info/main-store-info';
 import MainStoreMapInfo from './Components/Header/store-map-info/main-store-map';
 import { Provider } from 'react-redux';
 import store from './app/store';
+import storeExample from './app/storeExample';
 import MainChatbox from './Components/Chat/main-chatbot';
 import MainCart from './Components/Pages/cart-pages/main-cart/main-cart';
 import HandleAlert from './Components/Common/components/handle-alert';
@@ -27,12 +28,17 @@ import { BreadcrumbProvider } from './Context/share-data-bread-crumb/share-data-
 import MainAdmin from './Components/Pages/admin/main-admin';
 import LookUpOrders from './Components/Pages/look-up-orders/look-up-orders';
 import ShowProduct from './Components/Pages/look-up-orders/components/show-product/show-product';
+import CameraDetect from './CameraDetect';
+import CounterExample from './app/CouterExample';
 export default function App() {
  
     return (
       <BreadcrumbProvider>  
-       <Provider store={store}>  
-        <Style>
+      <CameraDetect />
+      
+        {/* <Provider store={store}>   */}
+       
+        {/* <Style>
           <ParentContext>
             <HelmetProvider>   
           
@@ -68,13 +74,14 @@ export default function App() {
         </Style>
               <FooterWrapper>
                      <MainFooter />
-              </FooterWrapper>
-              {/* <CounterExample/> */}
-        </Provider>
+              </FooterWrapper> */}
+             {/* <CounterExample /> */}
+        {/* </Provider> */}
+       
     </BreadcrumbProvider>
     );
   }
-  
+    {/* <CounterExample/> */}
   const Style = styled.div`
     position: relative;
     /* min-height: 100vh; */
