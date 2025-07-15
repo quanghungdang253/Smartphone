@@ -6,39 +6,37 @@ import { Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import MainHeader from './Components/Header/MainHeader';
 import React, { Suspense, lazy } from 'react';
-import Loading from './Components/Common/components/Loading';
+import Loading from './Common/components/Loading';
 import { HelmetProvider } from 'react-helmet-async';
 import CommunicationSettings from './Components/CommunicationSettings/CommunicationSettings';
 import { ParentContext } from './Context/Settings/Theme/ThemeContext';
-import Products_list from './Components/Pages/Products_list/Products_list';
-import Home from './Components/Pages/Home/Home';
-import  InforPhone from './Components/Pages/InforPhone/InforPhone';
+import Products_list from './Pages/Products_list/Products_list';
+import Home from './Pages/Home/Home';
+import  InforPhone from './Pages/InforPhone/InforPhone';
 import MainStoreInfo from './Components/Header/store-map-info/main-store-info';
 import MainStoreMapInfo from './Components/Header/store-map-info/main-store-map';
 import { Provider } from 'react-redux';
 import store from './app/store';
-import storeExample from './app/storeExample';
 import MainChatbox from './Components/Chat/main-chatbot';
-import MainCart from './Components/Pages/cart-pages/main-cart/main-cart';
-import HandleAlert from './Components/Common/components/handle-alert';
-import MainFooter from './Components/Common/footer/main-footer';
-import Breadcrumb from './Components/Common/location/location';
-import MainLogin from './Components/Pages/login/main-login';
+import MainCart from './Pages/cart-pages/main-cart/main-cart';
+
+import MainFooter from './Common/footer/main-footer';
+import MainLogin from './Pages/login/main-login';
 import { BreadcrumbProvider } from './Context/share-data-bread-crumb/share-data-bread-crumb';
-import MainAdmin from './Components/Pages/admin/main-admin';
-import LookUpOrders from './Components/Pages/look-up-orders/look-up-orders';
-import ShowProduct from './Components/Pages/look-up-orders/components/show-product/show-product';
+import MainAdmin from './Pages/admin/main-admin';
+import LookUpOrders from './Pages/look-up-orders/look-up-orders';
+import ShowProduct from './Pages/look-up-orders/components/show-product/show-product';
 import CameraDetect from './CameraDetect';
-import CounterExample from './app/CouterExample';
+
 export default function App() {
  
     return (
       <BreadcrumbProvider>  
-      <CameraDetect />
+      {/* <CameraDetect /> */}
       
-        {/* <Provider store={store}>   */}
+        <Provider store={store}>  
        
-        {/* <Style>
+        <Style>
           <ParentContext>
             <HelmetProvider>   
           
@@ -74,9 +72,9 @@ export default function App() {
         </Style>
               <FooterWrapper>
                      <MainFooter />
-              </FooterWrapper> */}
+              </FooterWrapper>
              {/* <CounterExample /> */}
-        {/* </Provider> */}
+        </Provider>
        
     </BreadcrumbProvider>
     );

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axiosClient from "./axiosClient";
 import { useParams } from "react-router-dom";  // lấy tham số động 
 import { Switch } from "@mui/material";
-import Loading from "../Components/Common/components/Loading";
+import Loading from "../Common/components/Loading";
 function useHandleApi(namephone) {  // xử lý hiển thị các điện thoại 
         console.log("teb moi ưefwefew "+namephone);
         const[ endpointInfo, setEnpointinFo] = useState(""); 

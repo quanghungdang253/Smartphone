@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars , faUser, faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
  import Overlay from '../../Overlayer'; // Import the Overlay component
- import Menuheader from '../../Common/Menuheader';
+ import Menuheader from '../../../Common/Menuheader';
  import '../styles/TitleandProducts/TitleandProducts-responsive.scss';
  import styles from '../styles/TitleandProducts/TitleandProducts.module.scss';
  import titleImage from '../icon/titles.jpg';

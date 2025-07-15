@@ -7,7 +7,7 @@ import Vd1 from './vd1';
 import Appp from './Appp';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import store from './ExampleReact_Toolkit/app/store';
+
 import "./styles-global/main/main.scss";
 
 import { Link } from 'react-router-dom';
@@ -17,14 +17,14 @@ import { Link } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={store}>  
+
     <BrowserRouter > 
     
       <React.StrictMode>
           <App />      
       </React.StrictMode>
     </BrowserRouter>
-    </Provider>
+  
 
 );
 

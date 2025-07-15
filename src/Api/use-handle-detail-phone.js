@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import axiosClient from "./axiosClient";
-import componentEnpoint from "../Components/Common/componentEnpoint";
+import componentEnpoint from "../Common/componentEnpoint";
 
 function useHandledetailApi(link,id) {   // xử lý hiển thị thông tin chi tiết điên thoại
 const [links, setLink] = useState("");

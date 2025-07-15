@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Loading from "../Components/Common/components/Loading";
-import ShowInfo from "../Components/Common/Listproduct/ShowInfo";
+import Loading from "../Common/components/Loading";
+import ShowInfo from "../Common/Listproduct/ShowInfo";
 import { useSVGOverlay } from "react-leaflet/SVGOverlay";
 
 
