@@ -29,7 +29,7 @@ axiosClient.interceptors.response.use(function(response){
                                 alert("Lỗi 401: Yêu cầu của Client k được phép truy cập vào tài nguyên. Do thiếu thông tin xác thực ")
                             }
                             else if(error.response.status === 400) {
-                                alert("yêu cầu của CLient không hợp lệ ")
+                                alert("Yêu cầu của client k hợp lệ ")
                             }
             }
             return Promise.reject(error);  // sử dụng catch() để bắt lỗi trong component khác 
