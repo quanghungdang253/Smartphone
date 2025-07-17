@@ -129,10 +129,11 @@
         min-height: 50px;
         padding:5px 5px;
         margin: 10px 0px 5px 0px;
-        background-color: #f3f4f6;
+        background-color: #b3c7ef;
         border-radius: 1rem;
         font-weight: 500;
         font-size: 13px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
         
     }
     .title {
@@ -152,7 +153,8 @@
     }
     .price_up_down{
         .colorPricedown {
-                color: rgb(0, 0, 0);
+                color: rgb(0, 0, 0,0.7);
+                font-size: 12px;
         }
     }
     .image_1 {
@@ -236,7 +238,8 @@
           box-shadow: 0 2px 3px black;   
           .price_up_down {
             display: flex;
-                margin-top: 2rem;
+            align-items: end;
+                margin-top: 0rem;
           }            
 }
     
