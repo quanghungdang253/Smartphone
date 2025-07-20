@@ -103,17 +103,30 @@ const hotSaleComponent = ({data , dataEnpoint, namephone, ...props}) =>
 )
 // ===================================================================
 //==================================================================================================================================
-const DefaultComponent = ({data,  dataEnpoint, namephone,  ...props}) => (
-    <Suspense fallback={(<Loading/>)}>  
-        <HotSaleComponents> 
-          
-           
-                <ShowInfoHome   enpoint={namephone}  {...props}/>
-           
-        </HotSaleComponents> 
-    </Suspense>
-)
+const DefaultComponent = ({data, dataEnpoint, namephone, ...props}) => (
+  <Suspense fallback={<Loading />}>
+    <HotSaleComponents saleImg={imgbackground} className='imgSale'>
+      <ShowInfoHome enpoint={namephone} {...props} />
+    </HotSaleComponents>
+  </Suspense>
+);
 const HotSaleComponents = styled.div `
+    .imgSale {
+                    background-color:red;
+                        max-width:30em;
+                }
+        background-image: url(${props => props.saleImg});
+        @media (max-width: 1024px) {
+                   background-image: url("") !important;
+                   .imgSale {
+                    background-color:red;
+                        max-width:30em;
+                }
+                .img {
+                       width:100%;
+                       
+                }
+        }
 position: relative;
 bottom:0px;
         overflow: hidden;
@@ -150,8 +163,8 @@ const SamsungComponents = styled.div `
 
 `
 const BoxHotSale = styled.div `
-
-    /* background-image: url(${props => props.saleImg}); */
+ 
+    background-image: url(${props => props.saleImg});
     padding-top: 2rem;
     border-radius: 10px;
     .box {

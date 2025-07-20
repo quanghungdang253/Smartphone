@@ -255,8 +255,9 @@ background-color: $color-hover;
             }
             .Box_1 {
                 position: relative; 
-               border: 2px solid rgb(0, 0, 0);
+                border: 2px solid rgb(0, 0, 0);
                border-radius: 5px;
+               min-width: 6em;
             
             .Box1__image {
                      width: 100px;

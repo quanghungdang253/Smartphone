@@ -3,11 +3,11 @@
       "id" : 1,   
       "title": "Apple iPhone 6S Plus 16GB",
        "brand": "Apple",
-      "imgCart": "https://cdn.tgdd.vn/Products/Images/42/334864/iphone-16e-den-thumb-200x200.jpg",
+      "imgCart": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_2__6_119.png",
       "image": [
           { 
             "id": 0,
-            "image": "https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon-feature-active-min.png?v=1", 
+            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_744_1_12.png", 
             "content": [
                       "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
                       "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
@@ -16,15 +16,15 @@
                ]
           },
           { 
-            "id": 1,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-v-jpeg-5c051553-7431-437f-83e5-48eb992c3535.jpg?v=1725085613433" },               
+            "id": 1,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop_hp_245_g10_b8pf8at_-_1.png" },               
           { 
-            "id": 2,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-d-8088ba5a-249d-4dbe-a69c-c9256ecd9bff.jpg?v=1725085613433"},
+            "id": 2,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop_hp_245_g10_b8pf8at_-_3.png"},
           { 
-            "id": 3,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-t-trongphumobile-08fb204e-5ce7-4950-a218-4502be5fc3e0.jpg?v=1651830450807"  },        
-          { "id": 4, "image":  "https://cdn.tgdd.vn/Products/Images/42/71770/Kit/iphone-6s-plus-mo-ta-chuc-nang.jpg" },
-          { "id": 5,  "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-91-750x500.jpg" },        
-          { "id": 6, "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-8-750x500.jpg" },
-          { "id": 7,  "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-92-750x500.jpg"}         
+            "id": 3,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_1__9_80.png"  },        
+          { "id": 4, "image":  "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop_hp_245_g10_b8pf8at_-_2.png" },
+          { "id": 5,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_15_24.png" },        
+          { "id": 6, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_1__9_80.png" },
+          { "id": 7,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_3__7_109.png"}         
             ],
  
       "screen_size": "6.9inches",
@@ -265,12 +265,12 @@
 },
 {      
       "id" : 2,   
-      "title": "Apple iPhone 6S Plus 16GB",
-      "imgCart": "https://cdn.tgdd.vn/Products/Images/42/334864/iphone-16e-den-thumb-200x200.jpg",
-      "image": [
+      "title": "Laptop HP 245 G10 B8PF8AT",
+      "imgCart": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_2__6_119.png",
+     "image": [
           { 
             "id": 0,
-            "image": "https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon-feature-active-min.png?v=1", 
+            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_744_1_12.png", 
             "content": [
                       "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
                       "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
@@ -279,15 +279,15 @@
                ]
           },
           { 
-            "id": 1,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-v-jpeg-5c051553-7431-437f-83e5-48eb992c3535.jpg?v=1725085613433" },               
+            "id": 1,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop_hp_245_g10_b8pf8at_-_1.png" },               
           { 
-            "id": 2,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-d-8088ba5a-249d-4dbe-a69c-c9256ecd9bff.jpg?v=1725085613433"},
+            "id": 2,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop_hp_245_g10_b8pf8at_-_3.png"},
           { 
-            "id": 3,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-t-trongphumobile-08fb204e-5ce7-4950-a218-4502be5fc3e0.jpg?v=1651830450807"  },        
-          { "id": 4, "image":  "https://cdn.tgdd.vn/Products/Images/42/71770/Kit/iphone-6s-plus-mo-ta-chuc-nang.jpg" },
-          { "id": 5,  "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-91-750x500.jpg" },        
-          { "id": 6, "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-8-750x500.jpg" },
-          { "id": 7,  "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-92-750x500.jpg"}         
+            "id": 3,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_1__9_80.png"  },        
+          { "id": 4, "image":  "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop_hp_245_g10_b8pf8at_-_2.png" },
+          { "id": 5,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_15_24.png" },        
+          { "id": 6, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_1__9_80.png" },
+          { "id": 7,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_3__7_109.png"}         
             ],
  
       "screen_size": "6.9inches",
@@ -529,13 +529,13 @@
 ,
 {      
       "id" : 3,   
-      "title": "Apple iPhone 6S Plus 16GB",
+      "title": "Laptop Gaming Acer Nitro V 15 ProPanel ANV15-41-R7AP",
        "brand": "Apple",
-      "imgCart": "https://cdn.tgdd.vn/Products/Images/42/334864/iphone-16e-den-thumb-200x200.jpg",
+      "imgCart": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop_gaming_acer_nitro_v_15_propanel_anv15-41-r7ap_-_2.png",
       "image": [
           { 
             "id": 0,
-            "image": "https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/icon-feature-active-min.png?v=1", 
+            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_744_1_12.png", 
             "content": [
                       "Màn hình Dynamic AMOLED 120Hz - Mang lại trải nghiệm hình ảnh siêu mượt mà, màu sắc sống động.",
                       "Chip Exynos 2400e (4nm) cung cấp hiệu năng vượt trội, xử lý mượt mà mọi tác vụ từ chơi game đồ họa cao cho đến đa nhiệm ứng dụng.",
@@ -544,16 +544,17 @@
                ]
           },
           { 
-            "id": 1,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-v-jpeg-5c051553-7431-437f-83e5-48eb992c3535.jpg?v=1725085613433" },               
+            "id": 1,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop_hp_245_g10_b8pf8at_-_1.png" },               
           { 
-            "id": 2,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-d-8088ba5a-249d-4dbe-a69c-c9256ecd9bff.jpg?v=1725085613433"},
+            "id": 2,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop_hp_245_g10_b8pf8at_-_3.png"},
           { 
-            "id": 3,  "image": "https://bizweb.dktcdn.net/100/177/937/products/iphone-6-t-trongphumobile-08fb204e-5ce7-4950-a218-4502be5fc3e0.jpg?v=1651830450807"  },        
-          { "id": 4, "image":  "https://cdn.tgdd.vn/Products/Images/42/71770/Kit/iphone-6s-plus-mo-ta-chuc-nang.jpg" },
-          { "id": 5,  "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-91-750x500.jpg" },        
-          { "id": 6, "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-8-750x500.jpg" },
-          { "id": 7,  "image": "https://cdn.tgdd.vn/Products/Images/42/87846/iphone-6s-plus-32gb-vangdong1-92-750x500.jpg"}         
+            "id": 3,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_1__9_80.png"  },        
+          { "id": 4, "image":  "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop_hp_245_g10_b8pf8at_-_2.png" },
+          { "id": 5,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_15_24.png" },        
+          { "id": 6, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_1__9_80.png" },
+          { "id": 7,  "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_3__7_109.png"}         
             ],
+ 
  
       "screen_size": "6.9inches",
       "screen_technology" : "Super Retina XDR OLED",
@@ -795,7 +796,7 @@
       "id" : 4,   
       "title": "Apple iPhone 6S Plus 16GB",
        "brand": "Apple",
-      "imgCart": "https://cdn.tgdd.vn/Products/Images/42/334864/iphone-16e-den-thumb-200x200.jpg",
+      "imgCart": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_2__6_119.png",
       "image": [
           { 
             "id": 0,

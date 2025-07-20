@@ -201,7 +201,7 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
                                     <h3 className={`${styles.pricedown} ${theme ? styles.colorPricedown : ""}`}> {List.priceDown} </h3>
                                 </div>
                              
-                <div className={`${styles.text}`}>  
+                         <div className={`${styles.text}`}>  
                             <h3 className={`${styles.text} ${styles.title}`}> {List.title}</h3>
                             
                             <img src={List.image_1 || img } alt='' className={`${styles.image_1}`}/>
@@ -210,17 +210,17 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
                             </p>
                         </div>
                     </div>
-                <div className={styles.container_icon}>
+                     <div className={styles.container_icon}>
                         <div className={`${styles.box__icon}`}> 
                            {star.map((_, index) => ( 
                               <FontAwesomeIcon icon={faStar} className={styles.iconStar} />
                            ))}
                        </div>
-                    <p>
-                        <span> Yêu thích </span>   
-                        <FontAwesomeIcon icon={faHeart} className={styles.icon__star}/>
-                    </p> 
-                  </div>
+                       <p>
+                                <span> Yêu thích </span>   
+                                <FontAwesomeIcon icon={faHeart} className={styles.icon__star}/>
+                        </p> 
+                   </div>
                 </Link>
                
                     </div>

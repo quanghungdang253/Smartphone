@@ -1,7 +1,10 @@
 
 
 .mainFooterOne {
-  
+   h1 {
+      font-weight: bold;
+         font-family: 'Times New Roman', Times, serif;
+   }
      &__column {
         display: flex;
         align-items: start;

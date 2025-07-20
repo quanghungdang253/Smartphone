@@ -14,7 +14,12 @@
         .img {
            max-width: 30em;
                   height: 100%;
+               
+                  transition: opacity 0.8s ease-in-out;
         }
+        .img.active {
+  opacity: 1;
+}
 }
 
 @media (max-width: 1024px) {
@@ -22,10 +27,10 @@
             overflow: hidden;
           
             margin-right: 7%;
-            margin-bottom: 2%;
+           
             border-radius: 20px;
             display: block;
-        margin-top: 3rem;
+            margin-top: 2.5em;
         height: 140px;
      
         .img {

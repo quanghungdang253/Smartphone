@@ -1,35 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-// import styles from './slide-image-mobie.module.scss';
-// function SlideImageMobie(props) {
-//     const [index , setIndex] = useState(0);
-//     let listImg = [
-//             "https://cdn2.fptshop.com.vn/unsafe/750x0/filters:format(webp):quality(75)/mb_header_c7916b1ded.png",
-//             "https://cdn2.fptshop.com.vn/unsafe/750x0/filters:format(webp):quality(75)/mb_header_Sach_1a9f17732a.png",
-//             "https://cdn2.fptshop.com.vn/unsafe/750x0/filters:format(webp):quality(75)/mb_header_3c064c5808.png"
-//     ]
-//     useEffect(() => {
-//             let handleTime = setTimeout(() => {
-//                 if(index === listImg.length - 1){
-//                    setIndex(0);
-//                 }else {
-//                         setIndex((pre) => pre + 1);
-//                 }
-                    
-//             },3000)
-
-//             return () => clearTimeout(handleTime);
-//     })
-//     return (
-//         <div className={styles.mainImg}>
-//             <div> 
-//                     <img src={listImg[index]} alt='' className={styles.img} />
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default SlideImageMobie;
-
 
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './slide-image-mobie.module.scss';

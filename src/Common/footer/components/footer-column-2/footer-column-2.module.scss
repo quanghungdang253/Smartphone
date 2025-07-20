@@ -3,6 +3,10 @@
 
 
 .mainFooterTwo {
+     h1 {
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+   }
     display: flex;
     align-items: start;
     grid-column-gap: 1rem;

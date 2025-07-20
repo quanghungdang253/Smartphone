@@ -93,8 +93,9 @@ h1 {
             font-size: 0.9rem;
             height: 60px;
             display: grid;
+            padding: 1rem;
             grid-template-columns: 250px 100px;
-         
+           
             font-weight: 600; 
         }
         .link:hover {

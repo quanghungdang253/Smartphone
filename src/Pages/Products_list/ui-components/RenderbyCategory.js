@@ -29,7 +29,12 @@ import { faL } from '@fortawesome/free-solid-svg-icons';
                     }
         },[namephone])
         const SelectedComponent = (storeName ?  storeName[namephone] :  ComponentMap[namephone]) || (logic ? hotSaleComponent : DefaultComponent);
-      
+      useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior:'smooth'
+        })
+      })
         return (
                 <div> 
                          <SelectedComponent data={data} namephone={namephone} {...props} />;

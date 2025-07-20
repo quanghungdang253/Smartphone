@@ -94,7 +94,7 @@ const pathName = location.pathname;
                             </div>
 
                             <div className={styles.listCart__box2}>
-                                            <h1> CHI TIẾT THANH TOÁN  </h1>
+                                            <h1 className={styles.title}> CHI TIẾT THANH TOÁN  </h1>
                                                 <div className={styles.showInfo}> 
                                                 <div className={styles.row}>  
                                                      <h1> Tiền hàng:  
