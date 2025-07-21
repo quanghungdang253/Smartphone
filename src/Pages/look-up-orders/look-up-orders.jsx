@@ -70,7 +70,12 @@ function LookUpOrders(props) {
                   navigate("/ShowProduct", {state: {product: findProduct}});
          }
     }
-
+    useEffect(() => {
+      window.scrollTo({
+          top: 0,
+          behavior:'smooth'
+      })
+    },[])
     
     return (
    <>   
