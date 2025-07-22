@@ -57,16 +57,15 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
     const [customsNameFolder , setCustomsFolder] = useState(null);
     const [nameFolder , setNameFolder] = useState([]);
     const [visiblePhones, setVisiblePhones] = useState(10); 
-  const dataEnpoint = props.dataEnpoint;
+    const dataEnpoint = props.dataEnpoint;
+
     useEffect(() => {
       if(!enpoints){
         const fetchdata = namephone.find((item , id) => id === index);
         if (fetchdata && !enpoints) {
               setData(fetchdata);
-    }
-      }
-      // const fetchdata = handledata.find((item,id) => id === index);
-     else {
+         }
+      }else {
             setData(namephone);
       }
     }, [index, handledata]);
@@ -98,10 +97,7 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
 
     useEffect(() => {
   //  ================== thiết lập điểm cuối ==================================== 
-  
-
       const getData = async () => {
-     
       const getEnpoint = !nameFolder  ? null : nameFolder[enpoints];
         if (getEnpoint) {
                  setEnpoint(getEnpoint);
@@ -233,18 +229,18 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
     <div className={styles1.boxShowHidden}>   
       {visiblePhones < (predata?.data && predata.data.length) ? (
         <div className={styles1.viewMore}>  
-           <Link  className={`${styles1.link} ${styles1.linkShow}`}
+           <button  className={`${styles1.link} ${styles1.linkShow}`}
                  onClick={() => setVisiblePhones((pre) => {
                if(pre < predata.data.length){
                        return pre + 10;
                   }
                     return pre;
              })}>  Xem thêm {predata?.data ? predata.data.length - visiblePhones : ""} Sản phẩm 
-            </Link>
+            </button>
         </div>
       ) : (
         <div className={styles1.hidden}>   
-      <Link onClick={() => setVisiblePhones(10)} className={`${styles1.link}  ${styles1.linkHidden}`}>   Ẩn bớt  </Link>  
+      <button onClick={() => setVisiblePhones(10)} className={`${styles1.link}  ${styles1.linkHidden}`}>   Ẩn bớt  </button>  
           </div>
       )}         
     </div>

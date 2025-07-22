@@ -26,12 +26,7 @@ function Menuheader({addPadding}) {
                       className= "show" 
                 >
                 <div className={`Wrapper__label ${addPadding ? "addpadding" : ""} ${theme ? 'Bright' : 'Dark'} `}> 
-                     {/* phương pháp chèn icon thứ nhất  */}
-                           
-                            {/* <i className='Wrapper__icon icon--phone'
-                               style={{backgroundImage: `url(${Iconphone})`, width: "25px", height:"20px", display: "inline-block"}}
-                            ></i>  
-                                                     */} 
+               
                         {items.map((item,index) => (  // thiết lập xử lý data khi hover                   
                                 <div className='Wrapper__label--menu'
                                     key={index}
@@ -47,7 +42,7 @@ function Menuheader({addPadding}) {
                                                                         {item.label}    
                                                 </div>
                                                 <FontAwesomeIcon icon={faChevronRight} 
-        className={`Wrapper__icon ${theme ? 'color__Dark' : 'color__Bright'}`}/>      
+                                                className={`Wrapper__icon ${theme ? 'color__Dark' : 'color__Bright'}`}/>      
  </div>                                    ))}
                         </div>
                         <React.Fragment>                                      
