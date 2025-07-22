@@ -42,8 +42,8 @@ const NameProducts_1 = [
     {id: 5, name: "Máy lọc nước", image: "", sale: '50%'},
     {id: 6, name: "Nồi chiên", image: "", sale: '50%'}
 ]
-const dataHome = [  tivi,fridge,    Water_purifier,  hot_products,  fridge, hot_products, hot_products];
+const dataHome = [   Water_purifier, tivi,fridge,    hot_products,  fridge, hot_products, hot_products];
 
-const dataHome_1 = [fridge_1, tivi_1, hot_products_1, Water_purifier_1];
+const dataHome_1 = [ Water_purifier_1, fridge_1, tivi_1, hot_products_1,];
 const dataHome_2 = [fridge_2, tivi_2, hot_products_2, Water_purifier_2];
 export {NameProducts ,NameProducts_1, dataHome, dataHome_1 , dataHome_2};

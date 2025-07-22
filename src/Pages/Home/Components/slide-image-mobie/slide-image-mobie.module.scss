@@ -21,17 +21,22 @@
   opacity: 1;
 }
 }
-
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+    .mainImg {
+        display: none;
+    }
+    
+}
+@media ((max-width: 768px)) {
         .mainImg {
             overflow: hidden;
-          
+         
             margin-right: 7%;
            
             border-radius: 20px;
-            display: block;
-            margin-top: 2.5em;
-        height: 140px;
+           display: block;
+            margin-top: 5em;
+           height: 140px;
      
         .img {
            max-width: 20em;

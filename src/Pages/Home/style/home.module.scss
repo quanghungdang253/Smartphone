@@ -1,6 +1,20 @@
 
-.slildeMobie {
+.MainHome {
+    overflow: hidden;
+}
+ .slideTextMobie {
+        width: 98%;
+        margin: auto;
+        margin-top: 2rem;
         display: none;
+    }
+.slideTextlaptop {
+    margin-top: 1rem;
+    display: block;
+}
+.slildeMobie {
+       
+        margin-top: 5rem;
 }
 .imgSlide {
       display: block;
@@ -69,11 +83,12 @@
 }
 
 //======================================responsive=================================
-@media (max-width: 1366px) and (min-width:1024px) {
-    
+@media (max-width: 1024px) and (min-width:678px) {
+       
 }
 
 @media (max-width: 1200px) {
+ 
     .MainHome {
         background-image: url('');
     }
@@ -92,6 +107,12 @@
 }
 
 @media (max-width: 768px) {
+    .slideTextlaptop {
+        display: none;
+    }
+    .slideTextMobie {
+        display: block;
+    }
     .imgSlide {
      display: none;
      margin-top: 1rem;

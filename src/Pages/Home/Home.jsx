@@ -5,6 +5,7 @@ import  Productads  from './Components/product-image';
 import Menuheader from '../../Common/Menuheader';
 import Products_list from '../Products_list/Products_list';
 // import Overlay from '../../Overlayer';
+import SlideText from '../../ui/slide-text';
 import ShowInfo from '../../Components/Listproduct/ShowInfo';
 import { Helmet } from 'react-helmet-async';
 import Article from './Components/Article';
@@ -53,10 +54,11 @@ function Home({home}) {
                                 <div className={styles.menuWeb}>    
                                          <Menuheader/>
                                  </div>
-                            
+                              
                                  <div className={styles.Productads}> 
                                         <Productads/>
                                 </div>
+                                
                                   {/* <div className={styles.FormSection__Web}>     
                                                  <FormSection />   
                                  </div> */}
@@ -64,13 +66,20 @@ function Home({home}) {
                                          <Article/>
                                  </div>
                              </div>
+                                <div className={styles.slideTextMobie}> 
+                                        <SlideText />
+                                </div>
+                               <div className={styles.slideTextlaptop}> 
+                                        <SlideText />
+                                </div>
                              <div className={styles.imgSlide}> 
                                   <img src={imgSlide} alt='' />
                              </div>
+                             
                               <div className={styles.form__section}>
                                         <FormSection Toggle={setLogic} />
                               </div>
-                            
+                         
                          </header>
                        
                          <div className={`${styles.overlayer} ${styles.Productlist}`}> 
