@@ -1,5 +1,8 @@
 
-
+.header {
+       max-width: 100%;
+       position: relative;
+}
 .menuHeader {
     margin-left:5.5rem;
     position: fixed;
@@ -12,11 +15,13 @@
         display: none;
 }
 .menuMobie {
+     position: absolute;
+     top: 0;
+}
+.menuMobie {
         display: none;
 }
-.header {
-       max-width: 100%;
-}
+
 .mainHeaders {
     padding-bottom:0.5rem;
     position: fixed;

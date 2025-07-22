@@ -42,7 +42,11 @@ const Container = styled.div`
      width:100%;
      padding-left:5px;
      padding-right:5px;                       
-             
+@media ((min-width: 768px) and (max-width: 1024px))  {
+        .Article {
+                
+        }
+}
 .Article {
      display: flex;
      flex-direction:column;
@@ -73,11 +77,14 @@ const Container = styled.div`
                     object-fit:fill;
       }
 
-@media (max-width: 768px) {
+@media (max-width: 550px)  {
+    display: none;
     height: 600px;
  .Article {
-    margin-top:10rem;
-    margin-left:1.5rem;
+    display: block;
+    margin-top:9rem;
+     margin-left:3rem;
+     margin-right: 3rem;
      align-items:end;
      justify-content:space-around;
      height:100%;
@@ -87,7 +94,13 @@ const Container = styled.div`
      min-width:100%;
      border-radius:1rem;
      height:125%;                        
+    }
 }
+
+@media (min-width: 550px) and (max-width: 1024px) {
+     .Article {
+            display: none;
+     }
 }
 `
 export default Article;

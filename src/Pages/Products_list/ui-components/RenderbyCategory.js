@@ -35,6 +35,7 @@ import { faL } from '@fortawesome/free-solid-svg-icons';
             behavior:'smooth'
         })
       })
+     
         return (
                 <div> 
                          <SelectedComponent data={data} namephone={namephone} {...props} />;

@@ -3,23 +3,19 @@
         display: none;
 }
 .imgSlide {
-     display: block;
-     margin-top: 1rem;
+      display: block;
+      margin-top: 1rem;
 }
 .containerImage {
     display: flex;
-    justify-content: space-between;
-    
-    position: fixed;
+    justify-content: space-between; 
+     position: fixed;
     z-index: 1;
     margin-top: 10rem;
-  
     .childImage {
         width: 6rem;
         height: 20em;
-        object-fit: contain;
-        
-          
+        object-fit: contain;    
     }
     .imageRight {
             position: absolute;
@@ -40,11 +36,10 @@
 .form__section {
         display: block;
          max-width: 1450px;
-         margin-top: 1rem;
-         margin-bottom:2rem;           
+        margin-top: 1rem;         
 }
 .Productlist {
-        margin-top:23rem;
+       
 }
 
 .btn__wrappper {
@@ -54,7 +49,6 @@
 .Mainheader {
     .Header {
           padding-top:1rem;
-       
           margin-top:7em;
           display: flex;  
           align-items: start;  
@@ -66,7 +60,7 @@
     .menuWeb {
         display: block;
         height: 100%;
-        margin-right: 1rem;
+      
 }
     .menuMobie {
     display: none;
@@ -113,7 +107,7 @@
         margin-top: 22rem;
     }
     .Productlist {
-        margin-top:12rem;
+       
     }
     .Box__header {
         margin-left: 1%;

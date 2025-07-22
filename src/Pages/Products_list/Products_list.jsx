@@ -31,8 +31,9 @@ function Products_list(props) {
  if(!data){
               <Loading/>
  }
+
   return (
-    <Product> 
+    <Product className={namephone === "undefined" ? "ProductHome" : "ProductSale"}> 
         {!data ? (
                   <Loading/>
            ) : (
@@ -40,12 +41,16 @@ function Products_list(props) {
                   <RenderbyCategory logic={state} dataEnpoint={dataEnpoint} namephone={namephone} data={data} {...props}/>
           </div>
       )}
+      {console.log(namephone)}
     </Product>
   );
 }
 const Product = styled.div `
-     .Render__product {
-       
+     .ProductHome {
+        margin-top: 0px
+     }
+     .ProductSale {
+      margin-top: 25rem;
      }
 
 `

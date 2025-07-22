@@ -123,7 +123,7 @@
       height: 100%;
       width: max-content;
     
-      background: linear-gradient(90deg, #fd0000, #2600ff, #f700ff, #0a36fb);
+      background: linear-gradient(90deg, #fcfafa, #e2e2e2, #02caf2, #4ef800);
       background-size: 300% 300%;
       animation: gradientMove 3s ease infinite;
 
@@ -227,7 +227,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
       .Header {
          min-width: 40px;
          margin-left: 15px;
@@ -242,6 +242,7 @@
                   
             }
             .row_three {
+         
                margin-left: 1rem;
                background-color: #fdfdfdcf;
                  border-radius: 999px;

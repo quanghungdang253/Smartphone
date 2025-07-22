@@ -1,7 +1,7 @@
 
 
 .Wrapper {
-      
+    
         padding-top: 2rem;
       
 
@@ -129,7 +129,6 @@
         min-height: 50px;
         padding:5px 5px;
         margin: 10px 0px 5px 0px;
-        background-color: #b3c7ef;
         border-radius: 1rem;
         font-weight: 500;
         font-size: 13px;
@@ -139,7 +138,10 @@
     .title {
             color: black;
             font-size: 16px;
-            text-align: center;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: start;
+
     }
     .price {
         font-size: 17px;
@@ -303,6 +305,9 @@
 
 
     @media (max-width: 768px) {
+        .title {
+            font-size: 14px;
+        }
         .image__promotion {
              display: none;
         }
@@ -385,12 +390,15 @@
     }
     }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 568px) and (max-width: 1024px) {
         .Show_phone {
              display: grid;
                         grid-template-columns: 1fr 1fr 1fr;
         }
     }
+
+
+
 
     
    

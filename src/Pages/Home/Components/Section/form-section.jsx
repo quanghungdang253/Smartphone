@@ -66,7 +66,7 @@ function RenderProduct(props) {
     return (
         <div className={styles.Container}>
           
-             <img src={image_1} alt='' className={`${styles.image} ${styles.image_1}`}/>
+             {/* <img src={image_1} alt='' className={`${styles.image} ${styles.image_1}`}/> */}
             <div className={styles.Box}>
                 <div className={styles.Box_title}> 
                    <img src={image_sale} alt=''/>

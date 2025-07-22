@@ -82,53 +82,77 @@ const IpadComponent = ({data, namephone, ...props}) => (
 )
 const  VivoComponent = ({data, namephone, ...props}) => (
     <Suspense fallback={(<Loading/>)}>  
-        <React.Fragment>
+       <VivoComponentStyle>   
+          <React.Fragment>
                     <ShowInfo namephone={data} enpoint={namephone}  {...props}/>
                     <p>fwfwefwefwe</p>
-        </React.Fragment>
+           </React.Fragment>
+        </VivoComponentStyle>
     </Suspense>
 )
 const hotSaleComponent = ({data , dataEnpoint, namephone, ...props}) => 
 (
-    <BoxHotSale saleImg={imgbackground} className={styles.componentHotSale}> 
+       <HotSaleComponents>  
+    <BoxHotSale 
+        saleImg={imgbackground} 
+        className={styles.componentHotSale}
+    > 
         <img src={imgSale} alt='' className= {styles.componentHotSale__imgSale}/>
-        <HotSaleComponents>  
+     
                 <ListimageProduct image={data.advertising_images} customs={true}/>
                      <div className='box boxlabel'> 
                             <LabelProduct labelProduct={data.label_product}/>
                     </div>
-                <ShowInfo namephone={data} enpoint={namephone}  {...props}/>
-        </HotSaleComponents> 
+                <ShowInfo namephone={data} enpoint={namephone}  {...props}/> 
   </BoxHotSale> 
+    </HotSaleComponents> 
 )
 // ===================================================================
 //==================================================================================================================================
 const DefaultComponent = ({data, dataEnpoint, namephone, ...props}) => (
+
   <Suspense fallback={<Loading />}>
-    <HotSaleComponents saleImg={imgbackground} className='imgSale'>
+  
+    <DefaultComponentStyle saleImg={imgbackground} className={
+        dataEnpoint === undefined ? 'imgHome' : 'imgSale'
+    }>
+
       <ShowInfoHome enpoint={namephone} {...props} />
-    </HotSaleComponents>
+    </DefaultComponentStyle>
   </Suspense>
 );
-const HotSaleComponents = styled.div `
+
+const VivoComponentStyle = styled.div `
+        margin-top: 12rem;
+
+`
+
+const DefaultComponentStyle = styled.div`
+     .imgHome {
+         margin-top: 0px;
+     }
+     .imgSale {
+        margin-top: 12rem;
+     }
     .imgSale {
-                    background-color:red;
-                        max-width:30em;
-                }
+         background-color:red;
+         max-width:30em;
+         margin-top: 30em;
+     }
+
+`
+
+
+const HotSaleComponents = styled.div `
+      margin-top: 10em;
+    .imgSale {
+         background-color:red;
+         max-width:30em;
+     }
         background-image: url(${props => props.saleImg});
-        @media (max-width: 1024px) {
-                   background-image: url("") !important;
-                   .imgSale {
-                    background-color:red;
-                        max-width:30em;
-                }
-                .img {
-                       width:100%;
-                       
-                }
-        }
-position: relative;
-bottom:0px;
+     
+        position: relative;
+        bottom:0px;
         overflow: hidden;
       overflow:hidden;
       background-color: white;
@@ -141,8 +165,20 @@ bottom:0px;
             position: relative;
             
       }
+      @media (max-width: 1024px) {
+                   background-image: url("") !important;
+                   .imgSale {
+                    background-color:red;
+                        max-width:30em;
+                }
+                .img {
+                       width:100%;
+                       
+                }
+        }
 `
 const SamsungComponents = styled.div `
+margin-top:12rem;
 .imgSale {
         display: block;
         background-color:transparent;

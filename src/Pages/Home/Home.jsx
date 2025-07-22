@@ -30,7 +30,7 @@ function Home({home}) {
        
             <MainHome 
                 style={{backgroundColor: theme ? '#EEEEEE' : "#111111"}}
-                bgImage={imagebackground}
+              
                 className={styles.MainHome}
         > 
                         <div className={styles.containerImage}>  
@@ -74,8 +74,8 @@ function Home({home}) {
                          </header>
                        
                          <div className={`${styles.overlayer} ${styles.Productlist}`}> 
-                           <ToggleProvider>  
-                                        <Products_list logic={logic}/>
+                                      <ToggleProvider>  
+                                                <Products_list logic={logic}/>
                                         </ToggleProvider>
                         </div>
                        

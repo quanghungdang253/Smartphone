@@ -128,14 +128,15 @@ useEffect(() => {
                             {title.map((Item) => (
                             <div 
                             key={Item.id} 
-            className={`${styles.Item} ${Item.id ===  currentIndex ? styles.Hightlight : ""}`}
+                            className={`${styles.Item} `}
                              onClick={() => setCurrentIndex(Item.id)}
                             >                                     
                                          {Item.title}
                                          <br></br>
                                         <p className={`${styles.nameSale}`}>  {Item.namesale} </p>
-                                      
+                                       <div className={`${Item.id === currentIndex ? styles.Hightlight : ""}`}> </div>
                             </div>
+                           
                             ))}
                        </div>
                     </div>                       

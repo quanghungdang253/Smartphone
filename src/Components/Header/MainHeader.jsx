@@ -20,57 +20,51 @@ function MainHeader(props) {
 let { theme } = useValue();
 //===============================thực hiện xử lý nhận dữ liệu=======================
 const {pathname} = useLocation();
-
+const [show, setShow] = useState(false);
+const [show1, setShow1] = useState(false);
 const {breadcrumb} = useContext(BreadcrumbContext);
 const {Nameproduct} = breadcrumb;
 
-
-    const [show, setShow] = useState(false);
-    const [show1, setShow1] = useState(false);
+    
     const [showMenuMobie , setShowMenuMobie] = useState(false);
     return (
         <div className={styles.header}> 
             <div className={styles.mainHeaders}>
            <AdvertisiPhoto/>
                 <nav className={styles.wrapperMainHeader}> 
-                 {/* <div className={styles.responsive__header}>   */}
-                     <TitleandProducts shows={setShow}  showmenu={setShowMenuMobie}/>
+                           <TitleandProducts shows={setShow}  showmenu={setShowMenuMobie}/>
                             <Search  shows={setShow1}/>
-                 {/* </div>  */}
                        <Navigation_header/>
                  </nav>  
                   {pathname !== '/' ? (
-                     <Breadcrumb  nameProduct={Nameproduct}/>  
+                                <Breadcrumb  nameProduct={Nameproduct}/>  
                   ) : (null)}
                          
             </div> 
       
                 {show ? ( 
-                <div>  
-                    <div className={styles.menuHeader}>  
+                    <div>  
+                          <div className={styles.menuHeader}>  
                                 <Menuheader addPadding={show}/>
+                          </div>
                     </div>
-                 
-                 
-                </div>
                 
                 ) 
                 : (
                             ""
                  )}
                  {
-                          <div className={`${styles.menuMobie} ${showMenuMobie ? styles.show : styles.hide}`} > 
+                          <div 
+                            className={`${styles.menuMobie} ${showMenuMobie ? styles.show : styles.hide}`} > 
                                 <MenuResponsiveMobile Showmenu={setShowMenuMobie} />
                             </div>
                     
                  }
-           
                  {(show || show1) && (    
                         <div className={styles.Overlay}>  
                                 <Overlay/>
                         </div>
-                        )} 
-                        
+                        )}       
         </div>
         
     );
