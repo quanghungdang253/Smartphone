@@ -13,9 +13,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import ListimageProduct from '../../../Products_list/components/ListimageProduct';
-import useEnpoint from '../../../../Api/use-handle-enpoint';
+import useEnpoint from '../../../../hooks/use-handle-enpoint';
 // ==============================custom hook=================================
-import ChildComponent from '../../../../Api/handle-enpoint';
+
 
 function FormSection(props) {
     const Toggle = props.Toggle;
@@ -119,7 +119,7 @@ function RenderProduct(props) {
     );
 }
 
-export {ChildComponent};
+
 export default FormSection;
 
 

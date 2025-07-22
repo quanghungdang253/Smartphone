@@ -51,7 +51,7 @@
         font-size: 2rem;
         font-weight: 800;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        background-image: url('../../icon/img-promotion_3.png');
+        background-image: url('../icon/img-promotion_3.png');
         animation: animation_color 2s infinite;
         background-repeat: no-repeat;
         margin-left: 8rem;
@@ -89,7 +89,7 @@
    height: 100px;
    width: 90px;
     content: "";
-    background-image: url('../../icon/icon_promotion_2.png');
+    background-image: url('../icon/icon_promotion_2.png');
     animation: position_image 2s ease-in-out infinite alternate;
 }
 @keyframes  position_image {
@@ -254,7 +254,7 @@
 .Showphone__Info .discount{
         
         font-weight:600;
-        background-image: url('../../icon/icon-price.png');
+        background-image: url('../icon/icon-price.png');
         color: white;
         height:24px;
         padding-top: 3px;

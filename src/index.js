@@ -1,10 +1,8 @@
 import React from 'react';
+import './index.css';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter , ScrollRestoration} from 'react-router-dom';
 import App from './App';
-import './index.css';
-import Vd1 from './vd1';
-import Appp from './Appp';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 

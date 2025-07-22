@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import {ReactComponent as IconarrowRight} from "./assets/icon/arrowRight.svg";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 // import Componenticon from './Componenticon';
 import Smartphone from './Products/Smartphone';
-import {Listitem} from './name-product';
+import {Listitem} from './Products/name-product';
 import { useValue } from '../Context/Settings/Theme/ThemeContext';
-import {ReactComponent as IconarrowRight} from "./icon/arrowRight.svg";
+
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import {faChevronRight} from '@fortawesome/free-solid-svg-icons';
-import items from './name-product';
+import items from './Products/name-product';
 
 
 function Menuheader({addPadding}) {

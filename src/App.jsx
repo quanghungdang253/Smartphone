@@ -4,7 +4,7 @@ import './App.css';
 import './Components/phone/HeaderStyle/reset.css';
 import { Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
-import MainHeader from './Components/Header/MainHeader';
+import MainHeader from './Common/Header/MainHeader';
 import React, { Suspense, lazy } from 'react';
 import Loading from './Common/components/Loading';
 import { HelmetProvider } from 'react-helmet-async';
@@ -13,8 +13,8 @@ import { ParentContext } from './Context/Settings/Theme/ThemeContext';
 import Products_list from './Pages/Products_list/Products_list';
 import Home from './Pages/Home/Home';
 import  InforPhone from './Pages/InforPhone/InforPhone';
-import MainStoreInfo from './Components/Header/store-map-info/main-store-info';
-import MainStoreMapInfo from './Components/Header/store-map-info/main-store-map';
+import MainStoreInfo from './Common/Header/store-map-info/main-store-info';
+import MainStoreMapInfo from './Common/Header/store-map-info/main-store-map';
 import { Provider } from 'react-redux';
 import store from './app/store';
 import MainChatbox from './Components/Chat/main-chatbot';
@@ -26,7 +26,7 @@ import { BreadcrumbProvider } from './Context/share-data-bread-crumb/share-data-
 import MainAdmin from './Pages/admin/main-admin';
 import LookUpOrders from './Pages/look-up-orders/look-up-orders';
 import ShowProduct from './Pages/look-up-orders/components/show-product/show-product';
-import CameraDetect from './CameraDetect';
+
 
 export default function App() {
  

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styles from './menu-responsive.module.scss';
-import items from '../name-product';
+import items from '../Products/name-product';
 import { Link } from 'react-router-dom';
-import {Listitem} from '../name-product';
+import {Listitem} from '../Products/name-product';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBoxOpen } from '@fortawesome/free-solid-svg-icons';

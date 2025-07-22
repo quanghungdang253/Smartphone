@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Loading from '../components/Loading';
+import Loading from '../../Common/components/Loading';
 import { Helmet } from 'react-helmet-async';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -17,11 +17,11 @@ import { useNavigate } from 'react-router-dom';
 import {faHeart} from '@fortawesome/free-solid-svg-icons';
 import dataNameFolder from './data/data-name-folder.json';
 import {NameProducts , dataHome, dataHome_1} from '../../Pages/Home/Components/Section/data/data-selection/data-selection';
-import icon_price from '../icon/icon-price.png';
-import useHandledetailApi from '../../Api/use-handle-detail-phone'; 
-import { nameProduct } from '../componentEnpoint';
-import useEnpoint from '../../Api/use-handle-enpoint';
-import ChildComponent from '../../Api/handle-enpoint';
+import icon_price from '../../Common/assets/icon/icon-price.png';
+import useHandledetailApi from '../../hooks/use-handle-detail-phone'; 
+import { nameProduct } from '../../Common/componentEnpoint';
+import useEnpoint from '../../hooks/use-handle-enpoint';
+
 import {listDataHome, ListProduct} from './data-name-folder';
 // =========================customs hook==========================================
 import { use } from 'react';

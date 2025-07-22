@@ -1,5 +1,5 @@
 import React from 'react';
-import {Listitem} from '../name-product';
+import {Listitem} from '../Products/name-product';
 import styles from './show-menu-responsive.module.scss';
 import { Link } from 'react-router-dom';
 function ShowMenu({product , Showmenu}) {

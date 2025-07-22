@@ -1,6 +1,6 @@
 import React from 'react';
 import  styles from './label-product.module.scss';
-import Loading from '../components/Loading';
+import Loading from '../../Common/components/Loading';
 import { Link } from 'react-router-dom';
 function LabelProduct(props) {
      const labelProduct = props.labelProduct;

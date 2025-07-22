@@ -6,10 +6,10 @@
  import image_4 from '../../Pages/Home/Components/Section/image/image__sale/image_4.jpg'
  import image_5 from '../../Pages/Home/Components/Section/image/image__sale/Image_5.jpg'
  // =======================================================================================
- import imgPromotion1 from '../icon/img-promotion_3.png';
- import imgPromotion2 from '../icon/img-promotion_4.jpg';
- import imgPromotion3 from '../icon/icon_promotion_1.jpg';
- import imgPromotion5 from '../icon/img-promotion_5.jpg'
+ import imgPromotion1 from './icon/img-promotion_3.png';
+ import imgPromotion2 from './icon/img-promotion_4.jpg';
+ import imgPromotion3 from './icon/icon_promotion_1.jpg';
+ import imgPromotion5 from './icon/img-promotion_5.jpg'
  import { dataHome, dataHome_1 , dataHome_2, NameProducts } from '../../Pages/Home/Components/Section/data/data-selection/data-selection';
 
  let data = [

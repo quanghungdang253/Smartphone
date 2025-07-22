@@ -2,15 +2,15 @@
 
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
     import { faMobile, faClock, faCogs, faDesktop, faLaptop, faHome, faHeadphones, faCamera, faTv, faNewspaper,  faSnowflake, faChevronRight  } from '@fortawesome/free-solid-svg-icons';
-import Link_phone from './data/Link_phone.json';
-import  Link_laptop from './data/Link_laptop.json';
-import Link_camera from './data/Link_camera.json';
-import Link_earphone from './data/Link_earphone.json';
-import Link_clock from './data/Link_clock.json';
-import Link_television from './data/Link_Television.json';
-import Link_waterfilter from './data/Link_waterfilter.json';
-import Link_computer from './data/Link_computer.json';
-import Link_LInk_householdAppliances from './data/LInk_householdAppliances.json';
+import Link_phone from '../assets/data/Link_phone.json';
+import  Link_laptop from '../assets/data/Link_laptop.json';
+import Link_camera from '../assets/data/Link_camera.json';
+import Link_earphone from '../assets/data/Link_earphone.json';
+import Link_clock from '../assets/data/Link_clock.json';
+import Link_television from '../assets/data/Link_Television.json';
+import Link_waterfilter from '../assets/data/Link_waterfilter.json';
+import Link_computer from '../assets/data/Link_computer.json';
+import Link_LInk_householdAppliances from '../assets/data/LInk_householdAppliances.json';
 import { listClasses } from '@mui/material';
 
       const items = [

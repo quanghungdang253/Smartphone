@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axiosClient from "./axiosClient";
+import axiosClient from "../Api/axiosClient";
 import { useParams } from "react-router-dom";  // lấy tham số động 
 import { Switch } from "@mui/material";
 import Loading from "../Common/components/Loading";

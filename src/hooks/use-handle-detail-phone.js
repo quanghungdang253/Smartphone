@@ -2,7 +2,7 @@
 // // xử lý hiển thị thông tin chi tiết điện thoại 
 
 import { useEffect, useState } from "react";
-import axiosClient from "./axiosClient";
+import axiosClient from "../Api/axiosClient";
 import componentEnpoint from "../Common/componentEnpoint";
 
 function useHandledetailApi(link,id) {   // xử lý hiển thị thông tin chi tiết điên thoại

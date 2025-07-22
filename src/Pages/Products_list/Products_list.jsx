@@ -1,8 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import ShowInfo from '../../Common/Listproduct/ShowInfo';
-import useHandleApi from '../../Api/use-handle-api';
+import ShowInfo from '../../Components/Listproduct/ShowInfo';
+import useHandleApi from '../../hooks/use-handle-api';
 import categoryComponentsConfig from './ui-components/HandleComponent';
 import Productads from '../Home/Components/product-image';
 import RenderbyCategory from './ui-components/RenderbyCategory';
@@ -11,7 +11,7 @@ import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import { Helmet } from 'react-helmet';
 import styles from './Product_list.module.scss';
 import Loading from '../../Common/components/Loading';
-import Breadcrumb from '../../Common/location/location';
+import Breadcrumb from '../../Components/location/location';
 function Products_list(props) { 
   const logic = props.logic; 
   const dataEnpoint = props.dataEnpoint;

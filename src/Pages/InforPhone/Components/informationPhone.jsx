@@ -21,7 +21,7 @@ import AttachedProduct from "./attached-product";
 import ProductDescription from "./product-description";
 import { useDispatch } from "react-redux";
 import { addCart } from "../../../features/cart/cartSlice";
-import Breadcrumb from "../../../Common/location/location";
+import Breadcrumb from "../../../Components/location/location";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";

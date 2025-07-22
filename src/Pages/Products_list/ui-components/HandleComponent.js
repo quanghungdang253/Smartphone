@@ -10,10 +10,10 @@ import imgIPhone from '../assets/image-ui-components/imgIphone.jpg';
 import Criteria from '../../../Common/components/criteria';
 //=========================================================
 import imgbackground from '../assets/image-ui-components/imgbackground.jpg';
-import LabelProduct from '../../../Common/label-product/label-product';
+import LabelProduct from '../../../Components/label-product/label-product';
 import { dark } from '@mui/material/styles/createPalette';
 import styled from 'styled-components';
-import ShowInfoHome from '../../../Common/Listproduct/show-infor-home';
+import ShowInfoHome from '../../../Components/Listproduct/show-infor-home';
 import styles from '../assets/styles/HandleComponent.module.scss';
 import ImgSlide from '../components/Img-sale';
 import imgSaleSamsung from '../assets/image-ui-components/img-sale.jpg';

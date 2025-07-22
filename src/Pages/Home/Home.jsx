@@ -5,7 +5,7 @@ import  Productads  from './Components/product-image';
 import Menuheader from '../../Common/Menuheader';
 import Products_list from '../Products_list/Products_list';
 // import Overlay from '../../Overlayer';
-import ShowInfo from '../../Common/Listproduct/ShowInfo';
+import ShowInfo from '../../Components/Listproduct/ShowInfo';
 import { Helmet } from 'react-helmet-async';
 import Article from './Components/Article';
 import { Context } from '../../Context/Settings/Theme/ThemeContext';
