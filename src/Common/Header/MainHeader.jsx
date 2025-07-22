@@ -6,7 +6,7 @@ import Menuheader from '../../Common/Menuheader';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import AdvertisiPhoto from './Components/advertising-photo';
 import styled from 'styled-components';
-import styles from './styles/main-header.module.scss';
+import styles from './assets/styles/main-header.module.scss';
 import Overlay from '../../Components/Overlayer';
 import MenuResponsiveMobile from '../../Common/menu-responsive-mobile/menu-responsive-mobile';
 import FormSection from '../../Pages/Home/Components/Section/form-section';

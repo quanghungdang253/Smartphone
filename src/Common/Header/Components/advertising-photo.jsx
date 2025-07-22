@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import {faArrowRight,faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import img1 from '../image/img-quangcao-1.jpg';
-import img2 from '../image/img-quangcao-2.jpg';
-import img3 from '../image/img-quangcao.jpg';
-import styles from '../styles/advertising-photo.module.scss';
+import img1 from '../assets/image/img-quangcao-1.jpg';
+import img2 from '../assets/image/img-quangcao-2.jpg';
+import img3 from '../assets/image/img-quangcao.jpg';
+import styles from '../assets/styles/advertising-photo.module.scss';
 
 function AdvertisiPhoto(props) {
     const [index , setIndex] = useState(0);

@@ -2,7 +2,9 @@ import styled from "styled-components";
 const Wrapper = styled.div `
      background-color:white;
      position: relative;
-
+   .image {
+         transition: opacity 0.5s ease-in-out;
+   }
       .HandleImage__button:hover{
                         border: 4px solid red;
                 }
@@ -23,7 +25,7 @@ overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và 
         
         display: block;
 width:100%;
-height: 200px;
+
 position:relative;
 display: flex;
 align-items:center;
@@ -117,7 +119,9 @@ height:115px;
                  }
 }
 
+
 `
 
 export default Wrapper;
 export {HandleImage}
+

@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCaretUp} from "@fortawesome/free-solid-svg-icons"
 import {faSearch} from '@fortawesome/free-solid-svg-icons'; 
 import {faXmark} from '@fortawesome/free-solid-svg-icons';
-import styled from '../styles/search.module.scss';
-import iconsearch from '../icon/fire.jpg';
+import styled from '../assets/styles/search.module.scss';
+import iconsearch from '../assets/icon/fire.jpg';
 import data_search from '../data/data_search.json';
 import Overlay from '../../../Components/Overlayer';
 import { useRef } from 'react';

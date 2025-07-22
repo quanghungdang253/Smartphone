@@ -375,12 +375,13 @@ useEffect(() => {
                       <div className={style__sale.attached__product}>
                             <div className={style__sale.attach__child1}>
                                <div className={style__sale.title}> Ưu đã hấp dẫn khi mua kèm với <span> {Data.title} </span>   </div>  
-                               <ul className={style__sale.list__product}>
+                               <div className={style__sale.list__product}>
                                     {Data.attached__product.map((Item) => (
-                                            <li key={Item.id}>  
+                                            <div key={Item.id} className={style__sale.boxList}>  
                                                 <div className={style__sale.Box_1}> 
+                                                
                                                      <img src={Item.image} alt="" className={style__sale.Box1__image}/>
-                                        {Item.id === 0 ?    ('') :
+                                                  {Item.id === 0 ?    ('') :
                                                               
                                     (<input 
                                       type="checkbox"
@@ -389,7 +390,7 @@ useEffect(() => {
                                        />)
                                     
                                         }                                              
-                                                </div>
+                                            </div>
                                                 <div  className={style__sale.Box_2}>  
                                                     <a>
                                                          {Item.id === 0 ? (<b> Đang xem </b>) : ('')}
@@ -411,9 +412,9 @@ useEffect(() => {
                                                        </a>
                                                    </div>                                                
                                                 </div>                                             
-                                            </li>
+                                            </div>
                                     ))}
-                               </ul>
+                               </div>
 
                                </div>
 

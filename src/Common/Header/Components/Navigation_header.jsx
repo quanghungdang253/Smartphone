@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import { faTruck } from '@fortawesome/free-solid-svg-icons';
 import { faStore } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from 'react-redux';
-import styles from '../styles/navigation-header.module.scss';
+import styles from '../assets/styles/navigation-header.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { indexCart } from '../../../features/cart/cartSlice';
 import useStatusUser from '../../../hooks/use-status-user';
