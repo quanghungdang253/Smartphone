@@ -34,7 +34,7 @@ function MainChatbox(props) {
                closeMessage ? (
                 <div className={styles.mainContent}> 
                     <div className={styles.iconClose} onClick={() => setCloseMessage(false)}>  <FontAwesomeIcon
-                   icon={faWindowClose}
+                    icon={faWindowClose}
                    className={styles.iconClose} />   </div>
                     <div className={styles.content} onClick={() => setCloseBotStore(true)}>    
                         <div className={styles.title}>    
@@ -42,7 +42,7 @@ function MainChatbox(props) {
                             <h1> Quang hùng Store </h1>
                          </div>         
                             <p> {contentWelcome[index]}  </p>  
-                    </div>        
+                    </div>       
                 </div>
                ) : ""
                 
