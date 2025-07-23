@@ -42,10 +42,10 @@ function ContactInformation(props) {
                                   (6h - 22h)
 
                     </Link>
-                    <Link className={styles.btnLink}>  
+                    {/* <Link className={styles.btnLink}>   */}
                         <Setting setting={custom}/>
-                        Settings
-                    </Link>
+                    
+                    {/* </Link> */}
                 </div>
                
           

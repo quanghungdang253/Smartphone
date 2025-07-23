@@ -16,6 +16,7 @@ import Customs from './Theme/components/Customs';
                  className='Btn Btn_setting'
                  onClick={() => Closeform()} >
                         <FontAwesomeIcon icon={faGear} className='icon'/>  {/* icon đóng form theme  */ }
+                        Setting
              </button>
         </Container>
     );
@@ -30,6 +31,15 @@ const Container = styled.div`
           .Btn{
                 border: none;
                 background:transparent;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                background-color:white;
+                border-radius: 999px;
+                border: 1px solid black;
+                display: flex;
+                align-items: center;
+                grid-column-gap:0.2rem;
+                font-weight: bold;
+                font-size:14px;
           } 
 
 `
