@@ -135,6 +135,20 @@
 // =========================================responsive====================================
 
 @media (max-width: 768px) {
+
+    
+    .listCart {
+            &__box2 { 
+                .title {
+                    font-size: 14px;
+                }
+            }
+
+  
+    .title {
+        font-size: 16px !important;
+    }
+}
     .listCart {
         padding: 0px;
     }
