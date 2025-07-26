@@ -8,6 +8,7 @@ const MarqueeContainer = styled.div`
   background: ${props => props.bgGradient || props.bgColor || 'transparent'};
   padding: ${props => props.padding || '10px 0'};
   position: relative;
+
 `;
 
 const MarqueeContent = styled.div`
@@ -45,7 +46,7 @@ const SlideText = ({
   speed = 20,
   direction = 'left',
   gap = '50px',
-  fontSize = '16px',
+  fontSize = '14px',
   fontWeight = 'bold',
   bgColor = 'transparent',
   bgGradient = 'linear-gradient(90deg, #f400ab 0% 0%, #02369d 100% 100%)', // Gradient mặc định cho background

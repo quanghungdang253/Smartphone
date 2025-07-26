@@ -24,6 +24,8 @@
 //=======================================================================
 
 .mainBox {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     max-width: 35em;
         padding-left: 10px;
         &__box1 {
             .tabchoose {
@@ -37,8 +39,17 @@
                     width: 48px;
                 }
                 .Link {
+                    width: 70px;
+                    min-height: 70px;
+                    margin-left: 5px;
                     display: flex;
+                    align-items: center;
+                   gap: 5px;
+                    padding: 5px;
                     flex-direction: column;
+                    border: 1px solid rgba(47, 47, 47,0.5);
+                    border-radius: 5px;
+                    font-size: 12px;
                     
                 }
                 &__product {
@@ -48,8 +59,10 @@
         }
         &__box2 {
              .label {
+                font-size: 1rem;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-weight: 800;
-                 margin-bottom: 5px;
+                 margin: 10px;
             }
            .tabchoose {
                margin-top: 0.5rem;
@@ -58,13 +71,17 @@
            
            }
               .Link {
+                text-align: center;
                 border-radius: 10px;
-                      margin-left: 5px;
+               margin-left: 5px;
+               font-size: 14px;
+font-weight: bold;
+border: 1px solid black;
                      margin-bottom: 5px;
                      display: inline-block;
-                     padding: 5px;
+                     padding: 10px;
                     background-color: rgb(233, 233, 233);
-                    padding: 10px;
+                    
               }  
         }
         &__box3 {

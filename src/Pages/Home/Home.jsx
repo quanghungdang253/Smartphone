@@ -75,11 +75,9 @@ function Home({home}) {
                              <div className={styles.imgSlide}> 
                                   <img src={imgSlide} alt='' />
                              </div>
-                             
                               <div className={styles.form__section}>
                                         <FormSection Toggle={setLogic} />
                               </div>
-                         
                          </header>
                        
                          <div className={`${styles.overlayer} ${styles.Productlist}`}> 

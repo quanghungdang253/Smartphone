@@ -67,9 +67,20 @@ function MenuResponsiveMobile({Showmenu}) {
                             {items.map((Item,index) => (
                                     <li 
                                         key={index} 
-                                        className={`${styles.item} ${indexProduct === Item.id ? styles.addHover : ""}`}
+                                        className={`${styles.item}  ${indexProduct === Item.id ? styles.addHover : ""}
+                                        
+                                        ${Item.id % 2 === 0 
+                                        ? styles.gradianRed : styles.gradianYellow
+                                        
+                                        }
+                                        
+                                        `
+                                        
+                                        
+                                        }
                                         onClick={() => setIndexProduct(Item.id)}
                                      > 
+                                     <img src={Item.img} />
                                         {Item.label}  
                                     </li>
                             ))}

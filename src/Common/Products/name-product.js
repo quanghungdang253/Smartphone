@@ -14,16 +14,27 @@ import Link_LInk_householdAppliances from '../assets/data/LInk_householdApplianc
 import { listClasses } from '@mui/material';
 
       const items = [
-            { id: 0, icon:  <FontAwesomeIcon icon={faMobile} />, label: "Điện thoại, Tabled" } ,
-            {  id: 1,icon: <FontAwesomeIcon  icon={faLaptop}/> , label:"Laptop"},
-            { id: 2, icon:  <FontAwesomeIcon icon={faCamera}/>, label:  "Camera Flycam" } ,
-            { id: 3, icon:  <FontAwesomeIcon icon={ faHome}/>, label: "Đồ gia dụng, Điện tử" } ,
-            {  id: 4,icon:  <FontAwesomeIcon icon={faTv} />,      label: "Tivi" } ,
-            { id: 5, icon:  <FontAwesomeIcon icon={faDesktop} />, label: "Máy Tính" } ,
-            { id: 6, icon:  <FontAwesomeIcon icon={faHeadphones} />, label: "Phụ kiện, Tai nghe" } ,
-            {  id: 7,icon:  <FontAwesomeIcon icon={faClock} />, label: "Đồng hồ" } ,
-            {  id: 8,icon: <FontAwesomeIcon  icon={ faSnowflake} />, label: "Điện tử, máy lọc nước"},
-            { id: 9, icon:  <FontAwesomeIcon icon={faNewspaper} />, label: "Tin công nghệ" } ,    
+            { 
+                id: 0, 
+                icon:  <FontAwesomeIcon icon={faMobile} />,
+                label: "Điện thoại, Tabled",
+                img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:90:0/q:90/plain/https://cellphones.com.vn/media/tmp/catalog/product/i/p/iphone-15-menu-0001.png"
+            } ,
+            { 
+                 id: 1,
+                icon: <FontAwesomeIcon  icon={faLaptop}/> ,
+              label:"Laptop",
+              img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:90:0/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/b/mb-laptop.png"
+            
+            },
+            { id: 2, icon:  <FontAwesomeIcon icon={faCamera}/>, label:  "Camera Flycam" ,  img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:90:0/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/o/gopro-menu.png"} ,
+            { id: 3, icon:  <FontAwesomeIcon icon={ faHome}/>, label: "Đồ gia dụng, Điện tử",   img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:90:0/q:90/plain/https://cellphones.com.vn/media/tmp/catalog/product/g/i/giadung-nha-thong-minh.png" } ,
+            {  id: 4,icon:  <FontAwesomeIcon icon={faTv} />,      label: "Tivi" ,   img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:90:0/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/b/mb-laptop.png"} ,
+            { id: 5, icon:  <FontAwesomeIcon icon={faDesktop} />, label: "Máy Tính" ,   img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:90:0/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/b/mb-laptop.png"} ,
+            { id: 6, icon:  <FontAwesomeIcon icon={faHeadphones} />, label: "Phụ kiện, Tai nghe" ,   img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:90:0/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/b/mb-accessories.png"} ,
+            {  id: 7,icon:  <FontAwesomeIcon icon={faClock} />, label: "Đồng hồ",   img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:90:0/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/o/dong-ho.png" } ,
+            {  id: 8,icon: <FontAwesomeIcon  icon={ faSnowflake} />, label: "Điện tử, máy lọc nước",   img: "https://cdn2.cellphones.com.vn/insecure/rs:fill:90:0/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/b/mb-laptop.png"},
+            { id: 9, icon:  <FontAwesomeIcon icon={faNewspaper} />, label: "Tin công nghệ" , } ,    
     ]
         const Listitem = [
         { id: 0, items: Link_phone },
