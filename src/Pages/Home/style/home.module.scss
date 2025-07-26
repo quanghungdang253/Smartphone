@@ -2,19 +2,22 @@
 .MainHome {
     overflow: hidden;
 }
- .slideTextMobie {
+.Article {
+   
+        margin-left: 10px;
+    }
+.slideTextMobie {
         width: 98%;
         margin: auto;
         margin-top: 2rem;
         display: none;
-    }
+}
 .slideTextlaptop {
-    margin-top: 1rem;
-    display: block;
+        margin-top: 1rem;
+        display: block;
 }
 .slildeMobie {
-       
-        margin-top: 5rem;
+         margin-top: 5rem;
 }
 .imgSlide {
       display: block;
@@ -124,9 +127,7 @@
         display: block;      
         margin-top: 12rem;  
 }      
-    .Article {
-        margin-top: 22rem;
-    }
+    
     .Productlist {
        
     }

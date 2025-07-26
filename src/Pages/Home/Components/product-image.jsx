@@ -11,9 +11,6 @@ import arrayImage from './image/img-product-image/img-product-image';
 const Productads = () => {
     const [openNode , setOpenNode] = useState(false);
     const Preimage = arrayImage;
-
-   
-  
    let title = [
         {id: 0, title: "TECNO SPARK 30 PRO" , namesale: "Lên đời tặng AirPods 4" },
         {id: 1, title: "GALAXY S25 ULTRA", namesale: "Đặt trước ngay"},

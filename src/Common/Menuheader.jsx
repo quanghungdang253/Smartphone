@@ -33,9 +33,9 @@ function Menuheader({addPadding}) {
                                     key={index}
                                     onMouseEnter={() =>{                                             
                                         setIndex(index);                                         
-                                        const fountindex = Listitem.find((listItem) => listItem.id === index);
-                                        if(fountindex ){
-                                                setProduct(fountindex.items);
+                                        const fountIndex = Listitem.find((listItem) => listItem.id === index);
+                                        if(fountIndex ){
+                                                setProduct(fountIndex.items);
                                         }                                          
                                     }}          >
                                 <div className={`label_icon ${!theme ? 'color__Bright' : 'color__Dark'}`}>                                       
@@ -65,39 +65,39 @@ function Menuheader({addPadding}) {
 const Wrapper = styled.div `
 
         // ==============================phần theme ==============================
-        .Bright {
-            background-color:white;
-        }
-        .Dark {
-                background-color:black;
-        }
-        .color__Bright {
-            color:white;
-        }
-        .color__Dark {
-                fill: white;
-                color: black;
-                font-weight:600;
-        }
-        //=========================================================================
-        max-width: 20rem;
-        height: 100%;
-         display: flex;
+.Bright {
+        background-color:white;
+}
+.Dark {
+        background-color:black;
+}
+.color__Bright {
+        color:white;
+}
+.color__Dark {
+        fill: white;
+        color: black;
+        font-weight:600;       
+}
+      
+          max-width: 20rem;
+          height: 100%;
+          display: flex;
        
       
    
-       .label_icon {
-            display:flex;
-            grid-column-gap:15px;
-            font-size:inherit;
+.label_icon {
+          display:flex;
+          grid-column-gap:15px;
+          font-size:inherit;
          
-       }
-        .showitem {
-                  width:58rem;
-                  position: absolute;
-                  margin-left:16rem;
-                  opacity: 0;           
-        }
+}
+.showitem {
+         width:58rem;
+         position: absolute;
+         margin-left:16rem;
+         opacity: 0;           
+}
 .showitem.show {
          opacity: 1; 
 }
@@ -128,13 +128,13 @@ const Wrapper = styled.div `
           
              font-weight: 600;
    }
- 
    .Wrapper__label {
+           margin-right:10px;
            font-size: 0.8rem;
             padding: 0.8rem;
             width: 16rem;
             height:100%;
-            border-radius: 2rem;
+            border-radius: 0.5rem;
             box-shadow: 0 1px 2px 0 rgba(60,64,67,.1),                   
                         0 2px 6px 2px rgba(60,64,67,.15);
    }

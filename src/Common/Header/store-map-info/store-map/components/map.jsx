@@ -6,15 +6,15 @@ import imgFix from '../../assets/image/fix.jpg';
 import { useEffect, useState } from "react";
 
 // Danh sách địa điểm
-const locations = [
-  { name: "Thị trấn Ea T’ling, huyện Cư Jút, tỉnh Đắk Nông", lat: 12.7453, lon: 107.6867 },
+const locations_1 = [
+  { name: "Thị trấn Ea T’ling, huyện Cư Jút, tỉnh Đắk Nông", lat: 21.7453, lon: 107.6867 },
   { name: "Hồ Hoàn Kiếm, Hà Nội", lat: 21.0285, lon: 105.8542 },
   { name: "Nhà Thờ Đức Bà, TP Hồ Chí Minh", lat: 10.7794, lon: 106.6992 },
   { name: "Linh Tây, Thủ Đức TP Hồ Chí Minh", lat: 10.865492, lon: 106.759284 },
   { name: "Tọa độ tùy chỉnh", lat: 10.865513, lon: 106.759305 }
 ];
 
-const locations_1 = [
+const locations   = [
   { name: "Điện thoại 24h Gò Vấp", lat: 10.821052, lon: 106.759284 },
   { name: "Hồ Hoàn Kiếm, Hà Nội", lat: 21.0285, lon: 105.8542 },
   { name: "Nhà Thờ Đức Bà, TP Hồ Chí Minh", lat: 10.7794, lon: 106.6992 },
@@ -42,7 +42,7 @@ let storeSystem = [
 const customIcon = new L.DivIcon({
   className: "custom-icon",
   html: `<img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/RedDot.svg" alt="marker-icon" width="40px"/>`,
-  iconSize: [40, 40],
+  iconSize: [60, 60],
   iconAnchor: [20, 40],
   popupAnchor: [0, -40],
 });

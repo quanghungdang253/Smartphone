@@ -33,7 +33,7 @@ const {Nameproduct} = breadcrumb;
                 <nav className={styles.wrapperMainHeader}> 
                            <TitleandProducts shows={setShow}  showmenu={setShowMenuMobie}/>
                             <Search  shows={setShow1}/>
-                       <Navigation_header/>
+                             <Navigation_header/>
                  </nav>  
                   {pathname !== '/' ? (
                                 <Breadcrumb  nameProduct={Nameproduct}/>  

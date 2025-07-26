@@ -12,6 +12,7 @@ Dự án **Smartphone** là một trang web bán hàng đơn giản được xâ
 ##  Công nghệ sử dụng
 
 - **ReactJS** – Thư viện UI chính
+- **Axios**
 - **React Redux toolkit, React Hook**
 - **SCSS**
 - **React State** – Quản lý trạng thái (nút, hiển thị chi tiết,…)

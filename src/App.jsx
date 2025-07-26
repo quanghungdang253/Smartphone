@@ -32,17 +32,14 @@ export default function App() {
  
     return (
       <BreadcrumbProvider>  
-      {/* <CameraDetect /> */}
-      
+  
         <Provider store={store}>  
        
         <Style>
           <ParentContext>
             <HelmetProvider>   
-          
               <MainHeader />
               <ContentWrapper>
-           
                 <Routes>
                   <Route path='/' element={<Home />} />
                   <Route path='label/:namephone' element={<Products_list/>} />
@@ -57,20 +54,16 @@ export default function App() {
                 </Routes>
               </ContentWrapper>
             </HelmetProvider>             
-                    
-            <div className='CommunicationSetting'>  
-              <CommunicationSettings/>     
-            </div> 
-            
-            <div className='chatBot'> 
-      
-              <MainChatbox/>
-        
-            </div>
+              <div className='CommunicationSetting'>  
+                               <CommunicationSettings/>     
+              </div> 
+              <div className='chatBot'> 
+                               <MainChatbox/>
+              </div>
           </ParentContext>    
         </Style>
               <FooterWrapper>
-                     <MainFooter />
+                                   <MainFooter />
               </FooterWrapper>
              {/* <CounterExample /> */}
         </Provider>
@@ -91,7 +84,7 @@ export default function App() {
       z-index: 1500;
     }
     @media (max-width:768px) {
-        .CommunicationSetting {
+    .CommunicationSetting {
           display: none;
       }
     }
