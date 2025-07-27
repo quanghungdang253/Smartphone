@@ -54,9 +54,7 @@ import { BreadcrumbContext } from "../../../Context/share-data-bread-crumb/share
 const asideRef = useRef(null); 
 const mainRef = useRef(null);
 
- //================== chỉ số index của giỏ hàng ==============================
 
-//==========================================================
 
 const [mainHeight, setMainHeight] = useState("auto");
 const [allowScroll, setAllowScroll] = useState(false);
@@ -267,13 +265,13 @@ useEffect(() => {
                 <div className={styles.details_top1}>
                   <div className={styles.details_top1__price}>
                     {Data.Item.map((Item,index) => (                     
-                      <Link to={Item.Link}
+                      <h1 
                          onClick={() => handleActive(index)}
                          className={`${styles.memory__price__link} ${styles.link} ${active === index ? styles.active : ""}`}                    
                              > 
                               <h2>  {Item.item}   </h2> 
                               <p> {Item.price}  </p> 
-                            </Link>                                                                                   
+                            </h1>                                                                                   
                     ))}
                   </div>
                 </div>
@@ -475,62 +473,3 @@ useEffect(() => {
   
     
     export default InformationPhones;
-// import React, { useState } from "react";
-// import PhoneAPI from "./PhoneAPI"; // Import component mới
-// import { Circles } from "react-loader-spinner";
-// import styled from "styled-components";
-// import InformationPhone from "../Home/Home__body/InformationPhone";
-
-// function InformationPhones() {
-//   const [data, setData] = useState(null); // State để nhận dữ liệu từ PhoneAPI
-//   const [loading, setLoading] = useState(true);
-
-//   // Hàm để cập nhật dữ liệu và trạng thái loading từ PhoneAPI
-//   // hàm handleDataFetch có tham số là fetchData
-//   const handleDataFetch = (fetchedData) => {  
-//     setData(fetchedData);
-//     setLoading(false);
-//   };
-
-//   return (
-//     <div>
-//       {/* Gọi component API và truyền hàm handleDataFetch */}
-//       <PhoneAPI onDataFetch={handleDataFetch} />
-
-//       {loading ? (
-//         <Progressbar>
-//           <Circles
-//             height="400"
-//             width="80"
-//             color="blue"
-//             ariaLabel="loading"
-//           />
-//         </Progressbar>
-//       ) : (
-//         data && (
-//           <div>
-//             <InformationPhone image={data.image} /> {/* Truyền dữ liệu vào component InformationPhone */}
-//             <ul>
-//               <li>
-//                 <p>Kích thước màn hình:</p>
-//                 <div>{data.Chipset}</div>
-//               </li>
-//             </ul>
-//           </div>
-//         )
-//       )}
-//     </div>
-//   );
-// }
-
-// const Progressbar = styled.div`
-//   text-align: end;
-//   padding: 50px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// `;
-
-// export default InformationPhones;
-
-

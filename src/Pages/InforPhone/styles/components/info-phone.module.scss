@@ -93,7 +93,7 @@ display: none;
   
     
 } 
-    .active::after{     // thiết lập css sau phần tử 
+    .active::after{   
       position: absolute;
        top: 0;
        right: 0;
@@ -318,11 +318,11 @@ display: none;
     position: relative;                  
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 0.8rem;
-    height: 2.8rem;
+    min-height: 3.8rem;
     border-radius: 5px;
-    display: flex;
-     justify-content: center;
+
     text-decoration: none;
     color: #000000;
     text-align: center;
@@ -356,6 +356,15 @@ display: none;
 //==========================================================responsove=========================
 
 @media (max-width: 768px) {
+  .details_top2 {
+    &__product {
+      margin-right: auto;
+      .Link {
+        font-size: 0.8rem;
+        min-height: 5rem;
+      }
+    }
+  }
 .imgProduct {
        display: none;
 }
