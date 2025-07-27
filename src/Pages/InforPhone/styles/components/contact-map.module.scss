@@ -75,10 +75,10 @@
  }
     .HandleImage__image {
         max-width: 54rem;
-        height: 480px;
+       
         border-radius: 10px;
       
-        padding: 1rem 2rem 5rem 2rem;
+        padding: 1rem 2rem 2rem 2rem;
         
         overflow: hidden;  // nếu nhiều phần tử thì phần tử bị tràn và sẽ ẩn đi  
         .HandleImage__node {
@@ -104,14 +104,17 @@
             //  grid-column-gap: 40em;
         }
        .list__image {
-            grid-column-gap: 2rem;
+      
             display: flex;
+
             justify-content: center;
+            grid-column-gap: 2rem;
     
             .List__item {
-              display: inline-block;
-              display: flex;
-              flex-direction: column;
+             max-height: 15rem;
+            overflow: auto;
+              display: block;
+              display: grid;
               grid-row-gap: 1rem;
                 .item {
                     font-weight: 600;
@@ -146,12 +149,12 @@
 }
   
 .HandleImage__image {
-         height:350px;
+        
          position: relative;
 }
 .HandleImage__image img {
-          
-           object-fit: contain;
+           border-radius: 1rem;
+        
            transition: opacity 0.8s ease-in-out;
 }
 
@@ -247,6 +250,23 @@
 }
 
 @media (max-width: 768px) {
+ .main__image {
+    width:65%;
+
+    img {
+     border-radius: 1rem;
+    }
+ }
+  .list__image {
+        display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .List__item {
+     
+            }
+}
+
 
 .boxContact {
     margin-bottom: 0.5rem;
@@ -319,7 +339,7 @@
 }
 .main__image {
     width:50%;
-    height:17rem !important;
+    height:8rem !important;
     border-radius: 20px;
   
 }

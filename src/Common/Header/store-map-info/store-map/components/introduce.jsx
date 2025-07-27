@@ -15,7 +15,7 @@ function Introduce(props) {
                     <img src={imageStore} alt='' className={styled.imgChild}/>
             </div>
             <div className={styled.boxText}>
-            <h1 className={styled.title}> >1 triệu thành viên </h1>
+            <h1 className={styled.title}> 1 triệu thành viên </h1>
                 <div className={styled.box_1}>
                         {staticData.map((Item) => (
                                 <div key={Item.id} className={styled.item}>  
