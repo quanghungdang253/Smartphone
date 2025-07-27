@@ -7,6 +7,11 @@ Dự án **Smartphone** là một trang web bán hàng đơn giản được xâ
 **Demo** : https://quang-hung-store.vercel.app/
 
 
+**Admin**:
+    **Tên đăng nhập: Hung
+
+    **Mật khẩu: 123
+
 ---
 
 ##  Công nghệ sử dụng
