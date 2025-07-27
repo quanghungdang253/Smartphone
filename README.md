@@ -7,7 +7,9 @@ Dự án **Smartphone** là một trang web bán hàng đơn giản được xâ
 **Demo** : https://quang-hung-store.vercel.app/
 
 
-**Admin**:
+**Admin**
+
+
     **Tên đăng nhập: Hung
 
     **Mật khẩu: 123
@@ -21,7 +23,7 @@ Dự án **Smartphone** là một trang web bán hàng đơn giản được xâ
 - **React Redux toolkit, React Hook**
 - **SCSS**
 - **React State** – Quản lý trạng thái (nút, hiển thị chi tiết,…)
-- **Component hóa** – Tách các phần như danh sách sản phẩm,     chi tiết, quảng cáo
+- **Component hóa** – Tách các phần như danh sách sản phẩm,chi tiết, quảng cáo
 - **Nodejs, firebase**
 ---
 
