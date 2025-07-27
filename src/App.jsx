@@ -19,7 +19,7 @@ import { Provider } from 'react-redux';
 import store from './app/store';
 import MainChatbox from './Components/Chat/main-chatbot';
 import MainCart from './Pages/cart-pages/main-cart/main-cart';
-
+import router from './router/router';
 import MainFooter from './Common/footer/main-footer';
 import MainLogin from './Pages/login/main-login';
 import { BreadcrumbProvider } from './Context/share-data-bread-crumb/share-data-bread-crumb';
@@ -41,16 +41,9 @@ export default function App() {
               <MainHeader />
               <ContentWrapper>
                 <Routes>
-                  <Route path='/' element={<Home />} />
-                  <Route path='label/:namephone' element={<Products_list/>} />
-                  <Route path='/Detail/:link/:id' element={<InforPhone />} />  
-                  <Route path='/StoreInfo' element={<MainStoreInfo/>} />
-                  <Route path='/GoogleMap' element={<MainStoreMapInfo/>} />
-                  <Route path='/Cart' element={<MainCart />} />
-                  <Route path='/Login' element={<MainLogin/>} />
-                  <Route path='/Admin' element={<MainAdmin/> } />
-                  <Route path='/LookProduct' element={<LookUpOrders/>} />
-                  <Route path='/ShowProduct' element={<ShowProduct />} />
+                    {router.map((item) => (
+                        <Route key={item.id} path={item.path} element={<item.element />} />
+                    ))}
                 </Routes>
               </ContentWrapper>
             </HelmetProvider>             
