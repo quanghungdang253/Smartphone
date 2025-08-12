@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './purchase-history.module.scss';
 import BodyAdmin from '../body-admin';
-import Loading from '../../../../Common/components/Loading';
+import Loading from '../../../../ui/Loading';
 import ListHistory from './list-history';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

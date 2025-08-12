@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Loading from '../../Common/components/Loading';
+import Loading from '../../ui/Loading';
 import { Helmet } from 'react-helmet-async';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import { faStar } from "@fortawesome/free-solid-svg-icons";

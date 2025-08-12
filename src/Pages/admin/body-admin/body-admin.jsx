@@ -6,7 +6,7 @@ import { faList,faArrowRight , faPlus } from '@fortawesome/free-solid-svg-icons'
 import { useSelector } from 'react-redux';
 import ShowDetailProduct from './components/purchase-history';
 import { Link } from 'react-router-dom';
-import Loading from '../../../Common/components/Loading';
+import Loading from '../../../ui/Loading';
 import imgSale from './img/sale.jpg';
 function BodyAdmin({data}) {
     const getValueScroll = useRef();

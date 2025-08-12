@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import ShowProduct from './components/show-product/show-product';
 import datas from './data.json';
 import imgdonhang from './img/donhang1.jpg';
-import Loading from '../../Common/components/Loading';
+import Loading from '../../ui/Loading';
 import { useNavigate } from 'react-router-dom';
 import useStatusUser from '../../hooks/use-status-user';
 function LookUpOrders(props) {

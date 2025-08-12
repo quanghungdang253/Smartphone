@@ -3,11 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShowInfo,Productads, ListimageProduct} from './LazyloadingComponent';
 import { Suspense } from 'react';
-import Loading from '../../../Common/components/Loading';
+import Loading from '../../../ui/Loading';
 //=================================imgage==================
 import imgSale from '../assets/image-ui-components/img-sale.jpg';
 import imgIPhone from '../assets/image-ui-components/imgIphone.jpg';
-import Criteria from '../../../Common/components/criteria';
+import Criteria from '../../../ui/criteria';
 //=========================================================
 import imgbackground from '../assets/image-ui-components/imgbackground.jpg';
 import LabelProduct from '../../../Components/label-product/label-product';
@@ -55,11 +55,11 @@ const IphoneComponent = ({data, namephone, ...props}) => (
         fallback={(<Loading/>)} 
         className='componentIphone'
     >  
-                 <div>
-                        <ListimageProduct image={data.advertising_images} customs={true}/>
-                        <Criteria />
-                        <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
-                  </div>
+        <div>
+            <ListimageProduct image={data.advertising_images} customs={true}/>
+            <Criteria />
+            <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
+        </div>
      </Suspense>
      </div>
     </IphoneComponents>

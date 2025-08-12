@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import Loading from '../../../Common/components/Loading';
+import Loading from '../../../ui/Loading';
 import { Link } from 'react-router-dom';
 import styles from "../styles/components/related-products.module.scss";
 import iconShoppingCart from '../image/add-to-cart.jpg';

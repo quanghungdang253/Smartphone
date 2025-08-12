@@ -10,7 +10,7 @@ import styled from 'styled-components';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import { Helmet } from 'react-helmet';
 import styles from './Product_list.module.scss';
-import Loading from '../../Common/components/Loading';
+import Loading from '../../ui/Loading';
 import Breadcrumb from '../../Components/location/location';
 function Products_list(props) { 
   const logic = props.logic; 

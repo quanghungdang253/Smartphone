@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from './header-admin.module.scss';
 import imgAdmin from './image/admin.jpg';
-import Loading from '../../../Common/components/Loading';
+import Loading from '../../../ui/Loading';
 function HeaderAdmin({dataStore}) {
 
 

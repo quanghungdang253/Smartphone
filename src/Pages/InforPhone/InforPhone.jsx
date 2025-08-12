@@ -6,13 +6,13 @@ import InformationPhones from './Components/informationPhone';
 import { Circles} from 'react-loader-spinner';
 import { useParams } from 'react-router-dom';
 import useHandledetailApi from '../../hooks/use-handle-detail-phone';
-import Loading from '../../Common/components/Loading';
+import Loading from '../../ui/Loading';
 import { Helmet } from 'react-helmet-async';
 import Category_Name from './data/Category-Name';
 import Breadcrumb from '../../Components/location/location';
 
 function InforPhone(props) {
-    const params = useParams();  // lấy id và link từ app.jsx
+    const params = useParams();  
     const link = params.link;
     
     const id = params.id;

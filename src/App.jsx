@@ -6,7 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import MainHeader from './Common/Header/MainHeader';
 import React, { Suspense, lazy } from 'react';
-import Loading from './Common/components/Loading';
+import Loading from './ui/Loading';
 import { HelmetProvider } from 'react-helmet-async';
 import CommunicationSettings from './Components/CommunicationSettings/CommunicationSettings';
 import { ParentContext } from './Context/Settings/Theme/ThemeContext';
