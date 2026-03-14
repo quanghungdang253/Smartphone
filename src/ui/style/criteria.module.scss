@@ -1,83 +1,41 @@
 
 
-
-//========================biến chung =====================
-
-
-
-
-//==================================================
-
-
-.container {
-  background-color: white;
-  border-radius: 10px;
-
-  padding: 1rem 1rem 1rem 1rem;
-        &__rowOne {
-            overflow: auto;
-          .titleRowOne {
-            margin-bottom: 1rem;
-            font-size: 18px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-weight: 800;
-          }
-          .mainCriteria {
-             display: flex;
-             flex-wrap: wrap;
-             grid-column-gap: 0.5rem;
-             grid-row-gap: 1rem;
-            .addPadding {
-                  padding: 10px;
-            }
-          }
-          .Boxitem {
-            cursor: pointer;
-            min-width: 6em;
-            display: flex;
-            
-            align-items: center;
-            justify-content: center;
-            height: 34px;
-
-            font-size: 12px;
-            background-color: #2cbdf7df;
-            
-            border-radius: 999px;
-                .item {
-                    font-weight: 500;
-                    color: black;
-                    text-decoration: none;
-                }
-          }
-          .addIcon {
-                display: flex;
-                grid-column-gap: 5px;
-          }
-          .addWidth {
-                min-width: 12em;
-                padding: 5px 5px;
-                
-          }
-        }
+.addColor {
+    background-color: rgb(2, 134, 250) !important;
+    color: rgb(255, 255, 255);
 }
 
-@media (max-width: 768px) {
-        .container {
-        &__rowOne {
-            overflow: auto;
-          .titleRowOne {
-            margin-bottom: 1rem;
-            font-size: 18px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-weight: 800;
-          }
-          .mainCriteria {
-             display: flex;
-          }
-          .addWidth {
-             min-width: 12em;
-          }
-        }
-        }
+.container {
+
+    &__rowOne {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+
+     
+      
+      .container__rowOne_item {
+           border-radius: 5px;
+           padding: 1rem;
+           background-color: rgb(228, 228, 228);
+
+           .item {
+             font-weight: 600;
+           }     
+      }
+    }
+    .container__rowOne_item:hover {
+      
+    }
+
+    .container__title {
+          color: black;
+          font-size: 20px;
+          font-weight: 900;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          
+       }
+     
 }

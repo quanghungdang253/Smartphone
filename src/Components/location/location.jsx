@@ -2,6 +2,7 @@ import { useLocation, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './location.module.scss';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { div } from '@tensorflow/tfjs';
 const Breadcrumb = ({ nameProduct }) => {
   const location = useLocation();
 
@@ -62,15 +63,17 @@ const namepath = location.pathname
   }
 
   return (
-    <nav style={{ padding: '10px 0' }} className={styles.mainNavigation}>
-      <Link to="/" className={styles.Link}>Home</Link>
-      {breadcrumbs.map((crumb, i) => (
-        <span key={i}>
-         <FontAwesomeIcon icon={faChevronRight} className={styles.iconRight} />
-          <Link to={crumb.link}  className={styles.Link}>{crumb.label}</Link>
-        </span>
-      ))}
-    </nav>
+    <div className='max-w-[1440px] mx-auto'>      
+      <nav style={{ padding: '10px 0' }} className={styles.mainNavigation}>
+          <Link to="/" className={styles.Link}>Home</Link>
+           {breadcrumbs.map((crumb, i) => (
+          <span key={i}>
+            <FontAwesomeIcon icon={faChevronRight} className={styles.iconRight} />
+             <Link to={crumb.link}  className={styles.Link}>{crumb.label}</Link>
+             </span>
+            ))}
+        </nav>
+     </div>
   );
 };
 

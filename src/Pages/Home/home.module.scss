@@ -1,0 +1,20 @@
+
+
+.mainHome {
+
+
+    .mainHome__rowOne {
+      
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .mainHome {
+        .mainHome__rowOne {
+            display: none;
+        }
+    }
+}

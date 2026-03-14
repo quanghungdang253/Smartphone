@@ -6,6 +6,7 @@ import { useRef } from 'react';
 import image_sale from './image/image__sale/imageSale_1.png';
 import image_1 from './image/image__sale/Title.jpg';
 import hot from './image/hot.gif';
+import img_form_section from "./image/slide.gif";
 //==================================================
 import object_image from './data/data-label-product';
 import { RenderProduct } from '../../../../Common/componentEnpoint';
@@ -14,6 +15,7 @@ import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import ListimageProduct from '../../../Products_list/components/ListimageProduct';
 import useEnpoint from '../../../../hooks/use-handle-enpoint';
+
 // ==============================custom hook=================================
 
 
@@ -65,7 +67,7 @@ function RenderProduct(props) {
 
     return (
         <div className={styles.Container}>
-          
+            <img src={img_form_section} alt="" />
              {/* <img src={image_1} alt='' className={`${styles.image} ${styles.image_1}`}/> */}
             <div className={styles.Box}>
                 <div className={styles.Box_title}> 

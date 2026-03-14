@@ -57,8 +57,7 @@ function Menuheader({addPadding}) {
                                 { preindex !== null &&  <Smartphone value={product} /> } 
                                                  </div>    
                                    
-                        </React.Fragment>
-                       
+                        </React.Fragment>   
         </Wrapper>
     );
 }

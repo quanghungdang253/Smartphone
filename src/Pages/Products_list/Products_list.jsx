@@ -9,23 +9,26 @@ import RenderbyCategory from './ui-components/RenderbyCategory';
 import styled from 'styled-components';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import { Helmet } from 'react-helmet';
-import styles from './Product_list.module.scss';
+
 import Loading from '../../ui/Loading';
 import Breadcrumb from '../../Components/location/location';
 function Products_list(props) { 
   const logic = props.logic; 
   const dataEnpoint = props.dataEnpoint;
   const [state , setState] = useState(logic);
+
   const params = useParams();
   let namephone = params.namephone;
+
  const { theme } = useValue();
   const [data, loading] = useHandleApi(namephone);
+
   function handle(){
            setState(true);
   }
   useEffect(() => {   // xử lý logic hiển thị 
     if(!state){
-              handle();
+              handle();       
 }
   },[state])
  if(!data){
@@ -33,27 +36,25 @@ function Products_list(props) {
  }
 
   return (
-    <Product className={namephone === "undefined" ? "ProductHome" : "ProductSale"}> 
+    <div> 
         {!data ? (
                   <Loading/>
            ) : (
-          <div className={styles.Render__product}>
-                  <RenderbyCategory logic={state} dataEnpoint={dataEnpoint} namephone={namephone} data={data} {...props}/>
+          <div>
+                  <RenderbyCategory 
+                    logic={state} 
+                    dataEnpoint={dataEnpoint} 
+                    namephone={namephone} 
+                    data={data} {...props}
+
+                  />
           </div>
       )}
-      {console.log(namephone)}
-    </Product>
+    </div>
   );
 }
-const Product = styled.div `
-     .ProductHome {
-        margin-top: 0px
-     }
-     .ProductSale {
-      margin-top: 25rem;
-     }
 
-`
+
 export default Products_list;
 
 

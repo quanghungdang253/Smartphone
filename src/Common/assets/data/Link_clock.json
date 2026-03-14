@@ -1,55 +1,50 @@
 {
-    "name": "Hãng Đồng Hồ",
+    "name": "Loại đồng hồ",
+     "title_hot_product": "Đồng Hồ HOT",
+      "nameOne": "Sản phẩm nổi bật",
+    "nameTwo": "Đồng hồ HOT",
     "phonecompany": [
-        {
-            "id": 1,
-            "name": "Đồng hồ Orient",
-            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/DH-IPC-HFW4231TP-ASE.jpg"
-        },
-        {
-            "id":2,
-            "name": "Đồng hồ Casio",
-            "image": "https://cdn.tgdd.vn/Products/Images/7264/199452/casio-lq-142-1bdf-den-up-1-750x500.jpg"
-           
-        },
-        {
-            "id":3,
-            "name": "Đồng hồ Citizen",
-            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
-        },
-        {
-            "id":4,
-            "name": "Đồng hồ G-Shock",
-            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
-        },
-        {
-            "id":5,
-            "name": "Đồng hồ Tissot",
-             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
-        },
-        {
-            "id":6,
-            "name": "Đồng hồ Frederique Constant",
-             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
-        },
-        {
-            "id":7,
-            "name": "Đồng hồ Titan",
-             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
-        },
-        {
-            "id":8,
-            "name": "Đồng hồ Tommy Hilfiger",
-             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
-        }
-       
-    ],
+  {
+    "id": 1,
+    "name": "Đồng hồ Orient",
+    "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mjcgo6n0jif89c_tn"
+  },
+  {
+    "id": 2,
+    "name": "Đồng hồ Casio",
+    "image": "https://cdn.tgdd.vn/Products/Images/7077/316991/dong-ho-dinh-vi-tre-em-imoo-z1-41-mm-hong-nhat-tb-600x600.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Đồng hồ Citizen",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyNkTGoG81SjnlcFQ_I3uiXcdB1RvWP-Z-tw&s"
+  },
+  {
+    "id": 4,
+    "name": "Đồng hồ G-Shock",
+    "image": "https://img.gigadigital.vn/image/1731468752270-dong-ho-thong-minh-xiaomi-smart-band-9-active.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Đồng hồ Tissot",
+    "image": "https://i0.wp.com/static.danawatch.vn//2025/01/dong-ho-nam-seiko-ssk039j1-chinh-hang-nhat-ban-automatic-hardlex-crystal-ben-bi-2.png?fit=700%2C700&ssl=1"
+  },
+  {
+    "id": 6,
+    "name": "Đồng hồ Frederique Constant",
+    "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mjcgo6n0jif89c_tn"
+  },
+  {
+    "id": 7,
+    "name": "Đồng hồ Titan",
+    "image": "https://cdn.tgdd.vn/Products/Images/7077/316991/dong-ho-dinh-vi-tre-em-imoo-z1-41-mm-hong-nhat-tb-600x600.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Đồng hồ Tommy Hilfiger",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyNkTGoG81SjnlcFQ_I3uiXcdB1RvWP-Z-tw&s"
+  }
+],
     "price":[
         {
             "id": 1,
@@ -76,43 +71,84 @@
             
         }
     ],
-    "hot__phone": [
-        {
-            "id": 1,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 2,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 3,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 4,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 5,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 6,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 7,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        }
-    ]
+
+    
+
+    "hot__sale": [
+    {
+        "id": 1,
+        "name": "Đồng hồ thể thao Bomba",
+        "image": "https://www.dangquangwatch.vn/upload/product/dong-ho-the-thao-bomba-TB8208A-243737646.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Đồng hồ thời trang nam",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134258-81ztc-mlg1is5cqqdd1f"
+    },
+    {
+        "id": 3,
+        "name": "Đồng hồ dây thép cao cấp",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mfrronf3fl6y41.webp"
+    },
+    {
+        "id": 4,
+        "name": "Đồng hồ thể thao chống nước",
+        "image": "https://www.dangquangwatch.vn/upload/product/dong-ho-the-thao-bomba-TB8208A-243737646.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Đồng hồ nam dây da",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134258-81ztc-mlg1is5cqqdd1f"
+    },
+    {
+        "id": 6,
+        "name": "Đồng hồ thời trang nữ",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mfrronf3fl6y41.webp"
+    },
+    {
+        "id": 7,
+        "name": "Đồng hồ thể thao cao cấp",
+        "image": "https://www.dangquangwatch.vn/upload/product/dong-ho-the-thao-bomba-TB8208A-243737646.jpg"
+    }
+],
+
+"hot__product": [
+    {
+        "id": 1,
+        "name": "Đồng hồ Bomba Sport",
+        "image": "https://www.dangquangwatch.vn/upload/product/dong-ho-the-thao-bomba-TB8208A-243737646.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Đồng hồ nam thời trang",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134258-81ztc-mlg1is5cqqdd1f"
+    },
+    {
+        "id": 3,
+        "name": "Đồng hồ dây thép",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mfrronf3fl6y41.webp"
+    },
+    {
+        "id": 4,
+        "name": "Đồng hồ chống nước",
+        "image": "https://www.dangquangwatch.vn/upload/product/dong-ho-the-thao-bomba-TB8208A-243737646.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Đồng hồ dây da nam",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134258-81ztc-mlg1is5cqqdd1f"
+    },
+    {
+        "id": 6,
+        "name": "Đồng hồ nữ thời trang",
+        "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mfrronf3fl6y41.webp"
+    },
+    {
+        "id": 7,
+        "name": "Đồng hồ thể thao hiện đại",
+        "image": "https://www.dangquangwatch.vn/upload/product/dong-ho-the-thao-bomba-TB8208A-243737646.jpg"
+    }
+]
     
 
     

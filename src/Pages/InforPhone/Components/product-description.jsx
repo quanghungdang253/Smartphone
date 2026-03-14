@@ -1,5 +1,5 @@
 import React from "react";
-import styles from '../styles/components/product-description.module.scss';
+import styles from '../styles/product-description.module.scss';
 import { useState } from "react";
 import ProductParameters from "./product-parameters";
 import iconRight from '../image/iconRight.jpg';

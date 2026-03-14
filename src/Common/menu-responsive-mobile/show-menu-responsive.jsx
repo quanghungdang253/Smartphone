@@ -14,7 +14,9 @@ function ShowMenu({product , Showmenu}) {
                              <h1 variant='h6' className={styles.label}> {product.name }  </h1>
                       <div 
                         className={
+
                           `${styles.tabchoose__product}
+                          
                            ${styles.common__format_product}
                            `
                         }
@@ -43,7 +45,7 @@ function ShowMenu({product , Showmenu}) {
                      <div className={styles.tabchoose}> 
              
                   {product.phonecompany && product.phonecompany.length > 0 ?  (
-                    product.hot__phone.map((list) => (
+                    product.hot__product.map((list) => (
                          <Link  
                                 className={styles.Link}
                                 to={`/label/${list.name}`} 

@@ -9,6 +9,7 @@ import { faBars , faUser, faLocationDot} from '@fortawesome/free-solid-svg-icons
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
  import Overlay from '../../../Components/Overlayer'; // Import the Overlay component
  import Menuheader from '../../Menuheader';
+
 //  import '../styles/TitleandProducts/TitleandProducts-responsive.scss';
  import styles from '../assets/styles/TitleandProducts.module.scss';
  import titleImage from '../assets/icon/titles.jpg';
@@ -42,20 +43,23 @@ const TitleandProducts = ({shows ,showmenu}) => {
             <Header className={styles.Header}>
              <div className={styles.Header__main_1}> 
                 <div className={styles.row_one}>  
+
                 <Link to='/'> 
+                {/* ảnh hiển thị điện thoại  */}
                   <img
                           src={titleImage}
                           alt=''
                           className={styles.image_mobie }  
                   />
                    </Link>  
+
                 </div>
                 <div className={styles.row_two}> 
                     <Link className={styles.Link}> 
                      <p className={styles.text}> 
                             Quang Hùng Store
                      </p>
-                    </Link>
+                    </Link>   
                 </div> 
                   <div className={styles.row_three}>
                      <Link className={styles.Link} to="/Login">
@@ -64,6 +68,10 @@ const TitleandProducts = ({shows ,showmenu}) => {
                       </Link>
                 </div>            
              </div>
+
+
+             
+             {/* hiển thị máy tính  */}
               <div className={styles.Header__main_2} >
                 <Link to={'/'} className='Link'>
                     <div className={styles.Header__Title}>
@@ -76,13 +84,17 @@ const TitleandProducts = ({shows ,showmenu}) => {
                     </div>
                 </Link>
                 <Dropdowncont className={styles.Header__Dropdowncont}>
-                    <div className={styles. header__menu}>
+                    <div className={styles.header__menu}>
                     <img
                             src={titleImage}
                             alt=''
                             className={styles.header__image_responsive}
                         />
-                        <button variant="outlined" className={styles.header__iconmenu} onClick={handleMenuClick}>
+                        <button 
+                            variant="outlined" 
+                            className={styles.header__iconmenu} 
+                            onClick={handleMenuClick}
+                        >
                                 <FontAwesomeIcon icon={faBars} className={styles.iconmenu} />
 
                                 <span className={styles.menu}>  </span>

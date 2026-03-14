@@ -1,111 +1,143 @@
 {
     "name": "Hãng Laptop",
-    "phonecompany": [
-        {
-            "id": 1,
-            "name": "Laptop Al",
-            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
-        },
-        {
-            "id":2,
-            "name": "Laptop Gaming",
-              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
-           
-        },
-        {
-            "id":3,
-            "name": "Laptop học tập văn phòng",
-              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
-           
-        },
-        {
-            "id":4,
-            "name": "Laptop đồ họa ",
-              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
-           
-        },
-        {
-            "id":5,
-            "name": "Laptop Kĩ thuật",
-              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
-           
-        },
-        {
-            "id":6,
-            "name": "Laptop mỏng nhẹ",
-              "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
-           
-        },
-        {
-            "id":7,
-            "name": "Laptop cao cấp",
-            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_5__1.png"
-           
-        }
-    ],
-    "price":[
-        {
-            "id": 1,
-            "price_level": "Dưới 2 triệu"
+       "title_hot_product": "Đồ gia dụng ",
+          "nameOne": "Laptop Gaming",
+    "nameTwo": "laptop Văn Phòng",
+    "phonecompany": 
+    [
+  {
+    "id": 1,
+    "name": "Laptop Al",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_8_29.png"
+  },
+  {
+    "id": 2,
+    "name": "Laptop Gaming",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUPHmf_SJ8tZFKtaf7b-qqXt2k6VMIUgHVg&s"
+  },
+  {
+    "id": 3,
+    "name": "Laptop học tập văn phòng",
+    "image": "https://down-vn.img.susercontent.com/file/vn-11134258-81ztc-mlg1is5cqqdd1f"
+  },
+  {
+    "id": 4,
+    "name": "Laptop đồ họa",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_8_29.png"
+  },
+  {
+    "id": 5,
+    "name": "Laptop Kĩ thuật",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUPHmf_SJ8tZFKtaf7b-qqXt2k6VMIUgHVg&s"
+  },
+  {
+    "id": 6,
+    "name": "Laptop mỏng nhẹ",
+    "image": "https://down-vn.img.susercontent.com/file/vn-11134258-81ztc-mlg1is5cqqdd1f"
+  },
+  {
+    "id": 7,
+    "name": "Laptop cao cấp",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_8_29.png"
+  }
+], 
+      "price": [
+    {
+      "id": 1,
+      "price_level": "Dưới 10 triệu"
+    },
+    {
+      "id": 2,
+      "price_level": "Từ 10 - 20 triệu"
+    },
+    {
+      "id": 3,
+      "price_level": "Từ 20 - 30 triệu"
+    },
+    {
+      "id": 4,
+      "price_level": "Từ 30 - 40 triệu"
+    },
+    {
+      "id": 5,
+      "price_level": "Trên 40 triệu"
+    }
+  ],
+  "hot__sale": [
+    {
+      "id": 1,
+      "name": "ASUS ROG Strix Gaming",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_8_29.png"
+    },
+    {
+      "id": 2,
+      "name": "Dell XPS 13",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUPHmf_SJ8tZFKtaf7b-qqXt2k6VMIUgHVg&s"
+    },
+    {
+      "id": 3,
+      "name": "MacBook Air M2",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134258-81ztc-mlg1is5cqqdd1f"
+    },
+    {
+      "id": 4,
+      "name": "HP Pavilion 15",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_8_29.png"
+    },
+    {
+      "id": 5,
+      "name": "Lenovo Legion 5",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUPHmf_SJ8tZFKtaf7b-qqXt2k6VMIUgHVg&s"
+    },
+    {
+      "id": 6,
+      "name": "Acer Nitro 5",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134258-81ztc-mlg1is5cqqdd1f"
+    },
+    {
+      "id": 7,
+      "name": "MSI Katana Gaming",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_8_29.png"
+    }
+  ],
+  "hot__product": [
+    {
+      "id": 1,
+      "name": "MacBook Pro M3",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134258-81ztc-mlg1is5cqqdd1f"
+    },
+    {
+      "id": 2,
+      "name": "Dell Inspiron 15",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUPHmf_SJ8tZFKtaf7b-qqXt2k6VMIUgHVg&s"
+    },
+    {
+      "id": 3,
+      "name": "HP Victus Gaming",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_8_29.png"
+    },
+    {
+      "id": 4,
+      "name": "Lenovo IdeaPad 5",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134258-81ztc-mlg1is5cqqdd1f"
+    },
+    {
+      "id": 5,
+      "name": "ASUS Vivobook 14",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCUPHmf_SJ8tZFKtaf7b-qqXt2k6VMIUgHVg&s"
+    },
+    {
+      "id": 6,
+      "name": "Acer Aspire 7",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_8_29.png"
+    },
+    {
+      "id": 7,
+      "name": "MSI Modern 14",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134258-81ztc-mlg1is5cqqdd1f"
+    }
+  ]
 
-        },
-        {
-            "id": 2,
-            "price_level": "Từ 5 đến 10 triệu"
-            
-        },
-        {
-            "id": 3,
-            "price_level": "Từ 10 - 20 triệu"
-            
-        },
-        {
-            "id": 4,
-            "price_level": "Dưới 30 triệu "
-            
-        }, {
-            "id": 5,
-            "price_level": "dưới 50 triệu "
-            
-        }
-    ],
-    "hot__phone": [
-        {
-            "id": 1,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 2,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 3,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 4,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 5,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 6,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 7,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        }
-    ]
 
     
 }

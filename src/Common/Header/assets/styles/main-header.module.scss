@@ -2,14 +2,50 @@
 .header {
        max-width: 100%;
        position: relative;
+      background-color: #d70018;
 }
+.titleDesktop {
+    display: block;
+}
+
+.MenuDesktop {
+
+    
+}
+
+
 .menuHeader {
-    margin-left:5.5rem;
-    position: fixed;
+    position: absolute;
     z-index:1100;
-    top: 7em;
-    padding: 2rem 2rem;
-   
+}
+
+.MenuMobie {
+    max-width: 1440px;
+    display: none;
+    &__rowOne {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+.headerInput {
+    display: block;
+
+
+    &__menuMobie {
+        display: none;
+    }
+}
+.mainMenu {
+    max-width: 1440px;
+    margin: 0 auto;
+  margin-top: 1rem;
 }
 .containerMobie {
         display: none;
@@ -44,11 +80,11 @@
 
 }
 .wrapperMainHeader {
-  background: linear-gradient(90deg, #0631c2 0%, #071033 50%, #0008ff 100%);
-    padding-left: 7%;
-    padding-right: 7%;
+     background: linear-gradient(90deg, #0631c2 0%, #071033 50%, #0008ff 100%);
+     padding-left: 7%;
+     padding-right: 7%;
     
-     min-height: 75px;
+      min-height: 75px;
       position: relative;
       z-index:1000;
       display: grid;
@@ -65,8 +101,8 @@
 @media  (max-width: 1400px) {
 .wrapperMainHeader {
 
-    background-color: #2a83e9;
-     min-height: 75px;
+     background-color: #2a83e9;
+      min-height: 75px;
       position: relative;
       z-index:1000;
       display: flex;
@@ -102,11 +138,51 @@
        
 }
 @media (max-width: 768px) {
+    .header {
+         height: 10rem;
+    }
+.titleDesktop {
+    display: none;
+}
+.titleMobie {
+    display: block;
+}
+
+
+.MenuDesktop {
+    display: none;
+}
+
+
+
+  .MenuMobie { 
+
+          display: block;
+          margin-top: 1rem;
+     
+         .menuMobie__rowOne {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         .menuMobie__rowTwo {
+            margin-right: 1rem;
+            margin-left: 1rem;
+            padding: 2px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            .btnCart {
+            
+            }
+         }
+  }
+
     .wrapperMainHeader {
           padding-left: 0%;
-    padding-right: 0%
+          padding-right: 0%
     }
-        .mainHeaders {
+     .mainHeaders {
                
-        }
+    }
 }

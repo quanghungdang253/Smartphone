@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/components/list-child-components.module.scss';
+import styles from '../styles/list-child-components.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faStar} from '@fortawesome/free-solid-svg-icons'
 function ListChildComponents(props) {

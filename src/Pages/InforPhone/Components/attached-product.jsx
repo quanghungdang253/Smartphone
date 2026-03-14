@@ -1,5 +1,5 @@
 import React from 'react';
-import style__sale from '../styles/components/attached-product.module.scss';
+import style__sale from '../styles/attached-product.module.scss';
 import { Link } from 'react-router-dom';
 function AttachedProduct({Static_data}) {
     return (

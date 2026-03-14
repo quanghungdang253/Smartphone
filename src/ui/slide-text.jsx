@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import styles from "./style/slide-text.module.scss"
 
 const MarqueeContainer = styled.div`
   width: 100%;
@@ -71,6 +72,7 @@ const SlideText = ({
       <MarqueeContent duration={duration} paused={paused}>
         {duplicatedItems.map((item, index) => (
           <MarqueeItem
+         
             key={`${item}-${index}`}
                  gap={gap}
                  fontSize={fontSize}

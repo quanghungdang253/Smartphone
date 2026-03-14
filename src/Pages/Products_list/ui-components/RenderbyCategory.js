@@ -17,19 +17,18 @@ import { faL } from '@fortawesome/free-solid-svg-icons';
         "vivo":VivoComponent,
         "Ipad": IpadComponent,
         "IPhone": IphoneComponent,
-        
-        
-
     }
     function RenderbyCategory( { namephone,logic, data, ...props }) {
+        
         const [storeName , setStoreName] = useState(null);
         useEffect(() => {
                     if(smartPhone.includes(namephone)) {
                                 setStoreName(ComponentMap);
                     }
         },[namephone])
+
         const SelectedComponent = (storeName ?  storeName[namephone] :  ComponentMap[namephone]) || (logic ? hotSaleComponent : DefaultComponent);
-      useEffect(() => {
+        useEffect(() => {
         window.scrollTo({
             top: 0,
             behavior:'smooth'
@@ -38,7 +37,11 @@ import { faL } from '@fortawesome/free-solid-svg-icons';
      
         return (
                 <div> 
-                         <SelectedComponent data={data} namephone={namephone} {...props} />;
+                         <SelectedComponent 
+                            data={data} 
+                            namephone={namephone} 
+                            {...props} 
+                        />;
                 
                 </div>
         )

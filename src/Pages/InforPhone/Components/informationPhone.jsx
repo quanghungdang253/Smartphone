@@ -7,8 +7,8 @@ import ListimageProduct from "../../Products_list/components/ListimageProduct";
 import ListChildComponents from "./list-child-components";
 import { totalMoney } from "../../../features/cart/cartSlice";
 //===================================style===============================================================
-import styles from '../styles/components/info-phone.module.scss';
-import style__sale from '../styles/components/Sale.module.scss';
+import styles from '../styles/info-phone.module.scss';
+import style__sale from '../styles/Sale.module.scss';
 //========================data====================================
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Static_data from '../data/data-icon/Static_data.json';

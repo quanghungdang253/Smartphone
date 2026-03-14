@@ -34,53 +34,58 @@ useEffect(() => {
     };
 }, []);
 
-    return (
-     <Navigation className={styles.navigation}>
-    <div className={styles.navigation__call}> 
-        <Link className={styles.Link} to='/StoreInfo'> 
-            <FontAwesomeIcon icon={faStore} size="2x" className={styles.icon} />
-            <h1 className={styles.linkIntroduce}>Giới thiệu cửa hàng <br /> Visual 360°</h1>
-        </Link>
-    </div>
 
-    <div className={styles.navigation__googleMap}>
+//=====================================style=================================
+const styleOne = " p-2 flex items-center gap-2 justify-center font-bold hover:bg-red-600"
+const textLink = "font-bold";
+
+    return (
+     <div 
+        className={`lg:text-[1rem] text-white flex gap-x-2 ${styles.navigation}`}
+    >
+  
+        <Link className={`${styleOne} `} to='/StoreInfo'> 
+            <FontAwesomeIcon icon={faStore} size="2x" className="text-[1.2rem]" />
+            <h1 className={styles.linkIntroduce}>Giới thiệu cửa hàng </h1>
+        </Link>
+    
+
+    
         <Link
-            className={`${styles.Link} ${styles.Link__map}`}
+            className={`${styleOne} ${styles.Link} `}
             to='/GoogleMap'
             target='_blank'
             rel='noopener noreferrer'
         >
-            <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.icon} />
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="text-[1.2rem]"  />
             <h1>Cửa hàng gần bạn</h1>
         </Link>
-    </div>
 
-    <div className={styles.navigation__shopping_cart}>
-        <Link className={styles.Link} to={`${getDataLocal ? "ShowProduct" : "LookProduct"}`}>
-            <FontAwesomeIcon icon={faTruck} className={styles.icon} />
-            <h1>Tra cứu đơn hàng</h1>
+        <Link className={`${styleOne} `}>
+            <FontAwesomeIcon icon={faTruck} className="text-[1.2rem]"  />
+            <h1 className={`${textLink} font-normal` }>Tra cứu đơn hàng</h1>
         </Link>
-    </div>
+    
 
-    <div className={styles.navigation__shoppingCart}>
-        <Link className={styles.LinkShoppingCart} to='/Cart'>
-            <div className={styles.iconCart}>
-                <div className={selectId === 0 ? styles.noColor : styles.index}>
+ 
+        <Link className={`${styleOne}`} to='/Cart'>
+            {/* <div className={styles.iconCart}>
+                   className={selectId === 0 ? styles.noColor : styles.index}
+            
                     {selectId === 0 ? null : selectId}
-                </div>
-                <FontAwesomeIcon icon={faCartShopping} className={styles.icon} />
+                </div> */}
+                <FontAwesomeIcon icon={faCartShopping} className="text-[1.2rem]" />
                 <h1 className={styles.textShoppingCart}>Giỏ hàng</h1>
-            </div>
         </Link>
-    </div>
+   
 
-    <div className={styles.navigation__User}>
-        <Link className={styles.Link} to="/Login">
-            <FontAwesomeIcon className={`${styles.icon} ${styles.icon__user}`} icon={faUser} />
+
+        <Link  to="/Login" className={`${styleOne} `}>
+            <FontAwesomeIcon className="text-[1.2rem]"  icon={faUser} />
             <h1>Đăng Nhập</h1>
         </Link>
-    </div>
-</Navigation>
+    
+</div>
 
     );
 }

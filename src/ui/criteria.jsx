@@ -1,42 +1,102 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './style/criteria.module.scss';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilter, faCarSide, faMoneyBill, faCaretDown  } from '@fortawesome/free-solid-svg-icons';
-function Criteria(props) {
-        let nameBtn = ["Bộ nhớ trong", "Dung lượng RAM","Kích thước màn hình","Nhu cầu sử dụng ","Kiểu màn hình","Tính năng cammera","tần số quét","Tính năng đặc biệt"]
+import { faFilter, faCaretDown } from '@fortawesome/free-solid-svg-icons';
+
+function Criteria({ data, sendResult }) {
+
+    // lưu dữ liệu gốc
+    const [originalData, setOriginalData] = useState(data.data);
+
+    const [index, setIndex] = useState(0);
+
+  
+
+    function sortAscending() {
+
+        const sorted = data?.data?.sort((a, b) => {
+
+            const priceA = Number(a.price.replace(/\./g, "").replace("đ", ""));
+            const priceB = Number(b.price.replace(/\./g, "").replace("đ", ""));
+
+            return priceA - priceB;
+        });
+
+        sendResult(sorted);
+    }
+
+    function sortDescending() {
+         const sortsDes = data?.data?.sort((a,b) => {
+              const priceA = Number(a.price.replace(/\./g, "").replace("đ", ""));
+            const priceB = Number(b.price.replace(/\./g, "").replace("đ", ""));
+
+            return priceB - priceB;
+         })
+
+         sendResult(sortsDes);
+    }
+
+    function defaultData() {
+                sendResult(originalData);
+    }
+
+    let nameBtn = [
+        { id: 0, icon: faFilter, text: "Bộ lọc" },
+        { id: 1, icon: "", text: "Giá tăng dần" },
+        { id: 2, icon: "", text: "Giá giảm dần" },
+        { id: 3, icon: "", text: "Chọn theo tiêu chí" },
+        { id: 4, icon: "", text: "Bộ nhớ trong" },
+        { id: 5, icon: "", text: "Dung lượng RAM" },
+        { id: 6, icon: "", text: "Kích thước màn hình" },
+        { id: 7, icon: "", text: "Nhu cầu sử dụng" },
+        { id: 8, icon: "", text: "Kiểu màn hình" },
+        { id: 9, icon: "", text: "Tính năng camera" },
+        { id: 10, icon: "", text: "Tần số quét" },
+        { id: 11, icon: "", text: "Tính năng đặc biệt" }
+    ];
+
     return (
         <div className={styles.container}>
-                <div className={styles.container__rowOne}> 
-                        <h1 className={styles.titleRowOne}> Chọn theo tiêu chí </h1>
-                        <div className={styles.mainCriteria}> 
-                            <div className={`${styles.Boxitem} ${styles.addIcon} ${styles.addPadding}`}>  
-                                <FontAwesomeIcon icon={faFilter} />  
-                                <Link className={styles.item}>        Bộ lọc     </Link>
-                            </div>
-                            <div className={`${styles.Boxitem} ${styles.addIcon} ${styles.addPadding}`}> 
-                                  <FontAwesomeIcon icon={faCarSide} />
-                                  <Link className={styles.item}>  Sẵn hàng      </Link>               
-                            </div>
-                            <div className={`${styles.Boxitem} ${styles.addIcon} ${styles.addPadding}`}> 
-                                <FontAwesomeIcon icon={faMoneyBill} />
-                                 <Link className={styles.item}>  Giá </Link>                                                                         
-                             </div>
-                               
-                             {nameBtn.map((item) => {
-                                        return (
-                                                   <div className={`${styles.Boxitem} ${styles.addIcon} ${styles.addWidth}`}> 
-                                               
-                                                         <Link className={styles.item}> {item}  </Link>
-                                                            <FontAwesomeIcon icon={faCaretDown} />
+            <h1 className={styles.container__title}>Chọn Theo tiêu chí</h1>
 
-                                                </div>
-                                        )
-                             })}
-                        
-                        </div>
+            <div className={styles.container__rowOne}>
 
-                </div>
+                {nameBtn.map((item) => (
+                    <div
+                        key={item.id}
+                        className={`${styles.container__rowOne_item} ${index === item.id ? styles.addColor : ""}`}
+                        onClick={() => {
+
+                            setIndex(item.id);
+
+                            if (item.id === 0) {
+                                defaultData();
+                            }
+
+                            else if (item.id === 1) {
+                                sortAscending();
+                            } else if(item.id === 2) {
+                                 sortDescending();
+                            }
+
+                        }}
+                    >
+
+                        {
+                            item.icon !== ""
+                                ? <FontAwesomeIcon icon={item.icon} />
+                                : <FontAwesomeIcon icon={faCaretDown} />
+                        }
+
+                        <Link className={styles.item}>
+                            {item.text}
+                        </Link>
+
+                    </div>
+                ))}
+
+            </div>
         </div>
     );
 }

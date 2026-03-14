@@ -1,0 +1,1 @@
+**1. thư mục ui-components**: là nơi chứa phần thiết lập bố cục hiển thị cho mỗi trang 

@@ -1,6 +1,7 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import { ShowInfo,Productads, ListimageProduct} from './LazyloadingComponent';
 import { Suspense } from 'react';
 import Loading from '../../../ui/Loading';
@@ -20,36 +21,72 @@ import imgSaleSamsung from '../assets/image-ui-components/img-sale.jpg';
 // ===================== Danh sach SmartPhone ==============================
 
 const XiamioComponent = ({data, namephone, ...props}) => (
-    
-      <Suspense fallback={(<Loading/>)}>  
+    <div className={styles.component}>  
 
-             <ShowInfo namephone={data} enpoint={namephone} {...props}/>
-        </Suspense>
+         <Suspense fallback={(<Loading/>)}>  
+              <ShowInfo namephone={data} enpoint={namephone} {...props}/>
+          </Suspense>
+
+    </div>
 )
 const NokiaComponent = ({data, namephone, ...props}) => {
+
         <Suspense fallback={(<Loading/>)}>
                     <ShowInfo namephone={data} enpoint={namephone} {...props}/>
         </Suspense>
+
 }
-const SamsungComponent = ({data, namephone, ...props}) => (
-<Suspense fallback={(<Loading/>)}>  
-        <SamsungComponents  saleImg={imgbackground}         className='componentSamsung'>
-         <div className='imgSale'>    
-                 <ImgSlide img={imgSaleSamsung} className="img"/>
-         </div>
-            <ListimageProduct image={data.advertising_images} customs={true}/>
-               <div className='Criteria'> 
-                    <Criteria />
-              </div>
-            <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
-        </SamsungComponents>
- </Suspense>
-)
+
+
+const SamsungComponent = ({ data, namephone, ...props }) => {
+
+    const [product, setProduct] = useState([]);
+
+    // khi data thay đổi thì reset lại dữ liệu hiển thị
+    useEffect(() => {
+        if (data?.data) {
+            setProduct(data.data);
+        }
+    }, [data]);
+
+    function handleData(customData) {
+        setProduct(customData);
+    }
+
+    return (
+        <Suspense fallback={<Loading />}>
+            <div
+                className={`${styles.componentSamsung} ${styles.component}`}
+                style={{ backgroundImage: `url(${imgbackground})` }}
+            >
+
+                <ImgSlide img={imgSaleSamsung} />
+
+                <ListimageProduct
+                    image={data?.advertising_images}
+                    customs={true}
+                />
+
+                <Criteria
+                    data={data}
+                    sendResult={handleData}
+                />
+
+                <ShowInfo
+                    namephone={data}
+                    enpoint={product}
+                    {...props}
+                />
+
+            </div>
+        </Suspense>
+    );
+};
+
+
 const IphoneComponent = ({data, namephone, ...props}) => (
-<IphoneComponents>
-  <div className='imgIphone'>   
-    <img src={imgIPhone} alt='' className='img' /> 
- </div>
+<div className={`${styles.componentIphone} ${styles.component}`}>
+        <img src={imgIPhone} alt='' className='img' /> 
     <div className='boxIphone'>   
     <Suspense 
         fallback={(<Loading/>)} 
@@ -62,63 +99,76 @@ const IphoneComponent = ({data, namephone, ...props}) => (
         </div>
      </Suspense>
      </div>
-    </IphoneComponents>
+    </div>
     )
 const OppoComponent = ({data, namephone, ...props}) => (
         <Suspense fallback={(<Loading/>)}>  
-            <React.Fragment>
-                        <ShowInfo namephone={data} enpoint={namephone}  {...props}/>
-                        <p>fwfwefwefwe</p>
-            </React.Fragment>
+          <div className={`${styles.componentOppo} ${styles.component}`}>
+                 <ShowInfo namephone={data} enpoint={namephone}  {...props}/>   
+          </div>
+          
         </Suspense>
 )
 const IpadComponent = ({data, namephone, ...props}) => (
     <Suspense fallback={(<Loading/>)}>  
-        <React.Fragment>
-                    <ShowInfo namephone={data} enpoint={namephone}  {...props}/>
-                    <p>fwfwefwefwe</p>
-        </React.Fragment>
+        <div className={`${styles.componentIpad} ${styles.component}`}>  
+                    <ShowInfo 
+                        namephone={data} 
+                        enpoint={namephone}  
+                        {...props}
+                    />
+        </div>
     </Suspense>
 )
 const  VivoComponent = ({data, namephone, ...props}) => (
     <Suspense fallback={(<Loading/>)}>  
-       <VivoComponentStyle>   
+       <div className={`${styles.componentVivo} ${styles.component}`}>  
           <React.Fragment>
-                    <ShowInfo namephone={data} enpoint={namephone}  {...props}/>
-                    <p>fwfwefwefwe</p>
+                    <ShowInfo 
+                        namephone={data} 
+                        enpoint={namephone}  
+                        {...props}/>
            </React.Fragment>
-        </VivoComponentStyle>
+      </div>
     </Suspense>
 )
 const hotSaleComponent = ({data , dataEnpoint, namephone, ...props}) => 
 (
-       <HotSaleComponents>  
-    <BoxHotSale 
-        saleImg={imgbackground} 
-        className={styles.componentHotSale}
-    > 
-        <img src={imgSale} alt='' className= {styles.componentHotSale__imgSale}/>
-     
-                <ListimageProduct image={data.advertising_images} customs={true}/>
-                     <div className='box boxlabel'> 
-                            <LabelProduct labelProduct={data.label_product}/>
-                    </div>
+            <div className={`${styles.componentHotSale} ${styles.component}`}>  
+                <div className={styles.imageSale}>     
+                          <img src={imgSale} alt='' className= {styles.componentHotSale__imgSale}/>
+                </div>
+
+                <ListimageProduct 
+                    image={data.advertising_images} 
+                    customs={true}
+                />
+
+                <LabelProduct labelProduct={data.label_product}/>
+                    
                 <ShowInfo namephone={data} enpoint={namephone}  {...props}/> 
-  </BoxHotSale> 
-    </HotSaleComponents> 
+            </div> 
+     
 )
 // ===================================================================
 //==================================================================================================================================
 const DefaultComponent = ({data, dataEnpoint, namephone, ...props}) => (
 
   <Suspense fallback={<Loading />}>
+   <div className={`${styles.DefaultComponent} ${styles.component}`}>       
   
-    <DefaultComponentStyle saleImg={imgbackground} className={
-        dataEnpoint === undefined ? 'imgHome' : 'imgSale'
-    }>
+        <div 
+          
+            className={
+                dataEnpoint === undefined ? 'imgHome' : 'imgSale'
+        }>
+            <ShowInfoHome 
+                 enpoint={namephone} 
+                         {...props}
+             />
+        </div>
 
-      <ShowInfoHome enpoint={namephone} {...props} />
-    </DefaultComponentStyle>
+    </div>
   </Suspense>
 );
 
@@ -127,56 +177,8 @@ const VivoComponentStyle = styled.div `
 
 `
 
-const DefaultComponentStyle = styled.div`
-     .imgHome {
-         margin-top: 0px;
-     }
-     .imgSale {
-        margin-top: 12rem;
-     }
-    .imgSale {
-         background-color:red;
-         max-width:30em;
-         margin-top: 30em;
-     }
-
-`
 
 
-const HotSaleComponents = styled.div `
-      margin-top: 10em;
-    .imgSale {
-         background-color:red;
-         max-width:30em;
-     }
-        background-image: url(${props => props.saleImg});
-     
-        position: relative;
-        bottom:0px;
-        overflow: hidden;
-      overflow:hidden;
-      background-color: white;
-      border-radius:10px;
-    
-      .componentSale_1 {
-            margin-top: 2rem;
-      }
-      @media (max-width: 768px) {
-            position: relative;
-            
-      }
-      @media (max-width: 1024px) {
-                   background-image: url("") !important;
-                   .imgSale {
-                    background-color:red;
-                        max-width:30em;
-                }
-                .img {
-                       width:100%;
-                       
-                }
-        }
-`
 const SamsungComponents = styled.div `
 margin-top:12rem;
 .imgSale {

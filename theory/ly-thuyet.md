@@ -4,7 +4,7 @@
 
 
 
-1. Quy tắc đặt tên thư mục
+**1. Quy tắc đặt tên thư mục**
 🔹 Viết thường (lowercase) hoặc kebab-case (chữ thường, dấu - giữa các từ).
 🔹 Không sử dụng khoảng trắng, có thể dùng gạch ngang (-) hoặc gạch dưới (_).
 🔹 Đặt tên theo chức năng, rõ ràng và dễ hiểu.

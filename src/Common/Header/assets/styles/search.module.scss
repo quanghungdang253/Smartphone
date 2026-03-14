@@ -144,15 +144,11 @@ h1 {
                 min-width: 25em;
         }
         .Container {
-            margin-top: 3rem;
          
                 .input {
                     font-size: 10px;
                      height: 100%;
-                 .searchtrends{
-                    position: relative;
-                     top: 5rem;
-          }
+                 
          }
      
 }
@@ -176,8 +172,8 @@ h1 {
             border-radius: 0px;
             border-top-right-radius: 10px !important;
             border-bottom-right-radius: 10px !important;
-                height: 32px;
-                min-width: 15em;
+            height: 32px;
+               
         }
         .searchtrends {
             position: absolute;

@@ -12,100 +12,50 @@ import Article from './Components/Article';
 import { Context } from '../../Context/Settings/Theme/ThemeContext';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import FormSection from './Components/Section/form-section';
-import imgSlide from './Components/image/img-product-image/slide.gif';
 import { ToggleProvider } from '../Products_list/context/context-boolean';
 // ================================image ==================================
 import imagebackground from './Components/Section/image/background.jpg';
 import image from './Components/Section/image/khai-xuan-trai.jpg';
-import styles from './style/home.module.scss';
+import styles from './home.module.scss';
 import SlideImageMobie from './Components/slide-image-mobie/slide-image-mobie';
 
 import MenuResponsiveMobile from '../../Common/menu-responsive-mobile/menu-responsive-mobile';
 
 function Home({home}) {
- const {theme} = useValue();
+ const {theme} = useValue();    // sáng tối 
      const [logic , setLogic] = useState(false);
      
 
     return (
-       
-            <MainHome 
-                style={{backgroundColor: theme ? '#EEEEEE' : "#111111"}}
-              
-                className={styles.MainHome}
-        > 
-                        <div className={styles.containerImage}>  
-                                 <div> 
-                                        <img src={image} alt className={`${styles.childImage} ${styles.imageLeft}`} />
-                                </div>
-                                <div> 
-                                        <img src={image} alt className={`${styles.childImage} ${styles.imageRight}`} />
-                                </div>
-                        </div>
-                <div className={styles.Mainheader}> 
+                <div className={`max-w-[1440px] mx-auto ${styles.mainHome}`}> 
                         <Helmet>
                                 <title> Quang Hùng Store </title>
-                        </Helmet>
-                         <header className={styles.Box__header}> 
-                             <div className={`${styles.Header} ${styles.Styles}`}>  
-                                <div className={styles.slideMobie}> 
-                                        <SlideImageMobie />
-                             </div>
-                                <div className={styles.menuWeb}>    
-                                         <Menuheader/>
-                                 </div>
-                              
-                                 <div className={styles.Productads}> 
-                                        <Productads/>
-                                </div>
+                        </Helmet> 
+                      
+                        
+                          <div className={`lg:h-[475px] flex justify-between mb-4 mt-4 ${styles.mainHome__rowOne}`}>  
+                                    <Menuheader/>
+                                    <Productads/>
+                                    <Article/>
                                 
-                                  {/* <div className={styles.FormSection__Web}>     
-                                                 <FormSection />   
-                                 </div> */}
-                                 <div className={styles.Article}> 
-                                         <Article/>
-                                 </div>
-                             </div>
-                                <div className={styles.slideTextMobie}> 
-                                        <SlideText />
-                                </div>
-                               <div className={styles.slideTextlaptop}> 
-                                        <SlideText />
-                                </div>
-                             <div className={styles.imgSlide}> 
-                                  <img src={imgSlide} alt='' />
-                             </div>
-                              <div className={styles.form__section}>
-                                        <FormSection Toggle={setLogic} />
-                              </div>
-                         </header>
-                       
-                         <div className={`${styles.overlayer} ${styles.Productlist}`}> 
-                                      <ToggleProvider>  
-                                                <Products_list logic={logic}/>
-                                        </ToggleProvider>
-                        </div>
-                       
-                 </div>
-                 <div>
-                                
-                 </div>
-                       
-            </MainHome>
+                          </div>
+                          <div className='mt-2 mb-2 lg:mt-0 mb-0'>    <SlideText padding="4px" fontSize="12px" />      </div>
+                          <div> 
+                                        <SlideImageMobie /> 
+                                        
+                          </div>
+                                   
+                          <div className="mt-40 lg:mt-4">     <FormSection Toggle={setLogic} />  </div> 
+                           
+                          <div>    
+                                   <ToggleProvider>  
+                                           <Products_list logic={logic}/>
+                                   </ToggleProvider>    
+                          </div>                
+                 </div>       
+         
     );
 }
-const MainHome = styled.div `
-
-   background-image: url(${props => props.bgImage});
-      width: 100%;
-      background-color:black;
-      padding-top:1rem;
-      z-index: 2;
-    // ======================================thiết lập theme ================================
-  //==================================================================================
-
-
-`
 
 export default Home;
 

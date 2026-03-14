@@ -1,53 +1,66 @@
 {
     "name": "Hãng điện thoại",
+    "title_hot_product": "Đồ gia dụng ",
+    "nameOne": "Điện thoại HOT",
+    "nameTwo": "Máy tính bảng HOT",
     "phonecompany": [
         {
             "id": 1,
             "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+              "image":"https://rubee.com.vn/admin/webroot/upload/image//images/bai-viet/logo-samsung-3.jpg"
         },
         {
               "id":2,
               "name": "vivo",
-              "image":"https://cdn.tgdd.vn/Products/Images/42/331200/vivo-y19s-bac-thumb-600x600.jpg"
+              "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTucXbasq2KXQpLMVKf4vmFX0OhYy1MXSrYDw&s"
            
         },
         {
             "id":3,
             "name": "IPhone",
-              "image":"https://beta-api.bachlongmobile.com/media/catalog/product/cache/bfb35fd1430014b0a164bf3a48626862/i/p/iphone-16-pro-den-650x650_7_1_cropped_5.webp"
-           
+              "image":"https://logoso1.com/wp-content/uploads/2020/09/logo-iphone.jpg"
         },
+
         {
             "id":4,
             "name": "Xiamio",
-              "image":"https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/329938/xiaomi-14t-xam-1-638635700973443455-750x500.jpg"
+              "image":"https://1000logos.net/wp-content/uploads/2018/10/Xiaomi-Logo-2019.png"
            
         },
         {
             "id":5,
             "name": "Ipad",
-              "image":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAC4ALgMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAHBgUEAwgC/8QAMRAAAQMCBAQDCAIDAAAAAAAAAQIDBAURAAYSIQcxQVETInEyZIGRobGywUJhCBQz/8QAGAEBAAMBAAAAAAAAAAAAAAAAAgEDBQT/xAAiEQABBAEEAgMAAAAAAAAAAAABAAIDERIEMUFRIfATIpH/2gAMAwEAAhEDEQA/ALHP7kk1yGG5jrTLTWpTKbaXL6hv8umBvOFTnqzI80mZLDSEICUtyFJCduwOFziK94ddaHuyfyVgUzQzNlV6YuEwXdKUa7b2222+eG1pcaAtQSB5Kr8j5edrDS50+fUDFSopQkS3B4iuu+rkPv6Y88wS8v0maqG0uqSZCPaDU97Sj1UV/a+PcZgVRcptxo5s41HQi4FvMqwUr1uScYETLlTryES6chpIbUU63laUrHUdScMgUovlfqNWKNIkiNJXVIi1eyXZzpQfjq++GPg5IffytJbffdeEeovstF1ZWUoBFhc79cBNYo0tmQYVQihl1O41G4I7pI5jDVwGQW8lyG1KKiiovJKj1sE4DgatLE1az+Krvh5jZHuiPyXgwFTTCrkxbjZWhwNhRB3Ta/TrhC4wuac0MD3JH5rwUSnAqrOtDdbqUhA7nt9cOGV0Tw9u4QkjbI0tdsVU1enCq0xZikL8RF0FPJXUY6MvZmECBFjqsgxlBD7avaSNXmNvS5xXZUhZdytQQalKaUrVqddkHUkLP8UJ7f0Nzzx31SjZYzLCRNjR4UnUD4byEgg25g9v1i7UTsndkG0Tuo0+lfGzG767WNxKokyoUdibRG0yJMck6RuVtqHNPciwNuxON/gMHE5LkJf/AOoqLwXtbfy3xHJznCy+yiElxEqIgaW22TdTY7Dpb+ji44LSUTMtVGU2FBD9XkuJCuYBIO+M2FmojGEvkcFGN8mRaR9eCpHjU5pzawPcG/zcwWPlIqgeI3aUhafgb/rCtx1gutVuBUtaC09GDATvqCkqUon0ssfLBQ/CkPvh9lTYAGkhRIv9MdCuW267NragxEa8YIN7qNkp9TisoAOWqO5/svpsFF5zSTpBsBYX58h64m4lddp8REaNTGEhI2Jkk3Pc+TfGHUZNaqLgVKkslAN0tJuED4W++JZJ2FpsdpNPHk05P/APfaXDMebSt15YAU4tS9Pck3w/f4/nVkV0jkZ7p+icAjsR5xsoWhr11nb6Y+iuCdJepOQ46X1trMl1chOi+yTYAG/Xy4snl+R1gUFmk2v/2Q=="
+            "image": "https://thumbs.dreamstime.com/b/apple-ipad-logo-vector-format-available-illustrator-ai-cloud-apple-ipad-logo-136964042.jpg"
         },
         {
             "id":6,
             "name": "oppo",
-              "image":"https://cdn-v2.didongviet.vn/files/products/2023/10/6/1/1699265624762_oppo_a18_didongviet_thumb_anh_san_pham.jpg"
-           
+            "image": "https://cdn.tgdd.vn/Files/2019/03/12/1154295/new-oppo-logo_600x173.png"           
         },
         {
             "id":7,
             "name": "Nokia",
-              "image":"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/_/1_250.jpg"
+            "image":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUexG2oM_ojCfH0AmxgSxx67SgTpEqJd8jtA&s"
         },
         {
-            "id":7,
-            "name": "benco",
-              "image":"https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/_/1_250.jpg"
-           
+            "id":8,
+            "name": "Huawei",
+"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0A0buv4L7mWzBVqj0s6vGqAnI1FTmZx3rJg&s"           
+        },
+          {
+            "id":9,
+            "name": "Realme",
+"image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Realme_logo.svg"
+          },
+          {
+            "id":10,
+            "name": "Sony",
+"image": "https://vudigital.co/wp-content/uploads/2022/02/logo-sony-y-nghia-va-lich-su-hinh-thanh-tu-1946-10.webp"           
         }
-       
+      
+      
     ],
+    
     "price":[
         {
             "id": 1,
@@ -74,43 +87,85 @@
             
         }
     ],
-    "hot__phone": [
-        {
-            "id": 1,
-            "name": "samsung"
-             
-        },
-        {
-            "id": 2,
-            "name": "I Phone 16 Series"
-             
-        },
-        {
-            "id": 3,
-            "name": "I Phone 15 Series"
-           
-        },
-        {
-            "id": 4,
-            "name": "Galaxy S25 Ultra"
-             
-        },
-        {
-            "id": 5,
-            "name": "samsung"
-        },
-        {
-            "id": 6,
-            "name": "samsung"
-              
-        },
-        {
-            "id": 7,
-            "name": "samsung"
-              
-        }
-      
-    ]
+   
+
+    
+  "hot__sale": [
+    {
+      "id": 1,
+      "name": "Samsung Galaxy S22 Ultra 5G",
+      "image": "https://product.hstatic.net/1000370129/product/1e241019518f8f97535f104_master_e873eca7c12845f39ec8c99440a3c984_master_0f47ed0d5d29450f92b7396d04d86f59_master.png"
+    },
+    {
+      "id": 2,
+      "name": "iPhone 16 Pro Max",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mei1fe8do0zm3e.webp"
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy S24 Ultra",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mei1fe8do0zm3e.webp"
+    },
+    {
+      "id": 4,
+      "name": "Xiaomi 14 Ultra",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mei1fe8do0zm3e.webp"
+    },
+    {
+      "id": 5,
+      "name": "iPad Pro M4",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mei1fe8do0zm3e.webp"
+    },
+    {
+      "id": 6,
+      "name": "Samsung Galaxy Tab S9",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mei1fe8do0zm3e.webp"
+    },
+    {
+      "id": 7,
+      "name": "Xiaomi Pad 6",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mei1fe8do0zm3e.webp"
+    }
+  ],
+  "hot__product": [
+    {
+      "id": 1,
+      "name": "Samsung Galaxy S23 Ultra",
+      "image": "https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+    },
+    {
+      "id": 2,
+      "name": "iPhone 15 Pro Max",
+      "image": "https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy Z Fold 5",
+      "image": "https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+    },
+    {
+      "id": 4,
+      "name": "Xiaomi 13T Pro",
+      "image": "https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+    },
+    {
+      "id": 5,
+      "name": "iPad Air M2",
+      "image": "https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+    },
+    {
+      "id": 6,
+      "name": "Samsung Galaxy Tab S8",
+      "image": "https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+    },
+    {
+      "id": 7,
+      "name": "Xiaomi Pad 5",
+      "image": "https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+    }
+  ]
+
+    
 
     
 }

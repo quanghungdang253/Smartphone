@@ -1,0 +1,43 @@
+.mainBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__btnMenu {
+        width: 40px;
+        height: 32px;
+       
+        border: none;
+        cursor: pointer;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: linear-gradient(135deg, #ffffff, #fcfcfc);
+
+
+        transition: all 0.25s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+        }
+
+        &:active {
+            transform: scale(0.92);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+    }
+}
+
+.iconMenu {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}   
+
+.btnCart {
+    display: flex;
+    justify-content: center;
+
+}

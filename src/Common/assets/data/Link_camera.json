@@ -1,119 +1,123 @@
+
+    
 {
     "name": "Hãng Camera",
+    "title_hot_product": "Camera bán chạy",
+    "nameOne": "Camera nổi bật",
+    "nameTwo": "Thương hiệu Camera",
     "phonecompany": [
         {
             "id": 1,
             "name": "Camera Dahua",
-            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/DH-IPC-HFW4231TP-ASE.jpg"
+            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/camera-ip-wifi-imou-ipc-s7xp-10m0wed-10mp-2-ong-kinh_3.png"
         },
         {
-            "id":2,
+            "id": 2,
             "name": "Camera Hikvision",
-            "image": "https://nhatthuc.com.vn/resize-image/100x90/files/camera-ip-nang-luong-mat-troi-hikvision-ds-2xs2t41g0-id-4g-c04s05.jpg"
-           
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonYpBJXzDeMAZ5nZtJ3V_7ABkLV5qCjqGdQ&s"
         },
         {
-            "id":3,
+            "id": 3,
             "name": "Camera Tiandy",
-            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5F43f1XRHvk4KmsWv13PB1Vt05i7E5XIygg&s"
         },
         {
-            "id":4,
+            "id": 4,
             "name": "Camera Panasonic",
-            "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
+            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/camera-ip-wifi-imou-ipc-s7xp-10m0wed-10mp-2-ong-kinh_3.png"
         },
         {
-            "id":5,
+            "id": 5,
             "name": "Camera Huviron",
-             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
-        },
-        {
-            "id":6,
-            "name": "Camera Ezviz",
-             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
-        },
-        {
-            "id":7,
-            "name": "Camera Imou",
-             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
-        },
-        {
-            "id":8,
-            "name": "Camera UNV",
-             "image": "https://www.nhatthuc.com.vn/resize-image/100x90/TC-H332N%20SpecI2WWIFI4mmV4_0.jpg"
-           
-        }
-       
-    ],
-    "price":[
-        {
-            "id": 1,
-            "price_level": "Dưới 2 triệu"
-
-        },
-        {
-            "id": 2,
-            "price_level": "Từ 5 đến 10 triệu"
-            
-        },
-        {
-            "id": 3,
-            "price_level": "Từ 10 - 20 triệu"
-            
-        },
-        {
-            "id": 4,
-            "price_level": "Dưới 30 triệu "
-            
-        }, {
-            "id": 5,
-            "price_level": "dưới 50 triệu "
-            
-        }
-    ],
-    "hot__phone": [
-        {
-            "id": 1,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 2,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 3,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 4,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
-        },
-        {
-            "id": 5,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonYpBJXzDeMAZ5nZtJ3V_7ABkLV5qCjqGdQ&s"
         },
         {
             "id": 6,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+            "name": "Camera Ezviz",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5F43f1XRHvk4KmsWv13PB1Vt05i7E5XIygg&s"
         },
         {
             "id": 7,
-            "name": "samsung",
-              "image":"https://didongmoi.com.vn/upload/images/product/samsung/samsung-galaxy-s22-ultra-5g(1).jpg"
+            "name": "Camera Imou",
+            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/camera-ip-wifi-imou-ipc-s7xp-10m0wed-10mp-2-ong-kinh_3.png"
+        },
+        {
+            "id": 8,
+            "name": "Camera UNV",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonYpBJXzDeMAZ5nZtJ3V_7ABkLV5qCjqGdQ&s"
+        }
+    ],
+
+
+    "hot__sale": [
+        { "id": 1, "name": "Camera Dahua IPC-HFW1230S", "endpoint": "dahua" },
+        { "id": 2, "name": "Camera Hikvision DS-2CD1023G0E", "endpoint": "hikvision" },
+        { "id": 3, "name": "Camera Tiandy TC-C32XN", "endpoint": "tiandy" },
+        { "id": 4, "name": "Camera Panasonic WV-S2131L", "endpoint": "panasonic" },
+        { "id": 5, "name": "Camera Ezviz C6N", "endpoint": "ezviz" },
+        { "id": 6, "name": "Camera Imou Ranger 2", "endpoint": "imou" },
+        { "id": 7, "name": "Camera UNV IPC3614", "endpoint": "unv" },
+        { "id": 8, "name": "Camera Huviron F-NP222", "endpoint": "huviron" }
+    ],
+
+    "price": [
+        {
+            "id": 1,
+            "price_level": "Dưới 500 nghìn"
+        },
+        {
+            "id": 2,
+            "price_level": "500 nghìn - 1 triệu"
+        },
+        {
+            "id": 3,
+            "price_level": "1 - 3 triệu"
+        },
+        {
+            "id": 4,
+            "price_level": "3 - 5 triệu"
+        },
+        {
+            "id": 5,
+            "price_level": "Trên 5 triệu"
+        }
+    ],
+
+    "hot__product": [
+        {
+            "id": 1,
+            "name": "Camera Dahua IPC-HFW1230S",
+            "image": "https://cdn.tgdd.vn/Products/Images/4728/226163/camera-ip-wifi-dahua-imou-ranger-2c-2mp-1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Camera Hikvision DS-2CV2Q21FD",
+            "image": "https://cdn.tgdd.vn/Products/Images/4728/235417/camera-ip-wifi-hikvision-ds-2cv2q21fd-iw-2mp.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Camera Ezviz C6N",
+            "image": "https://cdn.tgdd.vn/Products/Images/4728/226152/camera-ip-wifi-ezviz-c6n-2mp.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Camera Imou Ranger 2",
+            "image": "https://cdn.tgdd.vn/Products/Images/4728/226161/camera-ip-wifi-imou-ranger-2.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Camera Tiandy TC-C32XN",
+            "image": "https://cdn.tgdd.vn/Products/Images/4728/307432/camera-ip-tiandy-tc-c32xn-2mp.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Camera Panasonic WV-S2131L",
+            "image": "https://cdn.tgdd.vn/Products/Images/4728/290832/camera-ip-panasonic-kx-hn6001.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Camera UNV IPC3614",
+            "image": "https://cdn.tgdd.vn/Products/Images/4728/297351/camera-ip-unv-ipc3614.jpg"
         }
     ]
-    
-
-    
 }

@@ -2,7 +2,7 @@ import { Button } from '@mui/material';
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import styles from '../styles/components/contact-map.module.scss'
+import styles from '../styles/contact-map.module.scss'
 import staticData  from '../data/data-icon/Static_data.json';
 import imagesale1 from '../image/imagesale1.jpg';
 import iconMap from '../image/map.png';

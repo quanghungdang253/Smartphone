@@ -1,29 +1,31 @@
 
 
-
-
-
+.component {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .componentHotSale {
-
-    &__imgSale {
-      
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .imageSale {
+        background-color: rgb(228, 31, 31);
     }
 }
 
-
-
-
-
-@media (max-width: 768px) {
-        
-.componentHotSale {
-
-
-    &__imgSale {
-        max-width: 21em;
-        margin-left: 1rem;
-    }   
-}
+.componentSamsung {
+ 
 
 }
+
+
+.DefaultComponent {
+
+    background-color: aqua;
+}
+
+
+
+
+
