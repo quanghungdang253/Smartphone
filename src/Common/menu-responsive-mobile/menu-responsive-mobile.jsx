@@ -80,18 +80,18 @@ function MenuResponsiveMobile({Showmenu}) {
                                         }
                                         onClick={() => setIndexProduct(Item.id)}
                                      > 
-                                     <img src={Item.img} />
+                                     <img src={Item.img}/>
                                         {Item.label}  
                                     </li>
                             ))}
                      </ul>
                 </div>
-                <div> 
+                <div className='overflow-auto'> 
                      {
                                 product ? 
                                        <ShowMenu 
-                                       Showmenu={Showmenu}
-                                       product={product.items} /> : "Đang tải dữ liệu"
+                                         Showmenu={Showmenu}
+                                         product={product.items} /> : "Đang tải dữ liệu"
     
                      }
 

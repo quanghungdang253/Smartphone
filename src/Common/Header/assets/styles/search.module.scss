@@ -55,6 +55,17 @@ h1 {
         padding-bottom: 0.8rem;
         
 }   
+
+.icon__Close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: red;
+    padding: 6px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
 .Container {
     display: flex;
     flex-direction: column;
@@ -62,7 +73,8 @@ h1 {
    
     .searchtrends{
          position: absolute;
-         top: 5rem;
+         top: 7rem;
+         z-index: 100;
     }
 .input {
         padding: 0 0rem 0 2rem;
@@ -112,7 +124,7 @@ h1 {
 
 }
 .searchtrends {
-    border-top-right-radius: 1rem;
+
     border: outset;
     border-color: black;
     border-width: 1px;
@@ -165,6 +177,20 @@ h1 {
 }
 
 @media (max-width:768px) {
+.icon__Close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: red;
+    padding: 4px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+    .link {
+         font-size: 12px;
+    }
         .link__trends {
             font-size: 14px;
         }
@@ -177,14 +203,14 @@ h1 {
         }
         .searchtrends {
             position: absolute;
-          top: 7rem !important;
-          border-top-right-radius: 1rem;
+          top: 10rem !important;
+          
           border: outset;
           border-color: black;
           border-width: 1px;
           height: 400px;
           padding: 5px 1rem 1rem 1rem;
-          max-width: 20em !important;
+          max-width: 35vh !important;
           background-color: rgb(248, 248, 248);
    
     }

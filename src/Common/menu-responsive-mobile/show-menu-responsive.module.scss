@@ -26,6 +26,8 @@
 .mainBox {
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      max-width: 35em;
+     
+     overflow-y: scroll;
         padding-left: 10px;
         &__box1 {
             .tabchoose {
@@ -39,17 +41,19 @@
                     width: 48px;
                 }
                 .Link {
+                    color: black;
+                    font-weight: 700;
                     width: 70px;
-                    min-height: 70px;
+                    min-height: 60px;
                     margin-left: 5px;
                     display: flex;
                     align-items: center;
                    gap: 5px;
-                    padding: 5px;
+                    padding: 2px;
                     flex-direction: column;
                     border: 1px solid rgba(47, 47, 47,0.5);
                     border-radius: 5px;
-                    font-size: 12px;
+                    font-size: 13px;
                     
                 }
                 &__product {
@@ -72,15 +76,15 @@
            }
               .Link {
                 text-align: center;
-                border-radius: 10px;
-               margin-left: 5px;
-               font-size: 14px;
-font-weight: bold;
-border: 1px solid black;
-                     margin-bottom: 5px;
-                     display: inline-block;
-                     padding: 10px;
-                    background-color: rgb(233, 233, 233);
+                border-radius: 5px;
+                margin-left: 5px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid black;
+                margin-bottom: 5px;
+                display: inline-block;
+                padding: 10px;
+                background-color: rgb(233, 233, 233);
                     
               }  
         }
@@ -93,7 +97,8 @@ border: 1px solid black;
                   margin-top: 0.5rem;
            }
               .Link {
-                 border-radius: 10px;
+                font-size: 12px;
+                 border-radius: 5px;
                      display: inline-block;
                      padding: 5px;
                      margin-left: 5px;

@@ -38,9 +38,10 @@ useEffect(() => {
 },[index])
     return (
         <div className={styles.container}>
+                  <img src={arrayImage[index]} alt='' className={styles.img}/>
             <div className={styles.container__boxImg}> 
        
-                <img src={arrayImage[index]} alt='' className={styles.img}/>
+          
                  <div className={styles.boxBtn}>
                         <button onClick={() => leftArrow()} className={`${styles.btn} ${styles.btnLeft} `}> 
                                  <FontAwesomeIcon icon={faArrowLeft} /> 

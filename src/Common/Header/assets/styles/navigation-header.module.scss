@@ -2,8 +2,8 @@
 
 
 .navigation {
-    font-size: 1rem;
-
+    font-size: 14px;
+ font-family: Inter, Inter Fallback, Arial, sans-serif;
     color: white;
     display:flex;
     grid-column-gap:2px;
@@ -21,7 +21,7 @@
        .Link h1 {
                         font-size: 12px;
                         font-weight: 200;
-                        font-family: 'Times New Roman', Times, serif;  
+                      font-family: Inter, Inter Fallback, Arial, sans-serif;
                         color: white;  
                       
          }

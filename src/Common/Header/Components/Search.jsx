@@ -112,14 +112,7 @@ function Search({shows}) {
                      shows(true);                  
                 }}
             />
-            <a className={styled.icon__Close}
-                    onClick={() => setSearchtreands(false)}
-            >
-                {searchtrends ?
-                     (<FontAwesomeIcon icon={faXmark}/>  ) : ""
-
-                     }    
-            </a>
+           
             </div>
             {showsuggestions ? (
                 <div className={styled.suggestions}>
@@ -147,13 +140,19 @@ function Search({shows}) {
             {searchtrends && !showsuggestions ? (
                 
                 <div className='trend'> 
-
+                    
                     <div> 
-                    <FontAwesomeIcon icon={faCaretUp} className={styled.icon} />
+                    {/* <FontAwesomeIcon icon={faCaretUp} className={styled.icon} /> */}
                 </div>
                 <div ref={suggestionsRef}  className={styled.searchtrends} id='searchtrends'>
+
+                     <a  className={styled.icon__Close} onClick={() => setSearchtreands(false)}>                                          
+                          {searchtrends ?
+                                 (<FontAwesomeIcon icon={faXmark}/>  ) : ""
+                         }    
+                    </a>
                 <div className={styled.trend}>  
-                     <h1> Xu hướng tìm kiếm  </h1>
+                     <h1 className='font-bold'> Xu hướng tìm kiếm  </h1>
         <img src={iconsearch} alt='hình ảnh' className={`${styled.image} ${styled.icontrends}`}/>
                 </div>   
           <div className={styled.link__trends}> 

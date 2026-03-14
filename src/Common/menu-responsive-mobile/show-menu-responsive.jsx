@@ -7,7 +7,7 @@ function ShowMenu({product , Showmenu}) {
     return (
         <div className={styles.mainBox}>
             <div className={styles.mainBox__box1}>
-                            <h1> Xu hướng mua sắm </h1>
+                            <h1 className='bg-yellow-400 p-2 font-bold text-center'> Xu hướng mua sắm </h1>
                 <div className={styles.tabchoose}> 
                      {product.phonecompany && product.phonecompany.length > 0 ?  (
                           <>  
@@ -41,7 +41,7 @@ function ShowMenu({product , Showmenu}) {
             </div>
     </div>
     <div className={styles.mainBox__box2}> 
-         <h1  className={styles.label} variant='h6'> Điện thoại hot 2025 </h1>
+                          <h1 className='bg-yellow-400 p-2 font-bold text-center mt-2 mb-2'> Điện Thoại HOT </h1>
                      <div className={styles.tabchoose}> 
              
                   {product.phonecompany && product.phonecompany.length > 0 ?  (
@@ -62,7 +62,8 @@ function ShowMenu({product , Showmenu}) {
     </div>
         <div className={styles.mainBox__box3}> 
                         <div className={styles.tabchoose}> 
-                            <h1  className={styles.label} variant='h6'> Mức giá </h1>
+                     <h1 className='bg-yellow-400 p-2 font-bold text-center mt-2 mb-2'> Mức Giá </h1>
+
                               {product.price && product.price.length > 0 ? (
                                  product.price.map((list,id) => (
                              <Link key={list.id} className={styles.Link}> 

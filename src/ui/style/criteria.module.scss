@@ -16,8 +16,10 @@
      
       
       .container__rowOne_item {
+        display: flex;
+        gap: 5px;
            border-radius: 5px;
-           padding: 1rem;
+           padding: 0.5rem;
            background-color: rgb(228, 228, 228);
 
            .item {
@@ -38,4 +40,28 @@
           
        }
      
+}
+
+@media (max-width: 768px) {
+    .container {
+
+    &__rowOne {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+
+  
+      .container__rowOne_item {
+          font-size: 12px;
+      }
+
+    }
+
+        .container__title {
+        color: white;
+      }
+      
+
+  }
 }

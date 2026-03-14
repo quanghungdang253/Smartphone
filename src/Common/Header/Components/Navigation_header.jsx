@@ -44,26 +44,26 @@ const textLink = "font-bold";
         className={`lg:text-[1rem] text-white flex gap-x-2 ${styles.navigation}`}
     >
   
-        <Link className={`${styleOne} `} to='/StoreInfo'> 
-            <FontAwesomeIcon icon={faStore} size="2x" className="text-[1.2rem]" />
+        <Link className={`${styleOne}`} to='/StoreInfo'> 
+            <FontAwesomeIcon icon={faStore}  className="text-[1.2rem]" />
             <h1 className={styles.linkIntroduce}>Giới thiệu cửa hàng </h1>
         </Link>
     
 
     
         <Link
-            className={`${styleOne} ${styles.Link} `}
+            className={`${styleOne} `}
             to='/GoogleMap'
             target='_blank'
             rel='noopener noreferrer'
         >
             <FontAwesomeIcon icon={faMapMarkerAlt} className="text-[1.2rem]"  />
-            <h1>Cửa hàng gần bạn</h1>
+            <h1 className={styles.linkIntroduce}>Cửa hàng gần bạn</h1>
         </Link>
 
-        <Link className={`${styleOne} `}>
+        <Link className={`${styleOne}`}>
             <FontAwesomeIcon icon={faTruck} className="text-[1.2rem]"  />
-            <h1 className={`${textLink} font-normal` }>Tra cứu đơn hàng</h1>
+            <h1 className={styles.linkIntroduce}>Tra cứu đơn hàng</h1>
         </Link>
     
 
@@ -80,7 +80,7 @@ const textLink = "font-bold";
    
 
 
-        <Link  to="/Login" className={`${styleOne} `}>
+        <Link  to="/Login" className={`${styleOne}`}>
             <FontAwesomeIcon className="text-[1.2rem]"  icon={faUser} />
             <h1>Đăng Nhập</h1>
         </Link>

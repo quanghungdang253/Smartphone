@@ -34,10 +34,11 @@ const {Nameproduct} = breadcrumb;
    
     return (
         <div className={styles.header}> 
-            <div className={styles.AdvertisiPhoto}>
+           <div className={styles.header__rowOne}>     
+              <div className={styles.AdvertisiPhoto}>
                         <AdvertisiPhoto/>
                  <nav> 
-                         <div className={`lg:pt-4  max-w-[1440px] mx-auto flex  gap-12 h-[4rem] ${styles.MenuDesktop}`}>   
+                         <div className={`lg:pt-4  max-w-[1440px] mx-auto flex items-center gap-12 h-[6rem]  ${styles.MenuDesktop}`}>   
                                 <div className={styles.titleDesktop}>      
                                     <TitleandProducts shows={setShow} showmenu={setShowMenuMobie} />                                    
                                  </div>
@@ -74,12 +75,9 @@ const {Nameproduct} = breadcrumb;
                            </div>
                        </div>
                  </nav>  
-
-
-
-
-
             </div> 
+
+        </div>
             <div>
                     {pathname !== '/' ? (
                                 <Breadcrumb  nameProduct={Nameproduct}/>  

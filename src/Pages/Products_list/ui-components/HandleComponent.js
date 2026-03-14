@@ -84,8 +84,25 @@ const SamsungComponent = ({ data, namephone, ...props }) => {
 };
 
 
-const IphoneComponent = ({data, namephone, ...props}) => (
-<div className={`${styles.componentIphone} ${styles.component}`}>
+const IphoneComponent = ({data, namephone, ...props}) => {
+
+
+    const [product, setProduct] = useState([]);
+
+    // khi data thay đổi thì reset lại dữ liệu hiển thị
+    useEffect(() => {
+        if (data?.data) {
+            setProduct(data.data);
+        }
+    }, [data]);
+
+    function handleData(customData) {
+        setProduct(customData);
+    }
+
+
+    return (
+            <div className={`${styles.componentIphone} ${styles.component}`}>
         <img src={imgIPhone} alt='' className='img' /> 
     <div className='boxIphone'>   
     <Suspense 
@@ -94,13 +111,20 @@ const IphoneComponent = ({data, namephone, ...props}) => (
     >  
         <div>
             <ListimageProduct image={data.advertising_images} customs={true}/>
-            <Criteria />
+        <Criteria
+                    data={data}
+                    sendResult={handleData}
+                />
             <ShowInfo namephone={data} enpoint={namephone}  {...props}/>     
         </div>
      </Suspense>
      </div>
     </div>
+
     )
+
+
+}
 const OppoComponent = ({data, namephone, ...props}) => (
         <Suspense fallback={(<Loading/>)}>  
           <div className={`${styles.componentOppo} ${styles.component}`}>

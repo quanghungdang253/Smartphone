@@ -9,7 +9,7 @@ const Breadcrumb = ({ nameProduct }) => {
 const namepath = location.pathname
   .split('/')
   .filter(p => p)
-  .map(p => decodeURIComponent(p)); // 👈 THÊM decode ở đây
+  .map(p => decodeURIComponent(p)); 
 
   let breadcrumbs = [];
   let path = '';
@@ -63,7 +63,7 @@ const namepath = location.pathname
   }
 
   return (
-    <div className='max-w-[1440px] mx-auto'>      
+    <div className='max-w-[1440px] mx-auto bg-white'>      
       <nav style={{ padding: '10px 0' }} className={styles.mainNavigation}>
           <Link to="/" className={styles.Link}>Home</Link>
            {breadcrumbs.map((crumb, i) => (

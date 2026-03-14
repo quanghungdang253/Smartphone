@@ -1,10 +1,9 @@
 
 .mainMobie {
- 
     background-color: rgb(255, 255, 255);
     position: absolute;
     margin-top: 0px;
-    max-height: 100vh;
+    height: 100vh;
     min-width: 100%;
     padding: 10px;
 
@@ -27,9 +26,12 @@
         }
       }
       .box {
+        display: flex;
+        gap: 0.2rem;
+         font-size: 14px;
           background-color: aqua;
           padding: 10px 10px;
-          border-radius: 10px;
+          border-radius: 5px;
           font-weight: 600;
           text-align: center;
           max-width: 15em;
@@ -63,6 +65,7 @@
  
       max-height: 100vh;
        overflow-y: scroll;
+      
       
            .list_nameProduct {
             

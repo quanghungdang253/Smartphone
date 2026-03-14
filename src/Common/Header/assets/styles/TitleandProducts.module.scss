@@ -207,9 +207,6 @@
          }  
 }
 
-
-
-
 @media (max-width: 1024px) {
       .Header {
          min-width: 40px;
@@ -217,7 +214,7 @@
   
         
             .row_two {
-                  min-width: 10em;
+                  min-width: 11em;
                   padding: 5px 5px 30px 5px;
                   
             }
@@ -262,6 +259,7 @@
          align-items: center;
          grid-column-gap: 1rem;
          max-width: 768px;
+         margin-left: 10px;
         }
         .row_one {
 

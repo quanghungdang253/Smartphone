@@ -2,7 +2,13 @@
 .header {
        max-width: 100%;
        position: relative;
-      background-color: #d70018;
+   
+      font-family: Inter, Inter Fallback, Arial, sans-serif;
+}
+.header__rowOne {
+
+   background-color: #d70018;
+  
 }
 .titleDesktop {
     display: block;
@@ -138,6 +144,13 @@
        
 }
 @media (max-width: 768px) {
+
+
+    .header__rowOne {
+        
+        height: 170px;
+  
+}
     .header {
          height: 10rem;
     }
@@ -156,22 +169,21 @@
 
 
   .MenuMobie { 
-
           display: block;
           margin-top: 1rem;
      
          .menuMobie__rowOne {
             display: flex;
             align-items: center;
-            justify-content: center;
+            padding-left: 0.7qrem;
          }
          .menuMobie__rowTwo {
-            margin-right: 1rem;
-            margin-left: 1rem;
+        
             padding: 2px;
             background-color: rgb(255, 255, 255);
             display: flex;
             align-items: center;
+            gap: 1rem;
             .btnCart {
             
             }

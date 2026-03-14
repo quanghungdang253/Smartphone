@@ -127,7 +127,7 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
     
 
     return (
-     <div className='mt-5'> 
+     <div className={styles.mainContent}> 
 
       
       <Helmet>
@@ -149,35 +149,24 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
             </div>
          )}
            {!enpoints ? (
-            <ul className={`flex justify-around mx-auto p-4   ${styles.listProduct}`}>
+            <ul className={`  ${styles.listProduct}`}>
 
                 {dataChoose.map((Item) => (
                     //  className={`${styles.items} ${Item.id === index ? styles.addcolor : ""}`
                     <li
                         key={Item.id} 
                         className=
-                        {`       
-                                      
-                           inline-block                                                 
-                           font-sans  font-bold p-2
-                           hover:translate-y-[-5px] 
-                           transition-all
-                            duration-200 ease-in-out
-                           lg: rounded-xl
-                               cursor-pointer
-                               text-center
-                               text-[14px]
-                              ${Item.id === index ? 'bg-[#f2f2f2] border border-white' : ''}  
-                              
-                            
+                        {`                                       
+                                  ${styles.listProduct__item}                                                                    
+                                   ${Item.id === index ? 'bg-[#f2f2f2] border border-white' : ''}                                                   
                             `
                         }
                          onClick={() => setIndex(Item.id)}
                          to={''}  
                     >                                           
-                              <img src={Item.image} className='h-[3rem] max-w-[5rem]' alt='' />
+                              <img src={Item.image} className='' alt='' />
                               <Link to={''}> </Link>
-                              <h1 className='mt-2 text-black font-black'> {Item.name} </h1>      
+                              <h1 className='lg:mt-2text-black font-black'> {Item.name} </h1>      
                     </li>
                 ))}
             </ul>
@@ -185,17 +174,17 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
 
      {/* <div className={`${styles.Show_phone} ${theme ? styles.Bright_1 : styles.Dark_1} `} */}
                      
-
-      <div className={` grid grid-cols-2 lg:grid-cols-4 gap-y-4 `}>   
+  
+      <div className={` p-2 grid grid-cols-2 gap-2 lg:grid-cols-5 lg:gap-0 lg:p-0  ${styles.ListItem}`}>   
                {predata && predata.data && predata.data.length > 0 ? (
                 predata.data.slice(0 , visiblePhones).map((List) => (
                  
-                  <div className='bg-white shadow-[0_2px_3px_black]  lg:max-w-[250px] rounded-2xl p-1 ml-6'>
-                               <div className="lg: flex justify-between items-center">          
-                                    <h3 className="p-2 text-white" style={{ backgroundImage: `url(${icon_price})`}}>                        
+                  <div className={` ${styles.Info} bg-white shadow-[0_2px_3px_black]  lg:max-w-[250px] rounded-2xl p-1 lg: ml-4  `}>
+                               <div className="flex justify-between items-center">          
+                                    <h3 className="p-2 text-white text-[10px] lg:text-[14px]" style={{ backgroundImage: `url(${icon_price})`}}>                        
                                                  Giảm:{List.discount}
                                     </h3>                                                                       
-                                             <h3 className='text-blue-800 font-extrabold'> Trả góp: {List.installment} </h3>
+                                    <h3 className='text-blue-800 font-extrabold text-[10px] lg:text-[14px]'> Trả góp: {List.installment} </h3>
 
                                 </div>
 
@@ -224,20 +213,20 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
                                   
                                 <h3 
                                 style={{lineHeight: 1.5}}
-                                className='text-[18px] text-[#18181b] font-bold mb-4 font-sans'> {List.title}</h3>
+                                className=' mt-4 text-[16px] text-[#18181b] font-bold mb-4 font-sans lg:text-[16px] h-[72px]'> {List.title}</h3>
 
                                        
                            
 
-                                <div className='lg:flex items-center  mb-4'>
-                                    <h3 className="sm:text-medium text-primary-600 text-2xl font-bold text-[#fa001d]">{List.price}</h3>
+                                <div className='flex items-center mb-4'>
+                                    <h3 className=" text-[16px] text-primary-600 text-2xl font-bold text-[#fa001d] lg:text-[18px]">{List.price}</h3>
                                     <h3 className="text-[10px] text-gray-500 line-through sm:text-[16px]"> {List.priceDown} </h3>
                                 </div>
                                   <img src={List.image_1 || img } alt='' className="mb-4"/>
                   
                             
                   
-                            <p className='p-2 bg-[#f2f2f3] mb-4'>  Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng                                     
+                            <p className='p-2 bg-[#f2f2f3] mb-4 text-[14px] leading-4'>  Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng                                     
                             </p>
                     </div>
                          {/* <div className={styles.container_icon}></div> */}
@@ -246,13 +235,13 @@ const [nameProduct ,setNameProduct] = useState(listDataHome);
                            {star.map((_, index) => ( 
                               <FontAwesomeIcon 
                                 icon={faStar} 
-                                className="text-yellow-400"
+                                className="text-yellow-400 text-[9px] lg:text-[14px]"
                                 
                               />
                            ))}
                        </div>
                           <div>    
-                                <strong className='font-bold'> Yêu thích </strong>   
+                                <strong className='font-bold text-[12px] lg:text-[14px]'> Yêu thích </strong>   
                                 <FontAwesomeIcon 
                                   icon={faHeart} 
                                   className="text-red-600 max-w-[2rem]"

@@ -39,20 +39,17 @@ export default function App() {
           <ParentContext>
             <HelmetProvider>   
               <MainHeader />
-              <ContentWrapper>
-                <Routes>
+                <ContentWrapper>
+                  <Routes>
                     {router.map((item) => (
                         <Route key={item.id} path={item.path} element={<item.element />} />
                     ))}
-                </Routes>
-              </ContentWrapper>
+                   </Routes>
+                 </ContentWrapper>
             </HelmetProvider>             
-              <div className='CommunicationSetting'>  
-                               <CommunicationSettings/>     
-              </div> 
-              <div className='chatBot'> 
-                               <MainChatbox/>
-              </div>
+                     <div className='CommunicationSetting'>  <CommunicationSettings/>    </div>                     
+                     <div className='chatBot'>   <MainChatbox/>  </div>
+                           
           </ParentContext>    
         </Style>
               <FooterWrapper>

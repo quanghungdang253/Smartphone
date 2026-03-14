@@ -21,9 +21,10 @@ function useHandleApi(namephone) {  // xử lý hiển thị các điện thoạ
         let Clock = ["Đồng hồ Orient","Đồng hồ Casio","Đồng hồ","Đồng hồ Citizen","Đồng hồ Tissot","Đồng hồ Frederique Constant","Đồng hồ Titan","Đồng hồ Tommy Hilfiger",""]
        let Ipad = [""]
           
+     
     useEffect(() => {
                  
-                     if(CategoryInformation.includes(namephone)){
+                    if(CategoryInformation.includes(namephone)){
                           setEnpointinFo("InformationCategory");  
                     }
                     else if(CameraBrands.includes(namephone)){
@@ -65,8 +66,7 @@ function useHandleApi(namephone) {  // xử lý hiển thị các điện thoạ
                             `/Information/${endpointInfo}/${encodeURIComponent(namephone)}.json`
                             : `/Information/${endpointInfo}/homephone.json`;  
                          
-                            console.log(namephone);
-        console.log(  `/Information/${endpointInfo}/${encodeURIComponent(namephone)}.json`)
+
                         
                                 try{
                                             const  getApi = await axiosClient.get(apiUrl);                           
