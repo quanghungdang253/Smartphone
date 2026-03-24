@@ -4,24 +4,16 @@ import { useEffect } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import {faPhone} from '@fortawesome/free-solid-svg-icons'
 import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import {faUser} from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { faTruck } from '@fortawesome/free-solid-svg-icons';
 import { faStore } from "@fortawesome/free-solid-svg-icons";
-import { useSelector } from 'react-redux';
 import styles from '../assets/styles/navigation-header.module.scss';
-import { useNavigate } from 'react-router-dom';
-import { indexCart } from '../../../features/cart/cartSlice';
-import useStatusUser from '../../../hooks/use-status-user';
 function Navigation_header(props) {
-        const selectId = useSelector(state => state.cart.indexCart);
+   
         const [refresh, setRefresh] = useState(0);
-         let [data] = useStatusUser(null , refresh);
-           const getDataLocal = localStorage.getItem("currentUser");
-  
-         let navigate = useNavigate();
+
 
 useEffect(() => {
     const handleCustomUpdate = () => {

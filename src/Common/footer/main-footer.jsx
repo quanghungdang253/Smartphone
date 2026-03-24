@@ -20,7 +20,7 @@ function MainFooter(props) {
              <div className={styles.mainFooterOne}>
                     <div className={styles.mainFooterOne__column}>  
                         <div className={styles.box1}> 
-                                <h1 class="text-xl mb-3 font-semibold"> Tổng đài hỗ trợ miễn phí </h1>
+                                <h1 class="text-sm md:text-xl mb-3 font-semibold"> Tổng đài hỗ trợ miễn phí </h1>
                                 <div> 
                                       Mua hàng - Bảo hành 
                                         <span> 180029603</span>
@@ -29,7 +29,7 @@ function MainFooter(props) {
                                 <div> 
                                          Khiếu nại <span>  1800.2063   </span> (8h00 - 21h30)
                                 </div>
-                                <h1 class="text-xl mb-3 font-semibold mt-10"> Phương thức thanh toán </h1>
+                                <h1 class="text-sm lg:text-xl mb-3 font-semibold mt-10"> Phương thức thanh toán </h1>
                                 <div className={styles.payment}>   
                                         <img src={img1} alt='img1' /> 
                                         <img src={img2} alt='img2' /> 
@@ -46,7 +46,7 @@ function MainFooter(props) {
                         </div>
 
                         <div className={styles.box2}>  
-                                <h1 class="text-xl mb-3 font-semibold">Thông tin và Chính sách </h1>
+                                <h1 class="text-sm md:text-xl mb-3 font-semibold">Thông tin và Chính sách </h1>
                                <a href="#">Chính sách bảo hành</a>
 <a href="#">Chính sách bảo mật</a>
 <a href="#">Chính sách sử dụng</a>
@@ -57,7 +57,7 @@ function MainFooter(props) {
 
 
                 <div className={styles.box1}> 
-                    <h1 class="text-xl mb-3 font-semibold"> Dịch vụ thông tin khác </h1>
+                    <h1 class=" sm: text-sm lg:text-xl mb-3 font-semibold"> Dịch vụ thông tin khác </h1>
                    
                    <a href="#">Khách hàng doanh nghiệp (B2B)</a>
 <a href="#">Ưu đãi thanh toán</a>
@@ -72,7 +72,7 @@ function MainFooter(props) {
 
 
                          <div className={styles.box2}> 
-                                 <h1 className={styles.title} class="text-xl mb-3 font-semibold">Kết nối với Quang Hùng Store </h1>
+                                 <h1 className={styles.title} class=" text-sm   lg:text-xl mb-3 font-semibold">Kết nối với Quang Hùng Store </h1>
                         <div className={styles.iconCall}> 
                                         <img src={img1} alt='' />
                                         <img src={img2} alt='' />

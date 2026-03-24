@@ -59,22 +59,27 @@ const Slideimage = (props) => {   //ở đây {phone} là viết tắt    const 
                                         <button variant='outlined' className={styles.btnLeft} onClick={() => Left()}> ⬅ </button>
                                         <button  className={styles.btnRight} variant='outlined'  onClick={() => Right()}> ➡ </button>
                                 </div>
+                                
                                 <div className={styles.list__image}>  
-                        
+                                 
                                 <img 
                                    src={
                                         process.env.PUBLIC_URL + (preindex === 0 ?  preimage[4].image : preimage[preindex].image)  
                                      } 
                                    alt='' className={`${styles.main__image} ${preindex === 0 ? styles.small__image : ""}`}/> 
-                                     
-                                                {preindex === 0 ? (
-                                                      
-                                                <ul className={styles.List__item} >                                          
-                                                       { preimage[0].content.map((item, index) => (
-                                                                <li key={item.id} className={styles.item}>   {item}     </li>
-                                                        ))  }
+                                   <div>     
+                                                {preindex === 0 ? (   
+                                                         <ul className={styles.List__item} >                                          
+                                                            { preimage[0].content.map((item, index) => (
+                                                                    <li key={item.id} className={styles.item}>    {item}  </li>    
+                                                         ))  }
                                                 </ul>
-                                                ) : ""}                                                                                                      
+                                                ) : ""}   
+
+
+                                   </div>
+                                     
+                                                                                                                                                  
                                 </div>   
                         </div>
                 <div className={styles.HandleImage_Slide}>
@@ -124,8 +129,8 @@ const Slideimage = (props) => {   //ở đây {phone} là viết tắt    const 
                           <select 
                                 onChange={(e) => setIdCity(e.target.value)}
                                 className={`${styles.column2}  ${styles.column}`}
-                        > 
-                         {
+                          > 
+                           {
                                staticData.mapAddress[index].city.map((Item) => (
                                     <option key={Item.id} value={Item.id}>
                                          {Item.name}

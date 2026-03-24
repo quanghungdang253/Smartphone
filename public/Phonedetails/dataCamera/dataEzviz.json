@@ -56,13 +56,43 @@
         {"id": 2, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-titan-sa-mac.png", "name": "Titan sa mạc", "price":"1.999.562đ"},
         {"id": 3, "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-titan-trang.png", "name": "Titan trắng", "price":"1.999.562đ"}
     ],
-    "attached__product": [
-      {"id": 0, "image":"https://24hstore.vn/images/products/2024/09/10/resized/iphone-16-pro-max-titan-trang_1725928243.jpg", "price":"3.999.000đ", "discount": "6.300.000 vnđ", "name": ""},
-      {"id": 1, "image":"https://24hstore.vn/images/products/2024/09/17/resized/sac-mophie-essentials-pd-45w-2c-gan-trang_1726560787.jpg", "price":"1.999.562đ", "discount": "2.300.000 đ", "name": "Cốc sạc Mophie Essentials PD 45W 2C GaN"},
-      {"id": 2, "image":"https://24hstore.vn/images/products/2023/09/25/resized/pin-du-phong-mazer-smallest-magsafe-10-000mah-grey-hinh-1_1695623905.jpg", "price":"1.999.562đ", "discount": "2.300.000 đ", "name": "Sạc Dự Phòng Mazer Smallest MagSafe 10.000mAh"},
-      {"id": 3, "image":"https://24hstore.vn/images/products/2024/09/19/resized/op-lung-magsafe-cho-iphone-16-pro-max-clear_1726731749.jpg", "price":"1.999.562đ", "discount": "2.300.000 đ", "name": " Ốp Lưng Trong Suốt MagSafe iPhone 16 Pro Max | Chính hãng Apple Việt Nam"},
-      {"id": 4, "image":"https://24hstore.vn/images/products/2024/09/05/large/apple-airpods-pro-2021-1_1725509550.jpg", "price":"1.999.562đ", "discount": "2.300.000 đ", "name": "Tai nghe AirPods Pro 2021 Magsafe | Chính hãng Apple Việt Nam"}
-    ],
+ "attached__product": [
+  {
+    "id": 0,
+    "image": "https://24hstore.vn/images/products/2024/09/10/resized/iphone-16-pro-max-titan-trang_1725928243.jpg",
+    "price": "3.999.000đ",
+    "discount": "6.300.000 vnđ",
+    "name": ""
+  },
+  {
+    "id": 1,
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTBJWXpTK2KDUbtD_HlN9zhffwniRk62FKbTvirh6kdN-7q2u8iKTjz89Kyd4wrLyHeCvx0foYa3sd0qJ-lHa4idw2aqZCfMpBxjdtsjGQ7oeMvt7ymY0llktHB6fLJW7-RwfE8l8E&usqp=CAc",
+    "price": "1.999.562đ",
+    "discount": "2.300.000 đ",
+    "name": "Cốc sạc Mophie Essentials PD 45W 2C GaN"
+  },
+  {
+    "id": 2,
+    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQeKmvaLbsF0BQhuys5gi9tCf5yBO-ODGwoXT7fgtlTLSjFAVP4w7QxGvvi2ilM1rvy7r3eXjR6gLuCauyjX075DcrXUMPfzoyq5wMLZ3ivCQtehRWXwTsZlLKRr3F1cGUD43QDBhe4&usqp=CAc",
+    "price": "1.999.562đ",
+    "discount": "2.300.000 đ",
+    "name": "Sạc Dự Phòng Mazer Smallest MagSafe 10.000mAh"
+  },
+  {
+    "id": 3,
+    "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRjXWE5hFAXoloMMh7NAoFMgV9ENmDn6ZnM0hc8bLWXXt78S-jsRYAeJm1qwLDsYT6FeC7rnTIuiOTBy9XqcSA8kIzbp8sCI1tCSlWuucB9mVR9lLbefh-d9uNguI8BCRQ3KzvN5k0&usqp=CAc",
+    "price": "1.999.562đ",
+    "discount": "2.300.000 đ",
+    "name": " Ốp Lưng Trong Suốt MagSafe iPhone 16 Pro Max | Chính hãng Apple Việt Nam"
+  },
+  {
+    "id": 4,
+    "image": "https://24hstore.vn/images/products/2024/09/05/large/apple-airpods-pro-2021-1_1725509550.jpg",
+    "price": "1.999.562đ",
+    "discount": "2.300.000 đ",
+    "name": "Tai nghe AirPods Pro 2021 Magsafe | Chính hãng Apple Việt Nam"
+  }
+],
     "Content": [
       {
         "id": 0, 

@@ -14,6 +14,7 @@ margin: 0 auto;
 
      display: flex;
      justify-content: space-around;
+     flex-wrap: wrap;
      padding: 10px;
      .box1 {
         display: flex;
@@ -22,7 +23,7 @@ margin: 0 auto;
 
         .payment {
            display: grid;
-           grid-template-columns: 1fr 1fr 1fr;
+           grid-template-columns: 1fr 1fr 1fr ;
            gap: 1rem;
         }
 
@@ -37,4 +38,14 @@ margin: 0 auto;
   }
 
 
+}
+
+@media (max-width: 768px) {
+   .mainFooterOne {
+     &__column {
+            grid-row-gap: 5px;
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+      }
+   }
 }

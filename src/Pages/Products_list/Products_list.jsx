@@ -7,11 +7,15 @@ import categoryComponentsConfig from './ui-components/HandleComponent';
 import Productads from '../Home/Components/product-image';
 import RenderbyCategory from './ui-components/RenderbyCategory';
 import styled from 'styled-components';
+import EmptyProduct from './emptyProduct';
 import { useValue } from '../../Context/Settings/Theme/ThemeContext';
 import { Helmet } from 'react-helmet';
 
 import Loading from '../../ui/Loading';
 import Breadcrumb from '../../Components/location/location';
+
+
+
 function Products_list(props) { 
   const logic = props.logic; 
   const dataEnpoint = props.dataEnpoint;
@@ -20,36 +24,36 @@ function Products_list(props) {
   const params = useParams();
   let namephone = params.namephone;
 
- const { theme } = useValue();
+  const { theme } = useValue();
   const [data, loading] = useHandleApi(namephone);
 
   function handle(){
-           setState(true);
+    setState(true);
   }
-  useEffect(() => {   // xử lý logic hiển thị 
+
+  useEffect(() => {   
     if(!state){
-              handle();       
-}
-  },[state])
- if(!data){
-              <Loading/>
- }
+      handle();       
+    }
+  },[state]);
+
+  if(loading){
+    return <Loading/>
+  }
+
+  if(!data || data.length === 0){
+    return <EmptyProduct />
+  }
 
   return (
     <div> 
-        {!data ? (
-                  <Loading/>
-           ) : (
-          <div>
-                  <RenderbyCategory 
-                    logic={state} 
-                    dataEnpoint={dataEnpoint} 
-                    namephone={namephone} 
-                    data={data} {...props}
-
-                  />
-          </div>
-      )}
+      <RenderbyCategory 
+        logic={state} 
+        dataEnpoint={dataEnpoint} 
+        namephone={namephone} 
+        data={data} 
+        {...props}
+      />
     </div>
   );
 }
