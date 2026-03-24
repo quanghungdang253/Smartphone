@@ -116,7 +116,7 @@ let nameData = [
     {
          "id": 5, 
          icon: "", 
-         "content": "Cập nhật sản phẩm ",data: Product, dataNavigation: dataNavigation
+         "content": "Cập nhật sản phẩm",data: Product, dataNavigation: dataNavigation
     },
        
     
@@ -139,7 +139,7 @@ console.log(Product);
                                         handleScroll()
                                        
                                  }}> 
-                                     <h1> 
+                                     <h1 class="text-center"> 
                                          <FontAwesomeIcon icon={item.icon} className={styles.icon} />
                                              {item.content}
                                      </h1>
@@ -148,6 +148,12 @@ console.log(Product);
                         </div>
                     )
             })}
+              <div className='hidden lg:block'>
+                 <Link to="/" className='bg-red-600 text-white p-2 font-bold '> Đăng Xuất </Link>
+            </div>
+            </div>
+           <div className='mt-1 sm:block lg:hidden'>
+                 <Link to="/" className='bg-red-600 text-white p-4 font-bold block text-center '> Đăng Xuất </Link>
             </div>
             <div >   
             {

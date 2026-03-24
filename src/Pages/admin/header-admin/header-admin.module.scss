@@ -6,7 +6,7 @@
 .mainHeader {
    padding: 10px 10px ;
     background-color: rgba(170, 203, 231, 0.888);
-    margin-top: 12em;
+
     .mainBox {
         display: flex;
         align-items: center;
@@ -71,7 +71,7 @@
 //=============================reponsive==========================
 @media (max-width: 768px) {
     .mainHeader {
-margin-top: 12rem !important;
+margin-top: 3rem !important;
     .mainBox {
         display:flex;
         justify-content:stretch;
@@ -97,13 +97,13 @@ margin-top: 12rem !important;
             }
             .text {
                 font-size: 12px;
-                grid-row-gap: 0px;
+                grid-row-gap: 10px;
             }
            }
            &__Two {
               .boxText {
                    display: grid;
-                   grid-row-gap: 0px;
+                   grid-row-gap: 5px;
                    font-size: 12px;
                    h2 {
                     min-width: 10em;

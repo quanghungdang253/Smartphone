@@ -105,8 +105,8 @@ console.log(console.log(selector.item));
   return (
     <>  
     {loading ? (
-     <div style={{position: 'absolute'}}>
-        <Ovals/>
+     <div>
+            <Ovals/>
         </div>
     ) : (
         <div className={styles.mainInfo}>

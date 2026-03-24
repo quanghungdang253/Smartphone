@@ -1,11 +1,11 @@
 @import '../../../styles-global/untils/variable';
 
 .container {
-       background-color: rgb(240, 237, 237);
-      margin-top: 1rem;
+      
         display: flex ;
         grid-column-gap: 1%;
         padding: 10px 10px;
+    
        
      &__boxLeft {
             display: flex;
@@ -215,6 +215,9 @@
          }
          &__boxRight {
           .titleBoxRight {
+            padding: 10px;
+            text-align: center;
+            background-color: yellow;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
           }
@@ -226,9 +229,12 @@
                   padding: 0px !important;
                 .mainInFo {
                     width: 100%;
+                    display: grid;
+                    grid-row-gap: 10px;
                        &__BoxOne {
                             display: flex;
                             flex-direction: column;
+                            gap: 10px;
 
                        }
                           
@@ -239,6 +245,10 @@
                                     }
                                      .sumMoney {
                                         position: relative;
+                                     }
+                                     .title {
+                                        margin-top: 1rem;
+                                        margin-bottom: 1rem;
                                      }
                                 }
                 }

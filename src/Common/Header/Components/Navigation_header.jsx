@@ -36,7 +36,7 @@ const textLink = "font-bold";
         className={`lg:text-[1rem] text-white flex gap-x-2 ${styles.navigation}`}
     >
   
-        <Link className={`${styleOne}`} to='/StoreInfo'> 
+        <Link className={`${styleOne} w-[180px]`} to='/StoreInfo'> 
             <FontAwesomeIcon icon={faStore}  className="text-[1.2rem]" />
             <h1 className={styles.linkIntroduce}>Giới thiệu cửa hàng </h1>
         </Link>
@@ -44,7 +44,7 @@ const textLink = "font-bold";
 
     
         <Link
-            className={`${styleOne} `}
+            className={`${styleOne} w-[180px]`}
             to='/GoogleMap'
             target='_blank'
             rel='noopener noreferrer'
@@ -53,14 +53,14 @@ const textLink = "font-bold";
             <h1 className={styles.linkIntroduce}>Cửa hàng gần bạn</h1>
         </Link>
 
-        <Link className={`${styleOne}`}>
+        <Link className={`${styleOne} w-[180px]`}>
             <FontAwesomeIcon icon={faTruck} className="text-[1.2rem]"  />
             <h1 className={styles.linkIntroduce}>Tra cứu đơn hàng</h1>
         </Link>
     
 
  
-        <Link className={`${styleOne}`} to='/Cart'>
+        <Link className={`${styleOne} w-[120px]`} to='/Cart'>
             {/* <div className={styles.iconCart}>
                    className={selectId === 0 ? styles.noColor : styles.index}
             
@@ -72,7 +72,7 @@ const textLink = "font-bold";
    
 
 
-        <Link  to="/Login" className={`${styleOne}`}>
+        <Link  to="/Login" className={`${styleOne} w-[120px]`}>
             <FontAwesomeIcon className="text-[1.2rem]"  icon={faUser} />
             <h1>Đăng Nhập</h1>
         </Link>

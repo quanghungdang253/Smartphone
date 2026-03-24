@@ -12,12 +12,7 @@ function PurchaseHistory({data , isOpen, Product, openForm}) {
     const [loading , setLoading] = useState(isOpen);
     const [dataProduct , setDataProduct] = useState(null);
  
-    console.log("giá trị loading là " + loading)
-     console.log("giá trị isOpen là " + isOpen)
-      console.log("giá trị index là " + index)
-
-      console.log("dữ liệu dataProduct "+ dataProduct);
-        console.log("dữ liệu Product "+ Product);
+    
            let displayProduct = null;
      if(!dataProduct) {
            displayProduct = Product;
