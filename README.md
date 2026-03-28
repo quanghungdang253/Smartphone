@@ -1,33 +1,35 @@
 # 📱 Dự án thương mại điện tử 
+Dự án là một hệ thống thương mại điện tử (E-commerce) được xây dựng bằng ReactJS và Node.js, nhằm mô phỏng quy trình mua bán sản phẩm trực tuyến.
 
-Dự án **Smartphone** là một trang web bán hàng đơn giản được xây dựng bằng ReactJS và nodejs, với mục tiêu rèn luyện kỹ năng về giao diện, quản lý trạng thái, và thao tác dữ liệu trong frontend.
+Dự án tập trung vào việc phát triển giao diện người dùng hiện đại, quản lý trạng thái, xử lý dữ liệu và xây dựng API backend. Người dùng có thể duyệt sản phẩm, tìm kiếm, thêm vào giỏ hàng và thực hiện các thao tác mua sắm cơ bản.
 
----
+Ngoài ra, dự án còn giúp rèn luyện kỹ năng làm việc với RESTful API 
 
-**Demo** : https://quang-hung-store.vercel.app/
-
+**URL** : https://smartphone-gray.vercel.app/
 
 **Admin**
 
-
     **Tên đăng nhập: Hung
-
     **Mật khẩu: 123
 
 ---
 
-##  Công nghệ sử dụng
+### Frontend
+- **ReactJS** – Thư viện xây dựng giao diện người dùng
+- **Redux Toolkit** – Quản lý trạng thái ứng dụng
+- **React Hooks** – Xử lý state và lifecycle
+- **Axios & Fetch API** – Gửi request và làm việc với API
+- **Tailwind CSS & SCSS** – Thiết kế giao diện và styling
+- **Component-based Architecture** – Tách nhỏ UI thành các component (Product List, Detail, Ads,...)
 
-- **ReactJS** – Thư viện UI chính
-- **Axios**
-- **React Redux toolkit, React Hook**
-- **SCSS**
-- **React State** – Quản lý trạng thái (nút, hiển thị chi tiết,…)
-- **Component hóa** – Tách các phần như danh sách sản phẩm,chi tiết, quảng cáo
-- **Nodejs, firebase**
+### Backend
+- **Node.js** – Xây dựng server và xử lý logic backend
+- **Firebase** – Hỗ trợ lưu trữ dữ liệu  
+
 ---
 
 Chức năng chính 
+
 1.   Hiển thị banner quảng cáo (Component: ProductAds)
 2.   Danh sách sản phẩm điện thoại (Component: PhoneList)
 3.   Xem chi tiết sản phẩm (Component: PhoneDisplay)
@@ -43,24 +45,46 @@ Chức năng chính
 13.  Theme(Sáng/Tối) 
 
 Ảnh demo
-![Trang chủ](./screenshots//Screenshot%20(1436).png)
-![Trang chủ](./screenshots//Screenshot%20(1437).png)
-![Trang chủ](./screenshots//Screenshot%20(1438).png)
-![Trang chủ](./screenshots//Screenshot%20(1439).png)
-![Trang chủ](./screenshots//Screenshot%20(1440).png)
-![Trang chủ](./screenshots//Screenshot%20(1441).png)
-![Trang chủ](./screenshots//Screenshot%20(1442).png)
-![Trang chủ](./screenshots//Screenshot%20(1443).png)
-![Trang chủ](./screenshots//Screenshot%20(1444).png)
-![Trang chủ](./screenshots//Screenshot%20(1445).png)
-![Trang chủ](./screenshots//Screenshot%20(1446).png)
-![Trang chủ](./screenshots//Screenshot%20(1447).png)
-![Trang chủ](./screenshots//Screenshot%20(1448).png)
-![Trang chủ](./screenshots//Screenshot%20(1449).png)
-![Trang chủ](./screenshots//Screenshot%20(1450).png)
-![Mobie](./screenshots//Screenshot%20(1451).png)
-![Mobie](./screenshots//Screenshot%20(1452).png)
-![Trang chủ](./screenshots//Screenshot%20(1453).png)
-![Trang chủ](./screenshots//Screenshot%20(1454).png)
-![Trang chủ](./screenshots//Screenshot%20(1455).png)
-![Trang chủ](./screenshots//Screenshot%20(1456).png)
+
+![Trang chủ](./screenshots/Screenshot (182).png)
+![Trang chủ](./screenshots/Screenshot (183).png)
+![Trang chủ](./screenshots/Screenshot (184).png)
+![Trang chủ](./screenshots/Screenshot (185).png)
+![Trang chủ](./screenshots/Screenshot (186).png)
+![Trang chủ](./screenshots/Screenshot (187).png)
+![Trang chủ](./screenshots/Screenshot (188).png)
+![Trang chủ](./screenshots/Screenshot (189).png)
+![Trang chủ](./screenshots/Screenshot (190).png)
+![Trang chủ](./screenshots/Screenshot (191).png)
+![Trang chủ](./screenshots/Screenshot (192).png)
+![Trang chủ](./screenshots/Screenshot (193).png)
+![Trang chủ](./screenshots/Screenshot (194).png)
+![Trang chủ](./screenshots/Screenshot (195).png)
+![Trang chủ](./screenshots/Screenshot (196).png)
+![Trang chủ](./screenshots/Screenshot (197).png)
+![Trang chủ](./screenshots/Screenshot (198).png)
+![Trang chủ](./screenshots/Screenshot (199).png)
+![Trang chủ](./screenshots/Screenshot (200).png)
+![Trang chủ](./screenshots/Screenshot (201).png)
+![Trang chủ](./screenshots/Screenshot (202).png)
+![Trang chủ](./screenshots/Screenshot (203).png)
+![Trang chủ](./screenshots/Screenshot (204).png)
+![Trang chủ](./screenshots/Screenshot (205).png)
+![Trang chủ](./screenshots/Screenshot (206).png)
+![Trang chủ](./screenshots/Screenshot (207).png)
+
+![Mobie](./screenshots/mobie1.png)
+![Mobie](./screenshots/mobie2.png)
+![Mobie](./screenshots/mobie3.png)
+![Mobie](./screenshots/mobie4.png)
+![Mobie](./screenshots/mobie5.png)
+![Mobie](./screenshots/mobie6.png)
+![Mobie](./screenshots/mobie7.png)
+![Mobie](./screenshots/mobie8.png)
+![Mobie](./screenshots/mobie9.png)
+![Mobie](./screenshots/mobie10.png)
+![Mobie](./screenshots/mobie11.png)
+![Mobie](./screenshots/mobie12.png)
+![Mobie](./screenshots/mobie13.png)
+![Mobie](./screenshots/mobie14.png)
+![Mobie](./screenshots/mobie15.png)
