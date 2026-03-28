@@ -30,9 +30,9 @@
 
 }
 .canvasContainer {
-  margin-top: 2rem;
-     width: 90rem;
-     height: 20rem;
+  margin: 0 auto;
+  max-width: 1440px;
+
         cursor: grab;
 }
 .canvasContainer:active {

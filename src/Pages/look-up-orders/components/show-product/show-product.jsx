@@ -63,15 +63,18 @@ const [getData, setGetData] = useState(() => {
 
   return (
     <div className="
-         mt-[11em]
+    max-w-[1440px]
+    mx-auto
+     mt-10
+
+     lg:mt-0
       
          gap-[5em]
         
          sm:flex
          sm:flex-col
          lg:flex-row
-         lg:ml-[7%]
-         lg:mr-[7%]
+     
         "
          
         >

@@ -6,24 +6,16 @@ import Introduce from './store-map/components/introduce';
 function MainStoreMapInfo(props) {
    
     return (
-        <Header>
-               <div className='Container'>
+        <div>
+               <div className='max-w-[1440px] mx-auto'>
                       <Introduce/>
                         <Map/>
                        
 
                </div>    
-        </Header>
+        </div>
     );
 }
 
-const Header = styled.div `
-            .Container {
-                        margin-left: 7%;
-                        margin-right:7%;
-                       
-            }
 
-
-`
 export default MainStoreMapInfo;

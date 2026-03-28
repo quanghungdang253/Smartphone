@@ -10,16 +10,12 @@ function MainStoreInfo(props) {
             })
         },[])
     return (
-    <Container>  
-        <div className='Container'>
+    <div>  
+        <div>
                 <Image3d/>
         </div>
-    </Container>
+    </div>
     );
 }
-const Container = styled.div `
-height:10000px;
-        margin-top:2.7%;
 
-`
 export default MainStoreInfo;

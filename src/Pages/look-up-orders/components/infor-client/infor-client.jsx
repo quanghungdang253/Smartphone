@@ -16,7 +16,7 @@ function InforClient({data}) {
             </div>
             <div className='h-[10rem] bg-slate-100 rounded-2xl p-4 mt-10 w-[30rem]'>
                 <h1 className='font-bold font-sans'> ĐỊA CHỈ NHẬN HÀNG </h1>
-                    <div>
+                    <div className='mt-4'>
                             <h1> {data[1].district} {data[1].province}  </h1>
                     </div>
             </div>

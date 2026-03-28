@@ -33,9 +33,11 @@
           }
           .title > h1 {
                     color:#000000;
-                    font-size: 18px;
-                    color: white;
+                    font-size: 24px;
+                    font-family: Arial, Helvetica, sans-serif;
                     font-weight: bold;
+                    background-color: yellow;
+                    padding: 4px;
           }
   }
   .selector {
@@ -53,7 +55,7 @@
         .img {
            max-width: 4rem;
            height: 4rem;
-           border-radius: 10px;
+           border-radius: 2px;
         }
         .paragrap {
              font-family: 'Times New Roman', Times, serif;

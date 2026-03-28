@@ -70,7 +70,7 @@ const Image3d = () => {
             </div>
 
             {/* Canvas hiển thị ảnh 3D */}
-            <div className={styled.canvasContainer}>
+            <div className={styled.canvasContainer} >
                 <Canvas>
                     <OrbitControls               
                         enableZoom={true} 

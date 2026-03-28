@@ -53,7 +53,7 @@ const textLink = "font-bold";
             <h1 className={styles.linkIntroduce}>Cửa hàng gần bạn</h1>
         </Link>
 
-        <Link className={`${styleOne} w-[180px]`}>
+        <Link to={'/LookProduct'} className={`${styleOne} w-[180px]`}>
             <FontAwesomeIcon icon={faTruck} className="text-[1.2rem]"  />
             <h1 className={styles.linkIntroduce}>Tra cứu đơn hàng</h1>
         </Link>

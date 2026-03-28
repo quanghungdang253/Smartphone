@@ -130,7 +130,7 @@ const Image3d = () => {
                     minDistance={1}
                     maxDistance={10}
                     enableZoom={true}
-                    zoomSpeed={0.5}
+                    zoomSpeed={0.2}
                     ref={controlsRef}
                     onChange={() => {
                         if (controlsRef.current) {
